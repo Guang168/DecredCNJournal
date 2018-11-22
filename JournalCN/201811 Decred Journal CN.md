@@ -54,8 +54,12 @@
 
 ### 社区活动
 #### 过去 {参考英文月报}
-* 活动 1 {链接}
-* 活动 2 {链接}
+
+* [Web Summit](https://websummit.com/) 葡萄牙里斯本 11月 5-8.
+* [PDX Blockchain Summit & Hackathon](https://pdxblockchainsummit.org) in Portland, USA on Nov 11. Raedah Group will present on Decred and Decentralized Governance.
+* [Blockmaster](https://www.blockmaster.com.br/eventos/forum-blockmaster-2018-sao-paulo/) in Sao Palo, Brazil on Nov 13. @Rhama will talk about Decred and Politeia.
+* [BlockchainFiesta](http://blockchainfiesta.io/) in Krakow, Poland on Nov 16.
+* [Blockchain Melbourne](https://www.meetup.com/BlockchainMelbourne/events/256295215/) in Melbourne, Australia on Nov 20. Henrik Andersson, CIO of [Apollo Capital](https://www.apollocap.io/), will present their investment analysis on Decred covering the business and technology components that makes Decred attractive to them as investors.
  
 #### 未来 {参考英文月报}
 * 活动 1 
@@ -75,12 +79,16 @@
 
 ### 中文媒体／文章链接
 * [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
+* [DCR 通过混合共识机制平衡权益分配｜标准共识评级](https://www.aicoin.net.cn/article/54939.html)
 * 标题 2 - 链接 2 
+
+### 中文社区 
+
+* [微博](https://www.weibo.com/DecredProject)
+* 微信群
+* [中文电报群](https://t.me/decred_cn)
+* QQ群 
 
 月报贡献者 @Guang @ @ 
 
-中文社区 
-微博
-微信群
-中文电报群
-QQ群 
+月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
