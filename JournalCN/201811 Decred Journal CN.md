@@ -56,11 +56,11 @@
 #### 过去 {参考英文月报}
 
 * [Web Summit](https://websummit.com/) 葡萄牙里斯本 11月 5-8.
-* [PDX Blockchain Summit & Hackathon](https://pdxblockchainsummit.org) in Portland, USA on Nov 11. Raedah Group will present on Decred and Decentralized Governance.
-* [Blockmaster](https://www.blockmaster.com.br/eventos/forum-blockmaster-2018-sao-paulo/) in Sao Palo, Brazil on Nov 13. @Rhama will talk about Decred and Politeia.
-* [BlockchainFiesta](http://blockchainfiesta.io/) in Krakow, Poland on Nov 16.
-* [Blockchain Melbourne](https://www.meetup.com/BlockchainMelbourne/events/256295215/) in Melbourne, Australia on Nov 20. Henrik Andersson, CIO of [Apollo Capital](https://www.apollocap.io/), will present their investment analysis on Decred covering the business and technology components that makes Decred attractive to them as investors.
- 
+* [PDX Blockchain Summit & Hackathon](https://pdxblockchainsummit.org) 美国 波特兰(Portland)Nov 11. Raedah Group 分享 Decred 和 去中心化治理。
+* [Blockmaster](https://www.blockmaster.com.br/eventos/forum-blockmaster-2018-sao-paulo/)巴西 圣保罗Nov 13. @Rhama 分享 Decred 和 Politeia.
+* [BlockchainFiesta](http://blockchainfiesta.io/) 波兰 克拉科夫(Krakow) Nov 16. 社区成员 @artikozel & @donmario在会议后整理提交了一份[会议报告](https://github.com/artikozel/decred-events/blob/patch-1/reports/20181116-Blockchain-Fiesta-Krakow.md)
+* [Blockchain Melbourne](https://www.meetup.com/BlockchainMelbourne/events/256295215/)澳大利亚 墨尔本 Nov 20. Henrik Andersson, [Apollo Capital](https://www.apollocap.io/) CIO, 分享对Decred的投资分析
+
 #### 未来 {参考英文月报}
 * 活动 1 
 * 活动 2 
@@ -75,12 +75,10 @@
 ### Decred 相关新闻
 * 标题 1 - 链接 1
 * 标题 2 - 链接 2
-* 标题 3 - 链接 3
 
 ### 中文媒体／文章链接
 * [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
 * [DCR 通过混合共识机制平衡权益分配｜标准共识评级](https://www.aicoin.net.cn/article/54939.html)
-* 标题 2 - 链接 2 
 
 ### 中文社区 
 
