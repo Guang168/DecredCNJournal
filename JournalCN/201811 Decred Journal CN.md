@@ -1,4 +1,4 @@
-# Decred月报 - 11月 
+{DRAFT}# Decred月报 - 11月 
 
 ### 开发进展总结
 * 开发活动 -  {Decred Dev Snapshot}
@@ -24,22 +24,17 @@
 * 法定票数：21191/8192 票，13206 通过(62.32%) 
 * 专业的宣传公司合作提案。要求为期6个月，每月 2万5千美金的经费。
 
-
-
 **4.[Decred Open Source Research](https://proposals.decred.org/proposals/c68bb790ba0843980bb9695de4628995e75e0d1f36c992951db49eca7b3b4bcd)**
 
 * 投票结束 - 11月5日 **通过**
 * 法定票数：13141/8192 票，11854 通过(90.21%) 
 * 提案设立一个开源研究项目，要求 一万美金 作为起始经费，投入研究区块链研究并发布文章。提案通过后，第二个提案可以用来决定研究内容／题材。
-
-
  
 **5.[Change language: PoS Mining to PoS Voting, Stakepool to Voting Service Provider](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75)**
 
 * 投票结束 11月5日 **通过**
 * 法定票数：12745/8192 票，11991 通过（94.08%）
 * 提案建议把一些Decred专用词更替，并提议以后类似大规模转换专用名词可以通过提案系统做决定
-
 
 
 #### 投票中 - 1 份 
@@ -57,7 +52,7 @@
 *  电报群及微信群 分享 - @Guang 分享 [微博](https://weibo.com/DecredProject)链接终于上线到[Decred项目网站社区](https://www.decred.org/community/)页面，正式加入社区行列。 
 
 
-###社区活动
+### 社区活动
 #### 过去 {参考英文月报}
 * 活动 1 {链接}
 * 活动 2 {链接}
@@ -66,7 +61,6 @@
 * 活动 1 
 * 活动 2 
 
-
 ### DCR网络
 #### 算力 {截图 https://dcred.eu/powStats}
 #### 票价 - {截图 https://dcred.eu/posStats}
@@ -74,11 +68,19 @@
 #### 币价 {截图 USD／BTC - https://dcrstats.com/}
 #### 节点数 {数据 https://dcred.eu/nodeStats}
 
+### Decred 相关新闻
+* 标题 1 - 链接 1
+* 标题 2 - 链接 2
+* 标题 3 - 链接 3
+
 ### 中文媒体／文章链接
-* 标题 1 - 链接 1 
+* [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
 * 标题 2 - 链接 2 
 
-
-月报贡献者 @ @ @ 
+月报贡献者 @Guang @ @ 
 
 中文社区 
+微博
+微信群
+中文电报群
+QQ群 
