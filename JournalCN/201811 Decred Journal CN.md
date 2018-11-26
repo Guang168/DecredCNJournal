@@ -1,12 +1,18 @@
 {DRAFT}# Decred月报 - 11月 
 
+Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 利益相关者通过Decred钱包 （Decrcediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
+
+Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多公司，贡献者和公司加入Decred生态，而一些长期贡献者则根据兴趣和能力提出议案。
+
+在社区的兴奋，成长和变化中，Decred保持项目的更新步伐。桌面和移动钱包的测试版本表现出Decred一贯对稳定和创新的传统坚持。
+
 ### 开发进展总结
 * 开发活动 -  {Decred Dev Snapshot}
 
 [dcrd](https://github.com/decred/dcrd):
 
 * UTXO反转的设置语义 https://github.com/decred/dcrd/pull/1471
-* UTXO反转的设置语义数据库迁移 https://github.com/decred/dcrd/pull/1520 
+* UTXO反转的设置语义数据库迁移 https://github.com/decred/dcrd/pull/1520 (将会把区块测试运行速度提高40％)
 
 [dcrwallet](https://github.com/decred/dcrwallet):
 
@@ -24,9 +30,9 @@
 
 * 投票者隐私改进
 * 强调新评论 {wait for merge or move to Dec} https://github.com/decred/politeiagui/pull/897
-* 评论积分移到poloteiawww https://github.com/decred/politeia/pull/610
+* 评论积分计算移到poloteiawww https://github.com/decred/politeia/pull/610
 
-未来几个月的增强功能会专注于改进性能
+未来几个月会专注于改进性能
 
 [Android](https://github.com/decred/dcrandroid):
 
@@ -41,7 +47,7 @@
 * 配合最新设计元素大幅度修改设计
 * 交易细节增加
 
-Trezor: Model T 已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7-1-developed-by-the-community-for-the-community-c4b965741ca3)最新固件 version 2.0.9.最新版本带Decred支持。感谢 @matheusd。现在Decrediton开发员可以开始整合工作了。
+Trezor: Model T 已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7-1-developed-by-the-community-for-the-community-c4b965741ca3) 在Decred的支持下，最新固件 version 2.0.9 已发布。感谢 @matheusd。现在Decrediton开发员可以开始整合工作了。
 
 [dcrdata](https://github.com/decred/dcrdata):
 
@@ -51,8 +57,8 @@ Trezor: Model T 已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-
 
 [Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher):
 
-* 新的分配教程 (英文): https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/
-* 新分配视频 (葡萄牙语 英文字幕): https://www.youtube.com/watch?v=3RGoUQK0g24&feature=share
+* 新分票教程 (英文): https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/
+* 新分票视频 (葡萄牙语 英文字幕): https://www.youtube.com/watch?v=3RGoUQK0g24&feature=share
 * 分票数量增加 {needs volume numbers pulled for verfication}
 * 更新让SPV钱包参与分票 (从 dcrd 到 dcrdata 更改 uxtos lookup): https://github.com/matheusd/dcr-split-ticket-matcher/issues/29
 
@@ -60,12 +66,12 @@ Trezor: Model T 已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-
 
 * 重命名 "mining" 改成 "voting", "stakepool" 改成 "VSP" {link}
 * 增加词汇表[Glossary](https://github.com/decred/dcrdocs/pull/675)
-* 重命名 dev fund 成 "Decred Treasury" https://github.com/decred/dcrdocs/pull/690
+* 重命名 dev fund 改成 "Decred Treasury" https://github.com/decred/dcrdocs/pull/690
 * 新Politeia数据页面 {link}
 
 [decred.org](https://github.com/decred/dcrweb):
 
-* 重重命名 "mining" 改成 "voting", "stakepool" 改成 "VSP" https://github.com/decred/dcrweb/pull/435
+* 重命名 "mining" 改成 "voting", "stakepool" 改成 "VSP" https://github.com/decred/dcrweb/pull/435
 
 Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {} deleted lines spread across {} repositories. Contributions came from {}-{} developers per repository. ([chart]({}))
 
@@ -78,7 +84,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 * 投票结束 - 11月21日 **通过**
 * 法定票数：13228/8173 票，13206 通过(95.71%) 
-* 提案建议设立 Decred Contractor Clearance (DCC) 为承包商作为对项目参与及贡献的条件。获取DCC必需要有 3个合格承包商／贡献者担保有相关工作需要的技能。相同的，撤掉承包商资格也只需要3个合格承包商／贡献者投票撤除。
+* 提案建议设立 Decred Contractor Clearance (DCC) 为服务商作为对项目参与及贡献的条件。获取DCC必需要有 3个合格服务商／贡献者担保有相关工作需要的技能。相同的，撤掉服务商资格也只需要3个合格服务商／贡献者投票撤除。
 
 **2.[Wachsman Communications Proposal for Decred](https://proposals.decred.org/proposals/bc8776180b5ea8f5d19e7d08e9fcc35f0d1e3d16974963e3e5ded65139e7b092)**
 
@@ -96,7 +102,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 * 投票结束 - 11月5日 **通过**
 * 法定票数：13141/8192 票，11854 通过(90.21%) 
-* 提案设立一个开源研究项目，要求 一万美金 作为起始经费，投入研究区块链研究并发布文章。提案通过后，第二个提案可以用来决定研究内容／题材。
+* 提案设立一个开源研究项目，要求 一万美金 作为起始经费，投入区块链研究并发布文章。提案通过后，第二个提案可以用来决定研究内容／题材。
  
 **5.[Change language: PoS Mining to PoS Voting, Stakepool to Voting Service Provider](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75)**
 
@@ -109,8 +115,27 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 * 投票结束 11月23日 **不通过**
 * 法定票数：8756/8156 票，444 通过（5.07%）
 * Easyrabbit 交易所已于10月底上线DCR交易。
-* 提案要求 30 DCR 将项目升级为高级用户，以获得一些宣传福利 包括 DCR 标志放到主页面上，低交易费，自媒体宣传DCR 等等。 
+* 提案要求 30 DCR 将项目升级为高级用户，以获得一些宣传福利 包括将 DCR 标志放到主页面上，低交易费，自媒体宣传DCR 等等。 
 
+
+### 交易所
+
+* Bitqist
+  * https://www.reddit.com/r/decred/comments/9y5dru/you_can_now_instantly_exchange_decred_on_bitqist/
+  * https://bitqist.com/exchange/decred
+  * https://support.bitqist.com/hc/en-us/articles/360003566512-About-Us
+* Kaiserex 建立Decred OTC 场外交易服务
+  * https://twitter.com/kaiserexcom/status/1064494181224206336
+  * https://www.kaiserex.com/kaiserex-otc-desk/
+  * 最少交易5万欧元
+
+
+### 落地应用
+
+* 英国电商 Flubit 支持Decred付费
+  * https://flubit.com/
+  * https://twitter.com/monetaryunit/status/1062127668769050626
+  * https://www.businesswire.com/news/home/20181108005043/en/Crypto-Coins-Drive-Xmas-Strategy-Largest-eShop
 
 
 ### 社区讨论
@@ -186,7 +211,7 @@ Videos:
 * [中文电报群](https://t.me/decred_cn)
 * QQ群 
 
-月报贡献者 @Guang @ @ 
+月报贡献者 @Guang @Hugo @ 
 
 欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
 
