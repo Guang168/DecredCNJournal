@@ -1,6 +1,6 @@
 {DRAFT}# Decred月报 - 11月 
 
-Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 利益相关者通过Decred钱包 （Decrcediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
+Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 利益相关者通过Decred钱包 （Decrediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
 
 Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多公司，贡献者和公司加入Decred生态，而一些长期贡献者则根据兴趣和能力提出议案。
 
@@ -18,6 +18,8 @@ Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多�
 
 * 修改-使用频繁的钱包观察地址问题 https://github.com/decred/dcrwallet/pull/1320
 * 修改-在某些情况下错过交易和双重交易 https://github.com/decred/dcrwallet/pull/1321
+* 改进锁定约的计算 https://github.com/decred/dcrwallet/pull/1330
+
 
 [Decrediton](https://github.com/decred/decrediton):
 
@@ -25,12 +27,19 @@ Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多�
 * 增加基金会余额显示 https://github.com/decred/decrediton/pull/1764
 * 改善大钱包启动性能 https://github.com/decred/decrediton/pull/1727
 * 自动购票v2 https://github.com/decred/decrediton/pull/1744
+* 设计改进
+* 优化提案加载 https://github.com/decred/decrediton/pull/1825
+
 
 [Politeia](https://github.com/decred/politeia):
 
 * 投票者隐私改进
 * 强调新评论 {wait for merge or move to Dec} https://github.com/decred/politeiagui/pull/897
 * 评论积分计算移到poloteiawww https://github.com/decred/politeia/pull/610
+* https://github.com/decred/politeiagui/pull/899
+* https://github.com/decred/politeia/pull/613
+* 加强安全 https://github.com/decred/politeiagui/issues/917 {wait for pr}
+* 评论邮件提醒 https://github.com/decred/politeiagui/pull/919
 
 未来几个月会专注于改进性能
 
@@ -55,12 +64,25 @@ Trezor: Model T 已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-
 * Check work on OPRETURN and "Side Chain" forward compatibility.
 * @gozart 重新融入app到 es6 modules #805
 
+[dcrstakepool](https://github.com/decred/dcrstakepool):
+
+Privacy improvements
+
+* work started to replace Google reCAPTCHA with a self-hosted captcha to avoid stakeholder fingerprinting, testing help welcome https://github.com/decred/dcrstakepool/pull/281
+* self-host charting library to avoid hitting Cloudflare https://github.com/decred/dcrstakepool/pull/283
+* 
+And some general love: links now point to dcrdata explorer, readme updated.
+
 [Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher):
 
 * 新分票教程 (英文): https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/
 * 新分票视频 (葡萄牙语 英文字幕): https://www.youtube.com/watch?v=3RGoUQK0g24&feature=share
 * 分票数量增加 {needs volume numbers pulled for verfication}
 * 更新让SPV钱包参与分票 (从 dcrd 到 dcrdata 更改 uxtos lookup): https://github.com/matheusd/dcr-split-ticket-matcher/issues/29
+
+design:
+
+https://medium.com/@firethought/base-iconset18-motion-pack-readme-a96f96e868
 
 [docs](https://github.com/decred/dcrdocs):
 
@@ -140,10 +162,15 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 ### 社区讨论
 
-*  电报群讨论 - @Dante正编写节点教程，希望鼓励更多人运行DCR节点。全节点完全是义务贡献没有任何短期收益，只是如果大家都能搭建全节点，网络的健壮性强。比特币现有10000多节点，所以抗打击性很强。DCR想变更安全更去中心化必需把节点数也拉起来。 
-*  电报群及微信群 讨论 - @Neil 与社区讨论DCR的抗分叉性。翻译文章-[详细分析Decred的分叉抵抗性](https://www.dcr66.com/threads/decred.40/) 重新被分享并讨论。
-*  电报群及微信群 分享 - @Guang 分享翻译文章 - [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
-*  电报群及微信群 分享 - @Guang 分享 [微博](https://weibo.com/DecredProject)链接终于上线到[Decred项目网站社区](https://www.decred.org/community/)页面，正式加入社区行列。 
+*  讨论 - @Dante正编写节点教程，希望鼓励更多人运行DCR节点。全节点完全是义务贡献没有任何短期收益，只是如果大家都能搭建全节点，网络的健壮性强。比特币现有10000多节点，所以抗打击性很强。DCR想变更安全更去中心化必需把节点数也拉起来。 
+*  讨论 - @Neil 与社区讨论DCR的抗分叉性。翻译文章-[详细分析Decred的分叉抵抗性](https://www.dcr66.com/threads/decred.40/) 重新被分享并讨论。
+*  分享 - @Guang 分享翻译文章 - [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
+*  分享 - @Guang 分享 [微博](https://weibo.com/DecredProject)链接终于上线到[Decred项目网站社区](https://www.decred.org/community/)页面，正式加入社区行列。 
+*  讨论 - Copay钱包出现漏洞，slack群里Dev澄清对DCR钱包不影响。
+*  讨论 - 多个新提案上线，引起了社区的讨论。提案分别是Dex提案，提款机提案，和电台广播广告提案
+
+
+
 
 
 ### 社区活动
@@ -186,16 +213,21 @@ Featured articles:
 * {1109} https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/
 * {1115} https://medium.com/@dlefebvr/pr-in-politeia-process-progress-and-pitching-in-d88771183dd4
 * {1115} https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e
+* {1117} https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3
+* {1126} https://medium.com/@richardred/hash-war-theater-67d3fcac3e97
 
 Articles:
 
 * {1103} https://coiniq.com/decred-review/
 * {1112} https://medium.com/@info_5576/staking-coins-part-3-decred-83d73f29038d
+* {1122} https://captainaltcoin.com/smaller-pow-coins-are-in-constant-danger-of-51-attacks-decred-dcr-governance-model-is-the-solution/
 
 Translations:
 
-* @zubairzia0's "Blockchain governance: how Decred iterates upon Bitcoin" ([original](https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e)) [in Chinese](https://medium.com/@guang.dcr/%E8%AF%91%E6%96%87-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%B2%BB%E7%90%86-decred%E5%A6%82%E4%BD%95%E8%BF%AD%E4%BB%A3%E6%AF%94%E7%89%B9%E5%B8%81-53f434b26105) by @guang
-* @thedecreddigest's "Decred: Where did it all begin?" [in Spanish](https://medium.com/@decred_es/decred-d%C3%B3nde-comenz%C3%B3-todo-767092c90a3e) by @elian
+* @zubairzia0's [Blockchain governance: how Decred iterates upon Bitcoin](https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e) [in Chinese](https://medium.com/@guang.dcr/%E8%AF%91%E6%96%87-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%B2%BB%E7%90%86-decred%E5%A6%82%E4%BD%95%E8%BF%AD%E4%BB%A3%E6%AF%94%E7%89%B9%E5%B8%81-53f434b26105) by @guang
+* @thedecreddigest's [Decred: Where did it all begin?](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/) [in Spanish](https://medium.com/@decred_es/decred-d%C3%B3nde-comenz%C3%B3-todo-aaa49fed0091) by @elian
+* @jy-p's [Decred Recruiting](https://blog.decred.org/2017/07/25/Decred-Recruiting/) [in Spanish](https://medium.com/@decred_es/c%C3%B3mo-ser-contratista-en-decred-d0f05386f799) by @elian
+* Decred Journal - October 2018 [in Russian](https://medium.com/decred-russia/decred-journal-%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C-2018-1eeffc65344c) by @DZ
 
 Videos:
 
@@ -203,6 +235,7 @@ Videos:
 * {1105} https://www.youtube.com/watch?v=MgtBRlAfu2k
 * {1106} Decred im Coincheck - Zahlen, Daten und Fakten ([youtube](https://www.youtube.com/watch?v=mHpqDpSd0Fs))
 * {1109} Politeia, como funciona Os desenvolvedores Fernando e Tiago Alves explicam ([youtube](https://www.youtube.com/watch?v=usWrs9B2Rm4), featuring @Tiago Alves and @fernandoabolafio)
+
 
 ### 中文社区 
 
