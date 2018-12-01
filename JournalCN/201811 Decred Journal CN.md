@@ -150,11 +150,28 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 * 活动 2 
 
 ### DCR网络
-#### 算力 {截图 https://dcred.eu/powStats}
-#### 票价 - {截图 https://dcred.eu/posStats}
+#### 算力 
+
+![PoWStats](img/NOV18_PoWStats.png)
+
+#### 票价
+
+![PoWStats](img/NOV18_TicketPrice.png)
+
 #### 锁仓数额 - {截图 https://dcred.eu/posStats}
+
+![PoWStats](img/NOV18_DCRLocked.png)
+
 #### 币价 {截图 USD／BTC - https://dcrstats.com/}
+
+![PoWStats](img/NOV18_USDPrice.png)
+
+![PoWStats](img/NOV18_BTCPrice.png)
+
 #### 节点数 {数据 https://dcred.eu/nodeStats}
+
+![PoWStats](img/NOV18_NodesCount.png)
+
 
 ### Decred 相关新闻
 * 标题 1 - 链接 1
