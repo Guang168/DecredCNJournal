@@ -2,98 +2,51 @@
 
 Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 利益相关者通过Decred钱包 （Decrediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
 
-Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多公司，贡献者和公司加入Decred生态，而一些长期贡献者则根据兴趣和能力提出议案。
+Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多公司和贡献者加入Decred生态，而一些长期贡献者则根据兴趣和能力提出议案。
 
 在社区的兴奋，成长和变化中，Decred保持项目的更新步伐。桌面和移动钱包的测试版本表现出Decred一贯对稳定和创新的传统坚持。
 
 ### 开发进展总结
-* 开发活动 -  {Decred Dev Snapshot}
 
-[dcrd](https://github.com/decred/dcrd):
+[dcrd](https://github.com/decred/dcrd): [UTXO反转的设置语义](https://github.com/decred/dcrd/pull/1471)合并是一项重要的更改，将提供更简单有效率的处理未花费的交易输出。这在区块重组测试运行是速度提高了40％。随附的[数据库迁移](https://github.com/decred/dcrd/pull/1520)将合并，并在下一个主要版本发布中添加。
 
-* UTXO反转的设置语义 https://github.com/decred/dcrd/pull/1471
-* UTXO反转的设置语义数据库迁移 https://github.com/decred/dcrd/pull/1520 (将会把区块测试运行速度提高40％)
+[dcrwallet](https://github.com/decred/dcrwallet):随着使用量增加，默认监视地址数量变得有限，并且dcrwallet配置文件修改作为解决方案。这个[监视地址问题](https://github.com/decred/dcrwallet/pull/1320)默认本月修改。其他少见的用例修复包括可能[遗漏或双重交易](https://github.com/decred/dcrwallet/pull/1321)及[锁定余额计算的改进](https://github.com/decred/dcrwallet/pull/1330)。
 
-[dcrwallet](https://github.com/decred/dcrwallet):
+[Decrediton](https://github.com/decred/decrediton):为了确保持续的跨平台稳定性和性能，Decrediton更新到[Electron 3](https://github.com/decred/decrediton/pull/1777)同时添加了Decred[基金会余额的显示](https://github.com/decred/decrediton/pull/1764)。[大钱包](https://github.com/decred/decrediton/pull/1727)的启动性能也得到改善。 自动购票已切换到[自动购票v2](https://github.com/decred/decrediton/pull/1744)。由于票价稳定，它的选项较少，而且比v1更易于使用。现在，用户只需要指定保留余额，账户及使用的选票矿池。Politeia整合也有所改进，包括[优化的](https://github.com/decred/decrediton/pull/1825)提案加载，[新提案和投票的通知](https://github.com/decred/decrediton/pull/1835)。UI/UX本月看到了一些调整，包括[概览设计改进](https://github.com/decred/decrediton/pull/1818)，更新的[账户图标](https://github.com/decred/decrediton/pull/1811)以及[导航图标和微动画](https://github.com/decred/decrediton/pull/1809)的改进。提到的功能已合并到主分支中，并将在下一版Decrediton中体现。
 
-* 修改-使用频繁的钱包观察地址问题 https://github.com/decred/dcrwallet/pull/1320
-* 修改-在某些情况下错过交易和双重交易 https://github.com/decred/dcrwallet/pull/1321
-* 改进锁定约的计算 https://github.com/decred/dcrwallet/pull/1330
+Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7-1-developed-by-the-community-for-the-community-c4b965741ca3) 支持Decred的最新固件 version 2.0.9。感谢 @matheusd。现在Decrediton开发员可以开始整合的工作了。
 
+[Politeia](https://github.com/decred/politeia):感谢@iemlisted的报告，修补了一个[小漏洞](https://github.com/decred/politeia/issues/563)。 [politeiavoter](https://github.com/decred/politeia/tree/master/politeiavoter)获得了隐私改进{try to find a link}。 根据大众需求，创建了一个[电子邮件通知系统](https://github.com/decred/politeiagui/pull/919)，以支持对新提案和评论更新消息{pr 919仅提及评论，是否还有新提案的公关？}。通过[票证功能搜索](https://github.com/decred/politeiagui/pull/899)可以验证投票{与开发者核实并澄清票证搜索是客户端，票证不会发送到服务器以保护隐私}。 请注意，某些功能只会在下次[主网站](https://proposals.decred.org/)下次更新后才能体现。
 
-[Decrediton](https://github.com/decred/decrediton):
-
-* 更新到 Electron 3 https://github.com/decred/decrediton/pull/1777
-* 增加基金会余额显示 https://github.com/decred/decrediton/pull/1764
-* 改善大钱包启动性能 https://github.com/decred/decrediton/pull/1727
-* 自动购票v2 https://github.com/decred/decrediton/pull/1744
-* 设计改进
-* 优化提案加载 https://github.com/decred/decrediton/pull/1825
+针对查看提案修订[之间的差异](https://github.com/decred/politeiagui/issues/754)已完成[两个](https://github.com/decred/politeia/pull/613)[步骤](https://github.com/decred/politeiagui/pull/906),[突出显示新评论](https://github.com/decred/politeiagui/pull/897)的工作也已经开启。
 
 
-[Politeia](https://github.com/decred/politeia):
+[Android](https://github.com/decred/dcrandroid):安卓版Decred钱包开发在本月实现了一次飞跃-在[Google Play商店](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)推出了预发布版本。 Play商店版本包括更新的货币转换，以[本地货币显示费用](https://github.com/decred/dcrandroid/issues/192)和[高级密码保护](https://github.com/decred/dcrandroid/issues/134)，能够[锁定所有数据](https://github.com/decred/dcrandroid/issues/187)并使用[访问密码](https://github.com/decred/dcrandroid/issues/180)。此版本还包括一个安全菜单，允许用户[签署](https://github.com/decred/dcrandroid/issues/226)证明地址所有权的消息。 另一个成功实施的社区创新是“[隐藏帐户](https://github.com/decred/dcrandroid/issues/175)”功能。隐藏帐户允许移动用户将资金存放在他们的移动钱包中，但资金将不会显示在主屏幕余额上。在本地聚会交易Decred的社区成员为这项功能提供的额外隐私和安全感到兴奋。账户之间的资金转账在本月也得到了升级，只需简单的[下拉选择](https://github.com/decred/dcrandroid/issues/119)让转账更快速简便。
 
-* 投票者隐私改进
-* 强调新评论 {wait for merge or move to Dec} https://github.com/decred/politeiagui/pull/897
-* 评论积分计算移到poloteiawww https://github.com/decred/politeia/pull/610
-* https://github.com/decred/politeiagui/pull/899
-* https://github.com/decred/politeia/pull/613
-* 加强安全 https://github.com/decred/politeiagui/issues/917 {wait for pr}
-* 评论邮件提醒 https://github.com/decred/politeiagui/pull/919
+[iOS](https://github.com/raedahgroup/dcrios):iOS移动钱包目前正处于测试阶段，需要额外的开发周期才能合并Android上提供的功能集。
 
-未来几个月会专注于改进性能
 
-[Android](https://github.com/decred/dcrandroid):
+[dcrdata](https://github.com/decred/dcrdata): 本月集成到基本代码中的新功能包括[网络哈希表](https://github.com/decred/dcrdata/issues/723)，在导航菜单添加[Decred基金会](https://github.com/decred/dcrdata/issues/784)以及更详细的交易信息，例如在[内存池上显示交易输出花费](https://github.com/decred/dcrdata/issues/825)，在[地址视图上显示交易类型](https://github.com/decred/dcrdata/issues/741)和改进的[时间戳信息](https://github.com/decred/dcrdata/issues/776)。
 
-* 增加与其他APP匹配的QR码分享 
-* 图像及logo更新
-* 增加选项同钱包账户间转账
-* 增加隐私账户功能
 
-[iOS](https://github.com/raedahgroup/dcrios):
+On the dev side, @gozart started an epic refactoring effort to [convert](https://github.com/decred/dcrdata/pull/805) javascript codebase to ES6 modules, add webpack for front end dev tooling and production asset bundling, enforce code style and convert CSS to [SCSS partials](https://github.com/decred/dcrdata/pull/839).
 
-* 开启QR码交易
-* 配合最新设计元素大幅度修改设计
-* 交易细节增加
+[dcrstakepool](https://github.com/decred/dcrstakepool): this is the software used by most, if not all VSPs. The README document was [updated](https://github.com/decred/dcrstakepool/pull/285) with build instructions for Go modules. Transaction links were changed from Insight to [dcrdata](https://github.com/decred/dcrstakepool/issues/264).
 
-Trezor: Model T 已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7-1-developed-by-the-community-for-the-community-c4b965741ca3) 在Decred的支持下，最新固件 version 2.0.9 已发布。感谢 @matheusd。现在Decrediton开发员可以开始整合工作了。
+Several privacy issues were discovered and discussed. A patch is being tested to replace Google recaptcha with [self-hosted CAPTCHA](https://github.com/decred/dcrstakepool/pull/281) to avoid fingerprinting of stakeholders. VSP operators are welcome to join testing. Request to Cloudflare [was removed](https://github.com/decred/dcrstakepool/pull/283). An issue to [make email optional](https://github.com/decred/dcrstakepool/issues/274) was raised.
 
-[dcrdata](https://github.com/decred/dcrdata):
+[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher): The Ticket Splitting Beta continued to grow during November with split tickets filled daily. Two VSPs that integrated ticket splitting, [decredbrasil.com](https://stake.decredbrasil.com/) and [decredvoting.com](https://decredvoting.com/), released educational [walk-through video](https://www.youtube.com/watch?v=3RGoUQK0g24) in Portuguese and English and a general [ticket splitting overview](https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/), in addition to guides on their sites. The software was updated to support SPV light mode. Please read the [issue](https://github.com/matheusd/dcr-split-ticket-matcher/issues/29) to consider privacy implications.
 
-* Check if "Graphical Block Display" is complete by month end, tests just launched.
-* Check work on OPRETURN and "Side Chain" forward compatibility.
-* @gozart 重新融入app到 es6 modules #805
-
-[dcrstakepool](https://github.com/decred/dcrstakepool):
-
-Privacy improvements
-
-* work started to replace Google reCAPTCHA with a self-hosted captcha to avoid stakeholder fingerprinting, testing help welcome https://github.com/decred/dcrstakepool/pull/281
-* self-host charting library to avoid hitting Cloudflare https://github.com/decred/dcrstakepool/pull/283
-* 
-And some general love: links now point to dcrdata explorer, readme updated.
-
-[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher):
-
-* 新分票教程 (英文): https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/
-* 新分票视频 (葡萄牙语 英文字幕): https://www.youtube.com/watch?v=3RGoUQK0g24&feature=share
-* 分票数量增加 {needs volume numbers pulled for verfication}
-* 更新让SPV钱包参与分票 (从 dcrd 到 dcrdata 更改 uxtos lookup): https://github.com/matheusd/dcr-split-ticket-matcher/issues/29
+Ticket splitting support groups exist both on the [Decred Slack](https://decred.slack.com) and in the [Telegram Group](https://t.me/dcrticketsplit) where [VSP agnostic instructions](https://t.me/dcrticketsplit/2666) are availble.
 
 design:
+* https://medium.com/@firethought/base-iconset18-motion-pack-readme-a96f96e868
 
-https://medium.com/@firethought/base-iconset18-motion-pack-readme-a96f96e868
-
-[docs](https://github.com/decred/dcrdocs):
-
-* 重命名 "mining" 改成 "voting", "stakepool" 改成 "VSP" {link}
-* 增加词汇表[Glossary](https://github.com/decred/dcrdocs/pull/675)
-* 重命名 dev fund 改成 "Decred Treasury" https://github.com/decred/dcrdocs/pull/690
-* 新Politeia数据页面 {link}
+[docs](https://github.com/decred/dcrdocs): November was a huge month for documentation with a variety of community supported changes and updates.  The [VSP change language proposal](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75) passed which confirmed a community desire to change "PoS Mining" to "PoS Voting", and from "stakepool" to "Voting Service Provider (VSP)" in all Decred documentation.  Updates included [changes to general documentation](https://github.com/decred/dcrdocs/pull/590) and to the [stakepool page](https://github.com/decred/dcrdocs/pull/724). Updates were made to [adopt the term "Decred Treasury"](https://github.com/decred/dcrdocs/pull/690) for the special address that holds funds coming from the 10% of the block rewards {better wording possible}. For those looking to take a deeper dive into Politeia a new [Navigating Politeia Data](https://docs.decred.org/advanced/navigating-politeia-data/) advanced document was created. The often requested and long awaited [Decred Glossary](https://github.com/decred/dcrdocs/pull/675) was completed and published this month in part due to a huge effort by @s_ben and many people who supported the work with feedback and suggestions.  We highly recommend utilizing [the glossary](https://docs.decred.org/glossary/) to improve our shared community understanding.
 
 [decred.org](https://github.com/decred/dcrweb):
 
-* 重命名 "mining" 改成 "voting", "stakepool" 改成 "VSP" https://github.com/decred/dcrweb/pull/435
+* Rename stake "mining" to "voting", "stakepool" to "VSP" https://github.com/decred/dcrweb/pull/435
 
 Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {} deleted lines spread across {} repositories. Contributions came from {}-{} developers per repository. ([chart]({}))
 
@@ -140,7 +93,14 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 * 提案要求 30 DCR 将项目升级为高级用户，以获得一些宣传福利 包括将 DCR 标志放到主页面上，低交易费，自媒体宣传DCR 等等。 
 
 
-### 交易所
+### 整合
+
+#### 新的投票矿池
+
+* [decred.staked.us](https://decred.staked.us/) with 5% fee. [Staked](https://staked.us/about/) is a company that provides staking services for [multiple](https://staked.us/yields/) cryptocurrencies and has recently [published](https://medium.com/coinmonks/decred-staking-guide-2e569d0390ff) a guide how to stake Decred using their VSP.
+* [dcrpool.dittrex.com](https://dcrpool.dittrex.com) with 1% fee.
+
+#### 交易所
 
 * Bitqist
   * https://www.reddit.com/r/decred/comments/9y5dru/you_can_now_instantly_exchange_decred_on_bitqist/
@@ -150,6 +110,8 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
   * https://twitter.com/kaiserexcom/status/1064494181224206336
   * https://www.kaiserex.com/kaiserex-otc-desk/
   * 最少交易5万欧元
+* DragonEx 龙网交易所增加了DCR/BTC交易对 https://twitter.com/Dragonex_io/status/1062613644276428800
+
 
 
 ### 落地应用
@@ -158,6 +120,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
   * https://flubit.com/
   * https://twitter.com/monetaryunit/status/1062127668769050626
   * https://www.businesswire.com/news/home/20181108005043/en/Crypto-Coins-Drive-Xmas-Strategy-Largest-eShop
+  * [Coinstop](https://coinstop.io/), 澳大利亚的Trezor，Ledger和KeepKey硬件钱包代理，现在已[接受](https://twitter.com/COINSTOPio/status/1067927790320664576)DCR。
 
 
 ### 社区讨论
