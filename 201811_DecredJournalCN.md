@@ -29,24 +29,28 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 [dcrdata](https://github.com/decred/dcrdata): 本月集成到基本代码中的新功能包括[网络哈希表](https://github.com/decred/dcrdata/issues/723)，在导航菜单添加[Decred基金会](https://github.com/decred/dcrdata/issues/784)以及更详细的交易信息，例如在[内存池上显示交易输出花费](https://github.com/decred/dcrdata/issues/825)，在[地址视图上显示交易类型](https://github.com/decred/dcrdata/issues/741)和改进的[时间戳信息](https://github.com/decred/dcrdata/issues/776)。
 
 
-On the dev side, @gozart started an epic refactoring effort to [convert](https://github.com/decred/dcrdata/pull/805) javascript codebase to ES6 modules, add webpack for front end dev tooling and production asset bundling, enforce code style and convert CSS to [SCSS partials](https://github.com/decred/dcrdata/pull/839).
+在开发方面，@gozart开始了重构将javascript代码库[转换](https://github.com/decred/dcrdata/pull/805)到ES6模块，添加用于前端开发工具和生产资产捆绑的webpack，强制执行代码样式并将CSS转换为[SCSS partials](https://github.com/decred/dcrdata/pull/839)。
 
-[dcrstakepool](https://github.com/decred/dcrstakepool): this is the software used by most, if not all VSPs. The README document was [updated](https://github.com/decred/dcrstakepool/pull/285) with build instructions for Go modules. Transaction links were changed from Insight to [dcrdata](https://github.com/decred/dcrstakepool/issues/264).
+[dcrstakepool](https://github.com/decred/dcrstakepool)：这是大多数(如果不是全部)VSP(选票矿池)使用的软件。自述文件[更新](https://github.com/decred/dcrstakepool/pull/285)了包含Go模块的构建说明。交易链接已从Insight更改为[dcrdata](https://github.com/decred/dcrstakepool/issues/264)。
 
-Several privacy issues were discovered and discussed. A patch is being tested to replace Google recaptcha with [self-hosted CAPTCHA](https://github.com/decred/dcrstakepool/pull/281) to avoid fingerprinting of stakeholders. VSP operators are welcome to join testing. Request to Cloudflare [was removed](https://github.com/decred/dcrstakepool/pull/283). An issue to [make email optional](https://github.com/decred/dcrstakepool/issues/274) was raised.
+发现并讨论了几个隐私问题。目前正在测试补丁以[自托管CAPTCHA](https://github.com/decred/dcrstakepool/pull/281)取代Google recaptcha，以避免利益相关者的指纹识别。欢迎VSP(选票矿池)运营商加入测试。[已删除](https://github.com/decred/dcrstakepool/pull/283)对Cloudflare的请求。提出了[让电子邮件可选](https://github.com/decred/dcrstakepool/issues/274)的问题。
 
-[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher): The Ticket Splitting Beta continued to grow during November with split tickets filled daily. Two VSPs that integrated ticket splitting, [decredbrasil.com](https://stake.decredbrasil.com/) and [decredvoting.com](https://decredvoting.com/), released educational [walk-through video](https://www.youtube.com/watch?v=3RGoUQK0g24) in Portuguese and English and a general [ticket splitting overview](https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/), in addition to guides on their sites. The software was updated to support SPV light mode. Please read the [issue](https://github.com/matheusd/dcr-split-ticket-matcher/issues/29) to consider privacy implications.
+[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher)：分票测试版在11月份继续增长，每天都有分票。两个集成了分票的VSP，[decredbrasil.com](https://stake.decredbrasil.com/)和[decredvoting.com](https://decredvoting.com/)，除了他们网站上的指南,还发布了[教程视频](https://www.youtube.com/watch?v=3RGoUQK0g24)(葡萄牙语和英语)以及[分票概述](https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/)。该软件已更新，以支持SPV轻钱包模式。请阅读[问题](https://github.com/matheusd/dcr-split-ticket-matcher/issues/29)以考虑隐私问题。
 
-Ticket splitting support groups exist both on the [Decred Slack](https://decred.slack.com) and in the [Telegram Group](https://t.me/dcrticketsplit) where [VSP agnostic instructions](https://t.me/dcrticketsplit/2666) are availble.
+
+分票支持在[Decred Slack](https://decred.slack.com)和[电报群](https://t.me/dcrticketsplit)中都有[VSP教程](https://t.me/dcrticketsplit/2666)。
 
 design:
 * https://medium.com/@firethought/base-iconset18-motion-pack-readme-a96f96e868
 
-[docs](https://github.com/decred/dcrdocs): November was a huge month for documentation with a variety of community supported changes and updates.  The [VSP change language proposal](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75) passed which confirmed a community desire to change "PoS Mining" to "PoS Voting", and from "stakepool" to "Voting Service Provider (VSP)" in all Decred documentation.  Updates included [changes to general documentation](https://github.com/decred/dcrdocs/pull/590) and to the [stakepool page](https://github.com/decred/dcrdocs/pull/724). Updates were made to [adopt the term "Decred Treasury"](https://github.com/decred/dcrdocs/pull/690) for the special address that holds funds coming from the 10% of the block rewards {better wording possible}. For those looking to take a deeper dive into Politeia a new [Navigating Politeia Data](https://docs.decred.org/advanced/navigating-politeia-data/) advanced document was created. The often requested and long awaited [Decred Glossary](https://github.com/decred/dcrdocs/pull/675) was completed and published this month in part due to a huge effort by @s_ben and many people who supported the work with feedback and suggestions.  We highly recommend utilizing [the glossary](https://docs.decred.org/glossary/) to improve our shared community understanding.
+
+[docs](https://github.com/decred/dcrdocs)：11月对于文档来说是一个巨大的月份。这文档包含各种社区支持的更改和更新。[VSP更改语言提案](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75)通过，证实了社区希望在所有Decred文档中将“PoS Mining”更改为“PoS投票”，并从“stakepool”更改为“Voting Service Provide(VSP)”。更新包括[一般文档的更改](https://github.com/decred/dcrdocs/pull/590)和[选票矿池页面](https://github.com/decred/dcrdocs/pull/724)。
+
+更新基金会[采用“Decred Treasury”](https://github.com/decred/dcrdocs/pull/690)，该基金会地址持有来自区块奖励10％的资金。对于那些希望更深入了解Politeia的人们，我们创建了一个新的"[Politeia数据导航](https://docs.decred.org/advanced/navigating-politeia-data/)"高级文档。经常被要求和期待已久的[Decred Glossary](https://github.com/decred/dcrdocs/pull/675)(Decred词汇)在本月完成并发布，@s_ben和许多支持这项工作的人付出了巨大努力提供反馈和建议。我们强烈建议使用[词汇表](https://docs.decred.org/glossary/)来改善我们对共享社区的理解。
 
 [decred.org](https://github.com/decred/dcrweb):
 
-* Rename stake "mining" to "voting", "stakepool" to "VSP" https://github.com/decred/dcrweb/pull/435
+* 重命名"mining" 改成 "voting", "stakepool" 改成 "VSP" https://github.com/decred/dcrweb/pull/435
 
 Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {} deleted lines spread across {} repositories. Contributions came from {}-{} developers per repository. ([chart]({}))
 
@@ -154,23 +158,35 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 ![PoWStats](img/NOV18_PoWStats.png)
 
+*图片源：https://dcred.eu/powStats*
+
 #### 票价
 
 ![PoWStats](img/NOV18_TicketPrice.png)
 
-#### 锁仓数额 - {截图 https://dcred.eu/posStats}
+*图片源：https://dcred.eu/posStats*
+
+#### 锁仓数额 
 
 ![PoWStats](img/NOV18_DCRLocked.png)
 
-#### 币价 {截图 USD／BTC - https://dcrstats.com/}
+*图片源：https://dcred.eu/posStats*
+
+#### 币价
 
 ![PoWStats](img/NOV18_USDPrice.png)
 
+*图片源：https://dcrstats.com/*
+
 ![PoWStats](img/NOV18_BTCPrice.png)
 
-#### 节点数 {数据 https://dcred.eu/nodeStats}
+*图片源：https://dcrstats.com/*
+
+#### 节点数
 
 ![PoWStats](img/NOV18_NodesCount.png)
+
+*图片源：https://dcred.eu/nodeStats*
 
 
 ### Decred 相关新闻
