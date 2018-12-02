@@ -16,7 +16,7 @@ Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多�
 
 Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7-1-developed-by-the-community-for-the-community-c4b965741ca3) 支持Decred的最新固件 version 2.0.9。感谢 @matheusd。现在Decrediton开发员可以开始整合的工作了。
 
-[Politeia](https://github.com/decred/politeia):感谢@iemlisted的报告，修补了一个[小漏洞](https://github.com/decred/politeia/issues/563)。 [politeiavoter](https://github.com/decred/politeia/tree/master/politeiavoter)获得了隐私改进{try to find a link}。 根据大众需求，创建了一个[电子邮件通知系统](https://github.com/decred/politeiagui/pull/919)，以支持对新提案和评论更新消息{pr 919仅提及评论，是否还有新提案的公关？}。通过[票证功能搜索](https://github.com/decred/politeiagui/pull/899)可以验证投票{与开发者核实并澄清票证搜索是客户端，票证不会发送到服务器以保护隐私}。 请注意，某些功能只会在下次[主网站](https://proposals.decred.org/)下次更新后才能体现。
+[Politeia](https://github.com/decred/politeia):感谢@iemlisted的报告，修补了一个[小漏洞](https://github.com/decred/politeia/issues/563)。 [politeiavoter](https://github.com/decred/politeia/tree/master/politeiavoter)获得了隐私改进{try to find a link}。 根据大众需求，创建了一个[电子邮件通知系统](https://github.com/decred/politeiagui/pull/919)，以支持对新提案和评论更新消息{pr 919仅提及评论，是否还有新提案的公关？}。通过[票证功能搜索](https://github.com/decred/politeiagui/pull/899)可以验证投票{与开发者核实并澄清票证搜索是客户端，票证不会发送到服务器以保护隐私}。 "结束" 选项被 [分成](https://github.com/decred/politeiagui/issues/904) "通过" 和 "不通过" 选项。请注意，某些功能只会在下次[主网站](https://proposals.decred.org/)下次更新后才能体现。
 
 针对查看提案修订[之间的差异](https://github.com/decred/politeiagui/issues/754)已完成[两个](https://github.com/decred/politeia/pull/613)[步骤](https://github.com/decred/politeiagui/pull/906),[突出显示新评论](https://github.com/decred/politeiagui/pull/897)的工作也已经开启。
 
@@ -96,13 +96,21 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 * Easyrabbit 交易所已于10月底上线DCR交易。
 * 提案要求 30 DCR 将项目升级为高级用户，以获得一些宣传福利 包括将 DCR 标志放到主页面上，低交易费，自媒体宣传DCR 等等。 
 
+### 挖矿
+
+The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/1061521332498624512) 为48 TH/s, 从预期的44 TH/s 提高了9%。[从 Pangolin](https://pangolinminer.com/product/whatsminer-dcr-with-psu-shipout-on-dec-5/)价格为4,850美元。发货延迟以及价格和性能的变化引起了社区[各种意见](https://bitcointalk.org/index.php?topic=5068845.msg47865706#msg47865706)。社区也提起关于最佳实践和关于分销网络以及官方经销商的构成的[混淆](https://www.reddit.com/r/decred/comments/9fdz9d/psa_do_not_purchase_the_whatsminer_44th_decred/)。
+ 竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/ product-detail / asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
 
 ### 整合
 
+Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/1067110171057381376)和Matrix的[#pow-mining](https://matrix.to/#/!NNzHoaSdnsbZDQOXJr:decred.org/$154325337225556ClvOt:decred.org)公布Decred算力提高了3-5%。
+
+[Appcivico](https://appcivico.com/pt/),一家通过区块链锚定致力于政治透明度和可靠性的巴西公司，宣布了[首个竞选总统候选人](https://t.co/iUu4MSrBuF)使用其竞选财务透明度系统。Marina Silva虽然未能成为巴西第二位女总统，但却成为第一个利用[Voto法律系统](https://votolegal.com.br/)的候选人-加入约130名自愿加入的候选人，贡献数据到Decred区块链中。
+
 #### 新的投票矿池
 
-* [decred.staked.us](https://decred.staked.us/) with 5% fee. [Staked](https://staked.us/about/) is a company that provides staking services for [multiple](https://staked.us/yields/) cryptocurrencies and has recently [published](https://medium.com/coinmonks/decred-staking-guide-2e569d0390ff) a guide how to stake Decred using their VSP.
-* [dcrpool.dittrex.com](https://dcrpool.dittrex.com) with 1% fee.
+* [decred.staked.us](https://decred.staked.us/) 5% 矿池费。[Staked](https://staked.us/about/)是一个提供[多个](https://staked.us/yields/)加密货币矿池服务的公司，最近[发布](https://medium.com/coinmonks/decred-staking-guide-2e569d0390ff)了一个如何使用他们投票矿池投Decred的教程。
+* [dcrpool.dittrex.com](https://dcrpool.dittrex.com) 1% 矿池费。
 
 #### 交易所
 
@@ -188,11 +196,6 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 *图片源：https://dcred.eu/nodeStats*
 
-
-### Decred 相关新闻
-* 标题 1 - 链接 1
-* 标题 2 - 链接 2
-
 ### 中文媒体／文章链接
 * [老胡评测：比特币核心团队开发永不分裂的币DCR](https://www.jinse.com/bitcoin/265836.html)
 * [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
@@ -202,7 +205,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 ### 英文媒体链接
 
-Featured articles:
+#### Featured articles:
 
 * {1007} Blockchain forks and chain splits: why we should avoid them by @Haon ([medium](https://blog.goodaudience.com/blockchain-forks-and-chain-splits-why-we-should-avoid-them-f54c693a90f1))
 * {1105} https://www.coinbureau.com/interview/marco-peereboom-decred/
@@ -212,20 +215,20 @@ Featured articles:
 * {1117} https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3
 * {1126} https://medium.com/@richardred/hash-war-theater-67d3fcac3e97
 
-Articles:
+#### Articles:
 
 * {1103} https://coiniq.com/decred-review/
 * {1112} https://medium.com/@info_5576/staking-coins-part-3-decred-83d73f29038d
 * {1122} https://captainaltcoin.com/smaller-pow-coins-are-in-constant-danger-of-51-attacks-decred-dcr-governance-model-is-the-solution/
 
-Translations:
+#### Translations:
 
 * @zubairzia0's [Blockchain governance: how Decred iterates upon Bitcoin](https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e) [in Chinese](https://medium.com/@guang.dcr/%E8%AF%91%E6%96%87-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%B2%BB%E7%90%86-decred%E5%A6%82%E4%BD%95%E8%BF%AD%E4%BB%A3%E6%AF%94%E7%89%B9%E5%B8%81-53f434b26105) by @guang
 * @thedecreddigest's [Decred: Where did it all begin?](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/) [in Spanish](https://medium.com/@decred_es/decred-d%C3%B3nde-comenz%C3%B3-todo-aaa49fed0091) by @elian
 * @jy-p's [Decred Recruiting](https://blog.decred.org/2017/07/25/Decred-Recruiting/) [in Spanish](https://medium.com/@decred_es/c%C3%B3mo-ser-contratista-en-decred-d0f05386f799) by @elian
 * Decred Journal - October 2018 [in Russian](https://medium.com/decred-russia/decred-journal-%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C-2018-1eeffc65344c) by @DZ
 
-Videos:
+#### Videos:
 
 * {1105} Decred Semanal 29/10 - 04/11 (Politeia, Votações, Ditto (Marketing Internacional, Exchange) ([youtube](https://www.youtube.com/watch?v=tIvCFk1Prck))
 * {1105} https://www.youtube.com/watch?v=MgtBRlAfu2k
