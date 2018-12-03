@@ -6,9 +6,12 @@ Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多�
 
 在社区的兴奋，成长和变化中，Decred保持项目的更新步伐。桌面和移动钱包的测试版本表现出Decred一贯对稳定和创新的传统坚持。
 
-### 开发进展总结
+## 开发进展总结
 
 [dcrd](https://github.com/decred/dcrd): [UTXO反转的设置语义](https://github.com/decred/dcrd/pull/1471)合并是一项重要的更改，将提供更简单有效率的处理未花费的交易输出。这在区块重组测试运行是速度提高了40％。随附的[数据库迁移](https://github.com/decred/dcrd/pull/1520)将合并，并在下一个主要版本发布中添加。
+
+[dcrd](https://github.com/decred/dcrd): 上个月开始的两个重大的更改在经过大量测试后合并。第一个是[UTXO反转的设置语义](https://github.com/decred/dcrd/pull/1471) 随附的[数据库迁移](https://github.com/decred/dcrd/pull/1520)， 这是一项重要的更改，将提供更简单有效率的处理未花费的交易输出。这样做的额外好处是让区块重组测试运行时速度提高了40％。第二个是[优化重组处理](https://github.com/decred/dcrd/pull/1500)。新的[--maxsameip](https://github.com/decred/dcrd/pull/1517)参数允许限制具有相同IP地址的连接数。修复了一个从上游btcd[移植](https://github.com/decred/dcrd/pull/1533)过来，超级罕见的bug。
+
 
 [dcrwallet](https://github.com/decred/dcrwallet):随着使用量增加，默认监视地址数量变得有限，并且dcrwallet配置文件修改作为解决方案。这个[监视地址问题](https://github.com/decred/dcrwallet/pull/1320)默认本月修改。其他少见的用例修复包括可能[遗漏或双重交易](https://github.com/decred/dcrwallet/pull/1321)及[锁定余额计算的改进](https://github.com/decred/dcrwallet/pull/1330)。
 
@@ -20,13 +23,13 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 针对查看提案修订[之间的差异](https://github.com/decred/politeiagui/issues/754)已完成[两个](https://github.com/decred/politeia/pull/613)[步骤](https://github.com/decred/politeiagui/pull/906),[突出显示新评论](https://github.com/decred/politeiagui/pull/897)的工作也已经开启。
 
-
 [Android](https://github.com/decred/dcrandroid):安卓版Decred钱包开发在本月实现了一次飞跃-在[Google Play商店](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)推出了预发布版本。 Play商店版本包括更新的货币转换，以[本地货币显示费用](https://github.com/decred/dcrandroid/issues/192)和[高级密码保护](https://github.com/decred/dcrandroid/issues/134)，能够[锁定所有数据](https://github.com/decred/dcrandroid/issues/187)并使用[访问密码](https://github.com/decred/dcrandroid/issues/180)。此版本还包括一个安全菜单，允许用户[签署](https://github.com/decred/dcrandroid/issues/226)证明地址所有权的消息。 另一个成功实施的社区创新是“[隐藏帐户](https://github.com/decred/dcrandroid/issues/175)”功能。隐藏帐户允许移动用户将资金存放在他们的移动钱包中，但资金将不会显示在主屏幕余额上。在本地聚会交易Decred的社区成员为这项功能提供的额外隐私和安全感到兴奋。账户之间的资金转账在本月也得到了升级，只需简单的[下拉选择](https://github.com/decred/dcrandroid/issues/119)让转账更快速简便。
 
 [iOS](https://github.com/raedahgroup/dcrios):iOS移动钱包目前正处于测试阶段，需要额外的开发周期才能合并Android上提供的功能集。
 
-
 [dcrdata](https://github.com/decred/dcrdata): 本月集成到基本代码中的新功能包括[网络哈希表](https://github.com/decred/dcrdata/issues/723)，在导航菜单添加[Decred基金会](https://github.com/decred/dcrdata/issues/784)以及更详细的交易信息，例如在[内存池上显示交易输出花费](https://github.com/decred/dcrdata/issues/825)，在[地址视图上显示交易类型](https://github.com/decred/dcrdata/issues/741)和改进的[时间戳信息](https://github.com/decred/dcrdata/issues/776)。
+
+预览[新网页](https://github.com/decred/dcrdata/pull/718), along with all new features is available on the [alpha site](https://alpha.dcrdata.org/nexthome) which runs v3.2.0-pre built from master. A more stable [beta site](https://beta.dcrdata.org/) runs v3.1.0-beta. The most stable [explorer.dcrdata.org](https://explorer.dcrdata.org/) runs v3.0.2-release. For consistency with Insight links, the latter is also accessible at [mainnet.dcrdata.org](https://mainnet.dcrdata.org/).
 
 
 在开发方面，@gozart开始了重构将javascript代码库[转换](https://github.com/decred/dcrdata/pull/805)到ES6模块，添加用于前端开发工具和生产资产捆绑的webpack，强制执行代码样式并将CSS转换为[SCSS partials](https://github.com/decred/dcrdata/pull/839)。
@@ -37,12 +40,9 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 [Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher)：分票测试版在11月份继续增长，每天都有分票。两个集成了分票的VSP，[decredbrasil.com](https://stake.decredbrasil.com/)和[decredvoting.com](https://decredvoting.com/)，除了他们网站上的指南,还发布了[教程视频](https://www.youtube.com/watch?v=3RGoUQK0g24)(葡萄牙语和英语)以及[分票概述](https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/)。该软件已更新，以支持SPV轻钱包模式。请阅读[问题](https://github.com/matheusd/dcr-split-ticket-matcher/issues/29)以考虑隐私问题。
 
-
 分票支持在[Decred Slack](https://decred.slack.com)和[电报群](https://t.me/dcrticketsplit)中都有[VSP教程](https://t.me/dcrticketsplit/2666)。
 
-design:
-* https://medium.com/@firethought/base-iconset18-motion-pack-readme-a96f96e868
-
+[design](https://github.com/decred/dcrdesign): Kyle 在[Firethought](https://firethought.net/) 中发布了[Decred图标动态包](https://medium.com/@firethought/base-iconset18-motion-pack-readme-a96f96e868)。以[eeter.co](http://www.eeter.co/)设计的图标包为基础构建的图标包将带来“更具吸引力的Decred应用程序体验”
 
 [docs](https://github.com/decred/dcrdocs)：11月对于文档来说是一个巨大的月份。这文档包含各种社区支持的更改和更新。[VSP更改语言提案](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75)通过，证实了社区希望在所有Decred文档中将“PoS Mining”更改为“PoS投票”，并从“stakepool”更改为“Voting Service Provide(VSP)”。更新包括[一般文档的更改](https://github.com/decred/dcrdocs/pull/590)和[选票矿池页面](https://github.com/decred/dcrdocs/pull/724)。
 
@@ -54,10 +54,18 @@ design:
 
 Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {} deleted lines spread across {} repositories. Contributions came from {}-{} developers per repository. ([chart]({}))
 
+### Interviews
 
-### Politeia提案系统总结
+Crypto enthusiast [Arikozel](https://medium.com/@artikozel) interviewed the operator of long established [coinmine.pl](https://www2.coinmine.pl/) Feeleep for a [deep dive into Decred infrastructure](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4).  Marco Peereboom of the Decred Project gave an [extended interview with Paul Snow](https://www.youtube.com/watch?v=qCQB-h3Vx90) after the Texas Bitcoin Conference discussing the behind the scenes history of Decred and other open source projects.  Crypto with Chingas [interviewed Joshua Buirski of the Decred Project](https://www.youtube.com/watch?v=o5jSLGiAdb8) about the importance of dispute resolution in a decentralized project.  In early November the [video playlist from TBC 2018](https://www.youtube.com/playlist?list=PLlLSsIJ2O_cTIaALNXExlEqu3jP6IQyc_) was released with talks from [Jonathan Chappelow](https://www.youtube.com/watch?v=axTl2J94IrI&list=PLlLSsIJ2O_cTIaALNXExlEqu3jP6IQyc_&index=20&t=0s), [Denys Zayets](https://www.youtube.com/watch?v=8K7A_j5_VIU&list=PLlLSsIJ2O_cTIaALNXExlEqu3jP6IQyc_&index=23&t=0s), [PlaceHolderVC](https://www.youtube.com/watch?v=tkllaH0Y0ng&list=PLlLSsIJ2O_cTIaALNXExlEqu3jP6IQyc_&index=27&t=0s), [Joshua Buirski](https://www.youtube.com/watch?v=RPeN66ZkAps&list=PLlLSsIJ2O_cTIaALNXExlEqu3jP6IQyc_&index=48&t=0s) and more so if you missed the conference you have a second chance to reap the insights.
 
-#### 本月完成投票 - 6 份 
+
+## Politeia提案系统总结
+
+@snr01 提供了图表。团队开启了＃proposals 和 #research中的Politeia数据整理工作。
+
+深入讨论了低质量的提案会使得Politeia混乱，并提出了多种想法。 @richardred在Politeia Digest＃4中对此进行了很好的概述。
+
+### 本月完成投票 - 6 份 
 
 **1.[Decred Contractor Clearance Process](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4)** 
 
@@ -96,28 +104,63 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 * Easyrabbit 交易所已于10月底上线DCR交易。
 * 提案要求 30 DCR 将项目升级为高级用户，以获得一些宣传福利 包括将 DCR 标志放到主页面上，低交易费，自媒体宣传DCR 等等。 
 
-### 挖矿
+## DCR网络
+### 算力 
+
+![PoWStats](img/NOV18_PoWStats.png)
+
+*图片源：https://dcred.eu/powStats*
+
+### 票价
+
+![PoWStats](img/NOV18_TicketPrice.png)
+
+*图片源：https://dcred.eu/posStats*
+
+### 锁仓数额 
+
+![PoWStats](img/NOV18_DCRLocked.png)
+
+*图片源：https://dcred.eu/posStats*
+
+### 币价
+
+![PoWStats](img/NOV18_USDPrice.png)
+
+*图片源：https://dcrstats.com/*
+
+![PoWStats](img/NOV18_BTCPrice.png)
+
+*图片源：https://dcrstats.com/*
+
+### 节点数
+
+![PoWStats](img/NOV18_NodesCount.png)
+
+*图片源：https://dcred.eu/nodeStats*
+
+## 挖矿
 
 The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/1061521332498624512) 为48 TH/s, 从预期的44 TH/s 提高了9%。[从 Pangolin](https://pangolinminer.com/product/whatsminer-dcr-with-psu-shipout-on-dec-5/)价格为4,850美元。发货延迟以及价格和性能的变化引起了社区[各种意见](https://bitcointalk.org/index.php?topic=5068845.msg47865706#msg47865706)。社区也提起关于最佳实践和关于分销网络以及官方经销商的构成的[混淆](https://www.reddit.com/r/decred/comments/9fdz9d/psa_do_not_purchase_the_whatsminer_44th_decred/)。
  竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/ product-detail / asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
 
-### 整合
+## 整合
 
 Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/1067110171057381376)和Matrix的[#pow-mining](https://matrix.to/#/!NNzHoaSdnsbZDQOXJr:decred.org/$154325337225556ClvOt:decred.org)公布Decred算力提高了3-5%。
 
-[Appcivico](https://appcivico.com/pt/),一家通过区块链锚定致力于政治透明度和可靠性的巴西公司，宣布了[首个竞选总统候选人](https://t.co/iUu4MSrBuF)使用其竞选财务透明度系统。Marina Silva虽然未能成为巴西第二位女总统，但却成为第一个利用[Voto法律系统](https://votolegal.com.br/)的候选人-加入约130名自愿加入的候选人，贡献数据到Decred区块链中。
-
-#### 新的投票矿池
+### 新的投票矿池
 
 * [decred.staked.us](https://decred.staked.us/) 5% 矿池费。[Staked](https://staked.us/about/)是一个提供[多个](https://staked.us/yields/)加密货币矿池服务的公司，最近[发布](https://medium.com/coinmonks/decred-staking-guide-2e569d0390ff)了一个如何使用他们投票矿池投Decred的教程。
 * [dcrpool.dittrex.com](https://dcrpool.dittrex.com) 1% 矿池费。
 
-#### 交易所
+### 交易所
 
 * Bitqist
   * https://www.reddit.com/r/decred/comments/9y5dru/you_can_now_instantly_exchange_decred_on_bitqist/
   * https://bitqist.com/exchange/decred
   * https://support.bitqist.com/hc/en-us/articles/360003566512-About-Us
+  * cannot deposit DCR but can withdraw https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$154342154026995puxog:decred.org
+
 * Kaiserex 建立Decred OTC 场外交易服务
   * https://twitter.com/kaiserexcom/status/1064494181224206336
   * https://www.kaiserex.com/kaiserex-otc-desk/
@@ -125,14 +168,13 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * DragonEx 龙网交易所增加了DCR/BTC交易对 https://twitter.com/Dragonex_io/status/1062613644276428800
 
 
-
-### 落地应用
+## 落地应用
 
 * 英国电商 Flubit 支持Decred付费
   * https://flubit.com/
   * https://twitter.com/monetaryunit/status/1062127668769050626
   * https://www.businesswire.com/news/home/20181108005043/en/Crypto-Coins-Drive-Xmas-Strategy-Largest-eShop
-  * [Coinstop](https://coinstop.io/), 澳大利亚的Trezor，Ledger和KeepKey硬件钱包代理，现在已[接受](https://twitter.com/COINSTOPio/status/1067927790320664576)DCR。
+* [Coinstop](https://coinstop.io/), 澳大利亚的Trezor，Ledger和KeepKey硬件钱包代理，现在已[接受](https://twitter.com/COINSTOPio/status/1067927790320664576)DCR。
 
 
 ### 社区讨论
@@ -154,47 +196,12 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * [Web Summit](https://websummit.com/) 葡萄牙里斯本 11月 5-8.社区成员 @heyvj 和 @jholdstock 提交了[会议报告](https://github.com/heyvj/decred-events/blob/master/reports/20181106-Web-Summit-Lisbon.md)
 * [PDX Blockchain Summit & Hackathon](https://pdxblockchainsummit.org) 美国 波特兰(Portland)Nov 11. Raedah Group 分享 Decred 和 去中心化治理。
 * [Blockmaster](https://www.blockmaster.com.br/eventos/forum-blockmaster-2018-sao-paulo/)巴西 圣保罗Nov 13. @Rhama 分享 Decred 和 Politeia.
-* [BlockchainFiesta](http://blockchainfiesta.io/) 波兰 克拉科夫(Krakow) Nov 16. 社区成员 @artikozel & @donmario在会议后整理提交了一份[会议报告](https://github.com/artikozel/decred-events/blob/patch-1/reports/20181116-Blockchain-Fiesta-Krakow.md)
+* [BlockchainFiesta](http://blockchainfiesta.io/) 波兰 克拉科夫(Krakow) Nov 16. 社区成员 @artikozel & @donmario在会议后整理提交了一份[会议报告](https://github.com/artikozel/decred-events/blob/patch-1/reports/20181116-Blockchain-Fiesta-Krakow.md)和[照片](https://photos.google.com/share/AF1QipOhLa_L0g5NrBWzKFTxMeDD7VJeUBzHzEyker-DRdZGuQoXS9ogpN3waxW26vj0CQ?key=Ty1jZ1NYRkdTY0dRRmNLc1JGcTdNby1BUlZ0eGZ3)
 * [Blockchain Melbourne](https://www.meetup.com/BlockchainMelbourne/events/256295215/)澳大利亚 墨尔本 Nov 20. Henrik Andersson, [Apollo Capital](https://www.apollocap.io/) CIO, 分享对Decred的投资分析
 
 #### 未来 {参考英文月报}
 * 活动 1 
 * 活动 2 
-
-### DCR网络
-#### 算力 
-
-![PoWStats](img/NOV18_PoWStats.png)
-
-*图片源：https://dcred.eu/powStats*
-
-#### 票价
-
-![PoWStats](img/NOV18_TicketPrice.png)
-
-*图片源：https://dcred.eu/posStats*
-
-#### 锁仓数额 
-
-![PoWStats](img/NOV18_DCRLocked.png)
-
-*图片源：https://dcred.eu/posStats*
-
-#### 币价
-
-![PoWStats](img/NOV18_USDPrice.png)
-
-*图片源：https://dcrstats.com/*
-
-![PoWStats](img/NOV18_BTCPrice.png)
-
-*图片源：https://dcrstats.com/*
-
-#### 节点数
-
-![PoWStats](img/NOV18_NodesCount.png)
-
-*图片源：https://dcred.eu/nodeStats*
 
 ### 中文媒体／文章链接
 * [老胡评测：比特币核心团队开发永不分裂的币DCR](https://www.jinse.com/bitcoin/265836.html)
@@ -214,12 +221,17 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * {1115} https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e
 * {1117} https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3
 * {1126} https://medium.com/@richardred/hash-war-theater-67d3fcac3e97
+* {1129} https://bithub.pl/artykuly/czym-jest-decred/ (in Polish)
+
 
 #### Articles:
 
 * {1103} https://coiniq.com/decred-review/
 * {1112} https://medium.com/@info_5576/staking-coins-part-3-decred-83d73f29038d
 * {1122} https://captainaltcoin.com/smaller-pow-coins-are-in-constant-danger-of-51-attacks-decred-dcr-governance-model-is-the-solution/
+* {1122} [DCR balances equity distribution through a hybrid consensus mechanism](https://michelangelo.sncrating.com/report/168)(CN) by sncrating.com
+* {1124} [Rating article review - DCR balances equity distribution through a hybrid consensus mechanism](https://medium.com/@guang.dcr/%E8%A7%A3%E6%9E%90%E8%AF%84%E7%BA%A7-dcr-%E9%80%9A%E8%BF%87%E6%B7%B7%E5%90%88%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6%E5%B9%B3%E8%A1%A1%E6%9D%83%E7%9B%8A%E5%88%86%E9%85%8D-%E6%A0%87%E5%87%86%E5%85%B1%E8%AF%86%E8%AF%84%E7%BA%A7-5edc6f03dc1c)(CN) by @guang
+* {1124} [Decred Split Ticket](https://medium.com/@guang.dcr/%E6%89%AB%E7%9B%B2-decred%E5%88%86%E7%A5%A8-ffe3eb2de64d)(CN) by @guang
 
 #### Translations:
 
@@ -227,6 +239,8 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * @thedecreddigest's [Decred: Where did it all begin?](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/) [in Spanish](https://medium.com/@decred_es/decred-d%C3%B3nde-comenz%C3%B3-todo-aaa49fed0091) by @elian
 * @jy-p's [Decred Recruiting](https://blog.decred.org/2017/07/25/Decred-Recruiting/) [in Spanish](https://medium.com/@decred_es/c%C3%B3mo-ser-contratista-en-decred-d0f05386f799) by @elian
 * Decred Journal - October 2018 [in Russian](https://medium.com/decred-russia/decred-journal-%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C-2018-1eeffc65344c) by @DZ
+* @kozel's [Decred Infrastructure Interviews: feeleep, Operator, coinmine.pl](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4) [in Polish](https://medium.com/decred-polska/decred-interesuj%C4%85cy-i-nieszablonowy-wywiad-z-operatorem-coinmine-pl-11e92657136e) by @kozel
+
 
 #### Videos:
 
@@ -234,6 +248,7 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * {1105} https://www.youtube.com/watch?v=MgtBRlAfu2k
 * {1106} Decred im Coincheck - Zahlen, Daten und Fakten ([youtube](https://www.youtube.com/watch?v=mHpqDpSd0Fs))
 * {1109} Politeia, como funciona Os desenvolvedores Fernando e Tiago Alves explicam ([youtube](https://www.youtube.com/watch?v=usWrs9B2Rm4), featuring @Tiago Alves and @fernandoabolafio)
+* {1130} Obelisk DCR1 Review ([youtube](https://www.youtube.com/watch?v=U0QjhvaoQpc))
 
 
 ### 中文社区 
@@ -248,3 +263,7 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
 
 月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
+
+
+------------
+[Appcivico](https://appcivico.com/pt/),一家通过区块链锚定致力于政治透明度和可靠性的巴西公司，宣布了[首个竞选总统候选人](https://t.co/iUu4MSrBuF)使用其竞选财务透明度系统。Marina Silva虽然未能成为巴西第二位女总统，但却成为第一个利用[Voto法律系统](https://votolegal.com.br/)的候选人-加入约130名自愿加入的候选人，贡献数据到Decred区块链中。
