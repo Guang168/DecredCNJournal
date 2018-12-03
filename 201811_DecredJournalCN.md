@@ -33,8 +33,7 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 [dcrdata](https://github.com/decred/dcrdata): 本月集成到基本代码中的新功能包括[网络哈希表](https://github.com/decred/dcrdata/issues/723)，在导航菜单添加[Decred基金会](https://github.com/decred/dcrdata/issues/784)以及更详细的交易信息，例如在[内存池上显示交易输出花费](https://github.com/decred/dcrdata/issues/825)，在[地址视图上显示交易类型](https://github.com/decred/dcrdata/issues/741)和改进的[时间戳信息](https://github.com/decred/dcrdata/issues/776)。
 
-预览[新网页](https://github.com/decred/dcrdata/pull/718), along with all new features is available on the [alpha site](https://alpha.dcrdata.org/nexthome) which runs v3.2.0-pre built from master. A more stable [beta site](https://beta.dcrdata.org/) runs v3.1.0-beta. The most stable [explorer.dcrdata.org](https://explorer.dcrdata.org/) runs v3.0.2-release. For consistency with Insight links, the latter is also accessible at [mainnet.dcrdata.org](https://mainnet.dcrdata.org/).
-
+预览[新网页](https://github.com/decred/dcrdata/pull/718),及所有的新功能都已上线[alpha网站](https://alpha.dcrdata.org/nexthome)。目前它运行的是master的v3.2.0-pre built。更稳定的[beta网站](https://beta.dcrdata.org/)运行v3.1.0-beta。最稳定的[explorer.dcrdata.org](https://explorer.dcrdata.org/)运行的是v3.0.2-发布。为了与Insight链接保持一致,后者也可到[mainnet.dcrdata.org](https://mainnet.dcrdata.org/)访问。
 
 在开发方面，@gozart开始了重构将javascript代码库[转换](https://github.com/decred/dcrdata/pull/805)到ES6模块，添加用于前端开发工具和生产资产捆绑的webpack，强制执行代码样式并将CSS转换为[SCSS partials](https://github.com/decred/dcrdata/pull/839)。
 
@@ -145,7 +144,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 ## 挖矿
 
 The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/1061521332498624512) 为48 TH/s, 从预期的44 TH/s 提高了9%。[从 Pangolin](https://pangolinminer.com/product/whatsminer-dcr-with-psu-shipout-on-dec-5/)价格为4,850美元。发货延迟以及价格和性能的变化引起了社区[各种意见](https://bitcointalk.org/index.php?topic=5068845.msg47865706#msg47865706)。社区也提起关于最佳实践和关于分销网络以及官方经销商的构成的[混淆](https://www.reddit.com/r/decred/comments/9fdz9d/psa_do_not_purchase_the_whatsminer_44th_decred/)。
- 竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/ product-detail / asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
+ 竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/product-detail/asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
 
 ## 整合
 
@@ -180,7 +179,7 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * [Coinstop](https://coinstop.io/), 澳大利亚的Trezor，Ledger和KeepKey硬件钱包代理，现在已[接受](https://twitter.com/COINSTOPio/status/1067927790320664576)DCR。
 
 
-### 社区讨论
+## 社区讨论
 
 *  讨论 - @Dante正编写节点教程，希望鼓励更多人运行DCR节点。全节点完全是义务贡献没有任何短期收益，只是如果大家都能搭建全节点，网络的健壮性强。比特币现有10000多节点，所以抗打击性很强。DCR想变更安全更去中心化必需把节点数也拉起来。 
 *  讨论 - @Neil 与社区讨论DCR的抗分叉性。翻译文章-[详细分析Decred的分叉抵抗性](https://www.dcr66.com/threads/decred.40/) 重新被分享并讨论。
@@ -193,8 +192,8 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 
 
 
-### 社区活动
-#### 过去 {参考英文月报}
+## 社区活动
+### 过去 {参考英文月报}
 
 * [Web Summit](https://websummit.com/) 葡萄牙里斯本 11月 5-8.社区成员 @heyvj 和 @jholdstock 提交了[会议报告](https://github.com/heyvj/decred-events/blob/master/reports/20181106-Web-Summit-Lisbon.md)
 * [PDX Blockchain Summit & Hackathon](https://pdxblockchainsummit.org) 美国 波特兰(Portland)Nov 11. Raedah Group 分享 Decred 和 去中心化治理。
@@ -206,16 +205,16 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * 活动 1 
 * 活动 2 
 
-### 中文媒体／文章链接
+## 中文媒体／文章链接
 * [老胡评测：比特币核心团队开发永不分裂的币DCR](https://www.jinse.com/bitcoin/265836.html)
 * [区块链治理：Decred如何迭代比特币](https://medium.com/@guang.dcr/%E8%AF%91%E6%96%87-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%B2%BB%E7%90%86-decred%E5%A6%82%E4%BD%95%E8%BF%AD%E4%BB%A3%E6%AF%94%E7%89%B9%E5%B8%81-53f434b26105) 
 * [DCR 通过混合共识机制平衡权益分配｜标准共识评级](https://michelangelo.sncrating.com/report/168)
 * [解析评级 — DCR 通过混合共识机制平衡权益分配](https://medium.com/@guang.dcr/%E8%A7%A3%E6%9E%90%E8%AF%84%E7%BA%A7-dcr-%E9%80%9A%E8%BF%87%E6%B7%B7%E5%90%88%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6%E5%B9%B3%E8%A1%A1%E6%9D%83%E7%9B%8A%E5%88%86%E9%85%8D-%E6%A0%87%E5%87%86%E5%85%B1%E8%AF%86%E8%AF%84%E7%BA%A7-5edc6f03dc1c)
 * [扫盲-Decred分票](https://medium.com/@guang.dcr/%E6%89%AB%E7%9B%B2-decred%E5%88%86%E7%A5%A8-ffe3eb2de64d)
 
-### 英文媒体链接
+## 英文媒体链接
 
-#### Featured articles:
+### Featured articles:
 
 * {1007} Blockchain forks and chain splits: why we should avoid them by @Haon ([medium](https://blog.goodaudience.com/blockchain-forks-and-chain-splits-why-we-should-avoid-them-f54c693a90f1))
 * {1105} https://www.coinbureau.com/interview/marco-peereboom-decred/
@@ -226,8 +225,7 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * {1126} https://medium.com/@richardred/hash-war-theater-67d3fcac3e97
 * {1129} https://bithub.pl/artykuly/czym-jest-decred/ (in Polish)
 
-
-#### Articles:
+### Articles:
 
 * {1103} https://coiniq.com/decred-review/
 * {1112} https://medium.com/@info_5576/staking-coins-part-3-decred-83d73f29038d
@@ -236,7 +234,7 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * {1124} [Rating article review - DCR balances equity distribution through a hybrid consensus mechanism](https://medium.com/@guang.dcr/%E8%A7%A3%E6%9E%90%E8%AF%84%E7%BA%A7-dcr-%E9%80%9A%E8%BF%87%E6%B7%B7%E5%90%88%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6%E5%B9%B3%E8%A1%A1%E6%9D%83%E7%9B%8A%E5%88%86%E9%85%8D-%E6%A0%87%E5%87%86%E5%85%B1%E8%AF%86%E8%AF%84%E7%BA%A7-5edc6f03dc1c)(CN) by @guang
 * {1124} [Decred Split Ticket](https://medium.com/@guang.dcr/%E6%89%AB%E7%9B%B2-decred%E5%88%86%E7%A5%A8-ffe3eb2de64d)(CN) by @guang
 
-#### Translations:
+### Translations:
 
 * @zubairzia0's [Blockchain governance: how Decred iterates upon Bitcoin](https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e) [in Chinese](https://medium.com/@guang.dcr/%E8%AF%91%E6%96%87-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%B2%BB%E7%90%86-decred%E5%A6%82%E4%BD%95%E8%BF%AD%E4%BB%A3%E6%AF%94%E7%89%B9%E5%B8%81-53f434b26105) by @guang
 * @thedecreddigest's [Decred: Where did it all begin?](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/) [in Spanish](https://medium.com/@decred_es/decred-d%C3%B3nde-comenz%C3%B3-todo-aaa49fed0091) by @elian
@@ -244,8 +242,7 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * Decred Journal - October 2018 [in Russian](https://medium.com/decred-russia/decred-journal-%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C-2018-1eeffc65344c) by @DZ
 * @kozel's [Decred Infrastructure Interviews: feeleep, Operator, coinmine.pl](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4) [in Polish](https://medium.com/decred-polska/decred-interesuj%C4%85cy-i-nieszablonowy-wywiad-z-operatorem-coinmine-pl-11e92657136e) by @kozel
 
-
-#### Videos:
+### Videos:
 
 * {1105} Decred Semanal 29/10 - 04/11 (Politeia, Votações, Ditto (Marketing Internacional, Exchange) ([youtube](https://www.youtube.com/watch?v=tIvCFk1Prck))
 * {1105} https://www.youtube.com/watch?v=MgtBRlAfu2k
@@ -254,7 +251,7 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 * {1130} Obelisk DCR1 Review ([youtube](https://www.youtube.com/watch?v=U0QjhvaoQpc))
 
 
-### 中文社区 
+## 中文社区 
 
 * [微博](https://www.weibo.com/DecredProject)
 * 微信群
@@ -267,6 +264,3 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 
 月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
 
-
-------------
-[Appcivico](https://appcivico.com/pt/),一家通过区块链锚定致力于政治透明度和可靠性的巴西公司，宣布了[首个竞选总统候选人](https://t.co/iUu4MSrBuF)使用其竞选财务透明度系统。Marina Silva虽然未能成为巴西第二位女总统，但却成为第一个利用[Voto法律系统](https://votolegal.com.br/)的候选人-加入约130名自愿加入的候选人，贡献数据到Decred区块链中。
