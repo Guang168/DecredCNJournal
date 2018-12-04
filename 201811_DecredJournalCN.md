@@ -57,15 +57,21 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 夏天时[@30000fps](https://twitter.com/30000fps)开始对动画设计和图像做出贡献
 
-恭喜5位新贡献者[列入](https://github.com/decred/dcrweb/pull/444)decred.org: Insaf Nori (@butterfly), Guang (@guang), Seth Benton (@s_ben), Youssef Boukenken (@sef), Zubair Zia (@zubairzia0)。
+恭喜5位新贡献者[列入](https://github.com/decred/dcrweb/pull/444)decred.org: Insaf Nori (community manager - Middle East, @butterfly), Guang (community manager - Asia, @guang), Seth Benton (developer, @s_ben), Youssef Boukenken (developer, @sef), Zubair Zia (research and strategy, @zubairzia0)。
+
 @kozel 访问了建立已久[coinmine.pl](https://www2.coinmine.pl/)的运营Feeleep，[深度讨论了Decred的基础设施](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4).
 
 
 ## Politeia提案系统总结
 
-@snr01 提供了图表。团队开启了＃proposals 和 #research中的Politeia数据整理工作。
+团队开启了＃proposals 和 #research中的Politeia数据整理工作。@snr01 分享了[投票数据图表](https://github.com/snr01/PiVotingCharts)。
 
-深入讨论了低质量的提案会使得Politeia混乱，并提出了多种想法。 @richardred在Politeia Digest＃4中对此进行了很好的概述。
+深入讨论了低质量的提案会使得Politeia混乱，并提出了多种想法。 @richardred在[Politeia Digest #4](https://medium.com/politeia-digest/politeia-digest-issue-4-nov-7-nov-13-2018-685e18e7491a)中对此进行了很好的概述。
+
+
+在聊天渠道中的 #proposals 聊天室非常活跃并有着许多对提案系统及提案深入的讨论。欢迎加入 [Matrix](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org)或[Slack](https://decred.slack.com/messages/CDL5DRZU6)。
+
+由@richardred整理每周的Politeia简报 “Politeia Digest” 包含着所有Politeia重要活动的细节。请查阅本月发布的[第4期](https://medium.com/politeia-digest/politeia-digest-issue-4-nov-7-nov-13-2018-685e18e7491a), [第5期](https://medium.com/politeia-digest/issue-5-nov-14-nov-20-2018-62e8aed223b7)及[第6期](https://medium.com/politeia-digest/issue-6-nov-21-nov-27-2018-3260d03d26a1)。同时也可以通过这个[搜索](https://www.reddit.com/r/decred/search?include_over_18=on&restrict_sr=on&q=politeia%20digest)Reddit 讨论区。
 
 ### 本月完成投票 - 6 份 
 
@@ -106,12 +112,65 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 * Easyrabbit 交易所已于10月底上线DCR交易。
 * 提案要求 30 DCR 将项目升级为高级用户，以获得一些宣传福利 包括将 DCR 标志放到主页面上，低交易费，自媒体宣传DCR 等等。 
 
+### 截止12月4日的新提案如下
+
+**[Upgrade mining algorithm to ProgPoW](https://proposals.decred.org/proposals/0aaab331075d08cb03333d5a1bef04b99a708dcbfebc8f8c94040ceb1676e684) 由engineerking于Nov 11提交**
+
+作者提案把Decred的挖矿算法改成[ProgPoW](https://github.com/ifdefelse/ProgPOW)。
+
+状态：作者未授权开启投票
+
+**[Decred Open Source Research proposal 2 - research projects](https://proposals.decred.org/proposals/5d9cfb07aefb338ba1b74f97de16ee651beabc851c7f2b5f790bd88aea23b3cb) 由@richardred于Nov 21提交**
+
+续第一个[研究提案](https://proposals.decred.org/proposals/c68bb790ba0843980bb9695de4628995e75e0d1f36c992951db49eca7b3b4bcd)，目标为搜集并确定研究项目想法的提案
+
+状态：作者未授权开启投票
+
+**[Decred integration into Crypto-ATMs](https://proposals.decred.org/proposals/bb7e19283d5c65fed598d5a2f4afcc2b5d2eab187b9cb84fc4304430f80b5ad1)由 bcashgr于Nov 24提交**
+
+公司名为Bcash提案要求资助把Decred整合到他们提供的提款机中。开发成本 25，000欧元 及 每月 1，650 欧元的维持费。
+
+状态：投票于12月4日开启
+
+**[Decred Radio Advertising, 190+ FM and AM Stations, + Intl. Satellite](https://proposals.decred.org/proposals/7fe5d07a4ffff7dc6a83383018823d880b1c1db0a29305e74934817cf2b4e2ce)由ftl_ian于Nov 26提交**
+
+这项提案要求Decred在一个“Free Talk Live” 的电台做广告。为期13周的成本是 22,750美元
+
+状态：投票于12月4日开启
+
+**[Decredex](https://proposals.decred.org/proposals/e78bc28631d0e682912e3ece25944481bf978b906ea44b1ed36470c0f48b27fc)由fabianreum于Nov 26提交**
+
+提案要求对于公司REUM Ltd开启去中心化交易所工作的资助。总预算为 1,086,500美元。
+
+状态：投票于12月4日开启
+
+**[Add Decred support to Coffee Wallet](https://proposals.decred.org/proposals/45de9806c952c5ffc2fc6782fddbc74c852c26e3fb0e950144b92d75082c4731) 由francio于Nov 29提交**
+
+这项提案要求资助将Decred整合到 “Coffee Wallet” 多币种钱包。要求数额为150DCR 及预期在一月初完成
+
+状态：作者未授权开启投票
+
+**[Stable coin - USDD](https://proposals.decred.org/proposals/85fc65cef080cfc3564906fd3d488b827d74fc99bb29143ed8aa6c400b765be9)由fabianreum 于Nov 29提交**
+
+这项提案要求资助一个Decred背书名为 USDD 的稳定币(stablecoin)项目。4年预算为 1，576，000美金。提案里提供了明细。
+
+状态：作者未授权开启投票
+
+**[Decred Bug Bounty Proposal](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)由@degeri于30 Nov提交**
+
+{PLEASE FILL THIS}
+
+状态：作者未授权开启投票
+
+
 ## DCR网络
 ### 算力 
 
 ![PoWStats](img/NOV18_PoWStats.png)
 
 *图片源：https://dcred.eu/powStats*
+
+算力: 11月算力开始大约156 PH/s 结束大约159 PH/s，之间最低为125 PH/s 最高为234 PH/s。BeePool 矿池份额大约19-30%, F2Pool 15-46%, Luxor 1.6-4%, 及 Coinmine 1.9-4%. 未命名算力保持 25-50% (低点15% 及高点75%)。矿池分布数据无法精确计算。
 
 ### 票价
 
@@ -124,6 +183,10 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 ![PoWStats](img/NOV18_DCRLocked.png)
 
 *图片源：https://dcred.eu/posStats*
+
+投票: 30日 平均票价为 103 DCR (+3.2)。价格与96.7至110.2 DCR之间浮动。锁仓数额为4.02-4.18 百万 DCR, 大约总流通量的 45.9-47.2%。
+
+票价跌到96.7后，在单一时间窗售出了1，378票，票价即时经过9个连续涨价抬至110.2DCR。这是自从2017年7月更改票价算法后的新高。
 
 ### 币价
 
@@ -141,14 +204,21 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 *图片源：https://dcred.eu/nodeStats*
 
+节点: [dcred.eu](https://dcred.eu/nodeStats)显示 Dec 01为止 共有 204 public listening Node 及 332 Normal Node。版本分部: 6.5% 是 v1.4.0(pre) dev builds (+0.5%), 50% 为 v1.3.0 (+5%), 25% 为 v1.2.0 (-3%), 11% 为 v1.1.2 (-3%), 5% 为 v1.1.0。
+
+
 ## 挖矿
 
+Obelisk [开始生产](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=28096412c5) 第 2-5 批矿机 并预期12月初开始发货,之后大约4周后将满足所有订单。他们在12月4日也公布了几个促销：用户可以购买 SC1 hashing boards 安装到DCR1机子上, DCR1也可转换成 第6批 SC1 矿机或由Obelisk回收。细节可参看[通讯文章](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=88576cef2a)。
+
+
 The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/1061521332498624512) 为48 TH/s, 从预期的44 TH/s 提高了9%。[从 Pangolin](https://pangolinminer.com/product/whatsminer-dcr-with-psu-shipout-on-dec-5/)价格为4,850美元。发货延迟以及价格和性能的变化引起了社区[各种意见](https://bitcointalk.org/index.php?topic=5068845.msg47865706#msg47865706)。社区也提起关于最佳实践和关于分销网络以及官方经销商的构成的[混淆](https://www.reddit.com/r/decred/comments/9fdz9d/psa_do_not_purchase_the_whatsminer_44th_decred/)。
- 竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/product-detail/asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
+
+竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/product-detail/asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
 
 ## 整合
 
-Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/1067110171057381376)和Matrix的[#pow-mining](https://matrix.to/#/!NNzHoaSdnsbZDQOXJr:decred.org/$154325337225556ClvOt:decred.org)公布Decred算力提高了3-5%。
+Luxor pool [公布了](https://twitter.com/LuxorTechTeam/status/1067110171057381376) 给Decred矿工 3-5%算力提升
 
 ### 新的投票矿池
 
@@ -157,25 +227,14 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 
 ### 交易所
 
-* Bitqist
-  * https://www.reddit.com/r/decred/comments/9y5dru/you_can_now_instantly_exchange_decred_on_bitqist/
-  * https://bitqist.com/exchange/decred
-  * https://support.bitqist.com/hc/en-us/articles/360003566512-About-Us
-  * cannot deposit DCR but can withdraw https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$154342154026995puxog:decred.org
-
-* Kaiserex 建立Decred OTC 场外交易服务
-  * https://twitter.com/kaiserexcom/status/1064494181224206336
-  * https://www.kaiserex.com/kaiserex-otc-desk/
-  * 最少交易5万欧元
-* DragonEx 龙网交易所增加了DCR/BTC交易对 https://twitter.com/Dragonex_io/status/1062613644276428800
-
+* [Bitqist](https://bitqist.com/) [在r/decred](https://www.reddit.com/r/decred/comments/9y5dru/you_can_now_instantly_exchange_decred_on_bitqist/)公布Decred的整合。交易所[位置](https://support.bitqist.com/hc/en-us/articles/360003566512-About-Us)在荷兰。@Haon [报告](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$154342154026995puxog:decred.org)提币没问题但存币目前未开通。
+* [Kaiserex](https://www.kaiserex.com/)自2015开始牵涉OTC交易，正式[推出](https://twitter.com/kaiserexcom/status/1064494181224206336)[OTC柜台](https://www.kaiserex.com/kaiserex-otc-desk/)。DCR是支持的加密货币之一，法币方面支持的有 USD, EUR, GPB and JPY. 最低交易额是 50,000 欧元，费用为0.05-1%
+* DragonEx 龙网交易所[增加](https://twitter.com/Dragonex_io/status/1062613644276428800)DCR/BTC交易对。
 
 ## 落地应用
 
-* 英国电商 Flubit 支持Decred付费
-  * https://flubit.com/
-  * https://twitter.com/monetaryunit/status/1062127668769050626
-  * https://www.businesswire.com/news/home/20181108005043/en/Crypto-Coins-Drive-Xmas-Strategy-Largest-eShop
+英国假期购物者在这季节多了一个花费Decred的选择。MonetaryUnit[公布](https://twitter.com/monetaryunit/status/1062127668769050626) 在他们夏天收购的英国市场[Flubit](https://flubit.com/)[接受](https://blog.flubit.com/pay-crypto-flubit-com/)DCR。[部落格](https://blog.flubit.com/crypto-coins-drive-xmas-strategy-largest-eshop-200bn-cryptocurrency-industry-goes-mainstream-online-shopping-flubit-com/)文中: Flubit 是个已运作8年，过去一年服务三百万购物者的电商。加密货币的集成过程非常顺畅。
+
 * [Coinstop](https://coinstop.io/), 澳大利亚的Trezor，Ledger和KeepKey硬件钱包代理，现在已[接受](https://twitter.com/COINSTOPio/status/1067927790320664576)DCR。
 
 
@@ -188,22 +247,25 @@ Luxor pool于11月26日在[Twitter](https://twitter.com/LuxorTechTeam/status/106
 *  讨论 - Copay钱包出现漏洞，slack群里Dev澄清对DCR钱包不影响。
 *  讨论 - 多个新提案上线，引起了社区的讨论。提案分别是Dex提案，提款机提案，和电台广播广告提案
 
-
-
-
-
 ## 社区活动
-### 过去 {参考英文月报}
+### 过去
 
-* [Web Summit](https://websummit.com/) 葡萄牙里斯本 11月 5-8.社区成员 @heyvj 和 @jholdstock 提交了[会议报告](https://github.com/heyvj/decred-events/blob/master/reports/20181106-Web-Summit-Lisbon.md)
-* [PDX Blockchain Summit & Hackathon](https://pdxblockchainsummit.org) 美国 波特兰(Portland)Nov 11. Raedah Group 分享 Decred 和 去中心化治理。
-* [Blockmaster](https://www.blockmaster.com.br/eventos/forum-blockmaster-2018-sao-paulo/)巴西 圣保罗Nov 13. @Rhama 分享 Decred 和 Politeia.
-* [BlockchainFiesta](http://blockchainfiesta.io/) 波兰 克拉科夫(Krakow) Nov 16. 社区成员 @artikozel & @donmario在会议后整理提交了一份[会议报告](https://github.com/artikozel/decred-events/blob/patch-1/reports/20181116-Blockchain-Fiesta-Krakow.md)和[照片](https://photos.google.com/share/AF1QipOhLa_L0g5NrBWzKFTxMeDD7VJeUBzHzEyker-DRdZGuQoXS9ogpN3waxW26vj0CQ?key=Ty1jZ1NYRkdTY0dRRmNLc1JGcTdNby1BUlZ0eGZ3)
-* [Blockchain Melbourne](https://www.meetup.com/BlockchainMelbourne/events/256295215/)澳大利亚 墨尔本 Nov 20. Henrik Andersson, [Apollo Capital](https://www.apollocap.io/) CIO, 分享对Decred的投资分析
+* Raedah Group 在美国，波特兰的培训及计划会议。 ([照片](https://twitter.com/raedahgroup/status/1058493594452004864))
+* [Web Summit](https://twitter.com/WebSummit)-里斯本，葡萄牙。非常拥挤的一项活动，很多群众到访Decred展位。@moo31337给葡萄牙总理，Antonio Costa [介绍](https://twitter.com/marco_peereboom/status/1059790693802094592) Decred。@vj和 @jholdstock随后在[这里](https://github.com/heyvj/decred-events/blob/master/reports/20181106-Web-Summit-Lisbon.md)发布了报告。@karamble 在[这](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154258437019744ukkoN:decred.org)发布了更多有关私人区块链公司的笔记(照片: [1](https://twitter.com/NoahPierau/status/1059742659974193153) [2](https://twitter.com/NoahPierau/status/1060107159411810304) [3](https://twitter.com/NoahPierau/status/1060489795485478912) [4](https://twitter.com/blockblanc/status/1060541037733658625) [5](https://twitter.com/NoahPierau/status/1059837388225236992) [整合图](https://twitter.com/LolekBolek74/status/1060551925563826183), 影片在底部)
+* [PDX Blockchain Summit & Hackathon](https://pdxblockchainsummit.org) -波特兰，美国。Raedah Group分享Decred的去中心化治理 (照片: [1](https://twitter.com/raedahgroup/status/1061722513615527936) [2](https://twitter.com/dantrevino/status/1061283707099594752))
+* [Token Forum](https://www.thetokenforum.com/) 西雅图,美国。@oregonisaac 分享Decred和区块链治理。@Eli-RG [分享](https://decred.slack.com/archives/C66363X44/p1542039292115100)说该活动非常成功并的到许多好评。@oregonisaac在[这](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154183054312819Bkteq:decred.org). ([photo](https://matrix.decred.org/_matrix/media/v1/download/decred.org/RtgfjRzYbrvNjslhOZQNsNtc))也提供了更多的笔记。
+* [Blockmaster](https://www.blockmaster.com.br/eventos/forum-blockmaster-2018-sao-paulo/)圣保罗，巴西。@Rhama分享Decred和Politeia(照片: [1](https://matrix.decred.org/_matrix/media/v1/download/decred.org/TgiORGBFSiEAQcuPzPvtZczZ) [2](https://matrix.decred.org/_matrix/media/v1/download/decred.org/UFigpyKJeaOozzbiCeIiNSdH))
+* [FinTech Melbourne Community Networking](https://www.meetup.com/Melbourne-FinTech-Startups-Meetup/events/256195153/)-墨尔本，澳大利亚。@eSizeDave [报告](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154217119815341VaPZS:decred.org): "虽然只有一周的见面会宣传时间，反应非常热烈。参与的人很高兴并要求更频繁的举办这类活动。参与的人来自金融机构，金融科技监管分析专员，初创公司，和其他区块链项目代表。两位ANZ银行的数据科学家主动的寻找这类活动并表示很巧的找到了这活动。这表示这类活动有一定的市场需求，这个活动结果很好，我们将更投入参与下一个金融科技类活动。” 随后社群里有更多[讨论](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154220759315790UMKqT:decred.org)。(照片: [1](https://twitter.com/coder_bec/status/1062251105198002177) [2](https://www.instagram.com/p/BqHJmarns8B/))
+* [BlockchainFiesta](http://blockchainfiesta.io/)克拉科夫，波兰。@kozel和@donmario和[FXMag](https://www.fxmag.pl/)做了篇还未发布的访问。 完整的[活动报告](https://github.com/heyvj/decred-events/blob/master/reports/20181116-Blockchain-Fiesta-Krakow.md): "我们接触的一些峰会发言人表示对Decred的远见以及“打造第一，炒作第二”的精神印象深刻非常". ([电视新闻](https://krakow.tvp.pl/39996203/kryptowaluty-przyszlosc-platnosci-xxi-wieku)报告,照片: [相册](https://photos.google.com/share/AF1QipOhLa_L0g5NrBWzKFTxMeDD7VJeUBzHzEyker-DRdZGuQoXS9ogpN3waxW26vj0CQ?key=Ty1jZ1NYRkdTY0dRRmNLc1JGcTdNby1BUlZ0eGZ3))
+* [Blockchain Melbourne](https://www.meetup.com/BlockchainMelbourne/events/256295215/)-墨尔本，澳大利亚。@eSizeDave 先介绍了Decred,随后两位Apollo Capital代币的演讲。第一位介绍了公司的服务及如何做项目分析，强调Decred如何符合这些标准。第二位演讲人专门讲的Decred。活动笔记：“非常有知识的人群。令人惊讶的是，尽管我们只有大约1.5周的推广，加上目前低迷的市场环境，我们还有这么多人参与投资分析。此项活动主要归功于@Zohand 与阿波罗资本的长期关系。[相关讨论](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154165462111747igExP:decred.org),[这里](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154271915121075kJobf:decred.org) 和[这里](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154312938324664CVmxQ:decred.org)也有相关的后期笔记。([照片](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154271920421079Uwail:decred.org))
+* [Lessons from DevCon4 & Web3 Summit](https://www.meetup.com/Web3-Melbourne/events/bnrhmqyxpblc/)墨尔本，澳大利亚。@eSizeDave: "该活动在RMIT区块链创新中心举行。 皇家墨尔本理工学院（RMIT）是墨尔本的一所大学，也是澳大利亚第一所，作为其经济学院的一部分，建立自己专用区块链创新中心的大学。(......）官方组织者最近从布拉格的Devcon回来，并将介绍从会议中吸取的经验分享。 他们于11月20日参加我们的活动，并邀请我们和Apollo Capital出席介绍Decred，特别是Politeia。“。活动主要是以太坊社区，但Apollo Capital的James介绍的Politeia[貌似](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154340368426560pechG:decred.org)有着不错的效果。([照片](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154340368426560pechG:decred.org))
+* 胡志明，越南的与Decred晚饭中@joshuam介绍Decred。主办人([@BitcoinSaigon](https://twitter.com/BitcoinSaigon)) 后来[表示](https://www.facebook.com/BitcoinSaigon/posts/938886146306840): "昨晚激发了一些非常有趣，环绕着本质，重要性和可行性的去中心化系统的讨论，在市场营销声音盖过实质内容的环境，这是非常令人耳目一新的讨论。"(照片: [1](https://www.facebook.com/BitcoinSaigon/posts/938886146306840) [2](https://twitter.com/DominikWeil/status/1068425588258435072))
 
-#### 未来 {参考英文月报}
-* 活动 1 
-* 活动 2 
+### 未来活动:
+
+* [The North American Bitcoin Conference](https://btcmiami.com/)-米亚密，美国。一月16-18。@jy-p 将在主讲台上给一个15分钟的Politeia介绍。他也会探讨更广阔的Politeia应用,包括加密货币，机构及政府角度的应用。例如代币，保存记录，及投票系统。Decred也会有一个10'x8'的活动展位,所以我们将需要组织团队。我们希望社群成员可以加入我们，如果您有兴趣请联系 @Dustorf。
+
+@jz 发布了一些在会议上代表Decred的[指南](https://gist.github.com/jzbz/4431f620f2bad8032dc3caef2ed9112b)。
 
 ## 中文媒体／文章链接
 * [老胡评测：比特币核心团队开发永不分裂的币DCR](https://www.jinse.com/bitcoin/265836.html)
