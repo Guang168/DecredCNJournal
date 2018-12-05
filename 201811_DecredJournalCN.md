@@ -354,7 +354,7 @@ Reddit: DCR 鲸鱼大户对于Decred来说[是好是坏](https://www.reddit.com/
 * [中文电报群](https://t.me/decred_cn)
 * QQ群号-258412796
 
-月报贡献者 @Guang @Hugo
+月报贡献者 @Guang @Hugo @画面
 
 欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
 
