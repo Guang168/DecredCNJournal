@@ -116,52 +116,43 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 **[Upgrade mining algorithm to ProgPoW](https://proposals.decred.org/proposals/0aaab331075d08cb03333d5a1bef04b99a708dcbfebc8f8c94040ceb1676e684) 由engineerking于Nov 11提交**
 
-作者提案把Decred的挖矿算法改成[ProgPoW](https://github.com/ifdefelse/ProgPOW)。
-
-状态：作者未授权开启投票
+* 作者提案把Decred的挖矿算法改成[ProgPoW](https://github.com/ifdefelse/ProgPOW)。
+* 状态：作者未授权开启投票
 
 **[Decred Open Source Research proposal 2 - research projects](https://proposals.decred.org/proposals/5d9cfb07aefb338ba1b74f97de16ee651beabc851c7f2b5f790bd88aea23b3cb) 由@richardred于Nov 21提交**
 
-续第一个[研究提案](https://proposals.decred.org/proposals/c68bb790ba0843980bb9695de4628995e75e0d1f36c992951db49eca7b3b4bcd)，目标为搜集并确定研究项目想法的提案
-
-状态：作者未授权开启投票
+* 续第一个[研究提案](https://proposals.decred.org/proposals/c68bb790ba0843980bb9695de4628995e75e0d1f36c992951db49eca7b3b4bcd)，目标为搜集并确定研究项目想法的提案
+* 状态：作者未授权开启投票
 
 **[Decred integration into Crypto-ATMs](https://proposals.decred.org/proposals/bb7e19283d5c65fed598d5a2f4afcc2b5d2eab187b9cb84fc4304430f80b5ad1)由 bcashgr于Nov 24提交**
 
-公司名为Bcash提案要求资助把Decred整合到他们提供的提款机中。开发成本 25，000欧元 及 每月 1，650 欧元的维持费。
-
-状态：投票于12月4日开启
+* 公司名为Bcash提案要求资助把Decred整合到他们提供的提款机中。开发成本 25，000欧元 及 每月 1，650 欧元的维持费。
+* 状态：投票于12月4日开启
 
 **[Decred Radio Advertising, 190+ FM and AM Stations, + Intl. Satellite](https://proposals.decred.org/proposals/7fe5d07a4ffff7dc6a83383018823d880b1c1db0a29305e74934817cf2b4e2ce)由ftl_ian于Nov 26提交**
 
-这项提案要求Decred在一个“Free Talk Live” 的电台做广告。为期13周的成本是 22,750美元
-
-状态：投票于12月4日开启
+* 这项提案要求Decred在一个“Free Talk Live” 的电台做广告。为期13周的成本是 22,750美元
+* 状态：投票于12月4日开启
 
 **[Decredex](https://proposals.decred.org/proposals/e78bc28631d0e682912e3ece25944481bf978b906ea44b1ed36470c0f48b27fc)由fabianreum于Nov 26提交**
 
-提案要求对于公司REUM Ltd开启去中心化交易所工作的资助。总预算为 1,086,500美元。
-
-状态：投票于12月4日开启
+* 提案要求对于公司REUM Ltd开启去中心化交易所工作的资助。总预算为 1,086,500美元。
+* 状态：投票于12月4日开启
 
 **[Add Decred support to Coffee Wallet](https://proposals.decred.org/proposals/45de9806c952c5ffc2fc6782fddbc74c852c26e3fb0e950144b92d75082c4731) 由francio于Nov 29提交**
 
-这项提案要求资助将Decred整合到 “Coffee Wallet” 多币种钱包。要求数额为150DCR 及预期在一月初完成
-
-状态：作者未授权开启投票
+* 这项提案要求资助将Decred整合到 “Coffee Wallet” 多币种钱包。要求数额为150DCR 及预期在一月初完成
+* 状态：作者未授权开启投票
 
 **[Stable coin - USDD](https://proposals.decred.org/proposals/85fc65cef080cfc3564906fd3d488b827d74fc99bb29143ed8aa6c400b765be9)由fabianreum 于Nov 29提交**
 
-这项提案要求资助一个Decred背书名为 USDD 的稳定币(stablecoin)项目。4年预算为 1，576，000美金。提案里提供了明细。
-
-状态：作者未授权开启投票
+* 这项提案要求资助一个Decred背书名为 USDD 的稳定币(stablecoin)项目。4年预算为 1，576，000美金。提案里提供了明细。
+* 状态：作者未授权开启投票
 
 **[Decred Bug Bounty Proposal](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)由@degeri于30 Nov提交**
 
-{PLEASE FILL THIS}
-
-状态：作者未授权开启投票
-
+* {PLEASE FILL THIS}
+* 状态：作者未授权开启投票
 
 ## DCR网络
 ### 算力 
@@ -211,7 +202,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 Obelisk [开始生产](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=28096412c5) 第 2-5 批矿机 并预期12月初开始发货,之后大约4周后将满足所有订单。他们在12月4日也公布了几个促销：用户可以购买 SC1 hashing boards 安装到DCR1机子上, DCR1也可转换成 第6批 SC1 矿机或由Obelisk回收。细节可参看[通讯文章](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=88576cef2a)。
 
 
-The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/1061521332498624512) 为48 TH/s, 从预期的44 TH/s 提高了9%。[从 Pangolin](https://pangolinminer.com/product/whatsminer-dcr-with-psu-shipout-on-dec-5/)价格为4,850美元。发货延迟以及价格和性能的变化引起了社区[各种意见](https://bitcointalk.org/index.php?topic=5068845.msg47865706#msg47865706)。社区也提起关于最佳实践和关于分销网络以及官方经销商的构成的[混淆](https://www.reddit.com/r/decred/comments/9fdz9d/psa_do_not_purchase_the_whatsminer_44th_decred/)。
+The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/1061521332498624512) 为48 TH/s, 从预期的44 TH/s 提高了9%。[从 Pangolin](https://pangolinminer.com/product/whatsminer-dcr-with-psu-shipout-on-dec-5/)价格为4,850美元。MicroBT的发货延迟以及价格和性能的变化引起了社区[各种不同的意见](https://bitcointalk.org/index.php?topic=5068845.msg47865706#msg47865706)。社区也提起关于最佳实践和关于分销网络以及官方经销商的构成的[混淆](https://www.reddit.com/r/decred/comments/9fdz9d/psa_do_not_purchase_the_whatsminer_44th_decred/)。
 
 竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/product-detail/asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
 
@@ -284,12 +275,11 @@ Luxor pool [公布了](https://twitter.com/LuxorTechTeam/status/1067110171057381
 * [扫盲-Decred分票](https://medium.com/@guang.dcr/%E6%89%AB%E7%9B%B2-decred%E5%88%86%E7%A5%A8-ffe3eb2de64d)
 
 ## 英文媒体链接
-
 ### Featured articles:
 
 * Blockchain forks and chain splits: why we should avoid them by @Haon ([medium](https://blog.goodaudience.com/blockchain-forks-and-chain-splits-why-we-should-avoid-them-f54c693a90f1), _missed in Oct issue_)
 * Marco Peereboom Interview: Governance, Decred & Politeia ([coinbureau.com](https://www.coinbureau.com/interview/marco-peereboom-decred/))
-* Decred Infrastructure Interviews: feeleep, Operator, coinmine.pl ([medium](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4))
+* Decred Infrastructure Interviews: feeleep, Operator, coinmine.pl ([medium](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4)) also [in Polish](https://medium.com/decred-polska/decred-interesuj%C4%85cy-i-nieszablonowy-wywiad-z-operatorem-coinmine-pl-11e92657136e))
 * PR in Politeia: Process, Progress, and Pitching In by @Dustorf ([medium](https://medium.com/@dlefebvr/pr-in-politeia-process-progress-and-pitching-in-d88771183dd4))
 * Blockchain governance: how Decred iterates upon Bitcoin by @zubairzia0 ([medium](https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e))
 * DCR Ticket Splitting - All you need to know! by @David ([medium](https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3), [reddit](https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/))
@@ -325,14 +315,14 @@ Standard & Consensus rated Decred C+. The original report is in [Chinese](https:
 
 社区数据(Dec 1):
 
-* Twitter followers 40004 (-1598)
-* Reddit subscribers 9131 (+147)
+* Twitter followers 40,004 (-1598)
+* Reddit subscribers 9,131 (+147)
 * Matrix users 203 (+10)
-* Slack users 6353 (+82)
-* YouTube subscribers 3736 (+10)
-* Facebook 3105 (+20) followers and 2867 (+18) likes
+* Slack users 6,353 (+82)
+* YouTube subscribers 3,736 (+10)
+* Facebook 3,105 (+20) followers and 2,867 (+18) likes
 * LinkedIn followers: Decred Page 433 (+27), Politeia page 20 (+8) 
-* GitHub 447 (+17) stars and 1159 (+41) forks of dcrd repository
+* GitHub 447 (+17) stars and 1,159 (+41) forks of dcrd repository
 
 通讯系统新闻：
 
@@ -362,7 +352,7 @@ Reddit: DCR 鲸鱼大户对于Decred来说[是好是坏](https://www.reddit.com/
 * [微博](https://www.weibo.com/DecredProject)
 * 微信群
 * [中文电报群](https://t.me/decred_cn)
-* QQ群 
+* QQ群号-258412796
 
 月报贡献者 @Guang @Hugo
 
