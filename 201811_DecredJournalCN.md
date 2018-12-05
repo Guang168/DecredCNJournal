@@ -1,6 +1,6 @@
 {DRAFT}# Decred月报 - 11月 
 
-Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 利益相关者通过Decred钱包 （Decrediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
+Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 持币者相继通过Decred钱包 （Decrediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
 
 Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多公司和贡献者加入Decred生态，而一些长期贡献者则根据兴趣和能力提出议案。
 
@@ -10,7 +10,7 @@ Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多�
 
 [dcrd](https://github.com/decred/dcrd): 上个月开始的两个重大的更改在经过大量测试后合并。第一个是[UTXO反转的设置语义](https://github.com/decred/dcrd/pull/1471) 随附的[数据库迁移](https://github.com/decred/dcrd/pull/1520)， 这是一项重要的更改，将提供更简单有效率的处理未花费的交易输出。这样做的额外好处是让区块重组测试运行时速度提高了40％。第二个是[优化重组处理](https://github.com/decred/dcrd/pull/1500)。新的[--maxsameip](https://github.com/decred/dcrd/pull/1517)参数允许限制具有相同IP地址的连接数。修复了一个从上游btcd[移植](https://github.com/decred/dcrd/pull/1533)过来，超级罕见的bug。
 
-[dcrwallet](https://github.com/decred/dcrwallet): 增加新的RPC[使用ticketbuyer v2](https://github.com/decred/dcrwallet/pull/1307), 用以购买[单张票](https://github.com/decred/dcrwallet/issues/1317) 和[扫账户](https://github.com/decred/dcrwallet/pull/1098)。另加使用替代数据库后端的[能力](https://github.com/decred/dcrwallet/pull/1282)，这对移动平台很有用。修复bugs: [监视常用钱包地址](https://github.com/decred/dcrwallet/pull/1320), [遗漏或双重交易](https://github.com/decred/dcrwallet/pull/1321), [丢失地址和交易](https://github.com/decred/dcrwallet/issues/1333).
+[dcrwallet](https://github.com/decred/dcrwallet): 增加新的RPC[使用ticketbuyer v2](https://github.com/decred/dcrwallet/pull/1307), 用以购买[单张票](https://github.com/decred/dcrwallet/issues/1317) 和[流动账户](https://github.com/decred/dcrwallet/pull/1098)。另加使用替代数据库后端的[能力](https://github.com/decred/dcrwallet/pull/1282)，这对移动平台很有用。修复bugs: [监视常用钱包地址](https://github.com/decred/dcrwallet/pull/1320), [遗漏或双重交易](https://github.com/decred/dcrwallet/pull/1321), [丢失地址和交易](https://github.com/decred/dcrwallet/issues/1333).
 
 一个大的[锁定余额](https://github.com/decred/dcrwallet/pull/1330)算法的改进工作已经开始，这会为 solo，选票矿池及分票投票者解决某些问题。
 
@@ -31,7 +31,7 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 [iOS](https://github.com/raedahgroup/dcrios):iOS移动钱包目前正处于测试阶段，需要额外的开发周期才能合并Android上提供的功能集。
 
-[dcrdata](https://github.com/decred/dcrdata): 本月集成到基本代码中的新功能包括[网络哈希表](https://github.com/decred/dcrdata/issues/723)，在导航菜单添加[Decred基金会](https://github.com/decred/dcrdata/issues/784)以及更详细的交易信息，例如在[内存池上显示交易输出花费](https://github.com/decred/dcrdata/issues/825)，在[地址视图上显示交易类型](https://github.com/decred/dcrdata/issues/741)和改进的[时间戳信息](https://github.com/decred/dcrdata/issues/776)。
+[dcrdata](https://github.com/decred/dcrdata): 本月集成到基本代码中的新功能包括[网络哈希算力表](https://github.com/decred/dcrdata/issues/723)，在导航菜单添加[Decred基金会](https://github.com/decred/dcrdata/issues/784)以及更详细的交易信息，例如在[内存池上显示交易输出花费](https://github.com/decred/dcrdata/issues/825)，在显示[地址视图的交易类型](https://github.com/decred/dcrdata/issues/741)和改进的[时间戳信息](https://github.com/decred/dcrdata/issues/776)。
 
 预览[新网页](https://github.com/decred/dcrdata/pull/718),及所有的新功能都已上线[alpha网站](https://alpha.dcrdata.org/nexthome)。目前它运行的是master的v3.2.0-pre built。更稳定的[beta网站](https://beta.dcrdata.org/)运行v3.1.0-beta。最稳定的[explorer.dcrdata.org](https://explorer.dcrdata.org/)运行的是v3.0.2-发布。为了与Insight链接保持一致,后者也可到[mainnet.dcrdata.org](https://mainnet.dcrdata.org/)访问。
 
@@ -47,7 +47,7 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 [design](https://github.com/decred/dcrdesign): Kyle 在[Firethought](https://firethought.net/) 中发布了[Decred图标动态包](https://medium.com/@firethought/base-iconset18-motion-pack-readme-a96f96e868)。以[eeter.co](http://www.eeter.co/)设计的图标包为基础构建的图标包将带来“更具吸引力的Decred应用程序体验”
 
-[docs](https://github.com/decred/dcrdocs)：11月对于文档来说是一个巨大的月份。这文档包含各种社区支持的更改和更新。[VSP更改语言提案](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75)通过，证实了社区希望在所有Decred文档中将“PoS Mining”更改为“PoS投票”，并从“stakepool”更改为“Voting Service Provide(VSP)”。第一批[文档的更改](https://github.com/decred/dcrdocs/pull/590)已合并。基金会[采用“Decred Treasury”](https://github.com/decred/dcrdocs/pull/690)也已更新。对于那些希望更深入了解Politeia的人们，我们创建了一个新的"[Politeia数据导航](https://docs.decred.org/advanced/navigating-politeia-data/)"文档。期待已久的[Decred Glossary](https://github.com/decred/dcrdocs/pull/675)(Decred词汇)在本月完成并发布，@s_ben和许多支持这项工作的人付出了巨大努力提供反馈和建议。我们强烈建议使用[词汇表](https://docs.decred.org/glossary/)来改善我们对共享社区的理解。
+[docs](https://github.com/decred/dcrdocs)：11月对于文档来说是一个巨大的月份，其中包含各种社区支持的更改和更新。[VSP更改语言提案](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75)通过，证实了社区希望在所有Decred文档中将“PoS Mining”更改为“PoS投票”，并从“stakepool”更改为“Voting Service Provide(VSP)”。第一批[文档的更改](https://github.com/decred/dcrdocs/pull/590)已合并。基金会[采用“Decred Treasury”](https://github.com/decred/dcrdocs/pull/690)也已更新。对于那些希望更深入了解Politeia的人们，我们创建了一个新的"[Politeia数据导航](https://docs.decred.org/advanced/navigating-politeia-data/)"文档。期待已久的[Decred Glossary](https://github.com/decred/dcrdocs/pull/675)(Decred词汇)在本月完成并发布，@s_ben和许多支持这项工作的人付出了巨大努力提供反馈和建议。我们强烈建议使用[词汇表](https://docs.decred.org/glossary/)来改善我们对共享社区的理解。
 
 Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {} deleted lines spread across {} repositories. Contributions came from {}-{} developers per repository. ([chart]({}))
 
@@ -55,7 +55,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 热烈欢迎新人的第一次贡献: [logicminds](https://github.com/decred/dcrd/commits?author=logicminds) (dcrd, _10月月报遗漏_), [@itswisdomagain](https://github.com/decred/dcrdata/commits?author=itswisdomagain) (dcrdata), [rocknet](https://github.com/decred/decrediton/commits?author=rocknet) (decrediton), [@brunobraga](https://github.com/decred/politeiagui/commits?author=brunobraga95) (politeiagui).
 
-夏天时[@30000fps](https://twitter.com/30000fps)开始对动画设计和图像做出贡献
+夏天时[@30000fps](https://twitter.com/30000fps)开始对动画设计和图像做出贡献。
 
 恭喜5位新贡献者[列入](https://github.com/decred/dcrweb/pull/444)decred.org: Insaf Nori (community manager - Middle East, @butterfly), Guang (community manager - Asia, @guang), Seth Benton (developer, @s_ben), Youssef Boukenken (developer, @sef), Zubair Zia (research and strategy, @zubairzia0)。
 
