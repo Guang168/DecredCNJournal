@@ -62,7 +62,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 @kozel 访问了建立已久[coinmine.pl](https://www2.coinmine.pl/)的运营Feeleep，[深度讨论了Decred的基础设施](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4).
 
 
-## Politeia提案系统总结
+## 治理
 
 团队开启了＃proposals 和 #research中的Politeia数据整理工作。@snr01 分享了[投票数据图表](https://github.com/snr01/PiVotingCharts)。
 
@@ -206,7 +206,6 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 节点: [dcred.eu](https://dcred.eu/nodeStats)显示 Dec 01为止 共有 204 public listening Node 及 332 Normal Node。版本分部: 6.5% 是 v1.4.0(pre) dev builds (+0.5%), 50% 为 v1.3.0 (+5%), 25% 为 v1.2.0 (-3%), 11% 为 v1.1.2 (-3%), 5% 为 v1.1.0。
 
-
 ## 挖矿
 
 Obelisk [开始生产](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=28096412c5) 第 2-5 批矿机 并预期12月初开始发货,之后大约4周后将满足所有订单。他们在12月4日也公布了几个促销：用户可以购买 SC1 hashing boards 安装到DCR1机子上, DCR1也可转换成 第6批 SC1 矿机或由Obelisk回收。细节可参看[通讯文章](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=88576cef2a)。
@@ -215,6 +214,8 @@ Obelisk [开始生产](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0
 The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/1061521332498624512) 为48 TH/s, 从预期的44 TH/s 提高了9%。[从 Pangolin](https://pangolinminer.com/product/whatsminer-dcr-with-psu-shipout-on-dec-5/)价格为4,850美元。发货延迟以及价格和性能的变化引起了社区[各种意见](https://bitcointalk.org/index.php?topic=5068845.msg47865706#msg47865706)。社区也提起关于最佳实践和关于分销网络以及官方经销商的构成的[混淆](https://www.reddit.com/r/decred/comments/9fdz9d/psa_do_not_purchase_the_whatsminer_44th_decred/)。
 
 竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/product-detail/asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
+
+[youtube](https://www.youtube.com/watch?v=U0QjhvaoQpc)上发布对于Obelisk DCR1 矿机的评论影片。
 
 ## 整合
 
@@ -235,17 +236,23 @@ Luxor pool [公布了](https://twitter.com/LuxorTechTeam/status/1067110171057381
 
 英国假期购物者在这季节多了一个花费Decred的选择。MonetaryUnit[公布](https://twitter.com/monetaryunit/status/1062127668769050626) 在他们夏天收购的英国市场[Flubit](https://flubit.com/)[接受](https://blog.flubit.com/pay-crypto-flubit-com/)DCR。[部落格](https://blog.flubit.com/crypto-coins-drive-xmas-strategy-largest-eshop-200bn-cryptocurrency-industry-goes-mainstream-online-shopping-flubit-com/)文中: Flubit 是个已运作8年，过去一年服务三百万购物者的电商。加密货币的集成过程非常顺畅。
 
-* [Coinstop](https://coinstop.io/), 澳大利亚的Trezor，Ledger和KeepKey硬件钱包代理，现在已[接受](https://twitter.com/COINSTOPio/status/1067927790320664576)DCR。
+[Coinstop](https://coinstop.io/), 澳大利亚的Trezor，Ledger和KeepKey硬件钱包代理，现在已[接受](https://twitter.com/COINSTOPio/status/1067927790320664576)DCR。
 
+## 外展活动
 
-## 社区讨论
+11月份的外展活动主要是规划，尽管如此世界各地仍然举办过许多本地聚会，包括在墨尔本和胡志明市的重要活动。 @eSizeDave和@joshuam在亚太地区推广Decred方面做得非常出色。
 
-*  讨论 - @Dante正编写节点教程，希望鼓励更多人运行DCR节点。全节点完全是义务贡献没有任何短期收益，只是如果大家都能搭建全节点，网络的健壮性强。比特币现有10000多节点，所以抗打击性很强。DCR想变更安全更去中心化必需把节点数也拉起来。 
-*  讨论 - @Neil 与社区讨论DCR的抗分叉性。翻译文章-[详细分析Decred的分叉抵抗性](https://www.dcr66.com/threads/decred.40/) 重新被分享并讨论。
-*  分享 - @Guang 分享翻译文章 - [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
-*  分享 - @Guang 分享 [微博](https://weibo.com/DecredProject)链接终于上线到[Decred项目网站社区](https://www.decred.org/community/)页面，正式加入社区行列。 
-*  讨论 - Copay钱包出现漏洞，slack群里Dev澄清对DCR钱包不影响。
-*  讨论 - 多个新提案上线，引起了社区的讨论。提案分别是Dex提案，提款机提案，和电台广播广告提案
+@Dustorf发布了一篇的博客文章，详细介绍了Ditto的提案批准过程，从初步的审查，提案讨论和投票，到下一步的规划和执行。该博客在#marketing上在发布前收到了大量的反馈，展示了我们作家们的能力和技巧。大量的汇总数据，上传并与Ditto团队分享的工作已经进行中，这是为了我们可以在12月份开始运行做好的准备。 @Dustorf在12月3日星期一有一个入职通话，他和@ jy-p计划在那个星期亲自与Ditto方见面。
+
+按照@ Dustorf的博客，初步重点将是要在定位和消息传递上获得社区的共识，然后将其转换为一些网站更新，同时还计划2019年的执行方案。Ditto将在Matrix的#marketing中公开参与讨论，敏感信息将保留给名为“Ditto PR”的新Matrix聊天室。如果您认为可以提供帮助并希望被邀请到这个聊天室，请联系@jz或@Dustorf加入。
+
+12月将是计划筹备月，@jy-p将于1月16日至18日在美国迈阿密举行的北美比特币会议上展示“区块链时间戳应用”。其他活动可能会在12月的第一周确认，并将在#marketing中公布。
+
+除了规划中期和长期的战略，我们的公关也会如#marketing中所述，根据当前的机会采取行动，。
+
+@Haon在Reddit中展开了关于Ditto合作伙伴关系的期望的讨论，并根据他在Decred社区的经验以及与之前公关公司（PRWithBrains）的合作分享了其想法。
+
+11月的定向广告报告由@ {}发布。 {简短回顾}。在这里阅读更多。
 
 ## 社区活动
 ### 过去
@@ -263,7 +270,9 @@ Luxor pool [公布了](https://twitter.com/LuxorTechTeam/status/1067110171057381
 
 ### 未来活动:
 
-* [The North American Bitcoin Conference](https://btcmiami.com/)-米亚密，美国。一月16-18。@jy-p 将在主讲台上给一个15分钟的Politeia介绍。他也会探讨更广阔的Politeia应用,包括加密货币，机构及政府角度的应用。例如代币，保存记录，及投票系统。Decred也会有一个10'x8'的活动展位,所以我们将需要组织团队。我们希望社群成员可以加入我们，如果您有兴趣请联系 @Dustorf。
+* [The North American Bitcoin Conference](https://btcmiami.com/)-迈阿密，美国。一月16-18。@jy-p 将在主讲台上给一个15分钟的Politeia介绍。他也会探讨更广阔的Politeia应用,包括加密货币，机构及政府角度的应用。例如代币，保存记录，及投票系统。Decred也会有一个10'x8'的活动展位,所以我们将需要组织团队。我们希望社群成员可以加入我们，如果您有兴趣请联系 @Dustorf。
+* [Campus Party](http://brasil.campus-party.org/cpbr12/patrocinadores/)圣保罗，巴西。二月 12-17。Decred将在hackathons里有发言人和黑客马拉松专属区.
+* [Jalisco Talent Land](https://www.talent-land.mx/#entradas) 瓜达拉哈拉，墨西哥。四月22-26。Decred将有一个3x3 m 展位及 10 张峰会门票。@elian将介绍Decred（45分钟）和 Q&A（15分钟）。另外会有两个小时的分组会议。我们将在分组会议里演练如何使用Decrediton，投票流程，选票的生命周期，和如何使用Politeia。如果您有兴趣帮忙或出席请联系@elian。
 
 @jz 发布了一些在会议上代表Decred的[指南](https://gist.github.com/jzbz/4431f620f2bad8032dc3caef2ed9112b)。
 
@@ -312,6 +321,41 @@ There were more articles on various websites, but we only list a selected few. T
 
 Standard & Consensus rated Decred C+. The original report is in [Chinese](https://michelangelo.sncrating.com/report/168) and @guang wrote a [review](https://medium.com/@guang.dcr/%E8%A7%A3%E6%9E%90%E8%AF%84%E7%BA%A7-dcr-%E9%80%9A%E8%BF%87%E6%B7%B7%E5%90%88%E5%85%B1%E8%AF%86%E6%9C%BA%E5%88%B6%E5%B9%B3%E8%A1%A1%E6%9D%83%E7%9B%8A%E5%88%86%E9%85%8D-%E6%A0%87%E5%87%86%E5%85%B1%E8%AF%86%E8%AF%84%E7%BA%A7-5edc6f03dc1c) of it in Chinese also. The weak aspects noted by the report are low social media activity, low trading volume and high liquidity risk. The strong aspects are hybrid PoW+PoS system that balances holders, miners and developers, experienced development team and better sovereignty of the community enabled by voting systems.
 
+## 社区讨论
+
+社区数据(Dec 1):
+
+* Twitter followers 40004 (-1598)
+* Reddit subscribers 9131 (+147)
+* Matrix users 203 (+10)
+* Slack users 6353 (+82)
+* YouTube subscribers 3736 (+10)
+* Facebook 3105 (+20) followers and 2867 (+18) likes
+* LinkedIn followers: Decred Page 433 (+27), Politeia page 20 (+8) 
+* GitHub 447 (+17) stars and 1159 (+41) forks of dcrd repository
+
+通讯系统新闻：
+
+* 创建聊天室[#research](https://matrix.to/#/!vGasNHFXqjoEWUBTIi:decred.org)处理开源研究提案工作。
+* Slack到Matrix的连接受到干扰导致某些信息无法转达。
+* 为了解决最近在r/decred 讨论审查事件而设立了一个新的subreddit。更多[讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154302771624142JbZDI:decred.org). _(bee: yes I'm trolling)_
+* 在r/reddit中增加了两项新[规矩](https://www.reddit.com/r/decred/about/rules/): "任何时候只能有一个价格讨论帖子" 和 "不允许喊价"。[这篇文章](https://www.reddit.com/r/decred/comments/9zy3xt/new_rule_one_price_thread_at_a_time/)解释背后的动机。
+* 仍然在寻找合适的Discord管理员及实施防垃圾信息系统。
+* 在MyEtherWallet 用户有报告指出钓鱼欺骗尝试。请大家保持警惕。
+
+Twitter: 到底公开Politeia投票是否为好的流程[投票](https://twitter.com/KyleSamani/status/1062382292860059648) ; 链上治理区块链[不完全一样](https://twitter.com/spencernoon/status/1062482562482868224), Decred vs Tezos治理系统。
+
+Reddit: DCR 鲸鱼大户对于Decred来说[是好是坏](https://www.reddit.com/r/decred/comments/9t9sju/the_placeholder_whales_good_or_bad_for_decred_in/);使用基金会资金[投资](https://www.reddit.com/r/decred/comments/9wpx1b/treasuryenhancing_products_built_in_top_of_decred/)和利益冲突; 私人torrent追踪器的 Politeia [轴辐路网理论](https://www.reddit.com/r/decred/comments/9yu6pr/politeia_hubandspoke_model_for_private_torrent/); [信任](https://www.reddit.com/r/decred/comments/9zi8tz/will_it_be_possible_to_sign_tickets_with_ledger/) 硬件钱包; 到底已经有[多少](https://www.reddit.com/r/decred/comments/a0utmf/how_many_atomic_swaps_have_actually_been_achieved/)原子互换交易。
+
+## 中文社区讨论
+
+*  讨论 - @Dante正编写节点教程，希望鼓励更多人运行DCR节点。全节点完全是义务贡献没有任何短期收益，只是如果大家都能搭建全节点，网络的健壮性强。比特币现有10000多节点，所以抗打击性很强。DCR想变更安全更去中心化必需把节点数也拉起来。 
+*  讨论 - @Neil 与社区讨论DCR的抗分叉性。翻译文章-[详细分析Decred的分叉抵抗性](https://www.dcr66.com/threads/decred.40/) 重新被分享并讨论。
+*  分享 - @Guang 分享翻译文章 - [区块链治理：Decred如何迭代比特币](https://www.dcr66.com/threads/decred.992/) 
+*  分享 - @Guang 分享 [微博](https://weibo.com/DecredProject)链接终于上线到[Decred项目网站社区](https://www.decred.org/community/)页面，正式加入社区行列。 
+*  讨论 - Copay钱包出现漏洞，slack群里Dev澄清对DCR钱包不影响。
+*  讨论 - 多个新提案上线，引起了社区的讨论。提案分别是Dex提案，提款机提案，和电台广播广告提案
+
 
 ## 中文社区 
 
@@ -320,7 +364,7 @@ Standard & Consensus rated Decred C+. The original report is in [Chinese](https:
 * [中文电报群](https://t.me/decred_cn)
 * QQ群 
 
-月报贡献者 @Guang @Hugo @ 
+月报贡献者 @Guang @Hugo
 
 欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
 
