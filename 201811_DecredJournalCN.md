@@ -1,6 +1,6 @@
 # Decred月报 - 11月 
 
-![里斯本的Web Summit](img/NOV18_websummit18-300.jpg "里斯本Web Summit")
+![里斯本的Web Summit](img/NOV18_websummit18-300.png "里斯本Web Summit")
 
 Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 持币者相继通过Decred钱包 （Decrediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
 
