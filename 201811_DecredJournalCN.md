@@ -275,7 +275,7 @@ Luxor pool [公布了](https://twitter.com/LuxorTechTeam/status/1067110171057381
 * [扫盲-Decred分票](https://medium.com/@guang.dcr/%E6%89%AB%E7%9B%B2-decred%E5%88%86%E7%A5%A8-ffe3eb2de64d)
 
 ## 英文媒体链接
-### Featured articles:
+### Articles:
 
 * Blockchain forks and chain splits: why we should avoid them by @Haon ([medium](https://blog.goodaudience.com/blockchain-forks-and-chain-splits-why-we-should-avoid-them-f54c693a90f1), _missed in Oct issue_)
 * Marco Peereboom Interview: Governance, Decred & Politeia ([coinbureau.com](https://www.coinbureau.com/interview/marco-peereboom-decred/))
@@ -285,14 +285,11 @@ Luxor pool [公布了](https://twitter.com/LuxorTechTeam/status/1067110171057381
 * DCR Ticket Splitting - All you need to know! by @David ([medium](https://medium.com/decred/dcr-ticket-splitting-all-you-need-to-know-b8edc6b65db3), [reddit](https://www.reddit.com/r/decred/comments/9vhpby/decred_ticket_splitting_overview/))
 * Hash War Theater: A Costly Spectacle by @richardred ([medium](https://medium.com/@richardred/hash-war-theater-67d3fcac3e97))
 * What is Decred? by @kozel (Polish, [bithub.pl](https://bithub.pl/artykuly/czym-jest-decred/))
-
-### Articles:
-
 * Decred Review – Democratic Governance Puts Users in Control ([coiniq.com](https://coiniq.com/decred-review/))
 * Smaller PoW coins are in constant danger of 51% attacks – Decred (DCR) governance model is the solution ([captainaltcoin.com](https://captainaltcoin.com/smaller-pow-coins-are-in-constant-danger-of-51-attacks-decred-dcr-governance-model-is-the-solution/))
 * Decred Ticket Splitting by @guang (Chinese, [medium](https://medium.com/@guang.dcr/%E6%89%AB%E7%9B%B2-decred%E5%88%86%E7%A5%A8-ffe3eb2de64d))
 
-There were more articles on various websites, but we only list a selected few. The [decred-media-tracker](https://github.com/RichardRed0x/decred-media-tracker) project is intended to track all articles.
+More articles on various websites were published, but we only listed a selected few. The [decred-media-tracker](https://github.com/RichardRed0x/decred-media-tracker) project is intended to track all articles.
 
 ### Translations:
 
@@ -319,6 +316,7 @@ Standard & Consensus rated Decred C+. The original report is in [Chinese](https:
 * Reddit subscribers 9,131 (+147)
 * Matrix users 203 (+10)
 * Slack users 6,353 (+82)
+* Telegram users 4,642 (+213)
 * YouTube subscribers 3,736 (+10)
 * Facebook 3,105 (+20) followers and 2,867 (+18) likes
 * LinkedIn followers: Decred Page 433 (+27), Politeia page 20 (+8) 
