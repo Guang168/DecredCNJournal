@@ -49,7 +49,7 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 [docs](https://github.com/decred/dcrdocs)：11月对于文档来说是一个重要的月份，其中包含各种社区支持的更改和更新。[VSP更改语言提案](https://proposals.decred.org/proposals/522652954ea7998f3fca95b9c4ca8907820eb785877dcf7fba92307131818c75)通过，证实了社区希望在所有Decred文档中将“PoS Mining”更改为“PoS投票”，并从“stakepool”更改为“Voting Service Provide(VSP)”。第一批[文档的更改](https://github.com/decred/dcrdocs/pull/590)已合并。基金会[采用“Decred Treasury”](https://github.com/decred/dcrdocs/pull/690)也已更新。对于那些希望更深入了解Politeia的人们，我们创建了一个新的"[Politeia数据导航](https://docs.decred.org/advanced/navigating-politeia-data/)"文档。期待已久的[Decred Glossary](https://github.com/decred/dcrdocs/pull/675)(Decred词汇)在本月完成并发布，@s_ben和许多支持这项工作的人付出了巨大努力提供反馈和建议。我们强烈建议使用[词汇表](https://docs.decred.org/glossary/)来改善我们对共享社区的理解。
 
-Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {} deleted lines spread across {} repositories. Contributions came from {}-{} developers per repository. ([chart]({}))
+11月开发活动数据: 分布于8个存储库（repositories) 有 266 有效PRs, 268 主要提交, 44,955 行添加 及 25,448 行删除。每个存储库中有来自3-11个开发者的贡献。([图表](https://twitter.com/decredproject/status/1070413196555636736))
 
 ## 人员
 
@@ -151,7 +151,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 **[Decred Bug Bounty Proposal](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)由@degeri于30 Nov提交**
 
-* {PLEASE FILL THIS}
+* 这项提案为Decred建立一个bug赏金计划，通过该计划可以补偿／奖赏报告错误或漏洞的人。该提案要求6个月的预算为5,000美元，以支付设置和运营成本，并预算在此期间赏金支付的上限为100,000美元。 @degeri投入了大量精力与社区就如何运作这个赏金计划进行协商，特别是确保当前与该计划合作的Decred承包商都参与其中。
 * 状态：作者未授权开启投票
 
 ## DCR网络
@@ -177,7 +177,7 @@ Dev activity stats for {month}: {} active PRs, {} master commits, {} added and {
 
 投票: 30日 平均票价为 103 DCR (+3.2)。价格与96.7至110.2 DCR之间浮动。锁仓数额为4.02-4.18 百万 DCR, 大约总流通量的 45.9-47.2%。
 
-票价跌到96.7后，在单一时间窗售出了1，378票，票价即时经过9个连续涨价抬至110.2DCR。这是自从2017年7月更改票价算法后的新高。
+票价跌到96.7后，在单一时间窗售出了1，378票，票价即时经过9个连续涨价抬至110.2DCR。这是自从2017年7月更改票价算法，[sdiff algorithm](https://github.com/decred/dcps/blob/master/dcp-0001/dcp-0001.mediawiki)后的新高。
 
 ### 币价
 
