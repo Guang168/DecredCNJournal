@@ -58,7 +58,7 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 热烈欢迎新人的第一次贡献: [logicminds](https://github.com/decred/dcrd/commits?author=logicminds) (dcrd, _10月月报遗漏_), [@itswisdomagain](https://github.com/decred/dcrdata/commits?author=itswisdomagain) (dcrdata), [rocknet](https://github.com/decred/decrediton/commits?author=rocknet) (decrediton), [@brunobraga](https://github.com/decred/politeiagui/commits?author=brunobraga95) (politeiagui).
 
-恭喜5位新贡献者[列入](https://github.com/decred/dcrweb/pull/444)decred.org: Insaf Nori (community manager - Middle East, @butterfly), Guang (community manager - Asia, @guang), Seth Benton (developer, @s_ben), Youssef Boukenken (developer, @sef), Zubair Zia (research and strategy, @zubairzia0)。
+恭喜5位新贡献者[列入](https://github.com/decred/dcrweb/pull/444)decred.org: Insaf Nori (@butterfly, community manager - Middle East), Guang (@guang, community manager - Asia), Seth Benton (@s_ben, developer), Youssef Boukenken (@sef, developer), Zubair Zia (@zubairzia0, research and strategy).
 
 @kozel 访问了建立已久[coinmine.pl](https://www2.coinmine.pl/)的运营Feeleep，[深度讨论了Decred的基础设施](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4).
 
@@ -66,9 +66,9 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 10月的月报中有关于新的承包商公司一个简短提及。让我们来好好的介绍一下。[Block 42](https://42block.io/)是一家总部位于白俄罗斯明斯克的区块链开发公司，利用区块链技术为金融，保险，物流和供应链行业带来更高的透明度和效率。 他们的母公司[Grinteq](https://grinteq.com/)位于美国纽约。 目前为止的贡献团队如下：
 
-* [@Nick](https://decred.slack.com/team/UA1843AS1) - 联合创办人, 确保所有事情顺利进行
-* [@Maria](https://decred.slack.com/team/UB53WBNTZ) - UI/UX 设计师, 在[选票矿池主题改革](https://github.com/decred/dcrdesign/issues/23)中贡献，确保和目前Decrediton的UI保持一致性。目前工作专注于[Politeia的重新设计](https://github.com/decred/dcrdesign/issues/77)：包括UI/UX更新和新功能的实现。
-* [@klka](https://decred.slack.com/team/UALCYK2C9) - Golang开发员,目前为加快区块处理方面制作区块链索引[异步（asynchronous）](https://github.com/decred/dcrd/issues/1470)
+* Nick Kaeshko (@Nick) - 联合创办人, 确保所有事情顺利进行
+* Maria Pleshkova (@Maria) - UI/UX 设计师, 在[选票矿池主题改革](https://github.com/decred/dcrdesign/issues/23)中贡献，确保和目前Decrediton的UI保持一致性。目前工作专注于[Politeia的重新设计](https://github.com/decred/dcrdesign/issues/77)：包括UI/UX更新和新功能的实现。
+* Dmitry Fedorov (@klka) - Golang开发员,目前为加快区块处理方面制作区块链索引[异步（asynchronous）](https://github.com/decred/dcrd/issues/1470)
 * 很快将有另一成员正式加入
 再次欢迎！
 
