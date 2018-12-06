@@ -1,4 +1,6 @@
-{DRAFT}# Decred月报 - 11月 
+# Decred月报 - 11月 
+
+![里斯本的Web Summit](img/NOV18_websummit18-300.jpg "里斯本Web Summit")
 
 Decred在11月取得激动人心的进展。社区开始从Politeia的提案系统获得好处。 持币者相继通过Decred钱包 （Decrediton或dcrcli) 积极表达对于项目未来方向的提案， 包括项目服务商管理，公共关系和区块链研究。
 
@@ -20,8 +22,9 @@ Decred 已进展到可以支持任何利益相关者对Decred的愿景 - 更多�
 
 Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7-1-developed-by-the-community-for-the-community-c4b965741ca3) 支持Decred的最新固件 version 2.0.9。感谢 @matheusd。现在Decrediton开发员可以开始整合工作。
 
+注意：市面发现假的Trezor One，关于如何验证和购买正版设备，请查看[官方博客](https://blog.trezor.io/psa-non-genuine-trezor-devices-979b64e359a7)。
 
-[Politeia](https://github.com/decred/politeia): [politeiavoter](https://github.com/decred/politeia/tree/master/politeiavoter) 的隐私和性能通过随机的[选票投票顺序](https://github.com/decred/politeia/issues/565), 随机[投票间延迟](https://github.com/decred/politeia/pull/579)和[过滤](https://github.com/decred/politeia/issues/562)已投票的选票得到改善。按大众要求，创建了邮件通知系统以支持对[新提案](https://github.com/decred/politeiagui/pull/848)和[评论](https://github.com/decred/politeiagui/pull/919)更新的消息。通过[票证功能搜索](https://github.com/decred/politeiagui/pull/899)可以验证投票{与开发者核实并澄清票证搜索是客户端，票证不会发送到服务器以保护隐私}。[评论永久链接](https://github.com/decred/politeiagui/issues/753)和[可区分的作者评论](https://github.com/decred/politeiagui/issues/877)已上线。新的["Abandoned"（被放弃）状态](https://github.com/decred/politeiagui/issues/889) 用来处理被放弃的提案。"结束" 选项被 [分成](https://github.com/decred/politeiagui/issues/904) "通过" 和 "不通过" 选项。SVG支持被[关闭](https://github.com/decred/politeia/pull/626)直至合适用来清理SVG的工具出现位置。一个[小漏洞](https://github.com/decred/politeia/issues/563)被修复了,感谢@iemlisted 的报告。及很多较小的改进和修复。
+[Politeia](https://github.com/decred/politeia): [politeiavoter](https://github.com/decred/politeia/tree/master/politeiavoter) 的隐私和性能通过随机的[选票投票顺序](https://github.com/decred/politeia/issues/565), 随机[投票间延迟](https://github.com/decred/politeia/pull/579)和[过滤](https://github.com/decred/politeia/issues/562)已投票的选票得到改善。按大众要求，创建了邮件通知系统以支持对[新提案](https://github.com/decred/politeiagui/pull/848)和[评论](https://github.com/decred/politeiagui/pull/919)更新的消息。通过[票证功能搜索](https://github.com/decred/politeiagui/pull/899)可以验证投票。[评论永久链接](https://github.com/decred/politeiagui/issues/753)和[可区分的作者评论](https://github.com/decred/politeiagui/issues/877)已上线。新的["Abandoned"（被放弃）状态](https://github.com/decred/politeiagui/issues/889) 用来处理被放弃的提案。"结束" 选项被 [分成](https://github.com/decred/politeiagui/issues/904) "通过" 和 "不通过" 选项。SVG支持被[关闭](https://github.com/decred/politeia/pull/626)直至合适用来清理SVG的工具出现位置。一个[小漏洞](https://github.com/decred/politeia/issues/563)被修复了,感谢@iemlisted 的报告。及很多较小的改进和修复。
 
 某些功能将在[主网页](https://proposals.decred.org/)下一次更新后才能体现。
 
@@ -55,19 +58,25 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 热烈欢迎新人的第一次贡献: [logicminds](https://github.com/decred/dcrd/commits?author=logicminds) (dcrd, _10月月报遗漏_), [@itswisdomagain](https://github.com/decred/dcrdata/commits?author=itswisdomagain) (dcrdata), [rocknet](https://github.com/decred/decrediton/commits?author=rocknet) (decrediton), [@brunobraga](https://github.com/decred/politeiagui/commits?author=brunobraga95) (politeiagui).
 
-夏天时[@30000fps](https://twitter.com/30000fps)开始对动画设计和图像做出贡献。
-
 恭喜5位新贡献者[列入](https://github.com/decred/dcrweb/pull/444)decred.org: Insaf Nori (community manager - Middle East, @butterfly), Guang (community manager - Asia, @guang), Seth Benton (developer, @s_ben), Youssef Boukenken (developer, @sef), Zubair Zia (research and strategy, @zubairzia0)。
 
 @kozel 访问了建立已久[coinmine.pl](https://www2.coinmine.pl/)的运营Feeleep，[深度讨论了Decred的基础设施](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4).
 
+> 我必须说，从技术角度来看，Decred的守护进程是在我所有业务经验中唯一一个未遇到过任何稳定性或同步问题的守护进程
+
+10月的月报中有关于新的承包商公司一个简短提及。让我们来好好的介绍一下。[Block 42](https://42block.io/)是一家总部位于白俄罗斯明斯克的区块链开发公司，利用区块链技术为金融，保险，物流和供应链行业带来更高的透明度和效率。 他们的母公司[Grinteq](https://grinteq.com/)位于美国纽约。 目前为止的贡献团队如下：
+
+* [@Nick](https://decred.slack.com/team/UA1843AS1) - 联合创办人, 确保所有事情顺利进行
+* [@Maria](https://decred.slack.com/team/UB53WBNTZ) - UI/UX 设计师, 在[选票矿池主题改革](https://github.com/decred/dcrdesign/issues/23)中贡献，确保和目前Decrediton的UI保持一致性。目前工作专注于[Politeia的重新设计](https://github.com/decred/dcrdesign/issues/77)：包括UI/UX更新和新功能的实现。
+* [@klka](https://decred.slack.com/team/UALCYK2C9) - Golang开发员,目前为加快区块处理方面制作区块链索引[异步（asynchronous）](https://github.com/decred/dcrd/issues/1470)
+* 很快将有另一成员正式加入
+再次欢迎！
 
 ## 治理
 
 团队开启了＃proposals 和 #research中的Politeia数据整理工作。@snr01 分享了[投票数据图表](https://github.com/snr01/PiVotingCharts)。
 
 深入讨论了低质量的提案会使得Politeia混乱，并提出了多种想法。 @richardred在[Politeia Digest #4](https://medium.com/politeia-digest/politeia-digest-issue-4-nov-7-nov-13-2018-685e18e7491a)中对此进行了很好的概述。
-
 
 在聊天渠道中的 #proposals 聊天室非常活跃并有着许多对提案系统及提案深入的讨论。欢迎加入 [Matrix](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org)或[Slack](https://decred.slack.com/messages/CDL5DRZU6)。
 
@@ -179,6 +188,8 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 票价跌到96.7后，在单一时间窗售出了1，378票，票价即时经过9个连续涨价抬至110.2DCR。这是自从2017年7月更改票价算法，[sdiff algorithm](https://github.com/decred/dcps/blob/master/dcp-0001/dcp-0001.mediawiki)后的新高。
 
+[@permabull nino](https://twitter.com/ImacallyouJawdy) 分享了[更多](https://twitter.com/ImacallyouJawdy/status/1065272779447009281) [其他](https://twitter.com/ImacallyouJawdy/status/1060990375064522752) 表示DCR锁定有上升趋势的图表。
+
 ### 币价
 
 ![PoWStats](img/NOV18_USDPrice.png)
@@ -206,7 +217,7 @@ The Whatsminer D1 [算力](https://twitter.com/Pangolinminer/status/106152133249
 
 竞争对手Bitmain(比特大陆)宣布推出[Antminer DR5](https://shop.bitmain.com.cn/product/detail?pid=0002018111918225889369SR3N9s0646)，算力为34 TH/s，功率为1800 W，价格为人民币19,000元（2750美元），12月下旬发货。[DR5](https://www.antminerdistribution.com/antminer-dr5/)的欧洲进口商列出12月21日的暂定交货期，价格为[3299美元](https://french.alibaba.com/product-detail/asic-miner-bitmain-antminer-dr5-34th-blake256r14-dcr-digging-machine-decred-mining-machine-ant-miner-with-psu-60820041330.html)至[EUR3291(3724美元)](https://miningwholesale.eu/product/bitmain-antminer-dr5-34th/)。
 
-[youtube](https://www.youtube.com/watch?v=U0QjhvaoQpc)上发布对于Obelisk DCR1 矿机的评论影片。
+[youtube](https://www.youtube.com/watch?v=U0QjhvaoQpc)上发布对于Obelisk DCR1 矿机的评论影片。加拿大创意的冷却方式照片在聊天室里[泄露](https://matrix.to/#/!NNzHoaSdnsbZDQOXJr:decred.org/$154146601110108OYpjf:decred.org)了。
 
 ## 整合
 
@@ -242,8 +253,6 @@ Luxor pool [公布了](https://twitter.com/LuxorTechTeam/status/1067110171057381
 除了规划中期和长期的战略，我们的公关也会如#marketing中所述，根据当前的机会采取行动，。
 
 @Haon在Reddit中展开了关于Ditto合作伙伴关系的期望的讨论，并根据他在Decred社区的经验以及与之前公关公司（PRWithBrains）的合作分享了其想法。
-
-11月的定向广告报告由@ {}发布。 {简短回顾}。在这里阅读更多。
 
 ## 社区活动
 ### 过去
@@ -296,6 +305,7 @@ More articles on various websites were published, but we only listed a selected 
 * [Blockchain governance: how Decred iterates upon Bitcoin](https://medium.com/decred/blockchain-governance-how-decred-iterates-upon-bitcoin-3cc7030c655e) by @zubairzia0 - [in Chinese](https://medium.com/@guang.dcr/%E8%AF%91%E6%96%87-%E5%8C%BA%E5%9D%97%E9%93%BE%E6%B2%BB%E7%90%86-decred%E5%A6%82%E4%BD%95%E8%BF%AD%E4%BB%A3%E6%AF%94%E7%89%B9%E5%B8%81-53f434b26105) by @guang
 * [Decred: Where did it all begin?](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/) by @thedecreddigest - [in Spanish](https://medium.com/@decred_es/decred-d%C3%B3nde-comenz%C3%B3-todo-aaa49fed0091) by @elian
 * [Decred Recruiting](https://blog.decred.org/2017/07/25/Decred-Recruiting/) by @jy-p - [in Spanish](https://medium.com/@decred_es/c%C3%B3mo-ser-contratista-en-decred-d0f05386f799) by @elian
+* [Politeia in Production](https://blog.decred.org/2018/10/15/Politeia-in-Production/) by @jy-p - [in Portuguese](https://stakey.club/translated/politeia-em-producao/) by @mm
 * Decred Journal - October 2018 [in Russian](https://medium.com/decred-russia/decred-journal-%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C-2018-1eeffc65344c) and [in Italian](https://medium.com/decred-ita/decred-journal-ottobre-2018-a68e88c926ff) by @DZ. This is epic work, October issue was a 53 kilobytes of text, 1.5x larger than previous record.
 * [Decred Infrastructure Interviews: feeleep, Operator, coinmine.pl](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4) by @kozel - [in Polish](https://medium.com/decred-polska/decred-interesuj%C4%85cy-i-nieszablonowy-wywiad-z-operatorem-coinmine-pl-11e92657136e) by @kozel
 
@@ -343,6 +353,9 @@ Reddit: DCR 鲸鱼大户对于Decred来说[是好是坏](https://www.reddit.com/
 *  分享 - @Guang 分享 [微博](https://weibo.com/DecredProject)链接终于上线到[Decred项目网站社区](https://www.decred.org/community/)页面，正式加入社区行列。 
 *  讨论 - Copay钱包出现漏洞，slack群里Dev澄清对DCR钱包不影响。
 *  讨论 - 多个新提案上线，引起了社区的讨论。提案分别是Dex提案，提款机提案，和电台广播广告提案
+
+## 关于月报
+11月为英文第8期[GitHub](https://xaur.github.io/decred-news/journal/201811)月报。 点击[这里](https://xaur.github.io/decred-news/)浏览往期月报。
 
 
 ## 中文社区 
