@@ -121,12 +121,12 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 * Easyrabbit 交易所已于10月底上线DCR交易。
 * 提案要求 30 DCR 将项目升级为高级用户，以获得一些宣传福利 包括将 DCR 标志放到主页面上，低交易费，自媒体宣传DCR 等等。 
 
-### 截止12月4日的新提案如下
+### 截止12月6日的新提案如下
 
 **[Upgrade mining algorithm to ProgPoW](https://proposals.decred.org/proposals/0aaab331075d08cb03333d5a1bef04b99a708dcbfebc8f8c94040ceb1676e684) 由engineerking于Nov 11提交**
 
 * 作者提案把Decred的挖矿算法改成[ProgPoW](https://github.com/ifdefelse/ProgPOW)。
-* 状态：作者未授权开启投票
+* 状态：Abandoned (被放弃）
 
 **[Decred Open Source Research proposal 2 - research projects](https://proposals.decred.org/proposals/5d9cfb07aefb338ba1b74f97de16ee651beabc851c7f2b5f790bd88aea23b3cb) 由@richardred于Nov 21提交**
 
