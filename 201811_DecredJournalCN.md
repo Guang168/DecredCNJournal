@@ -24,7 +24,7 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 
 注意：市面发现假的Trezor One，关于如何验证和购买正版设备，请查看[官方博客](https://blog.trezor.io/psa-non-genuine-trezor-devices-979b64e359a7)。
 
-[Politeia](https://github.com/decred/politeia): [politeiavoter](https://github.com/decred/politeia/tree/master/politeiavoter) 的隐私和性能通过随机的[选票投票顺序](https://github.com/decred/politeia/issues/565), 随机[投票间延迟](https://github.com/decred/politeia/pull/579)和[过滤](https://github.com/decred/politeia/issues/562)已投票的选票得到改善。按大众要求，创建了邮件通知系统以支持对[新提案](https://github.com/decred/politeiagui/pull/848)和[评论](https://github.com/decred/politeiagui/pull/919)更新的消息。通过[票证功能搜索](https://github.com/decred/politeiagui/pull/899)可以验证投票。[评论永久链接](https://github.com/decred/politeiagui/issues/753)和[可区分的作者评论](https://github.com/decred/politeiagui/issues/877)已上线。新的["Abandoned"（被放弃）状态](https://github.com/decred/politeiagui/issues/889) 用来处理被放弃的提案。"结束" 选项被 [分成](https://github.com/decred/politeiagui/issues/904) "通过" 和 "不通过" 选项。SVG支持被[关闭](https://github.com/decred/politeia/pull/626)直至合适用来清理SVG的工具出现位置。一个[小漏洞](https://github.com/decred/politeia/issues/563)被修复了,感谢@iemlisted 的报告。及很多较小的改进和修复。
+[Politeia](https://github.com/decred/politeia): [politeiavoter](https://github.com/decred/politeia/tree/master/politeiavoter) 的隐私和性能通过随机的[选票投票顺序](https://github.com/decred/politeia/issues/565), 随机[投票间延迟](https://github.com/decred/politeia/pull/579)和[过滤](https://github.com/decred/politeia/issues/562)已投票的选票得到改善。按大众要求，创建了邮件通知系统以支持对[新提案](https://github.com/decred/politeiagui/pull/848)和[评论](https://github.com/decred/politeiagui/pull/919)更新的消息。通过[票证功能搜索](https://github.com/decred/politeiagui/pull/899)可以验证投票。[评论永久链接](https://github.com/decred/politeiagui/issues/753)和[可区分的作者评论](https://github.com/decred/politeiagui/issues/877)已上线。新的["Abandoned"（被废弃）状态](https://github.com/decred/politeiagui/issues/889) 用来处理被放弃的提案。"结束" 选项被 [分成](https://github.com/decred/politeiagui/issues/904) "通过" 和 "不通过" 选项。SVG支持被[关闭](https://github.com/decred/politeia/pull/626)直至合适用来清理SVG的工具出现位置。一个[小漏洞](https://github.com/decred/politeia/issues/563)被修复了,感谢@iemlisted 的报告。及很多较小的改进和修复。
 
 某些功能将在[主网页](https://proposals.decred.org/)下一次更新后才能体现。
 
@@ -126,7 +126,7 @@ Trezor: Model T已[发布](https://blog.trezor.io/firmware-updates-2-0-9-and-1-7
 **[Upgrade mining algorithm to ProgPoW](https://proposals.decred.org/proposals/0aaab331075d08cb03333d5a1bef04b99a708dcbfebc8f8c94040ceb1676e684) 由engineerking于Nov 11提交**
 
 * 作者提案把Decred的挖矿算法改成[ProgPoW](https://github.com/ifdefelse/ProgPOW)。
-* 状态：Abandoned (被放弃）
+* 状态：Abandoned (被废弃）
 
 **[Decred Open Source Research proposal 2 - research projects](https://proposals.decred.org/proposals/5d9cfb07aefb338ba1b74f97de16ee651beabc851c7f2b5f790bd88aea23b3cb) 由@richardred于Nov 21提交**
 
