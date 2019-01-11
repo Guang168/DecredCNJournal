@@ -8,7 +8,7 @@
 
 [安卓钱包](https://github.com/decred/dcrandroid)预发布版也在[Google Play store](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)上线了。这是Decred SPV模式带来的好处。SPV模式允许用户避开中心化服务器，直接从P2P网络下载区块信息，从而增强隐私功能-这样的设计在手机钱包里是少见的。除了注意这是预发布版本，请用户了解手机的环境会带来一下安全隐患，不建议储存大量DCR。
 
-虽然12月在币圈的价格和资金收缩来说是个难过的一个月，Decred并未收到影响，并准备好在2019年冲刺扩展。
+虽然在币圈的价格和资金收缩来说，12月是难过的一个月，但Decred并未收到影响，并已准备好在2019年冲刺扩展。
 
 Decred月报团队祝愿所有读者新年快乐！
 
@@ -27,8 +27,6 @@ Decred月报团队祝愿所有读者新年快乐！
 在主分支中（未包含在1.4发布版），现在可以为[Raspberry Pi(树莓派)](https://github.com/decred/decrediton/pull/1904)打包Decrediton。
 
 许多[设计工作](https://github.com/decred/decrediton/issues?utf8=%E2%9C%93&q=is%3Aissue+author%3Alinnutee+created%3A2018-12-01..2018-12-31)也已完成，正等待整合实施。
-
-[Politeia](https://github.com/decred/politeia): 期待已久的显示提案[版本区别](https://github.com/decred/politeiagui/pull/949)的功能已完成。
 
 [Politeia](https://github.com/decred/politeia): 最新的[安全收紧](https://github.com/decred/politeiagui/pull/935)为Politeia在[securityheaders.com](https://securityheaders.com/?q=test-proposals.decred.org&followRedirects=on)争取了A+评价，这项荣誉让Politeia成为该网站中的最优秀的3%并登上荣誉榜。另外也加入了查看[旧提案版本](https://github.com/decred/politeiagui/pull/949)版本功能。这是另一份比较[版本区别](https://github.com/decred/politeiagui/issues/973)的一部分。politeiavoter将[自动重试失败的请求](https://github.com/decred/politeia/pull/639),这也修复了Tor的使用。评论评分计算通过从politeiad[迁移](https://github.com/decred/politeia/pull/610)到politeiawww完成了修复。提案在批准启动投票后不可转成[被放弃](https://github.com/decred/politeiagui/pull/936)。上述及其他一些小更动将在下一次部署后更新到[提案系统](https://proposals.decred.org/)页面。
 
