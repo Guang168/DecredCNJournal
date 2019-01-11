@@ -43,9 +43,9 @@ Decred月报团队祝愿所有读者新年快乐！
 
 我们讨论了钱包加密的局限性以及在不安全的Android智能手机上投票的风险, 请见[讨论](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$154533559847474ZIrlD:decred.org).
 
-[苹果钱包](https://github.com/raedahgroup/dcrios): 开发正努力跟进安卓钱包功能。iOS测试将在安卓1.0完成后发布。
+[iOS钱包](https://github.com/raedahgroup/dcrios): 开发正努力跟进安卓钱包功能。iOS测试将在安卓1.0完成后发布。
 
-[dcrdata](https://github.com/decred/dcrdata): v3.1.1 已上线到 [主页面](https://explorer.dcrdata.org/)。更新内容包括[侧链](https://explorer.dcrdata.org/side)及[不合格区块](https://explorer.dcrdata.org/rejects)的新页面，重大的性能改进，Go模块的支持，非javescript模式的[改进](https://github.com/decred/dcrdata/pull/852) _(抗拒js的恐龙对此表示感谢!)。完整发布说明请[查看](https://github.com/decred/dcrdata/releases/tag/v3.1.0)。这次发布是4个月里面，16位代码贡献者的129提交的成果。恭喜dcrdata 团队！
+[dcrdata](https://github.com/decred/dcrdata): v3.1.1 已上线到 [主页面](https://explorer.dcrdata.org/)。更新内容包括[侧链](https://explorer.dcrdata.org/side)及[不合格区块](https://explorer.dcrdata.org/rejects)，重大的性能改进，Go模块的支持，非javescript模式的[改进](https://github.com/decred/dcrdata/pull/852) _(抗拒js的恐龙对此表示感谢!)_ 。完整发布说明请[查看](https://github.com/decred/dcrdata/releases/tag/v3.1.0)。这次发布是4个月里面，16位代码贡献者的129提交的成果。恭喜dcrdata团队！
 
 在主分支上，[CSV格式](https://github.com/decred/dcrdata/pull/894)下载一个地址的交易信息的新功能已完成。合并了几个大型重构(采用当前前端的最佳实践)。
 
@@ -256,7 +256,7 @@ Joel对Decred的治理系统及其让Decred多态，在社区决定时添加功�
 
 Reddit事件展示了平台的另一个弱点。用户开了多个帖子并激发了讨论，但后来却把帖子删除了。这件事浪费了所有社区回复的人的努力。被删除的帖虽然以另一种形式[保存](https://www.reddit.com/r/decred/comments/a6ywpj/deleted_threads_with_valuable_discussion/)了下来，但此事件显示了另一种攻击/破坏维度：触发讨论然后删除帖子，浪费社区的资源。由于版主无法禁止用户删除内容，因此在Reddit其实并无法阻止这问题的发生。该事件也引发了探讨基于Politeia的[Reddit替代产品](https://github.com/xaur/decred-issues/issues/38)的讨论，。
 
-再一次的，在很接近软件新版本发布时Reddit出现了很多不寻常活动。这包括许多较不相关问题的出现，或看似无意的问题等等，并且这些问题都是从一些从来不活跃，短暂出现的帐号问出。这启事希望让关心项目的社区成员注意这些有可能浪费项目资源的怪异活动。详情请看[讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154531182347084ccYxu:decred.org)。
+再一次的，在临近软件新版本发布时Reddit出现了很多不寻常活动。这包括许多较不相关问题的出现，或看似无意的问题等等，并且这些问题都是从一些从来不活跃，短暂出现的帐号问出。这起事希望让关心项目的社区成员注意这些有可能浪费项目资源的怪异活动。详情请看[讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154531182347084ccYxu:decred.org)。
 
 ## 市场
 
@@ -264,7 +264,7 @@ Reddit事件展示了平台的另一个弱点。用户开了多个帖子并激�
 
 ## 相关外部信息
 
-Vertcoin (VTC) 受到51%[攻击](https://medium.com/coinmonks/vertcoin-vtc-is-currently-being-51-attacked-53ab633c08a4)，在4个事件中发生22次重组及15次双花，受害者损失大约 100,000美元。这再次肯定了某些币种容易受到矿工的攻击。这些币种不是矿机主要挖掘对象(GPU挖矿或抗ASIC，也包括比特币分叉币)，矿工只需要有合适的硬件及没有兴趣维护主链就可进行攻击。这些攻击的影响之一是货币被认为是不安全的，因为它曾经失败了。任何仍愿意接受它的人在确认转移可能有非常多的确认数量要求，使得货币移动缓慢。
+Vertcoin (VTC) 受到51%[攻击](https://medium.com/coinmonks/vertcoin-vtc-is-currently-being-51-attacked-53ab633c08a4)，在4个事件中发生22次重组及15次双花，受害者损失大约 100,000美元。这再次肯定了某些币种容易受到矿工的攻击。这些币种不是矿机主要挖掘对象(GPU挖矿或抗ASIC，也包括比特币分叉币)，矿工只需要有合适的硬件及没有兴趣维护主链就可进行攻击。这些攻击的影响之一是货币被认为是不安全的，因为它曾经失败了。任何仍愿意接受它的人在确认转移可能有非常多的确认数量要求，使得货币交易缓慢。
 
 [Horizen(之前为zencash)](https://www.horizen.global/)团队最近发布了[战略调整](https://blog.zencash.com/re-strategic-actions-for-horizen-from-rolf-versluis/)调整财政部区块奖励额，从10% 增加到20%，减少矿工的奖励金额。在币价跌了90%，及人员和其他成本大幅减少后，更进一步的削减成本将危机项目运行。由于IOHK开发的财务系统仍然在[原型阶段](https://blog.zencash.com/dao-prototype/)和为准备好使用，团队认为有必要单方面决定更改区块奖励。
 
@@ -272,18 +272,18 @@ EOS区块生产者[开始支付](https://cointelegraph.com/news/eos-node-offers-
 
 Aragon治理提案(AGPs)第一轮投票由于以太坊君士坦丁堡硬分叉造成潜在网络不稳定原因被[推迟](https://forum.aragon.org/t/agp-vote-delay-announcement/426) - 希望“区块链由于维护原因而关闭”不是Politeia会遇到的Decred问题。Aragon Association(Aragon协会)的CEO在提案提交开启前[发布](https://forum.aragon.org/t/agp-wishlist-and-blacklist/355)了提案的黑名单及愿望清单。在AGP[流程](https://github.com/aragon/AGPs/blob/master/AGPs/AGP-1.md)的第一个提案在99.97%同意票数的[通过](https://blog.aragon.org/final-results-from-the-agp-1-vote/)。总共2.6%的ANT代币，从45个独特地址在第一个提案中投票。在48小时投票期开始前，AGPs通过了Aragon协会董事会及社区审核。
 
-200万枚BTCP通过漏洞被开采并在CoinMetrics注意到供应有问题作出[调查](https://coinmetrics.io/bitcoin-private)前并没有被发现。开发团队[发布]（https://medium.com/@bitcoinprivate/official-statement-on-coinmetrics-report-6f1cef176c05）正式声明确认该漏洞。该漏洞在1月5日一个赏金猎人的补丁中被合并，该赏金猎人在收到工作奖励后离开。一行缺失的代码对网络的价值造成了巨大的破坏。我们可以从这个不幸的经历中学习很多：广泛的测试覆盖率，对共识代码的严格评论，在关键任务部分工作的开发人员建立的声誉，以及协议的多个实现对于构建我们可以投以资金信任的系统非常重要。
+200万枚BTCP通过漏洞被开采并在CoinMetrics注意到供应有问题作出[调查](https://coinmetrics.io/bitcoin-private)前并没有被发现。开发团队[发布]（https://medium.com/@bitcoinprivate/official-statement-on-coinmetrics-report-6f1cef176c05) 正式声明确认该漏洞。该漏洞在1月5日一个赏金猎人的补丁中被合并，该赏金猎人在收到工作奖励后离开。一行缺失的代码对网络的价值造成了巨大的破坏。我们可以从这个不幸的经历中学习很多：广泛的测试覆盖率，对共识代码的严格审查，在关键任务部分工作的开发人员建立的声誉，以及协议的多个实现对于构建我们可以投以资金信任的系统非常重要。
 
 比特币的Electrum在基础设施上受到了[攻击](https://www.reddit.com/r/CryptoCurrency/comments/a9yji3/electrum_wallet_hacked_200_btc_stolen_so_far/)。 有人启动了一堆恶意的Electrum服务器，促使用户“升级”到恶意软件版本并窃取200多个BTC。Electrum模型涉及位于客户端和完整节点之间的服务器网络。每个客户端依赖它们连接的服务器，这会损害用户隐私，因为这些服务器的所有者可以推断出用户拥有的钱包。如果Electrum服务器遭到破坏，这将会打开一些额外的攻击。Decred选择不开发类似Electrum的基础设施，而是直接进行客户端过滤。 这延迟了轻客户端的开发，但现在在dcrwallet，Decrediton和drcandroid中工作的SPV模式独立于任何服务提供商，并因此增强了用户的隐私。
 
-安全研究人员[演示](https://media.ccc.de/v/35c3-9563-wallet_fail)如果实际拥有该设备,可以以多种方式破解最流行的硬件钱包，。
+安全研究人员[演示](https://media.ccc.de/v/35c3-9563-wallet_fail)如果实际拥有该设备，可以以多种方式破解最流行的硬件钱包。
 
 最新[blockchaintransparency.org](https://www.blockchaintransparency.org/)的交易量报告得出的结论是，coinmarketcap.com排名前25位的与BTC对中，超过80％的交易量是洗牌交易。另一个难过的发现是，平均项目花费超过50,000美元的上市费用。该报告激发一些了分析DCR的交易量的[想法](https://github.com/xaur/decred-issues/issues/34)。
 
 Coinbase通过[注册商标](https://www.coindesk.com/coinbase-wants-to-own-buidl-trademark-filing-reveals
-)拥有“BUIDL”一词
+)拥有“BUIDL”一词。
 
-很多加密货币服务及团队视乎由几个实体拥有或共同拥有 https://twitter.com/tangleblog/status/1068094875533479937
+很多加密货币服务及团队似乎由几个实体拥有或共同拥有 https://twitter.com/tangleblog/status/1068094875533479937
 
 多个中心化交易所在年度[Proof-of-Keys](https://www.proofofkeys.com/)活动中[无法提供提款](https://www.ccn.com/several-exchanges-said-to-be-failing-bitcoin-ownership-event/)  
 
@@ -291,9 +291,9 @@ Slack不小心[屏蔽](https://www.engadget.com/2018/12/22/iran-sanctions-slack/
 
 12月中媒体报道了[多篇](https://www.wsj.com/articles/layoffs-become-the-latest-thing-in-cryptocurrency-1544471449)关于[加密货币行业](https://www.newsbtc.com/2019/01/09/cryptocurrency-shapeshift-layoffs/)的[裁员](https://www.businessinsider.com/bitmain-layoffs-2018-12)新闻。(也有报道指出相比其他行业并[没有这么严重](https://cointelegraph.com/news/better-than-corporations-layoffs-in-crypto-are-on-the-rise-still-lower-than-in-other-industries))。从上述Horizen的情况及一些Dash[社区讨论](https://www.reddit.com/r/dashpay/comments/ac9ca4/dash_nigeria_defunding_statement_and_path_forward/)看出其他拥有基金会的项目也同样正渡过难关。我们必须对在Politeia出现前管理基金会并保持健康的余额的团队表示感激，这是Decred在其他项目萎缩的时候仍然在发展扩大团队。12月的DCR价格以 17.50美元计算，将是基金会第一次花费大于收纳的月份。就算DCR/USD 汇率保持低迷，基金会仍然有能力可以保持目前的美金开销金额（略算为8年）。
 
-[据称](https://cointelegraph.com/news/reports-bitmain-allegedly-fires-all-bch-developers-in-wave-of-redundancies)在这波加密领域大裁员中，比特大陆裁推了所有比特现金的开发团队，当中也包括了Copernicus团队。
+[据称](https://cointelegraph.com/news/reports-bitmain-allegedly-fires-all-bch-developers-in-wave-of-redundancies)在这波加密领域大裁员中，比特大陆裁退了所有比特现金的开发团队，当中也包括了Copernicus团队。
 
-[Copernicus](https://github.com/copernet/copernicus)用Go编写了比特币现金协议的一个实现，当中也使用了btcsuite。软件预发布版本在12月[发布](https://news.bitcoin.com/an-alternative-client-has-mined-bitcoin-cash-block-558847/)并挖采了首个区块。作者在网站中[感谢](https://www.copernicuscore.org/btcd.html)btcsuite开发者并对他们在比特币生态系统的贡献表示[肯定](https://www.copernicuscore.org/btcd.html)。Copernicus团队在部落格里[表示](https://medium.com/@copernicusbit/the-copernicus-project-launched-the-pre-release-v0-0-6-dc572a924214)该软件“把原本的客户端软件架构重新组合和设计，以让整体架构更精确，降低开发人员的学习难度并增加了多样的客户端确保BCH网络的安全”。
+[Copernicus](https://github.com/copernet/copernicus)用Go编写了比特币现金协议的一个实现，当中也使用了btcsuite。软件预发布版本在12月[发布](https://news.bitcoin.com/an-alternative-client-has-mined-bitcoin-cash-block-558847/)并挖采了首个区块。作者在网站中[感谢](https://www.copernicuscore.org/btcd.html)btcsuite开发者并对他们在比特币生态系统的贡献表示[肯定](https://www.copernicuscore.org/btcd.html)。Copernicus团队在博客里[表示](https://medium.com/@copernicusbit/the-copernicus-project-launched-the-pre-release-v0-0-6-dc572a924214)该软件“把原本的客户端软件架构重新组合和设计，以让整体架构更简洁，降低开发人员的学习难度并增加了多样的客户端以确保BCH网络的安全”。
 
 Copernicus并不是第一个尝试多样化比特现金网络的团队。比特币现金已经有多个C++，Rust及JavaScript实现在开发过程中。在9月份，另外也[宣布](https://news.bitcoin.com/developers-unveil-two-new-bitcoin-cash-full-node-clients-written-in-go/)了两个用Go写的比特现金实现。[Gocoin-cash](https://github.com/CounterpartyXCPC/gocoin-cash)是[counterparty.cash](http://counterparty.cash/)团队基于[gocoin](https://github.com/piotrnar/gocoin) (另一个Go语言的比特币全节点实现)开发的。而[bchd](https://github.com/gcash/bchd)则是由OpenBazaar开发人员 [Chris Pacia](https://github.com/cpacia)主领。在bchd的最初[公告](https://www.yours.org/content/introducing-bchd-aee6a07feb00)中Chris表示btcsuite“是设计和写的最好的比特币代码之一”并解释相比C++的实现，他允许更多开发人员参与及更快速的开发新功能。同时这也给了他们“免费”的客户端隐私SPV。beta在11月[公布](https://medium.com/@bchd.cash/bchd-beta-release-46f89c677c47)，并从btcd分叉两个月内把贡献人数增加到9人和实现了多项btcd改进。
 
