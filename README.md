@@ -1,5 +1,5 @@
 # DecredCNJournal
-中文月报
+中文月报链接
 
-[11月](https://github.com/Guang168/DecredCNJournal/blob/master/201811_DecredJournalCN.md)
-[12月](https://github.com/Guang168/DecredCNJournal/blob/master/201812_DecredJournalCN.md)
+* [11月](https://github.com/Guang168/DecredCNJournal/blob/master/201811_DecredJournalCN.md)<br/>
+* [12月](https://github.com/Guang168/DecredCNJournal/blob/master/201812_DecredJournalCN.md)<br/>
