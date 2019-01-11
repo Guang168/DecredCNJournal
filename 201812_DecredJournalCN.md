@@ -306,8 +306,6 @@ Copernicus并不是第一个尝试多样化比特现金网络的团队。比特�
 
 欢迎在 Reddit, [GitHub](https://github.com/xaur/decred-news/issues)和[Matrix](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org) 上评论，反馈及贡献。
 
-月报贡献者
-
 ## 中文社区 
 
 * [微博](https://www.weibo.com/DecredProject)
@@ -318,8 +316,3 @@ Copernicus并不是第一个尝试多样化比特现金网络的团队。比特�
 欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
 
 中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
-
-
-
-
-
