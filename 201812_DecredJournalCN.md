@@ -1,8 +1,8 @@
 #{DRAFT}# Decred月报 - 12月 
 
-![Decred Journal - December 2018](img/Dec18_journal-201812-384.jpg "Decred Journal - December 2018")
+![Decred Journal - December 2018](img/Dec18_journal-201812-384.png "Decred Journal - December 2018")
 
-12月份中，我们有着不错的进展，也为这高效的一整年花上一个句点。Politeia前期通过的一些提案正如火如荼进行中，Ditto人员通过参与我们的沟通渠道为2019外展计划及设定消息传递的信息和广大的社区交流协作。
+12月份中，项目发展的不错，也为这高效的一整年花上一个句点。Politeia前期通过的一些提案正如火如荼进行中，Ditto人员通过参与我们的沟通渠道为2019外展计划及设定消息传递的信息和广大的社区交流协作。
 
 软件版本v1.4.0预发布版可在[GitHub](https://github.com/decred/decred-binaries/releases/tag/v1.4.0-rc2)下载。欢迎爱好者使用，建议一般用户还是耐心等待最终发布版。为确保下载的是官方开发版本，请下载后务必进行[验证软件签名](https://docs.decred.org/advanced/verifying-binaries/)。
 
@@ -41,17 +41,19 @@ Decred月报团队祝愿所有读者新年快乐！
 
 目前的更新专注于简化新用户的设置体验，毕竟这是新用户第一接触而且过程有点繁琐。
 
+Limitations of wallet encryption and risks of staking on insecure Android smartphones were discussed in [this chat](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$154533559847474ZIrlD:decred.org).
+
 [苹果钱包](https://github.com/raedahgroup/dcrios): 开发正努力跟进安卓钱包功能。iOS测试将在安卓1.0完成后发布。
 
 [dcrdata](https://github.com/decred/dcrdata): v3.1.1 已上线到 [主页面](https://explorer.dcrdata.org/)。更新内容包括[侧链](https://explorer.dcrdata.org/side)及[不合格区块](https://explorer.dcrdata.org/rejects)的新页面，重大的性能改进，Go模块的支持，非javescript模式的[改进](https://github.com/decred/dcrdata/pull/852) _(抗拒js的恐龙对此表示感谢!)。完整发布说明请[查看](https://github.com/decred/dcrdata/releases/tag/v3.1.0)。这次发布是4个月里面，16位代码贡献者的129提交的成果。恭喜dcrdata 团队！
 
 在主分支上，[CSV格式](https://github.com/decred/dcrdata/pull/894)下载一个地址的交易信息的新功能已完成。为了采用现代前端的最佳实践我们也合并了几个重要的重构。
 
-在受到DDoS攻击后，公共dcrdata的Tor服务暂时关闭。经过一番[讨论](https://matrix.to/#/!YwropUjOvDAjfbVSzi:decred.org/$154480347443065mKiKp:decred.org)后也重新上线于[dcrdata2opeenddl.onion](http://dcrdata2opeenddl.onion/).
+在受到DDoS攻击后，公共dcrdata的Tor服务暂时关闭。经过一番[讨论](https://matrix.to/#/!YwropUjOvDAjfbVSzi:decred.org/$154480347443065mKiKp:decred.org)后也重新上线于[dcrdata2opeenddl.onion](http://dcrdata2opeenddl.onion/)。
 
 开发人员可以使用新的[Docker image](https://github.com/decred/dcrdocker/pull/45)来开发及测试dcrdata和wiki上新的[FAQ页面](https://github.com/decred/dcrdata/wiki/FAQ)
 
-[分票](https://github.com/matheusd/dcr-split-ticket-matcher): [v0.7.0](https://github.com/matheusd/dcr-split-ticket-matcher/releases/tag/v0.7.0)和[v0.7.2](https://github.com/matheusd/dcr-split-ticket-matcher/releases/tag/v0.7.2)已发布。更新包括: SPV客户端的支持(注意隐私用户)，通过使用session令牌提高安全性能，OpenBSD的支持及更好的汇报。[请在GitHub](https://github.com/matheusd/dcr-split-ticket-matcher/releases)下载。为确保下载版本为@matheusd提供原版，请下载后验证软件签名。
+[分票(Ticket splitting)](https://github.com/matheusd/dcr-split-ticket-matcher): [v0.7.0](https://github.com/matheusd/dcr-split-ticket-matcher/releases/tag/v0.7.0)和[v0.7.2](https://github.com/matheusd/dcr-split-ticket-matcher/releases/tag/v0.7.2)已发布。更新包括: SPV客户端的支持(注意隐私用户)，通过使用session令牌提高安全性能，OpenBSD的支持及更好的汇报。[请在GitHub](https://github.com/matheusd/dcr-split-ticket-matcher/releases)下载。为确保下载版本为@matheusd提供原版，请下载后验证软件签名。
 
 [docs](https://github.com/decred/dcrdocs): 基于之前设定的重定向基础设施，[整理网址](https://github.com/decred/dcrdocs/issues/659)及目录结构的工作已经开始。议程投票“Agenda Voting” 一词[改成](https://github.com/decred/dcrdocs/pull/733)共识规则投票“Consensus Rules Voting”。有关翻译的架构已经被[移除](https://github.com/decred/dcrdocs/issues/736)。词汇表也增加了更多的术语。新的[SPV指南](https://docs.decred.org/wallets/spv/)
 已被[收录](https://github.com/decred/dcrdocs/pull/726)到文档中。Politeia文档的[更新](https://github.com/decred/dcrdocs/pull/758)把Politeia相关页面整理到一起，同时增加了[提案指引](https://docs.decred.org/governance/politeia/proposal-guidelines/)页面及[提案例子](https://docs.decred.org/governance/politeia/example-proposals/).
@@ -83,7 +85,7 @@ decred.org中移除了3名贡献者 https://github.com/decred/dcrweb/pull/472
 
 ## 治理
 
-在整个12月中，[基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)纳入 17,016 DCR并花费了其中 12,570 DCR。以12月平均DCR价格17.5美元计算，这分别代表298k美元和220k美元。这些是支付11月的工作开销，所以同时也需要考虑这数额如果以11月均价为32.50美元来计算的话分别是553k和409k美元。
+在整个12月中，[基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收取了17,016 DCR并花费了其中 12,570 DCR。按12月平均DCR价格17.5美元计算，这分别代表29.8万美元和22万美元。由于这是用于支付11月的工作开销，所以同时也可以考虑这数额如果以11月均价为32.50美元来计算的话分别是55.3万和40.9万美元。
 
 以下是1月10日为止的粗略提案更新。请阅读在[Politeia](https://proposals.decred.org/)网页的提案原文及讨论。
 
@@ -181,12 +183,12 @@ Joel对Decred的治理系统及其让Decred多态，在社区决定时添加功�
 
 创始人之夜于12月6日星期四举行，是Distributed Global的节日派对。他们从各个办公室引进了他们所有的GP，并邀请他们的LP，合作伙伴以及他们投资组合中的各种项目的成员。这是一个很好的机会，可以满足于各个社区见面，并为纽约市未来的活动建立起关系。下一轮纽约的Decred活动计划在春天举行。
 
-其他出席活动:
+其他出席的活动:
 
 * 在墨西哥Amozoc科技大学中@elian向学生介绍未来需要的技能并[分享](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15466174667748MPUAY:decred.org): “作为我经验分享的一部分，我粗略的介绍了Decred作为一个创新项目，数字技能（digital skills）成为协作的重要工具。这并不是加密货币活动，反而是个商业管理学生的激励讲座，鼓励他们去学习一些数字电子方面的技能。这是郊外的一所较小的大学，所以这类内容非常受欢迎。作为网络企业带来的新机会分享，我也分享了我在Decred开源项目中的工作。我认为让他们了解到在无限可能的互联网中庞大的经济对他们来说非常有趣。”([照片](https://twitter.com/Decred_MX/status/1071230180398641154))
 * [Decred入门](https://cryptocanucks.com/events/an-introduction-to-decred-toronto/)-多伦多，加拿大。@michae2xl和@zubairzia0举办了活动并[分享](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15464604416182ZLeNH:decred.org) 虽然出席率很低，大家对于和本地Decred社区见面感到期待并愿意帮忙组织下次活动。([照片](https://twitter.com/Decred_CA/status/1079191530362101760))
 
-### 未来活动:
+未来活动:
 
 * [OKEx Taiwan MeetUp](https://www.eventbrite.hk/e/okex-global-meetup-tour-2019-taiwan-tickets-54689867867)-台北，台湾，1月17日活动前部分介绍3个项目(Decred, EOS和NEM,各20分钟)，另一部分是关于链上投票（30分钟）的小组讨论。@morphymore 将参与介绍。
 * [Binance Blockchain Week](https://www.binancefair.com/)新加坡，1月21-22日 @guang将代表Decred出席。
@@ -200,7 +202,7 @@ Joel对Decred的治理系统及其让Decred多态，在社区决定时添加功�
 
 ## 媒体链接
 
-### Selected articles:
+部分文章:
 
 * Bitcoin Miners Go Silent As Price Falls ([英文版cryptobriefing.com](https://cryptobriefing.com/bitcoin-miners-silent-price-falls/)，[中文版](https://www.jinse.com/bitcoin/288904.html))
 * Detailed analysis of Decred fork resistance by @Haon ([medium](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7))
@@ -212,17 +214,18 @@ Joel对Decred的治理系统及其让Decred多态，在社区决定时添加功�
 * Decred: Governance and Funding Reimagined ([51pct.io](https://51pct.io/decred-governance-and-funding-reimagined/))
 * Working for the Decred DAE by @richardred ([medium](https://medium.com/@richardred/working-for-the-decred-dae-a9cfb17686fa))
 
-### Translations:
+翻译:
+
 * Decred Journal - November 2018 @elian 翻译的[西班牙语](https://medium.com/@decred_es/bolet%C3%ADn-mensual-decred-noviembre-2018-52168692e624), @kozel 翻译的[波兰语](https://github.com/artikozel/DecredJournalPL/blob/master/journal/201811_DecredJournalPL.md)及@DZ 翻译的[俄罗斯语](https://medium.com/decred-russia/decred-journal-%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8C-2018-d0aceacfd72a)， @guang 翻译的[中文](https://medium.com/@guang.dcr/decred%E6%9C%88%E6%8A%A5-11%E6%9C%88-1ddac6598830)。11月月报是目前最大一份(59 KiB), 感谢大家翻译工作的努力！
 * 您可以在Decred Journal[主页](https://xaur.github.io/decred-news/)找到所有翻译链接。
 * [Detailed analysis of Decred fork resistance](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7) by @Haon - @kozel 翻译的[波兰语](https://github.com/artikozel/decred-articles/blob/master/Polish/into-polish/decredforkresistance.md)
 * [How to Get Hired as a Decred Contractor](https://medium.com/decred/how-to-get-hired-as-a-decred-contractor-e1435842df10) by @Haon - @guang 翻译的[中文](https://www.weibo.com/ttarticle/p/show?id=2309404315589245067163)
 
-### Videos:
+录像:
 
 * On The Record w/ Murad Mahmudov - Bitcoin for 2019 on Tone Vays show ([youtube](https://www.youtube.com/watch?v=pjXzrAOhAPo), Decred介绍在影片大约1小时点开始)
 
-### Audio:
+录音:
 
 * Free Talk Live 2018-10-27 Interview with Marco Peereboom of Decred at the Texas Bitcoin Conference https://soundcloud.com/freetalklive/free-talk-live-2018-10-27#t=40:50 _(missed in Oct issue)_
 * Episode 18: Murad Mahmudov on Bitcoin http://didyouknowcrypto.com/episode-18-murad-on-bitcoin/ {extract highlights}
@@ -243,37 +246,23 @@ Joel对Decred的治理系统及其让Decred多态，在社区决定时添加功�
 
 另外还有电报群社区 中文(661, +119), 葡萄牙语 (435, +99) 及意大利语 (120)。还有@michae2xl运行Instagram中@decredproject账号1月6日为止有396关注。
 
-### 通讯系统新闻：
+通讯系统新闻：
 
 * @dhill继续修复连接聊天软件的漏洞 https://github.com/42wim/matterbridge/pull/644, 仍有些有关带附件信息的漏洞有待解决。
 * 由于活跃度低的关系，\#smart_contracts频道将被存档
 * Rocket.Chat被[移除](https://github.com/decred/dcrweb/pull/460)
-* 新matrix 用户的登录页面 https://github.com/decred/dcrweb/pull/462
-* [issue追踪](https://github.com/xaur/decred-issues)概念证明 - 35 个issues
-* Prototype [community issue tracker](https://github.com/xaur/decred-issues) was started to discuss actionable ideas in a more structured format. Any idea that benefits the project can be discussed. As of Jan 10 there are [73 issues](https://github.com/xaur/decred-issues/issues) like [article ideas](https://github.com/xaur/decred-issues/labels/article), [PR](https://github.com/xaur/decred-issues/labels/PR), [archiving](https://github.com/xaur/decred-issues/labels/archiving) and data preservation, or discussion of [communication platforms](https://github.com/xaur/decred-issues/labels/comms). For example, [this issue](https://github.com/xaur/decred-issues/issues/54) captures a challenging task to find a good name for Decred's hybrid PoW/PoS consensus algorithm and lists all options suggested so far. You can subscribe to everything with the Watch button on top, or to individual issues with Subscribe button on the right panel. There is a popular belief that "GitHub is for developers" - this is not the case. Posting issues and comments and '+1' is no harder than using Reddit or chat and in fact multiple non-developers already contribute doing just that.
 
-Reddit incident showed us another weakness in the platform. Multiple threads were started and spurred useful discussion, but were later removed by the author. This wasted the effort of all people who bothered to reply. The deleted threads were somewhat [resurrected](https://www.reddit.com/r/decred/comments/a6ywpj/deleted_threads_with_valuable_discussion/), but generally this incident shows an attack/sabotage vector: trigger the discussion and then delete the thread, wasting community's energy. Reddit has no defense from this as moderators cannot disallow users to delete their content. The event has led to a discussion of a [Reddit replacement](https://github.com/xaur/decred-issues/issues/38) that could probably derive from Politeia.
+社区启用[issue跟踪](https://github.com/xaur/decred-issues)模型，试图以更结构化的格式讨论可执行的想法。任何对项目有益的想法都可以加入讨论。截至1月10日为止，有[73个issues](https://github.com/xaur/decred-issues/issues)包括[文章主题想法](https://github.com/xaur/decred-issues/labels/article), [PR](https://github.com/xaur/decred-issues/labels/PR), [存档](https://github.com/xaur/decred-issues/labels/archiving)及保存数据，或[通信平台](https://github.com/xaur/decred-issues/labels/comms)的讨论。例如[这项issue](https://github.com/xaur/decred-issues/issues/54)就是关于要给Decred的混合PoW/PoS共识算法取个好名字的艰难任务。目前所有提出的选项都已经在issue中记录下来。您可以使用顶部的“watch”按钮订阅所有内容，也可以使用右侧面板上的“订阅”按钮订阅个别issue。人们普遍认为“GitHub适合开发人员” - 事实并非如此。发布issue和评论以及'+1'并不比使用Reddit或聊天软件难用，而事实上，很多非开发人员已经通过这样做出了贡献。
 
-* 在reddit中数个帖子经过一番讨论后被移除，浪费了所有认真回复的努力。后来社区成员发出浏览已删除内容的链接。但这事件带出了一个攻击可能性：即带出讨论随后删除帖子，浪费社区资源。由于版主无法阻止用户删除内容，Reddit无法防范这样的攻击。
+Reddit事件展示了平台的另一个弱点。用户开了多个帖子并激发了讨论，但后来却把帖子删除了。这件事浪费了所有社区回复的人的努力。被删除的帖虽然以另一种形式[保存](https://www.reddit.com/r/decred/comments/a6ywpj/deleted_threads_with_valuable_discussion/)了下来，但此事件显示了另一种攻击/破坏维度：触发讨论然后删除帖子，浪费社区的资源。由于版主无法禁止用户删除内容，因此在Reddit其实并无法阻止这问题的发生。该事件也引发了探讨基于Politeia的[Reddit替代产品](https://github.com/xaur/decred-issues/issues/38)的讨论，。
 
 再一次的，在很接近软件新版本发布时Reddit出现了很多不寻常活动。这包括许多较不相关问题的出现，或看似无意的问题等等，并且这些问题都是从一些从来不活跃，短暂出现的帐号问出。这启事希望让关心项目的社区成员注意这些有可能浪费项目资源的怪异活动。详情请看[讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154531182347084ccYxu:decred.org)。
 
-{selected discussed topics, as bullet list or one paragraph per topic}
-
-Reddit: {interesting threads}
-
-Twitter: {interesting threads}
-
-{link to chat index}
-
 ## 市场
 
-12月中DCR在 USD 14.2-21.4/BTC 0.0042-0.0058 区间交易。平均DCR/USD 价格为 USD17.50。5-6百万的交易量短暂的把价格拉升到 USD 20.9 / BTC 0.0058，平日交易量一般为0.8-1.2百万。注意交易量数据并不是可靠的指标。。
+12月中DCR在 USD 14.2-21.4/BTC 0.0042-0.0058 区间交易。平均DCR/USD 价格为 USD17.50。5-6百万的交易量短暂的把价格拉升到 USD 20.9 / BTC 0.0058，平日交易量一般为0.8-1.2百万。注意交易量数据并不是可靠的指标。
 
 ## 相关外部信息
-
-{PoW, ASIC resistance, tech}
-
 
 Vertcoin (VTC) 受到51%[攻击](https://medium.com/coinmonks/vertcoin-vtc-is-currently-being-51-attacked-53ab633c08a4)，在4个事件中发生22次重组及15次双花，受害者损失大约 100,000美元。这再次肯定了某些币种容易受到矿工的攻击。这些币种不是矿机主要挖掘对象(GPU挖矿或抗ASIC，也包括比特币分叉币)，矿工只需要有合适的硬件及没有兴趣维护主链就可进行攻击。这些攻击的影响之一是货币被认为是不安全的，因为它曾经失败了。任何仍愿意接受它的人在确认转移可能有非常多的确认数量要求，使得货币移动缓慢。
 
@@ -289,22 +278,14 @@ Aragon治理提案(AGPs)第一轮投票由于以太坊君士坦丁堡硬分叉�
 
 安全研究人员[演示](https://media.ccc.de/v/35c3-9563-wallet_fail)如果实际拥有该设备,可以以多种方式破解最流行的硬件钱包，。
 
-{DEX}
-
 最新[blockchaintransparency.org](https://www.blockchaintransparency.org/)的交易量报告得出的结论是，coinmarketcap.com排名前25位的与BTC对中，超过80％的交易量是洗牌交易。另一个难过的发现是，平均项目花费超过50,000美元的上市费用。该报告激发一些了分析DCR的交易量的[想法](https://github.com/xaur/decred-issues/issues/34)。
-
-{related exchanges and websites}
 
 Coinbase通过[注册商标](https://www.coindesk.com/coinbase-wants-to-own-buidl-trademark-filing-reveals
 )拥有“BUIDL”一词
 
-https://www.coindesk.com/executives-at-korean-crypto-exchange-upbit-indicted-for-fraud
-
 很多加密货币服务及团队视乎由几个实体拥有或共同拥有 https://twitter.com/tangleblog/status/1068094875533479937
 
 多个中心化交易所在年度[Proof-of-Keys](https://www.proofofkeys.com/)活动中[无法提供提款](https://www.ccn.com/several-exchanges-said-to-be-failing-bitcoin-ownership-event/)  
-
-{other: regulations, security, fun}
 
 Slack不小心[屏蔽](https://www.engadget.com/2018/12/22/iran-sanctions-slack/)了一些到过伊朗的用户。后来Slack对此[道歉](https://slackhq.com/an-apology-and-an-update)并作出了澄清。但这并不意外而且非常明显Slack 科技是个([风投资助](https://en.wikipedia.org/wiki/Slack_Technologies))符合美国法律的公司。相反的Matrix 聊天室可以通过多个服务器联合，因此即使某些参与的服务器关闭，其他管辖区域中的服务器也可以继续运行并保留历史记录。
 
@@ -315,6 +296,8 @@ Slack不小心[屏蔽](https://www.engadget.com/2018/12/22/iran-sanctions-slack/
 [Copernicus](https://github.com/copernet/copernicus)用Go编写了比特币现金协议的一个实现，当中也使用了btcsuite。软件预发布版本在12月[发布](https://news.bitcoin.com/an-alternative-client-has-mined-bitcoin-cash-block-558847/)并挖采了首个区块。作者在网站中[感谢](https://www.copernicuscore.org/btcd.html)btcsuite开发者并对他们在比特币生态系统的贡献表示[肯定](https://www.copernicuscore.org/btcd.html)。Copernicus团队在部落格里[表示](https://medium.com/@copernicusbit/the-copernicus-project-launched-the-pre-release-v0-0-6-dc572a924214)该软件“把原本的客户端软件架构重新组合和设计，以让整体架构更精确，降低开发人员的学习难度并增加了多样的客户端确保BCH网络的安全”。
 
 Copernicus并不是第一个尝试多样化比特现金网络的团队。比特币现金已经有多个C++，Rust及JavaScript实现在开发过程中。在9月份，另外也[宣布](https://news.bitcoin.com/developers-unveil-two-new-bitcoin-cash-full-node-clients-written-in-go/)了两个用Go写的比特现金实现。[Gocoin-cash](https://github.com/CounterpartyXCPC/gocoin-cash)是[counterparty.cash](http://counterparty.cash/)团队基于[gocoin](https://github.com/piotrnar/gocoin) (另一个Go语言的比特币全节点实现)开发的。而[bchd](https://github.com/gcash/bchd)则是由OpenBazaar开发人员 [Chris Pacia](https://github.com/cpacia)主领。在bchd的最初[公告](https://www.yours.org/content/introducing-bchd-aee6a07feb00)中Chris表示btcsuite“是设计和写的最好的比特币代码之一”并解释相比C++的实现，他允许更多开发人员参与及更快速的开发新功能。同时这也给了他们“免费”的客户端隐私SPV。beta在11月[公布](https://medium.com/@bchd.cash/bchd-beta-release-46f89c677c47)，并从btcd分叉两个月内把贡献人数增加到9人和实现了多项btcd改进。
+
+对于Decred的相关性和好消息是，更多的开发人员开始研究btcsuite代码库，而Decred同样基于该代码库也可以从中受益。
 
 ## 关于月报
 12月为英文第9期[GitHub](https://xaur.github.io/decred-news/journal/201812)月报。 点击[这里](https://xaur.github.io/decred-news/)浏览往期月报。
