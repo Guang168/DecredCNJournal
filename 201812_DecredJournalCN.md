@@ -1,6 +1,6 @@
-#{DRAFT}# Decred月报 - 12月 
+# Decred月报 - 12月 
 
-![Decred Journal - December 2018](img/Dec18_journal-201812-384.png "Decred Journal - December 2018")
+![Decred Journal - December 2018](img/DEC18_journal-201812-384.png)
 
 12月份中，项目发展的不错，也为这高效的一整年花上一个句点。Politeia前期通过的一些提案正如火如荼进行中，Ditto人员通过参与我们的沟通渠道为2019外展计划及设定消息传递的信息和广大的社区交流协作。
 
