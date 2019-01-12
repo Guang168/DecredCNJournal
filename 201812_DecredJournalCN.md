@@ -2,7 +2,7 @@
 
 ![Decred Journal - December 2018](img/DEC18_journal-201812-384.png)
 
-12月份中，项目发展的不错，为2018年划上了一个圆满的句点。Politeia前期中通过的一些提案正如火如荼进行中，Ditto人员已加入我们并与广大的社区合作，为Decred制定2019年的拓展计划。
+12月份中，项目发展得不错，为2018年划上了一个圆满的句点。Politeia前期中通过的一些提案正如火如荼进行中，Ditto人员已加入我们并与广大的社区合作，为Decred制定2019年的拓展计划。
 
 软件版本v1.4.0预发布版可在[GitHub](https://github.com/decred/decred-binaries/releases/tag/v1.4.0-rc2)下载。欢迎爱好者使用，普通用户建议耐心等待最终版。为确保下载的是官方开发版本，请下载后务必进行[验证软件签名](https://docs.decred.org/advanced/verifying-binaries/)。
 
@@ -18,11 +18,11 @@ Decred月报团队祝愿所有读者新年快乐！
 
 在`go get`工具中使用恶意仓库时存在远程代码执行的[漏洞](https://seclists.org/oss-sec/2018/q4/254)已被修复。Decred软件并没有受到影响。另外，dcrd里除了Go runtime以外，所有依赖项的更改都已被审核。这也是在发布dcrd版本时需要那么多努力及为什么依赖数量应该受到限制的部分原因。更多细节在[聊天室](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$154476448242812wqgkf:decred.org)中讨论。
 
-关于dcrd中实施"父子支付方案"(Child Pays For Parent (CPFP))的讨论也正[进行中](https://github.com/decred/dcrd/issues/1556)。
+关于dcrd中实施"亲子支付方案"(Child Pays For Parent (CPFP))的讨论也正[进行中](https://github.com/decred/dcrd/issues/1556)。
 
 [dcrwallet](https://github.com/decred/dcrwallet): 刚发布的v1.4.0 RC2修复了许多关于SPV及错误处理的漏洞，并添加了一系列新的gRPC端点，以允许终端用户在UI中启动新功能。从钱包到节点的Tor连接已通过支持[代理模式](https://github.com/decred/dcrwallet/pull/1294)解决。有了足够的网络节点升级，这让[默认交易费用](https://github.com/decred/dcrwallet/pull/1339)降至0.0001 DCR得以完成。更多更改请参考[发布说明](https://github.com/decred/decred-binaries/releases/tag/v1.4.0-rc2)。
 
-[Decrediton](https://github.com/decred/decrediton): v1.4.0 RC2 预发布版更新功能包括对Trezor初步支持，设计改进及漏洞修复。初步的Trezor[支持](https://github.com/decred/decrediton/pull/1547)让用户可以使用Decrediton作为“watch-only”钱包并通过Trezor验签交易。这功能很可能在获得足够测试前隐藏在设置中。该版本暂不支持投票功能。另外“watch-only”钱包可以[创建未验签交易](https://github.com/decred/decrediton/pull/1864)，然后把数据传输到另一台设备签名验证及广播。治理页面也获得一些较大的改动，其中一个增加的重要功能包括在有新提案及投票活动时[通知](https://github.com/decred/decrediton/pull/1835)用户。[开启SPV模式](https://github.com/decred/decrediton/pull/1766)的新页面也会在钱包开启页面显示。初始的暗色主题也可以在设定中启用(最终颜色还待确认)。更多相关改进信息请参考[发布说明](https://github.com/decred/decred-binaries/releases/tag/v1.4.0-rc2)。
+[Decrediton](https://github.com/decred/decrediton): v1.4.0 RC2 预发布版更新功能包括对Trezor初步支持，设计改进及漏洞修复。初步的Trezor[支持](https://github.com/decred/decrediton/pull/1547)让用户可以使用Decrediton作为“watch-only”钱包并通过Trezor验签交易。这功能很可能在获得足够测试前隐藏在设置中。该版本暂不支持投票功能。另外“只看(watch-only)”钱包可以[创建未验签交易](https://github.com/decred/decrediton/pull/1864)，然后把数据传输到另一台设备签名验证及广播。治理页面也获得一些较大的改动，其中一个增加的重要功能包括在有新提案及投票活动时[通知](https://github.com/decred/decrediton/pull/1835)用户。[开启SPV模式](https://github.com/decred/decrediton/pull/1766)的新页面也会在钱包开启页面显示。初始的暗色主题也可以在设定中启用(最终颜色还待确认)。更多相关改进信息请参考[发布说明](https://github.com/decred/decred-binaries/releases/tag/v1.4.0-rc2)。
 
 在主分支中（未包含在1.4发布版），现在可以为[Raspberry Pi(树莓派)](https://github.com/decred/decrediton/pull/1904)打包Decrediton。
 
