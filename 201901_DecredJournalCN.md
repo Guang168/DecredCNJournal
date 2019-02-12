@@ -25,9 +25,9 @@ v1.4.0 最终版本和[12月](https://xaur.github.io/decred-news/journal/201812.
 
 ## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): An [issue](https://github.com/decred/dcrd/issues/1568) was discovered in v1.4.0 RC1. The large change to UTXO set semantics accidentally fixed a bug in consensus rules. Old incorrect behavior was [preserved](https://github.com/decred/dcrd/pull/1570) until a consensus vote can take place to correct it. Thanks to everybody who helped to discover and fix the bug in the release candidate.
+[dcrd](https://github.com/decred/dcrd): 在 v1.4.0 RC1 中发现了一个问题在[issue](https://github.com/decred/dcrd/issues/1568)中被提出。对于UTXO反转的设置语义更改意外的修复了一个共识规则漏洞。目前不正确行为将被[保留](https://github.com/decred/dcrd/pull/1570) 至下一个共识更改投票更正。感谢所有帮助发现和修复候选版本中错误的人。
 
-The code for the consensus vote is [completed](https://github.com/decred/dcrd/pull/1579) and included in the final [v1.4.0 release](https://github.com/decred/decred-binaries/releases/tag/v1.4.0). The fix and vote was prioritized because it is required for Lightning Network. [DCP004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) (Decred Change Proposal) explains the change in detail and reminds of useful applications of relative locks beyond LN. Side effect of this work was [refactoring](https://github.com/decred/dcrd/pull/1583) and reinforcement of tests in that area. @matheusd has published a [blog post](https://matheusd.com/post/dcp0004-and-hardforks/) which gives an overview of the bug and how it was found and responded to.
+共识更改投票的代码目前已[完成](https://github.com/decred/dcrd/pull/1579)并收录到最终[v1.4.0 发布版](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)。由于闪电网络的需要，该修复和投票应获得优先处理。[DCP004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) (Decred Change Proposal) 中说明了改更改的细节并提出对于其他除了闪电网络的应用。这部分工作也为这部分带来[重构](https://github.com/decred/dcrd/pull/1583)及加强测试。 @matheusd 发布了篇[部落格文章](https://matheusd.com/post/dcp0004-and-hardforks/)概述了该漏洞，它的发现和响应方式。
 
 Discussion [started](https://github.com/decred/dcrd/issues/1593) how to further improve stake difficulty algorithm by removing oscillations - this could make ticket price even more smooth.
 
@@ -127,7 +127,7 @@ Discussions:
 
 ## 挖矿
 
-Obelisk batches 2-5 [are shipping](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=4211e39081), Gen 2 firmware [update](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=c501bf724d) contains new features and bug fixes. [Class action](https://www.reddit.com/r/decred/comments/ae8hy8/class_action_lawsuit_officially_filed_against/) filed over Obelisk's sale of SC1 and DCR1.
+Obelisk 第2-5批次 [已发货](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=4211e39081), 第二代固件 [更新](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=c501bf724d) 包含新功能及漏洞修复。用户对于Obelisk SC1 和DCR1 发出了[集体诉讼](https://www.reddit.com/r/decred/comments/ae8hy8/class_action_lawsuit_officially_filed_against/)。
 
 Open source Decred mining pool implementation is [in the works](https://medium.com/decred/decred-independent-contractor-roadmap-884faba3db39) by @dnldd.
 
