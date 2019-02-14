@@ -29,50 +29,50 @@ v1.4.0 最终版本和[12月](https://xaur.github.io/decred-news/journal/201812.
 
 共识更改投票的代码目前已[完成](https://github.com/decred/dcrd/pull/1579)并收录到最终[v1.4.0 发布版](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)。由于闪电网络的需要，该修复和投票应获得优先处理。[DCP004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) (Decred Change Proposal) 中说明了改更改的细节并提出对于其他除了闪电网络的应用。这部分工作也为这部分带来[重构](https://github.com/decred/dcrd/pull/1583)及加强测试。 @matheusd 发布了篇[部落格文章](https://matheusd.com/post/dcp0004-and-hardforks/)概述了该漏洞，它的发现和响应方式。
 
-Discussion [started](https://github.com/decred/dcrd/issues/1593) how to further improve stake difficulty algorithm by removing oscillations - this could make ticket price even more smooth.
+开始讨论如何[改进权益算法](https://github.com/decred/dcrd/issues/1593) 以消除票价震荡-这会使票价变化更加稳定. 
 
-[Decrediton](https://github.com/decred/decrediton): bug fixes and preparation for v1.4.0 release.
+[Decrediton](https://github.com/decred/decrediton): 发布v1.4.0版本客户端并修复了漏洞。
 
-A feature to specify config options as command line arguments [merged](https://github.com/decred/decrediton/pull/1975) to master.
+将配置选项指定为命令行参数的功能[合并](https://github.com/decred/decrediton/pull/1975)到主服务器。
 
-[Politeia](https://github.com/decred/politeia): Feature to view previous versions of a proposal was enabled.
+[Politeia](https://github.com/decred/politeia): 启用了查看早起版本题案的功能。
 
-In development: Onboarding popup was [replaced](https://github.com/decred/politeiagui/pull/986) with relevant links to docs. Thanks to lemonkabir for discovering a couple of [security](https://github.com/decred/politeia/issues/647) [issues](https://github.com/decred/politeia/issues/650). [Cache layer](https://github.com/decred/politeia/pull/660) entered review phase.
+正在开发的: 登陆弹出窗口被新的定向文档链接[取代](https://github.com/decred/politeiagui/pull/986) 。 感谢lemonkabir发现了这些[安全](https://github.com/decred/politeia/issues/647) [问题](https://github.com/decred/politeia/issues/650). [缓存层](https://github.com/decred/politeia/pull/660)进入审核阶段。 
 
-Discussions:
+讨论:
 
-* Missing admin [feature](https://github.com/decred/politeia/issues/662) to censor public proposal was identified: there must be a way to remove a public proposal that was edited to include abusive content. Alternatively, admins would have to review all edits before they are shown on the proposals site.
-* [Automated end-to-end testing](https://github.com/decred/politeiagui/issues/976) and [QA checklist](https://github.com/decred/politeiagui/issues/977) for major changes.
-* Large frontend code [refactoring](https://github.com/decred/politeiagui/issues/990) to address complexity, performance and dev productivity issues. First proposed [solution](https://github.com/decred/politeiagui/issues/990#issuecomment-454535696) is to use GraphQL.
+* 已确定缺少用于审查公共提案的管理员[功能](https://github.com/decred/politeia/issues/662):要有一种方法来删除编辑后包含无关内容的公开提案。 或者，管理员必须先审核所有修改的内容，然后才能在提案系统上显示这些修改的内容。
+* [自动化端到端测试](https://github.com/decred/politeiagui/issues/976) 和 [质量检测目录](https://github.com/decred/politeiagui/issues/977) 的变更。
+* 大型代码前端 [重构](https://github.com/decred/politeiagui/issues/990)以解决复杂性、性能和开发效率的问题。提出的[解决方案](https://github.com/decred/politeiagui/issues/990#issuecomment-454535696)是使用GraphQL。
 
-[dcrandroid](https://github.com/decred/dcrandroid): Final version 1.0 was released! Get it on Google Play Store for [mainnet](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet) or [testnet](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.testnet) wallets. Test coins can be obtained via the [faucet](http://faucet.decred.org/). Feedback is welcome [on Reddit](https://www.reddit.com/r/decred/comments/am7j40/decred_wallet_for_android_v10_released/) and bug reports [on GitHub](http://github.com/decred/dcrandroid/issues).
+[dcrandroid](https://github.com/decred/dcrandroid): 安卓版钱包正式版v1.0发布了! 你可以在Google Play商店获取[主网](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)或 [测试网](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.testnet)钱包。你可以在[faucet](http://faucet.decred.org/)获取测试网代币。欢迎来[Reddit](https://www.reddit.com/r/decred/comments/am7j40/decred_wallet_for_android_v10_released/)以及[GitHub](http://github.com/decred/dcrandroid/issues)对测试发现的漏洞进行反馈。
 
-Since release candidate 2, final version added sync progress display, no wifi alert, new splash screen and minor bug fixes - full changelog [here](https://github.com/decred/dcrandroid/compare/v1.0.0-rc2...v1.0.0-rc3). Congrats dcrandroid team!
+与第二个测试版本不同的是, 正式版增加了区块同步进度提示、wifi断开连接报警、 新的启动画面以及漏洞修复。这里是 [更改日志](https://github.com/decred/dcrandroid/compare/v1.0.0-rc2...v1.0.0-rc3)。恭喜dcrandroid团队!
 
-[dcrios](https://github.com/raedahgroup/dcrios): preview is [available](https://testflight.apple.com/join/dvq51tCh) on Apple TestFlight.
+[dcrios](https://github.com/raedahgroup/dcrios):ios钱包在苹果app测试工具Apple TestFlight上[提供](https://testflight.apple.com/join/dvq51tCh)预览版。
 
-[dcrdata](https://github.com/decred/dcrdata): New home page design is [advancing](https://github.com/decred/dcrdata/pull/921). Values on the home page now [update automatically](https://github.com/decred/dcrdata/pull/961) when new block is found. Exchange rate monitoring was [added](https://github.com/decred/dcrdata/pull/951) to the backend that enables showing USD values on the UI. HTTPS is now enforced on `explorer` and `mainnet` subdomains ([discussion](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154818146313660CWvZy:decred.org)).
+[dcrdata](https://github.com/decred/dcrdata):新的主页设计正在 [进行](https://github.com/decred/dcrdata/pull/921)。现在当发现新的区块时，主页上的数值[会自动更新](https://github.com/decred/dcrdata/pull/961)。将汇率监控[添加](https://github.com/decred/dcrdata/pull/951) to the 到后端以便用户查看其实时美元价格。在资源管理器和Mainnet子域上强制使用HTTPS([正在讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154818146313660CWvZy:decred.org)).
 
-New home page design that includes exchange rate, new address table views, improved charts and speed optimizations are [available](https://twitter.com/decredexplorer/status/1093182831487053825) in v4 beta at [beta.dcrdata.org](https://beta.dcrdata.org/). Detailed release notes will be compiled with the release candidate.
+新的主页设计包含汇率、新的地址显示图、改进的图表以及速度的优化，你可以在[beta.dcrdata.org](https://beta.dcrdata.org/)中的测试版v4中[获取](https://twitter.com/decredexplorer/status/1093182831487053825)。 详细的发布说明将与测试版本一起编译。
 
-Dev side: @buck54321 is [destroying](https://github.com/decred/dcrdata/pull/915) imperative jQuery code. Team is preparing stress testing of Insight API _(they call it torture testing, ouch)_.
+Dev side: @buck54321正在[破坏](https://github.com/decred/dcrdata/pull/915)命令式jQuery代码. 团队正在准备对Insight API进行压力测试（他们称之为酷刑测试！）。
 
-[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher): Internal code improvements, preliminary work for Decrediton integration. A [monitoring page](https://mainnet-split-tickets.matheusd.com/) was set up that shows active splitting sessions from all VSPs that support it.
+[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher): 内部代码改进，完成在Decrediton集成的初步工作。创建了一个[监控页面](https://mainnet-split-tickets.matheusd.com/)，它显示所有支持的VSP处在活跃状态。
 
-[docs](https://github.com/decred/dcrdocs): New pages: [Operating a VSP](https://docs.decred.org/advanced/operating-a-vsp/) outlines configuration requirements and desired skillset of VSP operators, [Solo PoS Voting](https://docs.decred.org/advanced/solo-proof-of-stake-voting/) brings the guide by @jz to all docs readers, [Address Details](https://docs.decred.org/advanced/address-details/) describes all possible types of addresses, [Contributing to Decred](https://docs.decred.org/contributing/contributing-to-decred/) explains how to become a paid Decred contractor.
+[docs](https://github.com/decred/dcrdocs):新的页面: [Operating a VSP](https://docs.decred.org/advanced/operating-a-vsp/)概述了搭建vps（Pos池）的配置要求以及维护人员的技能要求, [Solo PoS Voting](https://docs.decred.org/advanced/solo-proof-of-stake-voting/)@jz更新solo投票教程提供给所有文档阅读者, [Address Details](https://docs.decred.org/advanced/address-details/)描述了所有可能的地址类型, [Contributing to Decred](https://docs.decred.org/contributing/contributing-to-decred/)解释了如何成为Decred的付费承包商。
 
-Deep dive security discussion in #documentation concluded that it is possible to assemble general [computer security guidelines](https://github.com/xaur/decred-issues/issues/101) that will be beneficial for the whole space.
+在documentation中对于深层次的安全得出结论，可以汇编对整个空间有益的通用[计算机安全指南](https://github.com/xaur/decred-issues/issues/101)。
 
-[decred.org](https://github.com/decred/dcrweb): Huge effort to migrate the site to Hugo was [completed](https://github.com/decred/dcrweb/pull/491) by @peter\_zen. Hugo is a static site generator written in Go that makes updating site content much easier. Several site speed [optimizations](https://github.com/decred/dcrweb/pull/513) were enabled. [voting.decred.org](https://voting.decred.org/) dashboard is being [updated](https://github.com/decred/hardforkdemo/commits/master) in preparation for the upcoming consensus vote - congrats @jholdstock with diving into Go!
+[decred.org](https://github.com/decred/dcrweb):@peter_zen [完成](https://github.com/decred/dcrweb/pull/491)了将网站迁移到Hugo的巨大努力。 Hugo是一个用Go语言编写的静态站点生成器，可以更轻松地更新网站内容。已启用多个站点速度[优化](https://github.com/decred/dcrweb/pull/513)。 [voting.decred.org](https://voting.decred.org/) 仪表板正在 [更新](https://github.com/decred/hardforkdemo/commits/master)为即将到来的链上共识投票做准备，祝贺@jholdstock加入Go语言阵营！
 
 Other:
 
-* New [Bug Bounty](https://bounty.decred.org/) website is also built with Hugo. Code [repository](https://github.com/decred/dcrbounty) is open for bug reports and contributions.
-* More terminology changes in dcrwallet, dcrdocs and dcrweb.
-* Projects are gradually switching to a faster golangci-lint linter.
-* More security headers [enabled](https://github.com/decred/dcrweb/pull/537) on decred.org.
-* [SQL interface](https://www.reddit.com/r/decred/comments/agpkjv/sql_interface_to_live_onchain_decred_data/) to Decred on-chain data might be interesting to researchers.
-* GitHub now [allows](https://github.blog/2019-01-07-new-year-new-github/) private repositories with up to 3 collaborators for free accounts.
+* 新的[Bug Bounty](https://bounty.decred.org/)网站也是用Hugo搭建的。代码[存储库](https://github.com/decred/dcrbounty)对错误报告和贡献是开放的。
+* dcrwallet，dcrdocs和dcrweb中的术语得到更改。
+* 项目逐渐转向使用更快的“golangci-lint linter”进行开发。
+* 在decred.org上[启用](https://github.com/decred/dcrweb/pull/537)了更多安全标头。
+* Decred链上数据的[SQL interface](https://www.reddit.com/r/decred/comments/agpkjv/sql_interface_to_live_onchain_decred_data/)可能对研究人员很有意思
+* GitHub现在允许私人存储库与最多3个免费帐户的协作者。
 
 1月开发活动数据: 分布于8个存储库（repositories) 有 242 有效PRs, 243 主要提交, 60K 行添加 及 47K 行删除。每个存储库中有来自2-8个开发者的贡献。
 
@@ -80,36 +80,36 @@ Other:
 
 ## 人员
 
-Welcome to new first time contributors with code merged on GitHub: Sarlor ([dcrd](https://github.com/decred/dcrd/commits?author=Sarlor)), laszlolm ([decrediton](https://github.com/decred/decrediton/commits?author=laszlolm)), dezryth ([dcrdocs](https://github.com/decred/dcrdocs/commits?author=dezryth)).
+欢迎新到来的首次贡献者，代码在GitHub上合并：Sarlor([dcrd](https://github.com/decred/dcrd/commits?author=Sarlor))，laszlolm([decrediton](https://github.com/decred/decrediton/commits?author=laszlolm))，dezryth ([dcrdocs](https://github.com/decred/dcrdocs/commits?author=dezryth))。
 
-Congratulations to 6 new contributors [listed](https://github.com/decred/dcrweb/pull/486) on decred.org:
+恭喜在decred.org上[列出的](https://github.com/decred/dcrweb/pull/486)6位新贡献者：
 
-* David Habibi (@eSizeDave, community manager - Australia)
-* Elian Huesca (@elian, community manager - Mexico)
-* Marcelo Martins (@mm, Community Manager - Portugal)
-* Mariusz Szyma (@donmario, community manager - Poland)
-* Morphy Tsai (@morphymore, community manager - Taiwan)
-* Tomasz Porwit (@kozel, education and outreach)
+* David Habibi (@eSizeDave，社区经理 - 澳大利亚)
+* Elian Huesca (@elian，社区经理 - 墨西哥)
+* Marcelo Martins (@mm，社区经理 - 葡萄牙)
+* Mariusz Szyma (@donmario，社区经理 - 波兰)
+* Morphy Tsai (@morphymore，社区经理 - 台湾)
+* Tomasz Porwit (@kozel，教育和外展)
 
-4 inactive developers [removed](https://github.com/decred/dcrweb/issues/528) from decred.org: Cruz Molina (@freethinkingaway, dcrdata), Huy Nguyen Tuan (@huyntsgs, dcrwallet), Macaulay Davies (@mcedward), Rohit Nagori.
+4名不活跃的开发者从decred.org中[移除](https://github.com/decred/dcrweb/issues/528): Cruz Molina (@freethinkingaway, dcrdata), Huy Nguyen Tuan (@huyntsgs, dcrwallet), Macaulay Davies (@mcedward), Rohit Nagori.
 
-Independent Decred contractors [published](https://medium.com/decred/decred-independent-contractor-roadmap-884faba3db39) their plans for 2019, thanks to ~15 people who contributed. The post triggered a [discussion](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$15476119656176jVTYW:decred.org) about roadmaps, central planning and contractor autonomy, as well as commentary from Ditto.
+独立Decred承包商[发布了](https://medium.com/decred/decred-independent-contractor-roadmap-884faba3db39)他们2019年的计划，感谢他们大约15个人的贡献。这篇文章发布了关于路线图，核心规划和承包商自治的 [讨论](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$15476119656176jVTYW:decred.org)，以及来自Ditto的评论。
 
 ## 治理
 
-In January the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 16,776 DCR and spent 9,991 DCR. Using January's daily average DCR/USD rate of $17.1, this is $286K received and $170K spent. As these payments were for work completed in December, it is also informative to consider them in the context of the December average daily rate of $17.5 - in which case the USD received/spent figures are $294K/$175K.
+1月，[DCR基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了16,776 DCR，并花了9,991 DCR。使用DCR1月份的每日平均美元价格为17.1美元计算，本月收到28.6万美元以及支出17万美元。由于这些付款用于12月完成的工作，因此在12月平均每日费率17.5美元的情况下考虑它们也是有益的 - 在这种情况下，美元收到/支出的数字是29.4万美元以及支出17.5万美元。
 
-Contractors are now [getting paid](https://docs.decred.org/contributing/contributor-compensation/) on ~15th of each month for the prior month's work. The delay between invoicing and getting paid was cut in half from ~30th day. Work is ongoing to further decrease this delay.
+承包商现在大约每月15日[收到](https://docs.decred.org/contributing/contributor-compensation/)上个月工作的报酬。分发报酬和收到报酬之间的延迟从30天减少了一半。目前正在努力进一步降低这种延迟。
 
-"RFP: Decred Decentralized Exchange Infrastructure" proposal was [submitted](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a) by @jy-p. It outlines motivation and high level design of the DEX first described in June 2018 [post](https://blog.decred.org/2018/06/05/A-New-Kind-of-DEX/). The project is estimated to complete in less than 6 months with a budget between USD 100,000 and USD 1,000,000. Voting will happen in 2 phases: the first proposal will determine if stakeholders want to pursue this, if the first proposal is approved then proposals will be invited from interested teams and the second phase will be to select one of these. This process is known as [request for proposal](https://en.wikipedia.org/wiki/Request_for_proposal).
+“RFP：基于Decred的去中心化交换基础设施”提案由@jy-p[提交](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a)。它在2018年6月第一次描述了构建DEX的动机和高水平的设计[职位](https://blog.decred.org/2018/06/05/A-New-Kind-of-DEX/)。该项目预计在不到6个月内完成，预算在100,000美元至1,000,000美元之间。投票将分两个阶段进行：第一个阶段，提案将决定利益相关方是否想要实现这一目标，如果第一个提案获得批准，那么将邀请感兴趣的团队提出建议，第二阶段将选择其中一个。此过程称为[提议请求](https://en.wikipedia.org/wiki/Request_for_proposal).。
 
-Decred Bug Bounty program [launched](https://twitter.com/decredproject/status/1087486930093264897) following a successful [proposal](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1) vote in December. Check the rules on the new website [bounty.decred.org](https://bounty.decred.org/) and the intro blog post on [hackernoon](https://hackernoon.com/decred-launches-debug-decred-bug-bounty-program-7e4d2af27ec9). Credits to @fernandoabolafio and @jholdstock for majority of the site work. Bounty team who decides on validity of submissions and payouts includes @degeri, @dnldd, @fernandoabolafio, @jholdstock and @matheusd. Congrats team with the launch!
+在去年12月成功投票[提案](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)后[推出](https://twitter.com/decredproject/status/1087486930093264897)了Decred Bug Bounty计划（Bug奖励计划）。在[bounty.decred.org](https://bounty.decred.org/)和 [hackernoon](https://hackernoon.com/decred-launches-debug-decred-bug-bounty-program-7e4d2af27ec9)的简介博客帖子上可以查看规则。大部分现场工作归功于@fernandoabolafio和@jholdstock。决定提交和支付有效性的赏金团队包括@ degeri，@ ddldd，@ fernandoabolafio，@ jholdstock和@matheusd。恭喜团队顺利推出！
 
-@Dustorf is preparing proposals to improve transparency and increase stakeholder's control of the allocation of funds for the marketing activities. Events spending [pre-proposal](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/) was published for feedback on Reddit after first iteration [in chat](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org). Marketing budget pre-proposal also started [in chat](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org) and landed [on Reddit](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/) after a first round of feedback.
+@Dustorf正在准备提高透明度和增加利益相关者对营销活动资金分配的控制的[建议](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/)。在[matrix](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org)中首次迭代后，发布了预先提案的事件，以便对Reddit提供反馈。营销预算预提案也在[matrix](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org)开始，并在第一轮反馈后[记录在reddit中](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/)。
 
-@oregonisaac is [looking](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15474111512672Whvns:decred.org) for Java developers to evaluate requirements for ATM integration. Draft of the proposal was posted and discussed [in chat](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$154828004015153jWdiD:decred.org). There was some consensus to use 2-phase RFP voting. Another good point discussed was whether to wait for mobile apps releases before proceeding with the ATMs.
+@oregonisaac正在[寻找](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15474111512672Whvns:decred.org)Java开发人员来评估对于ATM集成的要求。提案草案已在[matrix](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$154828004015153jWdiD:decred.org)中发布和讨论。使用两阶段RFP投票达成了一些共识。讨论的另一个好处是在继续使用ATM之前是否等待移动应用程序发布。
 
-Discussions:
+讨论:
 
 * Baeond proposal spurred a [discussion](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15468733339790vCEoH:decred.org) of an attack vector where stakeholders are offered an airdrop of some token in return for them approving a proposal.
 * [Engagement](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15481365491827928DiBLm:matrix.org) and satisfaction with Politeia so far.
