@@ -1,4 +1,4 @@
-# Decred月报 - 12月 
+# Decred月报 - 1月 
 
 Decred 以一项重大软件发布和其他重大进展启动了2019年的第一个月份。
 
@@ -103,7 +103,7 @@ Other:
 
 “RFP：基于Decred的去中心化交换基础设施”提案由@jy-p[提交](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a)。它在2018年6月第一次描述了构建DEX的动机和高水平的设计[职位](https://blog.decred.org/2018/06/05/A-New-Kind-of-DEX/)。该项目预计在不到6个月内完成，预算在100,000美元至1,000,000美元之间。投票将分两个阶段进行：第一个阶段，提案将决定利益相关方是否想要实现这一目标，如果第一个提案获得批准，那么将邀请感兴趣的团队提出建议，第二阶段将选择其中一个。此过程称为[提议请求](https://en.wikipedia.org/wiki/Request_for_proposal).。
 
-在去年12月成功投票[提案](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)后[推出](https://twitter.com/decredproject/status/1087486930093264897)了Decred Bug Bounty计划（Bug奖励计划）。在[bounty.decred.org](https://bounty.decred.org/)和 [hackernoon](https://hackernoon.com/decred-launches-debug-decred-bug-bounty-program-7e4d2af27ec9)的简介博客帖子上可以查看规则。大部分现场工作归功于@fernandoabolafio和@jholdstock。决定提交和支付有效性的赏金团队包括@ degeri，@ ddldd，@ fernandoabolafio，@ jholdstock和@matheusd。恭喜团队顺利推出！
+在去年12月成功投票[提案](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)后[推出](https://twitter.com/decredproject/status/1087486930093264897)了Decred Bug Bounty计划（Bug奖励计划）。在[bounty.decred.org](https://bounty.decred.org/)和 [hackernoon](https://hackernoon.com/decred-launches-debug-decred-bug-bounty-program-7e4d2af27ec9)的简介博客帖子上可以查看规则。大部分现场工作归功于@fernandoabolafio和@jholdstock。决定提交和支付有效性的赏金团队包括@degeri，@ddldd，@fernandoabolafio，@jholdstock和@matheusd。恭喜团队顺利推出！
 
 @Dustorf正在准备提高透明度和增加利益相关者对营销活动资金分配的控制的[建议](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/)。在[matrix](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org)中首次迭代后，发布了预先提案的事件，以便对Reddit提供反馈。营销预算预提案也在[matrix](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org)开始，并在第一轮反馈后[记录在reddit中](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/)。
 
@@ -111,9 +111,9 @@ Other:
 
 讨论:
 
-* Baeond proposal spurred a [discussion](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15468733339790vCEoH:decred.org) of an attack vector where stakeholders are offered an airdrop of some token in return for them approving a proposal.
-* [Engagement](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15481365491827928DiBLm:matrix.org) and satisfaction with Politeia so far.
-* How [UX enhancements](https://github.com/decred/politeia/issues/678) can help voters to pre-emptively address bad proposals and stay vigilant.
+* Baeond 提案引起了一阵关于向利益相关者提供代币空投换取提案批准攻击维度的[讨论](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15468733339790vCEoH:decred.org)。
+* 关于Politeia目前的[参与率](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15481365491827928DiBLm:matrix.org)和满意度。
+* [增强UX](https://github.com/decred/politeia/issues/678)如何可以帮助投票者保持警惕并有效解决坏提案。
 
 ## 网络
 
@@ -129,30 +129,30 @@ Other:
 
 Obelisk 第2-5批次 [已发货](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=4211e39081), 第二代固件 [更新](https://us16.campaign-archive.com/?u=393b2698d17bdfe48ac0422ac&id=c501bf724d) 包含新功能及漏洞修复。用户对于Obelisk SC1 和DCR1 发出了[集体诉讼](https://www.reddit.com/r/decred/comments/ae8hy8/class_action_lawsuit_officially_filed_against/)。
 
-Open source Decred mining pool implementation is [in the works](https://medium.com/decred/decred-independent-contractor-roadmap-884faba3db39) by @dnldd.
+开源Decred挖矿池实现工作由@dnldd[进行中](https://medium.com/decred/decred-independent-contractor-roadmap-884faba3db39)。
 
 ## 整合
 
-New VSP [dcr.grassfed.network](https://dcr.grassfed.network) joined a list of total 23 VSPs.
+新矿池(VSP) [dcr.grassfed.network](https://dcr.grassfed.network)加入了目前总共23个VSP的列表。
 
-Exchange integrations:
+交易所整合:
 
-* Turkish exchange Bitturk [announced](https://twitter.com/bitturkcom/status/1082201314912862209) DCR/TRY fiat pair, discussion and some background [here](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$15468134682383442wwDSE:matrix.org).
-* Brazilian exchange BitJa [announced](https://twitter.com/bitjabr/status/1090066185302036480) DCR/BRL fiat pair.
+* 土耳其交易所 Bitturk [宣布](https://twitter.com/bitturkcom/status/1082201314912862209) DCR/TRY 法币对, 其他讨论及相关背景可参考[这里](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$15468134682383442wwDSE:matrix.org)。
+* 巴西交易所 BitJa [宣布](https://twitter.com/bitjabr/status/1090066185302036480) DCR/BRL 法币对。
 
-Ellipal wallet [announced](https://twitter.com/ellipalwallet/status/1089850526202613760) Decred support in latest firmware release.
+Ellipal 钱包[宣布](https://twitter.com/ellipalwallet/status/1089850526202613760) 在最新固件发布中已支持 Decred。 
 
-Exodus wallet [integrated](https://twitter.com/exodus_io/status/1090263399122923520) USDC, a USD-pegged token by Circle.
+Exodus 钱包[集成](https://twitter.com/exodus_io/status/1090263399122923520) USDC, 一个Circle推出的美金挂钩代币。
 
-Second episode of infrastructure interview series by @kozel [featured](https://medium.com/@artikozel/decred-infrastructure-interviews-stephen-founder-of-crypto-only-luxury-goods-marketplace-68d3214a4fd7) Stephen, founder of the luxury goods outlet Crypto Emporium. Stephen shared insights into running a business, accepting crypto, processing orders, supply chain and future plans.
+@kozel的基础设施访问系列第二集[特别访问](https://medium.com/@artikozel/decred-infrastructure-interviews-stephen-founder-of-crypto-only-luxury-goods-marketplace-68d3214a4fd7)Stephen，奢侈品店Crypto Emporium的创始人。他分享了经营企业，接受加密货币，处理订单，供应链和未来计划的见解。
 
-> Our best selling product on the website has undoubtedly been the famed [Decred Jacket](https://www.cryptoemporium.eu/product/decred-jacket/)! It's been an honour to serve the Decred community for so long and help market a project I truly believe in.
+> 我们网站上最畅销的产品无疑是着名的[Decred Jacket](https://www.cryptoemporium.eu/product/decred-jacket/)！非常荣幸能够为Decred社区服务这么长一段时间并帮助推广一个我真正相信的项目。
 
-Always do your research _before_ using wallets or services, especially those that take custody of your funds.
+在使用任何钱包或服务*之前*请务必进行研究，特别是那些保管您资金的服务。
 
 ## Adoption
 
-BlueYard [announced](https://medium.com/@BlueYard/blueyard-2-3d0bbaf1f1b6) second fund raise and explained their strategy of investing into contrarian projects.
+BlueYard [宣布](https://medium.com/@BlueYard/blueyard-2-3d0bbaf1f1b6)第二个基金筹集并解释了他们投资逆势项目的策略。
 
 ## 外联活动
 
@@ -197,23 +197,23 @@ Attended:
 
 Upcoming:
 
-* [Campus Party](http://brasil.campus-party.org/cpbr12/patrocinadores/) in Sao Paulo, Brazil on Feb 12-17.
-* [How To Keep Your Crypto Secure](https://www.meetup.com/Decred-Australia/events/258211699/) in Melbourne, Australia on Feb 18.
-* [Decred in 30 minutes](https://www.eventbrite.com/e/decred-en-30-minutos-tickets-55764142050) in Mexico City, Mexico on Feb 27. Contact @elian for details.
-* [Jalisco Talent Land](https://www.talent-land.mx/#entradas) in Guadalajara, Mexico on Apr 22-26. Contact @elian if you're interested in helping/attending.
+* [Campus Party](http://brasil.campus-party.org/cpbr12/patrocinadores/)巴西圣保罗，二月12-17日。
+* [How To Keep Your Crypto Secure](https://www.meetup.com/Decred-Australia/events/258211699/) 澳大利亚墨尔本，二月18日。
+* [Decred in 30 minutes](https://www.eventbrite.com/e/decred-en-30-minutos-tickets-55764142050) 墨西哥墨西哥城，二月27日。细节可联系@elian。
+* [Jalisco Talent Land](https://www.talent-land.mx/#entradas) 墨西哥瓜达拉哈拉，四月22-26日。如果您有兴趣帮忙或出席请联系@elian。
 
-Open source and hacker oriented events like DEFCON, CCC and FOSDEM were discussed and captured in [this issue](https://github.com/xaur/decred-issues/issues/83).
+开源及黑客主题活动，如DEFCON，CCC和FOSDEM在这个[issue](https://github.com/xaur/decred-issues/issues/83)中被讨论和记录
 
 ## 媒体
 
-Community initiatives:
+社区:
 
-* [blog.dcrclub.org](https://blog.dcrclub.org/) is a new website in Chinese that collects various articles and translations in one place. The source hosted [on GitHub](https://github.com/0x5826/blog.dcrclub.org) makes it easy to contribute or mirror the website on other domain for more resiliency. Credits to @TogT4V (Telegram) for starting the site.
-* New [Arabic blog](https://decred-arabia.blogspot.com/2019/01/blog-post.html) about Decred started by @butterfly (@arij on Matrix). There are some challenges with publishing arabic text on the web, advice is welcome in #writers_room.
-* Portuguese podcasts [started](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$1548814257223928fVjiP:matrix.org) by @michae2xl, available on [Soundcloud](https://soundcloud.com/user-770106247/), Spotify, Apple Podcasts and Google Podcasts - search for "Decred Brasil".
-* [@decredexplorer](https://twitter.com/decredexplorer) is a new Twitter account dedicated to dcrdata. Thanks to @michae2xl for organizing.
-* @Matt D [introduced](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154825336714293nfWdU:decred.org) [Decred Aggregator](https://t.me/DecredAgg) Telegram channel. It aims to collect news, press, videos, podcasts, Decred announcements, trending tweets and Reddit posts, as well as market stats.
-* @anshawblack is planning a podcast.
+* [blog.dcrclub.org](https://blog.dcrclub.org/)是一个新上线，集合各个文章及翻译于一处的中文网站。源代码在[GitHub](https://github.com/0x5826/blog.dcrclub.org)使得社区更容易贡献或复原网站到其他域名感谢@TogT4V (电报)制作了这个网站。
+* @butterfly (@arij on Matrix)开始了新的关于Decred的[阿拉伯语部落格](https://decred-arabia.blogspot.com/2019/01/blog-post.html)。在网站发布阿拉伯文字遇到了一些难题，欢迎到 #writers_room提出建议。
+* 葡萄牙语播客由@michae2xl[制作](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$1548814257223928fVjiP:matrix.org), 在[Soundcloud](https://soundcloud.com/user-770106247/), Spotify, Apple Podcasts 及 Google Podcasts 上请搜索"Decred Brasil"。
+* [@decredexplorer](https://twitter.com/decredexplorer)是一个专注于dcrdata的新推特账户。感谢 @michae2xl 帮忙组织。
+* @Matt D 在电报群[推出](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154825336714293nfWdU:decred.org) [Decred Aggregator](https://t.me/DecredAgg)。目标为集合新闻，媒体，视频，播客，Decred 公告，热门推特和Reddit链接以及市场数据。
+* @anshawblack正计划一个播客。
 
 [Decred page](https://en.wikipedia.org/wiki/Decred) on Wikipedia was deleted. On Jan 8 a user [removed](https://archive.today/ApV3P) a bunch of "bad sources" and on Jan 10 vandalized the page by removing a large and important part of content. Just 4 hours later another user nominated Decred page for deletion - the [3rd attempt](https://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Decred_%283rd_nomination%29) to take it down. For background, the author of [2nd nomination](https://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Decred_%282nd_nomination%29) for deletion had interesting [views](https://archive.today/QAlRp) on notability and was [banned](https://en.wikipedia.org/wiki/User:Prince_of_Thieves) as a sockpuppet. On Jan 11 content removal was reverted and its author was banned as sockpuppet, but next day the removal was [applied again](https://archive.today/fZUHW) by another user without much commentary. After the slicing the page became very small and all reviewers [voted](https://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/Decred_%283rd_nomination%29) to delete it due to lack of reputable sources. All suggested recent articles in major crypto media were deemed [not good enough](https://archive.today/4xwaN) references. On Jan 18 the page was deleted and removed from [List of cryptocurrencies](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) that was left with more notable coins. Details and links to discussions are captured in [this issue](https://github.com/xaur/decred-issues/issues/79). Experienced Wikipedia editors are welcome to help.
 
@@ -237,10 +237,10 @@ Selected articles (chronological order):
 * Decred Infrastructure Interviews: Stephen, founder of crypto-only luxury goods marketplace CryptoEmporium by @kozel ([medium](https://medium.com/@artikozel/decred-infrastructure-interviews-stephen-founder-of-crypto-only-luxury-goods-marketplace-68d3214a4fd7))
 * Decred Review by Lee Banfield ([weeklyglobalresearch.wordpress.com](https://weeklyglobalresearch.wordpress.com/2019/01/31/decred-dcr-review/))
 
-Translations:
+翻译:
 
-* [Detailed analysis of Decred fork resistance](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7) by @Haon - [in Russian](https://medium.com/decred-russia/%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%B8-decred-%D0%BA-%D1%84%D0%BE%D1%80%D0%BA%D1%83-b30c78f764ea) by @DZ
-* Decred Journal - December 2018 [in Chinese](https://www.jianshu.com/p/65e7a83ac27c) by @guang, [in Polish](https://github.com/artikozel/DecredJournalPL/blob/master/journal/201812_DecredJournalPL.md) by @kozel, [in Portuguese](https://medium.com/@maiconjunge/jornal-decred-dezembro-de-2018-947c616b894f) by @maiconjunge, [in Russian](https://medium.com/decred-russia/decred-journal-%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C-2018-9528f7a9d24d) by @DZ and [in Spanish](https://medium.com/@decred_es/revista-decred-diciembre-2018-79093f957aac) by @elian. Wow. Thank you all for spreading Decred Journal around the world! All translations are listed [here](https://xaur.github.io/decred-news/).
+* [Detailed analysis of Decred fork resistance](https://medium.com/decred/detailed-analysis-of-decred-fork-resistance-93022e0bcde7) by @Haon - [俄罗斯语](https://medium.com/decred-russia/%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7-%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D0%B8-decred-%D0%BA-%D1%84%D0%BE%D1%80%D0%BA%D1%83-b30c78f764ea) by @DZ
+* Decred Journal - December 2018 [中文](https://www.jianshu.com/p/65e7a83ac27c) by @guang, [波兰语](https://github.com/artikozel/DecredJournalPL/blob/master/journal/201812_DecredJournalPL.md) by @kozel, [葡萄牙语](https://medium.com/@maiconjunge/jornal-decred-dezembro-de-2018-947c616b894f) by @maiconjunge, [俄罗斯语](https://medium.com/decred-russia/decred-journal-%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8C-2018-9528f7a9d24d) by @DZ 及 [西班牙语](https://medium.com/@decred_es/revista-decred-diciembre-2018-79093f957aac) by @elian. 哇，感谢大家把Decred 月报发扬到全世界！所有的翻译都已收录到此[链接](https://xaur.github.io/decred-news/).
 
 Videos:
 
@@ -256,7 +256,7 @@ Audio:
 
 ## 社区讨论
 
-Community stats as of Feb 4:
+截止于 Feb 4 的社区数据 :
 
 * Twitter followers: 39,778 (-106)
 * Reddit subscribers: 9,330 (+89)
@@ -282,7 +282,7 @@ Huge debate about importance of building Reddit community [here](https://www.red
 
 ## 市场
 
-In January DCR was trading between USD 15.5-19.5 / BTC 0.00435-0.00487. The average daily rate was 17.1美元。
+在一月中DCR交易价格为 美金 15.5-19.5 / BTC 0.00435-0.00487。平均日汇率为 17.1美元。
 
 ## 相关外部信息
 
