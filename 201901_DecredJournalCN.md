@@ -27,7 +27,7 @@ v1.4.0 最终版本和[12月](https://xaur.github.io/decred-news/journal/201812.
 
 [dcrd](https://github.com/decred/dcrd): 在 v1.4.0 RC1 中发现了一个问题在[issue](https://github.com/decred/dcrd/issues/1568)中被提出。对于UTXO反转的设置语义更改意外的修复了一个共识规则漏洞。目前不正确行为将被[保留](https://github.com/decred/dcrd/pull/1570) 至下一个共识更改投票更正。感谢所有帮助发现和修复候选版本中错误的人。
 
-共识更改投票的代码目前已[完成](https://github.com/decred/dcrd/pull/1579)并收录到最终[v1.4.0 发布版](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)。由于闪电网络的需要，该修复和投票应获得优先处理。[DCP004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) (Decred Change Proposal) 中说明了改更改的细节并提出对于其他除了闪电网络的应用。这部分工作也为这部分带来[重构](https://github.com/decred/dcrd/pull/1583)及加强测试。 @matheusd 发布了篇[部落格文章](https://matheusd.com/post/dcp0004-and-hardforks/)概述了该漏洞，它的发现和响应方式。
+共识更改投票的代码目前已[完成](https://github.com/decred/dcrd/pull/1579)并收录到最终[v1.4.0 发布版](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)。由于闪电网络的需要，该修复和投票应获得优先处理。[DCP004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) (Decred Change Proposal) 中说明了应该更改的细节并提出对于其他除了闪电网络的应用。这部分工作也为这部分带来[重构](https://github.com/decred/dcrd/pull/1583)及加强测试。 @matheusd 发布了篇[部落格文章](https://matheusd.com/post/dcp0004-and-hardforks/)概述了该漏洞，它的发现和响应方式。
 
 开始讨论如何[改进权益算法](https://github.com/decred/dcrd/issues/1593) 以消除票价震荡-这会使票价变化更加稳定. 
 
@@ -35,7 +35,7 @@ v1.4.0 最终版本和[12月](https://xaur.github.io/decred-news/journal/201812.
 
 将配置选项指定为命令行参数的功能[合并](https://github.com/decred/decrediton/pull/1975)到主服务器。
 
-[Politeia](https://github.com/decred/politeia): 启用了查看早起版本题案的功能。
+[Politeia](https://github.com/decred/politeia): 启用了查看早期版本题案的功能。
 
 正在开发的: 登陆弹出窗口被新的定向文档链接[取代](https://github.com/decred/politeiagui/pull/986) 。 感谢lemonkabir发现了这些[安全](https://github.com/decred/politeia/issues/647) [问题](https://github.com/decred/politeia/issues/650). [缓存层](https://github.com/decred/politeia/pull/660)进入审核阶段。 
 
