@@ -14,20 +14,20 @@ Decred 以一项重大软件发布和其他重大进展启动了2019年的第一
 
 ## v1.4.0 升级和共识投票
 
-节点及钱包软件v1.4.0版本已发布。请到[GitHub](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)查看完整发布说明和下载链接同时建议务必[验证下载版本](https://docs.decred.org/advanced/verifying-binaries/)。
+节点及钱包软件v1.4.0版本已发布。请到[GitHub](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)查看完整发布说明和下载链接。同时建议务必[验证下载版本](https://docs.decred.org/advanced/verifying-binaries/)。
 
-Decred的1.4.0版本带来了重大改进，同时也包含了一项修改共识规则建议，以修复闪电网络支持的一个bug。建议节点运营尽快升级以协助网络达成升级门槛值。升级软件后, 用户将可设置[投票偏好](https://docs.decred.org/governance/how-to-vote/)。升级进度可在[voting.decred.org](https://voting.decred.org/)查看。
+Decred的1.4.0版本带来了重大改进，同时也包含了一项修改共识规则建议，以修复闪电网络相关的一个bug。建议节点运营尽快升级，以协助网络达成升级门槛值。升级软件后，用户将可设置[投票偏好](https://docs.decred.org/governance/how-to-vote/)。升级进度可在[voting.decred.org](https://voting.decred.org/)查看。
 
 有关共识更改的技术细节请查看[DCP0004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)和@matheusd发布的[文章](https://matheusd.com/post/dcp0004-and-hardforks/)。
 
-v1.4.0 最终版本和[12月](https://xaur.github.io/decred-news/journal/201812.html)发布的Release Candidate 2版本相比，除了增加了投票议程外并没有其他大的改动。 
+v1.4.0 最终版本和[12月](https://xaur.github.io/decred-news/journal/201812.html)发布的Release Candidate 2版本相比，除了增加了投票议程外并没有其他大改动。 
 
 
 ## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): 在 v1.4.0 RC1 中发现了一个问题在[issue](https://github.com/decred/dcrd/issues/1568)中被提出。对于UTXO反转的设置语义更改意外的修复了一个共识规则漏洞。目前不正确行为将被[保留](https://github.com/decred/dcrd/pull/1570) 至下一个共识更改投票更正。感谢所有帮助发现和修复候选版本中错误的人。
+[dcrd](https://github.com/decred/dcrd): 在 v1.4.0 RC1 中发现了一个[问题](https://github.com/decred/dcrd/issues/1568)。更改UTXO反转的设置语义意外地修复了一个共识规则漏洞。目前不正确行为将被[保留](https://github.com/decred/dcrd/pull/1570) 至下一次共识更改投票。感谢所有帮助发现和修复候选版本中错误的人。
 
-共识更改投票的代码目前已[完成](https://github.com/decred/dcrd/pull/1579)并收录到最终[v1.4.0 发布版](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)。由于闪电网络的需要，该修复和投票应获得优先处理。[DCP004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) (Decred Change Proposal) 中说明了应该更改的细节并提出对于其他除了闪电网络的应用。这部分工作也为这部分带来[重构](https://github.com/decred/dcrd/pull/1583)及加强测试。 @matheusd 发布了篇[部落格文章](https://matheusd.com/post/dcp0004-and-hardforks/)概述了该漏洞，它的发现和响应方式。
+共识更改投票的代码目前已[完成](https://github.com/decred/dcrd/pull/1579)并收录到最终[v1.4.0 发布版](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)。由于闪电网络的需要，该修复和投票应获得优先处理。[DCP004](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki) (Decred Change Proposal) 中说明了应该更改的细节并提出对于其他除了闪电网络的应用。这部分工作也改善了代码[结构](https://github.com/decred/dcrd/pull/1583)及加强测试。 @matheusd 发布了篇[部落格文章](https://matheusd.com/post/dcp0004-and-hardforks/)概述了该漏洞，它的发现和响应方式。
 
 开始讨论如何[改进权益算法](https://github.com/decred/dcrd/issues/1593) 以消除票价震荡-这会使票价变化更加稳定. 
 
@@ -41,37 +41,37 @@ v1.4.0 最终版本和[12月](https://xaur.github.io/decred-news/journal/201812.
 
 讨论:
 
-* 已确定缺少用于审查公共提案的管理员[功能](https://github.com/decred/politeia/issues/662):要有一种方法来删除编辑后包含无关内容的公开提案。 或者，管理员必须先审核所有修改的内容，然后才能在提案系统上显示这些修改的内容。
+* 发现需要审查公共提案的管理员[功能](https://github.com/decred/politeia/issues/662):要有一种方法来删除在编辑后包含无关内容的公开提案。 或者，管理员必须先审核所有修改的内容，然后才能在提案系统上显示这些修改的内容。
 * [自动化端到端测试](https://github.com/decred/politeiagui/issues/976) 和 [质量检测目录](https://github.com/decred/politeiagui/issues/977) 的变更。
 * 大型代码前端 [重构](https://github.com/decred/politeiagui/issues/990)以解决复杂性、性能和开发效率的问题。提出的[解决方案](https://github.com/decred/politeiagui/issues/990#issuecomment-454535696)是使用GraphQL。
 
 [dcrandroid](https://github.com/decred/dcrandroid): 安卓版钱包正式版v1.0发布了! 你可以在Google Play商店获取[主网](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)或 [测试网](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.testnet)钱包。你可以在[faucet](http://faucet.decred.org/)获取测试网代币。欢迎来[Reddit](https://www.reddit.com/r/decred/comments/am7j40/decred_wallet_for_android_v10_released/)以及[GitHub](http://github.com/decred/dcrandroid/issues)对测试发现的漏洞进行反馈。
 
-与第二个测试版本不同的是, 正式版增加了区块同步进度提示、wifi断开连接报警、 新的启动画面以及漏洞修复。这里是 [更改日志](https://github.com/decred/dcrandroid/compare/v1.0.0-rc2...v1.0.0-rc3)。恭喜dcrandroid团队!
+与第二个测试版本不同的是，正式版增加了区块同步进度提示、wifi断开连接提示、 新的启动画面以及漏洞修复。这里是 [更改日志](https://github.com/decred/dcrandroid/compare/v1.0.0-rc2...v1.0.0-rc3)。恭喜dcrandroid团队!
 
 [dcrios](https://github.com/raedahgroup/dcrios):ios钱包在苹果app测试工具Apple TestFlight上[提供](https://testflight.apple.com/join/dvq51tCh)预览版。
 
-[dcrdata](https://github.com/decred/dcrdata):新的主页设计正在 [进行](https://github.com/decred/dcrdata/pull/921)。现在当发现新的区块时，主页上的数值[会自动更新](https://github.com/decred/dcrdata/pull/961)。将汇率监控[添加](https://github.com/decred/dcrdata/pull/951) to the 到后端以便用户查看其实时美元价格。在资源管理器和Mainnet子域上强制使用HTTPS([正在讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154818146313660CWvZy:decred.org)).
+[dcrdata](https://github.com/decred/dcrdata):新的主页设计正在 [进行](https://github.com/decred/dcrdata/pull/921)。现在当发现新的区块时，主页上的数值[会自动更新](https://github.com/decred/dcrdata/pull/961)。将汇率监控[添加](https://github.com/decred/dcrdata/pull/951) 到后端以便用户查看其实时美元价格。在区块浏览器和Mainnet子域上强制使用HTTPS([正在讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$154818146313660CWvZy:decred.org)).
 
-新的主页设计包含汇率、新的地址显示图、改进的图表以及速度的优化，你可以在[beta.dcrdata.org](https://beta.dcrdata.org/)中的测试版v4中[获取](https://twitter.com/decredexplorer/status/1093182831487053825)。 详细的发布说明将与测试版本一起编译。
+新的主页设计包含汇率、新的地址显示图、改进的图表以及速度的优化，你可以在[beta.dcrdata.org](https://beta.dcrdata.org/)的测试版v4中[获取](https://twitter.com/decredexplorer/status/1093182831487053825)。 详细的发布说明将与测试版本一起编译。
 
 Dev side: @buck54321正在[破坏](https://github.com/decred/dcrdata/pull/915)命令式jQuery代码. 团队正在准备对Insight API进行压力测试（他们称之为酷刑测试！）。
 
-[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher): 内部代码改进，完成在Decrediton集成的初步工作。创建了一个[监控页面](https://mainnet-split-tickets.matheusd.com/)，它显示所有支持的VSP处在活跃状态。
+[Ticket splitting 分票](https://github.com/matheusd/dcr-split-ticket-matcher): 内部代码改进，完成在Decrediton集成的初步工作。创建了一个[监控页面](https://mainnet-split-tickets.matheusd.com/)，它显示所有支持分票VSP的DCR贡献状态。
 
-[docs](https://github.com/decred/dcrdocs):新的页面: [Operating a VSP](https://docs.decred.org/advanced/operating-a-vsp/)概述了搭建vps（Pos池）的配置要求以及维护人员的技能要求, [Solo PoS Voting](https://docs.decred.org/advanced/solo-proof-of-stake-voting/)@jz更新solo投票教程提供给所有文档阅读者, [Address Details](https://docs.decred.org/advanced/address-details/)描述了所有可能的地址类型, [Contributing to Decred](https://docs.decred.org/contributing/contributing-to-decred/)解释了如何成为Decred的付费承包商。
+[docs](https://github.com/decred/dcrdocs):新的页面: [Operating a VSP](https://docs.decred.org/advanced/operating-a-vsp/)概述了搭建vps（Pos池）的配置要求以及维护人员的技能要求, [Solo PoS Voting](https://docs.decred.org/advanced/solo-proof-of-stake-voting/)@jz更新了solo投票教程，并提供给所有文档阅读者, [Address Details](https://docs.decred.org/advanced/address-details/)描述了所有可能的地址类型, [Contributing to Decred](https://docs.decred.org/contributing/contributing-to-decred/)解释了如何成为Decred的付费承包商。
 
-在documentation中对于深层次的安全得出结论，可以汇编对整个空间有益的通用[计算机安全指南](https://github.com/xaur/decred-issues/issues/101)。
+在#documentation中对安全进行了深层次讨论，可以汇编对整个行业有益的通用[计算机安全指南](https://github.com/xaur/decred-issues/issues/101)。
 
-[decred.org](https://github.com/decred/dcrweb):@peter_zen [完成](https://github.com/decred/dcrweb/pull/491)了将网站迁移到Hugo的巨大努力。 Hugo是一个用Go语言编写的静态站点生成器，可以更轻松地更新网站内容。已启用多个站点速度[优化](https://github.com/decred/dcrweb/pull/513)。 [voting.decred.org](https://voting.decred.org/) 仪表板正在 [更新](https://github.com/decred/hardforkdemo/commits/master)为即将到来的链上共识投票做准备，祝贺@jholdstock加入Go语言阵营！
+[decred.org](https://github.com/decred/dcrweb):@peter_zen [完成](https://github.com/decred/dcrweb/pull/491)了将网站迁移到Hugo的巨大贡献。 Hugo是一个用Go语言编写的静态站点生成器，可以更轻松地更新网站内容。已启用多个站点速度[优化](https://github.com/decred/dcrweb/pull/513)。 [voting.decred.org](https://voting.decred.org/) 仪表板正在 [更新](https://github.com/decred/hardforkdemo/commits/master)为即将到来的链上共识投票做准备，祝贺@jholdstock加入Go语言阵营！
 
 Other:
 
-* 新的[Bug Bounty](https://bounty.decred.org/)网站也是用Hugo搭建的。代码[存储库](https://github.com/decred/dcrbounty)对错误报告和贡献是开放的。
+* 新的[Bug Bounty 漏洞报告奖励](https://bounty.decred.org/)网站也是用Hugo搭建的。代码[存储库](https://github.com/decred/dcrbounty)对错误报告和贡献是开放的。
 * dcrwallet，dcrdocs和dcrweb中的术语得到更改。
 * 项目逐渐转向使用更快的“golangci-lint linter”进行开发。
 * 在decred.org上[启用](https://github.com/decred/dcrweb/pull/537)了更多安全标头。
-* Decred链上数据的[SQL interface](https://www.reddit.com/r/decred/comments/agpkjv/sql_interface_to_live_onchain_decred_data/)可能对研究人员很有意思
+* Decred链上数据的[SQL 界面](https://www.reddit.com/r/decred/comments/agpkjv/sql_interface_to_live_onchain_decred_data/)可能会引起研究人员的兴趣
 * GitHub现在允许私人存储库与最多3个免费帐户的协作者。
 
 1月开发活动数据: 分布于8个存储库（repositories) 有 242 有效PRs, 243 主要提交, 60K 行添加 及 47K 行删除。每个存储库中有来自2-8个开发者的贡献。
@@ -97,13 +97,13 @@ Other:
 
 ## 治理
 
-1月，[DCR基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了16,776 DCR，并花了9,991 DCR。使用DCR1月份的每日平均美元价格为17.1美元计算，本月收到28.6万美元以及支出17万美元。由于这些付款用于12月完成的工作，因此在12月平均每日费率17.5美元的情况下考虑它们也是有益的 - 在这种情况下，美元收到/支出的数字是29.4万美元以及支出17.5万美元。
+1月，[DCR基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了16,776 DCR，并花了9,991 DCR。使用DCR 1月份的每日平均美元价格17.1美元计算，本月收到28.6万美元以及支出17万美元。由于这些付款用于支付12月完成的工作，因此可以用12月的平均价格17.5美元计算 - 在这种情况下，美元收到/支出的数字是29.4万美元以及支出17.5万美元。
 
 承包商现在大约每月15日[收到](https://docs.decred.org/contributing/contributor-compensation/)上个月工作的报酬。分发报酬和收到报酬之间的延迟从30天减少了一半。目前正在努力进一步降低这种延迟。
 
-“RFP：基于Decred的去中心化交换基础设施”提案由@jy-p[提交](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a)。它在2018年6月第一次描述了构建DEX的动机和高水平的设计[职位](https://blog.decred.org/2018/06/05/A-New-Kind-of-DEX/)。该项目预计在不到6个月内完成，预算在100,000美元至1,000,000美元之间。投票将分两个阶段进行：第一个阶段，提案将决定利益相关方是否想要实现这一目标，如果第一个提案获得批准，那么将邀请感兴趣的团队提出建议，第二阶段将选择其中一个。此过程称为[提议请求](https://en.wikipedia.org/wiki/Request_for_proposal).。
+“RFP：基于Decred的去中心化交易所基础设施”提案由@jy-p[提交](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a)。他在2018年6月第一次发布了构建DEX的动机和简短的设计[文章](https://blog.decred.org/2018/06/05/A-New-Kind-of-DEX/)。该项目预计在不到6个月内完成，预算在100,000美元至1,000,000美元之间。投票将分两个阶段进行：第一个阶段，提案将决定利益相关方是否想要实现这一目标，如果第一个提案获得批准，将邀请感兴趣的开发团队提出具体建议，第二阶段将选择其中一个。此过程称为[提议请求](https://en.wikipedia.org/wiki/Request_for_proposal).。
 
-在去年12月成功投票[提案](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)后[推出](https://twitter.com/decredproject/status/1087486930093264897)了Decred Bug Bounty计划（Bug奖励计划）。在[bounty.decred.org](https://bounty.decred.org/)和 [hackernoon](https://hackernoon.com/decred-launches-debug-decred-bug-bounty-program-7e4d2af27ec9)的简介博客帖子上可以查看规则。大部分现场工作归功于@fernandoabolafio和@jholdstock。决定提交和支付有效性的赏金团队包括@degeri，@ddldd，@fernandoabolafio，@jholdstock和@matheusd。恭喜团队顺利推出！
+在去年12月通过投票[提案](https://proposals.decred.org/proposals/d33a2667469b56942adf42453def6cc2292325251e4cf791e806939ea9efc9e1)后[推出](https://twitter.com/decredproject/status/1087486930093264897)了Decred Bug Bounty计划（漏洞报告奖励计划）。在[bounty.decred.org](https://bounty.decred.org/)和 [hackernoon](https://hackernoon.com/decred-launches-debug-decred-bug-bounty-program-7e4d2af27ec9)的简介博客帖子上可以查看规则。大部分网站建设工作归功于@fernandoabolafio和@jholdstock。决定bug提交有效性和支付赏金的团队包括@degeri，@ddldd，@fernandoabolafio，@jholdstock和@matheusd。恭喜团队顺利推出！
 
 @Dustorf正在准备提高透明度和增加利益相关者对营销活动资金分配的控制的[建议](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/)。在[matrix](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org)中首次迭代后，发布了预先提案的事件，以便对Reddit提供反馈。营销预算预提案也在[matrix](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org)开始，并在第一轮反馈后[记录在reddit中](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/)。
 
@@ -170,7 +170,7 @@ Decred的推广标语在[#marketing](https://matrix.to/#/!OfChXgczrIlpEZSFAv:dec
 * 促进了两个正在等待媒体报道的采访。
 * 飞到北美比特币会议，在那里，Ditto促成了记者（切达电视台，Altcoin Buzz等等）对Decred的采访，并与团队共度了美妙的时光。
 * 与Dustin密切合作并制定了一项活动计划，其中包括Decred想要发表演讲的活动以及想要参加展位的活动。
-* 提交了jake的申请，在2019年的共识发言。
+* 提交了jake的申请，在2019年的共识会议发言。
 * 与Dustin密切合作，制定了2019年上半年的营销和传播计划，涵盖信息传递、媒体培训、媒体关系、活动和演讲以及战略。该计划仍在等待中。
 
 建议个人分享媒体报道，因为其作用与媒体播报一样重要。
@@ -191,8 +191,8 @@ Decred的推广标语在[#marketing](https://matrix.to/#/!OfChXgczrIlpEZSFAv:dec
 
 出席：
 
-* [在美国迈阿密举行的北美比特币会议](https://btcmiami.com/)。 出席率低得惊人：预计会有6000人，结束后统计只有1800人参与。@jy-p的介绍[区块链时间戳](https://btcmiami.com/session/applications-of-blockchain-time-stamping/)的应用做得很好，并且考虑到整体数据，参与人数很多。 3名成员接受了媒体培训，发现它很有用，还有7名预定。 价值存储，“安全、适应性、自筹资金。”，以及随附的消息传递被认为是谈论Decred的一种非常有效的方式。 它被发现是最清晰和最有影响力的。 完整报告，这里有照片和视频的[链接](https://github.com/heyvj/decred-events/blob/master/reports/20190116-tnabc-miami.md)。
-* [OKEx Global Meetup Tour](https://www.eventbrite.hk/e/okex-global-meetup-tour-2019-taiwan-tickets-54689867867)在台北举行。 @morphymore讲述了Decred及其工作原理。 “与2018年相比，人们开始更好地认识Decred。有些人告诉我他们从去年的Placeholder's Investment Thesis的中文翻译中了解Decred。这非常令人鼓舞，表明Decred在台湾被更多的人知道。 ([报告](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15478245399446fDEQa:decred.org), [照片](https://photos.app.goo.gl/rXd9PeYmyAGrVTQN7))
+* [在美国迈阿密举行的北美比特币会议](https://btcmiami.com/)。 出席率低得惊人：预计会有6000人，结束后统计只有1800人参与。@jy-p介绍[区块链时间戳](https://btcmiami.com/session/applications-of-blockchain-time-stamping/)应用的演讲做得很好，参与人数很多。 3名成员接受了媒体培训，发现它很有用，还有7名成员预定了培训。 价值存储，“安全、适应性、自筹资金” 以及随附的消息传递被认为是谈论Decred非常有效的方式。 它被发现是最清晰和最有影响力的。 完整报告，这里有照片和视频的[链接](https://github.com/heyvj/decred-events/blob/master/reports/20190116-tnabc-miami.md)。
+* [OKEx Global Meetup Tour](https://www.eventbrite.hk/e/okex-global-meetup-tour-2019-taiwan-tickets-54689867867)在台北举行。 @morphymore讲述了Decred及其工作原理。 “与2018年相比，人们开始更好地认识Decred。有些人告诉我，他们从去年的Placeholder's Investment Thesis的中文翻译中了解Decred。这非常令人鼓舞，表明Decred在台湾被更多人知道。 ([报告](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15478245399446fDEQa:decred.org), [照片](https://photos.app.goo.gl/rXd9PeYmyAGrVTQN7))
 * [10 lat Bitcoina](https://10latbitcoina.com.pl/)在波兰的华沙。 @karamble在Decred的基础上谈到了加密货币的长久生存。4人团队与几个加密网点建立了关系，并与一些企业合作。 BitHub.pl指出：“Decred团队成员非常积极地回答那些感兴趣的人的问题，因为这些问题源源不断的在提出！”。([报告](https://github.com/heyvj/decred-events/blob/master/reports/20190126-10LatBitcoina-Warsaw.md))
 
 即将到来的：
