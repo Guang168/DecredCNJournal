@@ -1,5 +1,7 @@
 # Decred月报 - 1月 
 
+![Decred Journal - December 2018](img/JAN19_journal-201901-384.png)
+
 Decred 以一项重大软件发布和其他重大进展启动了2019年的第一个月份。
 
 新版本节点及钱包软件(v1.4.0)[发布](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)将启动一项共识规则投票(及其他重大更改)。请大家及时升级。
