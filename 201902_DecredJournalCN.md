@@ -70,7 +70,27 @@
 
 ## 治理
 
-{} 月，[DCR基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 {} DCR，并花了 {} DCR。使用 DCR {} 月份的每日平均美元价格 {} 美元计算，本月收到 {} 万 美元以及支出 {} 万 美元。由于这些付款用于支付 {} 月完成的工作，因此可以用 {} 月的平均价格 {} 美元计算 - 在这种情况下，美元收到的数字是 {} 万美元以及支出 {} 万美元。
+在 2月里，[DCR基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 14,878 DCR，并花了 17,311 DCR。使用 DCR 在2月份的每日平均美元价格 {} 美元计算，本月收到 {} 万 美元以及支出 {} 万 美元。由于这些付款用于支付 1月完成的工作，因此可以用 1月的平均价格 17.05 美元计算 - 在这种情况下，美元收到的数字是 25.4 万美元以及支出 29.5 万美元。{}月{}日为止，基金会余额为 {} DCR 相当于 {} 美金。
+
+于{}的提案状态:
+
+* [Baeond 卡牌游戏](https://proposals.decred.org/proposals/f545b359fcf1b40b356e9cb556cb422cc7ff01b628b577f804cdc45ce414f5dd) 由 burst提出，由29%的参与率和97%反对票不通过 _(1月份月报遗漏)_.
+* [去中心化交易所的提案邀请 Decentralized exchange RFP](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a) 由 @jy-p 提出，收到 70 评论。第二版本降低了 MVP 的范围并将成本上限设为 25万美元(之前为100W)。@bee 发布了一份个人的赞成和反对
+[分析](https://github.com/xaur/decred-proposals/blob/master/decred-dex-rfp-analysis.md)。改提案也引起了基金会是否资助推广这类提案的[讨论](https://www.reddit.com/r/DCR/comments/awbtbr/should_treasury_funded_marketing_resources_be/)。
+* [钱包教程提案 Wallet tutorials](https://proposals.decred.org/proposals/a3def199af812b796887f4eae22e11e45f112b50c2e17252c60ed190933ec14f) 由 Cryptocurrency.Market 的 Denni Lovejoy 提出。该提案经历了多个在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154941035930084kFSjY:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anksg2/proposed_statement_of_work_sow_for_decred/) 的反馈及更改。750美元的预算以 {}% 参与率和 {}% 同意票通过。
+* [2019活动资金预算 Events funding for 2019](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) 由 @Dustorf 提出。该提案在[聊天室](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/)预览后提出。20万美元的预算投票以 {}% 参与率和 {}% 同意票通过。
+* [2019宣传预算 Marketing funding for 2019](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) 由 @Dustorf 提出。收到 68 评论，以及在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/) 中讨论。29万美元的预算投票以 {}% 参与率和 {}% 同意票通过。
+* [Decred ATM 集成提案 Decred ATM integration](https://proposals.decred.org/proposals/aea224a561cfed183f514a9ac700d68ba8a6c71dfbee71208fb9bff5fffab51d) 由 @oregonisaac 提交。改提案是从2018年11月份 Bcash ATM [提案](https://proposals.decred.org/proposals/bb7e19283d5c65fed598d5a2f4afcc2b5d2eab187b9cb84fc4304430f80b5ad1)及多个星期的研究，草案，反馈的结果。目前提案要求获取利益相关者意见是否继续筹划 ATM 集成。通过后，另一份提案将提供实施细节投票决定。
+* [Decred社区网站 Decred community website](https://proposals.decred.org/proposals/fb8e6ca361c807168ea0bd6ddbfb7e05896b78f2576daf92f07315e6f8b5cd83) 由 @karamble 提出。该提案提出整合各资源Decred 相关内容的网站。内容包括文章，视频，播客，活动报告及商家。该原型已由 @karamble 建造，该提案要求 6,000 美元资助该网站6个月。
+* [Decred IDAX 交易所整合 Decred integration for IDAX exchange](https://proposals.decred.org/proposals/60adb9c0946482492889e85e9bce05c309665b3438dd85cb1a837df31fbf57fb) 由 acean 提出。该提案要求 1,000 DCR 以上线在蒙古的IDAX交易所 DCR/BTC 交易对。提案投票已经开始。
+
+Discussion started to amend Decred Constitution and ratify the new version with a Politeia vote. The initial goal was to remove outdated/irrelevant parts and add missing parts with minimum changes. During the discussion several people asked if we need constitution at all, considering that it is not binding. Links to all discussions and proposed changes are collected in [this issue](https://github.com/xaur/decred-issues/issues/107).
+
+A new [@pi_crumbs](https://twitter.com/pi_crumbs) Twitter account notifies its followers when proposals are created or modified, and when voting starts or finishes. Currently operated manually by @richardred, but automation is discussed.
+
+Another account called [@slices_of_pi](https://twitter.com/slices_of_pi) posts commentary on Politeia activity written by human.
+
+For greater detail, analysis and commentary see @richardred's excellent Politeia Digest [issue 10](https://medium.com/politeia-digest/issue-10-jan-1-feb-18-2018-202cde71a19d) and [issue 11](https://medium.com/politeia-digest/issue-11-feb-19-feb-28-2019-46befddb09fe) which the above summary is based on.
 
 ## 网络
 
