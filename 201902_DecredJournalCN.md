@@ -3,8 +3,6 @@
 ![Decred Journal - February 2018]()
 
 
-
-
 ## 开发进展总结
 
 [dcrd](https://github.com/decred/dcrd):通过允许[少一个](https://github.com/decred/dcrd/pull/1596)选票双重支付和[拒绝](https://github.com/decred/dcrd/pull/1597)同区块的双花来收紧mempool政策。 从dcrd[删除](https://github.com/decred/dcrd/pull/1607)钱包的类型并[迁移](https://github.com/decred/dcrwallet/pull/1394)到dcrwallet，这简化了对dcrwallet的更改，并在dcrd中触发[重构](https://github.com/decred/dcrd/pull/1613)，以提供更强大的模块边界并简化依赖图。[删除](https://github.com/decred/dcrd/pull/1599)非root 的Go模块替换 - 这有助于确保测试中的所有模块为最新代码，并帮用户保持它们独立准确。
@@ -17,13 +15,12 @@
 
 [Politeia](https://github.com/decred/politeia): 新功能: 突出显示自上次登陆的新评论及密码更改后邮件[通知](https://github.com/decred/politeia/pull/680)(通过Bug Bounty漏洞报告奖励计划[提议](https://github.com/decred/politeia/issues/673))。
 
-Epic cache layer work was [merged](https://github.com/decred/politeia/pull/660)! Thanks @lukebp and all reviewers/testers. This paves the way for a lot of site performance improvements. Among other completed work are CLI tool [improvements](https://github.com/decred/politeia/pull/707) and [fsck](https://github.com/decred/dcrtime/pull/46) (file system verification tool) for dcrtime.
+一项大的缓存层工作已被[合并](https://github.com/decred/politeia/pull/660)! 感谢 @lukebp 和所以参与评论/测试的人员。这为许多网页性能改进铺了路。其他已完成的工作包括 CLI 工具[改进](https://github.com/decred/politeia/pull/707) 及 dcrtime 的[文件系统验证工具](https://github.com/decred/dcrtime/pull/46) fsck (file system verification tool)。
+进行中:
 
-In progress:
-
-* Work [started](https://github.com/decred/politeia/pull/689) to scale www database using CockroachDB.
-* A decision [was made](https://matrix.to/#/!VFRvyndKpzcLrVslQD:decred.org/$15507680085008gMbtf:decred.org) to move the code for contractor management system in politeia and politeiagui repositories to avoid the overhead of maintaining two codebase forks and keeping them in sync.
-* Change of the default comment sorting algorithm is being [discussed](https://github.com/decred/politeiagui/issues/1022).
+* 使用 CockroachDB 扩展 www 数据库的工作已经[开始](https://github.com/decred/politeia/pull/689)。 
+* 开发员[决定](https://matrix.to/#/!VFRvyndKpzcLrVslQD:decred.org/$15507680085008gMbtf:decred.org)将承包商管理系统的代码移去 politeia 及 politeiagui 代码库以避免维护两个分叉代码并保持两份代码同步的工作。
+* 更改默认评论排序算法的[讨论](https://github.com/decred/politeiagui/issues/1022).
 
 [dcrandroid](https://github.com/decred/dcrandroid): 多个漏洞修复及小改进等待整合中，详情请参照[项目告示板](https://github.com/decred/dcrandroid/projects/1)。
 
@@ -45,15 +42,15 @@ In progress:
 
 其他:
 
-* [voting.decred.org](https://voting.decred.org/) dashboard now shows past agendas too. jQuery was [removed](https://github.com/decred/hardforkdemo/pull/213) to the delight of those who understand.
-* Replacement of Google reCAPTCHA with self-hosted solution was [merged](https://github.com/decred/dcrstakepool/pull/281) - huge step in improving [stakeholder's privacy](https://github.com/xaur/decred-issues/issues/25). Thanks to all developers and testers of this patch.
-* Trivia: did you know that Decred heavily [discourages](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15497657664963CvzUr:decred.org) creation of dust outputs?
-* [PoC UI](https://github.com/xaur/decred-issues/issues/8) for atomic swaps made a few steps.
-* QTUM support [merged](https://github.com/decred/atomicswap/pull/93) in atomicswap, POLIS support [removed](https://github.com/decred/atomicswap/pull/99).
-* Work [started](https://github.com/decred/dcrseeder/pull/19) to add DNSSEC support to dcrseeder.
-* [authit](https://github.com/decred/authit), the UI for dcrtime is now hosted at [timestamp.decred.org](https://timestamp.decred.org/). Feedback is welcome in [GitHub issues](https://github.com/decred/authit/issues) or in the new [#timestamp](https://matrix.to/#/!gltiHJRZiSJTzvjOEu:decred.org) chat room.
+* [voting.decred.org](https://voting.decred.org/) 仪表板也显示过去的议案。jQuery 已被[移除](https://github.com/decred/hardforkdemo/pull/213)。
+* Google reCAPTCHA 替代自托管方案已[merged](https://github.com/decred/dcrstakepool/pull/281) - 这是增加[用户](https://github.com/xaur/decred-issues/issues/25)的一大步。感谢为这个补丁努力的开发员和测试员。
+* 有趣答题: 你是否知道 Decred 非常[不鼓励](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15497657664963CvzUr:decred.org) 微额输出?
+* 原子交换的[概念证明PoC UI](https://github.com/xaur/decred-issues/issues/8)开始有点进展。
+* 支持QTUM的代码在原子交换[被合并](https://github.com/decred/atomicswap/pull/93), 支持POLIS的代码已被[移除](https://github.com/decred/atomicswap/pull/99).
+* 为 dcrseeder 增加 DNSSEC 的工作已经[开始](https://github.com/decred/dcrseeder/pull/19)
+* [authit](https://github.com/decred/authit), 即 dcrtime 的 UI 已经在[timestamp.decred.org](https://timestamp.decred.org/)托管。欢迎到[GitHub issues](https://github.com/decred/authit/issues)或新的 [#timestamp](https://matrix.to/#/!gltiHJRZiSJTzvjOEu:decred.org) 聊天室提出反馈。
 
-> I must say, Go really is an amazing language. I don't think I have felt so comfortable in a new language so quickly. (@jholdstock in [chat](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15497080644503VtguR:decred.org))
+> 我必须说, Go 真的是一个神奇的编程语言。我想我未试过在一个新的编程语言里感到这么舒服。(@jholdstock 在 [聊天室](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15497080644503VtguR:decred.org))
 
 2月开发活动数据: 分布于 {} 个存储库（repositories) 有 {} 有效 PRs, {} 主要提交, {} 行添加 及 {} 行删除。每个存储库中有来自 {}-{} 个开发者的贡献。
 
@@ -77,13 +74,16 @@ In progress:
 
 ## 网络
 
-算力: {} 月算力以 ～{} Ph/s 开始，以 ～{} Ph/s 结束，本月中最高 {} Ph/s 及最低 {} Ph/s。在{}月{}日根据 [dcrstats.com](https://dcrstats.com/pow) 数据显示，矿池算力分布为：Poolin {}%, F2pool {}%, BTC.com {}%, UUPool {}%, Luxor {}%, CoinMine {}% 及 其他 {}%。矿池分布数据为大约值无法精确计算。 
+算力: 2 月算力以 ～230 Ph/s 开始，以 ～300 Ph/s 结束，本月中最高 420 Ph/s 及最低 210 Ph/s。在3月5日根据 [dcrstats.com](https://dcrstats.com/pow) 数据显示，矿池算力分布为：BTC.com 31%, Poolin 27%, F2Pool 18%, UUPool 15%, Luxor 4%, CoinMine 1% 及其他 5%。矿池分布数据为大约值无法精确计算。 
 
-投票: 按{}月{}日 dcrstats.com（数据显示）, 30日 平均票价为 {} DCR (+{})。价格在 {} DCR 至 {} DCR之间浮动。锁仓数额为 {}-{} 百万 DCR, 大约为总流通量的 {}-{}%。
+投票: 按3月1日 dcrstats.com（数据显示）, 30日 平均票价为 111.6 DCR (+2.2)。价格在 98.4 DCR 至 124.1 DCR之间浮动。锁仓数额为 4.36-4.56 百万 DCR, 大约为总流通量的 46.4-48.7%。
 
-在2月11日同一个区间内购买的1,265张选票使得在后面7次票价调整中涨至 119.4。随后选票池票数下跌至低于4万张选票 （上次发生于2017年11月），导致连续10次调整降至 98.4 DCR。在票价到底时，在同一区间内又卖出最高2，880 张中的2，797 张选票，
 
-节点: 截止于{}月{}日，[dcred.eu](https://dcred.eu/nodeStats)显示 共有 {} public listening Node 及 {} Normal Node。版本分布: 
+选票价格及选票池大小在二月中经历了不寻常的波动。在2月11日同一个区间内购买的1,265张选票把选票池的选票拉到 ～41，670张选票及后面7次票价调整中涨至 119.4。随后选票池票数下跌至低于4万张选票 （上次发生于2017年11月），导致连续10次调整降至 98.4 DCR。在票价到底时，在同一区间内又卖出最高2，880 张中的2，797 张选票。@ImacallyouJawdy提出在单单这一区间选票就锁定了 282k DCR 或 DCR 流通量的 3%。因此选票价格跳跃至 124.1 DCR，这是自 2017年7月 选票价格算法调整后的新高。选票池最高峰是锁定了 42，174 选票，等同于 DCR 供应的 48.7% - 创新高并且比前一个在2018年6月7日的高峰高出 +0.7%。感谢 charts.dcr.farm 里准确的图表。
+
+节点: 截止于3月1日，[dcred.eu](https://dcred.eu/nodeStats)显示 共有 205 public listening Node 及 297 Normal Node。版本分布: v1.5.0 dev builds: 8.6% (+4.3%), v1.4.0 final: 43%, v1.4.0 dev and rc builds: 7% (-6%), v1.3.0: 23% (-32%), v1.2.0: 10% (-4%), v1.1.2: 4% (-4%), v1.1.0: 2% (-1%)。
+
+PoW 和 PoS 的升级门槛已经完成，共识投票已经锁定并在大约 3月14日开始。感谢所有通过各种渠道帮忙联系 PoW 矿池及 VSP 运营商（选票矿池）并呼吁他们升级的人员。
 
 ## 挖矿
 
@@ -135,6 +135,41 @@ In progress:
 
 ## 相关外部信息
 
+{PoW, ASIC resistance, tech}
+
+A [study](https://medium.com/@MoneroCrusher/analysis-more-than-85-of-the-current-monero-hashrate-is-asics-and-each-machine-is-doing-128-kh-s-f39e3dca7d78) of Monero nonces documented differing patterns in the nonce distribution when ASICs were mining on the network, it considers the methods ASIC miners may take to disguise their presence and how they can be detected. The study speculates that 85% of the Monero hashrate comes from ASICs at time of writing.
+
+A counterfeiting vulnerability was [discovered](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) in Zcash in early 2018. "This vulnerability is so subtle that it evaded years of analysis by expert cryptographers focused on zero-knowledge proving systems and zk-SNARKs.". It was silently patched with the Sapling network upgrade that occurred on Oct 28, 2018, and this [post](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) on Feb 5 explained how the vulnerability had been dealt with within Zcash and how other affected coins (like Horizen and Komodo) were notified. The nature of Zcash cryptography is such that it is difficult to determine if any ZEC was counterfeited while the vulnerability was present, the Zcash team reporting on the bug believe it had not been exploited because “discovery of the vulnerability would have required a high level of technical and cryptographic sophistication that very few people possess.”
+
+一个 Grin 开发员在论坛上[发帖](https://www.grin-forum.org/t/solved-early-disappointments/3682) 表示对于一项上线两周要求捐款资助其中一名开发人员而未达成目标表示失望 - 并威胁要取区块奖励的 20% 以支持开发。
+消息传出后，该[活动](https://grin-tech.org/yeastplume)在短时间内筹得 EUR 67,580，超出原本 EUR 55,000 的目标。如 Breaker Mag [表示](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/)， Grin “吸引[上千万美金](https://www.coindesk.com/grin-launch-crypto-interest-from-deep-pocketed-investors)的挖矿投资，却在筹集 62,000 美元支付主开发人员 6 个月工资上面临难题。
+
+Ethereum holders are holding another [signaling carbonvote](http://www.progpowcarbonvote.com/) about whether they want to change mining algorithm to ProgPoW. The vote started with strong [opposition](https://www.trustnodes.com/2019/02/14/98-of-ethereum-vote-against-progpow) to the change (98% No), but later flipped to strong support (94% Yes) as of 4 March (with 3% of circulating ETH having voted). While carbonvote has no official place in Ethereum's governance, the method is being used because:
+
+> We have noticed a lot of trolling and shills on both sides of the debates from anonymous accounts on forums, youtube, telegram, glitter, reddit and twitter. There is no way to know if these accounts are real people who actually have economic stakes in ethereum, or are simply fake troll or shill accounts funded by one side of the debate.
+
+Tezos started [voting](https://blog.nomadic-labs.com/athens-proposals-injected.html) for the first [amendment](https://blog.nomadic-labs.com/athens-our-proposals-for-the-first-voted-amendment.html) to its protocol on February 25 ([simple guide](https://medium.com/tezos-spotlight/tezos-the-first-amendment-a-laymans-guide-7424ef1d3e13), [detailed guide](https://medium.com/tezos/amending-tezos-b77949d97e1e) to amendment process). The amendment process has 4 phases, each lasting 8 "cycles" (a cycle lasts around 3 days, so each phase lasts for around 24 days). In the first phase bakers submit and upvote proposals. There are 2 proposals being evaluated now in the first phase, they both increase the gas limit but one also decreases the minimum "roll size" (amount of XTZ required to be a baker). It is interesting to note that Kialo is being [used](https://www.kialo.com/tezos-protocol-amendment-1-25295) by some Tezos community members to discuss these proposals. When the first phase ends, the most upvoted proposal will progress to phase 2, where it must be approved by at least 80% of bakers. If the criteria are met, this is followed by a testing phase in which a testnet fork with the changes applied is created and runs for 48 hours (a further testnet matching the proposal may be run for the rest of this phase to allow further testing). After the testing phase, bakers vote on whether the changes should be activated, with an 80% supermajority required. After this 4th phase the changes are activated (or not) and the cycle begins again with new proposals.
+
+Dash v0.13.1 在2月8日发布以“加速 Dash Core v0.13的采用”。Dash Core [v0.13](https://blog.dash.org/dash-core-v0-13-on-mainnet-dc9609b0f6f9) 本打算激活 [DIP3](https://github.com/dashpay/dips/blob/master/dip-0003.md) 但激活门槛为 PoW 矿工及主节点(masternodes)在激活开始前 7 天内达到 80% 的区块支持率。在 24 天左右仍未达成门槛后，门槛要求被视为太严格，并决定可以降低主节点(masternodes)的支持率要求。当足够的 PoW 矿工升级 v0.13.1 后，该变更将于一周后激活。(该[激活](https://blog.dash.org/product-update-february-21-2019-5f067b62df00)已在2月26日左右完成)
+
+
+0x protocol (ZRX) 在2月18日-2月25日进行了[第一次](https://blog.0xproject.com/how-to-participate-in-the-zeip-23-vote-eaa861298033)持代币者投票。该投票是为了通过 [ZEIP-23](https://blog.0xproject.com/zeip-23-trade-bundles-of-assets-fe69eb3ed960)并启动“交易数个资产“。该提案以 5,061,033 ZRX (流通量的 0.86%)参与率和 99% 同意票通过。
+
+The NEM Foundation's funding proposal [started](https://forum.nem.io/t/nem-foundation-update-vote-for-funding-proposal-2019/22007) voting on Feb 15 and voting was open for 5 days. The funding proposal [passed](https://forum.nem.io/t/vote-for-nem-foundation-funding-proposal-2019-approved-by-the-community/22060) with 90% Yes votes and 10% No votes - with votes from 4.56% of the "Proof of Importance" (NEM's way of weighting holders' influence). The vote was conducted on the basis that a 65% supermajority of Yes votes was required, and at least 3% of the network's POI must vote Yes as a quorum requirement. Voting was conducted from within the NEM wallet by sending 0 XEM transactions to a Yes or No address. Another concurrent proposal to fund "NEM Labs" was also successful, with a similar level of participation and 98.8% approval. The NEM Foundation proposal asked for $8 million in XEM (figure is surprisingly hard to find, could only be found in a [google doc presentation](https://docs.google.com/presentation/d/1nMR_1ajVcpdGW7g8I0p7ZGh88tZ1SL5RzG5TsLW6Qnk/edit#slide=id.p2)), while the NEM Labs proposal asked for $3.27 million.
+
+The Aragon Transparency Report for Q4 2018 was [released](https://blog.aragon.org/aragon-q4-2018-transparency-report/). This report presents a detailed breakdown of spending related to the project. The total spent in Q4 2018 was ~€1,055,484.43 or equivalent in cryptocurrency, with €268k on salaries, €330k on payments to service providers, €45k on sponsoring/tickets for events, €63k on hosting the AraCon conference and €260k on [Nest](https://github.com/aragon/nest) teams (a grants program). This report also describes financial [hedging](https://twitter.com/AragonProject/status/1067349802365739008) steps which have been taken by Aragon Association - exchanging some of the ETH raised during the ICO to buy other assets.
+
+{DEX}
+
+Binance is [launching](https://www.theblockcrypto.com/2019/02/07/binance-moves-away-from-ethereum-as-it-prepares-to-launch-dex/) its DEX based on Cosmos' Tendermint protocol and DPoS. The listing fee will "probably be close to $100,000" to "reduce the number of spam or scam projects". In contrast, Decred's DEX design has no listing fees and doesn't require an extra blockchain for its operation.
+
+{related exchanges and websites}
+
+Custody challenge reminder https://www.coindesk.com/quadriga-creditor-protection-filing
+
+{other: regulations, security, fun}
+
+Android malware was [discovered](https://www.welivesecurity.com/2019/02/08/first-clipper-malware-google-play/) on Google Play Store that changes cryptocurrency address in the clipboard. Always double check the address before sending.
 
 
 
