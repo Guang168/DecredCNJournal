@@ -82,24 +82,24 @@
 * [Decred ATM 集成提案 Decred ATM integration](https://proposals.decred.org/proposals/aea224a561cfed183f514a9ac700d68ba8a6c71dfbee71208fb9bff5fffab51d) 由 @oregonisaac 提交。改提案是从2018年11月份 Bcash ATM [提案](https://proposals.decred.org/proposals/bb7e19283d5c65fed598d5a2f4afcc2b5d2eab187b9cb84fc4304430f80b5ad1)及多个星期的研究，草案，反馈的结果。目前提案要求获取利益相关者意见是否继续筹划 ATM 集成。通过后，另一份提案将提供实施细节投票决定。
 * [Decred社区网站 Decred community website](https://proposals.decred.org/proposals/fb8e6ca361c807168ea0bd6ddbfb7e05896b78f2576daf92f07315e6f8b5cd83) 由 @karamble 提出。该提案提出整合各资源Decred 相关内容的网站。内容包括文章，视频，播客，活动报告及商家。该原型已由 @karamble 建造，该提案要求 6,000 美元资助该网站6个月。投票以 33% 参与率和 72.5% 同意票通过。
 * [Decred IDAX 交易所整合 Decred integration for IDAX exchange](https://proposals.decred.org/proposals/60adb9c0946482492889e85e9bce05c309665b3438dd85cb1a837df31fbf57fb) 由 acean 提出。该提案要求 1,000 DCR 以上线在蒙古的IDAX交易所 DCR/BTC 交易对。投票以 23.5% 参与率和 25% 同意票不被通过。
-* [Decred integration in Trust Wallet](https://proposals.decred.org/proposals/2ababdea7da2b3d8312a773d477272135a883ed772ba99cdf31eddb5f261d571) by @oregonisaac proposes to integrate Decred into "fully decentralized" Trust Wallet for approximately $3,300 and $100 monthly support. Voting not started.
+* [Trust Wallet 钱包整合提案 Decred integration in Trust Wallet](https://proposals.decred.org/proposals/2ababdea7da2b3d8312a773d477272135a883ed772ba99cdf31eddb5f261d571) 由 @oregonisaac 提出。提案预算 3,300 美元整合“完全去中心化”钱包 Trust Wallet 并提供大概每月 100 美元的维护支出。投票尚未开始。
 
-Politeia activity between Feb 1-28:
+Politeia 在 2月 1-28日 活动:
 
-* 7 new proposals submitted, 5 proposals started voting.
-* 300 comments on Politeia proposals from 46 different users (public keys).
-* 1,006 up/down votes on comments from 56 different voting users (public keys).
-* 748 upvotes (70%) and 258 downvotes (30%).
+* 7 份新提案提交，5 份提案开始投票。
+* 来自 46 不同用户(公钥)的 300 个 Politeia 提案评论。
+* 来自 56 个不同投票用户(公钥)的评论上 1,006 个 upvote/downvote。
+* 748 upvotes (70%) 和 258 downvotes (30%)。
 
-All time stats as of Feb 28, 2019:
+自上线至 Feb 28, 2019 数据:
 
-* 802 comments on Politeia proposals from 113 different users (public keys).
-* 2,785 up/down votes on comments from 122 different voting users (public keys).
-* 2,336 upvotes (80%) and 449 downvotes (20%).
-* There are 32 voting users who have never commented, and together they have cast 374 votes (13.4% of total).
-* Around 238 comments (30%) have been upvoted by their author.
-
-Thanks to @richardred for automating the generation of the above stats.
+* 来自 113 不同用户(公钥)的 802 个 Politeia 提案评论。
+* 来自 122 个不同投票用户(公钥)的评论上 2,785 个 upvote/downvote。
+* 2,336 upvotes (80%) 和 449 downvotes (20%)。
+* 共有 32 个投票用户从未留评论，他们合共投出 374 评论票 (总数的13.4%）
+* 大约 238 评论 (30%) 被作者本身 upvote。
+ 
+感谢 @richardred 将以上数据生成自动化。
 
 Discussion started to amend Decred Constitution and ratify the new version with a Politeia vote. The initial goal was to remove outdated/irrelevant parts and add missing parts with minimum changes. During the discussion several people asked if we need constitution at all, considering that it is not binding. Links to all discussions and proposed changes are collected in [this issue](https://github.com/xaur/decred-issues/issues/107).
 
