@@ -9,9 +9,7 @@
 
 [dcrwallet](https://github.com/decred/dcrwallet): v1 自动购票经过数个更新版本后已[被移除](https://github.com/decred/dcrwallet/pull/1396)。
 
-[Decrediton](https://github.com/decred/decrediton): Electron 4 [升级](https://github.com/decred/decrediton/pull/2009)让在 Windows 启动[更稳定](https://github.com/decred/decrediton/pull/2017)。在自动购票运行是增加[退出提醒](https://github.com/decred/decrediton/pull/1989)。
-
-多个[响应视图](https://github.com/decred/decrediton/issues?q=is%3Aissue+author%3AMariaPleshkova+created%3A2019-02-01..2019-02-28)已完成设计阶段并准备实施。
+[Decrediton](https://github.com/decred/decrediton): Electron 4 [升级](https://github.com/decred/decrediton/pull/2009)让在 Windows 启动[更稳定](https://github.com/decred/decrediton/pull/2017)。在自动购票运行时增加[退出提醒](https://github.com/decred/decrediton/pull/1989)。多个[响应视图](https://github.com/decred/decrediton/issues?q=is%3Aissue+author%3AMariaPleshkova+created%3A2019-02-01..2019-02-28)已完成设计阶段并准备实施。
 
 [Politeia](https://github.com/decred/politeia): 新功能: 突出显示自上次登陆的新评论及密码更改后邮件[通知](https://github.com/decred/politeia/pull/680)(通过Bug Bounty漏洞报告奖励计划[提议](https://github.com/decred/politeia/issues/673))。
 
@@ -42,6 +40,7 @@
 
 其他:
 
+* @matheusd 的[部落格](https://matheusd.com/post/dcp0004-and-hardforks/)写了关于DCP0004 一些有趣的细节： Decred 的 PoS 部分可以充当意外共识漏洞的多一层保护
 * [voting.decred.org](https://voting.decred.org/) 仪表板也显示过去的议案。jQuery 已被[移除](https://github.com/decred/hardforkdemo/pull/213)。
 * Google reCAPTCHA 替代自托管方案已[merged](https://github.com/decred/dcrstakepool/pull/281) - 这是增加[用户](https://github.com/xaur/decred-issues/issues/25)的一大步。感谢为这个补丁努力的开发员和测试员。
 * 有趣答题: 你是否知道 Decred 非常[不鼓励](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15497657664963CvzUr:decred.org) 微额输出?
@@ -76,13 +75,31 @@
 
 * [Baeond 卡牌游戏](https://proposals.decred.org/proposals/f545b359fcf1b40b356e9cb556cb422cc7ff01b628b577f804cdc45ce414f5dd) 由 burst提出，由29%的参与率和97%反对票不通过 _(1月份月报遗漏)_.
 * [去中心化交易所的提案邀请 Decentralized exchange RFP](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a) 由 @jy-p 提出，收到 70 评论。第二版本降低了 MVP 的范围并将成本上限设为 25万美元(之前为100W)。@bee 发布了一份个人的赞成和反对
-[分析](https://github.com/xaur/decred-proposals/blob/master/decred-dex-rfp-analysis.md)。改提案也引起了基金会是否资助推广这类提案的[讨论](https://www.reddit.com/r/DCR/comments/awbtbr/should_treasury_funded_marketing_resources_be/)。
-* [钱包教程提案 Wallet tutorials](https://proposals.decred.org/proposals/a3def199af812b796887f4eae22e11e45f112b50c2e17252c60ed190933ec14f) 由 Cryptocurrency.Market 的 Denni Lovejoy 提出。该提案经历了多个在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154941035930084kFSjY:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anksg2/proposed_statement_of_work_sow_for_decred/) 的反馈及更改。750美元的预算以 {}% 参与率和 {}% 同意票通过。
-* [2019活动资金预算 Events funding for 2019](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) 由 @Dustorf 提出。该提案在[聊天室](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/)预览后提出。20万美元的预算投票以 {}% 参与率和 {}% 同意票通过。
-* [2019宣传预算 Marketing funding for 2019](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) 由 @Dustorf 提出。收到 68 评论，以及在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/) 中讨论。29万美元的预算投票以 {}% 参与率和 {}% 同意票通过。
+[分析](https://github.com/xaur/decred-proposals/blob/master/decred-dex-rfp-analysis.md)。改提案也引起了基金会是否资助推广这类提案的[讨论](https://www.reddit.com/r/DCR/comments/awbtbr/should_treasury_funded_marketing_resources_be/)。本提案投票已开始 {3月} 为止参与率为 {}% 及同意率为{}%。
+* [钱包教程提案 Wallet tutorials](https://proposals.decred.org/proposals/a3def199af812b796887f4eae22e11e45f112b50c2e17252c60ed190933ec14f) 由 Cryptocurrency.Market 的 Denni Lovejoy 提出。该提案经历了多个在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154941035930084kFSjY:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anksg2/proposed_statement_of_work_sow_for_decred/) 的反馈及更改。750美元的预算以 24% 参与率和 80% 同意票通过。
+* [2019活动资金预算 Events funding for 2019](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) 由 @Dustorf 提出。该提案在[聊天室](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/)预览后提出。20万美元的预算投票以 34% 参与率和 89% 同意票通过。
+* [2019宣传预算 Marketing funding for 2019](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) 由 @Dustorf 提出。收到 68 评论，以及在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/) 中讨论。29万美元的预算投票以 36% 参与率和 83% 同意票通过。
 * [Decred ATM 集成提案 Decred ATM integration](https://proposals.decred.org/proposals/aea224a561cfed183f514a9ac700d68ba8a6c71dfbee71208fb9bff5fffab51d) 由 @oregonisaac 提交。改提案是从2018年11月份 Bcash ATM [提案](https://proposals.decred.org/proposals/bb7e19283d5c65fed598d5a2f4afcc2b5d2eab187b9cb84fc4304430f80b5ad1)及多个星期的研究，草案，反馈的结果。目前提案要求获取利益相关者意见是否继续筹划 ATM 集成。通过后，另一份提案将提供实施细节投票决定。
-* [Decred社区网站 Decred community website](https://proposals.decred.org/proposals/fb8e6ca361c807168ea0bd6ddbfb7e05896b78f2576daf92f07315e6f8b5cd83) 由 @karamble 提出。该提案提出整合各资源Decred 相关内容的网站。内容包括文章，视频，播客，活动报告及商家。该原型已由 @karamble 建造，该提案要求 6,000 美元资助该网站6个月。
-* [Decred IDAX 交易所整合 Decred integration for IDAX exchange](https://proposals.decred.org/proposals/60adb9c0946482492889e85e9bce05c309665b3438dd85cb1a837df31fbf57fb) 由 acean 提出。该提案要求 1,000 DCR 以上线在蒙古的IDAX交易所 DCR/BTC 交易对。提案投票已经开始。
+* [Decred社区网站 Decred community website](https://proposals.decred.org/proposals/fb8e6ca361c807168ea0bd6ddbfb7e05896b78f2576daf92f07315e6f8b5cd83) 由 @karamble 提出。该提案提出整合各资源Decred 相关内容的网站。内容包括文章，视频，播客，活动报告及商家。该原型已由 @karamble 建造，该提案要求 6,000 美元资助该网站6个月。投票以 33% 参与率和 72.5% 同意票通过。
+* [Decred IDAX 交易所整合 Decred integration for IDAX exchange](https://proposals.decred.org/proposals/60adb9c0946482492889e85e9bce05c309665b3438dd85cb1a837df31fbf57fb) 由 acean 提出。该提案要求 1,000 DCR 以上线在蒙古的IDAX交易所 DCR/BTC 交易对。投票以 23.5% 参与率和 25% 同意票不被通过。
+* [Decred integration in Trust Wallet](https://proposals.decred.org/proposals/2ababdea7da2b3d8312a773d477272135a883ed772ba99cdf31eddb5f261d571) by @oregonisaac proposes to integrate Decred into "fully decentralized" Trust Wallet for approximately $3,300 and $100 monthly support. Voting not started.
+
+Politeia activity between Feb 1-28:
+
+* 7 new proposals submitted, 5 proposals started voting.
+* 300 comments on Politeia proposals from 46 different users (public keys).
+* 1,006 up/down votes on comments from 56 different voting users (public keys).
+* 748 upvotes (70%) and 258 downvotes (30%).
+
+All time stats as of Feb 28, 2019:
+
+* 802 comments on Politeia proposals from 113 different users (public keys).
+* 2,785 up/down votes on comments from 122 different voting users (public keys).
+* 2,336 upvotes (80%) and 449 downvotes (20%).
+* There are 32 voting users who have never commented, and together they have cast 374 votes (13.4% of total).
+* Around 238 comments (30%) have been upvoted by their author.
+
+Thanks to @richardred for automating the generation of the above stats.
 
 Discussion started to amend Decred Constitution and ratify the new version with a Politeia vote. The initial goal was to remove outdated/irrelevant parts and add missing parts with minimum changes. During the discussion several people asked if we need constitution at all, considering that it is not binding. Links to all discussions and proposed changes are collected in [this issue](https://github.com/xaur/decred-issues/issues/107).
 
@@ -103,59 +120,151 @@ For greater detail, analysis and commentary see @richardred's excellent Politeia
 
 节点: 截止于3月1日，[dcred.eu](https://dcred.eu/nodeStats)显示 共有 205 public listening Node 及 297 Normal Node。版本分布: v1.5.0 dev builds: 8.6% (+4.3%), v1.4.0 final: 43%, v1.4.0 dev and rc builds: 7% (-6%), v1.3.0: 23% (-32%), v1.2.0: 10% (-4%), v1.1.2: 4% (-4%), v1.1.0: 2% (-1%)。
 
-PoW 和 PoS 的升级门槛已经完成，共识投票已经锁定并在大约 3月14日开始。感谢所有通过各种渠道帮忙联系 PoW 矿池及 VSP 运营商（选票矿池）并呼吁他们升级的人员。
+PoW 和 PoS 的[升级门槛](https://voting.decred.org/)已经完成，共识投票已经锁定并在大约 3月14日开始。感谢所有通过各种渠道帮忙联系 PoW 矿池及 VSP 运营商（选票矿池）并呼吁他们升级的人员。
 
-## 挖矿
-
+The vote did not start yet but block votes already signal their choices for `fixlnseqlocks` agenda. As of Mar 4 there [were](https://matrix.to/#/!wSdymYrEpBhsWlDJuk:decred.org/$155168912215429iStcp:decred.org) 8,503 Yes and 1 No vote. "Dat contrarian... At least it's proof that the no button works." - @jz.
 
 
 ## 整合
+VSP codenamed "Bravo" was [renamed](https://github.com/decred/dcrwebapi/pull/59) from dcr.stakepool.net to [dcr.blue](https://dcr.blue/).
 
+Exchange integrations:
+
+* [Vertbase](https://www.vertbase.com/) added DCR/USD pair. Vertbase CEO and cofounder Justin joined #general and [answered questions](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155015221011045eRXdT:decred.org). Among the answers were: Vertbase supports 39 of the 50 U.S. states, is actively working to add GBP/EUR/AUD trading, and uses 3rd party to handle ID verification. An interesting feature of Vertbase is very short duration of custody: they will send tokens directly to your wallet once bank transfer settles.
+
+  > We also require you to provide a wallet address because we don't want to hold nor do we want you to hold your cryptocurrency on our platform. Be your own bank! (@Justin in [#general](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155017217111507BsAmt:decred.org))
+
+  As of Mar 8, sell orders are not available. See also this [Reddit post](https://www.reddit.com/r/decred/comments/aqkl1p/vertbase_lists_decred_dcr_with_us_dollar_usd/).
+
+* [Lykke](https://www.lykke.com/) [added](https://twitter.com/lykke/status/1095352586545319937) DCR pairs with BTC and USD.
+* [ChainRift](https://www.chainrift.com/) integrated DCR.
+* [Livecoin](https://www.livecoin.net/) [added](https://twitter.com/livecoin_net/status/1098151449786118144) DCR pairs with BTC, ETH and USD.
+* [BitMesh](https://bitmesh.com/) [launched](https://www.reddit.com/r/decred/comments/av8a69/bitmesh_has_launched_dcr_and_opened_dcrbtc/) DCR pairs with BTC and USDT.
+
+Warning: the authors of Decred Journal have no idea about which of the above are scams. Please do your own research [before](https://twitter.com/yeppoon/status/1095857386709893120) trusting your personal information or assets to any entity.
 
 ## Adoption
 
+CoinFund [announced](https://blog.coinfund.io/announcing-grassfed-network-and-decred-staking-pool-with-placeholder-55a32a312710) Grassfed Network, an initiative that uses 'generalized mining' to directly participate in decentralized network. The story was featured in [CoinDesk](https://www.coindesk.com/these-cryptofunds-say-generalized-mining-is-the-new-way-to-invest).
+
+Any activity that is compensated with on-protocol rewards denominated in network assets can be seen as [generalized mining](https://grassfed.network/mining/). Following this approach investors can directly engage in the networks and generate additional returns, compared to just speculating on the value of cryptoassets.
+
+Per the announcement, CoinFund partnered with [Placeholder](https://www.placeholder.vc/) who plans to delegate its own voting tickets to the [Decred VSP](https://dcr.grassfed.network) launched in January. This plan was voiced earlier by Joel Monegro and Chris Burniski during the [panel](https://www.youtube.com/watch?v=tkllaH0Y0ng) at Texas Bitcoin Conference 2018. [CoinFund](https://coinfund.io/) is a cryptoasset-focused investment and research firm founded in 2015 and based in New York, USA.
 
 ## 外联活动
 
+In February, @Dustorf proposed and passed his plans for [marketing](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) and [events](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) for the remainder of 2019. This is an exciting development that further decentralizes Decred by shifting more direct over spending to the stakeholders. There was vigorous discussion and many good questions, but the proposals were approved by 83% and 89% of participating tickets.
+
+With an approved budget, work began in earnest on the scope of the proposals. Planning is underway on NYC Blockchain Week, which coincides with Consensus. More information should be announced within two weeks on these plans.
+
+The first podcast is underway and scheduled to deliver in March. It will feature Decred Jesus, who will provide a colorful overview discussion of Decred as seen from the ground. Work on the website is underway, with architecture, copy-writing and video scripting already begun.
+
+The Decred Assembly and the newsletter are tactics we hope to deliver by the end of this month.
+
+February update from Ditto:
+
+* Media trained 5 Decred community members.
+* Secured media coverage: 15-minute [interview](https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-) between @jy-p and BlockTV, a feature [article](https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/) for the DEX proposal in Forbes, a feature [article](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/) in honor of Decred's 3rd anniversary in Breaker Mag, an [article](https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-exchange/) on the Vertbase listing in The Block Crypto featuring quotes by @jz. The journalist, Frank Chaparro, said the story was very popular on Twitter and also internally at The Block
+* Facilitated 2 interviews with crypto media outlets.
+* Worked with the community to create a repository of media-friendly images that we can share with reporters to add visuals to stories about Decred.
+* Helped plan the logistics and content for the event hosted by Decred and OKCoin in San Francisco. Worked with Dustin and OKCoin to draft the Eventbrite copy, coordinate with OKCoin, develop the agenda for the event, and draft a press release.
+* Put together a plan to position Decred as a superior store of value among a variety of channels, including initiating long-term conversations with select top tier mainstream reporters.
+* Worked with Dustin on a master six-month marketing and communications plan spanning PR, events, content, etc. As part of this strategy, we aim to build Decred's legitimacy and credibility among institutional investors. That entails thinking beyond media relations to span other disciplines as well: owned content, Twitter, influencers, events, etc.
+
+For more detail see Ditto's biweekly updates on [Feb 4](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154930816328395IaXDr:decred.org) and [Feb 15](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$155026927613161McEtC:decred.org).
+
+Long [discussion](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$15498862365982zjzwP:decred.org) about perception and framing was triggered by a question whether to use word "bug" in public messaging for 1.4 release.
 
 ## 社区活动
 
 出席：
 
-* {}
+* [TabConf](https://tabconf.com/) in Atlanta, USA. @joshuam [noted](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15497319564677Cmutw:decred.org): "Tabconf was awesome. Extremely engaged audience - best questions I have received at a conference to date".
+* [Campus Party](http://brasil.campus-party.org/cpbr12/patrocinadores/) in Sao Paulo, Brazil. About 60,000 people passed through the event which was running 24 hours a day for 6 days. Decred was the only cryptocurrency participating officially and with an exclusive space to present lectures and classes. All Brazilian developer contractors attended and presented a total of 6 talks and 3 workshops. @jy-p presented [Cryptocurrency Security and Adaptability](https://www.youtube.com/watch?v=SMiHku6GGmI). There were a few problems like Decred's zone moved and reduced (happened to almost all participants) and poor organization of translations - all taken into account for future planning. See [full report](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155200602520229ditLj:decred.org) by @emiliomann and [notes](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155197226472913itWWu:matrix.org) by @matheusd.
+* Love Night in Ghana. Organized by @George Pro. Since about 90% of participants knew about Bitcoin, presenters could skip the basics and highlight unique features of Decred. One popular question was where DCR can be exchanged to local currency. ([photos](https://twitter.com/deCRED_Ghana/status/1096714039978266624))
+* [How To Keep Your Crypto Secure](https://www.meetup.com/Decred-Australia/events/258211699/) in Melbourne, Australia. Australia's cryptocurrency enthusiasts discussed best security practices and Decred's security standards. @Zohand [noted](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15504942691141LtOxa:decred.org): "Feedback was awesome, and the guys from coinstop and CTRL want to run the event again in a couple of months.". ([photos](https://twitter.com/DecredAustralia/status/1097478053763018752))
+* [Decred in 30 minutes](https://www.eventbrite.com/e/decred-en-30-minutos-tickets-55764142050) in Mexico City, Mexico. @elian [reported](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15517155592047249xtYGy:matrix.org): "It was the first meetup where everyone knew about Decred quite well, we were 7 in total. The presentation went faster because attendees knew most of the fundamental content in advance so we went to discuss more complex issues like what are the challenges to decentralized governance, best way to stake tickets and future developments that are happening in the project like LN, payments integration and the most recent events, marketing and community proposals in Politeia. Was very nice to meet proper DCR enthusiasts in Mexico. (...) I think we are far from seeing cc as MoE in Mexico but definitely the space is moving fast. At the moment there are more Mexicans in contact with crypto than with the stocks markets in the country, this is a very good indicator.". ([photos](https://twitter.com/DecredESP/status/1102594478664232960))
+* Talk in UAEM University in Ecatepec, Mexico. @elian [shared](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$1551994219193770GeoIk:matrix.org): "I spoke about the history of money, the Internet, Bitcoin's blockchain, Decred's hybrid blockchain and how to work in the cryptocurrency & blockchain industries. They were fascinated by the innovation of cryptocurrencies and blockchain, both students and teachers. The audience was mainly composed by computer science students. The main questions went around what is money, how to value cryptocurrencies and what are the potential work opportunities for fresh grads in the industry. (...) Doing talks in universities is a big deal for me because I know that the next generation of devs, lawyers, accountants, etc, that will be working on the industry is there and they are eager to know more about what opportunities this industry brings. Teachers were very excited to have this subjects presented to their students because is not easy to get such high tech talks to universities that are not in the centre of the city.".
+* [Decred Meetup](https://www.eventbrite.com/e/decred-meet-up-tickets-57073786231) in Winneba, Ghana. Organized by @George Pro, who [noted](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org): "Our first meetup in Ghana was successful. We took our time to explain to the participants how to stake DCR, how to get DCR (Coinomi process), using it as remittances, wallet set up, speed and privacy among others.". ([photos](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org))
+* Talk at Qingdao University in Qingdao, China. [@wanbihou](https://twitter.com/wanbihou) talked about Decred's community governance model and the upcoming on-chain consensus vote. "The students were very enthusiastic!". ([photos](https://twitter.com/wanbihou/status/1101131545010556928))
+
 
 即将到来的：
 
-* {}
+* [Decred & OKCoin Present "The Next 10 Years: Crypto Boom, Bust, or Buidl?"](https://www.eventbrite.com/e/decred-okcoin-present-the-next-10-years-crypto-boom-bust-or-buidl-tickets-57549671617) 美国三藩市，3月12日
+* [Restoring Trust through Blockchain Governance](https://www.meetup.com/DecredCanada/events/259126224/) 加拿大多伦多，3月16日
+* [Berlin Blockchain Week](https://www.berlin-blockchain-week.com/) 德国柏林，3月27日 @karamble 将发表演说
+* [Jalisco Talent Land](https://www.talent-land.mx/#entradas) 墨西哥瓜达拉哈拉，四月22-26日。细节可联系@elian
+ 
+在治理部分提到，利益相关者通过了价值 200K 美元的[2019年的活动预算](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509), 当中包含了3个大型活动及 ～20个小型活动。
 
 ## 媒体
 
+部分文章:
+
+* Decred evaluation by TokenGazer (Chinese, [qq.com](https://mp.weixin.qq.com/s/7rMaTYXIhIpO37qiIvJX_A), _missed in Jan issue_) - Decred was rated 4.2
+* Which one is the best cryptocurrency next to bitcoin? answer by Pavel Svitek ([quora.com](https://www.quora.com/Which-one-is-the-best-cryptocurrency-next-to-bitcoin/answer/Pavel-Svitek)) - thanks to Pavel for presenting Decred to Quora
+* No More Trading Or Listing Fees? Decred Releases New DEX Proposal by Leslie Ankne ([forbes.com](https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/))
+* How Long Will Crypto Winter Last? We Asked Three Experts by Julia Herbst ([breakermag.com](https://breakermag.com/what-the-longest-ever-bear-market-means-for-crypto/))
+* As Decred Turns Three, It's Still Set on Real Decentralization by David Z. Morris ([breakermag.com](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/)
+* Decred Founder Proposes Building DEX as Alternative to Binance (Interview) by Liam Kelly ([cryptoslate.com](https://cryptoslate.com/decred-founder-proposes-dex-binance-interview/))
+* "They asked us for $3 million": an inside look into getting listed on a crypto exchange by Frank Chaparro ([theblockcrypto.com](https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-exchange/))
+* Cryptonetwork Governance as Capital by Joel Monegro ([placeholder.vc](https://www.placeholder.vc/blog/2019/2/19/cryptonetwork-governance-as-capital))
+* Using Governance To Decide The Future: Is Decred (DCR) Going to Build a Decentralized Exchange? by @richardred ([investinblockchain.com](https://www.investinblockchain.com/is-decred-dcr-building-decentralized-exchange/), also [in Chinese](https://0xzx.com/2019022708166553.html))
+* Decred mentioned in [Forbes](https://www.forbes.com/sites/samantharadocchia/2019/02/05/everything-about-the-digital-nomad-lifestyle-sounds-great-except-the-us-tax-system/) and [Breaker Mag](https://breakermag.com/bruce-schneier-is-right-about-blockchains-biggest-flaw-and-completely-wrong-about-its-longterm-significance/) stories.
+
+Videos:
+
+* Decred AMA TruStory - Preethi Kasireddy chats with Isaac J and Matheus of Decred to learn more about the hybrid proof of work/proof of stake consensus mechanism and their governance model ([youtube](https://www.youtube.com/watch?v=OKdaa630YDk))
+* Cryptocurrency Security and Adaptability - talk by @jy-p at Campus Party Brazil ([youtube](https://www.youtube.com/watch?v=SMiHku6GGmI))
+* The Potential of Decentralization - interview with @jy-p for BlockTV ([blocktv.com](https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-))
+
+Audio:
+
+* ITK Crypto #8 - Tom White 和 Crypto SI 对 @kozel 关于加密货币治理的访问 ([youtube](https://www.youtube.com/watch?v=H-qZBsQY5BM))
+
+翻译:
+
+* Decred 月报 - 2019年 1月 [中文](https://www.jianshu.com/p/097265621ef6) 来自 @guang (和 Dominic, Hugo 及 Jill), 来自 @elian 的[西班牙语](https://medium.com/@decred_es/revista-decred-enero-2019-549e2b051f5a)。感谢！
 
 
-## 社区讨论
+## 社区
 
-截止于 Feb 4 的社区数据 :
+截止于 Mar 1 的社区数据 :
 
-* Twitter followers: {} (-106)
-* Reddit subscribers: {} (+89)
-* Matrix users: {} (+26)
-* Slack users: {} (+110)
-* Telegram users: {} (-231)
-* YouTube subscribers: {} (+14)
-* Facebook followers: {} (+11), likes: {} (+11)
-* LinkedIn followers: Decred page {} (+{}), Politeia page {} (+3)
-* GitHub dcrd stars: {} (+{}), forks: {} (+{})
+* Twitter followers: 39,797 (+19)
+* Reddit subscribers: 9,365 (+35)
+* Matrix users: 266 (+19)
+* Slack users: 6,581 (+52)
+* Discord users: 2,101, can post: 131
+* Telegram users: 4,272 (-231)
+* YouTube subscribers: 3,746 (-6)
+* Facebook followers: 3,141 (+9), likes: 2,896 (+5)
+* LinkedIn followers: Decred page 483 (+17), Politeia page 29 (+2)
+* GitHub dcrd stars: 474 (+6), forks: 1,237 (+16)
+
+电报群社区: 中文 866 (+53), 意大利语 160 (+28), 葡萄牙语 642 (+100), 西班牙语 73 (+11).
+
+中文社区在二月非常活跃 ：
+
+* 开启了[#chinese](https://matrix.to/#/!nUWpVrwhlJFyLuMlGw:decred.org)中文聊天室
+* 殷国超继续贡献 Decred 文章: 一篇关于 [dcrtime](https://mp.weixin.qq.com/s/ks48Piu3s2zy4btZW0kBDQ)和一篇关于[原子交换](https://mp.weixin.qq.com/s/Lgem_BqFBnLUsY7AzC5x_w)
+* Dominic 在青岛大学给部分同学[介绍](https://twitter.com/wanbihou/status/1101122114118184961)区块链和 Decred 。
+* 殷国超文章促使另一位社区成员[写更多](https://teakki.com/p/5c774a9ab1029f607605bc76)关于 dcrtime 并制作了将文件及文字时间戳的[网页 UI](http://www.ibitlin.com/dcrtool#/dcrtime)(dcrtime 的 UI在[这里](https://github.com/xaur/decred-issues/issues/9)记载)。
 
 社交系统新闻：
+
+* 非英语聊天室重新根据语言命名，并移除了不再使用的聊天室。目前Matrix上已有中文[#chinese](https://matrix.to/#/!nUWpVrwhlJFyLuMlGw:decred.org), 葡萄牙语[#portuguese](https://matrix.to/#/!FBtUquQLhAvHeBIkac:decred.org), 俄语[#russian](https://matrix.to/#/!TQzfaYsKyxAqQDZQeX:decred.org)及西班牙语[#spanish](https://matrix.to/#/!pkeRzinGCRtjIIhAAK:decred.org)
+* [Riot](https://riot.im/app/#/room/#general:decred.org) 客户端配合更新的 UI 已[升级](https://medium.com/@RiotChat/the-big-1-0-68fa7c6050be)至版本 1.0。
+
+Another Reddit thread was [deleted](https://www.reddit.com/r/decred/comments/an4b6z/forbes_no_more_trading_or_listing_fees_decred/) after receiving some discussion. Moderators have no power to forbid this destruction of community knowledge, except the workaround to [resubmit](https://www.reddit.com/r/decred/comments/ar29jd/forbes_no_more_trading_or_listing_fees_decred/) the deleted thread. Ideas for robust replacement for Reddit are collected in [this issue](https://github.com/xaur/decred-issues/issues/38).
 
 
 ## 市场
 
-在二月中 DCR 交易价格为 美金 {}-{} / BTC {}-{}。平均日汇率为 {} 美元。
+在二月中 DCR 交易价格为 美金 14.97-18.28 / BTC 0.0042-0.0048。平均日汇率为 {} 美元。
 
 ## 相关外部信息
-
-{PoW, ASIC resistance, tech}
 
 A [study](https://medium.com/@MoneroCrusher/analysis-more-than-85-of-the-current-monero-hashrate-is-asics-and-each-machine-is-doing-128-kh-s-f39e3dca7d78) of Monero nonces documented differing patterns in the nonce distribution when ASICs were mining on the network, it considers the methods ASIC miners may take to disguise their presence and how they can be detected. The study speculates that 85% of the Monero hashrate comes from ASICs at time of writing.
 
@@ -172,22 +281,17 @@ Tezos started [voting](https://blog.nomadic-labs.com/athens-proposals-injected.h
 
 Dash v0.13.1 在2月8日发布以“加速 Dash Core v0.13的采用”。Dash Core [v0.13](https://blog.dash.org/dash-core-v0-13-on-mainnet-dc9609b0f6f9) 本打算激活 [DIP3](https://github.com/dashpay/dips/blob/master/dip-0003.md) 但激活门槛为 PoW 矿工及主节点(masternodes)在激活开始前 7 天内达到 80% 的区块支持率。在 24 天左右仍未达成门槛后，门槛要求被视为太严格，并决定可以降低主节点(masternodes)的支持率要求。当足够的 PoW 矿工升级 v0.13.1 后，该变更将于一周后激活。(该[激活](https://blog.dash.org/product-update-february-21-2019-5f067b62df00)已在2月26日左右完成)
 
-
 0x protocol (ZRX) 在2月18日-2月25日进行了[第一次](https://blog.0xproject.com/how-to-participate-in-the-zeip-23-vote-eaa861298033)持代币者投票。该投票是为了通过 [ZEIP-23](https://blog.0xproject.com/zeip-23-trade-bundles-of-assets-fe69eb3ed960)并启动“交易数个资产“。该提案以 5,061,033 ZRX (流通量的 0.86%)参与率和 99% 同意票通过。
 
 The NEM Foundation's funding proposal [started](https://forum.nem.io/t/nem-foundation-update-vote-for-funding-proposal-2019/22007) voting on Feb 15 and voting was open for 5 days. The funding proposal [passed](https://forum.nem.io/t/vote-for-nem-foundation-funding-proposal-2019-approved-by-the-community/22060) with 90% Yes votes and 10% No votes - with votes from 4.56% of the "Proof of Importance" (NEM's way of weighting holders' influence). The vote was conducted on the basis that a 65% supermajority of Yes votes was required, and at least 3% of the network's POI must vote Yes as a quorum requirement. Voting was conducted from within the NEM wallet by sending 0 XEM transactions to a Yes or No address. Another concurrent proposal to fund "NEM Labs" was also successful, with a similar level of participation and 98.8% approval. The NEM Foundation proposal asked for $8 million in XEM (figure is surprisingly hard to find, could only be found in a [google doc presentation](https://docs.google.com/presentation/d/1nMR_1ajVcpdGW7g8I0p7ZGh88tZ1SL5RzG5TsLW6Qnk/edit#slide=id.p2)), while the NEM Labs proposal asked for $3.27 million.
 
 The Aragon Transparency Report for Q4 2018 was [released](https://blog.aragon.org/aragon-q4-2018-transparency-report/). This report presents a detailed breakdown of spending related to the project. The total spent in Q4 2018 was ~€1,055,484.43 or equivalent in cryptocurrency, with €268k on salaries, €330k on payments to service providers, €45k on sponsoring/tickets for events, €63k on hosting the AraCon conference and €260k on [Nest](https://github.com/aragon/nest) teams (a grants program). This report also describes financial [hedging](https://twitter.com/AragonProject/status/1067349802365739008) steps which have been taken by Aragon Association - exchanging some of the ETH raised during the ICO to buy other assets.
 
-{DEX}
-
 Binance is [launching](https://www.theblockcrypto.com/2019/02/07/binance-moves-away-from-ethereum-as-it-prepares-to-launch-dex/) its DEX based on Cosmos' Tendermint protocol and DPoS. The listing fee will "probably be close to $100,000" to "reduce the number of spam or scam projects". In contrast, Decred's DEX design has no listing fees and doesn't require an extra blockchain for its operation.
 
-{related exchanges and websites}
+Canadian exchange QuadrigaCX [owes](https://www.coindesk.com/quadriga-creditor-protection-filing) its customers $190 million. The funds reportedly [cannot be accessed](https://www.coindesk.com/quadrigacx-crypto-exchange-users-say-they-still-cant-get-their-money-out) after it's founder died, who had sole control or knowledge if exchange's cold storage solution. Another $500K in BTC were locked "by mistake" per [this story](https://www.coindesk.com/quadriga-inadvertently-sent-btc-to-dead-ceos-cold-wallet-ey-report). Custody of cryptocurrencies is challenging, and centralized exchanges have a long trail of failures.
 
-Custody challenge reminder https://www.coindesk.com/quadriga-creditor-protection-filing
-
-{other: regulations, security, fun}
+Medium showed its power again by [suspending](https://archive.today/iKQlv) the account that [posted](https://medium.com/@zeroresearchproof/quadrigacx-chain-analysis-report-pt-1-bitcoin-wallets-19d3a375d389) chain analysis of QuadrigaCX wallets. Luckily, someone made a [snapshot](https://archive.today/xsztt). The suspension hides all account's content and is implemented as a redirect to a same-for-all page that says "This page is unavailable" and does not state the reason. Medium is a powerful platform, but at its core is a centralized service that can lock in data of those who don't make backups. Earlier behavior like this triggered a [discussion](https://github.com/xaur/decred-issues/issues/70) about migrating from Medium or treating it as just a mirror.
 
 Android malware was [discovered](https://www.welivesecurity.com/2019/02/08/first-clipper-malware-google-play/) on Google Play Store that changes cryptocurrency address in the clipboard. Always double check the address before sending.
 
@@ -201,7 +305,7 @@ Android malware was [discovered](https://www.welivesecurity.com/2019/02/08/first
 
 欢迎在 Reddit, [GitHub](https://github.com/xaur/decred-news/issues) 和 [Matrix](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org) 上评论，反馈及贡献。
 
-感谢 (按字母排序): 
+感谢 (按字母排序): bee, davecgh, degeri, Dustorf, emiliomann, guang, liz_bagot, matheusd, raedah, richardred. 特别感谢 saender 提供美术图。
 
 
 ## 中文社区 
