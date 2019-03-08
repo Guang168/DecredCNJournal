@@ -101,13 +101,13 @@ Politeia 在 2月 1-28日 活动:
  
 感谢 @richardred 将以上数据生成自动化。
 
-Discussion started to amend Decred Constitution and ratify the new version with a Politeia vote. The initial goal was to remove outdated/irrelevant parts and add missing parts with minimum changes. During the discussion several people asked if we need constitution at all, considering that it is not binding. Links to all discussions and proposed changes are collected in [this issue](https://github.com/xaur/decred-issues/issues/107).
+有关修改 Decred 宪法及通过 Politeia 投票批准新版本讨论已经开始进行中。初始目标是通过最少改动先将过期或不相关部分去除并增加缺少的部分。在讨论过程中有人提考虑到宪法并没有约束力，我们是否真正需要宪法。所有讨论及提议修改的内容的链接都收录在[这issue](https://github.com/xaur/decred-issues/issues/107)。
 
-A new [@pi_crumbs](https://twitter.com/pi_crumbs) Twitter account notifies its followers when proposals are created or modified, and when voting starts or finishes. Currently operated manually by @richardred, but automation is discussed.
+一个新的推特账户 [@pi_crumbs](https://twitter.com/pi_crumbs)将推送提案创建或修改，投票开始及结束消息。目前由 @richardred 手动操作，但讨论将其自动化也在进行中。
 
-Another account called [@slices_of_pi](https://twitter.com/slices_of_pi) posts commentary on Politeia activity written by human.
+另一个推特账户 [@slices_of_pi](https://twitter.com/slices_of_pi) 将推送手动编写有关 Politeia 活动的评论。
 
-For greater detail, analysis and commentary see @richardred's excellent Politeia Digest [issue 10](https://medium.com/politeia-digest/issue-10-jan-1-feb-18-2018-202cde71a19d) and [issue 11](https://medium.com/politeia-digest/issue-11-feb-19-feb-28-2019-46befddb09fe) which the above summary is based on.
+更多细节，分析与评论请参考 @richardred 的 Politeia 简报 [第10期](https://medium.com/politeia-digest/issue-10-jan-1-feb-18-2018-202cde71a19d) 及 [第11期](https://medium.com/politeia-digest/issue-11-feb-19-feb-28-2019-46befddb09fe)。以上重点总结于 Politeia 简报。
 
 ## 网络
 
@@ -126,22 +126,23 @@ The vote did not start yet but block votes already signal their choices for `fix
 
 
 ## 整合
-VSP codenamed "Bravo" was [renamed](https://github.com/decred/dcrwebapi/pull/59) from dcr.stakepool.net to [dcr.blue](https://dcr.blue/).
 
-Exchange integrations:
+选票矿池 VSP 代号 "Bravo" 已从 dcr.stakepool.net [重命名](https://github.com/decred/dcrwebapi/pull/59)为[dcr.blue](https://dcr.blue/)。
 
-* [Vertbase](https://www.vertbase.com/) added DCR/USD pair. Vertbase CEO and cofounder Justin joined #general and [answered questions](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155015221011045eRXdT:decred.org). Among the answers were: Vertbase supports 39 of the 50 U.S. states, is actively working to add GBP/EUR/AUD trading, and uses 3rd party to handle ID verification. An interesting feature of Vertbase is very short duration of custody: they will send tokens directly to your wallet once bank transfer settles.
+交易所整合:
 
-  > We also require you to provide a wallet address because we don't want to hold nor do we want you to hold your cryptocurrency on our platform. Be your own bank! (@Justin in [#general](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155017217111507BsAmt:decred.org))
+* [Vertbase](https://www.vertbase.com/)已增加 DCR/USD 交易对。Vertbase CEO 兼 联合创始人 Justin 加入 #general 并[回答 Vertbase 相关问题](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155015221011045eRXdT:decred.org)。答案中总结：Vertbase目前支持 50 个美国州中的 39 个，正积极增加 GBP/EUR/AUD 交易，并使用第三方处理身份认证。其中一个 Vertbase 特色为短时间的托管：他们在银行转账过账后将代币直接转入用户钱包。
 
-  As of Mar 8, sell orders are not available. See also this [Reddit post](https://www.reddit.com/r/decred/comments/aqkl1p/vertbase_lists_decred_dcr_with_us_dollar_usd/).
+  > 我们也需要您提供钱包地址，因为我们不想托管，也不想你使用我们的平台托管您的加密货币。成为您自己的银行！(@Justin 在[#general](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155017217111507BsAmt:decred.org)说道)
 
-* [Lykke](https://www.lykke.com/) [added](https://twitter.com/lykke/status/1095352586545319937) DCR pairs with BTC and USD.
-* [ChainRift](https://www.chainrift.com/) integrated DCR.
-* [Livecoin](https://www.livecoin.net/) [added](https://twitter.com/livecoin_net/status/1098151449786118144) DCR pairs with BTC, ETH and USD.
-* [BitMesh](https://bitmesh.com/) [launched](https://www.reddit.com/r/decred/comments/av8a69/bitmesh_has_launched_dcr_and_opened_dcrbtc/) DCR pairs with BTC and USDT.
+  3月 8日为止，卖单并未仍无法使用。请参考这个 [Reddit 帖](https://www.reddit.com/r/decred/comments/aqkl1p/vertbase_lists_decred_dcr_with_us_dollar_usd/).
 
-Warning: the authors of Decred Journal have no idea about which of the above are scams. Please do your own research [before](https://twitter.com/yeppoon/status/1095857386709893120) trusting your personal information or assets to any entity.
+* [Lykke](https://www.lykke.com/) [已加入](https://twitter.com/lykke/status/1095352586545319937) DCR 与 BTC 和 USD 交易对。
+* [ChainRift](https://www.chainrift.com/) 已整合 DCR。
+* [Livecoin](https://www.livecoin.net/) [已加入](https://twitter.com/livecoin_net/status/1098151449786118144) DCR 与 BTC, ETH 和 USD 交易对。
+* [BitMesh](https://bitmesh.com/) [推出](https://www.reddit.com/r/decred/comments/av8a69/bitmesh_has_launched_dcr_and_opened_dcrbtc/) DCR 与 BTC 和 USDT 交易对。
+
+警告: Decred 月报作者无法确认以上交易所可靠性。请自行进行审核[才](https://twitter.com/yeppoon/status/1095857386709893120)将您的个人信息或财产信托于任何实体。
 
 ## Adoption
 
@@ -153,7 +154,7 @@ Per the announcement, CoinFund partnered with [Placeholder](https://www.placehol
 
 ## 外联活动
 
-In February, @Dustorf proposed and passed his plans for [marketing](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) and [events](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) for the remainder of 2019. This is an exciting development that further decentralizes Decred by shifting more direct over spending to the stakeholders. There was vigorous discussion and many good questions, but the proposals were approved by 83% and 89% of participating tickets.
+In February, @Dustorf proposed his plans for [marketing](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) and [events](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) for the remainder of 2019 and these were passed by stakeholder voting. This is an exciting development that further decentralizes Decred by shifting more direct control over spending to the stakeholders. There was vigorous discussion and many good questions, but the proposals were approved by 83% and 89% of tickets that voted.
 
 With an approved budget, work began in earnest on the scope of the proposals. Planning is underway on NYC Blockchain Week, which coincides with Consensus. More information should be announced within two weeks on these plans.
 
@@ -196,7 +197,7 @@ Long [discussion](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$1549886236
 * [Berlin Blockchain Week](https://www.berlin-blockchain-week.com/) 德国柏林，3月27日 @karamble 将发表演说
 * [Jalisco Talent Land](https://www.talent-land.mx/#entradas) 墨西哥瓜达拉哈拉，四月22-26日。细节可联系@elian
  
-在治理部分提到，利益相关者通过了价值 200K 美元的[2019年的活动预算](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509), 当中包含了3个大型活动及 ～20个小型活动。
+在治理部分提到，利益相关者通过了价值 200K 美元的[2019年的活动预算](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509), 当中包含了参与 3 个大型活动及出席多个小型活动。
 
 ## 媒体
 
