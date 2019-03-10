@@ -149,50 +149,50 @@ The vote did not start yet but block votes already signal their choices for `fix
 
 警告: Decred 月报作者无法确认以上交易所可靠性。请自行进行审核[才](https://twitter.com/yeppoon/status/1095857386709893120)将您的个人信息或财产信托于任何实体。
 
-## Adoption
+## 落地应用
 
-CoinFund [announced](https://blog.coinfund.io/announcing-grassfed-network-and-decred-staking-pool-with-placeholder-55a32a312710) Grassfed Network, an initiative that uses 'generalized mining' to directly participate in decentralized network. The story was featured in [CoinDesk](https://www.coindesk.com/these-cryptofunds-say-generalized-mining-is-the-new-way-to-invest).
+CoinFund [已宣布]（https://blog.coinfund.io/announcing-grassfed-network-and-decred-staking-pool-with-placeholder-55a32a312710）Grassfed Network，一项使用“通用采矿”参与去中心化网络的计划。相关文章发表在[CoinDesk]（https://www.coindesk.com/these-cryptofunds-say-generalized-mining-is-the-new-way-to-invest）。
 
-Any activity that is compensated with on-protocol rewards denominated in network assets can be seen as [generalized mining](https://grassfed.network/mining/). Following this approach investors can directly engage in the networks and generate additional returns, compared to just speculating on the value of cryptoassets.
+任何以网络资产计价的协议奖励都可以被视为[通用采矿]（https://grassfed.network/mining/）。采用这种方法，在资产增值外，投资者可以直接参与网络并产生额外的回报。
 
-Per the announcement, CoinFund partnered with [Placeholder](https://www.placeholder.vc/) who plans to delegate its own voting tickets to the [Decred VSP](https://dcr.grassfed.network) launched in January. This plan was voiced earlier by Joel Monegro and Chris Burniski during the [panel](https://www.youtube.com/watch?v=tkllaH0Y0ng) at Texas Bitcoin Conference 2018. [CoinFund](https://coinfund.io/) is a cryptoasset-focused investment and research firm founded in 2015 and based in New York, USA.
+根据公告，CoinFund与创投[Placeholder]（https://www.placeholder.vc/）合作，他们计划将拥有的票委托给1月份推出的[Decred VSP]（https://dcr.grassfed.network） 。 Joel Monegro和Chris Burniski在德克萨斯比特币会议2018年的[小组讨论]（https://www.youtube.com/watch?v=tkllaH0Y0ng）期间提出了这个计划。[CoinFund]（https://coinfund.io /）是一家专注于加密货币投资和研究的公司，成立于2015年，总部位于美国纽约。
 
 ## 外联活动
 
-In February, @Dustorf proposed his plans for [marketing](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) and [events](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) for the remainder of 2019 and these were passed by stakeholder voting. This is an exciting development that further decentralizes Decred by shifting more direct control over spending to the stakeholders. There was vigorous discussion and many good questions, but the proposals were approved by 83% and 89% of tickets that voted.
+在2月，@Dustorf 提出了在2019年剩余日子里[营销]（https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e）和[活动]（https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509）的计划 。利益相关者投票通过了这两个提案。这是一个令人兴奋的发展，通过将更多项目去中心化，把权益转移给利益相关者，进一步下放Decred。经过激烈的讨论，提案分别得到了83％和89％的票批准。
 
-With an approved budget, work began in earnest on the scope of the proposals. Planning is underway on NYC Blockchain Week, which coincides with Consensus. More information should be announced within two weeks on these plans.
+在批准预算后，工作在提案的范围下已经开始。正在规划纽约市区块链周，时间与2019共识会议相吻合。预计在两周内公布更多计划信息。
 
-The first podcast is underway and scheduled to deliver in March. It will feature Decred Jesus, who will provide a colorful overview discussion of Decred as seen from the ground. Work on the website is underway, with architecture, copy-writing and video scripting already begun.
+第一个Decred播客正在录制并计划在3月份发布。将采访Decred Jesus。作为项目贡献者，他将会真实并丰富多彩地概述Decred。网站相关工作，架构，文案和视频脚本已经开始。
 
-The Decred Assembly and the newsletter are tactics we hope to deliver by the end of this month.
+我们希望在本月底之前发布Decred Assembly和定期通报。
 
-February update from Ditto:
+Ditto 2月工作总结:
 
-* Media trained 5 Decred community members.
-* Secured media coverage: 15-minute [interview](https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-) between @jy-p and BlockTV, a feature [article](https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/) for the DEX proposal in Forbes, a feature [article](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/) in honor of Decred's 3rd anniversary in Breaker Mag, an [article](https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-exchange/) on the Vertbase listing in The Block Crypto featuring quotes by @jz. The journalist, Frank Chaparro, said the story was very popular on Twitter and also internally at The Block
-* Facilitated 2 interviews with crypto media outlets.
-* Worked with the community to create a repository of media-friendly images that we can share with reporters to add visuals to stories about Decred.
-* Helped plan the logistics and content for the event hosted by Decred and OKCoin in San Francisco. Worked with Dustin and OKCoin to draft the Eventbrite copy, coordinate with OKCoin, develop the agenda for the event, and draft a press release.
-* Put together a plan to position Decred as a superior store of value among a variety of channels, including initiating long-term conversations with select top tier mainstream reporters.
-* Worked with Dustin on a master six-month marketing and communications plan spanning PR, events, content, etc. As part of this strategy, we aim to build Decred's legitimacy and credibility among institutional investors. That entails thinking beyond media relations to span other disciplines as well: owned content, Twitter, influencers, events, etc.
+* 媒体培训了5名Decred社区成员。
+* 安排媒体报道：@ jy-p和BlockTV之间的15分钟[访谈]（https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-） 在福布斯发布去中心化交易所DEX的焦点[文章]（https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/）。 在Breaker Mag发布的焦点[文章]（https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/），以纪念Decred的三周年庆典。在Block Crypto 发布Vertbase交易所提供法币DCR交易对的[文章]（https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-交换/）其中包含@jz的访问。记者弗兰克查帕罗说，这个故事在Twitter上很受欢迎，而且在The Block内部也很受欢迎。
+* 促进了2次媒体采访。 
+* 与社区合作创建了一个对媒体友好的图像存储库，我们可以与记者分享，为Decred的故事添加视觉色彩。
+* 帮助计划旧金山Decred和OKCoin主办活动的后勤和内容。与Dustin和OKCoin合作起草Eventbrite副本，与OKCoin协调，制定活动议程，并起草新闻稿。
+* 制定一项计划，在不同渠道中，将Decred定位为优质储值货币SoV，包括与顶级主流记者展开长期对话。
+* 与Dustin合作，制定了为期六个月的营销和传播计划，涵盖公关，活动，内容等。作为战略的一部分，我们的目标是令机构投资者认可Decred的合法性和可信度。需要超越媒体关系，并配合其他营销媒体，包括项目研究内容，推特，影响者，活动等。
 
-For more detail see Ditto's biweekly updates on [Feb 4](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154930816328395IaXDr:decred.org) and [Feb 15](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$155026927613161McEtC:decred.org).
+如需了解详细信息，请参阅[2月4日]（https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154930816328395IaXDr:decred.org）和[2月15日]（https://matrix.to）的Ditto双周更新/#/!OfChXgczrIlpEZSFAv:decred.org/$155026927613161McEtC:decred.org）。
 
-Long [discussion](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$15498862365982zjzwP:decred.org) about perception and framing was triggered by a question whether to use word "bug" in public messaging for 1.4 release.
+详细[讨论]（https：//matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$15498862365982zjzwP:decred.org）了应否在1.4的公共消息中使用词语“bug”。
 
 ## 社区活动
 
 出席：
 
-* [TabConf](https://tabconf.com/) in Atlanta, USA. @joshuam [noted](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15497319564677Cmutw:decred.org): "Tabconf was awesome. Extremely engaged audience - best questions I have received at a conference to date".
-* [Campus Party](http://brasil.campus-party.org/cpbr12/patrocinadores/) in Sao Paulo, Brazil. About 60,000 people passed through the event which was running 24 hours a day for 6 days. Decred was the only cryptocurrency participating officially and with an exclusive space to present lectures and classes. All Brazilian developer contractors attended and presented a total of 6 talks and 3 workshops. @jy-p presented [Cryptocurrency Security and Adaptability](https://www.youtube.com/watch?v=SMiHku6GGmI). There were a few problems like Decred's zone moved and reduced (happened to almost all participants) and poor organization of translations - all taken into account for future planning. See [full report](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155200602520229ditLj:decred.org) by @emiliomann and [notes](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155197226472913itWWu:matrix.org) by @matheusd.
-* Love Night in Ghana. Organized by @George Pro. Since about 90% of participants knew about Bitcoin, presenters could skip the basics and highlight unique features of Decred. One popular question was where DCR can be exchanged to local currency. ([photos](https://twitter.com/deCRED_Ghana/status/1096714039978266624))
-* [How To Keep Your Crypto Secure](https://www.meetup.com/Decred-Australia/events/258211699/) in Melbourne, Australia. Australia's cryptocurrency enthusiasts discussed best security practices and Decred's security standards. @Zohand [noted](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15504942691141LtOxa:decred.org): "Feedback was awesome, and the guys from coinstop and CTRL want to run the event again in a couple of months.". ([photos](https://twitter.com/DecredAustralia/status/1097478053763018752))
-* [Decred in 30 minutes](https://www.eventbrite.com/e/decred-en-30-minutos-tickets-55764142050) in Mexico City, Mexico. @elian [reported](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15517155592047249xtYGy:matrix.org): "It was the first meetup where everyone knew about Decred quite well, we were 7 in total. The presentation went faster because attendees knew most of the fundamental content in advance so we went to discuss more complex issues like what are the challenges to decentralized governance, best way to stake tickets and future developments that are happening in the project like LN, payments integration and the most recent events, marketing and community proposals in Politeia. Was very nice to meet proper DCR enthusiasts in Mexico. (...) I think we are far from seeing cc as MoE in Mexico but definitely the space is moving fast. At the moment there are more Mexicans in contact with crypto than with the stocks markets in the country, this is a very good indicator.". ([photos](https://twitter.com/DecredESP/status/1102594478664232960))
-* Talk in UAEM University in Ecatepec, Mexico. @elian [shared](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$1551994219193770GeoIk:matrix.org): "I spoke about the history of money, the Internet, Bitcoin's blockchain, Decred's hybrid blockchain and how to work in the cryptocurrency & blockchain industries. They were fascinated by the innovation of cryptocurrencies and blockchain, both students and teachers. The audience was mainly composed by computer science students. The main questions went around what is money, how to value cryptocurrencies and what are the potential work opportunities for fresh grads in the industry. (...) Doing talks in universities is a big deal for me because I know that the next generation of devs, lawyers, accountants, etc, that will be working on the industry is there and they are eager to know more about what opportunities this industry brings. Teachers were very excited to have this subjects presented to their students because is not easy to get such high tech talks to universities that are not in the centre of the city.".
-* [Decred Meetup](https://www.eventbrite.com/e/decred-meet-up-tickets-57073786231) in Winneba, Ghana. Organized by @George Pro, who [noted](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org): "Our first meetup in Ghana was successful. We took our time to explain to the participants how to stake DCR, how to get DCR (Coinomi process), using it as remittances, wallet set up, speed and privacy among others.". ([photos](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org))
-* Talk at Qingdao University in Qingdao, China. [@wanbihou](https://twitter.com/wanbihou) talked about Decred's community governance model and the upcoming on-chain consensus vote. "The students were very enthusiastic!". ([photos](https://twitter.com/wanbihou/status/1101131545010556928))
+* 在中国的青岛大学，谈到了Decred的社区治理模型和即将进行的链上共识投票。 [@wanbihou]（https://twitter.com/wanbihou）“学生们非常热情！” （[照片]（https://twitter.com/wanbihou/status/1101131545010556928））
+* 美国亚特兰大的[TabConf]（https://tabconf.com/）。 @joshuam [提到]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15497319564677Cmutw:decred.org）：“Tabconf非常棒。会议者参与度非常高 - 我在迄今为止的会议中被问到了最有深度的问题”。
+* [校园派对]（http://brasil.campus-party.org/cpbr12/patrocinadores/）在巴西圣保罗。大约有6万人参与了这项24小时，运行了6天的活动。 Decred是唯一正式参与的加密货币，并有专门的空间来展示讲座和课程。所有巴西开发承包商参于并举办了6次讲座和3次研讨会。 @ jy-p介绍了[加密货币安全性和适应性]（https://www.youtube.com/watch?v=SMiHku6GGmI）。有一些问题，如Decred的区域移动和减少（几乎所有会议参与者都会面对）和翻译不良 - 所有这些都考虑在未来的计划中。请参阅@emiliomann的[完整报告]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155200602520229ditLj:decred.org）和@matheusd的[笔记]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155197226472913itWWu:matrix.org）。
+* 加纳爱之夜。由@George Pro组织。由于约90％的参与者以及了解比特币，演示者可以跳过基础知识并突出显示Decred的独特功能。一个常见的问题是在哪里可以把DCR兑换成当地货币。 （[照片]（https://twitter.com/deCRED_Ghana/status/1096714039978266624））
+* [如何保护您的加密货币安全]（https://www.meetup.com/Decred-Australia/events/258211699/）在澳大利亚墨尔本。澳大利亚的加密货币爱好者讨论了最佳安全措施和Decred的安全标准。 @Zohand [注释]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15504942691141LtOxa:decred.org）：“反馈很棒，来自coinstop和CTRL的人想在几个月后再次参加活动。”。 （[照片]（https://twitter.com/DecredAustralia/status/1097478053763018752））
+* [Decred 30分钟]（https://www.eventbrite.com/e/decred-en-30-minutos-tickets-55764142050）在墨西哥城举办。 @elian [报道]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15517155592047249xtYGy:matrix.org）：“这是第一次见面会内所有人（7个人）都了解Decred。因此我们可以讨论更复杂的问题，例如去中心化治理面临的挑战，最佳的投票方式以及项目中发生的未来发展，如LN，支付，Politeia的整合和最近的活动，营销和社区建议。很高兴在墨西哥遇到DCR爱好者。我认为在墨西哥，我们还没有到用加密货币作为货币的地步，但空间正在快速发展。目前有更多的墨西哥人与加密货币接触，而不是与该国的股票市场接触，这是一个非常好的指标。“ （[照片]（https://twitter.com/DecredESP/status/1102594478664232960））
+* 在墨西哥埃卡特佩克的UAEM大学讲话。 @elian [分享]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$1551994219193770GeoIk:matrix.org）：“我谈到了货币的历史，互联网，比特币区块链，Decred的混合区块链和如何在加密货币和区块链行业工作。学生和教师对加密货币和区块链的创新着迷。观众主要由计算机科学学生组成。主要问题围绕什么是金钱，如何估值加密​​货币，和这个行业中大学毕业生的潜在工作机会。（...）在大学里进行谈判对我来说是一件大事，因为我知道下一代开发人员，律师，会计师等将会在不同行业里工作，他们渴望了解这个行业带来的机会。教师们非常高兴我们能够将这些知识传授给他们的学生，因为不容易在非市中心的大学进行这样的高科技讲座。“
+* 加纳Winneba的[Decred 聚会]（https://www.eventbrite.com/e/decred-meet-up-tickets-57073786231）。由@George Pro组织，[提到]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org）：“我们在加纳的第一次聚会是成功的。我们花时间去向参与者解释如何投资DCR，如何获得DCR（Coinomi流程），将其用作汇款，钱包设置，速度和隐私等。“ （[照片]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org））
 
 
 即将到来的：
@@ -208,24 +208,24 @@ Long [discussion](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$1549886236
 
 部分文章:
 
-* Decred evaluation by TokenGazer (Chinese, [qq.com](https://mp.weixin.qq.com/s/7rMaTYXIhIpO37qiIvJX_A), _missed in Jan issue_) - Decred was rated 4.2
-* Which one is the best cryptocurrency next to bitcoin? answer by Pavel Svitek ([quora.com](https://www.quora.com/Which-one-is-the-best-cryptocurrency-next-to-bitcoin/answer/Pavel-Svitek)) - thanks to Pavel for presenting Decred to Quora
-* No More Trading Or Listing Fees? Decred Releases New DEX Proposal by Leslie Ankne ([forbes.com](https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/))
-* How Long Will Crypto Winter Last? We Asked Three Experts by Julia Herbst ([breakermag.com](https://breakermag.com/what-the-longest-ever-bear-market-means-for-crypto/))
-* As Decred Turns Three, It's Still Set on Real Decentralization by David Z. Morris ([breakermag.com](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/)
-* Decred Founder Proposes Building DEX as Alternative to Binance (Interview) by Liam Kelly ([cryptoslate.com](https://cryptoslate.com/decred-founder-proposes-dex-binance-interview/))
-* "They asked us for $3 million": an inside look into getting listed on a crypto exchange by Frank Chaparro ([theblockcrypto.com](https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-exchange/))
-* Cryptonetwork Governance as Capital by Joel Monegro ([placeholder.vc](https://www.placeholder.vc/blog/2019/2/19/cryptonetwork-governance-as-capital))
-* Using Governance To Decide The Future: Is Decred (DCR) Going to Build a Decentralized Exchange? by @richardred ([investinblockchain.com](https://www.investinblockchain.com/is-decred-dcr-building-decentralized-exchange/), also [in Chinese](https://0xzx.com/2019022708166553.html))
-* Decred mentioned in [Forbes](https://www.forbes.com/sites/samantharadocchia/2019/02/05/everything-about-the-digital-nomad-lifestyle-sounds-great-except-the-us-tax-system/) and [Breaker Mag](https://breakermag.com/bruce-schneier-is-right-about-blockchains-biggest-flaw-and-completely-wrong-about-its-longterm-significance/) stories.
+* TokenGazer评级Decred (中文[qq.com](https://mp.weixin.qq.com/s/7rMaTYXIhIpO37qiIvJX_A)) - Decred 被评4.2/5
+* 比特币之外最好的加密货币？Pavel Svitek在 ([quora.com](https://www.quora.com/Which-one-is-the-best-cryptocurrency-next-to-bitcoin/answer/Pavel-Svitek))上回答 - 感谢 Pavel 在Quora平台上以Decred回答了这个问题
+* 没有交易或上币费用？ Decred发布新的DEX提案 by Leslie Ankne ([福布斯](https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/))
+* Crypto冬天会持续多久？Julia Herbst问了三位专家 ([breakermag.com](https://breakermag.com/what-the-longest-ever-bear-market-means-for-crypto/))
+* 随着Decred成立3周年，它在继续实现真正的去中心化 by David Z. Morris ([breakermag.com](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/)
+* Decred创始人提议建立DEX作为Binance的替代交易所（采访）by Liam Kelly ([cryptoslate.com](https://cryptoslate.com/decred-founder-proposes-dex-binance-interview/))
+* “他们向我们要300万美元” 作为加密货币上交易所的费用 by Frank Chaparro ([theblockcrypto.com](https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-exchange/))
+* 加密货币网络治理作为资本 by Joel Monegro ([placeholder.vc](https://www.placeholder.vc/blog/2019/2/19/cryptonetwork-governance-as-capital))
+* 利用治理决定项目未来：Decred 会建造去中心化交易所吗？ by @richardred ([investinblockchain.com](https://www.investinblockchain.com/is-decred-dcr-building-decentralized-exchange/), also [in Chinese](https://0xzx.com/2019022708166553.html))
+* Decred 在 [福布斯](https://www.forbes.com/sites/samantharadocchia/2019/02/05/everything-about-the-digital-nomad-lifestyle-sounds-great-except-the-us-tax-system/) 和 [Breaker Mag](https://breakermag.com/bruce-schneier-is-right-about-blockchains-biggest-flaw-and-completely-wrong-about-its-longterm-significance/) 文章中被提到.
 
-Videos:
+视频:
 
-* Decred AMA TruStory - Preethi Kasireddy chats with Isaac J and Matheus of Decred to learn more about the hybrid proof of work/proof of stake consensus mechanism and their governance model ([youtube](https://www.youtube.com/watch?v=OKdaa630YDk))
-* Cryptocurrency Security and Adaptability - talk by @jy-p at Campus Party Brazil ([youtube](https://www.youtube.com/watch?v=SMiHku6GGmI))
-* The Potential of Decentralization - interview with @jy-p for BlockTV ([blocktv.com](https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-))
+* Decred 问答环节 TruStory - Preethi Kasireddy 跟Decred 社区成员 Isaac J 和 Matheus了解了 PoS / PoW 共识运作和治理模型 ([youtube](https://www.youtube.com/watch?v=OKdaa630YDk))
+* 加密货币的安全性与伸展性 -  @jy-p 在巴西校园派对的演讲 ([youtube](https://www.youtube.com/watch?v=SMiHku6GGmI))
+* 去中心化的潜力 - BlockTV和@jy-p的采访 ([blocktv.com](https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-))
 
-Audio:
+音频:
 
 * ITK Crypto #8 - Tom White 和 Crypto SI 对 @kozel 关于加密货币治理的访问 ([youtube](https://www.youtube.com/watch?v=H-qZBsQY5BM))
 
