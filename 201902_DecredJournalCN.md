@@ -1,7 +1,14 @@
 # Decred月报 - 2月 
 
-![Decred Journal - February 2018]()
+![abstract art](img/journal-201902-384.jpg "Objective Constructs by @saender")
 
+祝 Decred 生日快乐！自 2016年2月8日的[第一个区块](https://explorer.dcrdata.org/block/1)已经渡过3年了。
+
+二月份里我们在 Politeia 上很活跃，有7个新提案提交，5个提案开始投票及在3月份的前几天里通过了4个提案。总额 490,000 美元的2019年宣传及活动预算已正式投票通过。
+
+网络升级也已经[达到](https://voting.decred.org/)需要支持闪电网络的共识更改投票门槛，共识更改投票预计将在 3月14日 开始。
+
+如果你还没升级，[v1.4.0 发布版本](https://github.com/decred/decred-binaries/releases/tag/v1.4.0)包含了很多改进。如果投票通过了，节点需要这个最新版本继续运行升级后的区块链。同时请务必[验证下载软件](https://docs.decred.org/advanced/verifying-binaries/)并呼吁其他朋友们升级哦。
 
 ## 开发进展总结
 
@@ -51,8 +58,6 @@
 
 > 我必须说, Go 真的是一个神奇的编程语言。我想我未试过在一个新的编程语言里感到这么舒服。(@jholdstock 在 [聊天室](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15497080644503VtguR:decred.org))
 
-2月开发活动数据: 分布于 {} 个存储库（repositories) 有 {} 有效 PRs, {} 主要提交, {} 行添加 及 {} 行删除。每个存储库中有来自 {}-{} 个开发者的贡献。
-
 ---
 
 ## 人员
@@ -69,13 +74,13 @@
 
 ## 治理
 
-在 2月里，[DCR基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 14,878 DCR，并花了 17,311 DCR。使用 DCR 在2月份的每日平均美元价格 {} 美元计算，本月收到 {} 万 美元以及支出 {} 万 美元。由于这些付款用于支付 1月完成的工作，因此可以用 1月的平均价格 17.05 美元计算 - 在这种情况下，美元收到的数字是 25.4 万美元以及支出 29.5 万美元。{}月{}日为止，基金会余额为 {} DCR 相当于 {} 美金。
+在 2月里，[DCR基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 14,878 DCR，并花了 17,311 DCR，二月份是项目这么久以来第一个月开销多于收入。使用 DCR 在2月份的每日平均美元价格 16.51 美元计算，本月收到 24.6 万 美元以及支出 28.6 万 美元。由于这些付款用于支付 1月完成的工作，因此可以用 1月的平均价格 17.06 美元计算 - 在这种情况下，美元收到的数字是 25.4 万美元以及支出 29.5 万美元。3月9日为止，基金会余额为 605,828 DCR(按 16.6 美元计算相当于 一千零五万 美金)。
 
-于{}的提案状态:
+于3月9日的提案状态:
 
 * [Baeond 卡牌游戏](https://proposals.decred.org/proposals/f545b359fcf1b40b356e9cb556cb422cc7ff01b628b577f804cdc45ce414f5dd) 由 burst提出，由29%的参与率和97%反对票不通过 _(1月份月报遗漏)_.
 * [去中心化交易所的提案邀请 Decentralized exchange RFP](https://proposals.decred.org/proposals/5431da8ff4eda8cdbf8f4f2e08566ffa573464b97ef6d6bae78e749f27800d3a) 由 @jy-p 提出，收到 70 评论。第二版本降低了 MVP 的范围并将成本上限设为 25万美元(之前为100W)。@bee 发布了一份个人的赞成和反对
-[分析](https://github.com/xaur/decred-proposals/blob/master/decred-dex-rfp-analysis.md)。改提案也引起了基金会是否资助推广这类提案的[讨论](https://www.reddit.com/r/DCR/comments/awbtbr/should_treasury_funded_marketing_resources_be/)。本提案投票已开始 {3月} 为止参与率为 {}% 及同意率为{}%。
+[分析](https://github.com/xaur/decred-proposals/blob/master/decred-dex-rfp-analysis.md)。改提案也引起了基金会是否资助推广这类提案的[讨论](https://www.reddit.com/r/DCR/comments/awbtbr/should_treasury_funded_marketing_resources_be/)。本提案投票已开始 3月9日 为止参与的 8千票中% 91.4%为同意票。
 * [钱包教程提案 Wallet tutorials](https://proposals.decred.org/proposals/a3def199af812b796887f4eae22e11e45f112b50c2e17252c60ed190933ec14f) 由 Cryptocurrency.Market 的 Denni Lovejoy 提出。该提案经历了多个在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154941035930084kFSjY:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anksg2/proposed_statement_of_work_sow_for_decred/) 的反馈及更改。750美元的预算以 24% 参与率和 80% 同意票通过。
 * [2019活动资金预算 Events funding for 2019](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509) 由 @Dustorf 提出。该提案在[聊天室](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$154896889724431Mxlvj:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/anhh8n/proposal_to_get_events_spending_approved_via/)预览后提出。20万美元的预算投票以 34% 参与率和 89% 同意票通过。
 * [2019宣传预算 Marketing funding for 2019](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e) 由 @Dustorf 提出。收到 68 评论，以及在[聊天室](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154897255124536mFHoo:decred.org)和 [Reddit](https://www.reddit.com/r/decred/comments/aolr79/politeia_proposal_to_fund_marketing_ops_for_2019/) 中讨论。29万美元的预算投票以 36% 参与率和 83% 同意票通过。
@@ -118,7 +123,7 @@ Politeia 在 2月 1-28日 活动:
 
 选票价格及选票池大小在二月中经历了不寻常的波动。在2月11日同一个区间内购买的1,265张选票把选票池的选票拉到 ～41，670张选票及后面7次票价调整中涨至 119.4。随后选票池票数下跌至低于4万张选票 （上次发生于2017年11月），导致连续10次调整降至 98.4 DCR。在票价到底时，在同一区间内又卖出最高2，880 张中的2，797 张选票。@ImacallyouJawdy提出在单单这一区间选票就锁定了 282k DCR 或 DCR 流通量的 3%。因此选票价格跳跃至 124.1 DCR，这是自 2017年7月 选票价格算法调整后的新高。选票池最高峰是锁定了 42，174 选票，等同于 DCR 供应的 48.7% - 创新高并且比前一个在2018年6月7日的高峰高出 +0.7%。感谢 charts.dcr.farm 里准确的图表。
 
-节点: 截止于3月1日，[dcred.eu](https://dcred.eu/nodeStats)显示 共有 205 public listening Node 及 297 Normal Node。版本分布: v1.5.0 dev builds: 8.6% (+4.3%), v1.4.0 final: 43%, v1.4.0 dev and rc builds: 7% (-6%), v1.3.0: 23% (-32%), v1.2.0: 10% (-4%), v1.1.2: 4% (-4%), v1.1.0: 2% (-1%)。
+节点: 截止于3月1日，[dcred.eu](https://dcred.eu/nodeStats)显示 共有 205 public listening Node 及 297 Normal Node。版本分布: v1.5.0 dev builds: 8.6% (+4.3%), v1.4.0 final: 43% (+43%), v1.4.0 dev and rc builds: 7% (-6%), v1.3.0: 23% (-32%), v1.2.0: 10% (-4%), v1.1.2: 4% (-4%), v1.1.0: 2% (-1%)。
 
 PoW 和 PoS 的[升级门槛](https://voting.decred.org/)已经完成，共识投票已经锁定并在大约 3月14日开始。感谢所有通过各种渠道帮忙联系 PoW 矿池及 VSP 运营商（选票矿池）并呼吁他们升级的人员。
 
@@ -133,9 +138,9 @@ The vote did not start yet but block votes already signal their choices for `fix
 
 * [Vertbase](https://www.vertbase.com/)已增加 DCR/USD 交易对。Vertbase CEO 兼 联合创始人 Justin 加入 #general 并[回答 Vertbase 相关问题](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155015221011045eRXdT:decred.org)。答案中总结：Vertbase目前支持 50 个美国州中的 39 个，正积极增加 GBP/EUR/AUD 交易，并使用第三方处理身份认证。其中一个 Vertbase 特色为短时间的托管：他们在银行转账过账后将代币直接转入用户钱包。
 
-  > 我们也需要您提供钱包地址，因为我们不想托管，也不想你使用我们的平台托管您的加密货币。成为您自己的银行！(@Justin 在[#general](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155017217111507BsAmt:decred.org)说道)
+> 我们也需要您提供钱包地址，因为我们不想托管，也不想你使用我们的平台托管您的加密货币。成为您自己的银行！(@Justin 在[#general](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155017217111507BsAmt:decred.org)说道)
 
-  3月 8日为止，卖单并未仍无法使用。请参考这个 [Reddit 帖](https://www.reddit.com/r/decred/comments/aqkl1p/vertbase_lists_decred_dcr_with_us_dollar_usd/).
+3月 8日为止，卖单并未仍无法使用。请参考这个 [Reddit 帖](https://www.reddit.com/r/decred/comments/aqkl1p/vertbase_lists_decred_dcr_with_us_dollar_usd/).
 
 * [Lykke](https://www.lykke.com/) [已加入](https://twitter.com/lykke/status/1095352586545319937) DCR 与 BTC 和 USD 交易对。
 * [ChainRift](https://www.chainrift.com/) 已整合 DCR。
@@ -192,7 +197,7 @@ Long [discussion](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$1549886236
 
 即将到来的：
 
-* [Decred & OKCoin Present "The Next 10 Years: Crypto Boom, Bust, or Buidl?"](https://www.eventbrite.com/e/decred-okcoin-present-the-next-10-years-crypto-boom-bust-or-buidl-tickets-57549671617) 美国三藩市，3月12日
+* [Decred & OKCoin Present "The Next 10 Years: Crypto Boom, Bust, or Buidl?"](https://www.eventbrite.com/e/decred-okcoin-present-the-next-10-years-crypto-boom-bust-or-buidl-tickets-57549671617) 美国三藩市，3月12日。OKCoin 的 CEO Tim Byun, Decred 的 Jake Yocom-Piatt, 代表 Placeholder 的 Chris Burniske 和 Alex Evans 将讨论 Decred 和加密货币的未来。
 * [Restoring Trust through Blockchain Governance](https://www.meetup.com/DecredCanada/events/259126224/) 加拿大多伦多，3月16日
 * [Berlin Blockchain Week](https://www.berlin-blockchain-week.com/) 德国柏林，3月27日 @karamble 将发表演说
 * [Jalisco Talent Land](https://www.talent-land.mx/#entradas) 墨西哥瓜达拉哈拉，四月22-26日。细节可联系@elian
@@ -269,7 +274,7 @@ Another Reddit thread was [deleted](https://www.reddit.com/r/decred/comments/an4
 
 A [study](https://medium.com/@MoneroCrusher/analysis-more-than-85-of-the-current-monero-hashrate-is-asics-and-each-machine-is-doing-128-kh-s-f39e3dca7d78) of Monero nonces documented differing patterns in the nonce distribution when ASICs were mining on the network, it considers the methods ASIC miners may take to disguise their presence and how they can be detected. The study speculates that 85% of the Monero hashrate comes from ASICs at time of writing.
 
-A counterfeiting vulnerability was [discovered](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) in Zcash in early 2018. "This vulnerability is so subtle that it evaded years of analysis by expert cryptographers focused on zero-knowledge proving systems and zk-SNARKs.". It was silently patched with the Sapling network upgrade that occurred on Oct 28, 2018, and this [post](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) on Feb 5 explained how the vulnerability had been dealt with within Zcash and how other affected coins (like Horizen and Komodo) were notified. The nature of Zcash cryptography is such that it is difficult to determine if any ZEC was counterfeited while the vulnerability was present, the Zcash team reporting on the bug believe it had not been exploited because “discovery of the vulnerability would have required a high level of technical and cryptographic sophistication that very few people possess.”
+A counterfeiting vulnerability was [discovered](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) in Zcash in early 2018. "This vulnerability is so subtle that it evaded years of analysis by expert cryptographers focused on zero-knowledge proving systems and zk-SNARKs.". It was silently patched with the Sapling network upgrade that occurred on Oct 28, 2018, and this [post](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) on Feb 5 explained how the vulnerability had been dealt with within Zcash and how other affected coins (like Horizen and Komodo) were notified. The nature of Zcash cryptography is such that it is difficult to determine if any ZEC was counterfeited while the vulnerability was present. The Zcash team reporting on the bug believes it had not been exploited because "discovery of the vulnerability would have required a high level of technical and cryptographic sophistication that very few people possess."
 
 一个 Grin 开发员在论坛上[发帖](https://www.grin-forum.org/t/solved-early-disappointments/3682) 表示对于一项上线两周要求捐款资助其中一名开发人员而未达成目标表示失望 - 并威胁要取区块奖励的 20% 以支持开发。
 消息传出后，该[活动](https://grin-tech.org/yeastplume)在短时间内筹得 EUR 67,580，超出原本 EUR 55,000 的目标。如 Breaker Mag [表示](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/)， Grin “吸引[上千万美金](https://www.coindesk.com/grin-launch-crypto-interest-from-deep-pocketed-investors)的挖矿投资，却在筹集 62,000 美元支付主开发人员 6 个月工资上面临难题。
@@ -288,9 +293,11 @@ The NEM Foundation's funding proposal [started](https://forum.nem.io/t/nem-found
 
 The Aragon Transparency Report for Q4 2018 was [released](https://blog.aragon.org/aragon-q4-2018-transparency-report/). This report presents a detailed breakdown of spending related to the project. The total spent in Q4 2018 was ~€1,055,484.43 or equivalent in cryptocurrency, with €268k on salaries, €330k on payments to service providers, €45k on sponsoring/tickets for events, €63k on hosting the AraCon conference and €260k on [Nest](https://github.com/aragon/nest) teams (a grants program). This report also describes financial [hedging](https://twitter.com/AragonProject/status/1067349802365739008) steps which have been taken by Aragon Association - exchanging some of the ETH raised during the ICO to buy other assets.
 
+The blacklist issued by the EOS Core Arbitration Forum (ECAF) in Jun 2018 was allowed to [lapse](https://medium.com/@eos42/proposed-solution-for-a-broken-blacklist-ce1c18bdf81c) when a new Block Producer was rotated in which had not configured the blacklist. This allowed one of the blacklisted addresses to move over 2 million EOS. The lapse occurred because the blacklist has been implemented as a list of addresses from which block producers will not process transactions, with each block producer being responsible for maintaining the blacklist manually. If only one top 21 BP does not have an updated blacklist, blacklisted accounts are vulnerable to being emptied. One solution that has been suggested is to "null the keys" until a decision has been made about what to do with the frozen funds. What to do with the blacklisted funds is already an issue for EOS, and the ECAF itself may be disbanded if an open referendum to "Delete the ECAF" passes (currently on 99% Yes with 2.4% of EOS having voted).
+
 Binance is [launching](https://www.theblockcrypto.com/2019/02/07/binance-moves-away-from-ethereum-as-it-prepares-to-launch-dex/) its DEX based on Cosmos' Tendermint protocol and DPoS. The listing fee will "probably be close to $100,000" to "reduce the number of spam or scam projects". In contrast, Decred's DEX design has no listing fees and doesn't require an extra blockchain for its operation.
 
-Canadian exchange QuadrigaCX [owes](https://www.coindesk.com/quadriga-creditor-protection-filing) its customers $190 million. The funds reportedly [cannot be accessed](https://www.coindesk.com/quadrigacx-crypto-exchange-users-say-they-still-cant-get-their-money-out) after it's founder died, who had sole control or knowledge if exchange's cold storage solution. Another $500K in BTC were locked "by mistake" per [this story](https://www.coindesk.com/quadriga-inadvertently-sent-btc-to-dead-ceos-cold-wallet-ey-report). Custody of cryptocurrencies is challenging, and centralized exchanges have a long trail of failures.
+Canadian exchange QuadrigaCX [owes](https://www.coindesk.com/quadriga-creditor-protection-filing) its customers $190 million. The funds reportedly [cannot be accessed](https://www.coindesk.com/quadrigacx-crypto-exchange-users-say-they-still-cant-get-their-money-out) after its founder died, who had sole control or knowledge of exchange's cold storage solution. Another $500K in BTC were locked "by mistake" per [this story](https://www.coindesk.com/quadriga-inadvertently-sent-btc-to-dead-ceos-cold-wallet-ey-report). The never ending trail of failures by centralized exchanges shows just how challenging the custody of cryptocurrencies is.
 
 Medium showed its power again by [suspending](https://archive.today/iKQlv) the account that [posted](https://medium.com/@zeroresearchproof/quadrigacx-chain-analysis-report-pt-1-bitcoin-wallets-19d3a375d389) chain analysis of QuadrigaCX wallets. Luckily, someone made a [snapshot](https://archive.today/xsztt). The suspension hides all account's content and is implemented as a redirect to a same-for-all page that says "This page is unavailable" and does not state the reason. Medium is a powerful platform, but at its core is a centralized service that can lock in data of those who don't make backups. Earlier behavior like this triggered a [discussion](https://github.com/xaur/decred-issues/issues/70) about migrating from Medium or treating it as just a mirror.
 
@@ -306,8 +313,7 @@ Android malware was [discovered](https://www.welivesecurity.com/2019/02/08/first
 
 欢迎在 Reddit, [GitHub](https://github.com/xaur/decred-news/issues) 和 [Matrix](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org) 上评论，反馈及贡献。
 
-感谢 (按字母排序): bee, davecgh, degeri, Dustorf, emiliomann, guang, liz_bagot, matheusd, raedah, richardred. 特别感谢 saender 提供美术图。
-
+感谢 (按字母排序): bee, davecgh, degeri, Dustorf, emiliomann, guang, jholdstock, liz_bagot, matheusd, raedah, sambiohazard。特别感谢 richardred 给予加密货币治理课题的深入分析，和 saender 提供的美术图。
 
 ## 中文社区 
 
