@@ -151,15 +151,15 @@ The vote did not start yet but block votes already signal their choices for `fix
 
 ## 落地应用
 
-CoinFund [已宣布]（https://blog.coinfund.io/announcing-grassfed-network-and-decred-staking-pool-with-placeholder-55a32a312710）Grassfed Network，一项使用“通用采矿”参与去中心化网络的计划。相关文章发表在[CoinDesk]（https://www.coindesk.com/these-cryptofunds-say-generalized-mining-is-the-new-way-to-invest）。
+CoinFund [已宣布](https://blog.coinfund.io/announcing-grassfed-network-and-decred-staking-pool-with-placeholder-55a32a312710)Grassfed Network，一项使用“通用采矿”参与去中心化网络的计划。相关文章发表在[CoinDesk](https://www.coindesk.com/these-cryptofunds-say-generalized-mining-is-the-new-way-to-invest)。
 
-任何以网络资产计价的协议奖励都可以被视为[通用采矿]（https://grassfed.network/mining/）。采用这种方法，在资产增值外，投资者可以直接参与网络并产生额外的回报。
+任何以网络资产计价的协议奖励都可以被视为[通用采矿](https://grassfed.network/mining/)。采用这种方法，在资产增值外，投资者可以直接参与网络并产生额外的回报。
 
-根据公告，CoinFund与创投[Placeholder]（https://www.placeholder.vc/）合作，他们计划将拥有的票委托给1月份推出的[Decred VSP]（https://dcr.grassfed.network） 。 Joel Monegro和Chris Burniski在德克萨斯比特币会议2018年的[小组讨论]（https://www.youtube.com/watch?v=tkllaH0Y0ng）期间提出了这个计划。[CoinFund]（https://coinfund.io /）是一家专注于加密货币投资和研究的公司，成立于2015年，总部位于美国纽约。
+根据公告，CoinFund与创投[Placeholder](https://www.placeholder.vc/)合作，他们计划将拥有的票委托给1月份推出的[Decred VSP](https://dcr.grassfed.network) 。 Joel Monegro和Chris Burniski在德克萨斯比特币会议2018年的[小组讨论](https://www.youtube.com/watch?v=tkllaH0Y0ng)期间提出了这个计划。[CoinFund](https://coinfund.io/)是一家专注于加密货币投资和研究的公司，成立于2015年，总部位于美国纽约。
 
 ## 外联活动
 
-在2月，@Dustorf 提出了在2019年剩余日子里[营销]（https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e）和[活动]（https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509）的计划 。利益相关者投票通过了这两个提案。这是一个令人兴奋的发展，通过将更多项目去中心化，把权益转移给利益相关者，进一步下放Decred。经过激烈的讨论，提案分别得到了83％和89％的票批准。
+在2月，@Dustorf 提出了在2019年剩余日子里[营销](https://proposals.decred.org/proposals/c84a76685e4437a15760033725044a15ad832f68f9d123eb837337060a09f86e)和[活动](https://proposals.decred.org/proposals/d3e7f159b9680c059a3d4b398de2c8f6627108f28b7d61a3f10397acb4b5e509)的计划 。利益相关者投票通过了这两个提案。这是一个令人兴奋的发展，通过将更多项目去中心化，把权益转移给利益相关者，进一步下放Decred。经过激烈的讨论，提案分别得到了83％和89％的票批准。
 
 在批准预算后，工作在提案的范围下已经开始。正在规划纽约市区块链周，时间与2019共识会议相吻合。预计在两周内公布更多计划信息。
 
@@ -170,29 +170,33 @@ CoinFund [已宣布]（https://blog.coinfund.io/announcing-grassfed-network-and-
 Ditto 2月工作总结:
 
 * 媒体培训了5名Decred社区成员。
-* 安排媒体报道：@ jy-p和BlockTV之间的15分钟[访谈]（https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-） 在福布斯发布去中心化交易所DEX的焦点[文章]（https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/）。 在Breaker Mag发布的焦点[文章]（https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/），以纪念Decred的三周年庆典。在Block Crypto 发布Vertbase交易所提供法币DCR交易对的[文章]（https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-交换/）其中包含@jz的访问。记者弗兰克查帕罗说，这个故事在Twitter上很受欢迎，而且在The Block内部也很受欢迎。
+* 安排媒体报道：@ jy-p和BlockTV之间的15分钟[访谈](https://blocktv.com/watch/2019-02-20/5c6d6a2be03e3-chain-breakers-promoting-constant-disruption-) 在福布斯发布去中心化交易所DEX的焦点[文章](https://www.forbes.com/sites/leslieankney/2019/02/04/no-more-trading-or-listing-fees-decred-releases-new-dex-proposal/)。 在Breaker Mag发布的焦点[文章](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/)，以纪念Decred的三周年庆典。在Block Crypto 发布Vertbase交易所提供法币DCR交易对的[文章](https://www.theblockcrypto.com/2019/02/13/they-asked-us-for-3-million-an-inside-look-into-getting-listed-on-a-crypto-exchange/)其中包含@jz的访问。记者弗兰克查帕罗说，这个故事在Twitter上很受欢迎，而且在The Block内部也很受欢迎。
 * 促进了2次媒体采访。 
 * 与社区合作创建了一个对媒体友好的图像存储库，我们可以与记者分享，为Decred的故事添加视觉色彩。
 * 帮助计划旧金山Decred和OKCoin主办活动的后勤和内容。与Dustin和OKCoin合作起草Eventbrite副本，与OKCoin协调，制定活动议程，并起草新闻稿。
 * 制定一项计划，在不同渠道中，将Decred定位为优质储值货币SoV，包括与顶级主流记者展开长期对话。
 * 与Dustin合作，制定了为期六个月的营销和传播计划，涵盖公关，活动，内容等。作为战略的一部分，我们的目标是令机构投资者认可Decred的合法性和可信度。需要超越媒体关系，并配合其他营销媒体，包括项目研究内容，推特，影响者，活动等。
 
-如需了解详细信息，请参阅[2月4日]（https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154930816328395IaXDr:decred.org）和[2月15日]（https://matrix.to）的Ditto双周更新/#/!OfChXgczrIlpEZSFAv:decred.org/$155026927613161McEtC:decred.org）。
+如需了解详细信息，请参阅[2月4日](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$154930816328395IaXDr:decred.org)和[2月15日](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$155026927613161McEtC:decred.org)的Ditto双周更新。
 
-详细[讨论]（https：//matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$15498862365982zjzwP:decred.org）了应否在1.4的公共消息中使用词语“bug”。
+讨论：
+
+[关于](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$15498862365982zjzwP:decred.org)是否在1.4的公共消息中使用词语“bug”。
+[意见](https://www.reddit.com/r/decred/comments/ans7lg/what_do_we_think_of_converting_decreds_ticker/)将Decred的市场代码从DCR更改为CRED。
+[批评](https://www.reddit.com/r/decred/comments/asg6kf/update_on_the_decred_14_release/)在公告中使用“毫无生气的公司”。
 
 ## 社区活动
 
 出席：
 
-* 在中国的青岛大学，谈到了Decred的社区治理模型和即将进行的链上共识投票。 [@wanbihou]（https://twitter.com/wanbihou）“学生们非常热情！” （[照片]（https://twitter.com/wanbihou/status/1101131545010556928））
-* 美国亚特兰大的[TabConf]（https://tabconf.com/）。 @joshuam [提到]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15497319564677Cmutw:decred.org）：“Tabconf非常棒。会议者参与度非常高 - 我在迄今为止的会议中被问到了最有深度的问题”。
-* [校园派对]（http://brasil.campus-party.org/cpbr12/patrocinadores/）在巴西圣保罗。大约有6万人参与了这项24小时，运行了6天的活动。 Decred是唯一正式参与的加密货币，并有专门的空间来展示讲座和课程。所有巴西开发承包商参于并举办了6次讲座和3次研讨会。 @ jy-p介绍了[加密货币安全性和适应性]（https://www.youtube.com/watch?v=SMiHku6GGmI）。有一些问题，如Decred的区域移动和减少（几乎所有会议参与者都会面对）和翻译不良 - 所有这些都考虑在未来的计划中。请参阅@emiliomann的[完整报告]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155200602520229ditLj:decred.org）和@matheusd的[笔记]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155197226472913itWWu:matrix.org）。
-* 加纳爱之夜。由@George Pro组织。由于约90％的参与者以及了解比特币，演示者可以跳过基础知识并突出显示Decred的独特功能。一个常见的问题是在哪里可以把DCR兑换成当地货币。 （[照片]（https://twitter.com/deCRED_Ghana/status/1096714039978266624））
-* [如何保护您的加密货币安全]（https://www.meetup.com/Decred-Australia/events/258211699/）在澳大利亚墨尔本。澳大利亚的加密货币爱好者讨论了最佳安全措施和Decred的安全标准。 @Zohand [注释]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15504942691141LtOxa:decred.org）：“反馈很棒，来自coinstop和CTRL的人想在几个月后再次参加活动。”。 （[照片]（https://twitter.com/DecredAustralia/status/1097478053763018752））
-* [Decred 30分钟]（https://www.eventbrite.com/e/decred-en-30-minutos-tickets-55764142050）在墨西哥城举办。 @elian [报道]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15517155592047249xtYGy:matrix.org）：“这是第一次见面会内所有人（7个人）都了解Decred。因此我们可以讨论更复杂的问题，例如去中心化治理面临的挑战，最佳的投票方式以及项目中发生的未来发展，如LN，支付，Politeia的整合和最近的活动，营销和社区建议。很高兴在墨西哥遇到DCR爱好者。我认为在墨西哥，我们还没有到用加密货币作为货币的地步，但空间正在快速发展。目前有更多的墨西哥人与加密货币接触，而不是与该国的股票市场接触，这是一个非常好的指标。“ （[照片]（https://twitter.com/DecredESP/status/1102594478664232960））
-* 在墨西哥埃卡特佩克的UAEM大学讲话。 @elian [分享]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$1551994219193770GeoIk:matrix.org）：“我谈到了货币的历史，互联网，比特币区块链，Decred的混合区块链和如何在加密货币和区块链行业工作。学生和教师对加密货币和区块链的创新着迷。观众主要由计算机科学学生组成。主要问题围绕什么是金钱，如何估值加密​​货币，和这个行业中大学毕业生的潜在工作机会。（...）在大学里进行谈判对我来说是一件大事，因为我知道下一代开发人员，律师，会计师等将会在不同行业里工作，他们渴望了解这个行业带来的机会。教师们非常高兴我们能够将这些知识传授给他们的学生，因为不容易在非市中心的大学进行这样的高科技讲座。“
-* 加纳Winneba的[Decred 聚会]（https://www.eventbrite.com/e/decred-meet-up-tickets-57073786231）。由@George Pro组织，[提到]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org）：“我们在加纳的第一次聚会是成功的。我们花时间去向参与者解释如何投资DCR，如何获得DCR（Coinomi流程），将其用作汇款，钱包设置，速度和隐私等。“ （[照片]（https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org））
+* 在中国的青岛大学，谈到了Decred的社区治理模型和即将进行的链上共识投票。 [@wanbihou](https://twitter.com/wanbihou)“学生们非常热情！” （[照片](https://twitter.com/wanbihou/status/1101131545010556928)）
+* 美国亚特兰大的[TabConf](https://tabconf.com/)。 @joshuam [提到](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15497319564677Cmutw:decred.org)）：“Tabconf非常棒。会议者参与度非常高 - 我在迄今为止的会议中被问到了最有深度的问题”。
+* [校园派对](http://brasil.campus-party.org/cpbr12/patrocinadores/) 在巴西圣保罗。大约有6万人参与了这项24小时，运行了6天的活动。 Decred是唯一正式参与的加密货币，并有专门的空间来展示讲座和课程。所有巴西开发承包商参于并举办了6次讲座和3次研讨会。 @ jy-p介绍了[加密货币安全性和适应性](https://www.youtube.com/watch?v=SMiHku6GGmI)）。有一些问题，如Decred的区域移动和减少（几乎所有会议参与者都会面对）和翻译不良 - 所有这些都考虑在未来的计划中。请参阅@emiliomann的[完整报告](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155200602520229ditLj:decred.org)和@matheusd的[笔记](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155197226472913itWWu:matrix.org)。
+* 加纳爱之夜。由@George Pro组织。由于约90％的参与者以及了解比特币，演示者可以跳过基础知识并突出显示Decred的独特功能。一个常见的问题是在哪里可以把DCR兑换成当地货币。 （[照片](https://twitter.com/deCRED_Ghana/status/1096714039978266624)）
+* [如何保护您的加密货币安全](https://www.meetup.com/Decred-Australia/events/258211699/)在澳大利亚墨尔本。澳大利亚的加密货币爱好者讨论了最佳安全措施和Decred的安全标准。 @Zohand [注释](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15504942691141LtOxa:decred.org)）：“反馈很棒，来自coinstop和CTRL的人想在几个月后再次参加活动。”。 （[照片](https://twitter.com/DecredAustralia/status/1097478053763018752)）
+* [Decred 30分钟](https://www.eventbrite.com/e/decred-en-30-minutos-tickets-55764142050)在墨西哥城举办。 @elian [报道](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15517155592047249xtYGy:matrix.org)：“这是第一次见面会内所有人（7个人）都了解Decred。因此我们可以讨论更复杂的问题，例如去中心化治理面临的挑战，最佳的投票方式以及项目中发生的未来发展，如LN，支付，Politeia的整合和最近的活动，营销和社区建议。很高兴在墨西哥遇到DCR爱好者。我认为在墨西哥，我们还没有到用加密货币作为货币的地步，但空间正在快速发展。目前有更多的墨西哥人与加密货币接触，而不是与该国的股票市场接触，这是一个非常好的指标。“ （[照片](https://twitter.com/DecredESP/status/1102594478664232960)）
+* 在墨西哥埃卡特佩克的UAEM大学讲话。 @elian [分享](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$1551994219193770GeoIk:matrix.org)：“我谈到了货币的历史，互联网，比特币区块链，Decred的混合区块链和如何在加密货币和区块链行业工作。学生和教师对加密货币和区块链的创新着迷。观众主要由计算机科学学生组成。主要问题围绕什么是金钱，如何估值加密​​货币，和这个行业中大学毕业生的潜在工作机会。（...）在大学里进行谈判对我来说是一件大事，因为我知道下一代开发人员，律师，会计师等将会在不同行业里工作，他们渴望了解这个行业带来的机会。教师们非常高兴我们能够将这些知识传授给他们的学生，因为不容易在非市中心的大学进行这样的高科技讲座。“
+* 加纳Winneba的[Decred 聚会](https://www.eventbrite.com/e/decred-meet-up-tickets-57073786231)。由@George Pro组织，[提到](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org)：“我们在加纳的第一次聚会是成功的。我们花时间去向参与者解释如何投资DCR，如何获得DCR（Coinomi流程），将其用作汇款，钱包设置，速度和隐私等。“ （[照片](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$155133397211500yxtpJ:decred.org)）
 
 
 即将到来的：
@@ -238,16 +242,16 @@ Ditto 2月工作总结:
 
 截止于 Mar 1 的社区数据 :
 
-* Twitter followers: 39,797 (+19)
-* Reddit subscribers: 9,365 (+35)
-* Matrix users: 266 (+19)
-* Slack users: 6,581 (+52)
-* Discord users: 2,101, can post: 131
-* Telegram users: 4,272 (-231)
-* YouTube subscribers: 3,746 (-6)
-* Facebook followers: 3,141 (+9), likes: 2,896 (+5)
-* LinkedIn followers: Decred page 483 (+17), Politeia page 29 (+2)
-* GitHub dcrd stars: 474 (+6), forks: 1,237 (+16)
+* Twitter 关注量: 39,797 (+19)
+* Reddit 关注用户: 9,365 (+35)
+* Matrix 用户: 266 (+19)
+* Slack 用户: 6,581 (+52)
+* Discord 用户: 2,101, 发帖数: 131
+* Telegram 用户: 4,272 (-231)
+* YouTube 关注量: 3,746 (-6)
+* Facebook 关注: 3,141 (+9), likes: 2,896 (+5)
+* LinkedIn 关注: Decred page 483 (+17), Politeia page 29 (+2)
+* GitHub dcrd : 474 (+6), fork人数: 1,237 (+16)
 
 电报群社区: 中文 866 (+53), 意大利语 160 (+28), 葡萄牙语 642 (+100), 西班牙语 73 (+11).
 
@@ -263,7 +267,8 @@ Ditto 2月工作总结:
 * 非英语聊天室重新根据语言命名，并移除了不再使用的聊天室。目前Matrix上已有中文[#chinese](https://matrix.to/#/!nUWpVrwhlJFyLuMlGw:decred.org), 葡萄牙语[#portuguese](https://matrix.to/#/!FBtUquQLhAvHeBIkac:decred.org), 俄语[#russian](https://matrix.to/#/!TQzfaYsKyxAqQDZQeX:decred.org)及西班牙语[#spanish](https://matrix.to/#/!pkeRzinGCRtjIIhAAK:decred.org)
 * [Riot](https://riot.im/app/#/room/#general:decred.org) 客户端配合更新的 UI 已[升级](https://medium.com/@RiotChat/the-big-1-0-68fa7c6050be)至版本 1.0。
 
-Another Reddit thread was [deleted](https://www.reddit.com/r/decred/comments/an4b6z/forbes_no_more_trading_or_listing_fees_decred/) after receiving some discussion. Moderators have no power to forbid this destruction of community knowledge, except the workaround to [resubmit](https://www.reddit.com/r/decred/comments/ar29jd/forbes_no_more_trading_or_listing_fees_decred/) the deleted thread. Ideas for robust replacement for Reddit are collected in [this issue](https://github.com/xaur/decred-issues/issues/38).
+另一个reddit线程在收到一些讨论后被[删除](https://www.reddit.com/r/decred/comments/an4b6z/forbes_no_more_trading_or_listing_fees_decred/)
+。 版主没有权力删除破坏社区的信息，除非[重新提交](https://www.reddit.com/r/decred/comments/ar29jd/forbes_no_more_trading_or_listing_fees_decred/)已删除线程。 本期收集了替代Reddit的[解决方案](https://github.com/xaur/decred-issues/issues/38)。
 
 
 ## 市场
@@ -272,38 +277,36 @@ Another Reddit thread was [deleted](https://www.reddit.com/r/decred/comments/an4
 
 ## 相关外部信息
 
-A [study](https://medium.com/@MoneroCrusher/analysis-more-than-85-of-the-current-monero-hashrate-is-asics-and-each-machine-is-doing-128-kh-s-f39e3dca7d78) of Monero nonces documented differing patterns in the nonce distribution when ASICs were mining on the network, it considers the methods ASIC miners may take to disguise their presence and how they can be detected. The study speculates that 85% of the Monero hashrate comes from ASICs at time of writing.
+一项关于Monero nonces的[研究](https://medium.com/@MoneroCrusher/analysis-more-than-85-of-the-current-monero-hashrate-is-asics-and-each-machine-is-doing-128-kh-s-f39e3dca7d78)记录了ASIC矿机在网络上挖掘时的不同模式，其中记录了ASIC矿工怎样采取隐藏的方法以防止被检测。 在撰写本文时，该研究推测85％的Monero哈希值来自ASIC矿机。
 
-A counterfeiting vulnerability was [discovered](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) in Zcash in early 2018. "This vulnerability is so subtle that it evaded years of analysis by expert cryptographers focused on zero-knowledge proving systems and zk-SNARKs.". It was silently patched with the Sapling network upgrade that occurred on Oct 28, 2018, and this [post](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/) on Feb 5 explained how the vulnerability had been dealt with within Zcash and how other affected coins (like Horizen and Komodo) were notified. The nature of Zcash cryptography is such that it is difficult to determine if any ZEC was counterfeited while the vulnerability was present. The Zcash team reporting on the bug believes it had not been exploited because "discovery of the vulnerability would have required a high level of technical and cryptographic sophistication that very few people possess."
+2018年初，Zcash [发现了](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/)一个漏洞。“这个漏洞非常的微妙，以至于它躲避了密码学专家多年的审查，在于零知识证明系统和zk-SNARKs。” 它在2018年10月28日Sapling网络升级中默默[修补](https://z.cash/blog/zcash-counterfeiting-vulnerability-successfully-remediated/)的，2月5日的这篇文章解释了Zcash中如何处理漏洞以及其他受影响的硬币（如Horizen和Komodo）。 Zcash加密算法的性质使得其存在漏洞时很难确认是否有其他ZEC伪造。 报告该漏洞的Zcash团队认为它没有被利用，因为“发现漏洞需要高水平的计算机技术和加密技术，只有极少数的人才符合条件。”
 
 一个 Grin 开发员在论坛上[发帖](https://www.grin-forum.org/t/solved-early-disappointments/3682) 表示对于一项上线两周要求捐款资助其中一名开发人员而未达成目标表示失望 - 并威胁要取区块奖励的 20% 以支持开发。
 消息传出后，该[活动](https://grin-tech.org/yeastplume)在短时间内筹得 EUR 67,580，超出原本 EUR 55,000 的目标。如 Breaker Mag [表示](https://breakermag.com/as-decred-turns-three-its-still-set-on-real-decentralization/)， Grin “吸引[上千万美金](https://www.coindesk.com/grin-launch-crypto-interest-from-deep-pocketed-investors)的挖矿投资，却在筹集 62,000 美元支付主开发人员 6 个月工资上面临难题。
 
-Ethereum holders are holding another [signaling carbonvote](http://www.progpowcarbonvote.com/) about whether they want to change mining algorithm to ProgPoW. The vote started with strong [opposition](https://www.trustnodes.com/2019/02/14/98-of-ethereum-vote-against-progpow) to the change (98% No), but later flipped to strong support (94% Yes) as of 4 March (with 3% of circulating ETH having voted). While carbonvote has no official place in Ethereum's governance, the method is being used because:
+以太坊持有者正在举行一个社区是否想要将挖矿算法改为ProgPoW的[投票活动](http://www.progpowcarbonvote.com/)。 投票开始时社区强烈[反对](https://www.trustnodes.com/2019/02/14/98-of-ethereum-vote-against-progpow)这一变化（98％否），但后来在3月4日（有3％的流通ETH投票）转向强力支持（94％是）。 虽然持币人投票在以太坊的治理中没有官方地位，但还是需要使用该方法，因为：
 
-> We have noticed a lot of trolling and shills on both sides of the debates from anonymous accounts on forums, youtube, telegram, glitter, reddit and twitter. There is no way to know if these accounts are real people who actually have economic stakes in ethereum, or are simply fake troll or shill accounts funded by one side of the debate.
+> 我们已经注意到论坛，youtube，telegram，glitter，reddit和twitter上匿名账户的争论双方都有很多拖沓和嘘声。 没有办法知道这些账户是否是真实的人或他们实际上拥有以太坊的的权益志，或许他们只是由辩论的一方资助的虚假账号或杠精。
 
-Tezos started [voting](https://blog.nomadic-labs.com/athens-proposals-injected.html) for the first [amendment](https://blog.nomadic-labs.com/athens-our-proposals-for-the-first-voted-amendment.html) to its protocol on February 25 ([simple guide](https://medium.com/tezos-spotlight/tezos-the-first-amendment-a-laymans-guide-7424ef1d3e13), [detailed guide](https://medium.com/tezos/amending-tezos-b77949d97e1e) to amendment process). The amendment process has 4 phases, each lasting 8 "cycles" (a cycle lasts around 3 days, so each phase lasts for around 24 days). In the first phase bakers submit and upvote proposals. There are 2 proposals being evaluated now in the first phase, they both increase the gas limit but one also decreases the minimum "roll size" (amount of XTZ required to be a baker). It is interesting to note that Kialo is being [used](https://www.kialo.com/tezos-protocol-amendment-1-25295) by some Tezos community members to discuss these proposals. When the first phase ends, the most upvoted proposal will progress to phase 2, where it must be approved by at least 80% of bakers. If the criteria are met, this is followed by a testing phase in which a testnet fork with the changes applied is created and runs for 48 hours (a further testnet matching the proposal may be run for the rest of this phase to allow further testing). After the testing phase, bakers vote on whether the changes should be activated, with an 80% supermajority required. After this 4th phase the changes are activated (or not) and the cycle begins again with new proposals.
+Tezos于2月25日开始对其协议的第一次修订[投票](https://blog.nomadic-labs.com/athens-proposals-injected.html)（[简单指南](https://medium.com/tezos-spotlight/tezos-the-first-amendment-a-laymans-guide-7424ef1d3e13)，[修订过程的详细指南](https://medium.com/tezos/amending-tezos-b77949d97e1e)）。[修订](https://blog.nomadic-labs.com/athens-our-proposals-for-the-first-voted-amendment.html)过程分为4个阶段，每个阶段持续8个“周期”（一个周期持续约3天，因此每个阶段持续约24天）。在第一阶段，bakers提交并提出建议。现在在第一阶段有2个建议被评估，它们都增加了气体限制但是也减少了最小“滚动尺寸”（需要作为bakers的XTZ的量）。值得注意的是，一些Tezos社区成员[正在使用](https://www.kialo.com/tezos-protocol-amendment-1-25295)Kialo来讨论这些提议。当第一阶段结束时，最受欢迎的提案将进入第2阶段，必须得到至少80％的bakers的批准。如果满足标准，则接下来是测试阶段，其中创建了应用了更改的测试网络分支并运行了48小时（可以在此阶段的其余部分运行与该提案匹配的另一个测试网以允许进一步测试） 。在测试阶段之后，bakers投票决定是否激活更改，需要80％的参与者。在第4阶段之后，激活（或不激活）更改或再次以新提议开始。
 
 Dash v0.13.1 在2月8日发布以“加速 Dash Core v0.13的采用”。Dash Core [v0.13](https://blog.dash.org/dash-core-v0-13-on-mainnet-dc9609b0f6f9) 本打算激活 [DIP3](https://github.com/dashpay/dips/blob/master/dip-0003.md) 但激活门槛为 PoW 矿工及主节点(masternodes)在激活开始前 7 天内达到 80% 的区块支持率。在 24 天左右仍未达成门槛后，门槛要求被视为太严格，并决定可以降低主节点(masternodes)的支持率要求。当足够的 PoW 矿工升级 v0.13.1 后，该变更将于一周后激活。(该[激活](https://blog.dash.org/product-update-february-21-2019-5f067b62df00)已在2月26日左右完成)
 
 0x protocol (ZRX) 在2月18日-2月25日进行了[第一次](https://blog.0xproject.com/how-to-participate-in-the-zeip-23-vote-eaa861298033)持代币者投票。该投票是为了通过 [ZEIP-23](https://blog.0xproject.com/zeip-23-trade-bundles-of-assets-fe69eb3ed960)并启动“交易数个资产“。该提案以 5,061,033 ZRX (流通量的 0.86%)参与率和 99% 同意票通过。
 
-The NEM Foundation's funding proposal [started](https://forum.nem.io/t/nem-foundation-update-vote-for-funding-proposal-2019/22007) voting on Feb 15 and voting was open for 5 days. The funding proposal [passed](https://forum.nem.io/t/vote-for-nem-foundation-funding-proposal-2019-approved-by-the-community/22060) with 90% Yes votes and 10% No votes - with votes from 4.56% of the "Proof of Importance" (NEM's way of weighting holders' influence). The vote was conducted on the basis that a 65% supermajority of Yes votes was required, and at least 3% of the network's POI must vote Yes as a quorum requirement. Voting was conducted from within the NEM wallet by sending 0 XEM transactions to a Yes or No address. Another concurrent proposal to fund "NEM Labs" was also successful, with a similar level of participation and 98.8% approval. The NEM Foundation proposal asked for $8 million in XEM (figure is surprisingly hard to find, could only be found in a [google doc presentation](https://docs.google.com/presentation/d/1nMR_1ajVcpdGW7g8I0p7ZGh88tZ1SL5RzG5TsLW6Qnk/edit#slide=id.p2)), while the NEM Labs proposal asked for $3.27 million.
+NEM基金会的资金提案于2月15日[开始](https://forum.nem.io/t/nem-foundation-update-vote-for-funding-proposal-2019/22007)投票，投票开放5天。 资助提案以90％赞成票和10％的弃权[通过](https://forum.nem.io/t/vote-for-nem-foundation-funding-proposal-2019-approved-by-the-community/22060) - 获得“重要证明”（NEM加权持有人影响力的方式）4.56％的投票。 投票的基础是，需要65％的赞成票，并且至少3％的网络POI必须达到法定人数的要求。 通过将0 XEM交易发送到是或否地址，在NEM钱包内进行投票。 同时为“NEM实验室”提供资金的另一项建议也取得了成功，参与程度相似，批准率为98.8％。 NEM基金会的提案要求在XEM中获得800万美元（这个数据令人惊讶地难以找到，只能在[google文档](https://docs.google.com/presentation/d/1nMR_1ajVcpdGW7g8I0p7ZGh88tZ1SL5RzG5TsLW6Qnk/edit#slide=id.p2)演示文稿中找到），而NEM实验室的提案要求获得327万美元。
 
-The Aragon Transparency Report for Q4 2018 was [released](https://blog.aragon.org/aragon-q4-2018-transparency-report/). This report presents a detailed breakdown of spending related to the project. The total spent in Q4 2018 was ~€1,055,484.43 or equivalent in cryptocurrency, with €268k on salaries, €330k on payments to service providers, €45k on sponsoring/tickets for events, €63k on hosting the AraCon conference and €260k on [Nest](https://github.com/aragon/nest) teams (a grants program). This report also describes financial [hedging](https://twitter.com/AragonProject/status/1067349802365739008) steps which have been taken by Aragon Association - exchanging some of the ETH raised during the ICO to buy other assets.
+2018年第四季度Aragon透明度报告[发布](https://blog.aragon.org/aragon-q4-2018-transparency-report/)。 本报告详细列出了与项目相关的支出。 2018年第四季度的总支出为1,055,484.43欧元或等值的加密货币，工资为26.8万欧元，向服务提供商支付的金额为33万欧元，赞助/活动门票为45,000欧元，托管AraCon会议的金额为63,000欧元，[Nest](https://github.com/aragon/nest)团队为260,000欧元（补助计划）。 该报告还[描述了](https://twitter.com/AragonProject/status/1067349802365739008)Aragon协会采取的财务对冲步骤 - 交换ICO期间筹集的一些ETH以购买其他资产。
 
-The blacklist issued by the EOS Core Arbitration Forum (ECAF) in Jun 2018 was allowed to [lapse](https://medium.com/@eos42/proposed-solution-for-a-broken-blacklist-ce1c18bdf81c) when a new Block Producer was rotated in which had not configured the blacklist. This allowed one of the blacklisted addresses to move over 2 million EOS. The lapse occurred because the blacklist has been implemented as a list of addresses from which block producers will not process transactions, with each block producer being responsible for maintaining the blacklist manually. If only one top 21 BP does not have an updated blacklist, blacklisted accounts are vulnerable to being emptied. One solution that has been suggested is to "null the keys" until a decision has been made about what to do with the frozen funds. What to do with the blacklisted funds is already an issue for EOS, and the ECAF itself may be disbanded if an open referendum to "Delete the ECAF" passes (currently on 99% Yes with 2.4% of EOS having voted).
+EOS核心仲裁论坛（ECAF）于2018年6月发布的在[新的](https://medium.com/@eos42/proposed-solution-for-a-broken-blacklist-ce1c18bdf81c)Block Producer轮换时没有配置黑名单时失效的情况。 这使得一个列入黑名单的地址可以移动超过200万个EOS。 失效的原因是黑名单已被实施为地块列表，块生产者不会处理交易，每个块生产者负责手动维护黑名单。 如果只有一个前21名BP没有更新的黑名单，则黑名单账户很容易被清空。 目前已经提出的一个解决方案是“无效”，直到做出关于如何处理冻结资金的决定。 如果对EOS进行公开投票，那么如果对EOS进行公开投票，可能会解散被列入黑名单的资金问题，如果已经通过了公开投票，那么ECAF本身就可以解散了（目前99％是的，EOS已经投了2.4％）。
 
-Binance is [launching](https://www.theblockcrypto.com/2019/02/07/binance-moves-away-from-ethereum-as-it-prepares-to-launch-dex/) its DEX based on Cosmos' Tendermint protocol and DPoS. The listing fee will "probably be close to $100,000" to "reduce the number of spam or scam projects". In contrast, Decred's DEX design has no listing fees and doesn't require an extra blockchain for its operation.
+Binance目前[推出](https://www.theblockcrypto.com/2019/02/07/binance-moves-away-from-ethereum-as-it-prepares-to-launch-dex/)了基于Cosmos的Tendermint协议和DPoS的DEX。 上币费用“可能接近10万美元”以“减少垃圾项目或诈骗项目的数量”。 相比之下，Decred的DEX设计没有上币费用，也不需要额外的区块链来进行操作。
 
-Canadian exchange QuadrigaCX [owes](https://www.coindesk.com/quadriga-creditor-protection-filing) its customers $190 million. The funds reportedly [cannot be accessed](https://www.coindesk.com/quadrigacx-crypto-exchange-users-say-they-still-cant-get-their-money-out) after its founder died, who had sole control or knowledge of exchange's cold storage solution. Another $500K in BTC were locked "by mistake" per [this story](https://www.coindesk.com/quadriga-inadvertently-sent-btc-to-dead-ceos-cold-wallet-ey-report). The never ending trail of failures by centralized exchanges shows just how challenging the custody of cryptocurrencies is.
+加拿大交易所QuadrigaCX[欠](https://www.coindesk.com/quadriga-creditor-protection-filing)其客户1.9亿美元。 据报道，这些资金在其创始人去世后[无法操作](https://www.coindesk.com/quadrigacx-crypto-exchange-users-say-they-still-cant-get-their-money-out)，他们对交易所的冷藏解决方案拥有唯一的控制权。 还有一个[故事](https://www.coindesk.com/quadriga-inadvertently-sent-btc-to-dead-ceos-cold-wallet-ey-report)，BTC的另一个50万美元被“错误地”锁定。 中心化交易所无休止的失败表明加密货币的保管是多么的具有挑战性。。
 
-Medium showed its power again by [suspending](https://archive.today/iKQlv) the account that [posted](https://medium.com/@zeroresearchproof/quadrigacx-chain-analysis-report-pt-1-bitcoin-wallets-19d3a375d389) chain analysis of QuadrigaCX wallets. Luckily, someone made a [snapshot](https://archive.today/xsztt). The suspension hides all account's content and is implemented as a redirect to a same-for-all page that says "This page is unavailable" and does not state the reason. Medium is a powerful platform, but at its core is a centralized service that can lock in data of those who don't make backups. Earlier behavior like this triggered a [discussion](https://github.com/xaur/decred-issues/issues/70) about migrating from Medium or treating it as just a mirror.
+Medium[暂停](https://archive.today/iKQlv)了[发布](https://medium.com/@zeroresearchproof/quadrigacx-chain-analysis-report-pt-1-bitcoin-wallets-19d3a375d389)QuadrigaCX钱包分析的账户，再次显示了它的力量。 幸运的是，有人制作了[快照](https://archive.today/xsztt)。 暂停隐藏了所有帐户的内容，并导向为“此页面不可用”的页面，并且没有说明原因。 Medium是一个功能强大的平台，但其核心是一个中心化服务提供商，可以锁定那些不进行备份的人的数据。 像这样的早期行为引发了关于从Medium迁移或将其视为镜像的[讨论](https://github.com/xaur/decred-issues/issues/70)。
 
-Android malware was [discovered](https://www.welivesecurity.com/2019/02/08/first-clipper-malware-google-play/) on Google Play Store that changes cryptocurrency address in the clipboard. Always double check the address before sending.
-
-
+在Google Play商店中发现有Android恶意软件会[更改](https://www.welivesecurity.com/2019/02/08/first-clipper-malware-google-play/)剪贴板中的加密货币地址。 在发送之前，请务必仔细检查地址。
 
 
 ## 关于月报
