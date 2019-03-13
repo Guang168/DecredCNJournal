@@ -327,4 +327,4 @@ Medium [暂停](https://archive.today/iKQlv)了[发布](https://medium.com/@zero
 
 中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
 
-感谢 (按字母排序): Dominic, guang, hugo, Jill, 
+感谢 (按字母排序): Dominic, guang, hugo, Jill
