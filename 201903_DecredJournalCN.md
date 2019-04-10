@@ -5,40 +5,40 @@
 
 ## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): Huge [refactoring](https://github.com/decred/dcrd/pull/1656) makes initial full sync [20-25%](https://twitter.com/davecgh/status/1110649183185317889) faster, down to around 45 mins on typical hardware. Another benefit is reduced vote propagation latency:
+[dcrd](https://github.com/decred/dcrd): 一项大的[重构](https://github.com/decred/dcrd/pull/1656)让初始完全同步时间增快 [20-25%](https://twitter.com/davecgh/status/1110649183185317889), 在典型硬件耗时大约 45 分钟。另一个好处是降低了投票广播的延迟：
 
-> \[latency is affected by\] many factors, but per node average from ~70ms to sub 5ms on my nodes. Need more data for better values. Good alone, but real gains will come with majority network upgrade since savings are multiplied by number of nodes votes traverse (log_8(tot)). Full deployment ~90% overall improvement. ([@davecgh](https://twitter.com/davecgh/status/1110721000172384256))
+> 影响\[延迟\]的因素很多,但在我的节点里平均每节点为 ～70 毫秒至 5 毫秒以下。我们需要更多的数据才能获得更准确的数值。这个本身是好事，但真正的好处将在重大网络升级时更能体现，在多个投票节点节省的时间更可观。全面部署整体改善高达～90％。([@davecgh](https://twitter.com/davecgh/status/1110721000172384256))
 
-As part of the optimization `txscript` module was completely refactored to use a new zero-allocation script tokenizer.
+作为优化的一部分，`txscript`模块使用新的零分配脚本标记器进行完全重构。
 
-> Initial sync is a big factor of course, but the real gains are in the ongoing transaction processing for mempool. The other really nice facet is the exported tokenizer which means it's possible to do zero-allocation analysis on scripts outside of txscript which is great for building apps (e.g. atomic swaps, taproot, etc) on top. ([@davecgh](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$155249146926580yNJqU:decred.org))
+> 初始同步当然是一个重要因素，但真正的好处在于 mempool 正在进行的交易处理。另一个非常好的方面是导出的标记化器，这意味着可以对 txscript 之外的脚本进行零分配分析，这对于构建应用程序（例如原子交换，主根等）非常有用。([@davecgh](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$155249146926580yNJqU:decred.org))
 
-Because a critical and error prone area of consensus code was changed, significant effort has been put into making these changes easier to reason about and review by carefully crafting a series of 122 individual commits such that every commit message thoroughly describes its purpose, maintains consensus, and therefore passes all tests.
+由于共识代码的关键且容易出错的区域进行更改，因此通过精心制作一系列122个单独的提交，让每个提交消息彻底描述其目的，确保保持共识，因此通过所有测试，使这些更改更容易推理和审查。
 
-Bonus: the refactoring slashed some 2K lines of code. Less code, less bugs!
+另外：重构大幅削减了大约 2K 行代码。越少代码行，越少漏洞！
 
-There is an opportunity to remove another 10-15 min of initial block download but it requires months of solid work _(hint to contributors)_.
+另外也发现了一个删除额外 10-15 分钟的初始块下载的机会，但它需要几个月的扎实工作 _(贡献者来吧)_。
 
-Other merged work:
+其他已整合工作:
 
-* Initial Bech32 ([BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)) support [ported](https://github.com/decred/dcrd/pull/1646) from btcsuite.
-* Introduced reusable [LRU cache](https://github.com/decred/dcrd/pull/1683) module.
-* Module `hdkeychain` [refactored](https://github.com/decred/dcrd/pull/1696) to make code less brittle and more testable.
-* [Added](https://github.com/decred/dcrd/pull/1424) new background block template generators.
-* Lots of refactoring and testing improvements to harden the codebase against unintended changes.
+* 初始的 Bech32 ([BIP 173](https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki)) 支持已从 btcsuite [移植](https://github.com/decred/dcrd/pull/1646)。
+* 推出可重用的 [LRU cache](https://github.com/decred/dcrd/pull/1683)模块。
+* [重构](https://github.com/decred/dcrd/pull/1696)`hdkeychain`模块使代码更简洁及更易测试。
+* [增加](https://github.com/decred/dcrd/pull/1424)新的背景区块模版生成器。
+* 许多重构及测试改进以增强代码对于意外改动的抵抗性。
 
-A total of [209 commits](https://github.com/decred/dcrd/compare/4e7f080b7b2cb11a8680d54dc5fb9ce735119d15...8f5019e083e92f31b2799f9d23809e0c0692d465) from 9 contributors were merged in March.
+在3月份里，总共有 9 位贡献者的[209 份提交](https://github.com/decred/dcrd/compare/4e7f080b7b2cb11a8680d54dc5fb9ce735119d15...8f5019e083e92f31b2799f9d23809e0c0692d465)被整合。
 
-In progress:
+进行中:
 
-* Another large refactor [started](https://github.com/decred/dcrd/pull/1698) to address multiple issues in `chaincfg` module.
-* Discussion [started](https://github.com/decred/dcrd/issues/1645) to protect node seeding process from DNS based attacks.
+* 另一项针对`chaincfg`模块中几个问题的重大重构工作已[开始](https://github.com/decred/dcrd/pull/1698)。
+* 有关保护节点播种过程中免受基于 DNS 攻击的讨论已经[展开](https://github.com/decred/dcrd/issues/1645)。
 
-In the big picture, changes like background block template generator and part of `txscript` optimization aim to improve scalability and reduce the number of missed votes on the network through improvements to the mining infrastructure and reduction of voting propagation latencies. The other part of `txscript` and `chaincfg` refactoring are infrastructure work to properly introduce a new script engine version for future desirable consensus changes such as the decentralized treasury spending. Even if that proposal doesn't pass, the infrastructure is still needed for a wide variety of future script-related consensus changes.
+总体而言，像背景区块模板生成器和`txscript`优化的一部分这样的变化旨在通过改进挖矿基础设施和减少投票传播延迟来提高可扩展性并减少网络的错过票数量。`txscript`和`chaincfg`重构的另一部分是基础设施工作，以正确引入新的脚本引擎版本，以便进行未来理想的共识变更，例如去中心化财政支出。即使该提案没有通过，我们仍然需要这些基础设施来进行各种未来与脚本相关的共识变更。
 
-[dcrwallet](https://github.com/decred/dcrwallet): bug fixes and code maintenance. Merged [12 commits](https://github.com/decred/dcrwallet/compare/9f5f1163d8bf8037138f07734002470d4100de21...9450c9183e71231065dc0ea25087a47e8e5bb38e) from 6 contributors.
+[dcrwallet](https://github.com/decred/dcrwallet): 错误修复和代码维护。整合了6位贡献者的[12 份提交](https://github.com/decred/dcrwallet/compare/9f5f1163d8bf8037138f07734002470d4100de21...9450c9183e71231065dc0ea25087a47e8e5bb38e)。
 
-[Decrediton](https://github.com/decred/decrediton): Ticket activity heatmap visualization merged among smaller fixes - total [5 commits](https://github.com/decred/decrediton/compare/35ab6e216dde0bc90d76334e25eb5174bf62e623...f80e832e55231a8f4cb7b1aa69f6e2faea2709df) from 2 contributors.
+[Decrediton](https://github.com/decred/decrediton): 选票活动热图可视化和一些较小的修复 - 2位贡献者的 [5 份提交](https://github.com/decred/decrediton/compare/35ab6e216dde0bc90d76334e25eb5174bf62e623...f80e832e55231a8f4cb7b1aa69f6e2faea2709df)。
 
 [Politeia](https://github.com/decred/politeia): Added tab to [preview](https://github.com/decred/politeiagui/pull/1018) proposal text, completed feature to [view difference](https://github.com/decred/politeiagui/pull/1004) between proposal versions, changed [default comment sort]((https://github.com/decred/politeiagui/pull/1034)) to show comments with highest score on Top, added feature to set sort in the URL. Many bugs were fixed. These changes were merged in the master branch and will be deployed on the [main proposals site](https://proposals.decred.org/) after some testing on the [test site](https://test-proposals.decred.org/).
 
@@ -194,13 +194,13 @@ Ditto's 三月份成就:
 
 ## 媒体
 
-Community efforts:
+社区活动:
 
-* @Denni Lovejoy actively engaged in #writers\_room to produce accurate scripts for his videos per the approved wallet tutorial [proposal](https://proposals.decred.org/proposals/a3def199af812b796887f4eae22e11e45f112b50c2e17252c60ed190933ec14f).
-* @anshawblack will head to New York in May to record multiple in person for the podcast.
-* Decred Journal is now [mirrored](https://decredcommunity.org/filter?tag=Decred%20Journal&key=category) on decredcommunity.org. Notice the nice country flag buttons to quickly jump to translations.
-* @max\_bronstein compiled [Decred Canon](https://github.com/maxbron08/Decred-Canon) - a collection of readings and resources to help people familiarize themselves with the Decred Project.
-* New articles by @mm at stakey.club: [Sharing the dcrd](https://stakey.club/en/sharing-the-dcrd/) with multiple devices, [Decred Verifier](https://stakey.club/en/decred-verifier/) script to check hashes and signatures (you do verify signatures, right?).
+* @Denni Lovejoy 积极参与 #writers\_room 讨论为通过的钱包教程[提案](https://proposals.decred.org/proposals/a3def199af812b796887f4eae22e11e45f112b50c2e17252c60ed190933ec14f)的视频制作准确的脚本。
+* @anshawblack 将在 5 月前往纽约与多位录制播客。
+* Decred 月报现已[复制](https://decredcommunity.org/filter?tag=Decred%20Journal&key=category)到 decredcommunity.org。注意角落漂亮的国家旗帜按键转换翻译语言。
+* @max\_bronstein 整合了 [Decred Canon](https://github.com/maxbron08/Decred-Canon) - 一系列帮助人们熟悉 Decred 项目的阅读材料和资源。
+* 由 stakey.club 的 @mm 发布的新文章: 与多个设备[分享 dcrd](https://stakey.club/en/sharing-the-dcrd/), [Decred Verifier](https://stakey.club/en/decred-verifier/) 检测哈希及签名的脚本。
 
 部分文章:
 
@@ -236,7 +236,7 @@ A few more gems were found on [Crunchbase](https://www.crunchbase.com/organizati
 * The Blockcrunch - How Does Decred's Governance Work? Part 1 of interview with @Haon talks about Decred's governance, stakeholder rewards, voting topics and why both miners and voters are needed. ([libsyn.com](https://blockcrunch.libsyn.com/how-does-decreds-governance-work-noah-pierau-decred-project), [itunes](https://itunes.apple.com/us/podcast/how-does-decreds-governance-work-noah-pierau-decred-part-1/id1350649166?i=1000431532255&mt=2), [spotify](https://open.spotify.com/episode/7xST0eTxy4xnaK6NILXcbx?si=o3AJJuLvQka7lnpT1BrzWw))
 * The Blockcrunch - Defending Decred's Onchain Governance. Part 2 of interview with @Haon continues about enforceability of on-chain votes, stake-based vs entity-based voting, fairness and centralization in PoS and threat of malicious actors. ([libsyn.com](https://blockcrunch.libsyn.com/defending-decred-noah-pierau-decred-part-2))
 
-CoinMarketCap [started to show](https://medium.com/@davebalter/coinmarketcap-partners-with-flipside-crypto-to-distribute-project-health-scores-f181374f3d0e) FCAS rating for crypto assets. The Fundamental Crypto Asset Score is tracked by Flipside Crypto since early 2017 and is available for more than 450 projects. The goal of the system is to answer "can this crypto project produce product people want to use, and are people using it?" by largely ignoring price movements and instead putting more weight in customer activity and developer behavior, as explained [here](https://www.flipsidecrypto.com/fcas-explained). As of Apr 9 Decred is [rated](https://coinmarketcap.com/currencies/decred/#ratings) "A" 778 out of 1000. Some context: Litecoin 752, Zcash 792, Bitcoin 862, EOS 910, Ethereum 914.
+CoinMarketCap [开始显示](https://medium.com/@davebalter/coinmarketcap-partners-with-flipside-crypto-to-distribute-project-health-scores-f181374f3d0e)加密资产的新指标 FCAS 等级。Fundamental Crypto Asset Score （FCAS）是由 Flipside Crypto 自 2017 年初开始追踪并对于超过450个项目的评级。在[这里](https://www.flipsidecrypto.com/fcas-explained)的解释说明系统的目标是通过尽量无视价格浮动而专注于客户活动及开发者行为，来回答 “这个加密项目是否可以推出人们要用的产品，和人们是否正在使用它？”。于 4月9日位置 Decred [被评级](https://coinmarketcap.com/currencies/decred/#ratings) 为 "A" 778/1000。一些背景数据：Litecoin 752, Zcash 792, Bitcoin 862, EOS 910, Ethereum 914.
 
 ## 社区
 
@@ -255,14 +255,14 @@ CoinMarketCap [started to show](https://medium.com/@davebalter/coinmarketcap-par
 
 社交系统新闻：
 
-* Stakey stickers are now [available](https://twitter.com/dcrstakey/status/1104032806513115136) in Riot web, Android and iOS Matrix clients. Thanks to @lustosa and Matrix folks for adding! Excited testing of these stickers totally [disrupted](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155205491220668sKKGI:decred.org) #general. Known issue: Matrix stickers do not cross the bridge to Slack and Discord. Secret hint from @jrick: these stickers are available across the entire Matrix federation and can be used in rooms with no relation to Decred. Use wisely.
-* Transferring of message edits across the chat bridge was disabled, so if you edit message on Discord or Telegram, the edit won't transfer to Matrix (and not produce an annoying duplicate message).
-* Right after disabling message edits in our bridge software ([matterbridge](https://github.com/42wim/matterbridge)), an untested code path was hit that took down the bridge for a few hours. @dhill quickly located the bug and submitted a pull request.
-* New [#101](https://matrix.to/#/!MiucsxxSPQBpoidaHN:decred.org) room was started to help beginners get around and serve as a place for shower thought questions (this was requested a few times). The room is bridged with Slack, Discord and Telegram. Bridging with Telegram is uncommon because of huge amount of spam on that platform. For some background, previous #telegram room was unbridged for too much spam that wasn't automatically deleted when Telegram moderators deleted it.
-* Telegram hardening: @Aztec and team upgraded the "slapper bots" that boot people and bots for bad content, also a "shield bot" was added that does captcha for new room entrants.
-* Chinese community members managed to setup a [page](https://www.chainnode.com/forum/305) for Decred discussion on chainnode.com, a rebrand of 8btc.com and one of the largest crypto forums in Chinese. {any stats from there?}
+* Stakey 表情包已在 Riot 网页版，安卓版及iOS Matrix客户端[上线](https://twitter.com/dcrstakey/status/1104032806513115136)。感谢 @lustosa 和 Matrix 团队! 表情包的激动测试完全[瘫痪了](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155205491220668sKKGI:decred.org) #general频道。已知问题：Matrix表情包不会桥接到 Slack 和 Discord。@jrick 提示到: 这些表情包是在 Matrix 所有频道，即便与Decred无关都可以使用。请明智的使用。
+* 桥接已关闭信息修改。如果您在Discord 或 电报修改信息，修改的信息将不会转送到 Matrix（不会生成重复信息）
+* 正在关闭桥接软件([matterbridge](https://github.com/42wim/matterbridge))的信息修改选项后 Right after disabling message edits in our bridge software , an untested code path was hit that took down the bridge for a few hours. @dhill quickly located the bug and submitted a pull request.
+* 新的[#101](https://matrix.to/#/!MiucsxxSPQBpoidaHN:decred.org)聊天室是为了帮助新手和解决简单问题而创建。该聊天室已桥接到 Slack，Discord 和 电报。由于电报群的广告很多，桥接到电报群是少见的。之前的 #telegram 聊天室就是因为太多广告并缺乏管理而被终止桥接的。
+* Telegram 防护: @Aztec 团队将机器人"slapper bots" 升级，会基于低质量内容剔除用户或机器人，并增加机器人 "shield bot" 以对新用户进行验证。
+* 中文社区成员成功入驻[链节点](https://www.chainnode.com/forum/305)，链节点为巴比特论坛 8btc.com 的升级版，为最大的中文加密货币社区之一
 
-Selected Reddit discussions: "Skepticism Sunday" threads on [Mar 3](https://www.reddit.com/r/decred/comments/awv5yt/skepticism_sunday_march_3_2019/) and [Mar 24](https://www.reddit.com/r/decred/comments/b4xx9h/skepticism_sunday_march_24_2019/); how many people would like part of their paycheck [in DCR](https://www.reddit.com/r/decred/comments/axdfvd/how_many_of_you_would_want_part_of_your_paycheck/); thoughts on [using Kialo](https://www.reddit.com/r/decred/comments/axyxw2/should_the_decred_network_utilize_kialo_as/) as a tool for more structured communications around decision making; idea to add [polls](https://www.reddit.com/r/decred/comments/b5smyl/testing_the_waters_with_this_idea_maybe/) to Politeia.
+部分 Reddit 讨论: "Skepticism Sunday" 帖 - [Mar 3](https://www.reddit.com/r/decred/comments/awv5yt/skepticism_sunday_march_3_2019/) 及 [Mar 24](https://www.reddit.com/r/decred/comments/b4xx9h/skepticism_sunday_march_24_2019/); 多少人愿意以[in DCR](https://www.reddit.com/r/decred/comments/axdfvd/how_many_of_you_would_want_part_of_your_paycheck/)接收工资; 关于[使用 Kialo](https://www.reddit.com/r/decred/comments/axyxw2/should_the_decred_network_utilize_kialo_as/) 作为环绕着做决定更系统性沟通的工具; 提议在 Politeia 上增加[民意调查](https://www.reddit.com/r/decred/comments/b5smyl/testing_the_waters_with_this_idea_maybe/)功能。
 
 
 
