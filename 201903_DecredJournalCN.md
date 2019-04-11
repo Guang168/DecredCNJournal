@@ -94,37 +94,37 @@
 
 ## 治理
 
-在 3月里，[DCR 基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 16,288 DCR，并花了 13,595 DCR，使用 DCR 在 3 月份的每日平均美元价格 18.14 美元计算，本月收到 29.6 万 美元以及支出 24.7 万 美元。由于这些付款用于支付 2 月份完成的工作，因此可以用 2 月份的平均价格 16.51 美元计算 - 在这种情况下，美元收到的数字是 26.9 万美元以及支出 22.4 万美元。4月{}日 为止，基金会余额为 {} DCR (按 {} 美元计算相当于 {}万 美金)。
+在 3月里，[DCR 基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 16,288 DCR，并花了 13,595 DCR，使用 DCR 在 3 月份的每日平均美元价格 18.14 美元计算，本月收到 29.6 万 美元以及支出 24.7 万 美元。由于这些付款用于支付 2 月份完成的工作，因此可以用 2 月份的平均价格 16.51 美元计算 - 在这种情况下，美元收到的数字是 26.9 万美元以及支出 22.4 万美元。4月9日 为止，基金会余额为 608,560 DCR (按 25.26 美元计算相当于 153万 美金)。
 
 于 4月10日 的提案状态:
 
-* [Trust Wallet integration](https://proposals.decred.org/proposals/2ababdea7da2b3d8312a773d477272135a883ed772ba99cdf31eddb5f261d571) approved with 67% Yes votes of the 9.3K tickets that voted. Ahead of the vote, Trust Wallet developers [moved forward](https://github.com/TrustWallet/wallet-core/issues/43) to integrate Decred on their end.
-* [ATM Integration - Planning Phase](https://proposals.decred.org/proposals/aea224a561cfed183f514a9ac700d68ba8a6c71dfbee71208fb9bff5fffab51d) rejected - 52.5% Yes among 12.7K voting tickets didn't reach the threshold of 60%. Possibility of a second attempt was discussed [here](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15542882616188dHEHP:decred.org).
-* [Bring decred to Africa(Ghana) Adoption program for merchants and businesses](https://proposals.decred.org/proposals/dac06f18bfeb5f7667e56554774de3bb99151018ce16a64f5353bab45819763b) by @georgepro seeks $41,054 to fund 3 months of outreach for a merchant adoption program in Ghana. Vote started, reached the quorum and has 95% No votes as of Apr 10.
-* Re-submission of the Coffee Wallet [proposal](https://proposals.decred.org/proposals/45de9806c952c5ffc2fc6782fddbc74c852c26e3fb0e950144b92d75082c4731) after it was abandoned was [blocked](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$155144086813111EMAcC:decred.org) by admins as an attempt to use Politeia to market the product.
-* [Decentralize Treasury Spending](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f) by @moo31337 outlines a 2-step process where a draft spending transaction is published on Politeia for review, and then voted for on-chain by the stakeholders. The development, testing and a required consensus vote are projected to take on the order of 9-12 months, with the budget of $200,000-250,000.
-* [Fiat pairs integration on EXMO Exchange](https://proposals.decred.org/proposals/950e8149e594b01c010c1199233ab11e82c9da39174ba375d286dc72bb0a54d7) by vadymprykhodko was published following a [pre-proposal](https://www.reddit.com/r/decred/comments/b0y9le/integration_on_exmo_exchange_new_fiat_pairs/) on r/decred. The proposal seeks $23,800 to add DCR fiat pairs on EXMO, an exchange popular in Eastern Europe.
-* [Amendment to Decred Constitution](https://proposals.decred.org/proposals/fd56bb79e0383f40fc2d92f4473634c59f1aa0abda7aabe29079216202c83114) by @richardred was submitted following a lot of discussions tracked in [this issue](https://github.com/xaur/decred-issues/issues/107).
+* [Trust 钱包整合提案](https://proposals.decred.org/proposals/2ababdea7da2b3d8312a773d477272135a883ed772ba99cdf31eddb5f261d571) 在 9.3K 投出的票中以 67% Yes 通过。在投票通过前，Trust 钱包开发人员已经[开始了](https://github.com/TrustWallet/wallet-core/issues/43)钱包端的整合。 
+* [ATM 整合 - 计划阶段提案](https://proposals.decred.org/proposals/aea224a561cfed183f514a9ac700d68ba8a6c71dfbee71208fb9bff5fffab51d) 在 12.7K 投出的票以 52.5% Yes，未能达到 60% 而不通过。[这里](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15542882616188dHEHP:decred.org)讨论了重新提出投票的讨论
+* [非洲（加纳）提案 - Bring decred to Africa(Ghana) Adoption program for merchants and businesses](https://proposals.decred.org/proposals/dac06f18bfeb5f7667e56554774de3bb99151018ce16a64f5353bab45819763b) 由 @georgepro 提出，要求 41,054 美元资助 3 个月的加纳商家采用计划。投票已经开始，并在 4月10日为止达到法定票数以及 95% 的 No 票。 
+* 咖啡钱包[提案](https://proposals.decred.org/proposals/45de9806c952c5ffc2fc6782fddbc74c852c26e3fb0e950144b92d75082c4731)在被废弃后重新提交的申请被[拒绝](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$155144086813111EMAcC:decred.org)。管理员认为这是尝试使用Politeia 来推广产品的手段。
+* [社区资金开销去中心化提案 - Decentralize Treasury Spending](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f) 由 @moo31337 提出。提案概述了两步流程，其中支出交易草案在 Politeia 上发布被审查后，由利益相关者在链上投票。预计开发，测试和达成共识的投票需时 9-12 个月，预算为 20-25 万美元。
+* [EXMO 交易所的法币交易对集成提案-Fiat pairs integration on EXMO Exchange](https://proposals.decred.org/proposals/950e8149e594b01c010c1199233ab11e82c9da39174ba375d286dc72bb0a54d7) 由 vadymprykhodko 提交。这是续在 r/decred 发布的[预提案](https://www.reddit.com/r/decred/comments/b0y9le/integration_on_exmo_exchange_new_fiat_pairs/)发布的。提案要求 23，8000 美元以支持在一个东欧地区受欢迎的交易所 EXMO 增加 Decred 的法币交易对。
+* [修订 Decred 宪法提案 - Amendment to Decred Constitution](https://proposals.decred.org/proposals/fd56bb79e0383f40fc2d92f4473634c59f1aa0abda7aabe29079216202c83114) 由 @richardred 提交。这是随着一连串的讨论后提交的。[这里](https://github.com/xaur/decred-issues/issues/107)追踪讨论内容。
 
-Pre-proposals:
+预提案:
 
-* [India education and awareness campaign](https://www.reddit.com/r/decred/comments/awb5y0/preproposal_decred_india_community_new_user/) by u/Blocknext. In a chat [discussion](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15515162772723165JzrFj:matrix.org) it was pointed out that a [similar proposal](https://www.dash.org/forum/threads/building-commercial-dash-use-in-the-freelancing-industry-across-south-asia.17890/) was submitted for Dash.
-* [Second constitutional amendment](https://www.reddit.com/r/decred/comments/b84t6b/preproposal_second_constitutional_amendment_to/) by @richardred to declare February 8th the International day of Stakey.
+* [印度教育和宣传活动提案 - India education and awareness campaign](https://www.reddit.com/r/decred/comments/awb5y0/preproposal_decred_india_community_new_user/) 由 u/Blocknext 提出。在聊天室[讨论](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15515162772723165JzrFj:matrix.org)中，有用户指出在 Dash 的提案系统里也有个[类似的提案](https://www.dash.org/forum/threads/building-commercial-dash-use-in-the-freelancing-industry-across-south-asia.17890/)。
+* [第二次宪法修正提案 - Second constitutional amendment](https://www.reddit.com/r/decred/comments/b84t6b/preproposal_second_constitutional_amendment_to/) 由 @richardred 提出，宣布 2月8日 为国际 Stakey 日。
 
-decredcommunity.org got some [criticism](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$155227203622209rOKeX:decred.org) for not being open source and not explicitly stating it in the body of the proposal. One of the arguments is that the Treasury has never paid for closed source work before, except for some integrations where it could not be disclosed. Funding of software that is not open source also goes against the project's [constitution](https://docs.decred.org/governance/decred-constitution/). Captured in [this issue](https://github.com/karamble/dcrcommunityweb/issues/1), the discussion also triggered some [improvements](https://github.com/decred/dcrdocs/pull/896) in proposal guidelines to state any restrictions in terms of the licensing of deliverables.
+decredcommunity.org 受到了一些[批评](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$155227203622209rOKeX:decred.org)表示该网站并不开源而且在提案内容里面没有明确说明。其中一个论点是社区基金从未资助过任何非开源工作内容，除了一些不能公开的整合工作外。同时资助非开源软件也违背项目[宪法](https://docs.decred.org/governance/decred-constitution/)。讨论内容记录在[这里](https://github.com/karamble/dcrcommunityweb/issues/1)，这些讨论同时也激发了一些提案指南的[改进](https://github.com/decred/dcrdocs/pull/896)，列明任何成果的任何限制。
 
-@richardred posted an [analysis](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/early-voting-influence.md) exploring to what degree early votes influence the behavior of late voters, and whether this kind of effect could influence the outcome of votes.
+@richardred 发布了一项[分析](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/early-voting-influence.md)，探讨早期投票在什么程度上会影响晚期投票者的行为，和这种影响是否会改变投票结果。
 
-For greater detail, analysis and commentary see @richardred's Politeia Digest [issue 12](https://richardred0x.github.io/politeia-digest/issue-012.html) and [issue 13](https://richardred0x.github.io/politeia-digest/issue-013.html).
+更多细节，分析与评论请参考 @richardred 的 Politeia 简报[第 12 期](https://richardred0x.github.io/politeia-digest/issue-012.html) 和 [第 13 期](https://richardred0x.github.io/politeia-digest/issue-013.html)。
 
-To get notified about Politeia proposal activity, enable email notifications in your Politeia profile or follow [@pi_crumbs](https://twitter.com/pi_crumbs) and [@slices_of_pi](https://twitter.com/slices_of_pi) on Twitter.
+要获得有关 Politeia 提案活动的通知，请在您的 Politeia 个人资料中启用电子邮件通知，或在推特上关注 [@pi_crumbs](https://twitter.com/pi_crumbs) 和 [@slices_of_pi](https://twitter.com/slices_of_pi)。
 
-Discussions:
+其他讨论:
 
-* The rate of [spending the Treasury](https://www.reddit.com/r/decred/comments/b5vlrl/we_have_spent_23_of_decred_treasury_should_we_be/) and allocation of funds.
-* Ideas for [financial reporting](https://www.reddit.com/r/decred/comments/b2zopq/simple_financial_reporting/).
-* Upvoting of own comments was brought up again and resulted in some consensus around disabling that ability. The corresponding [issue](https://github.com/decred/politeiagui/issues/845) was reopened and updated to index all discussions about the subject.
-* @richardred suggested to base the quorum solely on the percentage of [Yes votes](https://github.com/decred/politeia/issues/729) (currently Yes+No votes are counted) and produced a [simulation](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/quorum-change-examples.md) that visualizes different quorum calculation methods.
+* [社区基金开销速度](https://www.reddit.com/r/decred/comments/b5vlrl/we_have_spent_23_of_decred_treasury_should_we_be/)和资金的分配。
+* 有关[财政报告](https://www.reddit.com/r/decred/comments/b2zopq/simple_financial_reporting/)格式的主意.
+* 对于推自己的评论问题再次被提出并达成共识决定禁用该选项。相关[讨论](https://github.com/decred/politeiagui/issues/845)记录了该课题的所有讨论。
+* @richardred 提议将法定票数存粹基于[Yes 票](https://github.com/decred/politeia/issues/729)的比例。(目前 Yes+No 选票都被计算)。他也制作了一个[模拟](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/quorum-change-examples.md)视化不同的法定票数计算方法场景。
 
 ## 网络
 
@@ -312,16 +312,16 @@ New Android malware was [detected](https://www.group-ib.com/media/gustuff/) that
 
 Beta of Neutrino wallet for Bitcoin Cash was [released](https://news.bitcoin.com/bitcoin-cash-developers-launch-privacy-preserving-light-client-neutrino/) for Android. It uses the same SPV tech as Decred to connect wallets directly to the nodes without intermediaries. Decred and [gcash](https://github.com/gcash) project have common code which makes an opportunity for code reuse and collaboration - see [December](201812.md) issue for more coverage.
 
-## PSA: Decred Journal Takes a Break
+## 公告: Decred 月报要休息啦
 
-Twelve issues mark a full year of Decred Journal exposing Decred's ethos, depth and community involvement.
+12 期标志着一整年的 Decred 月报展示了 Decred 精神，深度和社区的参与。
 
-I (@bee) have accumulated a lot of things in life and in Decred that I would like to complete, and also I need a break. Therefore, the release of future issues is not guaranteed. I will, however, remain available in Matrix and do my best to assist anyone willing to produce Decred Journal. To get involved join [#writers_room](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org).
+本人（@bee) 已在生活上和 Decred 里累积了很多我个人想完成的事情，而且我也需要休息一下。因此，未来月报还会不会发布仍然不确定。但是我将继续在 Matrix 中，尽力帮助任何愿意继续制作 Decred 月报的人。有兴趣的请加入[#writers_room](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org)。 
 
-Thank you to all readers and contributors!
+在此感谢所有读者和贡献者！ 
 
 ## 关于月报
-三月为英文第12期 [GitHub](https://xaur.github.io/decred-news/journal/201903) 月报。 点击[这里](https://xaur.github.io/decred-news/)浏览所有往期月报，翻译等。
+三月为英文第12期 [GitHub](https://xaur.github.io/decred-news/journal/201903) 月报。点击[这里](https://xaur.github.io/decred-news/)浏览所有往期月报，翻译等。
 
 大部分来自第三方的信息在基本检查无误后转发。Decred Journal 及月报作者无法验证所有信息。请注意骗局并进行自己的研究。
 
