@@ -1,7 +1,15 @@
 # Decred月报 - 3月
 
-![](img/)
+![abstract art](img/MAR19_journal-201903-384.jpg "Undercurrent by @saender. It is empirical and abstract but the concept is to let people know via Journal and the image about the unseen forces that move it forward.")
 
+
+在3月份里，治理方面看到了一些重要的提案和投票，并且在开发方面的核心软件上取得了可靠的进展 - 这是Decred的一个相当典型的月份。
+
+最新的[共识投票](https://voting.decred.org/)[修复](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)闪电网络序列锁定目前在几乎100% 的支持率和 54% 的参与率即将完成，投票预计将于 4月11日结束。
+
+在 Politeia 上，发起了 5 项新提案，并有两项提案完成投票（一个通过，一个不通过）。被提交的提案中包括了 @moo31337 提交的[重要提案](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f)，其中概述了利益相关者去中心化控制社区基金开销的途径。
+
+在 dcrd 里也看到了一些巨大的[重构](https://github.com/decred/dcrd/pull/1656)，这将在 v1.5.0 发布时为用户带来显著的性能改进，当然高级用户也可以从源码构建。
 
 ## 开发进展总结
 
@@ -40,52 +48,45 @@
 
 [Decrediton](https://github.com/decred/decrediton): 选票活动热图可视化和一些较小的修复 - 2位贡献者的 [5 份提交](https://github.com/decred/decrediton/compare/35ab6e216dde0bc90d76334e25eb5174bf62e623...f80e832e55231a8f4cb7b1aa69f6e2faea2709df)。
 
-[Politeia](https://github.com/decred/politeia): Added tab to [preview](https://github.com/decred/politeiagui/pull/1018) proposal text, completed feature to [view difference](https://github.com/decred/politeiagui/pull/1004) between proposal versions, changed [default comment sort]((https://github.com/decred/politeiagui/pull/1034)) to show comments with highest score on Top, added feature to set sort in the URL. Many bugs were fixed. These changes were merged in the master branch and will be deployed on the [main proposals site](https://proposals.decred.org/) after some testing on the [test site](https://test-proposals.decred.org/).
+[Politeia](https://github.com/decred/politeia): 添加提案文本[预览](https://github.com/decred/politeiagui/pull/1018)标签，完成提案版本的[查看差异](https://github.com/decred/politeiagui/pull/1004)功能，更改[默认评论排序]((https://github.com/decred/politeiagui/pull/1034))为先显示最高分评论，添加在 URL 中设置排序功能。同时也修复了许多错误。这些更改已在主分支中合并，并将在[测试网页](https://test-proposals.decred.org/)测试后部署在[主提案网页](https://proposals.decred.org/)上。
 
-In terms of code infrastructure, several parts of contractor management system landed in master, completed several steps of refactoring to fix accumulated layer violations and better support contractor management system, test coverage [increased](https://github.com/decred/politeia/pull/727) from 13% to 19%.
+在代码基础设施方面，承包商管理系统的几个部分在快速开发阶段后进行代码库清理，之后进入主分支。测试覆盖率已从13％[增加](https://github.com/decred/politeia/pull/727)到19％。
 
-A bug was detected that allowed advanced users to cast votes beyond the end of the voting period. It was known for some time and the fix was awaiting deployment. Upon learning that late votes were occurring the fix was deployed on Mar 13.
+一个高级用户可以在投票期结束后投票漏洞被发现。漏洞被发现已有一段时间了，目前正在等待部署修复。在发现有些选票选择晚投票后，修复程序已于3月13日部署。Politeia UI 可能会显示某些提案的投票计数略有错误，但投票结果不受影响。
 
-> The reassuring part about Politeia is that all of the data is publicly available and is periodically timestamped onto the Decred blockchain. This means that anyone can pull the data down from github and cryptographically verify which votes were cast within the voting period (+/- 1 hour) and which ones were cast after the voting period had ended. (@lukebp in [Politeia Digest 12](https://richardred0x.github.io/politeia-digest/issue-012.html))
+> 有关 Politeia，最令人放心的是所有数据都是公开的，并且定期时间戳到 Decred 区块链上。这意味着任何人都可以从 github 中提取数据并加密验证在投票期内（+/- 1小时）投出的选票以及在投票期结束后投票的选票。(@lukebp 在 [Politeia Digest 第12期](https://richardred0x.github.io/politeia-digest/issue-012.html))
 
-Merged a total of 40 commits in [politeia](https://github.com/decred/politeia/compare/8057ced5e4c0a04823a261cc064602f1a8a2ab1b...13eb0038975ff4fcddb70565687434354d208a0f) and [politeiagui](https://github.com/decred/politeiagui/compare/52c775330beb1b77ed817c85bccaaf2a8e199cdc...72885ed6e58c8a2f1bfbd2d039f6cd19b52912fe) from 6-9 contributors.
+来自 6-9 位贡献者，总共 40 份提交已在[politeia](https://github.com/decred/politeia/compare/8057ced5e4c0a04823a261cc064602f1a8a2ab1b...13eb0038975ff4fcddb70565687434354d208a0f) 及 [politeiagui](https://github.com/decred/politeiagui/compare/52c775330beb1b77ed817c85bccaaf2a8e199cdc...72885ed6e58c8a2f1bfbd2d039f6cd19b52912fe)合并。
 
-[dcrandroid](https://github.com/decred/dcrandroid): minor bug fixes, Chinese translation added, speed optimizations for viewing the transaction history.
+[dcrandroid](https://github.com/decred/dcrandroid): 小错误修复，添加中文翻译，查看交易历史的速度优化。
 
-[dcrios](https://github.com/raedahgroup/dcrios): dcrios beta is in good shape and ready for more public exposure. Testers are welcome and they can get the app at [TestFlight](https://testflight.apple.com/join/dvq51tCh). There are only a couple of minor outstanding bugs. There are known layout bugs for iPod Touch devices which are still in the works. The blocker at the moment is dealing with some formalities to approve Apple Store account. As soon as that is done, an official release client will be made.
+[dcrios](https://github.com/raedahgroup/dcrios): dcrios beta 已经完成并可以接受更多测试。欢迎测试人员在[TestFlight](https://testflight.apple.com/join/dvq51tCh)中下载 app。目前还存在数个小的错误。在 iPod Touch 设备上有已知并正在修复的排版错误。目前的问题是处理一些批准 Apple Store 账户的手续。一旦完成将立即正式发布客户端。
 
-[dcrdata](https://github.com/decred/dcrdata): Version 4 [released](https://twitter.com/decredexplorer/status/1110618796975370240) and is available at [explorer.dcrdata.org](https://explorer.dcrdata.org/).
+[dcrdata](https://github.com/decred/dcrdata): 第4版[已发布](https://twitter.com/decredexplorer/status/1110618796975370240)并上线[explorer.dcrdata.org](https://explorer.dcrdata.org/)。
 
-User facing changes include complete redesign with new page styles, more information and better organization, Politeia proposal pages, aggregate block information on time intervals, log and linear scaling for charts, exchange rate monitoring, and lots of smaller changes. It is rumored that the HODL watermark is gone. For development side check the full [release notes](https://github.com/decred/dcrdata/releases/tag/v4.0.0).
+面向用户的变化包括大幅度的重新设计页面样式，更多信息和更好的组织，Politeia提案页面，时间间隔的区块信息，图表的日志和线性缩放，汇率监控和许多小改动。据说，HODL水印也已经消失。对于开发更新，请查看完整的[发布说明](https://github.com/decred/dcrdata/releases/tag/v4.0.0)。
 
-During 3 months of development, the v4 release received a stunning 48K added and 19K deleted lines in 325 commits from 11 contributors. Congrats!
+在 3 个月的开发过程中，v4 版本在 11 个贡献者的 325 个提交中获得了惊人的 48K 行添加和19K 行删除。恭喜dcrdata！
 
-> There are features and improvements already brewing 4.1, so minor release should follow relatively quickly. 4.0 scope creeped quite a bit, but all for good reason, and it was worth it. ([@chappjc](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155305431834229kjptE:decred.org))
+> 有些功能和改进已经在酝酿 4.1版本，因此应该相对较快地发布次要版本。4.0范围相当大，但都有充分的理由并且是值得的。([@chappjc](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$155305431834229kjptE:decred.org))
 
-In progress:
+进行中: 继续进行负载测试和性能优化，通过 Go 模块改进依赖管理，实时共识[投票跟踪](https://github.com/decred/dcrdata/pull/1125), 更快的[图表](https://github.com/decred/dcrdata/pull/1126), 提案投票[图表](https://github.com/decred/dcrdata/pull/1210) 和 [dcrextdata](https://github.com/raedahgroup/dcrextdata) -  dcrdata的一个组件，用于跟踪区块链中不存在的数据，例如有关交易价格和矿池的信息。
 
-* Load testing and performance optimization continues.
-* Dependency management improvements with Go modules.
-* Live consensus [vote tracking](https://github.com/decred/dcrdata/pull/1125).
-* Faster [charts](https://github.com/decred/dcrdata/pull/1126).
-* Proposal votes [charts](https://github.com/decred/dcrdata/pull/1210).
-* [dcrextdata](https://github.com/raedahgroup/dcrextdata), a component for dcrdata that will allow tracking of data not present on the blockchain, such as historical information about exchange prices and mining pools.
+[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher): [已发布](https://github.com/matheusd/dcr-split-ticket-matcher/releases/tag/v0.7.6)的 v0.7.6 优化从 dcrdata 获取未使用输出并添加 macOS 的二进制文件。
 
-[Ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher): v0.7.6 [released](https://github.com/matheusd/dcr-split-ticket-matcher/releases/tag/v0.7.6) that optimizes the fetching of unspent outputs from dcrdata and adds macOS binaries.
+[docs](https://github.com/decred/dcrdocs): 全新更详细的[分票 Ticket Splitting](https://docs.decred.org/proof-of-stake/ticket-splitting/)指引,重做并扩展[共识投票规则Consensus Rules Voting](https://docs.decred.org/governance/consensus-rule-voting/consensus-rules-voting/)，[提案指南](https://docs.decred.org/governance/politeia/proposal-guidelines/)更新以包括社区基金资助提案的关键要求。
 
-[docs](https://github.com/decred/dcrdocs): new detailed [Ticket Splitting](https://docs.decred.org/proof-of-stake/ticket-splitting/) guide, [Consensus Rules Voting](https://docs.decred.org/governance/consensus-rule-voting/consensus-rules-voting/) reworked and extended, [Proposal Guidelines](https://docs.decred.org/governance/politeia/proposal-guidelines/) updated to include key requirements for proposals funded from Treasury.
+[decred.org](https://github.com/decred/dcrweb): 更新交易所信息和翻译，[自托管](https://github.com/decred/dcrweb/pull/604)介绍影片以去除对 YouTube 请求。
 
-[decred.org](https://github.com/decred/dcrweb): updated exchanges and translations, [self-hosted](https://github.com/decred/dcrweb/pull/604) intro video to remove a YouTube request.
+其他:
 
-Other:
+* Raedah Group 正在尝试使用 Go 编写 [godcr](https://github.com/raedahgroup/godcr/) - 一个拥有多种用户界面模式的替代钱包客户端。命令行界面，终端，浏览器[nucular](https://github.com/aarzilli/nucular) 和 [Fyne](https://github.com/fyne-io/fyne) 前端 GUI 的工作在进行中。([截屏](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$155329781839253ivNYC:decred.org))。
+* Raedah Group 也正在开发 [dcrseedgen](https://github.com/raedahgroup/dcrseedgen) - 一个使用 Go 和 nucular UI 编写的独立 Decred 种子生成器。
+* [timestamp.decred.org](https://timestamp.decred.org/)获得了重新设计，文本也被重新编写。
+* 新的 [dcrtime_checker](https://github.com/decred/dcrtime/tree/master/cmd/dcrtime_checker)工具可以（不通过 dcrtime）直接验证区块链的锚点。
+* 大约一半的选票矿池 （VSP） 已升级到[自托管验证（self-host captcha）](https://github.com/decred/dcrstakepool/issues/279)来保护他们用户的隐私。请在[这里](https://github.com/decred/dcrstakepool/issues/326)追踪状态。
 
-* Raedah Group is experimenting with an alternative [godcr](https://github.com/raedahgroup/godcr/) wallet client written in Go with multiple user interface modes. Work is in progress for CLI, terminal _(yes!)_, web browser, [nucular](https://github.com/aarzilli/nucular) and [Fyne](https://github.com/fyne-io/fyne) GUI front-ends ([screenshots](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$155329781839253ivNYC:decred.org)).
-* Raedah Group is also working on [dcrseedgen](https://github.com/raedahgroup/dcrseedgen) - a standalone Decred seed generator using Go and the nucular UI.
-* [timestamp.decred.org](https://timestamp.decred.org/) was redesigned and the text was rewritten to be more useful.
-* New [dcrtime_checker](https://github.com/decred/dcrtime/tree/master/cmd/dcrtime_checker) tool was created to verify anchors against the blockchain directly (without interacting with dcrtimed).
-* About half VSPs upgraded to [self-host captcha](https://github.com/decred/dcrstakepool/issues/279) to protect privacy of their users. Status can be tracked [here](https://github.com/decred/dcrstakepool/issues/326).
-
-Dev activity stats for March: {} active PRs, {} master commits, {} added and {} deleted lines spread across {} repositories. Contributions came from {}-{} developers per repository. ([chart]({}))
+3 月开发活动数据: 分布于 8 个最活跃存储库（repositories) 有 360 个有效 PRs, 497 个主要提交, 46K 行添加 及 34K 行删除。每个存储库中有来自 2-9 位开发者的贡献。
 
 ## 人员
 
@@ -95,36 +96,35 @@ Dev activity stats for March: {} active PRs, {} master commits, {} added and {} 
 
 在 3月里，[DCR 基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 16,288 DCR，并花了 13,595 DCR，使用 DCR 在 3 月份的每日平均美元价格 18.14 美元计算，本月收到 29.6 万 美元以及支出 24.7 万 美元。由于这些付款用于支付 2 月份完成的工作，因此可以用 2 月份的平均价格 16.51 美元计算 - 在这种情况下，美元收到的数字是 26.9 万美元以及支出 22.4 万美元。4月{}日 为止，基金会余额为 {} DCR (按 {} 美元计算相当于 {}万 美金)。
 
-于 4月{}日 的提案状态:
+于 4月10日 的提案状态:
 
-  Proposal status as of {}:
+* [Trust Wallet integration](https://proposals.decred.org/proposals/2ababdea7da2b3d8312a773d477272135a883ed772ba99cdf31eddb5f261d571) approved with 67% Yes votes of the 9.3K tickets that voted. Ahead of the vote, Trust Wallet developers [moved forward](https://github.com/TrustWallet/wallet-core/issues/43) to integrate Decred on their end.
+* [ATM Integration - Planning Phase](https://proposals.decred.org/proposals/aea224a561cfed183f514a9ac700d68ba8a6c71dfbee71208fb9bff5fffab51d) rejected - 52.5% Yes among 12.7K voting tickets didn't reach the threshold of 60%. Possibility of a second attempt was discussed [here](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15542882616188dHEHP:decred.org).
+* [Bring decred to Africa(Ghana) Adoption program for merchants and businesses](https://proposals.decred.org/proposals/dac06f18bfeb5f7667e56554774de3bb99151018ce16a64f5353bab45819763b) by @georgepro seeks $41,054 to fund 3 months of outreach for a merchant adoption program in Ghana. Vote started, reached the quorum and has 95% No votes as of Apr 10.
+* Re-submission of the Coffee Wallet [proposal](https://proposals.decred.org/proposals/45de9806c952c5ffc2fc6782fddbc74c852c26e3fb0e950144b92d75082c4731) after it was abandoned was [blocked](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$155144086813111EMAcC:decred.org) by admins as an attempt to use Politeia to market the product.
+* [Decentralize Treasury Spending](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f) by @moo31337 outlines a 2-step process where a draft spending transaction is published on Politeia for review, and then voted for on-chain by the stakeholders. The development, testing and a required consensus vote are projected to take on the order of 9-12 months, with the budget of $200,000-250,000.
+* [Fiat pairs integration on EXMO Exchange](https://proposals.decred.org/proposals/950e8149e594b01c010c1199233ab11e82c9da39174ba375d286dc72bb0a54d7) by vadymprykhodko was published following a [pre-proposal](https://www.reddit.com/r/decred/comments/b0y9le/integration_on_exmo_exchange_new_fiat_pairs/) on r/decred. The proposal seeks $23,800 to add DCR fiat pairs on EXMO, an exchange popular in Eastern Europe.
+* [Amendment to Decred Constitution](https://proposals.decred.org/proposals/fd56bb79e0383f40fc2d92f4473634c59f1aa0abda7aabe29079216202c83114) by @richardred was submitted following a lot of discussions tracked in [this issue](https://github.com/xaur/decred-issues/issues/107).
 
-  * [Trust Wallet integration](https://proposals.decred.org/proposals/2ababdea7da2b3d8312a773d477272135a883ed772ba99cdf31eddb5f261d571) approved by 67% Yes of the 9.3K tickets that voted. Ahead of the vote, Trust Wallet developers [moved forward](https://github.com/TrustWallet/wallet-core/issues/43) to integrate Decred on their end.
-  * [ATM Integration - Planning Phase](https://proposals.decred.org/proposals/aea224a561cfed183f514a9ac700d68ba8a6c71dfbee71208fb9bff5fffab51d) rejected with 52.5% Yes among 12.7K voting tickets. Possibility of a second attempt was discussed [here](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$15542882616188dHEHP:decred.org).
-  * Re-submission of the Coffee Wallet [proposal](https://proposals.decred.org/proposals/45de9806c952c5ffc2fc6782fddbc74c852c26e3fb0e950144b92d75082c4731) after it was abandoned was [blocked](https://matrix.to/#/!MIGqWXfLFBwhipPKYL:decred.org/$155144086813111EMAcC:decred.org) by admins as an attempt to use Politeia to market the product.
-  * [Decentralize Treasury Spending](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f) by @moo31337 outlines 2-step process where a draft spending transaction is published on Politeia for review, and then voted on-chain by the stakeholders. The development, testing and a required consensus vote are projected to be on the order of 9-12 months, with the budget of $200,000-250,000.
-  * [Fiat pairs integration on EXMO Exchange](https://proposals.decred.org/proposals/950e8149e594b01c010c1199233ab11e82c9da39174ba375d286dc72bb0a54d7) by vadymprykhodko was published following a [pre-proposal](https://www.reddit.com/r/decred/comments/b0y9le/integration_on_exmo_exchange_new_fiat_pairs/) on r/decred. The proposal seeks $23,800 to add DCR fiat pairs on EXMO, an exchange popular in Eastern Europe.
-  * [Amendment to Decred Constitution](https://proposals.decred.org/proposals/fd56bb79e0383f40fc2d92f4473634c59f1aa0abda7aabe29079216202c83114) by @richardred was submitted following a lot of discussion linked in [this issue](https://github.com/xaur/decred-issues/issues/107).
+Pre-proposals:
 
-  Pre-proposals:
+* [India education and awareness campaign](https://www.reddit.com/r/decred/comments/awb5y0/preproposal_decred_india_community_new_user/) by u/Blocknext. In a chat [discussion](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15515162772723165JzrFj:matrix.org) it was pointed out that a [similar proposal](https://www.dash.org/forum/threads/building-commercial-dash-use-in-the-freelancing-industry-across-south-asia.17890/) was submitted for Dash.
+* [Second constitutional amendment](https://www.reddit.com/r/decred/comments/b84t6b/preproposal_second_constitutional_amendment_to/) by @richardred to declare February 8th the International day of Stakey.
 
-  * [India education and awareness campaign](https://www.reddit.com/r/decred/comments/awb5y0/preproposal_decred_india_community_new_user/) by u/Blocknext. In a chat [discussion](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15515162772723165JzrFj:matrix.org) it was pointed out that a [similar proposal](https://www.dash.org/forum/threads/building-commercial-dash-use-in-the-freelancing-industry-across-south-asia.17890/) was submitted for Dash.
-  * [Second constitutional amendment](https://www.reddit.com/r/decred/comments/b84t6b/preproposal_second_constitutional_amendment_to/) by @richardred to declare February 8th the International day of Stakey.
+decredcommunity.org got some [criticism](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$155227203622209rOKeX:decred.org) for not being open source and not explicitly stating it in the body of the proposal. One of the arguments is that the Treasury has never paid for closed source work before, except for some integrations where it could not be disclosed. Funding of software that is not open source also goes against the project's [constitution](https://docs.decred.org/governance/decred-constitution/). Captured in [this issue](https://github.com/karamble/dcrcommunityweb/issues/1), the discussion also triggered some [improvements](https://github.com/decred/dcrdocs/pull/896) in proposal guidelines to state any restrictions in terms of the licensing of deliverables.
 
-  decredcommunity.org got some [criticism](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org/$155227203622209rOKeX:decred.org) for not being open source and not explicitly stating it in the body of the proposal. One of the arguments is that the Treasury never paid for closed source work before, except for some integrations where it could not be disclosed. Captured in [this issue](https://github.com/karamble/dcrcommunityweb/issues/1), the discussion also triggered some [improvements](https://github.com/decred/dcrdocs/pull/896) in proposal guidelines to state any restrictions on deliverables.
+@richardred posted an [analysis](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/early-voting-influence.md) exploring to what degree early votes influence the behavior of late voters, and whether this kind of effect could influence the outcome of votes.
 
-  @richardred posted an [analysis](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/early-voting-influence.md) exploring to what degree early votes influence the behavior of late voters, and eventually the result of the vote.
+For greater detail, analysis and commentary see @richardred's Politeia Digest [issue 12](https://richardred0x.github.io/politeia-digest/issue-012.html) and [issue 13](https://richardred0x.github.io/politeia-digest/issue-013.html).
 
-  For greater detail, analysis and commentary see @richardred's Politeia Digest [issue 12](https://richardred0x.github.io/politeia-digest/issue-012.html) and [issue 13](https://richardred0x.github.io/politeia-digest/issue-013.html).
+To get notified about Politeia proposal activity, enable email notifications in your Politeia profile or follow [@pi_crumbs](https://twitter.com/pi_crumbs) and [@slices_of_pi](https://twitter.com/slices_of_pi) on Twitter.
 
-  To get notified about Politeia proposal activity, enable email notifications in your Politeia profile or follow [@pi_crumbs](https://twitter.com/pi_crumbs) and [@slices_of_pi](https://twitter.com/slices_of_pi) on Twitter.
+Discussions:
 
-  Discussions:
-
-  * The rate of [spending the Treasury](https://www.reddit.com/r/decred/comments/b5vlrl/we_have_spent_23_of_decred_treasury_should_we_be/) and allocation of funds.
-  * Ideas for [financial reporting](https://www.reddit.com/r/decred/comments/b2zopq/simple_financial_reporting/).
-  * Upvoting of own comments was brought up again with some consensus around disabling that ability. All discussions are indexed in [this issue](https://github.com/decred/politeiagui/issues/845) which was reopened.
-  * @richardred suggested to base the quorum solely on the percentage of [Yes votes](https://github.com/decred/politeia/issues/729) (currently Yes+No votes are counted) and produced a [simulation](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/quorum-change-examples.md) that visualizes different quorum calculation methods.
+* The rate of [spending the Treasury](https://www.reddit.com/r/decred/comments/b5vlrl/we_have_spent_23_of_decred_treasury_should_we_be/) and allocation of funds.
+* Ideas for [financial reporting](https://www.reddit.com/r/decred/comments/b2zopq/simple_financial_reporting/).
+* Upvoting of own comments was brought up again and resulted in some consensus around disabling that ability. The corresponding [issue](https://github.com/decred/politeiagui/issues/845) was reopened and updated to index all discussions about the subject.
+* @richardred suggested to base the quorum solely on the percentage of [Yes votes](https://github.com/decred/politeia/issues/729) (currently Yes+No votes are counted) and produced a [simulation](https://github.com/RichardRed0x/pi-research/blob/master/analysis/voting/quorum-change-examples.md) that visualizes different quorum calculation methods.
 
 ## 网络
 
@@ -271,11 +271,14 @@ CoinMarketCap [开始显示](https://medium.com/@davebalter/coinmarketcap-partne
 在 3月中 DCR 交易价格为 美金 15.93-23.26 / BTC 0.00414-0.00596。平均日汇率为 18.14 美元。
 
 ## 相关外部信息
-GitHub is [updating](https://github.blog/2019-03-14-githubs-site-policy-updates-are-ready-for-your-feedback/) their policy. New drafts were published for feedback till Apr 12 and will come into effect Apr 19. Among the changes is commitment to react to [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track), sharing user data with [more](https://github.com/github/site-policy/pull/154) 3rd party processors, updated use of third party user trackers. The change to clarify influence of U.S. sanctions triggered a question how this might impact Decred contributors - if you know, please comment in [this issue](https://github.com/xaur/decred-issues/issues/125) or [on Reddit](https://old.reddit.com/r/decred/comments/b2xsw3/github_terms_update_has_more_sanctions_stuff/). Some changes might be unpleasant but are pretty common for most companies and give us a good moment to reflect on our beliefs about free stuff. Also, unlike most companies, GitHub has all their policy documents versioned transparently in a Git repo that anybody can clone and inspect. The idea to have a similar repository for Decred was discussed a few times and there is a concept sandbox [repository](https://github.com/RichardRed0x/governance-docs) showing how it might look like.
 
-Stellar (XLM) [experienced](https://messari.io/article/messari-research-stellar-suffered-and-quietly-patched-a-2-2-billion-xlm-inflation-bug-in-2017) an inflation bug which was exploited to print 2.25 billion XLM (worth $10 million at the time, and nearly 25% of the circulating supply) in April 2017. This bug was lightly reported at the time, it was fixed by the Stellar Development Foundation (SDF) who burned an equal amount from its community reserve. That the SDF could identify, fix and mitigate such a major exploit so quietly says something about how decentralized Stellar is.
+GitHub is [updating](https://github.blog/2019-03-14-githubs-site-policy-updates-are-ready-for-your-feedback/) their policy. New drafts were published for feedback till Apr 12 and will come into effect Apr 19. Among the changes is commitment to react to [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track), sharing user data with [more](https://github.com/github/site-policy/pull/154) 3rd party processors and updated use of third party user trackers. The change to clarify influence of U.S. sanctions triggered a question how this might impact Decred contributors - if you know, please comment in [this issue](https://github.com/xaur/decred-issues/issues/125) or [on Reddit](https://old.reddit.com/r/decred/comments/b2xsw3/github_terms_update_has_more_sanctions_stuff/). Some changes might be unpleasant but are pretty common for most companies and give us a good moment to reflect on our beliefs about free stuff. Also, unlike most companies, GitHub has all their policy documents versioned transparently in a Git repo that anybody can clone and inspect. The idea to have a similar repository for Decred was discussed a few times and there is a concept sandbox [repository](https://github.com/RichardRed0x/governance-docs) showing how it might look like.
 
-PIVX experienced an inflation bug which was [exploited](https://medium.com/@dev.pivx/report-wrapped-serials-attack-5f4bf7b51701) in March. The bug concerned the network's zerocoin protocol (zPIV), and allowed an attacker to fake serial numbers and spend zerocoins that had never been minted. Over the course of five days, transactions creating and spending 568,897 PIV (~$438,000) were made before zPIV the exploit was identified and zPIV transactions were disabled until it could be fixed. Besides regular takeaways like "consensus code is hard" and "cryptography is hard", this case has more food for thought. First, Zerocoin functionality was disabled immediately after the exploit was discovered using one of the "sporks". Someone with the keys for these sporks can affect the whole network. Second, the bug was spotted because some nodes were [switching away](https://github.com/PIVX-Project/PIVX/pull/681) from OpenSSL that let the bug go unnoticed (OpenSSL is long [famous](https://www.peereboom.us/assl/assl/html/openssl.html) for its quality). While those nodes were not full alternative implementations, it still shows how a mismatch between diverse software helps to discover bugs. Third, it is possible to know exactly how many coins were minted because PIVX's Zerocoin protocol allows supply to be [auditable](https://zcoin.io/zcoins-privacy-technology-compares-competition/), unlike some other protocols.
+Stellar (XLM) [experienced](https://messari.io/article/messari-research-stellar-suffered-and-quietly-patched-a-2-2-billion-xlm-inflation-bug-in-2017) an inflation bug which was exploited to print 2.25 billion XLM (worth $10 million at the time, and nearly 25% of the circulating supply) in April 2017. This bug was lightly reported at the time, it was fixed by the Stellar Development Foundation (SDF) who burned an equal amount from its community reserve to offset the unintended inflation. That the SDF could identify, fix and mitigate such a major exploit so quietly says something about how decentralized Stellar is.
+
+PIVX experienced an inflation bug which was [exploited](https://medium.com/@dev.pivx/report-wrapped-serials-attack-5f4bf7b51701) in March. The bug concerned the network's zerocoin protocol (zPIV), and allowed an attacker to fake serial numbers and spend zerocoins that had never been minted. Over the course of five days, transactions creating and spending 568,897 PIV (~$438,000) were made before the exploit was identified and zPIV transactions were disabled (until it could be fixed). Besides regular takeaways like "consensus code is hard" and "cryptography is hard", this case has more food for thought. First, zerocoin functionality was disabled immediately after the exploit was discovered using one of the "sporks". Someone with the keys for these sporks can affect the whole network. Second, the bug was spotted because some nodes were [switching away](https://github.com/PIVX-Project/PIVX/pull/681) from OpenSSL that let the bug go unnoticed (OpenSSL is long [famous](https://www.peereboom.us/assl/assl/html/openssl.html) for its quality). While those nodes were not full alternative implementations, it still shows how a mismatch between diverse software helps to discover bugs. Third, it is possible to know exactly how many coins were minted because PIVX's zerocoin protocol allows supply to be [auditable](https://zcoin.io/zcoins-privacy-technology-compares-competition/), unlike some other privacy protocols.
+
+Ethereum is actively discussing a dev fund funded from block rewards. Kickstarted by Gitcoin co-founder, [ERC 1789](https://github.com/ethereum/EIPs/issues/1789) (continued as [EIP 1890](https://github.com/ethereum/EIPs/pull/1890)) provides an overview of funding models employed by open source and [makes a case](https://medium.com/gitcoin/funding-open-source-in-the-blockchain-era-8ded753bf05f) for inflation funding for protocol maintenance. A supplementary GitHub project was organized with a collection of [documents](https://github.com/ethereum-funding/docs) and more than 50 [issues](https://github.com/ethereum-funding/blockrewardsfunding/issues).
 
 Monero's new [Community Crowdfunding System](https://ccs.getmonero.org/) was [launched](https://www.reddit.com/r/Monero/comments/ay0j5n/the_new_ffs_is_complete_please_use_and_explore_it/), and a number of projects were funded.
 
@@ -289,31 +292,33 @@ Tezos [concluded](https://www.coindesk.com/welcome-to-athens-tezos-completes-his
 
 Grin developers [voted](https://www.coindesk.com/privacy-cryptocurrency-grin-votes-to-fund-third-full-time-developer) to fund 3rd full time developer in a weekly [governance meeting](https://github.com/mimblewimble/grin-pm/blob/master/notes/20190312-meeting-governance.md). An interesting aspect of Grin is their efforts towards reporting and transparency: multiple versioned documents are published on GitHub, including [decision log](https://github.com/mimblewimble/grin-pm/blob/master/decision_log.md), [meeting notes](https://github.com/mimblewimble/grin-pm/tree/master/notes), income and [expenses](https://github.com/mimblewimble/grin-pm/tree/master/financials).
 
-Jack Dorsey [announced](https://www.coindesk.com/square-hiring-crypto-engineers-bitcoin) Square is looking to fund engineers and a designer to work full-time on Bitcoin and cryptocurrency ecosystem, as a way to give back to the community. One [response](https://twitter.com/martybent/status/1108493263185559552) noted that this shows why "dev fund" embedded in a protocol is not needed, because network participants have enough incentives to fund their infrastructure. In case of Decred, if the Treasury is ever deemed no longer necessary, it is in the power stakeholders to repurpose it for investing into a wider crypto/open source/open hardware ecosystem, or disband it entirely.
-
-Investigation of QuadrigaCX by Ernst & Young [found](https://cointelegraph.com/news/report-quadrigacx-wallets-have-been-empty-unused-since-april) that exchange's cold wallets were empty and unused since April 2018. Kraken [offered](https://blog.kraken.com/post/2155/were-offering-a-100000-reward-for-discovery-of-quadriga-coins/) a $100K reward for tips that best lead to the discovery of the missing $190 million.
-
-New research from @BitwiseInvest [suggests](https://twitter.com/BitwiseInvest/status/1109114656944209921) 95% of reported BTC spot volume is fake, but also notes many good news about the crypto ecosystem.
-
-IMF found an [elegant solution](https://blogs.imf.org/2019/02/05/cashing-in-how-to-make-negative-interest-rates-work/) how to make negative interest rates work as a counter-measure to a possible future crisis. Negative interest rate of -3% is when you deposit $100 to a bank and withdraw $97 a year later. Such rate is currently hard to enforce because people would just withdraw to cash. The "straightforward" solution would be to move into a happy "cashless world" where the bank can set arbitrary negative rate and you simply can't withdraw to cash to save your value from melting. This is expected to "make consumption and investment more attractive, ... jolt lending, boost demand, and stimulate the economy". But getting rid of cash is not easy and is years away. So another solution to sustain a negative interest rate that is easier to roll today is to split a fiat currency into e-money and cash and introduce a floating conversion rate between them. This way, in a -3% interest rate scenario, you either deposit 100 cash dollars into e-dollars and get 97 e-dollars in a year, or hold cash and enjoy a 3% value loss against both goods and the e-dollar. In such a system there is no benefit to hold cash relative to bank deposits. Hasu and Su Zhu argue that crypto can [serve as a hedge](https://uncommoncore.co/bitcoin-is-a-hedge-against-the-cashless-society/) against the cashless society. Disclaimer: this paragraph is written by a layman. Economists are welcome to [comment](https://www.reddit.com/r/decred/) how this is healthy at all.
-
 Poloniex [committed](https://medium.com/circle-blog/poloniex-welcomes-grin-commits-to-share-transaction-fees-for-1-year-d07bc92cc0f8) to share a portion of Grin trading fees with [Grin General Fund](https://grin-tech.org/general_funding). 50% of all fees will be donated during the first month, and 25% for the next 11 months. Pretty rare and generous act in the space.
 
-[Coinbase Custody](https://custody.coinbase.com/) [enabled](https://twitter.com/CoinbaseCustody) deposits and withdrawals for ZIL, KNC, ZEC, XTZ and [claim](https://blog.coinbase.com/coinbase-custody-launches-staking-support-for-tezos-makerdao-governance-to-follow-68f7bc51bc53) to hold $600 million for 60 clients. The service offers regulated, insured and full offline, segregated custodial storage of crypto. The plan is to allow clients to fully participate in crypto networks besides just holding: Tezos baking (staking) is already implemented while voting in Tezos and MakerDAO is planned for Q2 2019.
+Jack Dorsey [announced](https://www.coindesk.com/square-hiring-crypto-engineers-bitcoin) Square is looking to fund engineers and a designer to work full-time on Bitcoin and cryptocurrency ecosystem, as a way to give back to the community. One [response](https://twitter.com/MartyBent/status/1108494280484630528) noted that "dev fund" embedded in a protocol is not needed because network participants have enough incentives to fund their infrastructure. In Decred's case, if the Treasury is ever deemed no longer necessary, it is within stakeholders' power to repurpose it for investing into a wider crypto/open source/open hardware ecosystem, or disband it entirely.
 
-Coinbase received a backlash for acquiring Neutrino https://news.bitcoin.com/coinbase-severs-ties-with-hacking-team-members-while-data-sharing-backlash-intensifies/ https://www.coindesk.com/bitcoin-delete-coinbase-neutrino-crypto
+Investigation of QuadrigaCX by Ernst & Young [found](https://cointelegraph.com/news/report-quadrigacx-wallets-have-been-empty-unused-since-april) that exchange's cold wallets were empty and unused since April 2018. Kraken [offered](https://blog.kraken.com/post/2155/were-offering-a-100000-reward-for-discovery-of-quadriga-coins/) a $100K reward for tips that lead to the discovery of the missing $190 million.
 
-{other: regulations, security, fun}
+New research from @BitwiseInvest [suggests](https://twitter.com/BitwiseInvest/status/1109114656944209921) 95% of reported BTC spot volume is fake, but also notes much good news about the crypto ecosystem.
 
-Texas {worthy?}
+IMF found an [elegant solution](https://blogs.imf.org/2019/02/05/cashing-in-how-to-make-negative-interest-rates-work/) to make negative interest rates work as a counter-measure to a possible future crisis. A negative interest rate of -3% would mean you deposit $100 to a bank and withdraw $97 a year later. Such rates are currently hard to enforce because people would just withdraw to cash. The "straightforward" solution would be to move into a happy "cashless world" where the bank can set arbitrary negative rates and you simply can't withdraw to cash to save your value from melting. This is expected to "make consumption and investment more attractive, ... jolt lending, boost demand, and stimulate the economy". But getting rid of cash is not easy and is years away. So another solution to sustain a negative interest rate that is easier to roll today is to split a fiat currency into e-money and cash and introduce a floating conversion rate between them. This way, in a -3% interest rate scenario, you either deposit 100 cash dollars into e-dollars and get 97 e-dollars in a year, or hold cash and enjoy a 3% value loss against both goods and the e-dollar. In such a system there is no benefit to hold cash relative to bank deposits. Hasu and Su Zhu argue that crypto can [serve as a hedge](https://uncommoncore.co/bitcoin-is-a-hedge-against-the-cashless-society/) against the cashless society. Disclaimer: this paragraph is written by a layman. Economists are welcome to [comment](https://www.reddit.com/r/decred/) how this is healthy at all.
 
-* https://www.chepicap.com/en/news/8035/texas-may-soon-require-id-verification-from-crypto-users.html
-* https://twitter.com/propelforward/status/1104745898201042950
+[Coinbase Custody](https://custody.coinbase.com/) [enabled](https://twitter.com/CoinbaseCustody) deposits and withdrawals for ZIL, KNC, ZEC, XTZ and [claim](https://blog.coinbase.com/coinbase-custody-launches-staking-support-for-tezos-makerdao-governance-to-follow-68f7bc51bc53) to hold $600 million for 60 clients. The service offers regulated, insured and full offline custodial storage of crypto. The plan is to allow clients to fully participate in crypto networks besides just holding: Tezos baking (staking) is already implemented while voting in Tezos and MakerDAO is planned for Q2 2019.
 
-vulns patched https://blog.trezor.io/firmware-updates-for-trezor-one-firmware-1-8-0-and-trezor-model-t-firmware-2-1-0-b9df91e048df
+Coinbase received a [backlash](https://www.coindesk.com/bitcoin-delete-coinbase-neutrino-crypto) from users who deleted their accounts to protest the acquisition of Neutrino, a blockchain analysis startup. The users were upset because Neutrino's executives previously worked for Hacking Team, which sold spyware to governments to aid surveillance and crackdown on journalists and critics. By coincidence, several user faced [difficulties](https://www.reddit.com/r/Bitcoin/comments/avw5uu/unable_to_close_coinbase_account/) closing their accounts. The Block [reported](https://www.theblockcrypto.com/2019/02/26/coinbase-responds-to-its-controversial-acquisition-of-blockchain-intelligence-platform-neutrino/) that Coinbase knew about Neutrino's background but still decided to proceed with the acquisition. A week later Coinbase CEO Brian Armstrong called it a "gap in our diligence process" and [announced](https://blog.coinbase.com/living-up-to-our-values-and-the-neutrino-acquisition-ba98174cdcf6) that people who worked at Hacking Team will transition out of Coinbase.
 
-https://news.bitcoin.com/bitcoin-cash-developers-launch-privacy-preserving-light-client-neutrino/
+The problem Coinbase tried to solve with that acquisition was their KYC contractors "selling client data", as [slipped](https://news.bitcoin.com/coinbase-severs-ties-with-hacking-team-members-while-data-sharing-backlash-intensifies/) in one interview. Many exchanges don't verify ID directly but instead hand it to 3rd parties, who may in turn hand it to more 3rd parties, and so on so it quickly gets [out of control](https://twitter.com/NickSzabo4/status/1102353760276275206). Per another [report](https://bitcoinmagazine.com/articles/coinbase-bought-neutrino-because-its-old-analysis-providers-sold-user-data/) there was not much choice for Coinbase due to another problem - many such firms moved to a 'give-get' data model, where Coinbase would only be permitted to use the service in return for providing its own data. Besides spreading to an unknown set of entities, another risk is that enormous amount of interlinked personal data may concentrate in a single place that will become an attractive target. For example, [Jumio](https://en.wikipedia.org/wiki/Jumio)'s Netverify is [used](https://cybersecurity-excellence-awards.com/candidates/netverify) by 5 of the top 10 exchanges including Coinbase, Bittrex and Bitstamp, and an increasing number of ICO issuers.
 
+New Android malware was [detected](https://www.group-ib.com/media/gustuff/) that targets more than 100 global banking apps including 32 cryptocurrency apps such as Bitcoin Wallet, BitPay, Cryptopay, Coinbase and others. Another [report](https://securelist.com/cryptocurrency-businesses-still-being-targeted-by-lazarus/90019/) about an old crypto hacking group recommends Windows and macOS users to be more cautious when dealing with new 3rd parties, installing software, and to never 'Enable Content' (macro scripting) in Microsoft Office documents received from new or untrusted sources.
+
+Beta of Neutrino wallet for Bitcoin Cash was [released](https://news.bitcoin.com/bitcoin-cash-developers-launch-privacy-preserving-light-client-neutrino/) for Android. It uses the same SPV tech as Decred to connect wallets directly to the nodes without intermediaries. Decred and [gcash](https://github.com/gcash) project have common code which makes an opportunity for code reuse and collaboration - see [December](201812.md) issue for more coverage.
+
+## PSA: Decred Journal Takes a Break
+
+Twelve issues mark a full year of Decred Journal exposing Decred's ethos, depth and community involvement.
+
+I (@bee) have accumulated a lot of things in life and in Decred that I would like to complete, and also I need a break. Therefore, the release of future issues is not guaranteed. I will, however, remain available in Matrix and do my best to assist anyone willing to produce Decred Journal. To get involved join [#writers_room](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org).
+
+Thank you to all readers and contributors!
 
 ## 关于月报
 三月为英文第12期 [GitHub](https://xaur.github.io/decred-news/journal/201903) 月报。 点击[这里](https://xaur.github.io/decred-news/)浏览所有往期月报，翻译等。
@@ -322,7 +327,7 @@ https://news.bitcoin.com/bitcoin-cash-developers-launch-privacy-preserving-light
 
 欢迎在 Reddit, [GitHub](https://github.com/xaur/decred-news/issues) 和 [Matrix](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org) 上评论，反馈及贡献。
 
-感谢 (按字母排序):
+感谢 (按字母排序): bee, davecgh, degeri, Dustorf, guang, jholdstock, liz\_bagot, raedah, richardred, saender, sambiohazard.
 
 ## 中文社区
 
