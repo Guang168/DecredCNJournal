@@ -1,27 +1,27 @@
-# Decred月报 - 3月
+	 Decred月报 - 3月
 
 ![abstract art](img/MAR19_journal-201903-384.jpg "Undercurrent by @saender. It is empirical and abstract but the concept is to let people know via Journal and the image about the unseen forces that move it forward.")
 
 
 在3月份里，治理方面看到了一些重要的提案和投票，并且在开发方面的核心软件上取得了可靠的进展 - 这是Decred的一个相当典型的月份。
 
-最新的[共识投票](https://voting.decred.org/)[修复](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)闪电网络序列锁定目前在几乎100% 的支持率和 54% 的参与率即将完成，投票预计将于 4月11日结束。
+最新的[共识投票](https://voting.decred.org/)[修复](https://github.com/decred/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)闪电网络序列锁定即将在几乎100%的支持率和54%的参与率下完成，投票预计将于4月11日结束。
 
-在 Politeia 上，发起了 5 项新提案，并有两项提案完成投票（一个通过，一个不通过）。被提交的提案中包括了 @moo31337 提交的[重要提案](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f)，其中概述了利益相关者去中心化控制社区基金开销的途径。
+在 Politeia 上，发起了 5 项新提案，并有两项提案完成投票（一个通过，一个不通过）。被提交的提案包括了 @moo31337 提交的[重要提案](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f)，其中概述了利益相关者去中心化控制社区基金开销的途径。
 
-在 dcrd 里也看到了一些巨大的[重构](https://github.com/decred/dcrd/pull/1656)，这将在 v1.5.0 发布时为用户带来显著的性能改进，当然高级用户也可以从源码构建。
+在 dcrd 里也看到了一些巨大的[重构](https://github.com/decred/dcrd/pull/1656)，这将在 v1.5.0 发布时为用户带来显著的性能改进，当然高级用户已经可以从源码构建。
 
 ## 开发进展总结
 
 [dcrd](https://github.com/decred/dcrd): 一项大的[重构](https://github.com/decred/dcrd/pull/1656)让初始完全同步时间增快 [20-25%](https://twitter.com/davecgh/status/1110649183185317889), 在典型硬件耗时大约 45 分钟。另一个好处是降低了投票广播的延迟：
 
-> 影响\[延迟\]的因素很多,但在我的节点里平均每节点为 ～70 毫秒至 5 毫秒以下。我们需要更多的数据才能获得更准确的数值。这个本身是好事，但真正的好处将在重大网络升级时更能体现，在多个投票节点节省的时间更可观。全面部署整体改善高达～90％。([@davecgh](https://twitter.com/davecgh/status/1110721000172384256))
+> 影响\[延迟\]的因素很多,但在我的节点里平均每节点为 ～70 毫秒至 5 毫秒以下。我们需要更多的数据才能获得更准确的数值。这个本身是好事，但真正的好处将在重大网络升级时才能体现，多个投票节点节省的时间更可观。全面部署整体改善高达～90％。([@davecgh](https://twitter.com/davecgh/status/1110721000172384256))
 
 作为优化的一部分，`txscript`模块使用新的零分配脚本标记器进行完全重构。
 
 > 初始同步当然是一个重要因素，但真正的好处在于 mempool 正在进行的交易处理。另一个非常好的方面是导出的标记化器，这意味着可以对 txscript 之外的脚本进行零分配分析，这对于构建应用程序（例如原子交换，主根等）非常有用。([@davecgh](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$155249146926580yNJqU:decred.org))
 
-由于共识代码的关键且容易出错的区域进行更改，因此通过精心制作一系列122个单独的提交，让每个提交消息彻底描述其目的，确保保持共识，因此通过所有测试，使这些更改更容易推理和审查。
+由于更改了关键且容易出错的共识代码，因此通过精心制作了一系列122个单独的提交，让每个提交消息彻底描述其目的，确保保持共识，通过所有测试，使这些更改更容易推理和审查。
 
 另外：重构大幅削减了大约 2K 行代码。越少代码行，越少漏洞！
 
@@ -48,11 +48,11 @@
 
 [Decrediton](https://github.com/decred/decrediton): 选票活动热图可视化和一些较小的修复 - 2位贡献者的 [5 份提交](https://github.com/decred/decrediton/compare/35ab6e216dde0bc90d76334e25eb5174bf62e623...f80e832e55231a8f4cb7b1aa69f6e2faea2709df)。
 
-[Politeia](https://github.com/decred/politeia): 添加提案文本[预览](https://github.com/decred/politeiagui/pull/1018)标签，完成提案版本的[查看差异](https://github.com/decred/politeiagui/pull/1004)功能，更改[默认评论排序]((https://github.com/decred/politeiagui/pull/1034))为先显示最高分评论，添加在 URL 中设置排序功能。同时也修复了许多错误。这些更改已在主分支中合并，并将在[测试网页](https://test-proposals.decred.org/)测试后部署在[主提案网页](https://proposals.decred.org/)上。
+[Politeia](https://github.com/decred/politeia): 添加提案文本[预览](https://github.com/decred/politeiagui/pull/1018)标签，完成提案版本的[查看差异](https://github.com/decred/politeiagui/pull/1004)功能，更改[默认评论排序](https://github.com/decred/politeiagui/pull/1034)，先显示最高分评论，添加在 URL 中设置排序功能。同时也修复了许多错误。这些更改已在主分支中合并，并将在[测试网页](https://test-proposals.decred.org/)测试后部署在[主提案网页](https://proposals.decred.org/)上。
 
 在代码基础设施方面，承包商管理系统的几个部分在快速开发阶段后进行代码库清理，之后进入主分支。测试覆盖率已从13％[增加](https://github.com/decred/politeia/pull/727)到19％。
 
-一个高级用户可以在投票期结束后投票漏洞被发现。漏洞被发现已有一段时间了，目前正在等待部署修复。在发现有些选票选择晚投票后，修复程序已于3月13日部署。Politeia UI 可能会显示某些提案的投票计数略有错误，但投票结果不受影响。
+高级用户可以在投票期结束后投票的一个漏洞被发现。漏洞被发现已有一段时间了，目前正在等待部署修复。在发现有些选票选择晚投票后，修复程序已于3月13日部署。Politeia UI 可能会显示某些提案的投票计数略有错误，但投票结果不受影响。
 
 > 有关 Politeia，最令人放心的是所有数据都是公开的，并且定期时间戳到 Decred 区块链上。这意味着任何人都可以从 github 中提取数据并加密验证在投票期内（+/- 1小时）投出的选票以及在投票期结束后投票的选票。(@lukebp 在 [Politeia Digest 第12期](https://richardred0x.github.io/politeia-digest/issue-012.html))
 
@@ -60,7 +60,7 @@
 
 [dcrandroid](https://github.com/decred/dcrandroid): 小错误修复，添加中文翻译，查看交易历史的速度优化。
 
-[dcrios](https://github.com/raedahgroup/dcrios): dcrios beta 已经完成并可以接受更多测试。欢迎测试人员在[TestFlight](https://testflight.apple.com/join/dvq51tCh)中下载 app。目前还存在数个小的错误。在 iPod Touch 设备上有已知并正在修复的排版错误。目前的问题是处理一些批准 Apple Store 账户的手续。一旦完成将立即正式发布客户端。
+[dcrios](https://github.com/raedahgroup/dcrios): dcrios beta 已经完成并可以接受更多测试。欢迎测试人员在[TestFlight](https://testflight.apple.com/join/dvq51tCh)中下载 app。目前还存在数个小错误。在 iPod Touch 设备上有已知并正在修复的排版错误。目前的问题是处理一些批准 Apple Store 账户的手续。一旦完成将立即正式发布客户端。
 
 [dcrdata](https://github.com/decred/dcrdata): 第4版[已发布](https://twitter.com/decredexplorer/status/1110618796975370240)并上线[explorer.dcrdata.org](https://explorer.dcrdata.org/)。
 
@@ -76,7 +76,7 @@
 
 [docs](https://github.com/decred/dcrdocs): 全新更详细的[分票 Ticket Splitting](https://docs.decred.org/proof-of-stake/ticket-splitting/)指引,重做并扩展[共识投票规则Consensus Rules Voting](https://docs.decred.org/governance/consensus-rule-voting/consensus-rules-voting/)，[提案指南](https://docs.decred.org/governance/politeia/proposal-guidelines/)更新以包括社区基金资助提案的关键要求。
 
-[decred.org](https://github.com/decred/dcrweb): 更新交易所信息和翻译，[自托管](https://github.com/decred/dcrweb/pull/604)介绍影片以去除对 YouTube 请求。
+[decred.org](https://github.com/decred/dcrweb): 更新交易所信息和翻译，[自托管](https://github.com/decred/dcrweb/pull/604)介绍影片以去除链接 YouTube 。
 
 其他:
 
@@ -272,45 +272,45 @@ CoinMarketCap [开始显示](https://medium.com/@davebalter/coinmarketcap-partne
 
 ## 相关外部信息
 
-GitHub is [updating](https://github.blog/2019-03-14-githubs-site-policy-updates-are-ready-for-your-feedback/) their policy. New drafts were published for feedback till Apr 12 and will come into effect Apr 19. Among the changes is commitment to react to [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track), sharing user data with [more](https://github.com/github/site-policy/pull/154) 3rd party processors and updated use of third party user trackers. The change to clarify influence of U.S. sanctions triggered a question how this might impact Decred contributors - if you know, please comment in [this issue](https://github.com/xaur/decred-issues/issues/125) or [on Reddit](https://old.reddit.com/r/decred/comments/b2xsw3/github_terms_update_has_more_sanctions_stuff/). Some changes might be unpleasant but are pretty common for most companies and give us a good moment to reflect on our beliefs about free stuff. Also, unlike most companies, GitHub has all their policy documents versioned transparently in a Git repo that anybody can clone and inspect. The idea to have a similar repository for Decred was discussed a few times and there is a concept sandbox [repository](https://github.com/RichardRed0x/governance-docs) showing how it might look like.
+GitHub正在[更新](https://github.blog/2019-03-14-githubs-site-policy-updates-are-ready-for-your-feedback/)他们的政策. 新的草案已发布，并将于4月19日生效。其中的变化是承诺跟随[不要跟踪](https://en.wikipedia.org/wiki/Do_Not_Track)指引，将会共享用户数据于[更多](https://github.com/github/site-policy/pull/154)的第三方处理器和第三方用户跟踪器。这个改变可能会对Decred贡献者造成影响 - 如果您知道有什么影响，请在[这里](https://github.com/xaur/decred-issues/issues/125)或[Reddit](https://old.reddit.com/r/decred/comments/b2xsw3/github_terms_update_has_more_sanctions_stuff/)上发表评论。有些变化可能令人不愉快，但对于大多数公司来说很常见。我们可以借此机会反思我们对免费资源的信念。此外，与大多数公司不同，GitHub所有版本的政策文件都透明地保存在Git代码库中，任何人都可以复制和检查。Decred已经数次讨论建立类似代码库的想法，并且已建立一个概念[沙盒](https://github.com/RichardRed0x/governance-docs)显示原型。
 
-Stellar (XLM) [experienced](https://messari.io/article/messari-research-stellar-suffered-and-quietly-patched-a-2-2-billion-xlm-inflation-bug-in-2017) an inflation bug which was exploited to print 2.25 billion XLM (worth $10 million at the time, and nearly 25% of the circulating supply) in April 2017. This bug was lightly reported at the time, it was fixed by the Stellar Development Foundation (SDF) who burned an equal amount from its community reserve to offset the unintended inflation. That the SDF could identify, fix and mitigate such a major exploit so quietly says something about how decentralized Stellar is.
+恒星币（XLM）在2017年4月被一个[通胀漏洞](https://messari.io/article/messari-research-stellar-suffered-and-quietly-patched-a-2-2-billion-xlm-inflation-bug-in-2017)利用，发行了22.5亿枚XLM(当时价值1000万美元，占流通供应量的近25％)。这个漏洞在当时没怎么被报道，由恒星开发基金会（SDF）修复。他们从社区储备中焚烧了相同金额的XLM以抵消意外的通货膨胀。SDF可以识别，修复和缓解这样一个重大的漏洞，说明了恒星币比较中心化。
 
-PIVX experienced an inflation bug which was [exploited](https://medium.com/@dev.pivx/report-wrapped-serials-attack-5f4bf7b51701) in March. The bug concerned the network's zerocoin protocol (zPIV), and allowed an attacker to fake serial numbers and spend zerocoins that had never been minted. Over the course of five days, transactions creating and spending 568,897 PIV (~$438,000) were made before the exploit was identified and zPIV transactions were disabled (until it could be fixed). Besides regular takeaways like "consensus code is hard" and "cryptography is hard", this case has more food for thought. First, zerocoin functionality was disabled immediately after the exploit was discovered using one of the "sporks". Someone with the keys for these sporks can affect the whole network. Second, the bug was spotted because some nodes were [switching away](https://github.com/PIVX-Project/PIVX/pull/681) from OpenSSL that let the bug go unnoticed (OpenSSL is long [famous](https://www.peereboom.us/assl/assl/html/openssl.html) for its quality). While those nodes were not full alternative implementations, it still shows how a mismatch between diverse software helps to discover bugs. Third, it is possible to know exactly how many coins were minted because PIVX's zerocoin protocol allows supply to be [auditable](https://zcoin.io/zcoins-privacy-technology-compares-competition/), unlike some other privacy protocols.
+PIVX经历了一个通胀漏洞，该漏洞在3月被[利用](https://medium.com/@dev.pivx/report-wrapped-serials-attack-5f4bf7b51701)。该漏洞涉及网络的zerocoin协议（zPIV），并允许攻击者伪造序列号并使用从未被铸造过的zerocoin。在确定漏洞并且禁用zPIV交易（直到可以修复）之前，五天内创建和花费了568,897 PIV（约438,000美元）。除了基本启示，如“共识代码很难”和“密码学很难”，这个案例还有更多值得思考的东西。首先，PIVX在发现漏洞后使用了其中一个“sporks”禁用了zerocoin功能。有这些sporks键的人有能力影响整个网络。其次，这个漏洞被发现是因为一些节点从OpenSSL[切换掉](https://github.com/PIVX-Project/PIVX/pull/681)让bug被忽视(OpenSSL有着[令人疑问的](https://www.peereboom.us/assl/assl/html/openssl.html)质量)。虽然这些节点不完整，但它仍然显示了不同软件之间的不匹配如何帮助发现漏洞。第三，可以确切地知道有多少硬币被铸造，因为PIVX的zerocoin协议允许供应[被审计](https://zcoin.io/zcoins-privacy-technology-compares-competition/)，与其他一些隐私协议不同。
 
-Ethereum is actively discussing a dev fund funded from block rewards. Kickstarted by Gitcoin co-founder, [ERC 1789](https://github.com/ethereum/EIPs/issues/1789) (continued as [EIP 1890](https://github.com/ethereum/EIPs/pull/1890)) provides an overview of funding models employed by open source and [makes a case](https://medium.com/gitcoin/funding-open-source-in-the-blockchain-era-8ded753bf05f) for inflation funding for protocol maintenance. A supplementary GitHub project was organized with a collection of [documents](https://github.com/ethereum-funding/docs) and more than 50 [issues](https://github.com/ethereum-funding/blockrewardsfunding/issues).
+以太坊正在积极讨论由区块奖励资助的开发基金。由Gitcoin联合创始人启动[ERC 1789](https://github.com/ethereum/EIPs/issues/1789)和[EIP 1890](https://github.com/ethereum/EIPs/pull/1890)概述了开源协议采用的融资模式和维护[议案](https://medium.com/gitcoin/funding-open-source-in-the-blockchain-era-8ded753bf05f)。一个相关的GitHub项目，收集了[文件](https://github.com/ethereum-funding/docs)和50多个[问题](https://github.com/ethereum-funding/blockrewardsfunding/issues)。
 
-Monero's new [Community Crowdfunding System](https://ccs.getmonero.org/) was [launched](https://www.reddit.com/r/Monero/comments/ay0j5n/the_new_ffs_is_complete_please_use_and_explore_it/), and a number of projects were funded.
+门罗币新的[社区众筹系统](https://ccs.getmonero.org/)[推出](https://www.reddit.com/r/Monero/comments/ay0j5n/the_new_ffs_is_complete_please_use_and_explore_it/)。有数个项目得到资助。
 
-Dash held an [election](https://blog.dash.org/announcing-the-dash-dao-irrevocable-trust-election-results-bfe134c113b0) for Trust Protectors, people who will oversee the operation of a legal trust that has been [set up](https://blog.dash.org/dash-network-elected-trust-protectors-closing-the-governance-loop-4f07b46da03e) to own and control Dash Core Group.
+达世币为Trust Protectors举行[选举](https://blog.dash.org/announcing-the-dash-dao-irrevocable-trust-election-results-bfe134c113b0)，新的监督信托已经[成立](https://blog.dash.org/dash-network-elected-trust-protectors-closing-the-governance-loop-4f07b46da03e)，信托拥有和控制Dash Core Group。
 
-Dash also [finished](https://blog.dash.org/deterministic-masternode-list-and-automatic-instantsend-now-live-f2028d833388) the deployment of the Deterministic Masternode List, enabling automatic instant payments for transactions with fewer than 4 inputs.
+达世币已[完成](https://blog.dash.org/deterministic-masternode-list-and-automatic-instantsend-now-live-f2028d833388)开发“决定性主节点列表”，自动化执行少于4个输入的交易。
 
-Dash Core Group further [tightened](https://www.theblockcrypto.com/2019/03/04/corporation-behind-dash-lays-off-senior-staff-as-bear-market-grip-tightens/) its budget with layoffs and salary freezes.
+达世继续通过裁员和薪金冻结来[减少](https://www.theblockcrypto.com/2019/03/04/corporation-behind-dash-lays-off-senior-staff-as-bear-market-grip-tightens/)财政支出。
 
-Tezos [concluded](https://www.coindesk.com/welcome-to-athens-tezos-completes-historic-first-blockchain-vote) the first round of voting for its Athens upgrade. In this round bakers were choosing from between two versions of the Athens upgrade which increases the gas limit, and they chose the Athens A version which also decreases the minimum roll size and lowers the barrier to entry for bakers. The process has now moved on to its next phase, where bakers must confirm that the selected proposal should proceed to a subsequent testing and confirmation phase.
+Tezos [完成](https://www.coindesk.com/welcome-to-athens-tezos-completes-historic-first-blockchain-vote)第一轮雅典升级投票。这一轮，投票者需要在两个升级版本中选择怎么提高gas限制。他们选择了雅典A版，这减少了最小卷尺寸并降低了投票者的加入门槛。该过程现已进入下一阶段，投票者必须确认所选提案。
 
-Grin developers [voted](https://www.coindesk.com/privacy-cryptocurrency-grin-votes-to-fund-third-full-time-developer) to fund 3rd full time developer in a weekly [governance meeting](https://github.com/mimblewimble/grin-pm/blob/master/notes/20190312-meeting-governance.md). An interesting aspect of Grin is their efforts towards reporting and transparency: multiple versioned documents are published on GitHub, including [decision log](https://github.com/mimblewimble/grin-pm/blob/master/decision_log.md), [meeting notes](https://github.com/mimblewimble/grin-pm/tree/master/notes), income and [expenses](https://github.com/mimblewimble/grin-pm/tree/master/financials).
+Grin 开发者在每周[治理会议](https://github.com/mimblewimble/grin-pm/blob/master/notes/20190312-meeting-governance.md)中[投票](https://www.coindesk.com/privacy-cryptocurrency-grin-votes-to-fund-third-full-time-developer)为第三位全职开发人员提供资金。 有趣的是Grin的报告和透明度：GitHub上发布了多个版本文档，包括[决策日志](https://github.com/mimblewimble/grin-pm/blob/master/decision_log.md)，[会议记录](https://github.com/mimblewimble/grin-pm/tree/master/notes)，收入和[费用](https://github.com/mimblewimble/grin-pm/tree/master/financials)。
 
-Poloniex [committed](https://medium.com/circle-blog/poloniex-welcomes-grin-commits-to-share-transaction-fees-for-1-year-d07bc92cc0f8) to share a portion of Grin trading fees with [Grin General Fund](https://grin-tech.org/general_funding). 50% of all fees will be donated during the first month, and 25% for the next 11 months. Pretty rare and generous act in the space.
+Poloniex [承诺](https://medium.com/circle-blog/poloniex-welcomes-grin-commits-to-share-transaction-fees-for-1-year-d07bc92cc0f8)将一部分的Grin交易收益给予[Grin基金](https://grin-tech.org/general_funding).50％收益将在第一个月捐赠，25％在未来11个月内捐赠。在这个空间是非常罕见和慷慨的行为。 
 
-Jack Dorsey [announced](https://www.coindesk.com/square-hiring-crypto-engineers-bitcoin) Square is looking to fund engineers and a designer to work full-time on Bitcoin and cryptocurrency ecosystem, as a way to give back to the community. One [response](https://twitter.com/MartyBent/status/1108494280484630528) noted that "dev fund" embedded in a protocol is not needed because network participants have enough incentives to fund their infrastructure. In Decred's case, if the Treasury is ever deemed no longer necessary, it is within stakeholders' power to repurpose it for investing into a wider crypto/open source/open hardware ecosystem, or disband it entirely.
+Jack Dorsey [宣布](https://www.coindesk.com/square-hiring-crypto-engineers-bitcoin) Square希望资助工程师和设计师全职投入比特币和加密货币生态系统，作为一种方式回馈社区。一个[回复](https://twitter.com/MartyBent/status/1108494280484630528)指出，我们不需要嵌入协议的“开发基金”，因为网络参与者有足够的激励来资助他们的基础设施。Decred的案例中，如果财政部被认为不再需要，那么利益相关者有权将其重新用于投资更广泛的加密/开源/开放硬件生态系统，或完全解散它。
 
-Investigation of QuadrigaCX by Ernst & Young [found](https://cointelegraph.com/news/report-quadrigacx-wallets-have-been-empty-unused-since-april) that exchange's cold wallets were empty and unused since April 2018. Kraken [offered](https://blog.kraken.com/post/2155/were-offering-a-100000-reward-for-discovery-of-quadriga-coins/) a $100K reward for tips that lead to the discovery of the missing $190 million.
+安永事务所调查QuadrigaCX[发现](https://cointelegraph.com/news/report-quadrigacx-wallets-have-been-empty-unused-since-april)自2018年4月以来，交易所的冷冻钱包已经空置且未使用.Kraken[提供](https://blog.kraken.com/post/2155/were-offering-a-100000-reward-for-discovery-of-quadriga-coins/)10万美元奖励找出失踪1.9亿美元的线索。
 
-New research from @BitwiseInvest [suggests](https://twitter.com/BitwiseInvest/status/1109114656944209921) 95% of reported BTC spot volume is fake, but also notes much good news about the crypto ecosystem.
+来自@BitwiseInvest的新研究[提出](https://twitter.com/BitwiseInvest/status/1109114656944209921)95％报告的BTC现货交易量是假的，但也注意到关于加密生态系统的许多好消息。
 
-IMF found an [elegant solution](https://blogs.imf.org/2019/02/05/cashing-in-how-to-make-negative-interest-rates-work/) to make negative interest rates work as a counter-measure to a possible future crisis. A negative interest rate of -3% would mean you deposit $100 to a bank and withdraw $97 a year later. Such rates are currently hard to enforce because people would just withdraw to cash. The "straightforward" solution would be to move into a happy "cashless world" where the bank can set arbitrary negative rates and you simply can't withdraw to cash to save your value from melting. This is expected to "make consumption and investment more attractive, ... jolt lending, boost demand, and stimulate the economy". But getting rid of cash is not easy and is years away. So another solution to sustain a negative interest rate that is easier to roll today is to split a fiat currency into e-money and cash and introduce a floating conversion rate between them. This way, in a -3% interest rate scenario, you either deposit 100 cash dollars into e-dollars and get 97 e-dollars in a year, or hold cash and enjoy a 3% value loss against both goods and the e-dollar. In such a system there is no benefit to hold cash relative to bank deposits. Hasu and Su Zhu argue that crypto can [serve as a hedge](https://uncommoncore.co/bitcoin-is-a-hedge-against-the-cashless-society/) against the cashless society. Disclaimer: this paragraph is written by a layman. Economists are welcome to [comment](https://www.reddit.com/r/decred/) how this is healthy at all.
+国际货币基金组织找到了一个[优雅的解决方案](https://blogs.imf.org/2019/02/05/cashing-in-how-to-make-negative-interest-rates-work/)，利用负利率来对未来可能出现的危机采取应对措施。负利率为-3％意味着您向银行存入100美元并在一年后提取97美元。这些费率目前难以执行，因为人们只会撤回现金。 “直截了当”的解决方案是进入一个快乐的“无现金世界”，银行可以设置任意负利率，而你根本无法提取现金以节省融资的价值。预计这将“使消费和投资更具吸引力，......增加贷款，刺激需求，刺激经济”。但摆脱现金并不容易，而且还需要几年的时间。因此，维持今天更容易推出的负利率的另一个解决方案是将法定货币分成电子货币和现金，并在它们之间引入浮动转换率。这样，在-3％的利率情景下，您可以将100美元现金存入电子货币并在一年内获得97美元电子货币，或者持有现金并承受商品和电子货币3％的价值损失。在这样的系统中，相对于银行存款持有现金没有任何好处。 Hasu和Su Zhu认为，加密货币可以[作为对冲](https://uncommoncore.co/bitcoin-is-a-hedge-against-the-cashless-society/)对抗无现金社会。免责声明：本段由外行撰写。欢迎经济学家[评论](https://www.reddit.com/r/decred/)这是健康的吗。
 
-[Coinbase Custody](https://custody.coinbase.com/) [enabled](https://twitter.com/CoinbaseCustody) deposits and withdrawals for ZIL, KNC, ZEC, XTZ and [claim](https://blog.coinbase.com/coinbase-custody-launches-staking-support-for-tezos-makerdao-governance-to-follow-68f7bc51bc53) to hold $600 million for 60 clients. The service offers regulated, insured and full offline custodial storage of crypto. The plan is to allow clients to fully participate in crypto networks besides just holding: Tezos baking (staking) is already implemented while voting in Tezos and MakerDAO is planned for Q2 2019.
+[Coinbase托管](https://custody.coinbase.com/)[启用](https://twitter.com/CoinbaseCustody)存款和取款ZIL，KNC，ZEC，XTZ并[声明](https://blog.coinbase.com/coinbase-custody-launches-staking-support-for-tezos-makerdao-governance-to-follow-68f7bc51bc53)为60个客户保管6亿美元。该服务提供受监管，保险和完全离线的保管存储。该计划允许客户除了持有加密货币外完全参与加密网络：Tezos烘焙（Staking）已经实施，而Tezos投票和MakerDAO项目计划在2019年第二季度实行。
 
-Coinbase received a [backlash](https://www.coindesk.com/bitcoin-delete-coinbase-neutrino-crypto) from users who deleted their accounts to protest the acquisition of Neutrino, a blockchain analysis startup. The users were upset because Neutrino's executives previously worked for Hacking Team, which sold spyware to governments to aid surveillance and crackdown on journalists and critics. By coincidence, several user faced [difficulties](https://www.reddit.com/r/Bitcoin/comments/avw5uu/unable_to_close_coinbase_account/) closing their accounts. The Block [reported](https://www.theblockcrypto.com/2019/02/26/coinbase-responds-to-its-controversial-acquisition-of-blockchain-intelligence-platform-neutrino/) that Coinbase knew about Neutrino's background but still decided to proceed with the acquisition. A week later Coinbase CEO Brian Armstrong called it a "gap in our diligence process" and [announced](https://blog.coinbase.com/living-up-to-our-values-and-the-neutrino-acquisition-ba98174cdcf6) that people who worked at Hacking Team will transition out of Coinbase.
+Coinbase从删除帐户的用户那里遭到了[强烈反对](https://www.coindesk.com/bitcoin-delete-coinbase-neutrino-crypto)，以抗议对区块链分析初创公司Neutrino的收购。用户感到不安，因为Neutrino的高管之前曾为Hacking Team工作过，后者向政府出售间谍软件，以帮助监视和打击记者和评论家。巧合的是，一些用户面临[困难](https://www.reddit.com/r/Bitcoin/comments/avw5uu/unable_to_close_coinbase_account/)关闭他们的帐户。 Coinbase了解Neutrino的[背景](https://www.theblockcrypto.com/2019/02/26/coinbase-responds-to-its-controversial-acquisition-of-blockchain-intelligence-platform-neutrino/)但仍决定继续收购。一周后，Coinbase首席执行官Brian Armstrong将其称为“我们调查过程中的错误”和[宣布](https://blog.coinbase.com/living-up-to-our-values-and-the-neutrino-acquisition-ba98174cdcf6)在Hacking Team工作的员工将从Coinbase离去。
 
-The problem Coinbase tried to solve with that acquisition was their KYC contractors "selling client data", as [slipped](https://news.bitcoin.com/coinbase-severs-ties-with-hacking-team-members-while-data-sharing-backlash-intensifies/) in one interview. Many exchanges don't verify ID directly but instead hand it to 3rd parties, who may in turn hand it to more 3rd parties, and so on so it quickly gets [out of control](https://twitter.com/NickSzabo4/status/1102353760276275206). Per another [report](https://bitcoinmagazine.com/articles/coinbase-bought-neutrino-because-its-old-analysis-providers-sold-user-data/) there was not much choice for Coinbase due to another problem - many such firms moved to a 'give-get' data model, where Coinbase would only be permitted to use the service in return for providing its own data. Besides spreading to an unknown set of entities, another risk is that enormous amount of interlinked personal data may concentrate in a single place that will become an attractive target. For example, [Jumio](https://en.wikipedia.org/wiki/Jumio)'s Netverify is [used](https://cybersecurity-excellence-awards.com/candidates/netverify) by 5 of the top 10 exchanges including Coinbase, Bittrex and Bitstamp, and an increasing number of ICO issuers.
+Coinbase试图要解决的收购问题是他们的KYC承办商“卖客户数据”，在一次采访中[透露](https://news.bitcoin.com/coinbase-severs-ties-with-hacking-team-members-while-data-sharing-backlash-intensifies/)，很多交易所不直接验证ID，而是交给第三方，并可能交给更多的第三方，因此很快[失控](https://twitter.com/NickSzabo4/状态/1102353760276275206)。另一个[报告](https://bitcoinmagazine.com/articles/coinbase-bought-neutrino-because-its-old-analysis-providers-sold-user-data/)指出Coinbase没有太多选择，因为存在另一个问题-许多此类公司“回赠”数据模型，只允许Coinbase使用该服务作为回报，以提供自己的数据。另一个风险是相互关联的个人数据可能保存在同一个地方，这将成为一个具有吸引力的攻击目标。[Jumio](https://en.wikipedia.org/wiki/Jumio)的Netverify被头10之中的5个交易所[使用](https://cybersecurity-excellence-awards.com/candidates/netverify)，包括Coinbase，Bittrex和Bitstamp，以及越来越多的ICO发行项目。
 
-New Android malware was [detected](https://www.group-ib.com/media/gustuff/) that targets more than 100 global banking apps including 32 cryptocurrency apps such as Bitcoin Wallet, BitPay, Cryptopay, Coinbase and others. Another [report](https://securelist.com/cryptocurrency-businesses-still-being-targeted-by-lazarus/90019/) about an old crypto hacking group recommends Windows and macOS users to be more cautious when dealing with new 3rd parties, installing software, and to never 'Enable Content' (macro scripting) in Microsoft Office documents received from new or untrusted sources.
+新的Android恶意软件被[发现](https://www.group-ib.com/media/gustuff/)针对100多个全球银行应用程序，包括32个加密货币应用程序，比特币钱包，BitPay，Cryptopay，Coinbase等。加密黑客组的另一个[报告](https://securelist.com/cryptocurrency-businesses-still-being-targeted-by-lazarus/90019/)建议Windows和macOS用户在用新的第三方软件时要更加谨慎聚会，以及永远不要打开来源不明的Microsoft Office文档。
 
-Beta of Neutrino wallet for Bitcoin Cash was [released](https://news.bitcoin.com/bitcoin-cash-developers-launch-privacy-preserving-light-client-neutrino/) for Android. It uses the same SPV tech as Decred to connect wallets directly to the nodes without intermediaries. Decred and [gcash](https://github.com/gcash) project have common code which makes an opportunity for code reuse and collaboration - see [December](201812.md) issue for more coverage.
+Neutrino的比特币现金Android钱包Beta版本已[发布](https://news.bitcoin.com/bitcoin-cash-developers-launch-privacy-preserving-light-client-neutrino/)。它使用与Decred相同的SPV技术将钱包直接连接到没有中介的节点。 Decred和[gcash](https://github.com/gcash)项目有相同的代码，这为代码重用和协作提供了机会 - 请参阅[12月月报](201902_DecredJournalCN.md)以获得更详细报道。
 
 ## 公告: Decred 月报要休息啦
 
