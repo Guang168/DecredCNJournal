@@ -204,37 +204,34 @@ Ditto's 三月份成就:
 
 部分文章:
 
-* How Close to Absolute Decentralization is Decred's Unique Consensus Mechanism? by Trevor Holman ([cryptonewsz.com](https://www.cryptonewsz.com/how-close-to-absolute-decentralization-is-decreds-unique-consensus-mechanism/8998/), _missed in Feb issue_)
-* The best on-chain governance system by @Haon ([medium](https://medium.com/@NoahPierau/the-best-on-chain-governance-system-67759bf25335), _missed in Feb issue_)
-* Decred: Deep Dive Report by Smith + Crown ([smithandcrown.com](https://www.smithandcrown.com/decred-deep-dive-report/), 19-page research report)
-* The Cryptocurrency Industry Has a Forking Problem! Can On-Chain Governance Help Solve It? by Florian Gheorghe ([beincrypto.com](https://beincrypto.com/the-cryptocurrency-industry-has-a-forking-problem-can-on-chain-governance-help-solve-it/))
-* Decred Aims to Reach Crypto's Decentralized Ideals by Tomio Geron ([wsj.com](https://www.wsj.com/articles/gerons-take-decred-aims-to-reach-cryptos-decentralized-ideals-11552523191), paywall, sharing far and wide recommended to amplify impact)
-* Decred, an experiment in on-chain governance by Steven Zheng ([theblockcrypto.com](https://www.theblockcrypto.com/2019/03/20/decred-an-experiment-in-on-chain-governance/), paywall)
-* Hybrid PoW/PoS Consensus Explained by @richardred ([binance.vision](https://www.binance.vision/blockchain/hybrid-pow-pos-consensus-explained))
-* Decred's "Skin-in-the-Game" Governance Experiment by Jeremy Epstein ([neverstopmarketing.com](https://www.neverstopmarketing.com/decred-and-democracy/) _thanks for the kind words!_)
-* More Exchanges, More Access: Decred Grows Availability & Liquidity by @Dustorf ([medium](https://medium.com/decred/more-exchanges-more-access-decred-grows-availability-liquidity-95accbbf6835))
-* Decred Overview by Casey Caruso ([medium](https://medium.com/@caseycaruso/decred-dcr-1c809eb8bc5d))
-* How I pitch Decred in Africa by @George Pro ([medium](https://medium.com/@aappiahpro1/how-i-pitch-decred-in-africa-62b9ee8da7e1))
+* Decred的独特共识机制离完全去中心化有多远？ by Trevor Holman ([cryptonewsz.com](https://www.cryptonewsz.com/how-close-to-absolute-decentralization-is-decreds-unique-consensus-mechanism/8998/), _missed in Feb issue_)
+* 最佳的链上治理系统 by @Haon ([medium](https://medium.com/@NoahPierau/the-best-on-chain-governance-system-67759bf25335), _missed in Feb issue_)
+* Decred: 深度报告 by Smith + Crown ([smithandcrown.com](https://www.smithandcrown.com/decred-deep-dive-report/), 19页报告)
+* 数字货币行业存在分叉问题！链上治理能否解决？ by Florian Gheorghe ([beincrypto.com](https://beincrypto.com/the-cryptocurrency-industry-has-a-forking-problem-can-on-chain-governance-help-solve-it/))
+* Decred 目标是达到完美的去中心化 ([华尔街日报](https://www.wsj.com/articles/gerons-take-decred-aims-to-reach-cryptos-decentralized-ideals-11552523191), 欢迎分享)
+* Decred, 链上治理实验 by Steven Zheng ([theblockcrypto.com](https://www.theblockcrypto.com/2019/03/20/decred-an-experiment-in-on-chain-governance/))
+* PoW/PoS 混合共识系统 by @richardred ([币安](https://www.binance.vision/blockchain/hybrid-pow-pos-consensus-explained))
+* Decred's "Skin-in-the-Game" 治理实验 by Jeremy Epstein ([neverstopmarketing.com](https://www.neverstopmarketing.com/decred-and-democracy/))
+* 更多交易所，更多接触：Decred 增加覆盖和流动性 by @Dustorf ([medium](https://medium.com/decred/more-exchanges-more-access-decred-grows-availability-liquidity-95accbbf6835))
+* Decred 概览 by Casey Caruso ([medium](https://medium.com/@caseycaruso/decred-dcr-1c809eb8bc5d))
+* 我是如何在非洲宣传 Decred by @George Pro ([medium](https://medium.com/@aappiahpro1/how-i-pitch-decred-in-africa-62b9ee8da7e1))
 
-New info leaked about c0:
+c0的最新资讯:
 
-> Haon: https://crypto.bi/tape/blog/dcr/ - "The founders of decred originally worked on the development of Bitcoin in a project called biscuits."  
-> jy-p: working on biscuits for a while gave us the perspective we needed to start decred. our second project, fried chicken, is what led us to create our own louisiana kitchen
-
-A few more gems were found on [Crunchbase](https://www.crunchbase.com/organization/decred): Decred is a "Private", "For Profit" company, "uses 8 technology products and services including PHP, nginx, and Google Drive", and "is actively using 24 technologies for its website. These include Viewport Meta, IPhone / Mobile Compatible, and SSL by Default". Finally, the team includes _two_ Jacob Yocom-Piatt, which somewhat explains the amount of foresight behind the project.
+> Haon: https://crypto.bi/tape/blog/dcr/ - "Decred的创始人原来帮比特币开发了btcsuite项目"  
+> jy-p: 在btcsuite工作了一段时间，给了我们创立Decred 所需要的观点。我们的第二个项目，炸鸡，是我们创建自己的路易斯安那厨房的原因
 
 翻译:
 
-* Decred: Where did it all begin? [in Dutch](https://github.com/Arriu/Decred/blob/master/translations/wherediditallbegin_dutch.md) by @jazzah
-* Detailed analysis of Decred fork resistance [in Dutch](https://decredcommunity.org/nl/blog/detailed-analysis-of-decred-fork-resistance) by @jazzah
-* Decred Journal January and February issues were [translated](https://xaur.github.io/decred-news/) to - hold your breath: Arabic by @arij (victorious after long fight with right-to-left issues), Chinese by @guang, Polish by @kozel, Russian by @DZ, Spanish by @elian and Vietnamese by Duyên Em. Thank you so much for spreading the word!
-* Translators, note that there is an index of translated articles [here](https://github.com/artikozel/decred-translations/blob/master/article_index.md). Reach out in [#writers_room](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org) or via pull request to add your translations.
+* Decred 是怎么创立的? [荷兰语](https://github.com/Arriu/Decred/blob/master/translations/wherediditallbegin_dutch.md) by @jazzah
+* Decred 防分叉详细分析 [荷兰语](https://decredcommunity.org/nl/blog/detailed-analysis-of-decred-fork-resistance) by @jazzah
+* Decred 1 月和 2 月 月报 [翻译](https://xaur.github.io/decred-news/) 到: 阿拉伯语 by @arij, 中文 by @guang, 波兰语 by @kozel, 俄语 by @DZ, 西班牙语 by @elian and 越南语 by Duyên Em. 感谢散播信息!
 
 音频:
 
-* Did You Know Crypto - Episode 26: On Decred. @moo31337 talks about his background, what is Decred, its hybrid consensus, stability, proposal system and the DEX. ([didyouknowcrypto.com](http://didyouknowcrypto.com/ep26/))
-* The Blockcrunch - How Does Decred's Governance Work? Part 1 of interview with @Haon talks about Decred's governance, stakeholder rewards, voting topics and why both miners and voters are needed. ([libsyn.com](https://blockcrunch.libsyn.com/how-does-decreds-governance-work-noah-pierau-decred-project), [itunes](https://itunes.apple.com/us/podcast/how-does-decreds-governance-work-noah-pierau-decred-part-1/id1350649166?i=1000431532255&mt=2), [spotify](https://open.spotify.com/episode/7xST0eTxy4xnaK6NILXcbx?si=o3AJJuLvQka7lnpT1BrzWw))
-* The Blockcrunch - Defending Decred's Onchain Governance. Part 2 of interview with @Haon continues about enforceability of on-chain votes, stake-based vs entity-based voting, fairness and centralization in PoS and threat of malicious actors. ([libsyn.com](https://blockcrunch.libsyn.com/defending-decred-noah-pierau-decred-part-2))
+* 你知道数字货币吗-26集: Decred. @moo31337 谈到他的背景，什么是Decred，它的混合机制，稳定性，提案系统和 DEX。 ([didyouknowcrypto.com](http://didyouknowcrypto.com/ep26/))
+* The Blockcrunch - Decred的治理系统是怎么运作的? 访问@Haon的第一部分，提到了Decred的治理，投票者奖励，议案，为什么同时需要矿工和投票者。([libsyn.com](https://blockcrunch.libsyn.com/how-does-decreds-governance-work-noah-pierau-decred-project), [itunes](https://itunes.apple.com/us/podcast/how-does-decreds-governance-work-noah-pierau-decred-part-1/id1350649166?i=1000431532255&mt=2), [spotify](https://open.spotify.com/episode/7xST0eTxy4xnaK6NILXcbx?si=o3AJJuLvQka7lnpT1BrzWw))
+* The Blockcrunch - Decred的链上治理.访问@Haon的第二部分。链上投票是怎么运作的，投票的形式，PoS的公平性和去中心化特质，恶意参与者的威胁。([libsyn.com](https://blockcrunch.libsyn.com/defending-decred-noah-pierau-decred-part-2))
 
 CoinMarketCap [开始显示](https://medium.com/@davebalter/coinmarketcap-partners-with-flipside-crypto-to-distribute-project-health-scores-f181374f3d0e)加密资产的新指标 FCAS 等级。Fundamental Crypto Asset Score （FCAS）是由 Flipside Crypto 自 2017 年初开始追踪并对于超过450个项目的评级。在[这里](https://www.flipsidecrypto.com/fcas-explained)的解释说明系统的目标是通过尽量无视价格浮动而专注于客户活动及开发者行为，来回答 “这个加密项目是否可以推出人们要用的产品，和人们是否正在使用它？”。于 4月9日位置 Decred [被评级](https://coinmarketcap.com/currencies/decred/#ratings) 为 "A" 778/1000。一些背景数据：Litecoin 752, Zcash 792, Bitcoin 862, EOS 910, Ethereum 914.
 
