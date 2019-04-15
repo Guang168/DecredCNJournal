@@ -1,4 +1,4 @@
-	 Decred月报 - 3月
+# Decred月报 - 3月
 
 ![abstract art](img/MAR19_journal-201903-384.jpg "Undercurrent by @saender. It is empirical and abstract but the concept is to let people know via Journal and the image about the unseen forces that move it forward.")
 
@@ -337,4 +337,4 @@ Neutrino的比特币现金Android钱包Beta版本已[发布](https://news.bitcoi
 
 中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
 
-感谢 (按字母排序):
+感谢 (按字母排序): dominic, guang, hugo
