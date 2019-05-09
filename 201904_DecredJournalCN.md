@@ -156,36 +156,36 @@ Decred 已在币安获得 [V Label 认证](https://medium.com/binanceexchange/bi
 
 Ditto 概览:
 
-* @jz spoke with [The Block](https://www.theblockcrypto.com/2019/04/17/binance-wants-crypto-projects-to-migrate-to-its-chain-from-ethereum-and-the-firms-massive-trading-business-could-help/) about Decred's listing experience on Binance.
-* Ticket-voter [messaging](https://pastebin.com/7SvuVyyY) document was created as a tool for educating people on how Decred's voting system works. Input from the community was incorporated, with second version currently under review.
-* An [article](https://www.investinblockchain.com/put-your-money-where-your-mouth-is-decreds-treasury-proposal-closer-true-dae/) on the proposal to decentralize the Treasury appeared on InvestInBlockchain.com.
-* @matheusd drafted a [blogpost](https://hackernoon.com/decred-wants-you-be-one-of-the-first-to-test-the-dcr-lightning-network-dd9ecf14d95e) on the Lightning Network Testnet on Medium and it was published on HackerNoon.
-* AMA with @jy-p [took place](https://www.reddit.com/r/CryptoCurrency/comments/bjubwv/ama_decred_project_lead_jake_yocompiatt/) on r/cryptocurrency, which has more than 870K readers. @lukebp generated this opportunity when he presented at Coinbase in SF.
-* Ditto and @Dustorf will have an AMA for the Decred community to ask anything about PR and marketing via Reddit, Matrix, and YouTube. Target date is May 17 at noon EST (UTC-5).
+* @jz 与[The Block](https://www.theblockcrypto.com/2019/04/17/binance-wants-crypto-projects-to-migrate-to-its-chain-from-ethereum-and-the-firms-massive-trading-business-could-help/) 对话谈论关于 Decred 上线币安的经验。
+* 选票投票者[信息](https://pastebin.com/7SvuVyyY)文档被创建，为用于教育人们如何使用 Decred 投票系统一个工具。社区的意见被纳入，并正在审查第二版。
+* 一篇关于去中心化社区基金的提案[文章](https://www.investinblockchain.com/put-your-money-where-your-mouth-is-decreds-treasury-proposal-closer-true-dae/)在 InvestInBlockchain.com 发布
+* @matheusd 在 Medium 草拟了一份关于闪电网络测试网的[博客文章](https://hackernoon.com/decred-wants-you-be-one-of-the-first-to-test-the-dcr-lightning-network-dd9ecf14d95e)被收录到 HackerNoon。
+* 在 r/cryptocurrency 上与 @jy-p 的 [AMA](https://www.reddit.com/r/CryptoCurrency/comments/bjubwv/ama_decred_project_lead_jake_yocompiatt/)吸引了超过 87万读者。这项活动由 @lukebp 在 三藩市 Coinbase 发表演说时获得了这个机会。
+* Ditto 和 @Dustorf 将为 Decred 社区举办一场 AMA，回答任何关于 PR 和市场的问题。目标于 5月17日 1200 EST（UTC-5）在 Reddit， Matrix, 和 YouTube 进行。
 
 部分文章:
 
-* Unpacking Decred's Social Contract by @Haon ([medium](https://medium.com/@NoahPierau/unpacking-decreds-social-contract-69c413aa652))
-* Be one of the first to test the DCR Lightning Network by @matheusd ([medium](https://hackernoon.com/decred-wants-you-be-one-of-the-first-to-test-the-dcr-lightning-network-dd9ecf14d95e))
-* Crypto Briefing reviewed Decred and [rated](https://cryptobriefing.com/decred-digital-asset-report-dcr-token-review/) it C+ (6.4), citing "... Decred has a smaller merchant network and less active ecosystem compared to its rivals. In addition, the massive inflation rate discourages users to utilize DCR as a means of payment"
-* Blockchain Voter Apathy by Roy Learner ([medium](https://medium.com/wave-financial/blockchain-voter-apathy-69a1570e2af3)) - considers voter participation in a selection of blockchain projects (including Decred)
-* Blockchain proposal voting notes by @richardred ([github](https://github.com/RichardRed0x/crypto-governance-research/blob/master/governance-proposals/proposal-data-notes.md)) - a review of proposal voting datasets added for Decred, Dash and Aragon
-* What Types of Organizations Should Be Autonomous? by Amentum Capital ([medium](https://medium.com/amentum/what-types-of-organizations-should-be-autonomous-6f9dff3c5691)).
-* Past, Present, Future: From Co-ops to Cryptonetworks by Jesse Walden ([a16z.com](https://a16z.com/2019/03/02/cooperatives-cryptonetworks/), _missed in Mar issue_)
+* @Haon 的 “打开Decred的社会契约” - Unpacking Decred's Social Contract ([medium](https://medium.com/@NoahPierau/unpacking-decreds-social-contract-69c413aa652))
+* @matheusd 的 “率先测试 DCR 闪电网络” - Be one of the first to test the DCR Lightning Network([medium](https://hackernoon.com/decred-wants-you-be-one-of-the-first-to-test-the-dcr-lightning-network-dd9ecf14d95e))
+* Crypto Briefing 讨论 Decred 并[评级](https://cryptobriefing.com/decred-digital-asset-report-dcr-token-review/) C+ (6.4), 里面提到 “... Decred 相比对手有较小的商家网络及较不活跃的生态。另外，巨大的通胀率不鼓励用户使用 DCR作为支付货币。”
+* Roy Learner 的 区块链选民的冷漠 - Blockchain Voter Apathy ([medium](https://medium.com/wave-financial/blockchain-voter-apathy-69a1570e2af3)) - 讨论部分区块链项目（包括 Decred )里的选民参与率。
+* @ richardred 的 区块链提案投票笔记 Blockchain proposal voting notes([github](https://github.com/RichardRed0x/crypto-governance-research/blob/master/governance-proposals/proposal-data-notes.md)) - 回顾 Decred，Dash 和 Aragon 提案投票的数据。
+* Amentum Capital 的 什么类型组织需要自治 - What Types of Organizations Should Be Autonomous? ([medium](https://medium.com/amentum/what-types-of-organizations-should-be-autonomous-6f9dff3c5691))。
+* Jesse Walden 的 过去，现在于未来： 从合作社到加密货币网络([a16z.com](https://a16z.com/2019/03/02/cooperatives-cryptonetworks/), _三月份月报错漏_)
 
 翻译:
 
-* Guides to solo staking and ticket splitting have been [translated](https://mp.weixin.qq.com/s/lAxmWYItifQldGgwTVOWHw) to Chinese by @wanbihou. Check out [dcrclub.org](https://blog.dcrclub.org/) for a collection of Chinese translations of Decred articles.
-* @akinsawyerr translated a Decred review by iBotics Research from [Spanish](http://ibotics.es/reports/iBotics_Research_DCR.pdf) to [English](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$1556338959151873UVFAF:matrix.org).
+* Guides to solo staking and ticket splitting 由 @wanbihou [翻译](https://mp.weixin.qq.com/s/lAxmWYItifQldGgwTVOWHw)成中文。浏览 [dcrclub.org](https://blog.dcrclub.org/)查看更多 Decred 中文翻译文章。
+* @akinsawyerr 将 iBotics Research 的评级从 [西班牙语](http://ibotics.es/reports/iBotics_Research_DCR.pdf)翻译至[英语](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$1556338959151873UVFAF:matrix.org)。
 
 视频:
 
-* @jy-p's Decred overview [keynote speech](https://www.youtube.com/watch?v=l2Vu0JX7Xbc) at OKCoin + Decred San Francisco [event](https://www.eventbrite.com/e/decred-okcoin-present-the-next-10-years-crypto-boom-bust-or-buidl-tickets-57549671617).
-* @joshuam [presentation](https://www.youtube.com/watch?v=QeNfs7lUV38) at TABConf 2019, giving an introduction to the Decred cryptocurrency, community and economy/organization.
+* @jy-p 的 在 OKCoin + Decred 三藩市[活动](https://www.eventbrite.com/e/decred-okcoin-present-the-next-10-years-crypto-boom-bust-or-buidl-tickets-57549671617)中有关 Decred 概览的[主题演讲](https://www.youtube.com/watch?v=l2Vu0JX7Xbc)。
+* @joshuam 在 TABConf 2019 的[演说](https://www.youtube.com/watch?v=QeNfs7lUV38)， 介绍 Decred 加密货币，社区及经济、组织。
 
 音频:
 
-* Old Decred Assembly was [uploaded](https://podcasts.apple.com/podcast/decred-assembly-1-0/id1459062074) to Apple Podcast. Thanks to Ryan.
+* 旧的 Decred Assembly 被[上传](https://podcasts.apple.com/podcast/decred-assembly-1-0/id1459062074) 至 Apple 播客。感谢 Ryan。
 
 
 ## 社区
@@ -212,16 +212,16 @@ Ditto 概览:
 * Fake account impersonating as "Decred" was detected running giveaways on Facebook. Stay vigilant.
 * @degeri joined as a new Reddit moderator to keep r/decred clean from everyday spam. Welcome!
 
-Selected Reddit discussions:
+部分 Reddit 讨论:
 
-* Does 48% of coins locked in staking result in lower [volatility](https://www.reddit.com/r/decred/comments/bh1erw/decred_has_48_of_coins_lockedup_in_staking/)?
-* Decred was [added](https://www.reddit.com/r/decred/comments/bgiqh0/bullish_bitwise_has_updated_their_top_20_mid_cap/) to Bitwise Top 20 Mid Cap Crypto Index
-* fintechprof is going '[all-in](https://www.reddit.com/r/decred/comments/biipw3/im_going_allin_on_decred_here_is_why/)' on Decred (with their energy, not by irresponsibly investing their savings/loans), and outlined the reasons for this enthusiastic embrace.
-* Decred enthusiasts are heartily [invited](https://www.reddit.com/r/decred/comments/bi387g/new_sub_for_all_things_crypto_staking_decred/) to a new subreddit about crypto staking.
-* [Details](https://www.reddit.com/r/decred/comments/b8k2i0/where_can_i_read_about_the_pseudo_random_number/) about the pseudorandom number generator used to select tickets in Decred.
-* [Pre-proposal](https://www.reddit.com/r/decred/comments/b84t6b/preproposal_second_constitutional_amendment_to/) suggesting a second constitutional amendment to declare Feb 8 International day of Stakey.
-* Perspective on scalability and [blockchain size](https://www.reddit.com/r/decred/comments/bi366i/blockchain_storage_over_time/) over time.
-* @jy-p did an [AMA](https://www.reddit.com/r/CryptoCurrency/comments/bjubwv/ama_decred_project_lead_jake_yocompiatt/) on /r/cryptocurrency on May 2 that received 69 total comments.
+* 48% 的币锁仓投票是否造成低[流通量](https://www.reddit.com/r/decred/comments/bh1erw/decred_has_48_of_coins_lockedup_in_staking/)?
+* Decred 被[列入](https://www.reddit.com/r/decred/comments/bgiqh0/bullish_bitwise_has_updated_their_top_20_mid_cap/) Bitwise 的 Top 20  to Bitwise Top 20 中型加密货币指数。
+* fintechprof 将'[梭哈](https://www.reddit.com/r/decred/comments/biipw3/im_going_allin_on_decred_here_is_why/)' Decred (投入精力，而不是不负责任的投入他们的存款/贷款)，并概述了这股热情的原因
+* Decred 爱好者[受邀](https://www.reddit.com/r/decred/comments/bi387g/new_sub_for_all_things_crypto_staking_decred/)加入另一个关于加密货币 staking 的新 subreddit。
+* 关于 Decred 用于选择选票的伪随机数生产器的[细节](https://www.reddit.com/r/decred/comments/b8k2i0/where_can_i_read_about_the_pseudo_random_number/)。
+* 提议第二项先发修改将 2月8日 列为国际 Stakey 日[预提案](https://www.reddit.com/r/decred/comments/b84t6b/preproposal_second_constitutional_amendment_to/)。
+* 随时间推移透视可扩展性和[区块链大小](https://www.reddit.com/r/decred/comments/bi366i/blockchain_storage_over_time/)。
+* @jy-p 在 5月2日 于 /r/cryptocurrency 进行了 [AMA](https://www.reddit.com/r/CryptoCurrency/comments/bjubwv/ama_decred_project_lead_jake_yocompiatt/) 并收到了 69 个评论。
 
 ## 市场
 
