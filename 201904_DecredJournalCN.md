@@ -118,7 +118,7 @@ Decred Assembly 视频: @Dustorf & @jy-p 做了练习，然后在两周后回来
 
 Decred 通讯简报 Decred Newsletter: 我们决定使用开源服务[phpList](https://www.phplist.org/)，这造成了一些延迟。现已设置好构造并已成功发送测试。目前，设计团队正在构建一个模板，使其看起来很漂亮，他们也正在努力将注册链接合并到decred.org 中。完成后，我们将分享以便让人们注册，我们希望在5月份内发送第一封电子邮件。
 
-网站更新 Website Updates: 体系结构设置已完成，并为大多数附加子页面编写了初稿。此外，还为新的介绍性视频编写了第二版稿，该视频将分为三部分：安全。适应性强。自资。
+网站更新 Website Updates: 体系结构设置已完成，并为大多数附加子页面编写了初稿。此外，还为新的介绍性视频编写了第二版稿，该视频将分为三部分：安全、适应性强、自筹资金。
 
 Decred 深度播客 Decred in Depth Podcast: @anshawblack 将在 5月11日前往纽约参与 Blockchain Week 并计划与 @jy-p, @jz, Murad Mahmudov, Joel Monegro, Permabull Niño, 和 Trey Ditto 录制播客。他将在之后的几个星期和月份进行剪辑。
 
