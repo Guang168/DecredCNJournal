@@ -6,3 +6,5 @@
 * [1月](https://github.com/Guang168/DecredCNJournal/blob/master/201901_DecredJournalCN.md)<br/>
 * [2月](https://github.com/Guang168/DecredCNJournal/blob/master/201902_DecredJournalCN.md)<br/>
 * [3月](https://github.com/Guang168/DecredCNJournal/blob/master/201903_DecredJournalCN.md)<br/>
+* [4月](https://github.com/Guang168/DecredCNJournal/blob/master/201904_DecredJournalCN.md)<br/>
+
