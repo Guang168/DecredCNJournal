@@ -281,4 +281,4 @@ G20 成员国将于 6月 在日本举行[会议](https://cointelegraph.com/news/
 
 中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
 
-感谢 (按字母排序): guang, hugo
+感谢 (按字母排序): dominic, guang, hugo
