@@ -2,9 +2,9 @@
 
 ![abstract art](img/APR19_journal-201904-384.jpg "Blue Dragon by @saender. Dragon resembles power/fear/terror/chaos. Blue dragon is calm and intelligent, but nevertheless powerful. It resembles a balance of power and wisdom.")
 
-在四月份我们在 Decred 测试网上推出了闪电网络！欢迎[查看](https://hackernoon.com/decred-wants-you-be-one-of-the-first-to-test-the-dcr-lightning-network-dd9ecf14d95e)，测试，并开始在 Decred 的 LN 上开始构建。
+4月份，我们在 Decred 测试网上推出了闪电网络！欢迎[查看](https://hackernoon.com/decred-wants-you-be-one-of-the-first-to-test-the-dcr-lightning-network-dd9ecf14d95e)测试，并在 Decred 上构建LN。
 
-LN 将在 DCP0004 在 5月9日（第342,784区块）激活时上线主网，但它将需要一段时间才能建立起来并且稳定至可以在主网上使用 - 现在是在 Decred 测试网上尝试 LN 的时候。同时提醒所有节点很重要的是必须在 **5月9日 前升级以避免被分叉出网络！**
+5月9日闪电网络将会在编号为 DCP0004（第342,784区块）链上投票激活时获得主网支持，但它需要一段时间的测试才推荐在主网上使用 - 目前正是在 Decred 测试网上尝试 LN 的时候。同时提醒所有节点很重要的是必须在 **5月9日 前升级以避免被分叉出网络！**
 
 Politeia 软件在上线的提案网站上部署了大量性能改进和新功能（如提案版本的差异查看）。承包商管理系统也已准备好以基本形式进行，并将用于收集和处理 4月份 的承包商发票。
 
@@ -17,24 +17,24 @@ Politeia 软件在上线的提案网站上部署了大量性能改进和新功�
 
 ## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): 重构继续进行，未使用函数和条件清理，改进挖掘代码并修改`chaincfg`模块。由于之前对版本化模块的工作现已可用并且已完全使用，因此现在可以进行仔细的代码升级并确保不会在其他环节造成破坏。
+[dcrd](https://github.com/decred/dcrd): 重构继续进行，未使用函数和条件清理，改进挖掘代码并修改`chaincfg`模块。由于之前对版本化模块的工作现已可用并且已完全使用，因此现在可以进行代码升级并确保不会在其他环节造成破坏。
 
-[dcrwallet](https://github.com/decred/dcrwallet): 代码的清理和购票代码的改进。开始为 gRPC API 添加[可选身份验证](https://github.com/decred/dcrwallet/pull/1437)，允许用户省略需要解锁钱包的 API 调用中的密码。这将缓解通过物理和网络分段隔离未锁定钱包时出现的问题。
+[dcrwallet](https://github.com/decred/dcrwallet): 代码清理和购票代码的改进。开始为 gRPC API 添加[可选身份验证](https://github.com/decred/dcrwallet/pull/1437)，允许用户省略需要解锁钱包的 API 调用中的密码。这将缓解通过物理和网络分段隔离未锁定钱包时出现的问题。
 
-[Decrediton](https://github.com/decred/decrediton): 使 Decrediton 设计更具响应性（使其在更小的屏幕上可用）的工作继续进行，为此[主题](https://github.com/decred/decrediton/issues/1820)中的几乎所有视图完成了响应式设计。新的响应式设计在创建新的钱包视图中[已实施](https://github.com/decred/decrediton/pull/2094)。用于向 Decrediton 添加嵌入式 LN 钱包 UI 的[提交](https://github.com/decred/decrediton/pull/2107)也已打开; 此初始版本将允许 Decrediton 用户执行开/关频道，存/取款，创建发票和发送付款等操作。
+[Decrediton](https://github.com/decred/decrediton): 使 Decrediton 设计更具流畅性（使其在更小的屏幕上可用）的工作继续进行，为此[主题](https://github.com/decred/decrediton/issues/1820)中的几乎所有视图完成了流畅性设计。新的流畅性设计在创建新的钱包视图中[已实施](https://github.com/decred/decrediton/pull/2094)。用于向 Decrediton 添加嵌入式 LN 钱包 UI 的[提交](https://github.com/decred/decrediton/pull/2107)也已开放; 此初始版本将允许 Decrediton 用户执行开/关频道，存/取款，创建交易和发送付款等操作。
 
-[Politeia](https://github.com/decred/politeia): 在提案网站上进行了项升级[部署](https://twitter.com/marco_peereboom/status/1120398754216062978)，这带来了显着的性能改进，为提案版本历史记录查看器下拉菜单添加了差异查看器，并更改了评论的排序默认设置首先显示评分最高的评论。承包商管理系统也已上线，承包商将使用它来提交 4月份 的发票。
+[Politeia](https://github.com/decred/politeia): 在提案网站上进行了项升级[部署](https://twitter.com/marco_peereboom/status/1120398754216062978)，这带来了显著的性能改进，为提案版本历史记录查看器下拉菜单添加了差异查看器，并更改了评论的排序默认设置优先显示评分最高的评论。承包商管理系统也已上线，承包商将使用它来提交 4月份 的发票。
 
-[dcrlnd](https://github.com/decred/dcrlnd): Decred 的 闪电网络(LN)已在测试网上运行！经过几个月的努力和整个软件的几次更改，Decred 原始 [lnd 守护程序](https://github.com/lightningnetwork/lnd)的官方端口，[dcrlnd](https://github.com/decred/dcrlnd) 已经[发布](https://matheusd.com/post/announcing-dcrlnd/) 并可在测试网使用。来自上游闪电网络项目的所有单元和集成测试都正在通过，并且在 Decrediton 的初始[集成](https://github.com/decred/decrediton/pull/2107)即将完成。
+[dcrlnd](https://github.com/decred/dcrlnd): Decred 的 闪电网络(LN)已在测试网上运行！经过几个月的努力和整个软件的多次修整，Decred 原始 [lnd 守护程序](https://github.com/lightningnetwork/lnd)的官方端口，[dcrlnd](https://github.com/decred/dcrlnd) 已经[发布](https://matheusd.com/post/announcing-dcrlnd/) 并可在测试网使用。来自上游闪电网络项目的所有单元和集成测试都正在通过，并且LN在 Decrediton 的初始[集成](https://github.com/decred/decrediton/pull/2107)即将完成。
 
 一个 lnd 水龙头 (faucet) 已经被[设计](https://github.com/matheusd/lightning-faucet/pull/4)成符合 Decred 的外观和感觉。[这里](https://testnet-dcrln-01.davec.name/)查看几个测试网水龙头中的一个。
 
-目前正在准备主网的 LN，并在 5月9日 左右的第 342,784 个区块中，在 “fixlnseqlock” 议程[激活](https://explorer.dcrdata.org/agendas)之后，在主网上可以实现 Lightning。但这需要时间建立网络及改善用户体验。目前使用 Decred 的 LN 应该被认为是实验性质的，并且不应涉及大量的 DCR。 测试网将是 LN 活动一段时间的地方。您可以通过此[网络图表](http://ln-map.jamieholdstock.com/)跟踪测试网 LN 的增长情况。
+目前正在准备主网的 LN，并在 5月9日 左右的第 342,784 个区块中，在 “fixlnseqlock” 议程[激活](https://explorer.dcrdata.org/agendas)，之后在主网上即可以实现 Lightning。但这需要时间多次进行测试及改善用户体验。目前使用 Decred 的 LN 应该被认为是实验性质的，并且不应涉及大量的 DCR。 测试网将是 LN 活动一段时间的地方。您可以通过此[网络图表](http://ln-map.jamieholdstock.com/)跟踪测试网 LN 的增长情况。
 
 
 [dcrandroid](https://github.com/decred/dcrandroid): 小错误修复和语言优化继续进行中。可选的生物识别身份验证选项也在[进行中](https://github.com/decred/dcrandroid/pull/343)，并将在下一版本中发布，在输入钱包密码短语时添加额外的安全层。
 
-[dcrios](https://github.com/raedahgroup/dcrios): dcrios beta 版本在社区成员继续测试下改进了 UI。 目前只剩下数个未解决的漏洞，开发人员也正继续通过正式的 Apple Store 申请批准应用程序。
+[dcrios](https://github.com/raedahgroup/dcrios): dcrios beta 版本在社区成员继续测试下改进了 UI。 目前只剩下小部分未解决的漏洞，开发人员也正继续通过正式的 Apple Store 申请批准应用程序。
 
 [dcrdata](https://github.com/decred/dcrdata): v4.1.0 已发布并部署于 [explorer.dcrdata.org](https://explorer.dcrdata.org/)。此版本增添[实时追踪](https://explorer.dcrdata.org/agendas)共识规则更改的链上投票进度，以及在[发布笔记](https://github.com/decred/dcrdata/releases/tag/release-v4.1.0)中列出的一些性能和开发改进。[Politeia提案](https://alpha.dcrdata.org/proposals)的投票图表也已添加到alpha网站上并正在进行迭代。
 
@@ -61,7 +61,7 @@ Politeia 软件在上线的提案网站上部署了大量性能改进和新功�
 
 ## 治理
 
-实施 DCP0004 的[共识投票](https://voting.decred.org/) 在4月11日完成，几乎100％批准，54.5％ 的选票通过投票积极参与。新规则将于 5月9日 生效，请参阅上面有关升级节点软件的说明。
+实施 DCP0004 的[共识投票](https://voting.decred.org/) 在4月11日完成，几乎以100％的同意率通过，54.5％ 的选票通过投票积极参与。新规则将于 5月9日 生效，请参阅上面有关升级节点软件的说明。
 
 在 4月里，[DCR 基金会](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了 15,460 DCR，并花了 13,943 DCR，使用 DCR 在 4 月份的每日平均美元价格 24.22 美元计算，本月收到 37.4 万 美元以及支出 33.8 万 美元。由于这些付款用于支付 3 月份完成的工作，因此可以用 3 月份的平均价格 18.14 美元计算 - 在这种情况下，美元收到的数字是 28.0 万美元以及支出 25.3 万美元。5月3日 为止，基金会余额为 608,069 DCR (按 26.20 美元计算相当于 1600万 美金)。
 
@@ -69,7 +69,7 @@ Politeia 软件在上线的提案网站上部署了大量性能改进和新功�
 
 4 项新提案提交:
 
-* [去中心化社区基金开销 Decentralize Treasury Spending](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f) 由 @moo31337 提出, 提案提议每个月进行链上投票核批社区基金会开销。这项提案吸引了很多讨论并在新闻中报导。其中一些实现细节故意被省略：
+* [去中心化社区基金 Decentralize Treasury Spending](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f) 由 @moo31337 提出, 提案提议每个月进行链上投票核批社区基金会开销。这项提案吸引了很多讨论并在新闻中报导。其中一些实现细节故意被省略：
 
   > 原因是在我们多年的软件开发经验中学到的是只计划未来两步并在达到目标后再进行评估。规划太遥远几乎总是以现实与计划相冲突而告终。所以，没错，目前计划是有意含糊的。一旦技术实现变得明显，我们就可以再决定这个过程细节。([@moo31337](https://proposals.decred.org/proposals/c96290a2478d0a1916284438ea2c59a1215fe768a87648d04d45f6b7ecb82c3f/comments/6))
 
