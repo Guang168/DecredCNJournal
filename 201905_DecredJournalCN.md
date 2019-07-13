@@ -7,33 +7,33 @@
 * DCP4已激活。Decred的主网现在已经为闪电网络做好了准备。
 * iOS钱包的第一个候选版本进入公开测试。
 * 3个社区基金资助的提案（Ditto、Research和Bounty）的第一阶段即将结束并且已经为Ditto和研究计划开放了进一步资助的提案。5月份共提交了6项提案，其中4项于6月初开启投票。
-* Decred Assembly and Decred in Depth播客完成了早期制作并发布了第一集。[Decred Distributed](https://v.youku.com/v_show/id_XNDE5ODYxOTI5Ng==.html?spm=a2h0k.11417342.soresults.dtitle)视频的嘉宾是@elian，他在5月的晚些时候继续在哥伦比亚和乌拉圭的7天内展开了3个活动，并详细描述了他在每个活动中的经历。
+* Decred Assembly and Decred in Depth播客完成了早期制作并发布了第一集。[Decred Distributed](https://v.youku.com/v_show/id_XNDE5ODYxOTI5Ng==.html?spm=a2h0k.11417342.soresults.dtitle)视频的嘉宾是@elian，他在5月的晚些时候继续在哥伦比亚和乌拉圭的7天内展开了3个活动并详细描述了他在每个活动中的经历。
 
-## Development
+## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): Bug fixes, improved test coverage and test infrastructure.
+[dcrd](https://github.com/decred/dcrd): 修复了bug，改进了测试覆盖率和测试基础架构。
 
-Work started to [port](https://github.com/decred/dcrd/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31+port) several rearrangements from upstream btcd in order to reduce coupling and split blockmanager and rpcserver into their own packages.
+工作开始从上游btcd  [移植](https://github.com/decred/dcrd/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31+port)几个重新安排，以减少耦合和拆分blockmanager和rpcserver到他们自己的包。
 
-Another active area was [mining code](https://github.com/decred/dcrd/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31+mining) that is undergoing a series of code improvements and performance optimizations, e.g. to [remove getblocktemplate](https://github.com/decred/dcrd/pull/1736) and to [require](https://github.com/decred/dcrd/pull/1739) a valid template address.
+另一个活跃的领域是[挖矿代码](https://github.com/decred/dcrd/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31+mining)，该代码正在进行一系列代码改进和性能优化，例如[删除getblocktemplate](https://github.com/decred/dcrd/pull/1736)并[需要](https://github.com/decred/dcrd/pull/1739)有效的模板地址。
 
-A major pending change to mining code that deserves a special mention is an [overhaul](https://github.com/decred/dcrd/pull/1748) of the background template generator (the function that miners call to receive templates to create blocks from). Currently, miners not familiar with the intricacies of Decred voting will occasionally produce valid blocks with the minimum 3 PoS votes, out of a possible 5. This is bad for PoW miners, who get a reduced subsidy for including fewer votes. This is also undesirable for PoS voters, who may not receive the PoS reward, despite having voted, simply due to propagation delay. To address this, the background template generator has been updated to add support for intelligent vote propagation, as well as a number of other features, such as better handling of chain reorganization to alternative blocks, a subscription that provides miners a stream of template updates, and consideration of the synchronization state as part of determining if the chain is current. It should be noted that this work only implements the infrastructure and does not yet expose this functionality in production.
+需要特别提及的挖矿代码的一个重大未决变化是[大修](https://github.com/decred/dcrd/pull/1748)后台模板生成器（矿工调用以接收模板以创建块的功能）。目前，不熟悉Decred投票错综复杂的矿工偶尔会产生最少3个PoS投票的有效区块，这可能是5个。这对于PoW矿工来说是不利的，他们因包括更少的投票而获得减少的补贴。对于PoS选民而言，这也是不可取的，尽管他们投票，但由于传播延迟，他们可能不会收到PoS奖励。为了解决这个问题，后台模板生成器已经更新，以增加对智能投票传播的支持，以及许多其他功能，例如更好地处理链重组到替代块，为矿工提供模板更新流的订阅，并且考虑同步状态作为确定链是否是当前的一部分。应该注意的是，这项工作仅实现了基础结构，并且尚未在生产中公开此功能。
 
-[dcrwallet](https://github.com/decred/dcrwallet): Bug fixes, improved [error handling](https://github.com/decred/dcrwallet/pull/1453), and simplified [concurrent code](https://github.com/decred/dcrwallet/pull/1451) and increased concurrent use of an unlocked wallet. Work started on [CleanOutAccount](https://github.com/decred/dcrwallet/pull/1419) feature, which is similar to SweepAccount but allows multiple transactions.
+[dcrwallet](https://github.com/decred/dcrwallet): 修复了[bug](https://github.com/decred/dcrwallet/pull/1453)，改进了错误处理，简化了[并发代码](https://github.com/decred/dcrwallet/pull/1451)，增加了未锁定钱包的并发使用率。[CleanOutAccount](https://github.com/decred/dcrwallet/pull/1419)功能开始工作，类似于SweepAccount但允许多个事务。
 
-[Decrediton](https://github.com/decred/decrediton): Work on [responsive design](https://github.com/decred/decrediton/issues/1820) continues with a newly responsive [Transaction/History](https://github.com/decred/decrediton/pull/2124) view. Work continues on initial [LN wallet](https://github.com/decred/decrediton/pull/2107) integration.
+[Decrediton](https://github.com/decred/decrediton): [响应式设计](https://github.com/decred/decrediton/issues/1820)的工作继续使用新响应的[事务/历史记录](https://github.com/decred/decrediton/pull/2124)视图。最初的[闪电网络钱包](https://github.com/decred/decrediton/pull/2107) 集成工作仍在继续。
 
-[Politeia](https://github.com/decred/politeia): Front end changes include an improved proposal list view, continuous loading of proposals while scrolling, and no more redirect when session expires - now a login modal window will pop up. The backend saw performance improvements and bug fixes, changes to the user database (user data at rest is now encrypted), and an updated API endpoint that allows non-admins to look up userID/username by public key. These lookups will allow for data about user comments and votes to be organized by user account rather than public key.
+[Politeia](https://github.com/decred/politeia): 前端更改包括改进的提案列表视图，滚动时连续加载提案，以及会话到期时不再重定向 - 现在将弹出登录模式窗口。后端看到了性能改进和错误修复，用户数据库的更改（静态用户数据现在已加密），以及允许非管理员通过公钥查找用户ID /用户名的更新API端点。这些查找将允许按用户帐户而不是公钥来组织有关用户评论和投票的数据。
 
-Contractor management system (CMS) continues to receive a [steady churn](https://github.com/decred/politeia/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31+cms) of improvements and fixes.
+承包商管理系统（CMS）继续得到[稳定](https://github.com/decred/politeia/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31+cms)的改进和修复。
 
-[dcrlnd](https://github.com/decred/dcrlnd): Work [continues](https://github.com/decred/dcrlnd/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31) to ready Decred's LN for mainnet, with bug fixes, improvements to integration tests, increased test coverage, and removal of unused code.
+[dcrlnd](https://github.com/decred/dcrlnd): 适用于Decred主网的闪电网络工作还在[进行中](https://github.com/decred/dcrlnd/pulls?q=is%3Apr+updated%3A2019-05-01..2019-05-31)，修复了bug，改进了集成测试，增加了测试覆盖率，并删除了未使用的代码。
 
-Work has begun to [reduce coupling](https://github.com/decred/dcrlnd/pull/29) with dcrwallet and to [port](https://github.com/decred/dcrlnd/issues/12) Docker-related lnd files to dcrlnd to enable easier tinkering and development by the community. A [quickstart guide](https://github.com/decred/dcrlnd/pull/8) has been started for knowledgeable individuals that want to get going faster. Work has also begun to port a lot of [upstream changes](https://github.com/decred/dcrlnd/pull/36) made to [lnd](https://github.com/lightningnetwork/lnd) since dcrlnd branched off to begin the initial port.
+工作已经开始[降低耦合](https://github.com/decred/dcrlnd/pull/29)与dcrwallet和[港口](https://github.com/decred/dcrlnd/issues/12)码头工人有关的LND文件dcrlnd使能由社区更容易修补和发展。一个[快速入门指南](https://github.com/decred/dcrlnd/pull/8)已经开始为那些希望得到应该更快知情人士。工作也已开始端口很多[上游变化](https://github.com/decred/dcrlnd/pull/36)作出[lnd](https://github.com/lightningnetwork/lnd)因为dcrlnd分支开始初始端口。
 
-dcrlnd has been added to the [Bug Bounty Program](https://bounty.decred.org/) on an experimental basis, with [caveats](https://github.com/decred/dcrlnd#security).
+dcrnd已经在实验的基础上被添加到[Bug Bounty Program](https://bounty.decred.org/)中，并附有 [警告](https://github.com/decred/dcrlnd#security).。
 
-[dcrandroid](https://github.com/decred/dcrandroid): Minor bug fixes and UI optimizations, as well as a newly added send & estimation [function](https://github.com/decred/dcrandroid/pull/371). Code has been [updated](https://github.com/decred/dcrandroid/pull/356) to be compatible with latest [dcrlibwallet](https://github.com/raedahgroup/dcrlibwallet) - a shared component reused by dcrandroid, dcrios, and [godcr](https://github.com/raedahgroup/godcr).
+[dcrandroid](https://github.com/decred/dcrandroid): 小错误修复和UI优化，以及新增的发送和[估计](https://github.com/decred/dcrandroid/pull/371)功能。代码已[更新](https://github.com/decred/dcrandroid/pull/356)为与最新的[dcrlibwallet](https://github.com/raedahgroup/dcrlibwallet)兼容- 这是dcrandroid，dcrios和[godcr](https://github.com/raedahgroup/godcr).重用的共享组件。
 
 [dcrios](https://github.com/raedahgroup/dcrios): Release Candidate 1 of the iOS Wallet is [ready](https://www.reddit.com/r/decred/comments/bxje6l/decred_wallet_for_ios_release_client_1/) for broader public testing. Development efforts ramped up in preparation for official launch. Bugs reported by users of the test app have been fixed, UI improvements have been made, and a large refactoring was performed to [clean up](https://github.com/raedahgroup/dcrios/pull/391) the repository and improve test coverage. Apple Store release is imminent!
 
