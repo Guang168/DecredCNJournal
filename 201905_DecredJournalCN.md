@@ -2,12 +2,12 @@
 
 ![abstract art](img/journal-201905-384.jpg "Blue Dragon by @saender. Dragon resembles power/fear/terror/chaos. Blue dragon is calm and intelligent, but nevertheless powerful. It resembles a balance of power and wisdom.")
 
-May's highlights:
+五月重点:
 
-* DCP4 activated. Decred's mainnet is now ready for Lightning Network.
-* iOS wallet's first release candidate entered public testing.
-* The first phase of 3 Treasury funded proposals (Ditto, Research and Bounty) are coming to an end, with recaps being published and proposals for further funding already opened for Ditto and the research program. A total of 6 proposals were submitted in May, with 4 open for voting in early June.
-* Decred Assembly and Decred in Depth podcasts completed early production and released the first episodes. The Decred Distributed video features @elian, who later in May went on to cover 3 events in 7 days in Colombia and Uruguay, and provide detailed descriptions his experience at each.
+* DCP4已激活。Decred的主网现在已经为闪电网络做好了准备。
+* iOS钱包的第一个候选版本进入公开测试。
+* 3个社区基金资助的提案（Ditto、Research和Bounty）的第一阶段即将结束并且已经为Ditto和研究计划开放了进一步资助的提案。5月份共提交了6项提案，其中4项于6月初开启投票。
+* Decred Assembly and Decred in Depth播客完成了早期制作并发布了第一集。[Decred Distributed](https://v.youku.com/v_show/id_XNDE5ODYxOTI5Ng==.html?spm=a2h0k.11417342.soresults.dtitle)视频的嘉宾是@elian，他在5月的晚些时候继续在哥伦比亚和乌拉圭的7天内展开了3个活动，并详细描述了他在每个活动中的经历。
 
 ## Development
 
