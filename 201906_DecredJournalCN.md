@@ -138,7 +138,7 @@ dcr.farm更新了[闪电网络](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-ne
 
 选票持有人提出支持请求说某些VSP[错过了](https://www.reddit.com/r/decred/comments/c862ee/assistance_needed_missed_tickets/)他们的门票。经过调查，发现Grassfed和d1pool已从网络中分离出来并且错过了对他们的门票的投票。 [Grassfed](https://dcr.grassfed.network/)做出了回应并承诺将继续保持未来的更新。我们无法访问[d1pool](https://d1pool.com) ，目前正在讨论将它们从decred.org 的[VSP列表](https://decred.org/vsp/)中删除。
 
-同时也出现了一个[问题](https://github.com/decred/dcrstakepool/issues/413)和一个[讨论](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$156207152510654HMiFp:decred.org) 如何将这些问题能在未来避免。A另一个讨论的想法是持续努力让更多人建立自己的[投票钱包](https://matrix.to/#/!dhHYPTtCtvPSUfTepT:decred.org/$156207972910815kERGq:decred.org).
+同时也出现了一个[问题](https://github.com/decred/dcrstakepool/issues/413)和一个[讨论](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$156207152510654HMiFp:decred.org) 如何将这些问题能在未来避免。另一个讨论的想法是持续努力让更多人建立自己的[投票钱包](https://matrix.to/#/!dhHYPTtCtvPSUfTepT:decred.org/$156207972910815kERGq:decred.org).
 
 ## 整合
 
@@ -211,14 +211,14 @@ Ditto的公关指南已收集在新的[存储库中](https://github.com/decredco
 
 精选文章:
 
-* The Blockchain Governance Quadrant by @Haon ([medium](https://medium.com/@NoahPierau/the-blockchain-governance-quadrant-2a878a9cacb9))
-* The Regulators Are Coming - Canary in the Decred Hash Mine: Part I by u/Fiach\_Dubh ([medium](https://medium.com/coinmonks/the-regulators-are-coming-a1ba2f8c02be)) - see also [discussion](https://www.reddit.com/r/decred/comments/byffz1/the_regulators_are_coming_canary_in_the_decred/) on Reddit.
-* Why the Name Decred is Awesome by @Haon ([medium](https://medium.com/decred/why-the-name-decred-is-awesome-9627ae9b4e2))
-* The Roadblocks to Cryptocurrency Adoption in Africa by @George Pro ([medium](https://medium.com/@aappiahpro1/the-roadblocks-to-cryptocurrency-adoption-in-africa-3be2c656ec07))
-* Decred Australia - Building a Community Brick by Brick by @zohand ([medium](https://medium.com/@sahand.bagheri/decred-australia-building-a-community-brick-by-brick-89928041687e))
-* Staking Isn't Just a Way to Earn Crypto Money - And It Shouldn't Be by @jy-p ([coindesk.com](https://www.coindesk.com/staking-isnt-just-a-way-to-earn-crypto-money-and-it-shouldnt-be)) - also [in Korean](https://www.coindeskkorea.com/staking/).
+* @Haon的[区块链治理象限](https://medium.com/@NoahPierau/the-blockchain-governance-quadrant-2a878a9cacb9（[中文]（https://github.com/Guang168/DCR_CommunityArticles/blob/master/The_Blockchain_Governance_Quadrant_CN.md））
+* 监管机构即将到来 - Canary在Decred Hash Mine: [第一部分](https://medium.com/coinmonks/the-regulators-are-coming-a1ba2f8c02be) - 另见关于Reddit的 [讨论](https://www.reddit.com/r/decred/comments/byffz1/the_regulators_are_coming_canary_in_the_decred/)。
+* 为什么Decred这个名字很棒 by @Haon ([medium](https://medium.com/decred/why-the-name-decred-is-awesome-9627ae9b4e2))
+* @George Pro在非洲采用加密货币的障碍 ([medium](https://medium.com/@aappiahpro1/the-roadblocks-to-cryptocurrency-adoption-in-africa-3be2c656ec07))
+* Decred Australia -by @zohand ([medium](https://medium.com/@sahand.bagheri/decred-australia-building-a-community-brick-by-brick-89928041687e))
+* Staking不仅仅是赚取加密货币的方式 -by @jy-p ([coindesk.com](https://www.coindesk.com/staking-isnt-just-a-way-to-earn-crypto-money-and-it-shouldnt-be)) -  [韩语](https://www.coindeskkorea.com/staking/).
 * 由EliteX Exchange 撰写 - EliteX交易所采访了@changhugo并撰写了一份简短的概述，他们在列出DCR的同时发布了这一[文章](https://medium.com/@elitexexchange/the-lowdown-on-decred-dcr-2a36520079f5)。
-* Cryptocurrency: A Mistaken Identity by @nnnko56 ([write.as](https://write.as/nnnko56/cryptocurrency-a-mistaken-identity)) - this article considers cryptocurrencies as being more than that label implies, and argues for a broader understanding of these projects as having important social components, or "cryptosocieties".
+* 加密货币社会: by @nnnko56 ([write.as](https://write.as/nnnko56/cryptocurrency-a-mistaken-identity))
 
 翻译:
 
@@ -226,7 +226,7 @@ Ditto的公关指南已收集在新的[存储库中](https://github.com/decredco
 * [Decred Foundational Messaging](https://github.com/decredcommunity/pr/blob/release/foundational-messaging.md) - [in Vietnamese](https://github.com/raedahgroup/translations/blob/master/vietnamese/decred_foundational_messaging.md) by @duyenemdo.
 * [Decred: Where did it all begin?](https://thedecreddigest.com/2017/06/10/decred-where-did-it-all-begin/) - [in Arabic](https://insaf01.github.io/decred-arabic/articles/decred-where-did-it-all-begin.html) by @arij and [in Vietnamese](https://github.com/raedahgroup/translations/blob/master/vietnamese/decred_where_did_it_all_begin.md) by @duyenemdo.
 * [Why the name Decred is awesome](https://medium.com/decred/why-the-name-decred-is-awesome-9627ae9b4e2) - [in Arabic](https://insaf01.github.io/decred-arabic/articles/why-the-name-decred-is-awesome.html) by @arij.
-* New Decred Journal translations - in Arabic by @arij, in Chinese by @guang and others, in Russian by @DZ, in Spanish by @elian, in Vietnamese by @duyenemdo. It's getting hard to list them all here (nice problem to have!), see all translations on the [index](https://xaur.github.io/decred-news/) and [mirrors](https://xaur.github.io/decred-news/mirrors.html) pages.
+* 新的Decred月报翻译 - @arij的阿拉伯语，@guang和其他人的中文，@DZ的俄语，@elian的西班牙语，@duyenemdo的越南语。这里很难列出所有这些（很好的问题！），查看[索引](https://xaur.github.io/decred-news/)和[镜像](https://xaur.github.io/decred-news/mirrors.html)页面上的所有翻译。
 * Reminder: there is an effort to build [an index](https://github.com/artikozel/decred-translations/blob/master/article_index.md) of all translations and collect [statistics](https://github.com/artikozel/decred-translations/blob/master/effort_stats.md) of time it takes to produce them. Please submit yours.
 
 视频:
