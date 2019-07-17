@@ -358,6 +358,7 @@ Who would have thought that a 27-year old _text editor_ can still have an arbitr
 
 ## 中文社区
 
+* [社区web](https://blog.dcrclub.org/)
 * [微博](https://www.weibo.com/DecredProject)
 * [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
 * [中文电报群](https://t.me/decred_cn)
