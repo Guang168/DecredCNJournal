@@ -138,6 +138,8 @@ dcr.farm更新了[闪电网络](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-ne
 
 选票持有人提出支持请求说某些VSP[错过了](https://www.reddit.com/r/decred/comments/c862ee/assistance_needed_missed_tickets/)他们的门票。经过调查，发现Grassfed和d1pool已从网络中分离出来并且错过了对他们的门票的投票。 [Grassfed](https://dcr.grassfed.network/)做出了回应并承诺将继续保持未来的更新。我们无法访问[d1pool](https://d1pool.com) ，目前正在讨论将它们从decred.org 的[VSP列表](https://decred.org/vsp/)中删除。
 
+[问题](https://github.com/decred/dcrstakepool/issues/413）[话题](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$156207152510654HMiFp:decred.org）[投票钱包](https://matrix.to/#/!dhHYPTtCtvPSUfTepT:decred.org/$156207972910815kERGq:decred.org）
+
 同时也出现了一个[问题](https://github.com/decred/dcrstakepool/issues/413）和[话题](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$156207152510654HMiFp:decred.org）如何将这些问题能在未来避免。另一个讨论的想法是持续努力让更多人建立自己的[投票钱包](https://matrix.to/#/!dhHYPTtCtvPSUfTepT:decred.org/$156207972910815kERGq:decred.org)。
 
 ## 整合
