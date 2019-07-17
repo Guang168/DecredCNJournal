@@ -229,13 +229,12 @@ Ditto的公关指南已收集在新的[存储库中](https://github.com/decredco
 * New Decred Journal translations - in Arabic by @arij, in Chinese by @guang and others, in Russian by @DZ, in Spanish by @elian, in Vietnamese by @duyenemdo. It's getting hard to list them all here (nice problem to have!), see all translations on the [index](https://xaur.github.io/decred-news/) and [mirrors](https://xaur.github.io/decred-news/mirrors.html) pages.
 * Reminder: there is an effort to build [an index](https://github.com/artikozel/decred-translations/blob/master/article_index.md) of all translations and collect [statistics](https://github.com/artikozel/decred-translations/blob/master/effort_stats.md) of time it takes to produce them. Please submit yours.
 
-Videos:
+视频:
 
-* Decred Assembly：Deep Dive：DEX([youtube](https://www.youtube.com/watch?v=NuBkLA8o8ds))（[Youku]（https://v.youku.com/v_show/id_XNDI0NjM4MzI1Mg==.html?spm=a2h0k.11417342.soresults.dtitle））
-Decred Assembly: Deep Dive: DEX ([youtube](https://www.youtube.com/watch?v=NuBkLA8o8ds))
-* Decred at Consensus 2019 ([youtube](https://www.youtube.com/watch?v=h-AfggMHVvE)) - @jy-p gives an update on the Decred roadmap.
+* Decred Assembly：Deep Dive：DEX([youtube](https://www.youtube.com/watch?v=NuBkLA8o8ds))[优酷](https://v.youku.com/v_show/id_XNDI0NjM4MzI1Mg==.html?spm=a2h0k.11417342.soresults.dtitle)
+* 在2019年共识([youtube](https://www.youtube.com/watch?v=h-AfggMHVvE))上发布 - @ jy-p提供了Decred路线图的更新。
 
-Audio:
+音频:
 
 * Decred in Depth - Ep. 2 Luke Powell - Politeia + dcrtime ([soundcloud](https://soundcloud.com/decredindepth/ep2-luke-powell-politeia-decred-contractor-model), [youtube](https://www.youtube.com/watch?v=W6yUVq97cd8))
 * Decred in Depth - Ep. 3 Joel Monegro - Placeholder Capital DCR Investment Thesis + Governance ([soundcloud](https://soundcloud.com/decredindepth/joel-monegro-placeholder-capital-dcr-investment-thesis))
@@ -246,50 +245,50 @@ Audio:
 * Inclusionism: Guest Akin Sawyerr on African Blockchain ([jamesfeltonkeith.com](https://www.jamesfeltonkeith.com/radioshow/episode/c184d5d5/inclusionism-guest-akin-sawyerr-on-african-blockchain-crypto-and-serial-entrepreneur-in-fintech), Decred talk starts 38 min in)
 * Decred Russia podcast by @DZ ([soundcloud](https://soundcloud.com/decred-russia), in Russian)
 
-## Community Discussions
+## 社区
 
-Community stats as of Jul 1:
+社区统计截至7月1日：
 
-* Politeia users: 189 (+14)
-* Twitter followers: 40,479 (+17)
-* Reddit subscribers: 9,505 (+46)
-* Matrix users: 364 (+27)
-* Slack users: 6,769 (+48)
-* Discord users: 2310 (+53) verified to post: 246 (+20)
-* Telegram users: 3,407 (-169)
-* YouTube subscribers: 3,787 (+18)
-* Facebook followers: 3,230 (+11), likes: 2,964 (+10)
-* LinkedIn followers: 567 (+23)
-* GitHub dcrd stars: 494 (+5), forks: 1,337 (+13)
+* Politeia用户：189（+14）
+* Twitter粉丝：40,479（+17）
+* Reddit订阅者：9,505（+46）
+* Matrix用户：364（+27）
+* Slack用户：6,769（+48）
+* Discord用户：2310（+53）已通过验证：246（+20）
+* 电报用户：3,407（-169）
+* YouTube订阅者：3,787（+18）
+* Facebook粉丝：3,230（+11），赞：2,964（+10）
+* LinkedIn关注者：567（+23）
+* GitHub dcrd星：494（+5），分叉：1,337（+13）
 
-Comm systems news:
+社交系统新闻:
 
-* Several Matrix rooms were upgraded following the [first stable release](https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation/) of the Matrix protocol. Users have to join new rooms but the process is very straightforward and all history is preserved.
-* Hot Matrix/Riot features in development pipeline are: editable messages, reactions, threads and better device verification UX for end-to-end encryption.
+* 在Matrix协议的[第一个稳定版本](https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation/)发布后，几个Matrix会议室进行了升级。用户必须加入新房间，但过程非常简单，所有历史记录都会保留。
+* 开发流程中的Hot Matrix / Riot功能包括：可编辑的消息，反应，线程以及用于端到端加密的更好的设备验证UX。
 
-Selected Reddit posts:
+部分 Reddit 讨论:
 
-* A [post](https://www.reddit.com/r/decred/comments/c60aho/governance_would_matrixlike_channel_discussions/) asking if Matrix-like channel discussions posted on Reddit would increase adoption & education.
-* [POLL: optimal Politeia pass threshold](https://www.reddit.com/r/decred/comments/bynidz/poll_optimal_politeia_pass_threshold/) - 57% said current level is OK, 7% said less than 60%, 26% were in favor of increasing the approval threshold.
-* [POLL: Rename Decrediton to Declaration](https://www.reddit.com/r/decred/comments/c4ilpw/poll_rename_decrediton_to_declaration/) - has a score on Reddit of 0, which should probably be interpreted as a lack of support.
-* [Question](https://www.reddit.com/r/decred/comments/c52hqd/question_is_a_hybrid_finance_governance_tool/): Is a hybrid finance & governance tool called a "wallet" or something altogether different?
-* [POLL: Rename DAE to DAO?](https://www.reddit.com/r/decred/comments/c02geh/poll_rename_dae_to_dao/) - had a score of 15 and top comment says "I support changing it to DAO" with 8 points. See also this [comment](https://www.reddit.com/r/decred/comments/c02geh/poll_rename_dae_to_dao/er1g4px) with notes on support from chat discussion.
+* 一篇[帖子](https://www.reddit.com/r/decred/comments/c60aho/governance_would_matrixlike_channel_discussions/)询问在Reddit上发布的类似Matrix的渠道讨论是否会增加采用和教育。
+* [POLL：最佳Politeia通过门槛](https://www.reddit.com/r/decred/comments/bynidz/poll_optimal_politeia_pass_threshold/) - 57％表示当前水平可以，7％表示不到60％，26％表示赞成提高审批门槛。
+* [POLL：将Decrediton重命名为声明](https://www.reddit.com/r/decred/comments/c4ilpw/poll_rename_decrediton_to_declaration/) - Reddit得分为0，这应该被解释为缺乏支持。
+* [问题](https://www.reddit.com/r/decred/comments/c52hqd/question_is_a_hybrid_finance_governance_tool/)：混合型金融和治理工具被称为“钱包”还是完全不同的东西？
+* [POLL：将DAE重命名为DAO？](https://www.reddit.com/r/decred/comments/c02geh/poll_rename_dae_to_dao/) - 得分为15，最高评论说“我支持将其改为DAO”，得到8分。另请参阅此[评论](https://www.reddit.com/r/decred/comments/c02geh/poll_rename_dae_to_dao/er1g4px)以及聊天讨论支持的说明。
 
-Selected Twitter discussions:
+Twitter讨论:
 
-More wild not-quite-maximalists were spotted on Twitter this month, people who would consider themselves Bitcoiners but who also have a fondness for Decred. Apparently there are more of these closeted Decred fans, who dare not speak out about the cred because it would result in a loss of status in their circle.
+本月在Twitter上发现了更多狂野的非极端主义者，他们认为自己是比特币，但也喜欢Decred。显然，有更多这些关闭的Decred粉丝，他们不敢说出信用因为它会导致他们的圈子失去地位。
 
-* @Ammarooni [thread](https://twitter.com/Ammarooni/status/1145213941146181632) about how "Bitcoin is addressing structural shortcomings of fiat money that aren't immediately visible to the naked eye, but will become prominent over time. Decred is addressing the shortcomings of Bitcoin that aren't prevalent today, but may become manifested over time."
+* @Ammarooni [线程](https://twitter.com/Ammarooni/status/1145213941146181632)如何“比特币地址是不是直接对肉眼可见，但将成为突出随着时间的法定货币的结构性缺陷。Decred是解决当今不在流行的Bitcoin的缺点，但可能成为表现随着时间的推移。”
 * @\_Checkmatey\_ tweeted a [thread](https://twitter.com/_Checkmatey_/status/1142918632546156544) about Decred as a digital organism driven by a human hive-mind with skin in the game, then went on to [compare](https://twitter.com/_Checkmatey_/status/1145944145141411840) its stock-to-flow with Bitcoin's and finally issue a [challenge](https://twitter.com/_Checkmatey_/status/1145764832362319872) to all Bitcoiners: spend one month studying Decred and come out believing it is not a worthy number 2 to Bitcoin.
 * @CryptoBrekkie created an interesting [poll](https://twitter.com/CryptoBrekkie/status/1145713705415372800) which received 720 responses. "So I've noticed a trend among some maximalists lately expressing a desire for a real, sound money competitor to Bitcoin, a rival that could ultimately help Bitcoin level up. I've also noticed many maximalists have a soft spot for [@decredproject](https://twitter.com/decredproject). Could Decred be that competitor?". 36% said Yes, 52% said No.
 
-## Markets
+## 市场
 
-In June DCR was trading between USD 24.77-37.06 / BTC 0.0026-0.0035. The average daily rate was $28.90.
+6月份DCR的交易价格为24.77-37.06美元/ BTC 0.0026-0.0035。平均每日房价为28.90美元。
 
-On Jun 22 Bitcoin crossed $10,000 and in a matter of days rose up to $13,670 in some markets. This caused most alts including Decred to go down against BTC.
+6月22日，比特币兑换1万美元，在几天内上涨至13,670美元。这导致包括Decred在内的大多数下降对BTC下降。
 
-## Relevant External
+## 相关外部信息
 
 Facebook published the [Libra white paper](https://libra.org/en-US/white-paper/) on Jun 18, and this dominated blockchain news and discussion for a spell more than any other subject has for some time. Quotes from @jy-p were featured in a number of articles about Libra on high profile sites (see Ditto update above), questioning Facebook's track record and whether inviting them to also handle our financial transactions is a good idea. We will not revisit the discussion of Libra here, except to note that the white paper addresses how it will be governed - through an association where validators (approved organizations that provide the necessary capital) vote to make decisions. 21 organizations, mostly large multinationals, were [announced](https://www.theblockcrypto.com/2019/06/14/facebooks-cryptocurrency-partners-revealed-we-obtained-the-entire-list-of-inaugural-backers/) with the white paper, with an aim to have 100 signed up before Libra launches. It will be interesting to see how a distributed ledger operated by 100 (mega-)corporations behaves in comparison to the one operated by the Decred stakeholders and their ~40,960 tickets.
 
@@ -343,17 +342,32 @@ Komodo team [exploited](https://cryptobriefing.com/komodo-developers-hacked-user
 
 Who would have thought that a 27-year old _text editor_ can still have an arbitrary code execution [vulnerability](https://www.theregister.co.uk/2019/06/12/vim_remote_command_execution_flaw/)? This is a reminder that correctness is hard and why it takes so much work to build and test robust software.
 
-## About This Issue
+## 关于月报
 
-This is issue 15 of Decred Journal. Index of all issues, mirrors and translations is available [here](https://xaur.github.io/decred-news/).
+这是Decred Journal的第15期。[此处](https://xaur.github.io/decred-news/)提供所有问题，镜像和翻译的索引。
 
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
+来自第三方的大多数信息在经过最小的健全性检查后直接从源中转发。Decred Journal的作者无法验证所有声明。请注意诈骗并做自己的研究。
 
-Your feedback and contributions are welcome on Reddit, [GitHub](https://github.com/xaur/decred-news/issues) and [Matrix](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org).
+欢迎您在Reddit，[GitHub](https://github.com/xaur/decred-news/issues)和[Matrix](https://matrix.to/#/!lbzTjhzNbIaDbuAxkS:decred.org).上提供反馈和贡献。
 
-Credits (alphabetical order):
+感谢(字母排序）:
 
-* writing and editing: bee, cryptoleslie, degeri, Dustorf, kozel, lukebp, richardred, s\_ben
-* reviews and feedback: jholdstock, jz, Haon, matheusd, raedah
-* title image: saender
+* 编写和编辑: bee, cryptoleslie, degeri, Dustorf, kozel, lukebp, richardred, s\_ben
+* 评论和反馈: jholdstock, jz, Haon, matheusd, raedah
+* 标题图片: saender
+
+## 中文社区
+
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [优酷频道](https://i.youku.com/decredproject)
+* QQ群号-258412796
+
+欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
+
+中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
+
+感谢 (按字母排序): 
+
 
