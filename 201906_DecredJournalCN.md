@@ -231,7 +231,7 @@ Ditto的公关指南已收集在新的[存储库中](https://github.com/decredco
 
 视频:
 
-* Decred Assembly：Deep Dive：DEX([youtube](https://www.youtube.com/watch?v=NuBkLA8o8ds))[优酷](https://v.youku.com/v_show/id_XNDI0NjM4MzI1Mg==.html?spm=a2h0k.11417342.soresults.dtitle)
+* Decred Assembly：Deep Dive：DEX([youtube](https://www.youtube.com/watch?v=NuBkLA8o8ds))([优酷](https://v.youku.com/v_show/id_XNDI0NjM4MzI1Mg==.html?spm=a2h0k.11417342.soresults.dtitle))
 * 在2019年共识([youtube](https://www.youtube.com/watch?v=h-AfggMHVvE))上发布 - @ jy-p提供了Decred路线图的更新。
 
 音频:
