@@ -1,6 +1,6 @@
 # Decred Journal – July 2019
 
-![Image: Staking discussion at StakingCon 2019 in Beijing](../img/stakingcon2019-384.jpg)
+![Image: Staking discussion at StakingCon 2019 in Beijing](img/stakingcon2019-384.jpg)
 
 _Image: Staking discussion at StakingCon 2019 in Beijing_
 
