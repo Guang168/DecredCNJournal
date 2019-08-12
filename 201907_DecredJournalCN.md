@@ -77,17 +77,17 @@ Decred澳大利亚社区一直在建设良好。上个月分享的[更新](https
 
 社区统计截至8月1日：:
 
-* Politeia users: 154 (-35, 通过新的更准确的计数方法调整)
-* Twitter followers: 40,572 (+93)
-* Reddit subscribers: 9,556 (+51)
-* Matrix users: 384 (+20)
-* Slack users: 6,809 (+40)
-* Discord users: 2,377 (+67), verified to post: 281 (+35)
-* Telegram users: 3,290 (-115)
-* YouTube subscribers: 3,800 (+13)
-* Facebook followers: 3,253 (+23), likes: 2,983 (+19)
-* LinkedIn followers: 591 (+24)
-* GitHub dcrd stars: 498 (+4), forks: 1,365 (+28)
+* Politeia用户: 154 (-35, 通过新的更准确的计数方法调整)
+* Twitter粉丝: 40,572 (+93)
+* Reddit订阅: 9,556 (+51)
+* Matrix用户: 384 (+20)
+* Slack用户: 6,809 (+40)
+* Discord用户: 2,377 (+67), verified to post: 281 (+35)
+* Telegram用户: 3,290 (-115)
+* YouTube订阅: 3,800 (+13)
+* Facebook粉丝: 3,253 (+23), likes: 2,983 (+19)
+* LinkedIn粉丝: 591 (+24)
+* GitHub dcrd 星星: 498 (+4), forks: 1,365 (+28)
 
 ## 治理
 
