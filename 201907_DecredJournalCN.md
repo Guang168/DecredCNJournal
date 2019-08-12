@@ -334,3 +334,18 @@ Credits (alphabetical order):
 
 * writing and editing: bee, cryptoleslie, degeri, Dustorf, lukebp, raedah, richardred, s\_ben
 * reviews and feedback: chappjc, davecgh, jholdstock, jy-p, margaret\_mei, matheusd
+
+## 中文社区
+
+* [社区web](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [优酷频道](https://i.youku.com/decredproject)
+* QQ群号-258412796
+
+欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
+
+中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
+
+感谢 (按字母排序): 
