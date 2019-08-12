@@ -2,16 +2,16 @@
 
 ![Image: Staking discussion at StakingCon 2019 in Beijing](img/stakingcon2019-384.jpg)
 
-_Image: Staking discussion at StakingCon 2019 in Beijing_
+_图片: 北京 StakingCon 2019 关于Staking讨论_
 
-Major news of July:
+七月重大新闻:
 
-* A draft [specification](https://github.com/decred/dcrdex) for the DEX has been released, marking a major milestone towards its realization. A [proposal](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1) to conduct development work was submitted in early August by dcrdata developers, and will be covered in the August edition.
-* 3 proposals from firms offering market making services were published on Aug 7, and a further RFP proposal was published on Aug 10 which asks the stakeholders to first signal whether they want to hire a market maker. These will be covered in Politeia digest (soon) and next month's Journal.
-* TinyDecred, a python toolkit, was released by @buck54321, a contractor who has been working on dcrdata for the last year. TinyDecred was initially a personal interest project for Brian, but over time developed into a useful set of tools [that](https://proposals.decred.org/proposals/20e967dad9e7398901decf3cfe0acf4e0853f6558a62607265c63fe791b8b124) could open up Decred-related development to the large number of Python coders. A proposal was also submitted requesting $8,000 for the work which went into TinyDecred to this point - it seems to have strong support.
-* dcrdata beta v5.1 is now live, packed full of incremental improvements. There has also been good progress on dcrextdata, with more market data being collected and nodes being deployed on the network to collect data about the mempool and block propagation times.
-* Some great Decred in Depth podcasts were released with [@muststopmurad](https://www.youtube.com/watch?v=XkvcdjSH0c0) and [@permabullnino](https://www.youtube.com/watch?v=HxECplK3kAs) talking about why they're into Decred and about the opportunities and challenges they see for the project going forward.
-* Decred-related discussion seems to be increasing on social media, and the circle of people involved in these discussions expanding. This is no doubt bolstered by the #DecredChallenge and associated memes, initiated and popularized by @Checkmate - who also published an [article](https://medium.com/@_Checkmatey_/monetary-premiums-can-altcoins-compete-with-bitcoin-54c97a92c6d4) about Decred's monetary premium, and submitted a [proposal](https://proposals.decred.org/proposals/78b50f218106f5de40f9bd7f604b048da168f2afbec32c8662722b70d62e4d36) to continue with this line of research (now approved). @Checkmate's article has already been cited by an [investment thesis](https://www.blockheadcap.com/post/decred-investment-thesis) from Blockhead Capital - who also had some other nice things to say about DCR.
+* 一个重要里程碑诞生:DEX的[规范](https://github.com/decred/dcrdex)文本已经发布。开发计划由dcrdata的开发者在八月初通过[提案](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1)提交。
+* 3家提供做市公司在8月7日分别提交了他们的提案。8月10日发布的RFP提案旨在询问利益相关者是否想要聘请做市商，若投票通过则开启做市商的提案投票，若不通过则关闭做市商的提案。详细内容会在Politeia摘要和下月月报中介绍。
+* TinyDecred是一个python工具包，由@ buck54321发布，他是去年开始从事dcrdata开发工作的承包商。TinyDecred最初是Brian的个人兴趣项目，但随着时间的推移发展成为一组有用的工具，可以为大量的Python编码器打开与Decred相关的开发。他提交了一份[提案](https://proposals.decred.org/proposals/20e967dad9e7398901decf3cfe0acf4e0853f6558a62607265c63fe791b8b124)，要求8,000美元用于TinyDecred的工作 - 这似乎得到了强有力的支持。
+* dcrdata beta v5.1现已上线，充满了渐进式改进。dcrextdata也取得了很好的进展，收集了更多的市场数据，并在网络上部署了节点来收集有关mempool和块传播时间的数据。
+* [@muststopmurad](https://www.youtube.com/watch?v=XkvcdjSH0c0)和[@permabullnino](https://www.youtube.com/watch?v=HxECplK3kAs)发布了Decred in Depth语音录播，他们谈到了他们为什么加入Decred以及他们对未来的机遇和挑战提出了自己的看法。
+* 在社交媒体上，Decred相关的讨论似乎越来越多，参与讨论的人的圈子也在扩大。毫无疑问，这是受到Decred的支持，由@checkmate发起并推广，他还发表了一篇关于Decred货币溢价的[文章](https://medium.com/@_Checkmatey_/monetary-premiums-can-altcoins-compete-with-bitcoin-54c97a92c6d4)，并提交了继续进行这一研究的 [提案](https://proposals.decred.org/proposals/78b50f218106f5de40f9bd7f604b048da168f2afbec32c8662722b70d62e4d36) （现已批准）。@Checkmate的文章已经被一篇来自BlockheadCapital的[投资论文](https://www.blockheadcap.com/post/decred-investment-thesis)引用了，他貌似也要奶一下Decred。
 
 ## Development
 
