@@ -2,36 +2,36 @@
 
 ![Image: Staking discussion at StakingCon 2019 in Beijing](img/stakingcon2019-384.jpg)
 
-_图片: 北京 StakingCon 2019 关于Staking讨论_
+_图片: 北京 StakingCon 2019 关于Staking的讨论_
 
 七月重大新闻:
 
-* 一个重要里程碑诞生:DEX的[规范](https://github.com/decred/dcrdex)文本已经发布。开发计划由dcrdata的开发者在八月初通过[提案](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1)提交。
+* 一个重要里程碑诞生:DecredDEX的[规范](https://github.com/decred/dcrdex)文本已经发布。开发计划由dcrdata的开发者在八月初通过[提案](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1)提交。
 * 3家提供做市公司在8月7日分别提交了他们的提案。8月10日发布的RFP提案旨在询问利益相关者是否想要聘请做市商，若投票通过则开启做市商的提案投票，若不通过则关闭做市商的提案。详细内容会在Politeia摘要和下月月报中介绍。
 * TinyDecred是一个python工具包，由@ buck54321发布，他是去年开始从事dcrdata开发工作的承包商。TinyDecred最初是Brian的个人兴趣项目，但随着时间的推移发展成为一组有用的工具，可以为大量的Python编码器打开与Decred相关的开发。他提交了一份[提案](https://proposals.decred.org/proposals/20e967dad9e7398901decf3cfe0acf4e0853f6558a62607265c63fe791b8b124)，要求8,000美元用于TinyDecred的工作 - 这似乎得到了强有力的支持。
 * dcrdata beta v5.1现已上线，充满了渐进式改进。dcrextdata也取得了很好的进展，收集了更多的市场数据，并在网络上部署了节点来收集有关mempool和块传播时间的数据。
 * [@muststopmurad](https://www.youtube.com/watch?v=XkvcdjSH0c0)和[@permabullnino](https://www.youtube.com/watch?v=HxECplK3kAs)发布了Decred in Depth语音录播，他们谈到了他们为什么加入Decred以及他们对未来的机遇和挑战提出了自己的看法。
 * 在社交媒体上，Decred相关的讨论似乎越来越多，参与讨论的人的圈子也在扩大。毫无疑问，这是受到Decred的支持，由@checkmate发起并推广，他还发表了一篇关于Decred货币溢价的[文章](https://medium.com/@_Checkmatey_/monetary-premiums-can-altcoins-compete-with-bitcoin-54c97a92c6d4)，并提交了继续进行这一研究的 [提案](https://proposals.decred.org/proposals/78b50f218106f5de40f9bd7f604b048da168f2afbec32c8662722b70d62e4d36) （现已批准）。@Checkmate的文章已经被一篇来自BlockheadCapital的[投资论文](https://www.blockheadcap.com/post/decred-investment-thesis)引用了，他貌似也要奶一下Decred。
 
-## Development
+## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): Optimizations and infrastructure additions for various planned upcoming features, code maintenance, bug fixes.
+[dcrd](https://github.com/decred/dcrd):代码维护优化、bug修复和为各种即将推出的功能添加基础设施。
 
-New major versions of [rpcclient](https://github.com/decred/dcrd/pull/1807), [database](https://github.com/decred/dcrd/pull/1799), [blockchain/stake](https://github.com/decred/dcrd/pull/1803) and [dcrjson](https://github.com/decred/dcrd/pull/1779) modules were introduced to take advantage of recent improvements in other modules. The new dcrjson module saw a significant overhaul, while retaining a backwards compatible API. This will allow consumer modules to pick up the majority of the improvements via the old API before they fully upgrade to the new one. Opportunity of major version bumps was taken to break tight coupling and remove unused code.
+引入了[rpcclient](https://github.com/decred/dcrd/pull/1807)，[database](https://github.com/decred/dcrd/pull/1799)，[blockchain/stake](https://github.com/decred/dcrd/pull/1803)和[dcrjson](https://github.com/decred/dcrd/pull/1779)模块的最新核心版本，以利用其它模块的最新改进。新的dcrjson模块进行了重大改进，同时保留了向后兼容的API。这将允许用户模块在完全升级到新API之前通过旧API获取大部分改动。用核心版本碰撞的机会来断开紧密耦合并删除未使用的代码。
 
-A [workaround](https://github.com/decred/dcrd/pull/1801) for Go compiler's code generation issues was added to avoid the explosion of binary size of chaincfg/v2 module.
+增加了Go编译器代码生成问题的 [解决方案](https://github.com/decred/dcrd/pull/1801)，以避免chainCfg/v2二进制模块崩溃。
 
-[dcrwallet](https://github.com/decred/dcrwallet): Codebase upgrades and bug fixes. Large [refactoring](https://github.com/decred/dcrwallet/pull/1509) of JSON-RPC code and [removal](https://github.com/decred/dcrwallet/pull/1496) of obsolete gRPC code have been merged.
+[dcrwallet](https://github.com/decred/dcrwallet): 代码库升级和错误修复。已经合并了对JSON-RPC代码的大量[重构](https://github.com/decred/dcrwallet/pull/1509)和[去除](https://github.com/decred/dcrwallet/pull/1496)过时的gRPC代码。
 
-[Decrediton](https://github.com/decred/decrediton): Minor UI improvements and bug fixes. Responsive purchase ticket view [implemented](https://github.com/decred/decrediton/pull/2146). A ton of dependencies were [upgraded](https://github.com/decred/decrediton/pull/2156) to close a host of vulnerabilities.
+[Decrediton](https://github.com/decred/decrediton): 较小的用户界面改进和错误修复。[实施](https://github.com/decred/decrediton/pull/2146)响应式购票视图。大量依赖项已[升级](https://github.com/decred/decrediton/pull/2156)，以弥补漏洞。
 
-[Politeia](https://github.com/decred/politeia): Work continues on the [redesign](https://github.com/decred/dcrdesign/issues/77) of Politeia's interface. The other major task in July concerned the [integration](https://github.com/decred/politeia/pull/951) of tlog from Google's open source [Trillian](https://github.com/google/trillian) data store on the backend as a replacement for Git. tlog ([transparent log](https://research.swtch.com/tlog)) will improve scalability, allow records to be timestamped individually, and will allow for switching to a filesystem like [IPFS](https://ipfs.io) in future.
+[Politeia](https://github.com/decred/politeia): 继续重新设计Politeia的界面。7月份的另一项主要任务涉及将谷歌开源[Trillian](https://github.com/google/trillian)数据存储的tlog [集成](https://github.com/decred/politeia/pull/951)到后端作为Git的替代品。tlog ([透明日志](https://research.swtch.com/tlog)) 将提高可伸缩性，允许单独对记录添加时间戳，并允许将来切换到类似ipfs的文件系统。
 
-Login by email has been [replaced](https://github.com/decred/politeia/pull/940) to use username as part of the effort to make [email optional](https://github.com/decred/politeia/issues/554) and will be deployed on Politeia during the next update.
+通过电子邮件登录[已被替换](https://github.com/decred/politeia/pull/940)为使用用户名登陆，并将在下一次更新时部署在politeia上。
 
-[dcrstakepool](https://github.com/decred/dcrstakepool): UI and performance improvements, bug fixes. Reworked [Connect to Wallet](https://github.com/decred/dcrstakepool/pull/427) view and added the display of VSP's [block height](https://github.com/decred/dcrstakepool/pull/440) as a health indicator. More work to [decouple](https://github.com/decred/dcrstakepool/issues/227) dcrstakepool and dcrwallet (dcrstakepool should only talk to the stakepoold service that in turn manages the voting wallet).
+[dcrstakepool](https://github.com/decred/dcrstakepool): 用户界面和性能改进，错误修复。修改了“[连接到钱包](https://github.com/decred/dcrstakepool/pull/427)”视图，并添加了VSP的[块高度](https://github.com/decred/dcrstakepool/pull/440)显示作为正常指示器。将dcrstakepool和dcrwallet[分离](https://github.com/decred/dcrstakepool/issues/227)的更多工作（dcrstakepool应该只与管理投票钱包的stakepoold服务对话）。
 
-Raedah Group has started work to [improve](https://github.com/raedahgroup/dcrstakepool/pull/4) the VSP authentication APIs. This will enable the use of [accountless VSPs](https://github.com/decredcommunity/issues/issues/100), which will greatly simplify the staking setup process for new users and allow to make [email optional](https://github.com/decred/dcrstakepool/issues/274) ([discussion](https://matrix.to/#/!wSdymYrEpBhsWlDJuk:decred.org/$15605505894685ViDcj:decred.org)).
+Raedah Group已开始改进VSP身份[验证](https://github.com/raedahgroup/dcrstakepool/pull/4)API。这将允许使用[无账户的VSP](https://github.com/decredcommunity/issues/issues/100)，这将大大简化新用户的设置过程，并允许[选择电子邮件](https://github.com/decred/dcrstakepool/issues/274) ([讨论](https://matrix.to/#/!wSdymYrEpBhsWlDJuk:decred.org/$15605505894685ViDcj:decred.org))。
 
 [dcrlnd](https://github.com/decred/dcrlnd): Upstream changes from [lnd](https://github.com/lightningnetwork/lnd) have been [ported](https://github.com/decred/dcrlnd/pull/36#issuecomment-509370199), and private dev branches are mostly in sync with the upstream lnd master branch. The latest upstream [pull request](https://github.com/lightningnetwork/lnd/commit/add905d17f7bbb11d0df2761cdf8accf2fef2b00) to be reviewed was submitted to lnd on Jul 25.
 
