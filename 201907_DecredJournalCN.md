@@ -33,52 +33,51 @@ _图片: 北京 StakingCon 2019 关于Staking的讨论_
 
 Raedah Group已开始改进VSP身份[验证](https://github.com/raedahgroup/dcrstakepool/pull/4)API。这将允许使用[无账户的VSP](https://github.com/decredcommunity/issues/issues/100)，这将大大简化新用户的设置过程，并允许[选择电子邮件](https://github.com/decred/dcrstakepool/issues/274) ([讨论](https://matrix.to/#/!wSdymYrEpBhsWlDJuk:decred.org/$15605505894685ViDcj:decred.org))。
 
-[dcrlnd](https://github.com/decred/dcrlnd): Upstream changes from [lnd](https://github.com/lightningnetwork/lnd) have been [ported](https://github.com/decred/dcrlnd/pull/36#issuecomment-509370199), and private dev branches are mostly in sync with the upstream lnd master branch. The latest upstream [pull request](https://github.com/lightningnetwork/lnd/commit/add905d17f7bbb11d0df2761cdf8accf2fef2b00) to be reviewed was submitted to lnd on Jul 25.
+[dcrlnd](https://github.com/decred/dcrlnd): 已经移植了来自[lnd](https://github.com/lightningnetwork/lnd)的上游更改，私有dev分支大多与上游lnd主[分支](https://github.com/decred/dcrlnd/pull/36#issuecomment-509370199)同步。要审查的最新上游[合并请求](https://github.com/lightningnetwork/lnd/commit/add905d17f7bbb11d0df2761cdf8accf2fef2b00) 已于7月25日提交给lnd。
 
-The [lightning-faucet](https://github.com/decred/lightning-faucet) repo has migrated from @matheusd's GitHub to the official decred org, where the faucet saw minor improvements this month to the form for generating Lightning [invoices](https://github.com/decred/lightning-faucet/pull/9) and the [addition](https://github.com/decred/lightning-faucet/pull/10) of continuous integration. Work has started on a new Pay Invoice form that will allow users to pay via the faucet (currently users must pay invoices on the command line with `dcrlncli`).
+[闪电水龙头](https://github.com/decred/lightning-faucet)回购已经从@matheusd的github迁移到官方颁布的组织，在这个月，水龙头在生成闪电发票和增加持续集成的表单上看到了细微的改进。新的付款[发票单](https://github.com/decred/lightning-faucet/pull/9)已经开始工作，它[允许](https://github.com/decred/lightning-faucet/pull/10)用户通过水龙头付款（目前用户必须使用"dcrlncli"在命令行上支付发票）。
 
-[dcrandroid](https://github.com/decred/dcrandroid): Minor UI optimizations and bug fixes, as well as the ability to [rename accounts](https://github.com/decred/dcrandroid/pull/386).
+[dcrandroid](https://github.com/decred/dcrandroid): 用户界面优化和错误修复，添加 [重命名帐户](https://github.com/decred/dcrandroid/pull/386)功能。
 
-Work is in progress to add [biometric authentication](https://github.com/decred/dcrandroid/pull/343), [sound and vibration](https://github.com/decred/dcrandroid/pull/399) to notifications, and a [stats page](https://github.com/decred/dcrandroid/pull/397).
+在通知和[状态页面](https://github.com/decred/dcrandroid/pull/397)中添加[生物识别认证](https://github.com/decred/dcrandroid/pull/343)、[声音和振动](https://github.com/decred/dcrandroid/pull/399)的工作正在进行中。
 
-[dcrios](https://github.com/raedahgroup/dcrios): UI optimizations and bug fixes, new translations to [Spanish](https://github.com/raedahgroup/dcrios/pull/500), [Vietnamese](https://github.com/raedahgroup/dcrios/pull/498) and [Portuguese](https://github.com/raedahgroup/dcrios/pull/497).
+[dcrios](https://github.com/raedahgroup/dcrios): 用户界面优化和错误修复，[西班牙语](https://github.com/raedahgroup/dcrios/pull/500)，[越南语](https://github.com/raedahgroup/dcrios/pull/498)和[葡萄牙语](https://github.com/raedahgroup/dcrios/pull/497)的新翻译。
 
-[dcrdata](https://github.com/decred/dcrdata): v5.1 is now [live](https://explorer.dcrdata.org/). This release adds numerous UI enhancements, including the [addition](https://github.com/decred/dcrdata/pull/1487) of fiat and percent values to the [markets dashboard](https://explorer.dcrdata.org/market), new [styling](https://github.com/decred/dcrdata/pull/1446) on the [proposal page](https://explorer.dcrdata.org/proposal/decentralized-exchange-specification-document), a [tweak](https://github.com/decred/dcrdata/pull/1448) to the "predicted" coin supply chart, fullscreen [address chart](https://github.com/decred/dcrdata/pull/1443) (useful for [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) address), and a [progress bar](https://github.com/decred/dcrdata/pull/1447) for ticket revocations.
+[dcrdata](https://github.com/decred/dcrdata): v5.1版本现已上线。这个版本添加了许多用户界面增强功能，包括向市场仪表板添加Fiat和Percent值、 [提案页面](https://explorer.dcrdata.org/proposal/decentralized-exchange-specification-document)上的[新样式](https://github.com/decred/dcrdata/pull/1446)、对“预测”硬币供应图表的调整、全屏[地址图表](https://github.com/decred/dcrdata/pull/1443)（对于[社区基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)地址很有用）和退票[进度条](https://github.com/decred/dcrdata/pull/1447)。
 
-The Insight API has received some attention, with improvements to the [address endpoint](https://github.com/decred/dcrdata/pull/1438), several bug fixes, and [increasing](https://github.com/decred/dcrdata/pull/1481) the maximum number of client connections from 1,000 to 16,384.
+随着 [地址端点](https://github.com/decred/dcrdata/pull/1438)的改进、几个错误修复以及客户机连接的最大数量从1000[增加](https://github.com/decred/dcrdata/pull/1481)到16384，Insight API受到了一些关注。
 
-> dcrdata is now the official Insight API for Decred. Exodus wallet now uses the host insight.dcrdata.decred.org for their Insight API needs. There are roughly 800 socket.io client connections (the Insight websocket bits) to dcrdata at any given time, and we've had no complaints from those users. (@chappjc in [chat](https://matrix.to/#/!LmKzrmxJIXNHNiEmIh:decred.org/$15651246158457opycs:decred.org))
+> dcrdata现在是Decred的官方Insight API。Exodus wallet现在使用主机insight.dcrdata.decred.org来满足他们的Insight API需求。在任何给定时间，大约有800个socket.io客户端连接（Insight websocket位）到dcrdata，我们没有来自这些用户的抱怨。（与 @chappjc [聊天](https://matrix.to/#/!LmKzrmxJIXNHNiEmIh:decred.org/$15651246158457opycs:decred.org)）
 
-Changes in dcrd have been [incorporated](https://github.com/decred/dcrdata/pull/1491). npm dependencies were [updated](https://github.com/decred/dcrdata/pull/1467) to close known vulnerabilities.
+合并dcrd[变更](https://github.com/decred/dcrdata/pull/1491)。[更新](https://github.com/decred/dcrdata/pull/1467)了NPM依赖项以关闭已知的漏洞。
 
-Work continues to finish removing [sqlite](https://github.com/decred/dcrdata/pull/1480).
+Raedah Group继续研究[dcrextdata](https://github.com/raedahgroup/dcrextdata)，这是一个用于收集dcrdata上尚未找到的外部（脱链）数据的软件包。在收集关于mempool和块传播时间的节点数据方面取得了进展。现在可以从单个节点跟踪这些数据，并且在完成跟踪数据的完整历史记录（使用图表）时可以使用它们。dcrextdata还可以从PoW池和VSP中提取和存储数据，这将允许维护这些属性的历史记录。[这里](http://dcrextdata.raedahgroup.com/)提供了实时数据的演示。
 
-Raedah Group continues work on [dcrextdata](https://github.com/raedahgroup/dcrextdata), a package for collecting external (off-chain) data not yet found on dcrdata. Progress has been made on collecting node-level data about the mempool and block propagation times. These are being tracked now from a single node and the full history of tracked data will be made available (with charts) when it has been polished. dcrextdata also pulls in and stores data from PoW pools and VSPs, which will allow a historical record of these attributes to be maintained. Demo of the live data is available [here](http://dcrextdata.raedahgroup.com/).
+其它:
 
-Other:
+* DecredDEX规范文本已经发布并添加到新的[dcrdex](https://github.com/decred/dcrdex)存储库中。
+* Raedah Group正在为BTC/DCR交易开发一款移动应用程序（目前该项工作属于私人回购）。
+* [Bug赏金](https://bounty.decred.org/)网站[更新](https://twitter.com/degeri_crypto/status/1154776087374770176)：添加了3个新漏洞的详细信息。该计划共处理了67份提交文件，其中9份有资格获得支付，其中8份已经修补和披露。
 
-* Draft of the DEX specification has been released and added to the new [dcrdex](https://github.com/decred/dcrdex) repository.
-* Raedah Group is working on a mobile app for local person-to-person BTC/DCR trading (the work is in private repos for now).
-* [Bug bounty](https://bounty.decred.org/) website [update](https://twitter.com/degeri_crypto/status/1154776087374770176): added details for 3 new vulnerabilities. The program has processed a total of 67 submissions, with 9 being eligible for a payout, of which 8 have been patched and disclosed.
+7月份的开发活动统计数据：51个活动PR，219个主提交，50K添加和29K删除的行分布在15个存储库中。贡献来自每个存储库1-6个开发人员。
 
-Dev activity stats for July: 51 active PRs, 219 master commits, 50K added and 29K deleted lines spread across 15 repositories. Contributions came from 1-6 developers per repository.
 
-## People
+## 人员
 
-Welcome to new first time contributors with code merged to master: bgptr ([decrediton](https://github.com/decred/decrediton/commits?author=bgptr)), emesterhazy ([decrediton](https://github.com/decred/decrediton/commits?author=emesterhazy)), ReevesAk ([dcrwallet](https://github.com/decred/dcrwallet/commits?author=ReevesAk)).
+欢迎新的代码贡献者：bgptr（[decrediton](https://github.com/decred/decrediton/commits?author=bgptr)）、emesterhazy（([decrediton](https://github.com/decred/decrediton/commits?author=emesterhazy)）、reevesak（[dcrwallet](https://github.com/decred/dcrwallet/commits?author=ReevesAk)）。
 
-Congratulations to the 4 contributors listed on [decred.org](https://decred.org/contributors/):
+恭喜在decred.org上列出的4位[decred.org](https://decred.org/contributors/)：
 
 * Akin Sawyerr (@akinsawyerr, Africa Lead & Strategy)
 * Kevin Hebert (@klebe, Developer)
 * Leslie Ankney (@cryptoleslie, Public Relations)
 * Victor Guedes (@VictorGuedes, Developer)
 
-Decred Australia community has been building nicely. An [update](https://medium.com/@sahand.bagheri/decred-australia-building-a-community-brick-by-brick-89928041687e) shared last month recaps partnerships established, events organized, people attracted as well as next goals. This was covered in [June](201906.md)'s Media but turned out bigger than just an article.
+Decred澳大利亚社区一直在建设良好。上个月分享的[更新](https://medium.com/@sahand.bagheri/decred-australia-building-a-community-brick-by-brick-89928041687e)回顾了已建立的伙伴关系，组织的活动，吸引的人以及下一个目标。6月的月报对此进行了报道，但结果不仅仅是一篇文章。
 
-Community stats as of Aug 1:
+社区统计截至8月1日：:
 
-* Politeia users: 154 (-35, adjusted by new more accurate counting method)
+* Politeia users: 154 (-35, 通过新的更准确的计数方法调整)
 * Twitter followers: 40,572 (+93)
 * Reddit subscribers: 9,556 (+51)
 * Matrix users: 384 (+20)
@@ -90,46 +89,46 @@ Community stats as of Aug 1:
 * LinkedIn followers: 591 (+24)
 * GitHub dcrd stars: 498 (+4), forks: 1,365 (+28)
 
-## Governance
+## 治理
 
-In July the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 15,517 DCR and spent 10,344 DCR. Using July's daily average DCR/USD rate of $28.97, this is $450K received and $300K spent. These payments were for work completed in June at the rate of $28.90, so the billed amount is almost the same. As of Aug 1, Treasury balance is 627,514 DCR (16.8 million USD at $26.75).
+7月，[社区基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了15,517个DCR，并花费了10,344个DCR。使用7月份的每日平均DCR /美元汇率为28.97美元，这是收到的45万美元和30万美元的花费。这些付款用于6月完成的工作，费率为28.90美元。截至8月1日，财政部余额为627,514 DCR（1680万美元，26.75美元）。
 
-In July, 2 new proposals were submitted:
+7月，提交了2份新提案：:
 
-* [Decred Fundamental Metrics Research Proposal - Phase 1](https://proposals.decred.org/proposals/78b50f218106f5de40f9bd7f604b048da168f2afbec32c8662722b70d62e4d36) by @Checkmate, a new contributor, requesting $12,000 for 3 months work on research and social media presence, plus $2,000 for work completed prior to this ([monetary premiums](https://medium.com/@_Checkmatey_/monetary-premiums-can-altcoins-compete-with-bitcoin-54c97a92c6d4) article). Voting has concluded and the proposal approved with 92% support.
+* [Decred Fundamental Metrics Research Proposal - Phase 1](https://proposals.decred.org/proposals/78b50f218106f5de40f9bd7f604b048da168f2afbec32c8662722b70d62e4d36) 由@Checkmate提出, 要求12,000美元，为期3个月的研究和社交媒体工作，加上2000美元之前完成的工作([monetary premiums article](https://medium.com/@_Checkmatey_/monetary-premiums-can-altcoins-compete-with-bitcoin-54c97a92c6d4) article)）。投票已经结束，该提案得到了92％的支持。 
 
-* [TinyDecred: A Python Toolkit for Decred](https://proposals.decred.org/proposals/20e967dad9e7398901decf3cfe0acf4e0853f6558a62607265c63fe791b8b124) by @buck54321, a contractor working on dcrdata for the last year, requests $8,000 for work already completed on TinyDecred, a set of tools for interacting with the Decred blockchain in Python. Proposal voting opened on Aug 6, it currently has 89% approval.
+* [TinyDecred: A Python Toolkit for Decred](https://proposals.decred.org/proposals/20e967dad9e7398901decf3cfe0acf4e0853f6558a62607265c63fe791b8b124) 由@buck54321提出, 要求在TinyDecred上完成的工作需要8,000美元，这是一套用于与Python中的Decred区块链交互的工具。提案投票于8月6日开始，目前已获得89％的批准。
 
-A further 5 proposals were submitted in August, 4 relating to market makers and 1 related to DEX development. A forthcoming issue of Politeia digest will cover these in depth, and they will also be covered in the August edition of the Journal.
+8月提交了另外5项提案，4项与做市商有关，1项与DEX发展有关。即将出版的Politeia摘要将深入介绍这些内容，并将在8月的月报中说明。
 
-[Issue 19](https://medium.com/politeia-digest/issue-19-june-30-july-31-2019-c591fcb79d98) of Politeia Digest has more detail on July's proposal activity and discussions.
+“Politeia 摘要t” 第[19期](https://medium.com/politeia-digest/issue-19-june-30-july-31-2019-c591fcb79d98)更详细地介绍了7月的提案活动和讨论。
 
-A [dataset](https://github.com/RichardRed0x/pi-research/blob/master/data/comments-and-updown-votes/pi-users.csv) and [short report](https://github.com/RichardRed0x/pi-research/blob/master/analysis/comments-and-updown-votes/users-review.md) has been prepared which aggregates the Politeia data on the basis of username, producing accurate figures for how often each user has commented and voted, and how well their comments have scored.
+已经准备了一个 [数据集](https://github.com/RichardRed0x/pi-research/blob/master/data/comments-and-updown-votes/pi-users.csv)和 [简短报告](https://github.com/RichardRed0x/pi-research/blob/master/analysis/comments-and-updown-votes/users-review.md)，它根据用户名聚合Politeia数据，生成每个用户评论和投票频率的准确数字，以及他们的评论得分情况。
 
-## Network
+## 网络
 
-Hashrate: July's hashrate opened at ~503 Ph/s and closed ~583 Ph/s, bottoming at 319 Ph/s and peaking at 687 Ph/s throughout the month. Pool hashrate distribution as of Aug 2: F2Pool 21%, UUPool 19%, lab.antpool.com 16.5%, Poolin 9.5%, BTC.com 7.3%, Luxor 2.2%, BeePool 0.14%, Coinmine 0.12%, suprnova 0.08% and others 24% per [dcrstats.com](https://dcrstats.com/pow). Pool distribution numbers are approximate and cannot be accurately determined.
+Hashrate：7月的哈希值以~503 Ph/s的速度开启，关闭了〜583 Ph/s，最低时达到319 Ph/s，整个月达到687 Ph/s。截至8月2日的池哈希值分布：F2Pool 21％，UUPool 19％，lab.antpool.com 16.5％，Poolin 9.5％，BTC.com 7.3％，Luxor 2.2％，BeePool 0.14％，Coinmine 0.12％，suprnova 0.08％和其他24％每个[dcrstats.com](https://dcrstats.com/pow)。池分布数是近似值。
 
-Sharp drop in hashrate from 550 to 319 Ph/s was observed on Jul 5 according to dcrstats.com, followed by a quick recovery within ~20 hours. There was a long [discussion](https://matrix.to/#/!NNzHoaSdnsbZDQOXJr:decred.org/$156238052013967KGajR:decred.org) on the possible reasons for the drop and on its [accuracy](https://matrix.to/#/!NNzHoaSdnsbZDQOXJr:decred.org/$156245221914434sRKEL:decred.org).
+根据dcrstats.com，7月5日观察到哈希值从550降至319 Ph/s，然后在约20小时内快速恢复。关于下降的原因及其准确性进行了长时间的[讨论](https://matrix.to/#/!NNzHoaSdnsbZDQOXJr:decred.org/$156245221914434sRKEL:decred.org)。
 
-Staking: 30-day average ticket price was 125.8 DCR (+5.8) per dcrstats.com. The price varied between 118.8-129.5 DCR. Locked amount was 4.83-5.06 million DCR, which corresponded to 48.25-49.84% of the available supply.
+Staking: 每个dcrstats.com的30天平均票价为125.8 DCR（+5.8）。票价在118.8-129.5DCR之间变化。锁定金额为483-506万DCR，相当于可用供应量的48.25-49.84％。
 
-The ticket price got to the highest levels (129.46) since the difficulty algorithm consensus chage in July 2017. An [argument](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$156359151625133psHEo:decred.org) was made that this value should not be considered an "ATH", because the ticket price has been as high as 238.9 DCR before the algorithm was changed.
+自2017年7月选票难度算法共识变化以来，票价达到最高水平（129.46）。有人提出一个[论点](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$156359151625133psHEo:decred.org)，认为该值不应被视为“ATH”，因为在算法更改之前，选票的价格已经高达238.9 DCR。
 
-Historical charts of [VSP data](https://charts.dcr.farm/d/000000016/proof-of-stake-pools?orgId=1&from=1514764800000&to=now) are available at dcr.farm. Similar data was recently made available at [dcrextdata](http://dcrextdata.raedahgroup.com/), but dcr.farm has data since Jan 2018. Setting a long time interval reveals interesting trends in VSP competition:
+有关[VSP数据](https://charts.dcr.farm/d/000000016/proof-of-stake-pools?orgId=1&from=1514764800000&to=now)的历史图表，请访问dcr.farm。最近在[dcrextdata](http://dcrextdata.raedahgroup.com/)上提供了类似的数据，但dcr.farm自2018年1月以来就有数据。设置一个长时间间隔揭示了VSP竞争的有趣趋势：
 
-* dcr.stakeminer.com bottomed at 14% in June and since recovered above 15% of live tickets
-* stakey.net grew from 2.8% to 6.9% live tickets in 2019 which correlates with the increase of its user count from 300 to 500
-* megapool grew to 3.5% since inception in Oct 2018
-* tokensmart had a bumpy road: since inception in Apr 2018 it grew to 2%, went down to 0.8% in Apr 2019, then a quick rise to nearly 3% in June, followed by another decline to 0.8%
+* dcr.stakeminer.com在6月份触底反弹至14％，并且自从收回超过15％的现场门票
+* stakey.net在2019年从2.8％增长到6.9％的活票，这与其用户数量从300增加到500相关
+* 自2018年10月成立以来，megapool增长到3.5％
+* tokensmart有一条坎坷的发展道路：自2018年4月成立以来，它增长到2％，在2019年4月下降到0.8％，然后在6月迅速上升到接近3％，接着又下降到0.8％
 
-The chart of moving average of missed ticket proportion is interesting too and can be useful for choosing a VSP.
+错过的选票比例的移动平均线图也很有趣，可用于选择VSP。
 
-Nodes: Throughout [July](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1561939200000&to=1564617600000) there were around 173 listening nodes and 360-530 total nodes per dcr.farm. As of Aug 2, roughly 70% run dcrd v1.4.0, 7.5% are dcrwallet v1.4.0, and 6% are v1.5.0(pre) dev builds.
+Nodes: 整个 [7月份](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1561939200000&to=1564617600000)，每个dcr.farm大约有173个监听节点和360-530个节点。截至8月2日，大约70％运行dcrd v1.4.0,7.5％运行dcrwallet v1.4.0,6％运行v1.5.0（预）开发版本。
 
-As of Aug 2, the DCR [testnet LN](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-network?orgId=1) shows 18 nodes, 52 channels and a total capacity of 410 DCR.
+截至8月2日，DCR [闪电网络测试网](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-network?orgId=1)显示网络拥有18个节点，52个信道，总容量为410 DCR。
 
-## Integrations
+## 整合
 
 [Everstake](https://everstake.one/), provider of staking services, [announced](https://medium.com/everstake/welcome-decred-voting-on-everstake-b2d0371426ad) the launch of their Decred VSP at [decred.everstake.one](https://decred.everstake.one/).
 
@@ -141,7 +140,7 @@ As of Aug 2, the DCR [testnet LN](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-
 
 Warning: the authors of Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
 
-## Adoption
+## 采用
 
 Portuguese unprocessed honeybee products maker DrApis [announced](https://twitter.com/drapiscom/status/1146539277028909058) that they accept DCR.
 
@@ -149,7 +148,7 @@ Blockhead Capital [announced](https://twitter.com/jyashouafar/status/11522383015
 
 > Decred is an adaptive cryptocurrency with a rigid monetary policy. The rigid monetary policy provides the base required to achieve monetary premium while the adaptive nature of its on-chain governance allows for integration of more dynamic features. The hybrid consensus mechanism creates adequate checks and balances between the various ecosystem parties while eliminating contentious hardforks as the primary method to resolve disputes - a highly desirable feature for an aspiring global reserve asset. Further, the hybrid consensus creates for more secure blockspace, making the blockspace more valuable, and provides for a more censorship resistant currency. Decred iterates on Bitcoin's strengths and shores up many of its shortcomings, putting it in a position to complement or compete with it as a digital store of value.
 
-## Outreach
+## 外联活动
 
 Infrastructure continued to build in July that will help Decred streamline outreach and education. The website update is close to complete, and should be live by the end of August with new subpages on Decred's Security, Adaptability, Self-Funding, and History. Additionally, we've agreed upon a schema and are currently assembling a resource repository building on Max Bronstein's [Canon](https://github.com/maxbron08/Decred-Canon) that will help form a natural funnel of learning for people taking the #DecredChallenge.
 
@@ -176,7 +175,7 @@ Ditto's July achievements:
 * Put together a long-term media relations plan that targets all of Decred's audiences (investors, developers, crypto enthusiasts), as well as media who haven't covered Decred in the past.
 * Did media training refresher with @jy-p to prepare for broadcast interviews.
 
-## Events
+## 社区活动
 
 Attended:
 
@@ -202,7 +201,7 @@ Upcoming:
 * Sep 30 - Oct 1 - [Voice of Blockchain](https://twitter.com/BlockchainVoice/status/1154772731575099392) - Chicago, USA. @jy-p will present a keynote "Why Direct Sovereignty & Multi-Stakeholder Inclusive Governance Will Last".
 * Nov 4-7 - [Websummit](https://websummit.com/) - Lisbon, Portugal. @moo31337 will speak on a panel TBD, and Decred will have a 2x2m exhibit booth.
 
-## Media
+## 媒体
 
 Selected articles:
 
@@ -230,7 +229,7 @@ Audio:
 * POV Crypto: Decred: Splitting the Difference Between Bitcoin and Ethereum with Luke Powell ([medium](https://medium.com/@TrustlessState/decred-splitting-the-difference-between-bitcoin-and-ethereum-with-luke-powell-758cf6e1218d), [libsyn](http://povcryptopod.btc.libsynpro.com/decred-splitting-the-difference-between-bitcoin-and-ethereum))
 * The Sound Money Podcast: On-Chain Atomic Swaps with @joshuam ([spotify](https://open.spotify.com/episode/1SuzMUUmtm6xR7ofGN6t4a), [itunes](https://podcasts.apple.com/us/podcast/the-sound-money-podcast/id1470774235?i=1000443695629))
 
-## Community Discussions
+## 社区讨论
 
 Comm systems news:
 
@@ -280,13 +279,13 @@ Selected Reddit threads:
 * David Ogilvy talks [Direct Response Advertising](https://www.reddit.com/r/decred/comments/ci82iy/david_ogilvy_talks_direct_response_advertising/); targeting groups that share our values and value sovereignty as high as we do
 * What [metaphor/analogy](https://www.reddit.com/r/decred/comments/cc40hb/general_what_metaphoranalogy_helps_you_understand/) helps you understand different actors within the project?
 
-## Markets
+## 市场表现
 
-In July DCR was trading between USD 25.20-35.64 / BTC 0.00262-0.00296. The average daily rate was $28.97.
+7月份DCR的交易价格为25.20-35.64USD，0.00262-0.00296BTC。平均每日为28.97美元。
 
-After brefiely making a run for USD 13,000, Bitcoin price went down and has been mostly bobbing the USD 10,000 mark most of July.
+在快速达到1.3万美元的价格之后，比特币价格开始下跌，在7月的大部分时间里，比特币的价格都维持在1万美元上方。
 
-## Relevant External
+## 相关外部信息
 
 Chris Burniske of Placeholder VC (holders of Decred and Zcash) provided a good [summary](https://forum.zcashcommunity.com/t/placeholder-considerations-resources-governance-and-legitimacy-in-nu4/34045) of the situation facing the Zcash community as the founders reward expires, advocating for a continuation of 20% block reward to fund project development for another 4 years, with a split of 70% to "Protocol Development" and 30% to "Growth Funds".
 
