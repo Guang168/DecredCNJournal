@@ -1,4 +1,4 @@
-# Decred月报 - 2019年6月
+# Decred月报 - 2019年7月
 
 ![Image: Staking discussion at StakingCon 2019 in Beijing](img/stakingcon2019-384.jpg)
 
