@@ -389,3 +389,31 @@ Credits (alphabetical order):
 * writing and editing: akinsawyerr, bee, cryptoleslie, degeri, Dustorf, elian, kozel, raedah, richardred, s\_ben
 * reviews and feedback: arij, chappjc, davecgh, emiliomann, jholdstock, jy-p, lukebp
 * title image: saender
+
+## 关于月报
+
+这是Decred月报的第16期。[这里](https://xaur.github.io/decred-news/)提供所有问题，镜像和翻译的索引。
+
+来自第三方的大多数信息在经过小范围的检查后直接转发。Decred月报的作者无法验证所有声明。请注意诈骗并做自己的研究。
+
+我们随时欢迎您的[反馈](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback)和[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)。
+
+感谢(字母排列):
+
+* 编写和编辑： bee, cryptoleslie, degeri, Dustorf, lukebp, raedah, richardred, s\_ben
+* 评论和反馈： chappjc, davecgh, jholdstock, jy-p, margaret\_mei, matheusd
+
+## 中文社区
+
+* [社区web](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [优酷频道](https://i.youku.com/decredproject)
+* QQ群号-258412796
+
+欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
+
+中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
+
+
