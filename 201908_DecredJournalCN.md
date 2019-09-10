@@ -158,7 +158,7 @@ The main point of discussion about the new RFP proposal type is around whether t
 
 A Reddit [post](https://www.reddit.com/r/decred/comments/cutc16/decred_events_meetups_in_the_cis_in_20192020/) was submitted for feedback which is intended to serve as a pre-proposal for funding of Decred events and meetups in the Commonwealth of Independent States (CIS) - specifically Russia, Ukraine and Georgia.
 
-## Network
+## 网络
 
 Hashrate: August's hashrate opened at ~563 Ph/s and closed ~567 Ph/s, bottoming at 374 Ph/s and peaking at 671 Ph/s throughout the month. Pool hashrate distribution as of Sep 5: F2Pool 23%, UUPool 16%, Poolin 16%, lab.antpool.com 4.1%, BTC.com 2.3%, Luxor 1.8%, BeePool 0.10%, Coinmine 0.10%, suprnova 0.01% and others 36% per [dcrstats.com](https://dcrstats.com/pow). Pool distribution numbers are approximate and cannot be accurately determined.
 
@@ -170,7 +170,7 @@ As of Sep 5, the DCR [testnet LN](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-
 
 First [transactions](https://twitter.com/decredproject/status/1167269901293297664) that make use of the new privacy system have been noticed.
 
-## Integrations
+## 整合
 
 Exodus has [added](https://twitter.com/exodus_io/status/1168886493617840131) the ability to send, receive and exchange DCR to their mobile wallet.
 
@@ -178,7 +178,7 @@ Ellipal cold wallet has [announced](https://twitter.com/ellipalwallet/status/116
 
 Warning: the authors of Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
 
-## Outreach
+## 外联活动
 
 Much of the in-process Outreach work was pushed aside, as we focused on the release of Decred privacy. Efforts began on Aug 21, as @jy-p published [Surveying the Privacy Landscape](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/). This work was supported via a [tweetstorm](https://twitter.com/decredproject/status/1164245224274767873) which generated direct engagement from fluffypony, Zooko, and the MimbleWimble folks. The first details of privacy broke when @jz went on Laura Shin's [Unchained Podcast](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/) to talk about Decred and its new feature.
 
@@ -210,7 +210,7 @@ Ditto's August achievements:
 * Wrote and submitted a proposal for @matheusd to speak at The Lightning Conference Berlin.
 * Secured a TV interview for @zubair at the Futurist Conference in Toronto.
 
-## Events
+## 社区活动
 
 Attended:
 
@@ -242,7 +242,7 @@ Upcoming:
 
 Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/1166026265805172737 ) for people to organize the first Decred [meetup](https://www.meetup.com/Decred-KC/) in Kansas City, USA.
 
-## Media
+## 媒体
 
 Selected articles:
 
@@ -284,7 +284,7 @@ Since April the Decred Journal has been pushing for greater decentralization of 
 * a [content plan](https://github.com/xaur/decred-news/blob/docs/content.md) with ideas for expansion
 * an extensive [guidelines](https://github.com/xaur/decred-news/blob/docs/guidelines.md) doc that captures the vision and ways of DJ, and also includes tips for translators.
 
-## Community Discussions
+## 社区讨论
 
 Comm systems news:
 
@@ -316,7 +316,7 @@ Selected Twitter discussions:
 
 New Twitter account [@DCRtheSOV](https://twitter.com/DCRtheSOV) aims to [become](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15650685647545vLtzj:decred.org) a reputable source of news and analysis covering Decred and is looking for feedback.
 
-## Markets
+## 市场表现
 
 In August DCR was trading between USD 22.63-32.17 / BTC 0.00227-0.00275. The average daily rate was $26.23.
 
@@ -326,7 +326,7 @@ Bitcoin has again been oscillating around the $10,000 mark most of August, brief
 
 In context of discussing the market maker proposals, [CoinMarketBook](https://coinmarketbook.cc/) argues: "Market cap is a lie. Buy support tells the true story". As of Aug 19, DCR was #95 in that rating with only $260K of buy support at 10% distance from highest bid price. For context: BTC has $360M, ETH $55M, LTC $23M, XMR $9.5M, DASH $5.7M, DOGE $4.6M.
 
-## Relevant External
+## 相关外部信息
 
 Blockstream have [announced](https://blockstream.com/2019/08/08/en-mining-launch/) their Bitcoin mining operations (which started in 2017), with sites in Quebec (Canada) and Georgia (USA) that host their own machines plus those of their clients. Blockstream also announced a new mining pool, the first production mining pool to use the [BetterHash](https://bitcoinmagazine.com/articles/betterhash-protocol-lets-pool-miners-regain-control-over-their-hash-power) protocol. BetterHash allows individual miners to choose which transactions to include in the blocks they find, which would make it significantly more difficult for mining pool operators to use their pool's hashrate maliciously.
 
