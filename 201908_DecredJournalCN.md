@@ -75,7 +75,7 @@ VSP运营商获得了对SMTPS的支持，通过加密连接（包括自[自签�
 
 > 为了保持同步，我们需要在1月10日合并点之后调整几乎所有的提交([@matheusd](https://twitter.com/matheusd_tech/status/1169194706636615680))
 
-LN水龙头获得了[支付发票](https://github.com/decred/lightning-faucet/pull/8)和新配置参数的 [表格](https://github.com/decred/lightning-faucet/pull/14)。
+lightning-faucet获得了[支付发票](https://github.com/decred/lightning-faucet/pull/8)和新配置参数的 [表格](https://github.com/decred/lightning-faucet/pull/14)。
 
 [dcrandroid](https://github.com/decred/dcrandroid): 正在努力实现[新的用户界面](https://github.com/decred/dcrandroid/pull/400)，这将使应用程序与Android的标准应用程序设计建议保持一致。后端的工作也在进行[多钱包](https://github.com/decred/dcrandroid/issues/188)支持，这将使[仅限观察](https://github.com/decred/dcrandroid/issues/393)的钱包用于选票监控。
 
