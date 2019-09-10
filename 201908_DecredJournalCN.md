@@ -376,23 +376,9 @@ Australia is [considering](https://www.abc.net.au/news/2019-08-20/transacting-$1
 
 The US Treasury Department's Office of Foreign Assets Control (OFAC) has [sanctioned](https://www.coindesk.com/us-treasury-blacklists-bitcoin-litecoin-addresses-of-chinese-drug-kingpins) three Chinese nationals under the Foreign Narcotics Kingpin Designation Act. This involved freezing their US-based assets, publishing details of their email aliases and other identifying information, along with Bitcoin and Litecoin addresses.
 
-## About This Issue
-
-This is issue 17 of Decred Journal. Index of all issues, mirrors and translations is available [here](https://xaur.github.io/decred-news/).
-
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
-
-Your [feedback](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback) and [contributions](https://github.com/xaur/decred-news/blob/docs/contributing.md) are always welcome.
-
-Credits (alphabetical order):
-
-* writing and editing: akinsawyerr, bee, cryptoleslie, degeri, Dustorf, elian, kozel, raedah, richardred, s\_ben
-* reviews and feedback: arij, chappjc, davecgh, emiliomann, jholdstock, jy-p, lukebp
-* title image: saender
-
 ## 关于月报
 
-这是Decred月报的第16期。[这里](https://xaur.github.io/decred-news/)提供所有问题，镜像和翻译的索引。
+这是Decred月报的第17期。[这里](https://xaur.github.io/decred-news/)提供所有问题，镜像和翻译的索引。
 
 来自第三方的大多数信息在经过小范围的检查后直接转发。Decred月报的作者无法验证所有声明。请注意诈骗并做自己的研究。
 
@@ -400,8 +386,9 @@ Credits (alphabetical order):
 
 感谢(字母排列):
 
-* 编写和编辑： bee, cryptoleslie, degeri, Dustorf, lukebp, raedah, richardred, s\_ben
-* 评论和反馈： chappjc, davecgh, jholdstock, jy-p, margaret\_mei, matheusd
+* 编写和编辑： akinsawyerr, bee, cryptoleslie, degeri, Dustorf, elian, kozel, raedah, richardred, s\_ben
+* 评论和反馈： arij, chappjc, davecgh, emiliomann, jholdstock, jy-p, lukebp
+* 封面图片：saender
 
 ## 中文社区
 
