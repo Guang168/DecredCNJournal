@@ -1,147 +1,147 @@
-# Decred Journal – August 2019
+# Decred月报 - 2019年8月
 
 ![abstract art](img/journal-201908-384.png)
 
-_Image: Key Symmetry by @saender. When everything is aligned, big things are born._
+_图片: 对称 by @saender. 当信息对称时，就会发生大事._
 
-Major news of August:
+八月重点:
 
-* The privacy feature which Company 0 had been working on privately was revealed, an initial implementation was released, and the first mixes were observed on mainnet. See Privacy section below.
-* Development of Decred's decentralized exchange has commenced, after a proposal led by @chappjc and @buck54321 for up to $230,000 in funding was approved by 90% of voters.
-* The percentage of circulating DCR locked in PoS tickets broke above 50% for the first time on Aug 15. This, along with the rising ticket price, indicates that the confidence of Decred holders is increasing over time, as more holders opt to time-lock their DCR to participate in governance.
-* Decred stakeholders signalled that they wish to fund a market maker to address liquidity issues (87% approval). Voting for the proposals from i2 Trading, Grapefruit Trading and Tantra Labs started on Sep 4 and is very competitive as all 3 proposals have 50-62% support at time of publication. See Governance section for more details.
+* Company 0 秘密开发的的隐私功能披露，初步隐私保护功能已经发布，首次混币在主网上被观察到，请参阅下面的隐私部分。
+* 在由@chappjc和@buck54321领导的提案中，90％的选民批准了高达230,000美元的资金后，Decred去中心化交易工具的开发工作已经开始。
+* 锁定在PoS选票中的流通DCR百分比在8月15日首次突破50％以上。随着选票价格的上涨，表明Decred持有者的信心随着时间的推移而增加，因为更多持有者选择锁定他们的DCR参与治理。
+* Decred利益相关者表示他们希望为做市商提供资金以解决流动性问题（87％的批准）。来自i2 Trading，Grapefruit Trading和Tantra Labs的提案的投票于9月4日开始，他们都非常具有竞争力，因为这3个提案在发布时都有50-62％的支持。有关详细信息，请参阅治理部分。
 
-## Privacy
+## 隐私保护
 
-A blog [post](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/) by @jy-p surveying the privacy landscape was published on Aug 21. This post considers the trade-offs associated with different approaches to cryptocurrency privacy and reviews the pros and cons of the approach taken by Monero, Zcash, Grin, Beam, Dash and Wasabi Wallet for Bitcoin.
+@ jy-p [分析](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/)隐私保护领域的博客文章于8月21日发布。本文考虑了与加密货币隐私保护的不同方案相关的权衡，并回顾了Monero，Zcash，Grin，Beam，Dash，Bitcoin的Wasabi钱包所采用的方案的优缺点。
 
-The first details of the privacy feature that Company 0 have been developing in private were released publicly by @jz on an [episode](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/) of Laura Shin's Unchained Podcast on Aug 27.
+由Company 0秘密开发的隐私功能的首个细节由@jz 于8月27日在一集 Laura Shin的[Unchained Podcast](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/)上公开发布。
 
-On Aug 28 a blog [post](https://blog.decred.org/2019/08/28/Iterating-Privacy/) from @jy-p was published which gives a full account of the approach that Company 0 are taking to privacy, and explains the reasoning for this choice. Only approaches which would allow for pruning of spent transactions were considered, with a preference for less complex solutions that allow the auditability of DCR supply to be maintained. This tweet [thread](https://twitter.com/decredproject/status/1166746979160023046) offers a more concise introduction, and @Dustorf has also written a [post](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6) which considers the importance of privacy and provides a less technical perspective on how the new approach works. @jy-p also recorded an hour-long [episode](https://twitter.com/decredproject/status/1168558002867191808) of Decred in Depth with @anshawblack focusing on privacy, where he discussed topics from evading surveillance capitalism to why different approaches were more or less suited to Decred. @anshawblack and GhostWridah also collaborated on a 1 minute [rap](https://soundcloud.com/decredindepth/privacy-flow/s-5ifuN) about Decred and privacy.
+8月28日，@ jy-p[发布](https://blog.decred.org/2019/08/28/Iterating-Privacy/)了一篇博客文章，全面介绍了Company 0对隐私保护的态度，并解释了选择这种方案的原因。仅考虑了允许修剪已用完交易的方法，优先选择不复杂的解决方案，以保持DCR底层供应的可审计性。这篇[推文](https://twitter.com/decredproject/status/1166746979160023046)提供了更简洁的介绍，@ Dustorf还撰写了一篇[文章](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6)，该文章考虑了隐私的重要性，并提供了关于新方案如何运作的技术复杂性较低的观点。@ jy-p也录制了一个小时的[视频](https://twitter.com/decredproject/status/1168558002867191808)与@anshawblack关注隐私的深度讨论，他讨论了从逃避监视资本主义及怎样的隐私保护方案适合Decred的主题。@anshawblack和GhostWridah还合作了1分钟关于Decred和隐私的[rap](https://soundcloud.com/decredindepth/privacy-flow/s-5ifuN)。
 
-The approach is based on the CoinShuffle++ protocol, integrated into the ticket buying process so that stakeholders can opt in to mix their coins as they buy tickets. Smaller denominations are also available for mixing regular (non staking) transactions. The protocol addresses the traceability (who sends to whom) but does not hide amounts. The solution relies on a centralized server to coordinate mixing - information about input addresses and change addresses is leaked to the server but not the other peers in the mix, and output addresses are fully anonymized. As the mixing occurs off-chain, no change to the consensus rules was required. As all development to this point has been funded by Company 0, no Politeia proposal for funding was required as well.
+该方法基于CoinShuffle++协议，集成到购买选票流程中，以便利益相关者可以选择在购买选票时混合他们的DCR。较小的面额也可用于常规混合（非POS）交易。该协议解决了底层可追溯性（匿名保护发送者和接收者）但不隐藏金额。该解决方案依赖于集中式服务器来协调混合 - 有关输入地址和更改地址的信息输入到到服务器，并且输出地址是完全匿名的。由于混合发生在链下，因此不需要改变共识规则。所有的开发都是由Company 0资助的，因此也不需要Politeia为此开发提供资金。
 
-The initial release works only for users of the command-line interface dcrwallet. It will take time for mixing to be integrated into Decrediton, and in order for it to be offered to VSP users significant improvements to dcrstakepool are required. Longer term, Confidential Transactions (with Bulletproofs) will be considered. These could be used to hide the amounts, which would enhance privacy and avoid the need for extensive mixing of change from the transactions. This kind of development would require changes to the consensus rules, and so would go through the normal governance process.
+初始版本仅适用于命令行界面CLI dcrwallet的用户。将混合集成到decrediton还需要一段时间，并且为了向VSP用户提供混合，需要对dcrstakepool进行重大改进。从长远来看，将考虑保密交易。这些可以用来隐藏金额，这将提高隐私，避免交易中出现大量混合变量的需要。这种方式需要改变共识规则，未来或将通过链上治理途径。
 
-## Development
+## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): New module named `blockchain/standalone` was [introduced](https://github.com/decred/dcrd/pull/1808), which aims to provide several of the standalone functions currently available in the `blockchain` module. The primary goal of offering these functions via a separate module is to reduce dependencies for client code. It will also be beneficial for applications such as lightweight clients that need to ensure basic security properties hold and calculate appropriate vote subsidies. The opportunity was taken to write more robust and performant functions that will replace those in the `blockchain` module in the next major version. The new module will ship with comprehensive tests, full package documentation, and basic usage examples.
+[dcrd](https://github.com/decred/dcrd): 新命名的模块blockchain/standalone[发布](https://github.com/decred/dcrd/pull/1808)，其目的是提供几个目前可用的独立功能 区块链 模块。通过单独的模块提供这些功能的主要目的是减少客户端代码的依赖性。对于需要确保基本安全属性保持并计算适当的选票的轻量级客户端等应用程序也是有益的。我们有机会编写更强大，更高效的函数，这些函数将取代 区块链 下一个主要版本中模块中的函数。新模块将附带全面的测试，完整的文档和基本用法示例。
 
-New major versions of [`blockchain`](https://github.com/decred/dcrd/pull/1823), [`mining`](https://github.com/decred/dcrd/pull/1831), [`connmgr`](https://github.com/decred/dcrd/pull/1833), [`peer`](https://github.com/decred/dcrd/pull/1834) and [`mempool`](https://github.com/decred/dcrd/pull/1835) modules have been introduced to make use of other new major module versions. The main module was also [updated](https://github.com/decred/dcrd/pull/1837) to use them all, which marks the end to the module upgrading saga for now. The overall benefit is that it updates dcrd to make use of all the latest code updates and significantly reduces that amount of future churn necessary in certain modules when they require API changes that constitute a major semantic versioning break.
+新的主要版本[`blockchain`](https://github.com/decred/dcrd/pull/1823), [`mining`](https://github.com/decred/dcrd/pull/1831), [`connmgr`](https://github.com/decred/dcrd/pull/1833), [`peer`](https://github.com/decred/dcrd/pull/1834) 和 [`mempool`](https://github.com/decred/dcrd/pull/1835)模块已被引入到使用其它新的主要模块的版本。主要模块也进行了[更新](https://github.com/decred/dcrd/pull/1837)，以便全面使用它们。总体好处是它更新dcrd以利用所有最新的代码更新，并在需要API更改构成主要语义版本控制中断时，显着减少某些模块中所需的未来流失量。
 
-`gcs` module received multiple [improvements](https://github.com/decred/dcrd/pulls?q=is%3Apr+is%3Aclosed+merged%3A2019-08-01..2019-08-31+gcs) to bring it to the quality level required by consensus code for ultimate inclusion in [header commitments](https://proposals.decred.org/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58). Support has been [added](https://github.com/decred/dcrd/pull/1854) for independent false positive rate and Golomb coding bin size. Among other things, this permits more optimal parameters for minimizing the filter size to be specified. This capability will be used in the upcoming version 2 filters that will ultimately be included in header commitments. Start of the module's v2 dev cycle also marked the start of a [new approach](https://github.com/decred/dcrd/pull/1843) towards handling module versioning between release cycles to reduce the maintenance burden.
+`gcs`模块得到了多项 [改进](https://github.com/decred/dcrd/pulls?q=is%3Apr+is%3Aclosed+merged%3A2019-08-01..2019-08-31+gcs)，使其达到共识代码所要求的质量水平，详细细节在[header commitments](https://proposals.decred.org/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58)中。[添加](https://github.com/decred/dcrd/pull/1854)了独立的误报率和Golomb译码窗口尺寸。除此之外，这允许更优化的参数以最小化要指定的滤波器尺寸。此功能将用于即将发布的版本2过滤器中，最终将包含在标头承诺中。模块的v2开发周期的开始也标志着在发布周期之间处理模块版本控制的[新方法](https://github.com/decred/dcrd/pull/1843)的开始，以减少维护负担。
 
-The Blake256 implementation has been [copied](https://github.com/decred/dcrd/pull/1811) into the dcrd repository so that dcrd does not have that external dependency anymore. While the optimizations required by dcrd were [accepted](https://github.com/dchest/blake256/pull/3) upstream, it is still desirable to have consensus critical code under tight control of dcrd maintainers to avoid situations mentioned [here](https://github.com/decred/dcrd/issues/1810).
+Blake256实现已被[复制到](https://github.com/decred/dcrd/pull/1811)dcrd存储库中，因此dcrd不再具有外部依赖性。虽然dcrd所需的优化是在上游[接受](https://github.com/dchest/blake256/pull/3)的，但仍然需要在dcrd维护者的严格控制下使用共识关键代码以避免[此处](https://github.com/decred/dcrd/issues/1810)提到的情况。
 
-Automatic [address discovery](https://github.com/decred/dcrd/pull/1522) has been merged. It allows users who are behind NAT to run publicly discoverable full nodes without specifying `--externalip`.
+自动地址发现已[合并](https://github.com/decred/dcrd/pull/1522)。它允许NAT后面的用户运行可公开发现的完整节点而无需指定`--externalip`。
 
-Test coverage was increased and hardened in multiple areas of the codebase.
+测试覆盖率在代码库的多个区域中得到增强。
 
-Work [started](https://github.com/decred/dcrd/pull/1829) to maximize block template fees based on transaction chains in the mempool.
+工作[开始](https://github.com/decred/dcrd/pull/1829)根据mempool中的事务链最大化块模板费用。
 
-[dcrwallet](https://github.com/decred/dcrwallet): A new [RPC](https://github.com/decred/dcrwallet/pull/1522) has been added that allows the user to abandon (or remove) an unconfirmed transaction from the wallet, and any other transactions dependent on its outputs. Another new RPC allows export of the [extended private key](https://github.com/decred/dcrwallet/pull/1533) of an account after unlocking the wallet.
+[dcrwallet](https://github.com/decred/dcrwallet): 添加了一个新的[RPC](https://github.com/decred/dcrwallet/pull/1522)，允许用户从钱包中放弃（或删除）未经证实的事务，以及依赖于其输出的任何其他事务。另一个新的RPC允许在解锁钱包后导出帐户的[扩展私钥](https://github.com/decred/dcrwallet/pull/1533)。
 
-Code maintenance: updated to use the new modules in dcrd and [removed](https://github.com/decred/dcrwallet/pull/1531) usages of old modules, [improved](https://github.com/decred/dcrwallet/pull/1539) compatibility with Go 1.13 errors.
+代码维护：更新dcrd中的新模块并[删除](https://github.com/decred/dcrwallet/pull/1531)旧模块的使用，[改进](https://github.com/decred/dcrwallet/pull/1539)了与Go 1.13错误的兼容性。
 
-Work has begun to add [support](https://github.com/decred/dcrwallet/pull/1541) for creating CoinJoin transactions for ticket purchasing "split" transactions, as well as mixing of individual mix change outputs into smaller standard denominations.
+工作已经开始增加对购买“拆分”交易的门票交易的CoinJoin交易的[支持](https://github.com/decred/dcrwallet/pull/1541)，以及将各个组合变更输出混合成较小的标准数额。
 
-[Decrediton](https://github.com/decred/decrediton): UI tweaks, bug fixes, code cleanup.
+[Decrediton](https://github.com/decred/decrediton): UI调整，BUG修复，代码清理。
 
-Initial [dark mode](https://github.com/decred/decrediton/issues/2089) has been [completed](https://github.com/decred/decrediton/pull/2163). Work continues on making the UI responsive, with four new responsive views [added](https://github.com/decred/decrediton/pull/2174).
+初始[夜间模式](https://github.com/decred/decrediton/issues/2089)已完成。继续使用UI[响应](https://github.com/decred/decrediton/pull/2163)，[添加](https://github.com/decred/decrediton/pull/2174)了四个新的响应视图。
 
-[Politeia](https://github.com/decred/politeia): Work on the Politeia redesign is proceeding at pace, with a [number](https://github.com/decred/politeiagui/pull/1356) [of](https://github.com/decred/politeiagui/pull/1338) [PRs](https://github.com/decred/politeiagui/pull/1360) merged that add existing functionality to the redesigned interface. On the backend, significant work laying the foundations for the [DCC process](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4), to be incorporated in the CMS, has been [merged](https://github.com/decred/politeia/pull/980).
+[Politeia](https://github.com/decred/politeia): 在Politeia重新设计工作正在进行，在步伐，以[数量](https://github.com/decred/politeiagui/pull/1356) [的](https://github.com/decred/politeiagui/pull/1338) [PRs](https://github.com/decred/politeiagui/pull/1360)合并是增加现有功能的重新设计的界面。在后端，为[DCC流程](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4)奠定基础的重要工作已[合并](https://github.com/decred/politeia/pull/980)到CMS中。
 
-The question of how to support RFP type proposals on Politeia has been the subject of discussion in this [issue](https://github.com/decred/politeia/issues/966) and in #politeia (see Governance for more detail).
+关于如何支持关于Politeia的RFP类型提案的[问题](https://github.com/decred/politeia/issues/966)一直是本期和#politeia 讨论的主题（更多细节见治)。
 
-Login by username was switched back to email to prevent [targeted locking](https://github.com/decred/politeia/issues/860#issuecomment-520871500) of accounts. [2FA](https://github.com/decred/politeia/issues/544) will solve this issue and allow logins without email.
+用户名登录后切换回电子邮件以防止有[针对性地锁定](https://github.com/decred/politeia/issues/860#issuecomment-520871500)帐户。[2FA](https://github.com/decred/politeia/issues/544)将解决此问题并无需电子邮件登录。
 
-[dcrdex](https://github.com/decred/dcrdex): The dcrdex repository was [announced](https://twitter.com/decredproject/status/1156652694502817793) in July to house the DEX [specification](https://github.com/decred/dcrdex/tree/master/spec), and the first substantive PRs are already [open](https://github.com/decred/dcrdex/pull/17). A new [#dexdev](https://riot.im/app/#/room/!EzTSRQITaqHuFBDFhM:decred.org) room was also created for DEX development chat on Matrix.
+[dcrdex](https://github.com/decred/dcrdex): dcrdex存储库于7月宣布[收纳](https://twitter.com/decredproject/status/1156652694502817793)DEX[规范](https://github.com/decred/dcrdex/tree/master/spec)，第一批实质性PR已经[开放](https://github.com/decred/dcrdex/pull/17)。还为Matrix上的DEX开发聊天创建了一个新的[#dexdev](https://riot.im/app/#/room/!EzTSRQITaqHuFBDFhM:decred.org)聊天室。
 
-[cspp](https://github.com/decred/cspp): This new repository provides client and server implementations to execute the [CoinShuffle++](https://crypsys.mmci.uni-saarland.de/projects/FastDC/paper.pdf) mixing protocol. While intended to be used to create Decred CoinJoin transactions, the client and server packages are generic enough to anonymously mix and join elements of any group.
+[cspp](https://github.com/decred/cspp): 这个新的存储库提供客户端和服务器实现来执行[CoinShuffle++](https://crypsys.mmci.uni-saarland.de/projects/FastDC/paper.pdf)混合协议。虽然旨在用于创建Decred CoinJoin事务，但客户端和服务器包的通用性足以匿名混合和连接任何其它的元素。
 
-Before CoinShuffle++, Company 0 developed a Go implementation of TumbleBit protocol. Despite not integrating it into Decred, the code was released for the public benefit in [tumblebit](https://github.com/decred/tumblebit) repository.
+在CoinShuffle ++之前，Company 0开发了TumbleBit协议的Go语言实现。尽管没有将它集成到Decred中，但代码是在[tumblebit](https://github.com/decred/tumblebit)存储库中为公共利益发布的。
 
-[dcrstakepool](https://github.com/decred/dcrstakepool): The large [effort](https://github.com/decred/dcrstakepool/pulls?q=is%3Apr+is%3Aclosed+227) to [decouple](https://github.com/decred/dcrstakepool/issues/227) dcrstakepool from dcrwallet, started in April, has finally come to [completion](https://github.com/decred/dcrstakepool/pull/470). This change decreases code complexity and reduces the quantity of RPC calls over the network, which in turn enhances performance and increases security.
+[dcrstakepool](https://github.com/decred/dcrstakepool): 从4月份开始的将dcrstakepool与dcrwallet分离的大量[工作](https://github.com/decred/dcrstakepool/issues/227)终于[完成](https://github.com/decred/dcrstakepool/pull/470)了。此次更新降低了代码复杂性并减少了通过网络rpc调用的数量，从而提高了性能和安全性。
 
-VSP operators gained support for SMTPS to send registration and account recovery emails via encrypted connections (including [self-signed certificates](https://github.com/decred/dcrstakepool/pull/486)), improved [status page](https://github.com/decred/dcrstakepool/pull/484) and better error reporting.
+VSP运营商获得了对SMTPS的支持，通过加密连接（包括自[自签名证书](https://github.com/decred/dcrstakepool/pull/486)），改进的[状态页面](https://github.com/decred/dcrstakepool/pull/484)和更好的错误报告来发送注册和帐户恢复电子邮件。
 
-tmux [test harness](https://github.com/decred/dcrstakepool/pull/476) has been added to boost productivity of testing.
+添加了tmux[测试工具](https://github.com/decred/dcrstakepool/pull/476)以提高测试效率。
 
-[30 PRs](https://github.com/decred/dcrstakepool/pulls?q=is%3Apr+is%3Aclosed+merged%3A2019-08-01..2019-08-31) were merged in total.
+共有[30个PR](https://github.com/decred/dcrstakepool/pulls?q=is%3Apr+is%3Aclosed+merged%3A2019-08-01..2019-08-31)合并。
 
-[dcrlnd](https://github.com/decred/dcrlnd): Merged work in August concerns improvements to the stability of tests and initial work to support using existing wallets (only a wallet embedded in dcrlnd is supported for now).
+[dcrlnd](https://github.com/decred/dcrlnd):8月合并的工作涉及改进测试的稳定性和支持使用现有钱包的初始工作（目前仅支持嵌入dcrlnd的钱包）。
 
-More upstream lnd work was [ported](https://github.com/decred/dcrlnd/pull/36#issuecomment-526721084) and is being tested before merging in dcrlnd. A total of 400+ PRs and 1700+ lines of code were adjusted.
+在dcrlnd合并之前，更多的上游工作被[移植](https://github.com/decred/dcrlnd/pull/36#issuecomment-526721084)并正在测试。共调整了400多个PR和1700多行代码。
 
-> to keep in sync we needed to adapt pretty much every single commit after our merge point on Jan 10 ([@matheusd](https://twitter.com/matheusd_tech/status/1169194706636615680))
+> 为了保持同步，我们需要在1月10日合并点之后调整几乎所有的提交([@matheusd](https://twitter.com/matheusd_tech/status/1169194706636615680))
 
-LN faucet gained a form to [pay invoices](https://github.com/decred/lightning-faucet/pull/8) and new config [parameters](https://github.com/decred/lightning-faucet/pull/14).
+LN水龙头获得了[支付发票](https://github.com/decred/lightning-faucet/pull/8)和新配置参数的 [表格](https://github.com/decred/lightning-faucet/pull/14)。
 
-[dcrandroid](https://github.com/decred/dcrandroid): Work is being done to implement the [new UI](https://github.com/decred/dcrandroid/pull/400) which will bring the app into alignment with the standard app design recommendations for Android. Work on the backend is also ongoing for [multi-wallet](https://github.com/decred/dcrandroid/issues/188) support which will enable [watch only](https://github.com/decred/dcrandroid/issues/393) wallets for ticket monitoring.
+[dcrandroid](https://github.com/decred/dcrandroid): 正在努力实现[新的用户界面](https://github.com/decred/dcrandroid/pull/400)，这将使应用程序与Android的标准应用程序设计建议保持一致。后端的工作也在进行[多钱包](https://github.com/decred/dcrandroid/issues/188)支持，这将使[仅限观察](https://github.com/decred/dcrandroid/issues/393)的钱包用于选票监控。
 
-[dcrios](https://github.com/raedahgroup/dcrios): Work is in progress on the improved UI and watch-only wallet support similar to the Android app.
+[dcrios](https://github.com/raedahgroup/dcrios):改进的用户界面和仅限观察的钱包支持工作正在进行，类似于Android应用程序。
 
-[dcrdata](https://github.com/decred/dcrdata): incorporated upgrades from dcrd, UI tweaks, optimizations and bug fixes.
+[dcrdata](https://github.com/decred/dcrdata):整合了来自dcrd的升级，UI调整，优化和BUG修复。
 
-A big change that had been on the Todo list for a long time is [dropping SQLite](https://github.com/decred/dcrdata/pull/1480). This makes the database architecture much simpler, only requiring PostgreSQL, and makes the build cgo-free (pure Go, no C).
+长期以来，todo列表中的一个重大变化是[删除 SQLite](https://github.com/decred/dcrdata/pull/1480)。这使得数据库体系结构更加简单，只需要postgresql，并构建cgo-free（纯go，没有c）。
 
-A redesign is ramping up, but the backend development is mostly in maintenance mode now as key contributors shift focus to dcrdex. There is still much room for dcrdata improvement and expansion, especially with mixed transactions.
+重新设计正在加速，但后端开发主要处于维护模式，因为主要贡献者将重点转向dcrdex。dcrdata的改进和扩展仍有很大空间，特别是对于混合交易。
 
-[docs](https://github.com/decred/dcrdocs): [Added](https://github.com/decred/dcrdocs/pull/968) a new page detailing [atomic swaps](https://docs.decred.org/advanced/atomic-swap/), [updated](https://github.com/decred/dcrdocs/pull/979) [hardware wallet](https://docs.decred.org/wallets/hardware-wallets/) support info, minor cleanups.
+[docs](https://github.com/decred/dcrdocs): [添加](https://github.com/decred/dcrdocs/pull/968)了一个新的页面，详细说明了[原子交换](https://docs.decred.org/advanced/atomic-swap/)，更新了[硬件钱包](https://docs.decred.org/wallets/hardware-wallets/)的支持信息，并清理了部分内容。
 
-Work has started on a long-asked-for separate [developer documentation](https://github.com/decredcommunity/issues/issues/135) site. Initial work is occurring in a personal repo that will be moved under the main Decred GitHub org when the site is launched.
+工作已经开始在一个长期要求的单独的开发人员文档站点上。最初的工作是在个人存储库中进行，当该网站启动时，该存储库将在主要的Decred GitHub组织下活动。
 
-[decred.org](https://github.com/decred/dcrweb): Roadmap has been [updated](https://github.com/decred/dcrweb/pull/695) with new developments, the [press coverage page](https://github.com/decred/dcrweb/pull/706) was updated with recent coverage, and privacy has been [added](https://github.com/decred/dcrweb/pull/712) to the homepage and roadmap.
+[decred.org](https://github.com/decred/dcrweb): 路线图已经[更新](https://github.com/decred/dcrweb/pull/695)，[新闻报道页面](https://github.com/decred/dcrweb/pull/706)更新了最近的报道，并在主页和路线图中[添加](https://github.com/decred/dcrweb/pull/712)了隐私。
 
-Dev activity stats for August: 244 active PRs, 274 master commits, 46K added and 24K deleted lines spread across 15 repositories. Contributions came from 2-9 developers per repository.
+8月的开发活动统计数据：244个活动PR，274个主要提交，46K添加和24K删除的行分布在15个存储库中。贡献来自每个存储库2-9个开发人员。
 
-## People
+## 人员
 
-Welcome to new first time contributors with code merged to master: aarcamp ([dcrd](https://github.com/decred/dcrd/commits?author=aarcamp)), skipcheru ([dcrandroid](https://github.com/decred/dcrandroid/commits?author=skipcheru)), RyanBRiley ([politeia](https://github.com/decred/politeia/commits?author=RyanBRiley)), UferePease ([dcrstakepool](https://github.com/decred/dcrstakepool/commits?author=UferePease)), fguisso ([lightning-faucet](https://github.com/decred/lightning-faucet/commits?author=fguisso)).
+欢迎来到Decred的首次贡献者：aarcamp([dcrd](https://github.com/decred/dcrd/commits?author=aarcamp))，skipcheru([dcrandroid](https://github.com/decred/dcrandroid/commits?author=skipcheru))，RyanBRiley([politeia](https://github.com/decred/politeia/commits?author=RyanBRiley))，UferePease([dcrstakepool](https://github.com/decred/dcrstakepool/commits?author=UferePease))，fguisso([lightning-faucet](https://github.com/decred/lightning-faucet/commits?author=fguisso))。
 
-Community stats:
+社区数据统计:
 
-* Politeia users: 174 (+20)
-* Twitter followers: 40,597 (+25)
-* Reddit subscribers: 9,594 (+38)
-* Matrix users: 412 (+28)
-* Slack users: 6,834 (+25)
-* Discord users: 2,442 (+65), verified to post: 310 (+29)
-* Telegram users: 3,148 (-142)
-* YouTube subscribers: 3,819 (+19)
-* Facebook followers: 3,271 (+18), likes: 2,999 (+16)
-* LinkedIn followers: 603 (+12)
-* GitHub dcrd stars: 516 (+18), forks: 1,383 (+18)
+* Politeia 用户: 174 (+20)
+* Twitter 粉丝: 40,597 (+25)
+* Reddit 订阅: 9,594 (+38)
+* Matrix 用户: 412 (+28)
+* Slack 用户: 6,834 (+25)
+* Discord 用户: 2,442 (+65), verified to post: 310 (+29)
+* Telegram 用户: 3,148 (-142)
+* YouTube 订阅: 3,819 (+19)
+* Facebook 粉丝: 3,271 (+18), likes: 2,999 (+16)
+* LinkedIn 粉丝: 603 (+12)
+* GitHub dcrd 星星: 516 (+18), 分叉: 1,383 (+18)
 
-Following the [events](https://github.com/decredcommunity/events/blob/master/reports/20190725-cointime-summit-ho-chi-minh-city-vietnam.md) in Ho Chi Minh City, Vietnamese [Telegram](https://t.me/decredvietnam), [Twitter](https://twitter.com/DecredVietnam) and [Facebook](https://www.facebook.com/Decred-DCR-Vietnam-108991833777572/) accounts have been created. A list of all Decred social media groups is [here](https://github.com/decredcommunity/wiki/blob/master/wiki/social-media.md).
+在胡志明市举办的[活动](https://github.com/decredcommunity/events/blob/master/reports/20190725-cointime-summit-ho-chi-minh-city-vietnam.md) 之后，已经创建了越南[Telegram](https://t.me/decredvietnam), [Twitter](https://twitter.com/DecredVietnam) and [Facebook](https://www.facebook.com/Decred-DCR-Vietnam-108991833777572/)帐户。所有Decred社交媒体组的列表都在[这里](https://github.com/decredcommunity/wiki/blob/master/wiki/social-media.md)。
 
-## Governance
+## 治理
 
-In August the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 15,278 DCR and spent 8,223 DCR. Using August's daily average DCR/USD rate of $26.23, this is $401K received and $216K spent. As these payments were for work completed in July, it is also informative to consider them in the context of the July average daily rate of $28.97 - in which case the USD spent figure is $238K. As of Aug 9, Treasury balance is 638K DCR (15.8 million USD at $24.80).
+8月，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了15,278个DCR，并花费了8,223个DCR。使用8月份的每日平均DCR / USD为26.23美元，约收到的401,000美元。由于这些付款用于7月完成的工作，因此在7月平均每日费率28.97美元的情况下考虑它们也是有用的 - 在这种情况下，美元花费是238,000美元。截至8月9日，财政部余额为638,000 DCR（1580万美元，汇率24.80美元）。
 
-A DEX development [proposal](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1) from @chappjc and @buck54321 (who work on dcrdata), with support from Company 0, was submitted - and approved with 90% Yes votes. This proposal has an estimated cost of $230,000 to deliver a command-line interface application, which can be extended by future proposals to offer a user interface using the Electron framework.
+来自@chappjc和@ buck54321（在dcrdata上工作）的DEX开发[提案](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1)在Company 0的支持下提交 - 并获得90％赞成票批准。该提议的成本估计为230,000美元，用于提供命令行界面应用程序，可以通过未来的提议进行扩展，以使用Electron框架提供用户界面。
 
-The decredcommunity proposals [repository](https://github.com/decredcommunity/proposals) has an [index](https://github.com/decredcommunity/proposals/blob/master/dex/index.md) of DEX-related material.
+decred社区提案[库](https://github.com/decredcommunity/proposals)具有DEX相关材料的 [索引](https://github.com/decredcommunity/proposals/blob/master/dex/index.md)。
 
-3 Market Maker proposals were published on Aug 7, from [Altonomy](https://proposals.decred.org/proposals/772d083fef79fa2e443d8424b353deadc3af69c8d8764e473cb200f98f356c60), [i2 Trading](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9) and [Grapefruit Trading](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b). After a few days of discussion the dominant topic was whether the Treasury should be used to hire market makers at all. @jz submitted an [RFP proposal](https://proposals.decred.org/proposals/30822c16533890abc6e243eb6d12264b207c3923c14af42cd9b883e71c7003cd) to establish whether the stakeholders wanted to hire a designated market maker in principle. The proposal explained the process which @jz, @maxbronstein and Chris Burniske had undertaken prior to the submission of the proposals - and made a case for approving one of these proposals. The RFP proposal also clarified the terms of the vote (a maximum of 1 market maker proposal can be approved and it must meet the usual criteria).
+3个做市商的提案于8月7日发布，来自[Altonomy](https://proposals.decred.org/proposals/772d083fef79fa2e443d8424b353deadc3af69c8d8764e473cb200f98f356c60), [i2 Trading](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9) 和 [Grapefruit Trading](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b)。经过几天的讨论，主要议题是社区开发基金是否应该习惯于雇佣做市商。@jz提交了一份[RFP 提案](https://proposals.decred.org/proposals/30822c16533890abc6e243eb6d12264b207c3923c14af42cd9b883e71c7003cd)，以确定利益相关者原则上是否希望雇用指定的做市商。该提案解释了@jz，@ maxbronstein和Chris Burniske在提交提案之前已经采取的流程 - 并提出了批准其中一项提案的案例。RFP提案还澄清了投票条款（最多可以批准1个做市商提案，并且必须符合通常的标准）。
 
-Altonomy submitted a proposal to offer $50K each side on 10 pairs, they were actively engaged on Politeia and provided answers to many questions, but on Aug 16 they withdrew their proposal, editing it to say "Sorry, due to our technical capacity, we decided to withdraw this proposal.".
+Altonomy提交了一项建议，即10个交易对供5万美元，他们积极参与Politeia并提供许多问题的答案，但在8月16日他们撤回了他们的建议，编辑它说“对不起，由于我们的技术能力，我们决定撤回这个提议。
 
-i2 Trading submitted a proposal to offer $50K each side on 6 pairs, they engaged actively on Politeia and in the #proposals channel, answering the majority of questions. In response to concerns about transparency, i2 offered to allow a Decred representative read-only access to their exchange accounts for limited periods of time. i2 made a number of edits to their proposal, to add a note about providing API access, clarify the borrowing need and terms, and then amending their offer to loosen the spreads, reduce the maximum trading fees reimbursement to $10K/month, and drop the fees for providing the service from $40K/month to $35K/month.
+i2 Trading提交了一项建议，即对6个交易对提供5万美元，他们积极参与Politeia和#proposals聊天室，回答大多数问题。为了回应对透明度的担忧，i2允许在一段有限的时间内允许Decred代表以只读方式访问其交易账户。i2对他们的提案进行了一些编辑，添加了关于提供API访问的说明，澄清借款需求和条款，然后修改他们的提议以放宽差价，将最高交易费用报销减少到10K /月，并且下降提供服务的费用从每月4万美元到每月35,000美元。
 
-Grapefruit started with 2 offers in their proposal (both for $30K each side on 4 pairs), one with a tighter spread that would cost $40K/month in fees and one with a looser spread that would cost $28K/month in fees. @grapefruittrading answered questions on Politeia on Aug 8 and 20, ignoring some questions while offering [substantive](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/6) [replies](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/5) to others. Before authorizing voting to start, @grapefruittrading edited their proposal to remove the more expensive offer, choosing to run with the less expensive offer as they perceived a demand for that from stakeholders and it was their preferred option anyway.
+Grapefruit在他们的提案中开始提供2个优惠（两个价格均为3对3万美元），其中一个价格较低，每月费用为4万美元，另一个价格较宽松，每月费用为28,000美元。@grapefruittrading于8月8日和20日回答了关于Politeia的问题，在向其他人提供[实质性](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/6) [回复](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/5)时忽略了一些问题。在授权投票开始之前，@ grapefruittrading编辑了他们的建议删除了更昂贵的报价，选择运行较便宜的报价，因为他们认为来自利益相关者的需求，无论如何这是他们的首选。
 
-i2 and Grapefruit authorized voting to begin on their proposals on Aug 27.
+i2 和 Grapefruit 授权8月27日开启提案投票。
 
-Tantra Labs submitted a [proposal](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb) on Aug 28 which offered a very different proposition, $30K each side at up to 3% spread on 6 ([or 7](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb/comments/8)) pairs, with no fee for providing the service being charged to the Treasury. Instead, the Treasury would only be charged for the cost of borrowing the inventory and up to $10K/month in trading fees. Tantra offered to allow a read-only access to their exchange accounts to "elected" Decred representatives, so that the promised availability of liquidity can be verified. Tantra also offered a web interface to a set of open source order book transparency tools.
+Tantra Labs于8月28日提交了一份[提案](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb)，提出了一个非常不同的提议，每个交易对3万美元，6个交易对([或 7](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb/comments/8))对最高3％的差价，并且向提供给社区开发基金的服务不收取任何费用。相反，社区开发基金只收取借入库存的成本和交易费10,000美元/月的费用。Tantra Labs只允许他们的交换账户访问“当选”的Decred代表，以便可以验证所承诺的流动性可用性。Tantra还为一组开源订单簿透明工具提供了一个Web界面。
 
-Much of the discussion of Tantra's proposal concerns whether it is too good to be true, with a number of people expressing their doubts that Tantra could deliver on what they propose, and wondering if the low cost comes with hidden downsides. Tantra have been active in #proposals and have answered some of the questions on Politeia. Some members of the community grew impatient waiting for Tantra to authorize the start of voting, illuminating an issue with RFP proposals being slowed down out by late submissions, and highlighting the value of a defined timetable.
+关于Tantra的提案的大部分讨论都关注它是否太好而不是真实的，有许多人表达了他们对Tantra可以兑现他们的建议的疑虑，并想知道低成本是否伴随着隐藏的缺点。Tantra一直活跃在#proposals，并回答了有关Politeia的一些问题。社区的一些成员越来越不耐烦等待Tantra授权开始投票，这表明RFP提案被迟交的提议放慢了问题，并强调了明确的时间表的价值。
 
-A fourth [proposal](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f) about market making, submitted by @betterfuture, was published on Aug 31. This proposes a scheme for incentivizing market makers to provide liquidity on specific pairs without a firm commitment. The proposal describes rules and penalties for keeping participants in line, and would require a trusted intermediary representing the Decred project to audit the activities of the market makers. @jz was nominated for this role in the proposal, but he has [stated](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f/comments/5) that he would not wish to take it on. Deliberation and refinement of this proposal is being viewed as a long term effort by its proponents, and it will not be competing with the other proposals.
+由@betterfuture提交的关于做市商的第四个[提案](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f)于8月31日发布。这提出了一个激励做市商在没有坚定承诺的情况下为特定货币对提供流动性的计划。该提案描述了使参与者保持一致的规则和处罚，并且需要代表Decred项目的可信中介来审核做市商的活动。@jz在提案中被提名担任此角色，但他[表示](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f/comments/5)他不希望接受。对该提案的审议和改进被其支持者视为长期努力，并且不会与其他提案竞争。
 
-Voting commenced for the 3 market maker proposals on Sep 4.
+9月4日，3个做市商提案开始投票。
 
-For a more detailed consideration of the market maker proposals and other Politeia activity, check out Politeia Digest [issue 20](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-020.md) (Aug 1-12) and [issue 21](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-021.md) (Aug 13-31). There are also a number of community-produced resources which aim to help people who are new to the idea of market making to understand it, and which make comparisons between the different proposals:
+有关做市商提案和其他Politeia活动的更详细考虑，请查看Politeia Digest 第[20](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-020.md)期（8月1日至12日）和第 [21](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-021.md)期（8月13 日至31 日）。还有一些社区生产的资源，旨在帮助那些不熟悉市场营销理念的人理解它，并在不同的提案之间进行比较：
 
 * an index of all notable documents and discussions related to market makers is maintained [here](https://github.com/decredcommunity/proposals/blob/master/market-makers/index.md).
 * [comparison table](https://github.com/decredcommunity/proposals/blob/master/market-makers/comparison.md) which aims to compare the proposals in terms of their offers and costs - maximum monthly fees estimated in this table are $17K for Tantra, $53K for i2 and $31K for Grapefruit (for Tantra and i2 maximum trading fees of $10K/month are assumed).
