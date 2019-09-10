@@ -1,6 +1,6 @@
 # Decred Journal – August 2019
 
-![abstract art](../img/journal-201908-384.png)
+![abstract art](img/journal-201908-384.png)
 
 _Image: Key Symmetry by @saender. When everything is aligned, big things are born._
 
