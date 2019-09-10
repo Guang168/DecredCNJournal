@@ -143,92 +143,94 @@ Tantra Labs于8月28日提交了一份[提案](https://proposals.decred.org/prop
 
 有关做市商提案和其他Politeia活动的更详细考虑，请查看Politeia Digest 第[20](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-020.md)期（8月1日至12日）和第 [21](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-021.md)期（8月13 日至31 日）。还有一些社区生产的资源，旨在帮助那些不熟悉市场营销理念的人理解它，并在不同的提案之间进行比较：
 
-* an index of all notable documents and discussions related to market makers is maintained [here](https://github.com/decredcommunity/proposals/blob/master/market-makers/index.md).
-* [comparison table](https://github.com/decredcommunity/proposals/blob/master/market-makers/comparison.md) which aims to compare the proposals in terms of their offers and costs - maximum monthly fees estimated in this table are $17K for Tantra, $53K for i2 and $31K for Grapefruit (for Tantra and i2 maximum trading fees of $10K/month are assumed).
-* @bee has written up a comprehensive [overview](https://github.com/decredcommunity/proposals/blob/master/market-makers/arguments.md) of the discussion in relation to specific questions and arguments, and also a detailed [dissection](https://github.com/xaur/writings/blob/master/20190822-dissection-market-makers-for-decred.md) of the subject, introducing relevant terms and presenting an overview of the key considerations.
-* @exitus has produced a [video overview](https://www.youtube.com/watch?v=BKSMA-eanoY) of the proposals.
+* [这里](https://github.com/decredcommunity/proposals/blob/master/market-makers/index.md)保留了所有着名文件的索引以及与做市商相关的讨论。
+* [comparison table](https://github.com/decredcommunity/proposals/blob/master/market-makers/comparison.md) 旨在比较其提议和成本方面的建议 - 本表中估计的最高月费为Tantra为17,000美元，i2为$ 53K，Grapefruit为$ 31K（对于Tantra和i2最高交易费为$ 10,000 /假设是月份。
+* @bee撰写了关于具体问题和论点的讨论的[全面概述](https://github.com/decredcommunity/proposals/blob/master/market-makers/arguments.md)，并详细解释了该[主题](https://github.com/xaur/writings/blob/master/20190822-dissection-market-makers-for-decred.md)，介绍了相关术语并概述了关键考虑因素。
+* @exitus制作了一个相关的[Politeia视频概述](https://www.youtube.com/watch?v=BKSMA-eanoY)。
 
-Following discussion in the #research channel, @richardred began collecting order book data for a selection of pairs and exchanges in this [repository](https://github.com/RichardRed0x/exchange-data). The objective is to build a better picture of how the order books for DCR and other selected cryptoassets currently look, and an initial report has been prepared ahead of the voting on market maker proposals. This data will also be useful for tracking the order books over time to observe the effect of a market maker, should one be hired. Order book data will likely be added to dcrdata's external data offering at some stage, but the nature of this data is such that it can only be recorded live. The only sources of historical order book data are proprietary and [expensive](https://www.kaiko.com/products/binance-10-order-books).
+在#research频道中进行讨论之后，@ richardred开始收集该[存储库](https://github.com/RichardRed0x/exchange-data)中选择的交易对和交换的订单簿数据。目标是更好地了解目前DCR和其他选定加密模块的订单如何看，并在做市商提案投票之前准备了初步报告。如果雇佣了这些数据，这些数据也可用于跟踪订单簿，以观察做市商的影响。订单簿数据可能会在某个阶段添加到dcrdata的外部数据产品中，但这些数据的性质是只能实时记录。历史订单簿数据的唯一来源是专有且[昂贵](https://www.kaiko.com/products/binance-10-order-books)的。
 
-It is worth mentioning the Decred community proposals [repository](https://github.com/decredcommunity/proposals), where a number of the above resources can be found. This repository was created as a place to collect the information that emerges from discussion and analysis of proposals.
+值得一提的是Decred社区提案 [存储库](https://github.com/decredcommunity/proposals)，其中可以找到许多上述资源。创建此存储库是为了收集讨论和分析提案时产生的信息。
 
-Handling the market maker proposals and RFP process has generated much discussion and insight, and an initial integration of RFP functionality on Politeia is being prepared. There will be a new RFP type proposal which candidate proposals can link to, voting and determining the options/outcome will be controlled through these RFP proposals. Before opening a RFP proposal, an ordinary proposal asking "should we have this RFP" would be submitted and approved - the 2 "RFP proposals" Politeia has seen thus far are of this type.
+处理做市商提案和RFP流程已经产生了很多讨论和见解，并且正在准备Politeia的RFP功能的初始集成。将有一个新的RFP类型提案，候选提案可以链接，投票和确定选项/结果将通过这些RFP提案进行控制。在开启RFP提案之前，将提交并批准一份普通提案，询问“我们是否应该提供此RFP” - 迄今为止Politeia所见的2个“RFP提案”属于此类提案。
 
-The main point of discussion about the new RFP proposal type is around whether these should be conducted as multiple-choice proposals (where voters can vote for 1-of-N options and one with the most votes wins) or as parallel proposals where tickets can vote yes/no on each proposal and the winner is the one with the highest yes less no votes aggregate score (as the MM RFP is being conducted). Parallel voting on competing proposals seems to be the priority, with multiple-choice voting likely to come later and be used for a different purpose (more like polling).
+关于新的RFP提案类型的讨论主要是围绕这些是否应该作为多项选择提案（选民可以投票选出1-N选项和获得最多选票的选项）或者作为票数可以平行提案对每个提案投赞成票/否，并且获胜者是具有最高投票权的投票总得分（因为MM RFP正在进行）。竞争提案的平行投票似乎是优先考虑的事项，多选投票可能会在以后出现，并用于不同的目的（更像是民意调查）。
 
-A Reddit [post](https://www.reddit.com/r/decred/comments/cutc16/decred_events_meetups_in_the_cis_in_20192020/) was submitted for feedback which is intended to serve as a pre-proposal for funding of Decred events and meetups in the Commonwealth of Independent States (CIS) - specifically Russia, Ukraine and Georgia.
+提交了一份Reddit [讨论](https://www.reddit.com/r/decred/comments/cutc16/decred_events_meetups_in_the_cis_in_20192020/)以供反馈，该提议旨在作为独立国家联合体（CIS） - 特别是俄罗斯，乌克兰和格鲁吉亚的Decred活动和聚会的筹资预案。
+
 
 ## 网络
 
-Hashrate: August's hashrate opened at ~563 Ph/s and closed ~567 Ph/s, bottoming at 374 Ph/s and peaking at 671 Ph/s throughout the month. Pool hashrate distribution as of Sep 5: F2Pool 23%, UUPool 16%, Poolin 16%, lab.antpool.com 4.1%, BTC.com 2.3%, Luxor 1.8%, BeePool 0.10%, Coinmine 0.10%, suprnova 0.01% and others 36% per [dcrstats.com](https://dcrstats.com/pow). Pool distribution numbers are approximate and cannot be accurately determined.
+全网算力：八月份的哈希值约为563 Ph/s起步，收于约567 P/s，最低时达到374 Ph/s，最高达到671 Ph/s。截至9月5日的池哈希值分布：F2Pool 23％，UUPool 16％，Poolin 16％，lab.antpool.com 4.1％，BTC.com 2.3％，Luxor 1.8％，BeePool 0.10％，Coinmine 0.10％，suprnova 0.01％和其他36％每个[dcrstats.com](https://dcrstats.com/pow)。池分布数是近似值，无法准确确定。
 
-Staking: 30-day average ticket price was 130.05 DCR (+4.25) per dcrstats.com. The price varied between 119.9-134.5 DCR. Locked amount was 5.03-5.25 million DCR, which corresponded to 49.40-50.93% of the available supply.
+Staking: 每个dcrstats.com的30天平均票价为130.05 DCR（+4.25）。价格在119.9-134.5 DCR之间变化。锁定金额为5.03-5.25百万DCR，相当于现有供应量的49.40-50.93％。
 
-Nodes: Throughout [August](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1564617600000&to=1567296000000) there were around 167 listening nodes and 445-530 total nodes per dcr.farm. Roughly 78% run dcrd v1.4.0, 5.7% are dcrwallet v1.4.0 and 6.2% are v1.5.0(pre) dev builds.
+节点: 整个[8月份](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1564617600000&to=1567296000000)，每个dcr.farm大约有167个监听节点和445-530个总节点。大约78％运行dcrd v1.4.0,5.7％运行dcrwallet v1.4.0,6.2％运行v1.5.0（预）dev版本。
 
-As of Sep 5, the DCR [testnet LN](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-network?orgId=1) shows 19 nodes, 32 channels and a total capacity of 253 DCR.
+截至9月5日，DCR[闪电网络测试网](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-network?orgId=1)显示拥有19个节点，32个通道，总容量为253 DCR。
 
-First [transactions](https://twitter.com/decredproject/status/1167269901293297664) that make use of the new privacy system have been noticed.
+已经检测到使用新隐私协议的第一笔[交易](https://twitter.com/decredproject/status/1167269901293297664)。
 
 ## 整合
 
-Exodus has [added](https://twitter.com/exodus_io/status/1168886493617840131) the ability to send, receive and exchange DCR to their mobile wallet.
+Exodus [增加了](https://twitter.com/exodus_io/status/1168886493617840131)向他们的移动钱包发送，接收和交换DCR的能力。
 
-Ellipal cold wallet has [announced](https://twitter.com/ellipalwallet/status/1163771448042803201) that their upcoming airgapped hardware wallet Titan will support Decred.
+Ellipal冷钱包宣布他们即将[推出](https://twitter.com/ellipalwallet/status/1163771448042803201)的硬件钱包Titan将支持Decred。
 
-Warning: the authors of Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+注意：Decred Journal的作者不知道上述任何服务的可信度。在将您的个人信息或资产信任托管给任何第三方实体之前，请先自行研究。
 
 ## 外联活动
 
-Much of the in-process Outreach work was pushed aside, as we focused on the release of Decred privacy. Efforts began on Aug 21, as @jy-p published [Surveying the Privacy Landscape](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/). This work was supported via a [tweetstorm](https://twitter.com/decredproject/status/1164245224274767873) which generated direct engagement from fluffypony, Zooko, and the MimbleWimble folks. The first details of privacy broke when @jz went on Laura Shin's [Unchained Podcast](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/) to talk about Decred and its new feature.
+由于我们专注于Decred隐私的发布，因此大部分正在进行的Outreach工作被推到一边。8月21日开始努力，@ jy-p发布了“[Surveying the Privacy Landscape](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/)”。这项工作得到了一个[tweetstorm](https://twitter.com/decredproject/status/1164245224274767873)的支持，这个[tweet话题](https://twitter.com/decredproject/status/1164245224274767873)吸引了fluffypony（门罗首席开发者），Zooko（Zcash创始人)，MimbleWimble协议开发人员（Girn，Beam）等参与。当@jz继续使用Laura Shin的[Unchained Podcast](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/)谈论Decred及其新功能时，隐私的第一个细节就披露了。
 
-Twenty-four hours later, the first written news of Decred privacy was released by The Block, in concert with the publication of @jy-p's article, [Iterating Privacy](https://blog.decred.org/2019/08/28/Iterating-Privacy/), which deeply explored the motivations, operational details, limitations, and next steps of Decred privacy. This was supported with a 10-part [tweetstorm](https://twitter.com/decredproject/status/1166746979160023046), which garnered lots of attention and engagement. Decred's privacy implementation has received heavy coverage, detailed in Media, with the exception of CoinDesk.
+二十四小时后，Decred隐私的第一份书面消息释放，在@ JY-P的文章，出版了迭代隐私，其中深入探讨动机，操作细节，限制和Decred的下一步[隐私](https://blog.decred.org/2019/08/28/Iterating-Privacy/)。这得到了大量[支持](https://twitter.com/decredproject/status/1166746979160023046)，并引起了很多关注和参与。除了CoinDesk之外，Decred的隐私实施已经获得了大量报道，在Media中有详细介绍。
 
-To continue the support of the privacy release, @anshawblack released [Privacy Flow](https://twitter.com/decredproject/status/1169011789255925762), with GhostWridah, and also a very special Decred in Depth [episode](https://twitter.com/decredproject/status/1168558002867191808) featuring @jy-p just days after the release. In this episode, @jy-p delves deeply into the surveillance economy, why privacy matters, and the current and future states of Decred privacy.
+为了继续支持隐私保护功能的发布，@ anshawblack在GhostWridah上发布了[Privacy Flow](https://twitter.com/decredproject/status/1169011789255925762)，并在发布后的几天内发布了一个非常特别的Decred in Depth [音频](https://twitter.com/decredproject/status/1168558002867191808) @ jy-p。在这个音频中，@ jy-p深入研究了监管经济，为什么要保护隐私，以及当前和未来的Decred隐私状态。
 
-At the time of publication, the Ditto team continues to work on ways to keep Decred privacy top of mind, and it seems like a timely issue with [recent news of Google wrongdoing](https://www.ft.com/content/e3e1697e-ce57-11e9-99a4-b5ded7a7fe3f). Additionally, @Dustorf published a [blog entry](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6) targeting the less technical crowd.
+在发布时，Ditto团队继续致力于将Decred隐私放在首位。此外，@ Dustorf发布了针对非技术相关人群的[博客概述](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6)。
 
-Outreach has made a concerted effort to increase engagement on Twitter via quality content and education regarding Decred. This was demonstrated by project impression counts more than doubling from July to over 5.6M. One of the messages that gained the most amount of traction was a 4-part [tweet storm](https://twitter.com/decredproject/status/1156652694502817793) on the announcement of the DEX spec.
+Outreach通过关于Decred的高质量内容和教育，共同努力提高Twitter的参与度。从7月到超过560万，项目印象数增加了一倍以上。获得最多吸引力的消息之一是关于DEX规范公告的4部分[tweet风暴话题](https://twitter.com/decredproject/status/1156652694502817793)。
 
-Decred has confirmed its booth presence at [Web Summit](https://websummit.com/) on Nov 4-7 in Lisbon, Portugal, so please connect with us in the #event\_planning room in Matrix if you're interesting in helping out. We're also planning a roadshow in Asia, but don't have any details to share at the time of publication.
+Decred已于11月4日至7日在葡萄牙里斯本的[网络峰会](https://websummit.com/)上确认其展位，如果您有兴趣帮助我们，请在Matrix的#event_planning会议室与我们联系。我们还计划在亚洲举办路演，但在发布时没有任何细节可供分享。
 
-[Foundational Messaging](https://github.com/decredcommunity/pr/blob/release/foundational-messaging.md) was updated to v2. [Changes](https://github.com/decredcommunity/pr/commit/fc407b8f037a222db22a4507e4a5ade5b746f4dd) include Pitch, Tagline and Vision expanded with Decred's principles and a FAQ. Tagline was slightly tweaked to replace "Self-Funding" with "Sustainable".
+[基础消息](https://github.com/decredcommunity/pr/blob/release/foundational-messaging.md)已更新为v2。[更改](https://github.com/decredcommunity/pr/commit/fc407b8f037a222db22a4507e4a5ade5b746f4dd)包括使用Decred原则和常见问题解答扩展的Pitch，Tagline和Vision。Tagline稍作调整，以“可持续”取代“自筹资金”。
 
-Ditto's August achievements:
+Ditto八月的成就:
 
-* Secured 8 pieces of coverage so far on the privacy launch - a who's-who of all the top crypto media: Unchained Podcast, [The Block](https://www.theblockcrypto.com/tiny/crypto-project-decred-adds-privacy-features-to-its-coin/) (also mentioned in its newsletter), [Crypto Briefing](https://cryptobriefing.com/decred-struts-privacy-credentials-with-surprisingly-awesome-rap-snippet/) newsletter feature and article on Privacy Rap (kudos to @anshawblack for helping produce this gem), [Cointelegraph](https://cointelegraph.com/news/crypto-project-decred-adds-privacy-features-to-its-coin), [Decrypt Media](https://decrypt.co/8796/decred-aims-to-be-a-more-effective-privacy-coin-than-monero-or-zcash), [Modern Consensus](https://modernconsensus.com/cryptocurrencies/alt-coins/decred-cryptocurrency-launches-launches-privacy-mixing-feature/), Russian language news site [Forklog](https://forklog.com/menshe-koda-menshe-vzloma-razrabotchiki-kriptovalyuty-decred-dobavili-optsiyu-privatnosti-tranzaktsij/), Spanish language news site [Criptonoticias](https://www.criptonoticias.com/redes-protocolos/decred-anade-privacidad-criptomoneda-dcr/).
-* The achievement of the year: exclusive breaking coverage on Laura Shin's [Unchained](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/) (kudos to @jz for incredible delivery) - something we've been working to secure for 6+ months, and it finally happened!
-* Coordinated with interested community members in aggregating the best resources around the Internet for Decred's educational resources repository. Please share hidden gems if you have them.
-* Continued our work with various community members on engaging in a productive/educational way on Twitter. This included conducting a call with 7 community members to discuss social media playbook strategies, feedback, and take questions.
-* Created buzz around Decred privacy with approximately 85 tweets in one 24-hour period and nearly 400 over the last week, including conversations and tweets from Chris Burniske, Justin Yashoufar (Blockhead Capital), Blockfolio, Max Bronstein (DharmaHQ), and Weiss Reports.
-* Coordinated tweetstorms and community outreach around privacy news.
-* Secured 2 more additional podcast interviews slated to come out in the next few weeks.
-* Secured an in-depth profile of project lead @jy-p in Decrypt Media.
-* Secured publication of @akinsawyerr's interview on the [Base Layer Podcast](https://acrabaselayer.podbean.com/e/base-layer-episode-059-akin-sawyerr-decred/).
-* Secured Crypto Briefing [article](https://cryptobriefing.com/decentralized-governance-in-action-decred-debates-market-liquidity/) on market maker proposals.
-* Completed [messaging](https://github.com/decredcommunity/pr/blob/release/foundational-messaging.md) refresh.
-* Wrote and submitted a proposal for @matheusd to speak at The Lightning Conference Berlin.
-* Secured a TV interview for @zubair at the Futurist Conference in Toronto.
+* 到目前为止，在隐私发布方面获得了8项成就 - 这包含在所有顶级加密媒体中：Unchained Podcast，[The Block](https://www.theblockcrypto.com/tiny/crypto-project-decred-adds-privacy-features-to-its-coin/)（也在其时事通讯中提到），[Crypto 简报](https://cryptobriefing.com/decred-struts-privacy-credentials-with-surprisingly-awesome-rap-snippet/)时事通讯专题和关于Privacy Rap的文章（对@anshawblack的赞誉）），[Cointelegraph](https://cointelegraph.com/news/crypto-project-decred-adds-privacy-features-to-its-coin), [Decrypt Media](https://decrypt.co/8796/decred-aims-to-be-a-more-effective-privacy-coin-than-monero-or-zcash), [Modern Consensus](https://modernconsensus.com/cryptocurrencies/alt-coins/decred-cryptocurrency-launches-launches-privacy-mixing-feature/)，俄语新闻网站[Forklog](https://forklog.com/menshe-koda-menshe-vzloma-razrabotchiki-kriptovalyuty-decred-dobavili-optsiyu-privatnosti-tranzaktsij/)，西班牙语新闻网站[Criptonoticias](https://www.criptonoticias.com/redes-protocolos/decred-anade-privacidad-criptomoneda-dcr/)。
+* 今年的成就：对Laura Shin's Unchained的独家突破性报道（对于@jz的不可思议的交付感到荣幸） - 我们已经努力确保6个月以上，并且它终于发生了！
+* 与感兴趣的社区成员协调，为Decred的教育资源库聚合互联网上的最佳资源。如果你有宝藏，请分享隐藏的宝藏。
+* 继续与各社区成员合作，在Twitter上采用富有成效/教育的方式。这包括与7名社区成员通话，讨论社交媒体手册策略，反馈和提问。
+* 围绕Decred隐私创造了热门话题，24小时内发布了大约85条推文，上周发布了近400条，包括来自Chris Burniske，Justin Yashoufar（Blockhead Capital），Blockfolio，Max Bronstein（DharmaHQ）和Weiss Reports的对话和推文。
+* 围绕隐私新闻进行协调的推特和社区外展活动。
+* 预计将在未来几周内再发布另外2个播客采访。
+* 获得Decrypt Media项目负责人@ jy-p的深入剖析。
+* 发布@ akinsawyerr对[Base Layer Podcast](https://acrabaselayer.podbean.com/e/base-layer-episode-059-akin-sawyerr-decred/)的采访。
+* 关于做市商提案的安全加密简报[文章](https://cryptobriefing.com/decentralized-governance-in-action-decred-debates-market-liquidity/)。
+* 刷新[消息](https://github.com/decredcommunity/pr/blob/release/foundational-messaging.md)传递。
+* 为@matheusd撰写并提交了一份提案，在柏林闪电会议上发言。
+* 在多伦多未来主义者大会上获得了@zubair的电视采访。
 
 ## 社区活动
 
-Attended:
+出席：
 
-* Jul 2-3 - Asia Blockchain Summit 2019 - Taipei, Taiwan. @morphymore in the Decred Jacket was there to make a presence, and to explain Decred to those who wanted to learn more about the project. _(missed in July issue)_
-* Aug 8 - [Blockchain Bajio](https://www.eventbrite.com/e/blockchain-bajio-2do-meetup-tickets-66510186759) - Leon, Mexico. @elian, @francov\_, @victorarubin and @luisantoniocrag [presented](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156537300012257UWNLZ:decred.org) a high level overview of Decred to around 60 attendees. (photos: [1](https://twitter.com/Decred_ES/status/1159621068027551744) [2](https://twitter.com/victorarubin/status/1159898002858893313))
-* Aug 12 - [Crypto Mondays](https://www.meetup.com/Bitcoin-Argentina/events/263594472) - Buenos Aires, Argentina. First time in Espacio Bitcoin, @pablito and @camilolwi had 15 minutes to [explain](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156570958816586TKntU:decred.org) the most relevant aspects of Decred to around 40 people in the local Bitcoin community and members from other projects. ([photos](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156570965016592IkfFu:decred.org))
-* Aug 13 - [Futurist Conference](https://www.futurist19.com/) - Toronto, Canada. @michae2xl, @zubair and @ammarooni ran the booth, gave a few interviews and spoke on the panel "Blockchain Social Impact & Governance for Good". Decred was a silver sponsor. (photos: [1](https://twitter.com/Decred_CA/status/1161466609267105792) [2](https://twitter.com/Ammarooni/status/1161707860822302722) [3](https://twitter.com/Decred_CA/status/1161982417781047297) [4](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156581155118027SCAXO:decred.org))
-* Aug 16 - [Campus Party](https://brasil.campus-party.org/campus-party-natal/) - Natal, Brazil. @guisso and @claranobre represented Decred. ([photos](https://twitter.com/Decred_BR/status/1163473134676258816))
-* Aug 20 - Bitcoin Embassy - Mexico City, Mexico. @elian was [invited](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$15664995075484PTrhJ:decred.org) to the Bitcoin Embassy for an interview with El Financiero (Bloomberg affiliate in Mexico) to talk about cryptocurrencies in Mexico. (photos: [1](https://twitter.com/LOR_ena_OR/status/1164205626723098630) [2](https://twitter.com/bitcoinemb/status/1164269677381652480))
-* Aug 21 - [Decred Meetup](https://www.meetup.com/Chicago-Decred-Meetup/events/263814807/) - Chicago, USA.
-* Aug 22 - [Binance Meetup](https://www.facebook.com/events/406522099975717/) - Monterrey, Mexico. @elian and @francov\_ represented Decred. (photos: [1](https://twitter.com/binance/status/1166526786525487105) [2](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15665195371107618foQnv:matrix.org) [3](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15666946921832943HyclD:matrix.org))
-* Aug 24 - [Decred Live AMA](https://twitter.com/coin98_net/status/1164845587910414337) - Internet. @Haon and Việt Anh Đàm answered questions from the Vietnamese community, organized by Coin98 on their [Facebook](https://www.facebook.com/groups/Coin98.Net/) page. There were a total of 309 comments (including answers), for best questions there was a reward of $50 in DCR. ([transcript](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md))
-* Aug 28 - [Blockchain Bootcamp](https://www.meetup.com/blockchaincentre/events/263601014/) - Docklands, Australia. @zohand and @eSizeDave were [invited](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$156697235011245SxvJY:decred.org) by Ernst & Young to run a Decred-specific presentation on blockchain governance to an audience with representatives from academia, business, legal and government sectors. Both the presentation and Decred were well received, leading to a number of follow-up [engagements](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156739040517633gdQNG:decred.org). ([photos](https://twitter.com/DecredAustralia/status/1166592295296208896))
-* Aug 29 - [Binance Meetup](https://twitter.com/Decred_ES/status/1166132690342567938) - Mexico City, Mexico. @elian [noted](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156713369714381PAoax:decred.org): "we had around 60 attendees, mainly enthusiasts and entrepreneurs, there was a lot of interest in the privacy implementation of Decred and in the idea of Governance as a Service. Big thanks to @francov\_ @luisantoniocrag and @victorarubin for helping out". (photos: [1](https://twitter.com/TRADcoinMX/status/1168541349395738624) [2](https://twitter.com/interprocsys/status/1167243076726861824) [3](https://twitter.com/victorarubin/status/1167495971539836928))
+* 7月2 - 3日 - 2019年亚洲区块链峰会 - 台湾台北。穿着Decred Jacket的@morphymore在那里出席，并向那些想要了解该项目的人介绍Decred。
+* 月8日 - [Blockchain Bajio](https://www.eventbrite.com/e/blockchain-bajio-2do-meetup-tickets-66510186759) - 墨西哥莱昂。@elian，@ francov_，@victorarubin和@luisantoniocrag 向约60位与会者展示了Decred 的高级[概述](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156537300012257UWNLZ:decred.org)。（照片：[1](https://twitter.com/Decred_ES/status/1159621068027551744) [2](https://twitter.com/victorarubin/status/1159898002858893313)）
+* 8月12日 - [Crypto Mondays](https://www.meetup.com/Bitcoin-Argentina/events/263594472) - 阿根廷布宜诺斯艾利斯。第一次在Espacio比特币，@ pablito和@camilolwi有15分钟的时间向当地比特币社区和其他项目的成员解释 Decred最相关的方面。([照片](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156570965016592IkfFu:decred.org))
+* 8月13日 - 未来主义者会议 - 加拿大多伦多。@ michae2xl，@ zubair和@ammarooni在展位上进行了一些采访，并在“Blockchain Social Impact＆Governance for Good”小组讨论。Decred是一名银牌赞助商。（照片：[1](https://twitter.com/Decred_CA/status/1161466609267105792) [2](https://twitter.com/Ammarooni/status/1161707860822302722) [3](https://twitter.com/Decred_CA/status/1161982417781047297) [4](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156581155118027SCAXO:decred.org)）
+* 8月16日 -  [Campus Party](https://brasil.campus-party.org/campus-party-natal/) - 巴西纳塔尔。@guisso和@claranobre代表Decred。（[照片](https://twitter.com/Decred_BR/status/1163473134676258816)）
+* 8月20日 - Bitcoin Embassy - 墨西哥墨西哥城。@elian被邀请到比特币大使馆接受El Financiero（Bloomberg在墨西哥的分支机构）的[采访](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$15664995075484PTrhJ:decred.org)，谈论墨西哥的加密货币。（照片：[1](https://twitter.com/LOR_ena_OR/status/1164205626723098630) [2](https://twitter.com/bitcoinemb/status/1164269677381652480)）
+* 8月21日 - [Decred Meetup](https://www.meetup.com/Chicago-Decred-Meetup/events/263814807/) - 美国芝加哥。
+* 8月22日 - [Binance Meetup](https://www.facebook.com/events/406522099975717/) - 墨西哥蒙特雷。@elian和@francov_代表Decred。（照片：[1](https://twitter.com/binance/status/1166526786525487105) [2](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15665195371107618foQnv:matrix.org) [3](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15666946921832943HyclD:matrix.org)）
+* 8月24日 - [Decred Live AMA](https://twitter.com/coin98_net/status/1164845587910414337) - 互联网。@Haon和ViệtAnhĐàm在他们的Facebook页面上回答了Coin98组织的越南社区提出的问题。总共有309条评论（包括答案），对于最佳问题，DCR的奖励为50美元。（[获奖名单](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md)）
+* 8月25日 - [币印中国行](https://twitter.com/wanbihou/status/1166028812305321985) - 中国上海。@dominic受邀出席主题演讲和圆桌讨论。
+* 8月28日 - [Blockchain Bootcamp](https://www.meetup.com/blockchaincentre/events/263601014/)p - 澳大利亚Docklands。安永会计师事务所[邀请](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156739040517633gdQNG:decred.org) @zohand和@eSizeDave为来自学术界，商界，法律界和政府部门的代表举办关于区块链治理的Decred特定演讲。演示文稿和Decred都很受欢迎，导致了许多后续活动。（[照片](https://twitter.com/DecredAustralia/status/1166592295296208896)）
+* 8月29日 - [Binance Meetup](https://twitter.com/Decred_ES/status/1166132690342567938) - 墨西哥城，墨西哥。@elian [指出](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156713369714381PAoax:decred.org)：“我们有大约60名与会者，主要是爱好者和企业家，对Decred的隐私实施和治理即服务的想法很感兴趣。非常感谢@francov_ @luantantoniocrag和@victorarubin的帮助去”。（照片：[1](https://twitter.com/TRADcoinMX/status/1168541349395738624) [2](https://twitter.com/interprocsys/status/1167243076726861824) [3](https://twitter.com/victorarubin/status/1167495971539836928)）
 
-Upcoming:
+即将到来的:
 
-* Sep 10 - [BlockDAM Co-working Tuesdays](https://twitter.com/NoahPierau/status/1170198038301855745) - Amsterdam, Netherlands. @Haon will be presenting a talk on cryptocurrency privacy tech and the new privacy features of Decred.
+* 9月10日 - [BlockDAM Co-working Tuesdays](https://twitter.com/NoahPierau/status/1170198038301855745) - 荷兰阿姆斯特丹。@Haon将发表关于加密货币隐私技术和Decred的新隐私功能的演讲。
 * Sep 16 - [Decred Special Interest Group](https://www.meetup.com/Philadelphia-Technology-for-Blockchain-and-Cryptocurrency/events/hmqlhryzmbvb/) - Philadelphia, USA. Organized by [@mikeghen](https://twitter.com/mikeghen).
 * Sep 20 - [A Framework for Blockchain Governance](https://www.eventbrite.com/e/a-framework-for-blockchain-governance-tickets-70134180221) - Washington DC, USA. Along with Thomas Cox, the Chief Governance Officer of [StrongBlock](https://strongblock.io/), @akinsawyerr be speaking on and taking questions on a Blockchain Governance Framework developed the Wharton Crypto Governance roundtable group of which he is a member.
 * Sep 21 - [French Vibes Connection](https://twitter.com/Decred_ES/status/1160669435989856256) - Mexico City, Mexico. Decred will co-host a music concert featuring Telepopmusik, Cherokee and Else. Brand awareness experiment by @elian.
@@ -318,13 +320,13 @@ New Twitter account [@DCRtheSOV](https://twitter.com/DCRtheSOV) aims to [become]
 
 ## 市场表现
 
-In August DCR was trading between USD 22.63-32.17 / BTC 0.00227-0.00275. The average daily rate was $26.23.
+8月份DCR的交易价格为22.63-32.17美元/BTC 0.00227-0.00275。每日平均价格为26.23美元。
 
-A spike of unrealistic volume was [observed](https://www.reddit.com/r/decred/comments/ctm0rq/whats_with_the_new_trade_volume/) from bw.com.
+从bw.com [观察](https://www.reddit.com/r/decred/comments/ctm0rq/whats_with_the_new_trade_volume/)到不切实际的数量激增。
 
-Bitcoin has again been oscillating around the $10,000 mark most of August, briefly hitting $12,200. Many are speculating that the upcoming launch of [Bakkt](https://cointelegraph.com/news/bitcoin-price-will-bakkts-launch-this-month-take-btc-to-new-highs) will make Bitcoin break this cycle.
+比特币在8月份的大部分时间里再次突破10,000美元大关，短暂触及12,200美元。许多人猜测即将推出[Bakkt](https://cointelegraph.com/news/bitcoin-price-will-bakkts-launch-this-month-take-btc-to-new-highs)将使比特币突破这一周期。
 
-In context of discussing the market maker proposals, [CoinMarketBook](https://coinmarketbook.cc/) argues: "Market cap is a lie. Buy support tells the true story". As of Aug 19, DCR was #95 in that rating with only $260K of buy support at 10% distance from highest bid price. For context: BTC has $360M, ETH $55M, LTC $23M, XMR $9.5M, DASH $5.7M, DOGE $4.6M.
+在讨论做市商提案的背景下，[CoinMarketBook](https://coinmarketbook.cc/)认为：“市值是谎言。买入支撑说明真实的故事”。截至8月19日，DCR在该评级中排名第95，只有26万美元的购买支持，距离最高出价10％。具体情况：BTC有3.6亿美元，ETH有5500万美元，LTC 2300万美元，XMR 950万美元，DASH 570万美元，DOGE 460万美元。
 
 ## 相关外部信息
 
