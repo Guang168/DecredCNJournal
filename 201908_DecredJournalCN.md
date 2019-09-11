@@ -246,56 +246,53 @@ Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/11660262658
 
 ## 媒体
 
-Selected articles:
+精选文章：
 
-* Decred | The Power to Think for Oneself by @BlackBearXVII ([medium](https://medium.com/@imagnusholdings/decred-the-power-to-think-for-oneself-46b9aab9ff0e))
+* Decred | 自我思考的力量 @BlackBearXVII ([medium](https://medium.com/@imagnusholdings/decred-the-power-to-think-for-oneself-46b9aab9ff0e))
 * Decred Q&A with @elian for Crypto Hispano ([steemit](https://steemit.com/btc/@cryptohispano01/decred-q-and-a))
-* Decred's Ambitious Vision for a Truly Decentralized Exchange by Nate Urbas ([cryptolinks.com](https://cryptolinks.com/news/decreds-ambitious-vision-for-a-truly-decentralized-exchange))
-* Decentralized Governance in Action: Decred Debates Market Liquidity by Darren Kleine ([cryptobriefing.com](https://cryptobriefing.com/decentralized-governance-in-action-decred-debates-market-liquidity/))
-* Surveying the Privacy Landscape by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/))
-* Iterating Privacy by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/28/Iterating-Privacy/))
-* Decred Project Lead Jake Yocom-Piatt: Practice What You Preach by Matt Hussey ([decrypt.co](https://decrypt.co/8801/decred-project-lead-jake-yocom-piatt-interview-profile))
+* Decred去中心化交易所雄心勃勃的愿景 by Nate Urbas ([cryptolinks.com](https://cryptolinks.com/news/decreds-ambitious-vision-for-a-truly-decentralized-exchange))
+* 实现去中心化治理: Decred 争论市场流通性 by Darren Kleine ([cryptobriefing.com](https://cryptobriefing.com/decentralized-governance-in-action-decred-debates-market-liquidity/))
+* 探索隐私币生态 by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/))
+* 迭代隐私 by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/28/Iterating-Privacy/))
+* Decred 项目领导人 Jake Yocom-Piatt: 行动要和思想一致 by Matt Hussey ([decrypt.co](https://decrypt.co/8801/decred-project-lead-jake-yocom-piatt-interview-profile))
 
-Translations:
+翻译:
 
-* Surveying the Privacy Landscape - [in Portuguese](https://stakey.club/translated/privacy-landscape/) by @mm.
-* Decred Journal July 2019 was translated to Arabic (@arij) and April-July to Spanish (@francov\_ and @luisantoniocrag). The index of all translations is maintained [here](https://xaur.github.io/decred-news/) and is updated several times a month. Thank you all for spreading DJ all over the world!
+* 探索隐私币生态 - [葡萄牙语](https://stakey.club/translated/privacy-landscape/) by @mm.
+* Decred的7月月报被翻译成阿拉伯语（@arij），中文（@Dominic），4-7月月报被翻译成西班牙语（@francov\_ 和 @luisantoniocrag），波兰语（@kozel）和越南语（Duyen Em）。所有翻译的索引在[这里](https://xaur.github.io/decred-news/)。
 
-Videos:
+视频：
 
-* Decred's Market Maker Proposals - Crypto Governance In Action! by @Exitus ([youtube](https://www.youtube.com/watch?v=BKSMA-eanoY))
-* The Feeless Decred DEX Has Been Approved! by @Exitus ([youtube](https://www.youtube.com/watch?v=An5YCY_q894))
-* Futurist 19 interview with @ammarooni ([youtube](https://www.youtube.com/watch?v=YmQce50dfGY))
+* Decred的做市商提案 - 实现区块链治理! by @Exitus ([youtube](https://www.youtube.com/watch?v=BKSMA-eanoY))
+* 无费用的Decred DEX被批准了! by @Exitus ([youtube](https://www.youtube.com/watch?v=An5YCY_q894))
+* Futurist 19 访问 @ammarooni ([youtube](https://www.youtube.com/watch?v=YmQce50dfGY))
 
-Audio:
+音频：
 
-* Decred in Depth Ep. 6 with @jholdstock - Jamie talks about his Decred journey, from an airdrop recipient to a part-time docs contributor to his recent transition to working full-time on Decred as a developer and the reasons why that was an attractive option. ([youtube](https://www.youtube.com/watch?v=A-zcLGSYxbA))
-* Decred in Depth Ep. 7 with @jy-p - Jake talks about privacy in the general sense of surveillance capitalism and how to avoid it, why and how Company 0 arrived at CoinShuffle++ as the optimal way to add privacy to Decred, and the importance of privacy to the project. ([player.fm](https://player.fm/series/decred-in-depth/jake-yocom-piatt-dcr-privacy))
-* Note that Decred in Depth episodes are mirrored on [SoundCloud](https://soundcloud.com/decredindepth) and [Libsyn](https://decredindepth.libsyn.com/).
-* Unchained Podcast Ep. 134 with Laura Shin - @jz gives a comprehensive intoduction to Decred and his involvement with the project, then releases initial information about Decred's new opt-in privacy feature. ([unchainedpodcast.com](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/))
-* Inclusionism: Guest Akin Sawyerr on What Money Is ([jamesfeltonkeith.com](https://www.jamesfeltonkeith.com/radioshow/episode/c3b1bb50/inclusionism-guest-akin-sawyerr-on-what-money-is), [soundcloud](https://soundcloud.com/inclusionism/inclusionism-guest-akin-sawyerr-on-what-money-is))
+* Decred in Depth Ep. 6 with @jholdstock - Jamie谈到了他的Decred之旅，从空投接收者到兼职文档贡献者，最近过渡到全职开发人员，以及为什么这是一个有吸引力的选择。([youtube](https://www.youtube.com/watch?v=A-zcLGSYxbA))
+* Decred in Depth Ep. 7 with @jy-p - Jake谈到隐私和资本主义的监控以及如何避免泄漏隐私，为什么Company 0觉得CoinShuffle++是最适合Decred的隐私技术，以及隐私对项目的重要性。([player.fm](https://player.fm/series/decred-in-depth/jake-yocom-piatt-dcr-privacy))
+* Decred in Depth 音频已复制到[SoundCloud](https://soundcloud.com/decredindepth)和[Libsyn](https://decredindepth.libsyn.com/).
+* Unchained Podcast Ep. 134 with Laura Shin - @jz全面介绍了Decred及他在项目里的角色，然后发布Decred新隐私功能的初始信息。([unchainedpodcast.com](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/))
+* Inclusionism: Akin Sawyerr评论什么是金钱 ([jamesfeltonkeith.com](https://www.jamesfeltonkeith.com/radioshow/episode/c3b1bb50/inclusionism-guest-akin-sawyerr-on-what-money-is), [soundcloud](https://soundcloud.com/inclusionism/inclusionism-guest-akin-sawyerr-on-what-money-is))
 * Base Layer Ep. 59 - Akin Sawyerr (Decred) ([podbean.com](https://acrabaselayer.podbean.com/e/base-layer-episode-059-akin-sawyerr-decred/), [spotify](https://open.spotify.com/episode/6tT4PTA572I1PAbHsZEX6N))
-* Decred Struts Privacy Credentials with Surprisingly Awesome Rap Snippet ([cryptobriefing.com](https://cryptobriefing.com/decred-struts-privacy-credentials-with-surprisingly-awesome-rap-snippet/))
+* Decred使用令人惊讶的Rap片段推广隐私功能([cryptobriefing.com](https://cryptobriefing.com/decred-struts-privacy-credentials-with-surprisingly-awesome-rap-snippet/))
 
-> Couple hundred code lines, no errors in my design, off-chain, unbreakable, I'm ahead of time
+自4月份以来，Decred 月报一直在变得更去中心化。 这包括写下月报组成部分的描述以及制作它们的原因。 这个想法是，通过形式化各方面，月报变得不那么依赖于个别贡献者和他们的知识。以下文件可供希望成为月报贡献者参考，值得一看：
 
-Since April the Decred Journal has been pushing for greater decentralization of its production. This has involved writing down descriptions of how components of the Journal get made and the reasoning for making them in these ways. The idea is that by formalizing these aspects the Journal becomes less reliant on the individuals who currently contribute and their tacit knowledge. The following documents are available, worth a look to anyone who would like to become a Journal contributor:
-
-* a self-describing [template](https://github.com/xaur/decred-news/blob/docs/journal-template.md) for new issues
-* a revamped [contributing](https://github.com/xaur/decred-news/blob/docs/contributing.md) page
-* a [content plan](https://github.com/xaur/decred-news/blob/docs/content.md) with ideas for expansion
-* an extensive [guidelines](https://github.com/xaur/decred-news/blob/docs/guidelines.md) doc that captures the vision and ways of DJ, and also includes tips for translators.
+* 新月报的[范例文件](https://github.com/xaur/decred-news/blob/docs/journal-template.md)
+* 全新的[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)页面
+* [内容安排](https://github.com/xaur/decred-news/blob/docs/content.md)
+* 详细的[指引](https://github.com/xaur/decred-news/blob/docs/guidelines.md) ，包括月报的理念和翻译的提示
 
 ## 社区讨论
 
-Comm systems news:
+通讯系统新闻：
 
-* Reddit [thread](https://www.reddit.com/r/decred/comments/coppup/i_did_a_review_of_the_powpos_mechanism_used_in/) was removed by mods where the author tried to get exposure for his project by posting a low effort review of how Decred's hybrid PoW+PoS does not work. Our moderation is [transparent](https://snew.notabug.io/r/decred) thanks to [publicmodlogs](https://www.reddit.com/user/publicmodlogs).
-* Reddit [thread](https://www.reddit.com/r/decred/comments/csc0ne/what_is_c0s_role_going_forward_with_the_dcr/) asking about Company 0's role going forward received many substantial replies but then vanished after the author's Reddit account was deleted (coincidentally, on the same day). To bring it back to r/decred feed it was ["undeleted"](https://www.reddit.com/r/decred/comments/csq58r/what_is_c0s_role_going_forward_with_the_dcr/) by resubmitting the link.
-* Yet another case where a [question](https://www.reddit.com/r/decred/comments/cvrddy/raising_the_limit_of_coins/) received a proper answer and was quickly deleted. It was "undeleted", but the deletion of the original post caused the answer to lose visibility. This pattern is one of the factors that discourage knowledgeable people from putting in the effort to answer questions on Reddit. In this case the question poster actually [apologized](https://www.reddit.com/r/decred/comments/cvwmsz/raising_the_limit_of_coins_undelete/ey7p6qr) for deleting their post in the "undeleted" thread.
-* More impostors were detected in Telegram that promise to help with your technical problem for a modest 0.05 BTC. Beware the scammers.
+* Reddit [讨论](https://www.reddit.com/r/decred/comments/coppup/i_did_a_review_of_the_powpos_mechanism_used_in/) 被管理者移除，因为作者在没有足够理据的情况下表示Decred的混合PoW+PoS系统并不可行。我们的管理是[透明的](https://snew.notabug.io/r/decred)，感谢[publicmodlogs](https://www.reddit.com/user/publicmodlogs)。
+* Reddit [讨论](https://www.reddit.com/r/decred/comments/csc0ne/what_is_c0s_role_going_forward_with_the_dcr/) Company 0的未来角色，并收到了许多建设性回复，但在作者的Reddit帐户被删除后（巧合，同一天）消失了。 要通过重新提交链接，在r/decred 恢复[讨论](https://www.reddit.com/r/decred/comments/csq58r/what_is_c0s_role_going_forward_with_the_dcr/)。
+* Telegram中检测到更多诈骗者，承诺帮助您解决技术问题，并支付0.05 BTC，小心诈骗者。
 
-An AMA with the Vietnamese community was conducted on Facebook by @Haon and Việt Anh Đàm. There were a total of 309 comments (including answers), and a transcript is available [here](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md).
+@Haon和ViệtAnhĐàm在Facebook上进行了与越南社区的AMA。 共有309条评论（包括答案），完整文档在[这里](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md)。
 
 Selected Reddit posts:
 
