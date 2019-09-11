@@ -231,18 +231,19 @@ Ditto八月的成就:
 即将到来的:
 
 * 9月10日 - [BlockDAM Co-working Tuesdays](https://twitter.com/NoahPierau/status/1170198038301855745) - 荷兰阿姆斯特丹。@Haon将发表关于加密货币隐私技术和Decred的新隐私功能的演讲。
-* Sep 16 - [Decred Special Interest Group](https://www.meetup.com/Philadelphia-Technology-for-Blockchain-and-Cryptocurrency/events/hmqlhryzmbvb/) - Philadelphia, USA. Organized by [@mikeghen](https://twitter.com/mikeghen).
-* Sep 20 - [A Framework for Blockchain Governance](https://www.eventbrite.com/e/a-framework-for-blockchain-governance-tickets-70134180221) - Washington DC, USA. Along with Thomas Cox, the Chief Governance Officer of [StrongBlock](https://strongblock.io/), @akinsawyerr be speaking on and taking questions on a Blockchain Governance Framework developed the Wharton Crypto Governance roundtable group of which he is a member.
-* Sep 21 - [French Vibes Connection](https://twitter.com/Decred_ES/status/1160669435989856256) - Mexico City, Mexico. Decred will co-host a music concert featuring Telepopmusik, Cherokee and Else. Brand awareness experiment by @elian.
-* Sep 21 - [Decred Meetup](https://twitter.com/DecredArabia/status/1171117988461854721) - Casablanca, Morocco. @arij will be talking about her experience as a Decred contractor, Decred's governance and privacy and future plans.
-* Sep 25 - [La Conexion Conference](https://la-conexion.com/home/) - Buenos Aires, Argentina. The project will be presented in main stage.
-* Sep 26 - [Inaugural Decred Meetup](https://twitter.com/MattDavidKaye/status/1164974520081342464) - Los Angeles, USA. Blockhead Capital and @jy-p will talk about fundamentals behind Decred.
-* Sep 27 - [Crypto Fest](https://argentinacryptofest.com/) in Cordoba, Argentina. The project will be presented in main stage.
-* Sep 30 - Oct 1 - [Voice of Blockchain](https://twitter.com/BlockchainVoice/status/1154772731575099392) - Chicago, USA. @jy-p will present a keynote "Why Direct Sovereignty & Multi-Stakeholder Inclusive Governance Will Last".
-* Oct 29-31 - [World Crypto Conference](https://worldcryptocon.com/) - Las Vegas, USA. @akinsawyerr will be speaking on a panel on "Governance Practices" and will have an opportunity to highlight the Decred governance model and process.
-* Nov 4-7 - [Web Summit](https://websummit.com/) - Lisbon, Portugal. Decred will have a booth.
+* 9月16日 - [Decred Special Interest Group](https://www.meetup.com/Philadelphia-Technology-for-Blockchain-and-Cryptocurrency/events/hmqlhryzmbvb/) - 美国费城。由[@mikeghen](https://twitter.com/mikeghen)组织。
+* 9月20日 - [A Framework for Blockchain Governance](https://www.eventbrite.com/e/a-framework-for-blockchain-governance-tickets-70134180221) - 美国华盛顿特区。与[StrongBlock](https://strongblock.io/)的首席治理官Thomas Cox 一起，@akinsawyerr正在就区块链治理框架发表演讲并提出问题，开发了他所属的Wharton Crypto Governance圆桌会议组。
+* 9月21日 - [French Vibes Connection](https://twitter.com/Decred_ES/status/1160669435989856256) - 墨西哥城，墨西哥。Decred将与Telepopmusik，Cherokee和Else共同举办音乐会。@elian的品牌意识实验。
+* 9月21日 - [Decred Meetup](https://twitter.com/DecredArabia/status/1171117988461854721) - 摩洛哥卡萨布兰卡。@arij将谈论她作为Decred承包商，Decred的治理和隐私以及未来计划的经验。
+* 9月25日 - [La Conexion Conference](https://la-conexion.com/home/) - 阿根廷布宜诺斯艾利斯。该项目将在主要阶段提出。
+* 9月26日 - [Inaugural Decred Meetup](https://twitter.com/MattDavidKaye/status/1164974520081342464) - 洛杉矶，美国。Blockhead Capital和@ jy-p将讨论Decred背后的基本面。
+* 9月27日 - [Crypto Fest](https://argentinacryptofest.com/)。该项目将在主要阶段提出。
+* 9月30日 - 10月1日 - [Voice of Blockchain](https://twitter.com/BlockchainVoice/status/1154772731575099392) - 美国芝加哥。@ jy-p将发表主题演讲“为什么直接主权和多利益相关方包容性治理将持续”。
+* 10月29日至31日 - [World Crypto Conference](https://worldcryptocon.com/) - 美国拉斯维加斯。@akinsawyerr将在“治理实践”小组发言，并将有机会突出Decred治理模型和流程。
+* 11月4日至7日 - [Web Summit](https://websummit.com/) - 葡萄牙里斯本。Decred将有一个展位。
 
-Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/1166026265805172737 ) for people to organize the first Decred [meetup](https://www.meetup.com/Decred-KC/) in Kansas City, USA.
+Alex Von Schulze正在[寻找](https://twitter.com/avonschulze/status/1166026265805172737 )人们在美国堪萨斯城组织首次Decred [meetup](https://www.meetup.com/Decred-KC/)。
+
 
 ## 媒体
 
@@ -294,17 +295,17 @@ Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/11660262658
 
 @Haon和ViệtAnhĐàm在Facebook上进行了与越南社区的AMA。 共有309条评论（包括答案），完整文档在[这里](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md)。
 
-Selected Reddit posts:
+选定的Reddit帖子：
 
-* [Questions](https://www.reddit.com/r/decred/comments/cr8u4w/post_politeia_approval_fiat_pairs_integration_on/) to EXMO went unanswered.
-* [Why I'm into the Decred project](https://www.reddit.com/r/decred/comments/crci7p/why_im_into_the_decred_project/) by Somebody\_\_Online
-* [Collaborative effort](https://www.reddit.com/r/decred/comments/ct7aw9/collaborative_effort_for_mw_tech/) for MimbleWimble tech?
-* [Thread](https://www.reddit.com/r/decred/comments/ctp1zf/bitcoin_lighting_network/) with a long reply from @matheusd addressing concerns about contractors dumping DCR and fostering the adoption of LN.
-* Privacy: the feature [revealed](https://www.reddit.com/r/decred/comments/cw1wd8/privacy_feature_revealed/), privacy is [already in use](https://www.reddit.com/r/decred/comments/cxrb42/decred_privacy_was_announced_and_its_already_in/) on mainnet, [difference](https://www.reddit.com/r/decred/comments/cwz0ib/in_what_way_is_decreds_mixer_different_to/) from Bitcoin's CoinJoin and background on Decred's privacy idea, [comments](https://www.reddit.com/r/decred/comments/cxdxso/what_does_it_mean_by_12x_increase_of_onchain/) on the 12x transaction storage increase.
+* 对EXMO的问题没有[答案](https://www.reddit.com/r/decred/comments/cr8u4w/post_politeia_approval_fiat_pairs_integration_on/)。
+* [为什么我会被](https://www.reddit.com/r/decred/comments/crci7p/why_im_into_the_decred_project/)Somebody__Online 邀请加入Decred项目
+* [MimbleWimble技术的合作努力？](https://www.reddit.com/r/decred/comments/ct7aw9/collaborative_effort_for_mw_tech/)
+* @matheusd解决对承包商倾销DCR和促进采用LN关注长期的[答复](https://www.reddit.com/r/decred/comments/ctp1zf/bitcoin_lighting_network/)。
+* 隐私保护：该功能已[实施](https://www.reddit.com/r/decred/comments/cw1wd8/privacy_feature_revealed/)，隐私已经在主网上[使用](https://www.reddit.com/r/decred/comments/cxrb42/decred_privacy_was_announced_and_its_already_in/)，与比特币的CoinJoin和Decred的隐私理念背景不同，对12倍交易存储增加的[评论](https://www.reddit.com/r/decred/comments/cxdxso/what_does_it_mean_by_12x_increase_of_onchain/)。
 
-Selected Twitter discussions:
+选定的Twitter讨论：
 
-* [Quote](https://twitter.com/Ammarooni/status/1161707860822302722) from [@zubair](https://twitter.com/generalsaccount)'s talk - "We need to solve for transparency in blockchain governance now, so that we have a mechanism to make decisions two decades from now".
+* [引用](https://twitter.com/Ammarooni/status/1161707860822302722)从[@zubair](https://twitter.com/generalsaccount)的谈话- ‘我们现在需要解决的blockchain治理的透明度，使我们有一个机制，从现在作决定的二十年。
 * Decred privacy [tweetstorm](https://twitter.com/decredproject/status/1166746979160023046).
 * @Checkmate on [privacy](https://twitter.com/_Checkmatey_/status/1167502975276933121).
 * @richardred on Decred's [open source mentality](https://twitter.com/RichardRed0x/status/1160972879133073409) of "dig in and find something useful to do".
