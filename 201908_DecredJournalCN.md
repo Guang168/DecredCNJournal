@@ -306,15 +306,15 @@ Alex Von Schulze正在[寻找](https://twitter.com/avonschulze/status/1166026265
 选定的Twitter讨论：
 
 * [引用](https://twitter.com/Ammarooni/status/1161707860822302722)从[@zubair](https://twitter.com/generalsaccount)的谈话- ‘我们现在需要解决的blockchain治理的透明度，使我们有一个机制，从现在作决定的二十年。
-* Decred privacy [tweetstorm](https://twitter.com/decredproject/status/1166746979160023046).
-* @Checkmate on [privacy](https://twitter.com/_Checkmatey_/status/1167502975276933121).
-* @richardred on Decred's [open source mentality](https://twitter.com/RichardRed0x/status/1160972879133073409) of "dig in and find something useful to do".
-* @DCRtheSoV on [the growth of Politeia](https://twitter.com/DCRtheSOV/status/1165708600410402816) and the role it's playing within the project.
-* @DCRtheSoV on [how to stake DCR](https://twitter.com/DCRtheSOV/status/1163514060542894080).
-* @Checkmate on the [Treasury](https://twitter.com/_Checkmatey_/status/1157342578787913733).
-* Chris Burniske of Placeholder VC [clarified](https://twitter.com/cburniske/status/1163912381598248965 ) that Placeholder are not liquidating their DCR position, after an impersonator was seen on Telegram supposedly looking for buyers for their DCR.
+* Decred隐私 [tweet风暴话题](https://twitter.com/decredproject/status/1166746979160023046).
+* @Checkmate 关于[隐私](https://twitter.com/_Checkmatey_/status/1167502975276933121).
+* @richardred对Decred的[开源状态](https://twitter.com/RichardRed0x/status/1160972879133073409) “挖掘并找到有用的东西”。 
+* @DCRtheSoV关于[Politeia的成长](https://twitter.com/DCRtheSOV/status/1165708600410402816)及其在项目中扮演的角色。
+* @DCRtheSoV关于[如何POS](https://twitter.com/DCRtheSOV/status/1163514060542894080)DCR。
+* @Checkmate 关于 [社区开发基金](https://twitter.com/_Checkmatey_/status/1157342578787913733).
 
-New Twitter account [@DCRtheSOV](https://twitter.com/DCRtheSOV) aims to [become](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15650685647545vLtzj:decred.org) a reputable source of news and analysis covering Decred and is looking for feedback.
+新的Twitter帐户[@DCRtheSOV](https://twitter.com/DCRtheSOV)旨在成为一个有信誉的新闻和分析来源，涵盖Decred，并正在寻求反馈。
+
 
 ## 市场表现
 
@@ -328,53 +328,53 @@ New Twitter account [@DCRtheSOV](https://twitter.com/DCRtheSOV) aims to [become]
 
 ## 相关外部信息
 
-Blockstream have [announced](https://blockstream.com/2019/08/08/en-mining-launch/) their Bitcoin mining operations (which started in 2017), with sites in Quebec (Canada) and Georgia (USA) that host their own machines plus those of their clients. Blockstream also announced a new mining pool, the first production mining pool to use the [BetterHash](https://bitcoinmagazine.com/articles/betterhash-protocol-lets-pool-miners-regain-control-over-their-hash-power) protocol. BetterHash allows individual miners to choose which transactions to include in the blocks they find, which would make it significantly more difficult for mining pool operators to use their pool's hashrate maliciously.
+Blockstream 宣布了他们的比特币采矿业务（始于2017年），其中魁北克（加拿大）和佐治亚州（美国）的网站拥有自己的机器以及客户的机器。Blockstream还宣布了一个新的采矿池，第一个使用BetterHash协议的生产采矿池。BetterHash允许单个矿工选择要包含在他们找到的块中的事务，这将使采矿池操作员更难以恶意地使用其池的哈希值。
 
-Braiins have [announced](https://bitcoinmagazine.com/articles/with-stratum-v2-braiins-plans-big-overhaul-in-pooled-bitcoin-mining) that the open source Stratum mining protocol V2 will incorporate similar functionality inspired by BetterHash, allowing pools to be configured so that miners can choose transactions and version bits for their proposals directly.
+Braiins 宣布开源Stratum挖掘协议V2将包含受BetterHash启发的类似功能，允许配置池，以便矿工可以直接为其提案选择交易和版本位。
 
-The Zcash community continues to wrestle with the decision about how to fund development after the founders' reward ceases to channel 20% of block rewards to the ECC, Zcash Foundation and other beneficiaries. There follow some short descriptions of seemingly relevant posts - following this process is quite effortful, so it is possible that important items have been missed.
+在创始人的奖励停止向ECC，Zcash基金会和其他受益人提供20％的块奖励之后，Zcash社区继续争取如何为发展提供资金的决定。下面是对看似相关的帖子的一些简短描述 - 遵循这个过程非常费力，因此有可能错过了重要的项目。
 
-The Zcash Foundation (ZF) has [posted](https://www.zfnd.org/blog/dev-fund-guidance-and-timeline/) to make its position clear that their preferred option is mandatory funding of development through block rewards, with the stipulation that all entities receiving these funds must be not-for-profit. The ECC is presently a for-profit corporation, with a fiduciary duty to look out for the profit of its shareholders, whose interests could conflict with the health of the network. This is a common theme to much of the discussion, people are not keen on block rewards going to a for-profit company and possibly enriching the founders/investors.
+Zcash基金会（ZF）已经公布，以使自己的立场明确，他们的首选是通过大宗奖励发展资金的强制性，并规定，所有接受这些资金的实体必须是不以营利为目的。ECC目前是一家营利性公司，其信托义务是关注股东的利益，股东的利益可能与网络的健康发生冲突。这是大多数讨论的共同主题，人们并不热衷于向营利性公司提供大量奖励，并可能丰富创始人/投资者。
 
-ZF's less preferred options are opt-in funding by miners (who would choose whether to burn funds or donate them, and who to donate them to) and no dev funding. Zcash Foundation has a projected burn rate of $3.7M/year ($2M being wages), and could operate at this level until 2023, after which point it would need alternative funding.
+ZF不太喜欢的选择是矿工的选择性资金（他们会选择是否要烧钱或捐赠，以及捐赠给谁）以及没有开发资金。Zcash基金会的预计燃烧率为370万美元/年（工资为200万美元），并且可以在2023年之前运行，此后它将需要替代资金。
 
-The Zcash Foundation is organizing a Community Governance Panel for which individuals [could](https://twitter.com/zooko/status/1166819884669341697) sign up on Twitter. Outcomes of the panel are [not binding](https://www.zfnd.org/blog/governance-results/).
+Zcash基金会正在组织一个社区治理小组，个人可以在Twitter上注册。专家组的成果没有约束力。
 
-The ECC released a [Transparency Report](https://electriccoin.co/wp-content/uploads/2019/08/Transparency-report-Q3-2019-2.pdf) which breaks down the ECC's income and outgoings during Q1 2019. ECC's effective burn rate was $635K/month in Q1, and the company holds $6.4M worth of USD and ZEC. The company had an income of $449K in Q1.
+ECC发布了透明度报告，该报告在2019年第一季度分解了ECC的收入和支出.ECC的有效燃烧率在第一季度为63.5万美元/月，公司持有价值640万美元的美元和ZEC。该公司第一季度的收入为449,000美元。
 
-Other proposals include a [grand compromise](https://forum.zcashcommunity.com/t/a-grand-compromise-synthesis-zip-proposal/34812) from Josh Cincinnati of the Zcash Foundation, which would instigate another 4 years of 20% block rewards, shared between EFF and ZF, with the release of 8% (4% for ECC and 4% for ZF) contingent on greater adoption of shielded transactions.
+其他建议包括来自Zcash基金会的Josh Cincinnati的一项重大妥协，其将激发EFF和ZF共享的另外4年20％的奖励，释放8％（ECC为4％，ZF为4％）更多地采用屏蔽交易。
 
-[Strategic Council Proposal](https://forum.zcashcommunity.com/t/dev-fund-proposal-strategic-council-approach/34801), which would see a continued 20% of block rewards and a board of 5 people making decisions about how it is spent. This comes from avichal, a serial entrepreneur and founder of Electric Capital, which invests in a number of layer 1 protocols (but not Zcash).
+战略委员会提案，将持续20％的块奖励和5人的董事会决定如何花费。这来自avichal，一个连续的企业家和Electric Capital的创始人，该公司投资了许多第1层协议（但不是Zcash）。
 
-James Prestwich has a [proposal](https://twitter.com/_prestwich/status/1165390624171986944) (in a Google Doc) which criticizes the management of ECC and takes exception to the ECC using its funds to conduct marketing campaigns which aim to generate support for its continued funding. This document also highlights the power which ownership of the Zcash trademark affords ECC, and argues that no decision-making process should proceed until that issue is resolved.
+詹姆斯·普雷斯特威奇（James Prestwich）提出了一项建议（在Google Doc中）批评ECC的管理，并使用其资金对ECC进行例外处理，以开展旨在为其持续资金提供支持的营销活动。本文件还强调了Zcash商标所有权为ECC提供的权力，并认为在该问题得到解决之前不应进行任何决策过程。
 
-Zooko has [posted](https://forum.zcashcommunity.com/t/note-about-trademark-strategy/34807) to address disagreement about how the Zcash trademark should be managed. The trademark is the sole property of ECC, but there has been a long-standing agreement to share control of it with a novel legal agreement with Zcash Foundation which would provide a double-veto. ECC has had second thoughts about sharing control in a 2-of-2 multisig type arrangement because this is prone to deadlock and inaction. Ultimately, the post argues that ECC should wait until the decision about funding is made to decide how control of the trademark should be decentralized. This has not been well received by many community members.
+Zooko已发布以解决有关如何管理Zcash商标的不同意见。该商标是ECC的唯一财产，但长期以来一直同意与Zcash基金会达成一项新的法律协议来控制它，该协议将提供双重否决。ECC已经考虑过在2-of-2 multisig类型的安排中共享控制，因为这很容易出现死锁和无所作为。最后，该帖认为ECC应该等到有关资金的决定，以决定如何分散商标的控制权。这并没有得到许多社区成员的欢迎。
 
-Icon announced a [paper](https://m.icon.foundation/download/Contribution_Proposal_Paper_EN.pdf) about how their Contribution Proposal system will work. Proposals will be submitted on-chain (with a security deposit of around $100 minimum), where a majority vote (of "ICONists", people staking ICX) will determine whether the proposal is approved to receive funding. Approved proposals are allowed to receive delegation, and in effect the proposal receives a share of available funding determined by the proportion of staked ICX delegated to it. This is different to how most projects handle funding decisions, with the recipients usually defining and requesting their own budget. Progress reports will be required for all approved proposals every 30 days, ICX stakeholders will read these proposals and can rescind a proposal's approval with a majority vote. It is not clear what the target date is for this system to be completed and in production.
+Icon宣布了一篇论文关于他们的贡献提案系统如何运作。提案将在链上提交（最低保证金约为100美元），多数投票（“ICON主义者”，ICX人员）将确定该提案是否被批准接受资金。批准的提案可以接受授权，实际上该提案将获得一部分可用资金，这些资金由ICX授予它的比例决定。这与大多数项目处理资金决策的方式不同，收件人通常会定义和请求自己的预算。每30天所有已批准的提案都需要提交进度报告，ICX利益相关方将阅读这些提案，并可以多数票通过撤销提案的批准。目前尚不清楚该系统的目标日期是完成和生产的。
 
-Maker [deployed](https://blog.makerdao.com/an-update-to-maker-governance-polling/) a new [Governance Voting Portal](https://vote.makerdao.com/). The UX has been improved to make voting easier and allow holders of MKR to vote on binding executive decisions (about stability fee) at the same time as voting on governance polls - something which was not previously possible. All of the content associated with governance polls is stored off-chain on "any publicly accessible source". A hash of the poll is committed to the blockchain, and participants can check whether the content in the public source has been edited by checking this hash.
+Maker 部署了一个新的治理投票门户。用户体验已得到改进，使投票更容易，并允许MKR持有人在对治理民意调查投票的同时投票决定具有约束力的行政决策（关于稳定费） - 这在以前是不可能的。与治理民意调查相关的所有内容都存储在“任何可公开访问的来源”的链外。轮询的哈希被提交给区块链，参与者可以通过检查该哈希来检查公共源中的内容是否已被编辑。
 
-Maker [polled](https://vote.makerdao.com/polling) voters to determine the priority for integrating 7 different assets that were pre-approved by the risk team into multi-collateral DAI. GNT (17% approval, 1.2% participation), ZRX (76% approval, 2.3% participation), OMG (38% approval, 1.2% participation), REP (92% approval, 3.6% participation), BAT (99.8% approval, 2.3% participation), ETH (100% approval, 4.3% participation), DGD (42% approval, 1.3% participation). The maximum number of unique voting wallets per proposal was 50 (for the ETH vote). These votes serve as a signal to the developers about which assets the voters would like to see added first.
+制造商对选民进行了调查，以确定将风险团队预先批准的7种不同资产整合为多抵押DAI的优先级。GNT（17％批准，1.2％参与），ZRX（76％批准，2.3％参与），OMG（38％批准，1.2％参与），REP（92％批准，3.6％参与），BAT（99.8％批准，参与率为2.3％），ETH（100％批准，4.3％参与），DGD（42％批准，1.3％参与）。每个提案的唯一投票钱包的最大数量为50（对于ETH投票）。这些投票是向开发商发出的信号，表明选民希望首先添加哪些资产。
 
-Tezos [launched](https://medium.com/@tezosagora/enter-agora-c9e545ce4862) its [Agora](https://www.tezosagora.org/) governance tracker, which presents live information about the current state of the protocol amendment cycle, as well as historical information about past cycles. Discussion does not happen on the Agora site directly, instead each proposal links to a [Discourse forum](https://forum.tezosagora.org/) post. The functionality afforded by Agora is on par with the [voting.decred.org](https://voting.decred.org/) page, as it presents information about consensus rule change votes. Agora has more to do in this regard, as the Tezos voting process is more complex than Decred's, with the process for deploying new consensus rules having more stages.
+Tezos 推出了Agora治理跟踪器，它提供了有关协议修订周期当前状态的实时信息，以及有关过去周期的历史信息。直接在Agora网站上进行讨论，而不是每个提案都链接到Discourse论坛帖子。Agora提供的功能与voting.decred.org页面相同，因为它提供了有关共识规则更改投票的信息。Agora在这方面还有更多工作要做，因为Tezos投票过程比Decred更复杂，部署新共识规则的过程有更多阶段。
 
-The Babylon 2.0 proposal is currently in its testing phase, having beaten Babylon 1.0 (a previous version) in [round 1](https://www.tezosagora.org/period/16) (78% to 22%, voter turnout of 49%) and received virtually unanimous support in the [second round](https://www.tezosagora.org/period/17) (voter turnout of 82%, although only 179 of 463 bakers voted). This protocol change makes a number of improvements, adjusts the dynamic quorum rules to cap it, and mints 500 XTZ from inflation so that the developers can buy some drinks.
+巴比伦2.0提案目前正处于测试阶段，在第一轮击败巴比伦1.0（前一版本）（78％至22％，选民投票率为49％）并在第二轮获得了几乎一致的支持（选民投票率为82） ％，虽然只有463名面包师中的179人投票。此协议更改进行了一些改进，调整动态仲裁规则以限制它，并从通货膨胀中减去500 XTZ，以便开发人员可以购买一些饮料。
 
-The Tezos Foundation made a [grant](https://tezos.foundation/news/camlcase-receives-grant-to-develop-decentralized-exchange-protocol-on-tezos) to CamlCase to develop a decentralized exchange protocol, inspired by Uniswap, on the Tezos blockchain. There are no details about the amount of the grant in the announcement, as is standard for Tezos Foundation reporting.
+该Tezos基金会作出了补助金，以CamlCase开发一个分散的交换协议，由Uniswap启发，在Tezos blockchain。公告中没有关于赠款金额的详细信息，这是Tezos Foundation报告的标准。
 
-Steemit [announced](https://www.coindesk.com/steemit-to-automate-development-funding-with-new-dao) a hard fork for Aug 27 to enable a [worker proposal system](https://steemit.com/blocktrades/@blocktrades/proposing-a-worker-proposal-system-for-steem) or DAO to administer funding from block rewards - with the intention of speeding up and decentralizing development. Steem users make stake-weighted votes to prioritize funding requests with the top proposals receiving funding until the available budget is spent.
+Steemit 在8月27日宣布了一项硬分叉，以使工人提案系统或DAO能够从块奖励中管理资金 - 旨在加快和分散开发。Steem用户进行股权加权投票，优先考虑资金申请，最高投标收到资金，直到可用预算用完为止。
 
-[Sellout DAO](https://devpost.com/software/sellout-dao) was created to demonstrate that members of MolochDAO (or Moloch clones) can sell their right to submit proposals with a smart proxy contract that allows the highest bidder to submit a proposal. This [initial version](https://selloutdao.com/) seems to have been for demo purposes [only](https://twitter.com/nanexcool/status/1168640894947471360), but version 2 is apparently coming.
+出售DAO是为了证明MolochDAO（或Moloch克隆）的成员可以出售他们的权利，通过智能代理合同提交提案，允许最高出价者提交提案。这个初始版本似乎仅用于演示目的，但版本2显然已经到来。
 
-The /r/ethtrader moderator team and community seems to have undergone a [hard fork](https://www.reddit.com/r/ethtrader/comments/cs84ar/6_of_10_moderators_are_leaving_ethtrader_a/), as 6 moderators resigned to start /r/ethfinance because the lead moderator had been making unilateral decisions and stripping moderator status from mods who disagreed with him. Part of the disagreement was about the Donuts experiment, with the lead moderator having many [more](https://www.reddit.com/r/ethtrader/comments/cs84ar/6_of_10_moderators_are_leaving_ethtrader_a/exe5mo0/) Donuts than anyone else and failing to update other moderators on progress with the Reddit admins.
+/ r / ethtrader主持人团队和社区似乎已经经历了一次硬分叉，因为6位主持人辞职开始/ r / ethfinance，因为主持人已经做出单方面决定并剥离了不同意他的mod的主持人身份。部分分歧是关于甜甜圈的实验，主持人比其他任何人都有更多的甜甜圈，并且没有更新其他主持人与Reddit管理员的进展。
 
-PIVX is dealing with an issue where some small stakers are receiving much greater rewards than they should be, in a long [post](https://pivx.org/a-response-to-the-article-pivx-and-200-pos-chains-currently-vulnerable-chains-already-under-attack/) about it a PIVX ambassador makes the case that the situation is not as severe as another [article](https://hackernoon.com/pivx-and-all-pivx-forks-vulnerable-in-a-pos-exploit-several-chains-already-under-attack-vx13xf3vqy) implied, and considers the difficult position PIVX developers are in with hundreds of forks relying on their codebase.
+PIVX正处理一个问题，其中一些小赌注者获得了比他们应有的更多的奖励，在一篇关于它的长篇文章中，PIVX大使证明情况并不像另一篇文章所暗示的那样严重，并认为困难的位置PIVX开发人员依赖于他们的代码库，拥有数百个分支。
 
-A CoinDesk [article](https://www.coindesk.com/despite-ceo-claims-dash-isnt-really-the-most-used-crypto-in-venezuela) explored the reality of Dash adoption in Venezuela, suggesting that it was not being used as widely as claimed by some Dash representatives, and that some of the programs to promote adoption among merchants were ineffective.
+CoinDesk的一篇文章探讨了委内瑞拉采用Dash的现实情况，表明它没有像一些Dash代表所宣称的那样广泛使用，并且一些促进商家采用的计划是无效的。
 
-Australia is [considering](https://www.abc.net.au/news/2019-08-20/transacting-$10,000-or-more-in-cash-could-make-you-a-criminal/11429230) banning cash payments to businesses larger than $10K, affecting major purchases like cars and housing. This will not apply to individual-to-individual transactions. Commenters noted that this can be abused as a tool to implement negative interest rates, on top of standard surveillance concerns.
+澳大利亚正在考虑禁止向超过1万美元的企业支付现金，影响汽车和住房等主要商品。这不适用于个人对个人的交易。评论者指出，除标准监督问题外，这可能被滥用作为实施负利率的工具。
 
-The US Treasury Department's Office of Foreign Assets Control (OFAC) has [sanctioned](https://www.coindesk.com/us-treasury-blacklists-bitcoin-litecoin-addresses-of-chinese-drug-kingpins) three Chinese nationals under the Foreign Narcotics Kingpin Designation Act. This involved freezing their US-based assets, publishing details of their email aliases and other identifying information, along with Bitcoin and Litecoin addresses.
+美国财政部的外国资产控制办公室（OFAC）根据“外国麻醉品主要指定法” 批准了三名中国公民。这涉及冻结他们在美国的资产，发布他们的电子邮件别名和其他识别信息的细节，以及比特币和Litecoin地址。
 
 ## 关于月报
 
