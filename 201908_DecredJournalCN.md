@@ -6,30 +6,30 @@ _图片: 对称 by @saender. 当信息对称时，就会发生大事._
 
 八月重点:
 
-* Company 0 秘密开发的的隐私功能披露，初步隐私保护功能已经发布，首次混币在主网上被观察到，请参阅下面的隐私部分。
-* 在由@chappjc和@buck54321领导的提案中，90％的选民批准了高达230,000美元的资金后，Decred去中心化交易工具的开发工作已经开始。
-* 锁定在PoS选票中的流通DCR百分比在8月15日首次突破50％以上。随着选票价格的上涨，表明Decred持有者的信心随着时间的推移而增加，因为更多持有者选择锁定他们的DCR参与治理。
-* Decred利益相关者表示他们希望为做市商提供资金以解决流动性问题（87％的批准）。来自i2 Trading，Grapefruit Trading和Tantra Labs的提案的投票于9月4日开始，他们都非常具有竞争力，因为这3个提案在发布时都有50-62％的支持。有关详细信息，请参阅治理部分。
+* Company 0 秘密开发的的隐私功能披露，初步隐私保护功能已经发布，首次混币在主网上被观察，请参阅下面的隐私部分。
+* @chappjc和@buck54321领导的提案中，90％的选民批准了最高230,000美元的资金，Decred去中心化交易工具的开发工作已经开始。
+* 锁定在PoS的占流通百分比在8月15日首次突破50％以上。随着选票价格的上涨，表明Decred持有者的信心随着时间的推移而增加，因为更多持有者选择锁定他们的DCR参与治理。
+* Decred利益相关者表示他们希望为做市商提供资金以解决流动性问题（87％批准）。来自i2 Trading，Grapefruit Trading和Tantra Labs的提案的投票于9月4日开始，他们都非常具有竞争力，因为这3个提案在发布时都有50-62％的支持。有关详细信息，请参阅治理部分。
 
 ## 隐私保护
 
-@ jy-p [分析](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/)隐私保护领域的博客文章于8月21日发布。本文考虑了与加密货币隐私保护的不同方案相关的权衡，并回顾了Monero，Zcash，Grin，Beam，Dash，Bitcoin的Wasabi钱包所采用的方案的优缺点。
+@jy-p [分析](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/)隐私保护领域的博客文章于8月21日发布。本文考虑了加密货币隐私技术方案的权衡，并回顾了Monero，Zcash，Grin，Beam，Dash，Bitcoin的Wasabi钱包所采用的方案优缺点。
 
 由Company 0秘密开发的隐私功能的首个细节由@jz 于8月27日在一集 Laura Shin的[Unchained Podcast](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/)上公开发布。
 
-8月28日，@ jy-p[发布](https://blog.decred.org/2019/08/28/Iterating-Privacy/)了一篇博客文章，全面介绍了Company 0对隐私保护的态度，并解释了选择这种方案的原因。仅考虑了允许修剪已用完交易的方法，优先选择不复杂的解决方案，以保持DCR底层供应的可审计性。这篇[推文](https://twitter.com/decredproject/status/1166746979160023046)提供了更简洁的介绍，@ Dustorf还撰写了一篇[文章](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6)，该文章考虑了隐私的重要性，并提供了关于新方案如何运作的技术复杂性较低的观点。@ jy-p也录制了一个小时的[视频](https://twitter.com/decredproject/status/1168558002867191808)与@anshawblack关注隐私的深度讨论，他讨论了从逃避监视资本主义及怎样的隐私保护方案适合Decred的主题。@anshawblack和GhostWridah还合作了1分钟关于Decred和隐私的[rap](https://soundcloud.com/decredindepth/privacy-flow/s-5ifuN)。
+8月28日，@jy-p[发布](https://blog.decred.org/2019/08/28/Iterating-Privacy/)了一篇博客文章，全面介绍了Company 0对隐私保护的态度，并解释了选择这种方案的原因。他们只考虑允许修剪交易、简单并且可以审查DCR供应的技术。这篇[推文](https://twitter.com/decredproject/status/1166746979160023046)提供了更简洁的介绍，@Dustorf还撰写了一篇[文章](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6)，该文章考虑了隐私的重要性，并提供了非技术性的观点。@jy-p也录制了一个小时的[视频](https://twitter.com/decredproject/status/1168558002867191808)与@anshawblack展开隐私的深度讨论，他讨论的主题包括逃避资本主义的监视、怎样的隐私保护方案适合Decred。@anshawblack和GhostWridah还合作了1分钟关于Decred和隐私的[rap](https://soundcloud.com/decredindepth/privacy-flow/s-5ifuN)。
 
-该方法基于CoinShuffle++协议，集成到购买选票流程中，以便利益相关者可以选择在购买选票时混合他们的DCR。较小的面额也可用于常规混合（非POS）交易。该协议解决了底层可追溯性（匿名保护发送者和接收者）但不隐藏金额。该解决方案依赖于集中式服务器来协调混合 - 有关输入地址和更改地址的信息输入到到服务器，并且输出地址是完全匿名的。由于混合发生在链下，因此不需要改变共识规则。所有的开发都是由Company 0资助的，因此也不需要Politeia为此开发提供资金。
+隐私技术基于CoinShuffle++协议，集成到购买选票流程中，以便利益相关者可以选择在购买选票时混合他们的DCR。较小的面额也可用于常规混合（非POS）交易。该协议解决了底层可追溯性（匿名保护发送者和接收者）但不隐藏金额。该解决方案依赖于中心化服务器来协调混合 - 有关输入地址和更改地址的信息输入到到服务器，而输出地址是完全匿名的。由于混合发生在链下，因此不需要改变共识规则。所有的开发都是由Company 0资助的，因此也不需要Politeia为此开发提供资金。
 
-初始版本仅适用于命令行界面CLI dcrwallet的用户。将混合集成到decrediton还需要一段时间，并且为了向VSP用户提供混合，需要对dcrstakepool进行重大改进。从长远来看，将考虑保密交易。这些可以用来隐藏金额，这将提高隐私，避免交易中出现大量混合变量的需要。这种方式需要改变共识规则，未来或将通过链上治理途径。
+初始版本仅适用于命令行界面CLI dcrwallet的用户。将混币集成到decrediton还需要一段时间，并且为了向VSP用户提供混币功能，需要对dcrstakepool进行重大改进。从长远来看，将考虑保密交易金额(使用 Bulletproofs)。这将增强隐私并避免需要从交易中进行多次混币。开发需要改变共识代码，未来或将通过链上治理途径。
 
 ## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): 新命名的模块blockchain/standalone[发布](https://github.com/decred/dcrd/pull/1808)，其目的是提供几个目前可用的独立功能 区块链 模块。通过单独的模块提供这些功能的主要目的是减少客户端代码的依赖性。对于需要确保基本安全属性保持并计算适当的选票的轻量级客户端等应用程序也是有益的。我们有机会编写更强大，更高效的函数，这些函数将取代 区块链 下一个主要版本中模块中的函数。新模块将附带全面的测试，完整的文档和基本用法示例。
+[dcrd](https://github.com/decred/dcrd): 新命名的模块blockchain/standalone[发布](https://github.com/decred/dcrd/pull/1808)，其目的是提供几个目前可用的独立功能 区块链 模块。通过单独的模块提供这些功能的主要目的是减少客户端代码的依赖性。对于需要确保基本安全属性、保持并计算适当选票的轻量级客户端等应用程序也是有益的。我们有机会编写更强大、更高效的函数，这些函数将取代 区块链 下一个主要版本中模块中的函数。新模块将附带全面的测试，完整的文档和基本用法示例。
 
 新的主要版本[`blockchain`](https://github.com/decred/dcrd/pull/1823), [`mining`](https://github.com/decred/dcrd/pull/1831), [`connmgr`](https://github.com/decred/dcrd/pull/1833), [`peer`](https://github.com/decred/dcrd/pull/1834) 和 [`mempool`](https://github.com/decred/dcrd/pull/1835)模块已被引入到使用其它新的主要模块的版本。主要模块也进行了[更新](https://github.com/decred/dcrd/pull/1837)，以便全面使用它们。总体好处是它更新dcrd以利用所有最新的代码更新，并在需要API更改构成主要语义版本控制中断时，显着减少某些模块中所需的未来流失量。
 
-`gcs`模块得到了多项 [改进](https://github.com/decred/dcrd/pulls?q=is%3Apr+is%3Aclosed+merged%3A2019-08-01..2019-08-31+gcs)，使其达到共识代码所要求的质量水平，详细细节在[header commitments](https://proposals.decred.org/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58)中。[添加](https://github.com/decred/dcrd/pull/1854)了独立的误报率和Golomb译码窗口尺寸。除此之外，这允许更优化的参数以最小化要指定的滤波器尺寸。此功能将用于即将发布的版本2过滤器中，最终将包含在标头承诺中。模块的v2开发周期的开始也标志着在发布周期之间处理模块版本控制的[新方法](https://github.com/decred/dcrd/pull/1843)的开始，以减少维护负担。
+`gcs`模块得到了多项[改进](https://github.com/decred/dcrd/pulls?q=is%3Apr+is%3Aclosed+merged%3A2019-08-01..2019-08-31+gcs)，使其达到共识代码所要求的质量水平，详细细节在[header commitments](https://proposals.decred.org/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58)中。[添加](https://github.com/decred/dcrd/pull/1854)了独立的误报率和Golomb译码窗口尺寸。除此之外，这允许更优化的参数以最小化指定滤波器的尺寸。此功能将用于即将发布的版本2过滤器中，最终将包含在header commitments中。模块的v2开发周期的开始也标志着在发布周期之间处理模块版本控制的[新方法](https://github.com/decred/dcrd/pull/1843)的开始，以减少维护负担。
 
 Blake256实现已被[复制到](https://github.com/decred/dcrd/pull/1811)dcrd存储库中，因此dcrd不再具有外部依赖性。虽然dcrd所需的优化是在上游[接受](https://github.com/dchest/blake256/pull/3)的，但仍然需要在dcrd维护者的严格控制下使用共识关键代码以避免[此处](https://github.com/decred/dcrd/issues/1810)提到的情况。
 
@@ -113,50 +113,50 @@ lightning-faucet获得了[支付发票](https://github.com/decred/lightning-fauc
 * LinkedIn 粉丝: 603 (+12)
 * GitHub dcrd 星星: 516 (+18), 分叉: 1,383 (+18)
 
-在胡志明市举办的[活动](https://github.com/decredcommunity/events/blob/master/reports/20190725-cointime-summit-ho-chi-minh-city-vietnam.md) 之后，已经创建了越南[Telegram](https://t.me/decredvietnam), [Twitter](https://twitter.com/DecredVietnam) and [Facebook](https://www.facebook.com/Decred-DCR-Vietnam-108991833777572/)帐户。所有Decred社交媒体组的列表都在[这里](https://github.com/decredcommunity/wiki/blob/master/wiki/social-media.md)。
+在胡志明市举办[活动](https://github.com/decredcommunity/events/blob/master/reports/20190725-cointime-summit-ho-chi-minh-city-vietnam.md)之后，已经创建了越南[Telegram](https://t.me/decredvietnam), [Twitter](https://twitter.com/DecredVietnam) 和 [Facebook](https://www.facebook.com/Decred-DCR-Vietnam-108991833777572/)帐户。所有Decred社交媒体组的列表都在[这里](https://github.com/decredcommunity/wiki/blob/master/wiki/social-media.md)。
 
 ## 治理
 
 8月，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了15,278个DCR，并花费了8,223个DCR。使用8月份的每日平均DCR / USD为26.23美元，约收到的401,000美元。由于这些付款用于7月完成的工作，因此在7月平均每日费率28.97美元的情况下考虑它们也是有用的 - 在这种情况下，美元花费是238,000美元。截至8月9日，财政部余额为638,000 DCR（1580万美元，汇率24.80美元）。
 
-来自@chappjc和@ buck54321（在dcrdata上工作）的DEX开发[提案](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1)在Company 0的支持下提交 - 并获得90％赞成票批准。该提议的成本估计为230,000美元，用于提供命令行界面应用程序，可以通过未来的提议进行扩展，以使用Electron框架提供用户界面。
+来自@chappjc和@buck54321（在dcrdata上工作）的DEX开发[提案](https://proposals.decred.org/proposals/417607aaedff2942ff3701cdb4eff76637eca4ed7f7ba816e5c0bd2e971602e1)在Company 0的支持下提交 - 并获得90％赞成票批准。该提议的成本估计为230,000美元，用于提供命令行界面应用程序，可以通过未来的提议进行扩展，以使用Electron框架提供用户界面。
 
-decred社区提案[库](https://github.com/decredcommunity/proposals)具有DEX相关材料的 [索引](https://github.com/decredcommunity/proposals/blob/master/dex/index.md)。
+decred社区提案[库](https://github.com/decredcommunity/proposals)具有DEX相关材料的[索引](https://github.com/decredcommunity/proposals/blob/master/dex/index.md)。
 
-3个做市商的提案于8月7日发布，来自[Altonomy](https://proposals.decred.org/proposals/772d083fef79fa2e443d8424b353deadc3af69c8d8764e473cb200f98f356c60), [i2 Trading](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9) 和 [Grapefruit Trading](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b)。经过几天的讨论，主要议题是社区开发基金是否应该习惯于雇佣做市商。@jz提交了一份[RFP 提案](https://proposals.decred.org/proposals/30822c16533890abc6e243eb6d12264b207c3923c14af42cd9b883e71c7003cd)，以确定利益相关者原则上是否希望雇用指定的做市商。该提案解释了@jz，@ maxbronstein和Chris Burniske在提交提案之前已经采取的流程 - 并提出了批准其中一项提案的案例。RFP提案还澄清了投票条款（最多可以批准1个做市商提案，并且必须符合通常的标准）。
+3个做市商的提案于8月7日发布，来自[Altonomy](https://proposals.decred.org/proposals/772d083fef79fa2e443d8424b353deadc3af69c8d8764e473cb200f98f356c60), [i2 Trading](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9) 和 [Grapefruit Trading](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b)。经过几天的讨论，主要议题是应否雇佣做市商。@jz提交了一份[RFP 提案](https://proposals.decred.org/proposals/30822c16533890abc6e243eb6d12264b207c3923c14af42cd9b883e71c7003cd)，以确定利益相关者原则上是否希望雇用指定的做市商。该提案解释了@jz，@maxbronstein和Chris Burniske在提交提案之前采取的流程 - 并提出了批准其中一项提案的案例。RFP提案还澄清了投票条款（最多可以批准1个做市商提案，并且必须符合常规标准）。
 
-Altonomy提交了一项建议，即10个交易对供5万美元，他们积极参与Politeia并提供许多问题的答案，但在8月16日他们撤回了他们的建议，编辑它说“对不起，由于我们的技术能力，我们决定撤回这个提议。
+Altonomy提交了一项提案，10个交易对的价钱是5万美元，他们积极参与Politeia并回答了许多问题，但在8月16日他们撤回了提案，说“对不起，由于我们的技术限制，我们决定撤回提案。
 
-i2 Trading提交了一项建议，即对6个交易对提供5万美元，他们积极参与Politeia和#proposals聊天室，回答大多数问题。为了回应对透明度的担忧，i2允许在一段有限的时间内允许Decred代表以只读方式访问其交易账户。i2对他们的提案进行了一些编辑，添加了关于提供API访问的说明，澄清借款需求和条款，然后修改他们的提议以放宽差价，将最高交易费用报销减少到10K /月，并且下降提供服务的费用从每月4万美元到每月35,000美元。
+i2 Trading提交了一项提案，6个交易对的价钱是5万美元，他们积极参与Politeia和#proposals聊天室的讨论，回答大多数问题。为了回应对透明度的担忧，i2允许在一段有限的时间内允许Decred代表以只读方式访问其交易账户。i2对他们的提案进行了一些编辑，添加了关于提供API访问的说明，澄清借款需求和条款，然后修改他们的提议以放宽差价，将最高交易费用报销减少到10K/月，并且下降服务费用，从每月4万美元到每月35,000美元。
 
-Grapefruit在他们的提案中开始提供2个优惠（两个价格均为3对3万美元），其中一个价格较低，每月费用为4万美元，另一个价格较宽松，每月费用为28,000美元。@grapefruittrading于8月8日和20日回答了关于Politeia的问题，在向其他人提供[实质性](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/6) [回复](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/5)时忽略了一些问题。在授权投票开始之前，@ grapefruittrading编辑了他们的建议删除了更昂贵的报价，选择运行较便宜的报价，因为他们认为来自利益相关者的需求，无论如何这是他们的首选。
+Grapefruit在他们的提案中提供2个选项（两个价格均为3对3万美元），其中一个差价较窄，每月费用为4万美元，另一个差价较宽松，每月费用为28,000美元。@grapefruittrading于8月8日和20日回答了关于Politeia的问题，在向其他人提供[实质性](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/6)[回复](https://proposals.decred.org/proposals/4becbe00bd5ae93312426a8cf5eeef78050f5b8b8430b45f3ea54ca89213f82b/comments/5)时忽略了一些问题。在授权投票开始之前，@grapefruittrading编辑了他们的提案并删除了更昂贵的报价，选择较便宜的报价，因为他们认为这是利益相关者的需求，无论如何会是他们的首选。
 
-i2 和 Grapefruit 授权8月27日开启提案投票。
+i2和Grapefruit于8月27日授权投票开始。
 
-Tantra Labs于8月28日提交了一份[提案](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb)，提出了一个非常不同的提议，每个交易对3万美元，6个交易对([或 7](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb/comments/8))对最高3％的差价，并且向提供给社区开发基金的服务不收取任何费用。相反，社区开发基金只收取借入库存的成本和交易费10,000美元/月的费用。Tantra Labs只允许他们的交换账户访问“当选”的Decred代表，以便可以验证所承诺的流动性可用性。Tantra还为一组开源订单簿透明工具提供了一个Web界面。
+Tantra Labs于8月28日提交了一份[提案](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb)，提出了一个非常不同的提议，3万美元6个交易对([或 7](https://proposals.decred.org/proposals/82ce113827140caaaf8b5779ab30402d3ed39f1911fdd2e8fa64cf0dc9e09ecb/comments/8))最高3％的差价，并且向提供给社区开发基金的服务不收取任何费用。相反，社区开发基金只收取借入库存的成本和交易费10,000美元/月的费用。Tantra Labs只允许“当选”的Decred代表访问他们的交易所账户，以便可以验证所承诺的流动性。Tantra还会为一组开源订单簿透明工具提供了一个Web界面。
 
-关于Tantra的提案的大部分讨论都关注它是否太好而不是真实的，有许多人表达了他们对Tantra可以兑现他们的建议的疑虑，并想知道低成本是否伴随着隐藏的缺点。Tantra一直活跃在#proposals，并回答了有关Politeia的一些问题。社区的一些成员越来越不耐烦等待Tantra授权开始投票，这表明RFP提案被迟交的提议放慢了问题，并强调了明确的时间表的价值。
+关于Tantra的提案的大部分讨论都关注它是否太好而不是真实的，许多人表达了他们对Tantra可以兑现提案的疑虑，并想知道低成本是否伴随着隐藏的缺点。Tantra一直活跃在#proposals，并回答了有关Politeia的一些问题。社区的一些成员越来越不耐烦等待Tantra授权开始投票，这表明RFP提案被迟交的提案拖慢了进度，并说明了明确时间表的价值。
 
-由@betterfuture提交的关于做市商的第四个[提案](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f)于8月31日发布。这提出了一个激励做市商在没有坚定承诺的情况下为特定货币对提供流动性的计划。该提案描述了使参与者保持一致的规则和处罚，并且需要代表Decred项目的可信中介来审核做市商的活动。@jz在提案中被提名担任此角色，但他[表示](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f/comments/5)他不希望接受。对该提案的审议和改进被其支持者视为长期努力，并且不会与其他提案竞争。
+由@betterfuture提交的关于做市商的第四个[提案](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f)于8月31日发布。这提出了一个激励做市商在没有坚定承诺的情况下为特定货币对提供流动性的计划。该提案描述了使参与者保持一致的规则和处罚，并且需要代表Decred项目的可信中介来审核做市商的活动。@jz在提案中被提名担任此角色，但他[表示](https://proposals.decred.org/proposals/c9604f7879e4b2cd4f2582d238a7ccea210005c63481bec1ddae44ff93e1340f/comments/5)他不希望接受。该提案的审议和改进被其支持者视为长期努力，并且不会与其他提案竞争。
 
 9月4日，3个做市商提案开始投票。
 
-有关做市商提案和其他Politeia活动的更详细考虑，请查看Politeia Digest 第[20](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-020.md)期（8月1日至12日）和第 [21](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-021.md)期（8月13 日至31 日）。还有一些社区生产的资源，旨在帮助那些不熟悉市场营销理念的人理解它，并在不同的提案之间进行比较：
+有关做市商提案和其他Politeia活动的更详细考虑，请查看Politeia Digest 第[20](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-020.md)期（8月1日至12日）和第 [21](https://github.com/RichardRed0x/politeia-digest/blob/master/issue-021.md)期（8月13 日至31 日）。还有一些社区的资源，旨在帮助那些不熟悉市场营销的人理解，并在不同的提案之间进行比较：
 
-* [这里](https://github.com/decredcommunity/proposals/blob/master/market-makers/index.md)保留了所有着名文件的索引以及与做市商相关的讨论。
-* [comparison table](https://github.com/decredcommunity/proposals/blob/master/market-makers/comparison.md) 旨在比较其提议和成本方面的建议 - 本表中估计的最高月费为Tantra为17,000美元，i2为$ 53K，Grapefruit为$ 31K（对于Tantra和i2最高交易费为$ 10,000 /假设是月份。
-* @bee撰写了关于具体问题和论点的讨论的[全面概述](https://github.com/decredcommunity/proposals/blob/master/market-makers/arguments.md)，并详细解释了该[主题](https://github.com/xaur/writings/blob/master/20190822-dissection-market-makers-for-decred.md)，介绍了相关术语并概述了关键考虑因素。
+* [这里](https://github.com/decredcommunity/proposals/blob/master/market-makers/index.md)保留了所有重要文件的索引以及与做市商相关的讨论。
+* [对比表格](https://github.com/decredcommunity/proposals/blob/master/market-makers/comparison.md) 旨在比较提案的成本和提议 - 表中估计的最高月费：Tantra为$17,000美元，i2为$ 53K，Grapefruit为$31K（假设Tantra和i2的最高交易费为每月$10,000)。
+* @bee撰写了问题和论点讨论的[全面概述](https://github.com/decredcommunity/proposals/blob/master/market-makers/arguments.md)，并详细解释了该[主题](https://github.com/xaur/writings/blob/master/20190822-dissection-market-makers-for-decred.md)，介绍了相关术语并概述了关键考虑因素。
 * @exitus制作了一个相关的[Politeia视频概述](https://www.youtube.com/watch?v=BKSMA-eanoY)。
 
-在#research频道中进行讨论之后，@ richardred开始收集该[存储库](https://github.com/RichardRed0x/exchange-data)中选择的交易对和交换的订单簿数据。目标是更好地了解目前DCR和其他选定加密模块的订单如何看，并在做市商提案投票之前准备了初步报告。如果雇佣了这些数据，这些数据也可用于跟踪订单簿，以观察做市商的影响。订单簿数据可能会在某个阶段添加到dcrdata的外部数据产品中，但这些数据的性质是只能实时记录。历史订单簿数据的唯一来源是专有且[昂贵](https://www.kaiko.com/products/binance-10-order-books)的。
+在#research聊天室中进行讨论之后，@richardred开始在[代码库](https://github.com/RichardRed0x/exchange-data)收集交易对和交易所的订单簿数据。目标是更好地了解目前DCR和其他加密货币的交易数据，并在做市商提案投票之前准备了初步报告。这些数据也可用于跟踪订单簿，以观察做市商的影响。订单簿数据可能会在某个阶段添加到dcrdata的外部数据产品中，但这些数据的性质是只能实时记录。历史订单簿数据的唯一来源是专有且[昂贵](https://www.kaiko.com/products/binance-10-order-books)的。
 
-值得一提的是Decred社区提案 [存储库](https://github.com/decredcommunity/proposals)，其中可以找到许多上述资源。创建此存储库是为了收集讨论和分析提案时产生的信息。
+值得一提的是Decred社区提案[代码库](https://github.com/decredcommunity/proposals)，其中可以找到许多上述资源。创建此代码库是为了收集讨论和分析提案时产生的信息。
 
 处理做市商提案和RFP流程已经产生了很多讨论和见解，并且正在准备Politeia的RFP功能的初始集成。将有一个新的RFP类型提案，候选提案可以链接，投票和确定选项/结果将通过这些RFP提案进行控制。在开启RFP提案之前，将提交并批准一份普通提案，询问“我们是否应该提供此RFP” - 迄今为止Politeia所见的2个“RFP提案”属于此类提案。
 
 关于新的RFP提案类型的讨论主要是围绕这些是否应该作为多项选择提案（选民可以投票选出1-N选项和获得最多选票的选项）或者作为票数可以平行提案对每个提案投赞成票/否，并且获胜者是具有最高投票权的投票总得分（因为MM RFP正在进行）。竞争提案的平行投票似乎是优先考虑的事项，多选投票可能会在以后出现，并用于不同的目的（更像是民意调查）。
 
-提交了一份Reddit [讨论](https://www.reddit.com/r/decred/comments/cutc16/decred_events_meetups_in_the_cis_in_20192020/)以供反馈，该提议旨在作为独立国家联合体（CIS） - 特别是俄罗斯，乌克兰和格鲁吉亚的Decred活动和聚会的筹资预案。
+提交了一份Reddit[讨论](https://www.reddit.com/r/decred/comments/cutc16/decred_events_meetups_in_the_cis_in_20192020/)以供反馈，该提议旨在作为独立国家联合体（CIS） - 特别是俄罗斯，乌克兰和格鲁吉亚的Decred活动和聚会的筹资预案。
 
 
 ## 网络
@@ -173,7 +173,7 @@ Staking: 每个dcrstats.com的30天平均票价为130.05 DCR（+4.25）。价格
 
 ## 整合
 
-Exodus [增加了](https://twitter.com/exodus_io/status/1168886493617840131)向他们的移动钱包发送，接收和交换DCR的能力。
+Exodus[增加了](https://twitter.com/exodus_io/status/1168886493617840131)向他们的移动钱包发送，接收和交换DCR的功能。
 
 Ellipal冷钱包宣布他们即将[推出](https://twitter.com/ellipalwallet/status/1163771448042803201)的硬件钱包Titan将支持Decred。
 
@@ -181,19 +181,19 @@ Ellipal冷钱包宣布他们即将[推出](https://twitter.com/ellipalwallet/sta
 
 ## 外联活动
 
-由于我们专注于Decred隐私的发布，因此大部分正在进行的Outreach工作被推到一边。8月21日开始努力，@ jy-p发布了“[Surveying the Privacy Landscape](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/)”。这项工作得到了一个[tweetstorm](https://twitter.com/decredproject/status/1164245224274767873)的支持，这个[tweet话题](https://twitter.com/decredproject/status/1164245224274767873)吸引了fluffypony（门罗首席开发者），Zooko（Zcash创始人)，MimbleWimble协议开发人员（Girn，Beam）等参与。当@jz继续使用Laura Shin的[Unchained Podcast](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/)谈论Decred及其新功能时，隐私的第一个细节就披露了。
+由于我们专注于Decred隐私的发布，因此大部分正在进行的外联工作被推到一边。由8月21日开始，@jy-p发布了“[Surveying the Privacy Landscape](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/)”。这项工作得到了一个[tweetstorm](https://twitter.com/decredproject/status/1164245224274767873)的支持，这个[tweet话题](https://twitter.com/decredproject/status/1164245224274767873)吸引了fluffypony（门罗首席开发者），Zooko（Zcash创始人)，MimbleWimble协议开发人员（Girn，Beam）等参与。当@jz在Laura Shin的[Unchained Podcast](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/)谈论Decred及其新功能时，披露了隐私的第一个细节。
 
-二十四小时后，Decred隐私的第一份书面消息释放，在@ JY-P的文章，出版了迭代隐私，其中深入探讨动机，操作细节，限制和Decred的下一步[隐私](https://blog.decred.org/2019/08/28/Iterating-Privacy/)。这得到了大量[支持](https://twitter.com/decredproject/status/1166746979160023046)，并引起了很多关注和参与。除了CoinDesk之外，Decred的隐私实施已经获得了大量报道，在Media中有详细介绍。
+二十四小时后，Decred隐私的第一份书面消息释放，在@JY-P的文章，出版了"迭代隐私"，其中深入探讨动机，操作细节，限制和Decred的下一步[隐私](https://blog.decred.org/2019/08/28/Iterating-Privacy/)。这得到了大量[支持](https://twitter.com/decredproject/status/1166746979160023046)，并引起了很多关注和参与。除了CoinDesk之外，Decred的隐私实现已经获得了大量报道，在Media中有详细介绍。
 
-为了继续支持隐私保护功能的发布，@ anshawblack在GhostWridah上发布了[Privacy Flow](https://twitter.com/decredproject/status/1169011789255925762)，并在发布后的几天内发布了一个非常特别的Decred in Depth [音频](https://twitter.com/decredproject/status/1168558002867191808) @ jy-p。在这个音频中，@ jy-p深入研究了监管经济，为什么要保护隐私，以及当前和未来的Decred隐私状态。
+为了继续支持隐私保护功能的发布，@anshawblack在GhostWridah上发布了[Privacy Flow](https://twitter.com/decredproject/status/1169011789255925762)，并在发布后的几天内发布了一个非常特别的Decred in Depth[音频](https://twitter.com/decredproject/status/1168558002867191808) @jy-p。在这个音频中，@jy-p深入研究了监管经济，为什么要保护隐私，以及当前和未来的Decred隐私状态。
 
-在发布时，Ditto团队继续致力于将Decred隐私放在首位。此外，@ Dustorf发布了针对非技术相关人群的[博客概述](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6)。
+在发布时，Ditto团队继续致力于将Decred隐私放在首位。此外，@Dustorf发布了针对非技术人群的[博客概述](https://medium.com/@dlefebvr/decred-privacy-taking-the-long-road-62d218223db6)。
 
-Outreach通过关于Decred的高质量内容和教育，共同努力提高Twitter的参与度。从7月到超过560万，项目印象数增加了一倍以上。获得最多吸引力的消息之一是关于DEX规范公告的4部分[tweet风暴话题](https://twitter.com/decredproject/status/1156652694502817793)。
+外联团队通过分享关于Decred的高质量内容和教育，共同努力提高Twitter的参与度。从7月到超过560万，项目印象数据增加了一倍以上。获得最多吸引力的消息之一是关于DEX规范公告的4部分[tweet风暴话题](https://twitter.com/decredproject/status/1156652694502817793)。
 
-Decred已于11月4日至7日在葡萄牙里斯本的[网络峰会](https://websummit.com/)上确认其展位，如果您有兴趣帮助我们，请在Matrix的#event_planning会议室与我们联系。我们还计划在亚洲举办路演，但在发布时没有任何细节可供分享。
+Decred已于11月4日至7日在葡萄牙里斯本的[网络峰会](https://websummit.com/)上确认其展位，如果您有兴趣帮助我们，请在Matrix的#event_planning聊天室与我们联系。我们还计划在亚洲举办路演，但在目前没有任何细节可供分享。
 
-[基础消息](https://github.com/decredcommunity/pr/blob/release/foundational-messaging.md)已更新为v2。[更改](https://github.com/decredcommunity/pr/commit/fc407b8f037a222db22a4507e4a5ade5b746f4dd)包括使用Decred原则和常见问题解答扩展的Pitch，Tagline和Vision。Tagline稍作调整，以“可持续”取代“自筹资金”。
+[基础信息](https://github.com/decredcommunity/pr/blob/release/foundational-messaging.md)已更新为v2。[更改](https://github.com/decredcommunity/pr/commit/fc407b8f037a222db22a4507e4a5ade5b746f4dd)包括使用Decred原则和常见问题解答扩展的Pitch，Tagline和Vision。Tagline稍作调整，以“可持续”取代“自筹资金”。
 
 Ditto八月的成就:
 
@@ -216,23 +216,23 @@ Ditto八月的成就:
 出席：
 
 * 7月2 - 3日 - 2019年亚洲区块链峰会 - 台湾台北。穿着Decred Jacket的@morphymore在那里出席，并向那些想要了解该项目的人介绍Decred。
-* 月8日 - [Blockchain Bajio](https://www.eventbrite.com/e/blockchain-bajio-2do-meetup-tickets-66510186759) - 墨西哥莱昂。@elian，@ francov_，@victorarubin和@luisantoniocrag 向约60位与会者展示了Decred 的高级[概述](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156537300012257UWNLZ:decred.org)。（照片：[1](https://twitter.com/Decred_ES/status/1159621068027551744) [2](https://twitter.com/victorarubin/status/1159898002858893313)）
-* 8月12日 - [Crypto Mondays](https://www.meetup.com/Bitcoin-Argentina/events/263594472) - 阿根廷布宜诺斯艾利斯。第一次在Espacio比特币，@ pablito和@camilolwi有15分钟的时间向当地比特币社区和其他项目的成员解释 Decred最相关的方面。([照片](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156570965016592IkfFu:decred.org))
-* 8月13日 - 未来主义者会议 - 加拿大多伦多。@ michae2xl，@ zubair和@ammarooni在展位上进行了一些采访，并在“Blockchain Social Impact＆Governance for Good”小组讨论。Decred是一名银牌赞助商。（照片：[1](https://twitter.com/Decred_CA/status/1161466609267105792) [2](https://twitter.com/Ammarooni/status/1161707860822302722) [3](https://twitter.com/Decred_CA/status/1161982417781047297) [4](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156581155118027SCAXO:decred.org)）
+* 8月8日 - [Blockchain Bajio](https://www.eventbrite.com/e/blockchain-bajio-2do-meetup-tickets-66510186759) - 墨西哥莱昂。@elian，@francov_，@victorarubin和@luisantoniocrag 向约60位与会者展示了Decred 的简单[概述](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156537300012257UWNLZ:decred.org)。（照片：[1](https://twitter.com/Decred_ES/status/1159621068027551744) [2](https://twitter.com/victorarubin/status/1159898002858893313)）
+* 8月12日 - [Crypto Mondays](https://www.meetup.com/Bitcoin-Argentina/events/263594472) - 阿根廷布宜诺斯艾利斯。第一次在Espacio比特币，@pablito和@camilolwi有15分钟的时间向当地比特币社区和其他项目的成员解释 Decred最相关的方面。([照片](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156570965016592IkfFu:decred.org))
+* 8月13日 - 未来主义者会议 - 加拿大多伦多。@michae2xl，@zubair和@ammarooni在展位上进行了一些采访，并在“Blockchain Social Impact＆Governance for Good”小组讨论。Decred是一名银牌赞助商。（照片：[1](https://twitter.com/Decred_CA/status/1161466609267105792) [2](https://twitter.com/Ammarooni/status/1161707860822302722) [3](https://twitter.com/Decred_CA/status/1161982417781047297) [4](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156581155118027SCAXO:decred.org)）
 * 8月16日 -  [Campus Party](https://brasil.campus-party.org/campus-party-natal/) - 巴西纳塔尔。@guisso和@claranobre代表Decred。（[照片](https://twitter.com/Decred_BR/status/1163473134676258816)）
 * 8月20日 - Bitcoin Embassy - 墨西哥墨西哥城。@elian被邀请到比特币大使馆接受El Financiero（Bloomberg在墨西哥的分支机构）的[采访](https://matrix.to/#/!OfChXgczrIlpEZSFAv:decred.org/$15664995075484PTrhJ:decred.org)，谈论墨西哥的加密货币。（照片：[1](https://twitter.com/LOR_ena_OR/status/1164205626723098630) [2](https://twitter.com/bitcoinemb/status/1164269677381652480)）
 * 8月21日 - [Decred Meetup](https://www.meetup.com/Chicago-Decred-Meetup/events/263814807/) - 美国芝加哥。
 * 8月22日 - [Binance Meetup](https://www.facebook.com/events/406522099975717/) - 墨西哥蒙特雷。@elian和@francov_代表Decred。（照片：[1](https://twitter.com/binance/status/1166526786525487105) [2](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15665195371107618foQnv:matrix.org) [3](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$15666946921832943HyclD:matrix.org)）
 * 8月24日 - [Decred Live AMA](https://twitter.com/coin98_net/status/1164845587910414337) - 互联网。@Haon和ViệtAnhĐàm在他们的Facebook页面上回答了Coin98组织的越南社区提出的问题。总共有309条评论（包括答案），对于最佳问题，DCR的奖励为50美元。（[获奖名单](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md)）
 * 8月25日 - [币印中国行](https://twitter.com/wanbihou/status/1166028812305321985) - 中国上海。@dominic受邀出席主题演讲和圆桌讨论。
-* 8月28日 - [Blockchain Bootcamp](https://www.meetup.com/blockchaincentre/events/263601014/) - 澳大利亚Docklands。安永会计师事务所[邀请](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156739040517633gdQNG:decred.org) @zohand和@eSizeDave为来自学术界，商界，法律界和政府部门的代表举办关于区块链治理的Decred特定演讲。演示文稿和Decred都很受欢迎，导致了许多后续活动。（[照片](https://twitter.com/DecredAustralia/status/1166592295296208896)）
-* 8月29日 - [Binance Meetup](https://twitter.com/Decred_ES/status/1166132690342567938) - 墨西哥城，墨西哥。@elian [指出](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156713369714381PAoax:decred.org)：“我们有大约60名与会者，主要是爱好者和企业家，对Decred的隐私实施和治理即服务的想法很感兴趣。非常感谢@francov_ @luantantoniocrag和@victorarubin的帮助去”。（照片：[1](https://twitter.com/TRADcoinMX/status/1168541349395738624) [2](https://twitter.com/interprocsys/status/1167243076726861824) [3](https://twitter.com/victorarubin/status/1167495971539836928)）
+* 8月28日 - [Blockchain Bootcamp](https://www.meetup.com/blockchaincentre/events/263601014/) - 澳大利亚Docklands。安永会计师事务所[邀请](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156739040517633gdQNG:decred.org) @zohand和@eSizeDave为学术界，商界，法律界和政府部门的代表举办关于区块链治理的Decred特定演讲。Decred演讲很受欢迎，带来了许多后续活动。（[照片](https://twitter.com/DecredAustralia/status/1166592295296208896)）
+* 8月29日 - [Binance Meetup](https://twitter.com/Decred_ES/status/1166132690342567938) - 墨西哥墨西哥城。@elian [指出](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$156713369714381PAoax:decred.org)：“我们有大约60名与会者，主要是爱好者和企业家，对Decred的隐私实施和治理即服务的想法很感兴趣。非常感谢@francov_ @luantantoniocrag和@victorarubin的帮助”。（照片：[1](https://twitter.com/TRADcoinMX/status/1168541349395738624) [2](https://twitter.com/interprocsys/status/1167243076726861824) [3](https://twitter.com/victorarubin/status/1167495971539836928)）
 
 即将到来的:
 
 * 9月10日 - [BlockDAM Co-working Tuesdays](https://twitter.com/NoahPierau/status/1170198038301855745) - 荷兰阿姆斯特丹。@Haon将发表关于加密货币隐私技术和Decred的新隐私功能的演讲。
-* Sep 16 - [Decred Special Interest Group](https://www.meetup.com/Philadelphia-Technology-for-Blockchain-and-Cryptocurrency/events/hmqlhryzmbvb/) - Philadelphia, USA. Organized by [@mikeghen](https://twitter.com/mikeghen).
-* Sep 20 - [A Framework for Blockchain Governance](https://www.eventbrite.com/e/a-framework-for-blockchain-governance-tickets-70134180221) - Washington DC, USA. Along with Thomas Cox, the Chief Governance Officer of [StrongBlock](https://strongblock.io/), @akinsawyerr be speaking on and taking questions on a Blockchain Governance Framework developed the Wharton Crypto Governance roundtable group of which he is a member.
+* Sep 16 - [Decred Special Interest Group](https://www.meetup.com/Philadelphia-Technology-for-Blockchain-and-Cryptocurrency/events/hmqlhryzmbvb/) - 美国费城。 [@mikeghen](https://twitter.com/mikeghen)组织。
+* Sep 20 - [A Framework for Blockchain Governance](https://www.eventbrite.com/e/a-framework-for-blockchain-governance-tickets-70134180221) - 美国华盛顿。 和[StrongBlock](https://strongblock.io/)的治理领导人Thomas Cox一起，@akinsawyerr 将会就沃顿治理圆桌建立的区块链治理框架接受提问。
 * Sep 21 - [French Vibes Connection](https://twitter.com/Decred_ES/status/1160669435989856256) - Mexico City, Mexico. Decred will co-host a music concert featuring Telepopmusik, Cherokee and Else. Brand awareness experiment by @elian.
 * Sep 21 - [Decred Meetup](https://twitter.com/DecredArabia/status/1171117988461854721) - Casablanca, Morocco. @arij will be talking about her experience as a Decred contractor, Decred's governance and privacy and future plans.
 * Sep 25 - [La Conexion Conference](https://la-conexion.com/home/) - Buenos Aires, Argentina. The project will be presented in main stage.
@@ -246,58 +246,55 @@ Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/11660262658
 
 ## 媒体
 
-Selected articles:
+精选文章：
 
-* Decred | The Power to Think for Oneself by @BlackBearXVII ([medium](https://medium.com/@imagnusholdings/decred-the-power-to-think-for-oneself-46b9aab9ff0e))
+* Decred | 自我思考的力量 @BlackBearXVII ([medium](https://medium.com/@imagnusholdings/decred-the-power-to-think-for-oneself-46b9aab9ff0e))
 * Decred Q&A with @elian for Crypto Hispano ([steemit](https://steemit.com/btc/@cryptohispano01/decred-q-and-a))
-* Decred's Ambitious Vision for a Truly Decentralized Exchange by Nate Urbas ([cryptolinks.com](https://cryptolinks.com/news/decreds-ambitious-vision-for-a-truly-decentralized-exchange))
-* Decentralized Governance in Action: Decred Debates Market Liquidity by Darren Kleine ([cryptobriefing.com](https://cryptobriefing.com/decentralized-governance-in-action-decred-debates-market-liquidity/))
-* Surveying the Privacy Landscape by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/))
-* Iterating Privacy by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/28/Iterating-Privacy/))
-* Decred Project Lead Jake Yocom-Piatt: Practice What You Preach by Matt Hussey ([decrypt.co](https://decrypt.co/8801/decred-project-lead-jake-yocom-piatt-interview-profile))
+* Decred去中心化交易所雄心勃勃的愿景 by Nate Urbas ([cryptolinks.com](https://cryptolinks.com/news/decreds-ambitious-vision-for-a-truly-decentralized-exchange))
+* 实现去中心化治理: Decred 争论市场流通性 by Darren Kleine ([cryptobriefing.com](https://cryptobriefing.com/decentralized-governance-in-action-decred-debates-market-liquidity/))
+* 探索隐私币生态 by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/21/Surveying-the-Privacy-Landscape/))
+* 迭代隐私 by @jy-p ([blog.decred.org](https://blog.decred.org/2019/08/28/Iterating-Privacy/))
+* Decred 项目领导人 Jake Yocom-Piatt: 行动要和思想一致 by Matt Hussey ([decrypt.co](https://decrypt.co/8801/decred-project-lead-jake-yocom-piatt-interview-profile))
 
-Translations:
+翻译:
 
-* Surveying the Privacy Landscape - [in Portuguese](https://stakey.club/translated/privacy-landscape/) by @mm.
-* Decred Journal July 2019 was translated to Arabic (@arij) and April-July to Spanish (@francov\_ and @luisantoniocrag). The index of all translations is maintained [here](https://xaur.github.io/decred-news/) and is updated several times a month. Thank you all for spreading DJ all over the world!
+* 探索隐私币生态 - [葡萄牙语](https://stakey.club/translated/privacy-landscape/) by @mm.
+* Decred的7月月报被翻译成阿拉伯语（@arij），中文（@Dominic），4-7月月报被翻译成西班牙语（@francov\_ 和 @luisantoniocrag），波兰语（@kozel）和越南语（Duyen Em）。所有翻译的索引在[这里](https://xaur.github.io/decred-news/)。
 
-Videos:
+视频：
 
-* Decred's Market Maker Proposals - Crypto Governance In Action! by @Exitus ([youtube](https://www.youtube.com/watch?v=BKSMA-eanoY))
-* The Feeless Decred DEX Has Been Approved! by @Exitus ([youtube](https://www.youtube.com/watch?v=An5YCY_q894))
-* Futurist 19 interview with @ammarooni ([youtube](https://www.youtube.com/watch?v=YmQce50dfGY))
+* Decred的做市商提案 - 实现区块链治理! by @Exitus ([youtube](https://www.youtube.com/watch?v=BKSMA-eanoY))
+* 无费用的Decred DEX被批准了! by @Exitus ([youtube](https://www.youtube.com/watch?v=An5YCY_q894))
+* Futurist 19 访问 @ammarooni ([youtube](https://www.youtube.com/watch?v=YmQce50dfGY))
 
-Audio:
+音频：
 
-* Decred in Depth Ep. 6 with @jholdstock - Jamie talks about his Decred journey, from an airdrop recipient to a part-time docs contributor to his recent transition to working full-time on Decred as a developer and the reasons why that was an attractive option. ([youtube](https://www.youtube.com/watch?v=A-zcLGSYxbA))
-* Decred in Depth Ep. 7 with @jy-p - Jake talks about privacy in the general sense of surveillance capitalism and how to avoid it, why and how Company 0 arrived at CoinShuffle++ as the optimal way to add privacy to Decred, and the importance of privacy to the project. ([player.fm](https://player.fm/series/decred-in-depth/jake-yocom-piatt-dcr-privacy))
-* Note that Decred in Depth episodes are mirrored on [SoundCloud](https://soundcloud.com/decredindepth) and [Libsyn](https://decredindepth.libsyn.com/).
-* Unchained Podcast Ep. 134 with Laura Shin - @jz gives a comprehensive intoduction to Decred and his involvement with the project, then releases initial information about Decred's new opt-in privacy feature. ([unchainedpodcast.com](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/))
+* Decred in Depth Ep. 6 with @jholdstock - Jamie谈到了他的Decred之旅，从空投接收者到兼职文档贡献者，最近过渡到全职开发人员，以及为什么这是一个有吸引力的选择。([youtube](https://www.youtube.com/watch?v=A-zcLGSYxbA))
+* Decred in Depth Ep. 7 with @jy-p - Jake谈到隐私和资本主义的监控以及如何避免泄漏隐私，为什么Company 0觉得CoinShuffle++是最适合Decred的隐私技术，以及隐私对项目的重要性。([player.fm](https://player.fm/series/decred-in-depth/jake-yocom-piatt-dcr-privacy))
+* Decred in Depth 音频已复制到[SoundCloud](https://soundcloud.com/decredindepth)和[Libsyn](https://decredindepth.libsyn.com/).
+* Unchained Podcast Ep. 134 with Laura Shin - @jz全面介绍了Decred及他在项目里的角色，然后发布Decred新隐私功能的初始信息。([unchainedpodcast.com](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/))
 * Inclusionism: Guest Akin Sawyerr on What Money Is ([jamesfeltonkeith.com](https://www.jamesfeltonkeith.com/radioshow/episode/c3b1bb50/inclusionism-guest-akin-sawyerr-on-what-money-is), [soundcloud](https://soundcloud.com/inclusionism/inclusionism-guest-akin-sawyerr-on-what-money-is))
 * Base Layer Ep. 59 - Akin Sawyerr (Decred) ([podbean.com](https://acrabaselayer.podbean.com/e/base-layer-episode-059-akin-sawyerr-decred/), [spotify](https://open.spotify.com/episode/6tT4PTA572I1PAbHsZEX6N))
 * Decred Struts Privacy Credentials with Surprisingly Awesome Rap Snippet ([cryptobriefing.com](https://cryptobriefing.com/decred-struts-privacy-credentials-with-surprisingly-awesome-rap-snippet/))
 
-> Couple hundred code lines, no errors in my design, off-chain, unbreakable, I'm ahead of time
+自4月份以来，Decred 月报一直在变得更去中心化。 这包括写下月报组成部分的描述以及制作它们的原因。 这个想法是，通过形式化各方面，月报变得不那么依赖于个别贡献者和他们的知识。以下文件可供希望成为月报贡献者参考，值得一看：
 
-Since April the Decred Journal has been pushing for greater decentralization of its production. This has involved writing down descriptions of how components of the Journal get made and the reasoning for making them in these ways. The idea is that by formalizing these aspects the Journal becomes less reliant on the individuals who currently contribute and their tacit knowledge. The following documents are available, worth a look to anyone who would like to become a Journal contributor:
-
-* a self-describing [template](https://github.com/xaur/decred-news/blob/docs/journal-template.md) for new issues
-* a revamped [contributing](https://github.com/xaur/decred-news/blob/docs/contributing.md) page
-* a [content plan](https://github.com/xaur/decred-news/blob/docs/content.md) with ideas for expansion
-* an extensive [guidelines](https://github.com/xaur/decred-news/blob/docs/guidelines.md) doc that captures the vision and ways of DJ, and also includes tips for translators.
+* 新月报的[范例文件](https://github.com/xaur/decred-news/blob/docs/journal-template.md)
+* 全新的[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)页面
+* [内容安排](https://github.com/xaur/decred-news/blob/docs/content.md)
+* 详细的[指引](https://github.com/xaur/decred-news/blob/docs/guidelines.md) ，包括月报的理念和翻译的提示
 
 ## 社区讨论
 
-Comm systems news:
+通讯系统新闻：
 
-* Reddit [thread](https://www.reddit.com/r/decred/comments/coppup/i_did_a_review_of_the_powpos_mechanism_used_in/) was removed by mods where the author tried to get exposure for his project by posting a low effort review of how Decred's hybrid PoW+PoS does not work. Our moderation is [transparent](https://snew.notabug.io/r/decred) thanks to [publicmodlogs](https://www.reddit.com/user/publicmodlogs).
-* Reddit [thread](https://www.reddit.com/r/decred/comments/csc0ne/what_is_c0s_role_going_forward_with_the_dcr/) asking about Company 0's role going forward received many substantial replies but then vanished after the author's Reddit account was deleted (coincidentally, on the same day). To bring it back to r/decred feed it was ["undeleted"](https://www.reddit.com/r/decred/comments/csq58r/what_is_c0s_role_going_forward_with_the_dcr/) by resubmitting the link.
-* Yet another case where a [question](https://www.reddit.com/r/decred/comments/cvrddy/raising_the_limit_of_coins/) received a proper answer and was quickly deleted. It was "undeleted", but the deletion of the original post caused the answer to lose visibility. This pattern is one of the factors that discourage knowledgeable people from putting in the effort to answer questions on Reddit. In this case the question poster actually [apologized](https://www.reddit.com/r/decred/comments/cvwmsz/raising_the_limit_of_coins_undelete/ey7p6qr) for deleting their post in the "undeleted" thread.
-* More impostors were detected in Telegram that promise to help with your technical problem for a modest 0.05 BTC. Beware the scammers.
+* Reddit [讨论](https://www.reddit.com/r/decred/comments/coppup/i_did_a_review_of_the_powpos_mechanism_used_in/) 被管理者移除，因为作者在没有足够理据的情况下表示Decred的混合PoW+PoS系统并不可行。我们的管理是[透明的](https://snew.notabug.io/r/decred) 感谢 [publicmodlogs](https://www.reddit.com/user/publicmodlogs)。
+* Reddit [讨论](https://www.reddit.com/r/decred/comments/csc0ne/what_is_c0s_role_going_forward_with_the_dcr/) Company 0的未来角色，并收到了许多建设性回复，但在作者的Reddit帐户被删除后（巧合，同一天）消失了。 要通过重新提交链接，在r/decred 恢复[讨论](https://www.reddit.com/r/decred/comments/csq58r/what_is_c0s_role_going_forward_with_the_dcr/)。
+* Telegram中检测到更多诈骗者，承诺帮助您解决技术问题，并支付0.05 BTC，小心诈骗者。
 
-An AMA with the Vietnamese community was conducted on Facebook by @Haon and Việt Anh Đàm. There were a total of 309 comments (including answers), and a transcript is available [here](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md).
+@Haon和ViệtAnhĐàm在Facebook上进行了与越南社区的AMA。 共有309条评论（包括答案），完整文档在[这里](https://github.com/noahpierau/articles/blob/master/Decred-Vietnam-AMA.md)。
 
-Selected Reddit posts:
+选定的Reddit讨论:
 
 * [Questions](https://www.reddit.com/r/decred/comments/cr8u4w/post_politeia_approval_fiat_pairs_integration_on/) to EXMO went unanswered.
 * [Why I'm into the Decred project](https://www.reddit.com/r/decred/comments/crci7p/why_im_into_the_decred_project/) by Somebody\_\_Online
@@ -305,18 +302,18 @@ Selected Reddit posts:
 * [Thread](https://www.reddit.com/r/decred/comments/ctp1zf/bitcoin_lighting_network/) with a long reply from @matheusd addressing concerns about contractors dumping DCR and fostering the adoption of LN.
 * Privacy: the feature [revealed](https://www.reddit.com/r/decred/comments/cw1wd8/privacy_feature_revealed/), privacy is [already in use](https://www.reddit.com/r/decred/comments/cxrb42/decred_privacy_was_announced_and_its_already_in/) on mainnet, [difference](https://www.reddit.com/r/decred/comments/cwz0ib/in_what_way_is_decreds_mixer_different_to/) from Bitcoin's CoinJoin and background on Decred's privacy idea, [comments](https://www.reddit.com/r/decred/comments/cxdxso/what_does_it_mean_by_12x_increase_of_onchain/) on the 12x transaction storage increase.
 
-Selected Twitter discussions:
+选定的推文：
 
-* [Quote](https://twitter.com/Ammarooni/status/1161707860822302722) from [@zubair](https://twitter.com/generalsaccount)'s talk - "We need to solve for transparency in blockchain governance now, so that we have a mechanism to make decisions two decades from now".
-* Decred privacy [tweetstorm](https://twitter.com/decredproject/status/1166746979160023046).
-* @Checkmate on [privacy](https://twitter.com/_Checkmatey_/status/1167502975276933121).
-* @richardred on Decred's [open source mentality](https://twitter.com/RichardRed0x/status/1160972879133073409) of "dig in and find something useful to do".
-* @DCRtheSoV on [the growth of Politeia](https://twitter.com/DCRtheSOV/status/1165708600410402816) and the role it's playing within the project.
-* @DCRtheSoV on [how to stake DCR](https://twitter.com/DCRtheSOV/status/1163514060542894080).
-* @Checkmate on the [Treasury](https://twitter.com/_Checkmatey_/status/1157342578787913733).
-* Chris Burniske of Placeholder VC [clarified](https://twitter.com/cburniske/status/1163912381598248965 ) that Placeholder are not liquidating their DCR position, after an impersonator was seen on Telegram supposedly looking for buyers for their DCR.
+* [@zubair](https://twitter.com/generalsaccount)的[演讲节录](https://twitter.com/Ammarooni/status/1161707860822302722) - "我们现在需要解决区块链治理的透明度问题，这样我们才能在二十年后制定决策机制"。
+* Decred privacy [tweetstorm](https://twitter.com/decredproject/status/1166746979160023046)。
+* @Checkmate 评论[隐私](https://twitter.com/_Checkmatey_/status/1167502975276933121)。
+* @richardred 评论 Decred的[开源理念](https://twitter.com/RichardRed0x/status/1160972879133073409) 
+* @DCRtheSoV 评论[Politeia的成长](https://twitter.com/DCRtheSOV/status/1165708600410402816) 和它在Decred项目中的角色。
+* @DCRtheSoV 评论[如何stake DCR](https://twitter.com/DCRtheSOV/status/1163514060542894080)。
+* @Checkmate 评论[基金会](https://twitter.com/_Checkmatey_/status/1157342578787913733)。
+* Placeholder VC 的Chris Burniske[澄清](https://twitter.com/cburniske/status/1163912381598248965) Placeholder没有卖出任何DCR，尽管有冒充者在电报上透露想卖出。
 
-New Twitter account [@DCRtheSOV](https://twitter.com/DCRtheSOV) aims to [become](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15650685647545vLtzj:decred.org) a reputable source of news and analysis covering Decred and is looking for feedback.
+新的推特账号[@DCRtheSOV](https://twitter.com/DCRtheSOV)目标[成为](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15650685647545vLtzj:decred.org)Decred可靠的新闻和分析发布者，欢迎反馈。
 
 ## 市场表现
 
