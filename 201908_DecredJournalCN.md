@@ -273,9 +273,9 @@ Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/11660262658
 * Decred in Depth Ep. 7 with @jy-p - Jake谈到隐私和资本主义的监控以及如何避免泄漏隐私，为什么Company 0觉得CoinShuffle++是最适合Decred的隐私技术，以及隐私对项目的重要性。([player.fm](https://player.fm/series/decred-in-depth/jake-yocom-piatt-dcr-privacy))
 * Decred in Depth 音频已复制到[SoundCloud](https://soundcloud.com/decredindepth)和[Libsyn](https://decredindepth.libsyn.com/).
 * Unchained Podcast Ep. 134 with Laura Shin - @jz全面介绍了Decred及他在项目里的角色，然后发布Decred新隐私功能的初始信息。([unchainedpodcast.com](https://unchainedpodcast.com/after-years-of-secret-work-decred-adds-a-new-feature-privacy/))
-* Inclusionism: Guest Akin Sawyerr on What Money Is ([jamesfeltonkeith.com](https://www.jamesfeltonkeith.com/radioshow/episode/c3b1bb50/inclusionism-guest-akin-sawyerr-on-what-money-is), [soundcloud](https://soundcloud.com/inclusionism/inclusionism-guest-akin-sawyerr-on-what-money-is))
+* Inclusionism: Akin Sawyerr评论什么是金钱 ([jamesfeltonkeith.com](https://www.jamesfeltonkeith.com/radioshow/episode/c3b1bb50/inclusionism-guest-akin-sawyerr-on-what-money-is), [soundcloud](https://soundcloud.com/inclusionism/inclusionism-guest-akin-sawyerr-on-what-money-is))
 * Base Layer Ep. 59 - Akin Sawyerr (Decred) ([podbean.com](https://acrabaselayer.podbean.com/e/base-layer-episode-059-akin-sawyerr-decred/), [spotify](https://open.spotify.com/episode/6tT4PTA572I1PAbHsZEX6N))
-* Decred Struts Privacy Credentials with Surprisingly Awesome Rap Snippet ([cryptobriefing.com](https://cryptobriefing.com/decred-struts-privacy-credentials-with-surprisingly-awesome-rap-snippet/))
+* Decred使用令人惊讶的Rap片段推广隐私功能([cryptobriefing.com](https://cryptobriefing.com/decred-struts-privacy-credentials-with-surprisingly-awesome-rap-snippet/))
 
 自4月份以来，Decred 月报一直在变得更去中心化。 这包括写下月报组成部分的描述以及制作它们的原因。 这个想法是，通过形式化各方面，月报变得不那么依赖于个别贡献者和他们的知识。以下文件可供希望成为月报贡献者参考，值得一看：
 
@@ -288,7 +288,7 @@ Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/11660262658
 
 通讯系统新闻：
 
-* Reddit [讨论](https://www.reddit.com/r/decred/comments/coppup/i_did_a_review_of_the_powpos_mechanism_used_in/) 被管理者移除，因为作者在没有足够理据的情况下表示Decred的混合PoW+PoS系统并不可行。我们的管理是[透明的](https://snew.notabug.io/r/decred) 感谢 [publicmodlogs](https://www.reddit.com/user/publicmodlogs)。
+* Reddit [讨论](https://www.reddit.com/r/decred/comments/coppup/i_did_a_review_of_the_powpos_mechanism_used_in/) 被管理者移除，因为作者在没有足够理据的情况下表示Decred的混合PoW+PoS系统并不可行。我们的管理是[透明的](https://snew.notabug.io/r/decred)，感谢[publicmodlogs](https://www.reddit.com/user/publicmodlogs)。
 * Reddit [讨论](https://www.reddit.com/r/decred/comments/csc0ne/what_is_c0s_role_going_forward_with_the_dcr/) Company 0的未来角色，并收到了许多建设性回复，但在作者的Reddit帐户被删除后（巧合，同一天）消失了。 要通过重新提交链接，在r/decred 恢复[讨论](https://www.reddit.com/r/decred/comments/csq58r/what_is_c0s_role_going_forward_with_the_dcr/)。
 * Telegram中检测到更多诈骗者，承诺帮助您解决技术问题，并支付0.05 BTC，小心诈骗者。
 
@@ -305,9 +305,9 @@ Alex Von Schulze is [looking](https://twitter.com/avonschulze/status/11660262658
 选定的推文：
 
 * [@zubair](https://twitter.com/generalsaccount)的[演讲节录](https://twitter.com/Ammarooni/status/1161707860822302722) - "我们现在需要解决区块链治理的透明度问题，这样我们才能在二十年后制定决策机制"。
-* Decred privacy [tweetstorm](https://twitter.com/decredproject/status/1166746979160023046)。
+* Decred 隐私[推文](https://twitter.com/decredproject/status/1166746979160023046)。
 * @Checkmate 评论[隐私](https://twitter.com/_Checkmatey_/status/1167502975276933121)。
-* @richardred 评论 Decred的[开源理念](https://twitter.com/RichardRed0x/status/1160972879133073409) 
+* @richardred 评论Decred的[开源理念](https://twitter.com/RichardRed0x/status/1160972879133073409) 
 * @DCRtheSoV 评论[Politeia的成长](https://twitter.com/DCRtheSOV/status/1165708600410402816) 和它在Decred项目中的角色。
 * @DCRtheSoV 评论[如何stake DCR](https://twitter.com/DCRtheSOV/status/1163514060542894080)。
 * @Checkmate 评论[基金会](https://twitter.com/_Checkmatey_/status/1157342578787913733)。
