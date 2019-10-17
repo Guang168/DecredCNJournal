@@ -1,6 +1,6 @@
 # Decred Journal – September 2019
 
-![abstract art](../img/journal-201909-384.jpg)
+![abstract art](img/journal-201909-384.jpg)
 
 _Image: On-Chain Seasonality by @saender_
 
