@@ -1,157 +1,154 @@
-# Decred Journal – September 2019
+# Decred月报 - 2019年9月
 
 ![abstract art](img/journal-201909-384.jpg)
 
-_Image: On-Chain Seasonality by @saender_
+_图片: On-Chain Seasonality by @saender_
 
-* The family of Decred projects was joined by new stratum PoW mining pool software, dcrpool. High quality open source pool software is rare, and the need for such software is a barrier to starting a new mining pool. dcrpool fills this gap, levelling the playing field so that anyone can start their private or public mining pool. This should benefit the decentralization of PoW mining power by curtailing the economies of scale that favor large pools.
-* dcrstakepool v1.2.0 is out. This release is the culmination of development work that began in September 2017 and brings a number of enhancements, including a proper interface for admins to handle tickets purchased with insufficient fees, an overhauled front-end design, security enhancements, updated terminology, reduced dependencies on third parties, and various bug fixes.
-* September has been a big month for integrations, with DCR support being added to Trust Wallet, Exodus mobile wallet, Joule Chrome extension for paying with LN, among other services.
+* Decred项目家族新添加了PoW矿池软件dcrpool。高质量的开源矿池软件很少，并且对此类软件的需求成为新矿池的障碍。dcrpool填补了这一空白，现在任何人都可以启动自己的私人或公共矿池，这将有利于PoW挖矿的去中心化。
+* dcrstakepool v1.2.0已发布。此版本始于2017年9月的开发工作，带来了许多增强功能，包括管理员可以使用不同的界面来处理不足费用购买的选票，全面改进的前端设计，增加安全性，更新的术语，减少了对第三方，以及各种错误修复。
+* 9月是整合添加的重要月份，DCR支持已添加到Trust Wallet，Exodus移动钱包，添加使用LN进行付款的Joule Chrome扩展以及其它服务。
 
-## Development
+## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): Version 2 compact filters have been [implemented](https://github.com/decred/dcrd/pull/1856). These use less space than v1 filters, which will be an improvement for light clients (SPV). Also, v2 filters will be used in [block header commitments](https://proposals.decred.org/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58).
+[dcrd](https://github.com/decred/dcrd): 已[实现](https://github.com/decred/dcrd/pull/1856)第2版紧凑型过滤器。与v1滤镜相比，它们占用的空间更少，这对于轻节点客户端（SPV）而言将是一个改进。同样，v2过滤器将用于[区块头](https://proposals.decred.org/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58)中。
 
-The `mempool` module [received](https://github.com/decred/dcrd/pull/1901) finer grained error codes. A bunch of old mining-related code was removed, including the [removal](https://github.com/decred/dcrd/pull/1736) of `getblocktemplate` in favor of `getwork`.
+`内存池`模块接收到的一部分错误代码。在相关的代码中被删除，包括[删除](https://github.com/decred/dcrd/pull/1736)支持`getwork`的`getblocktemplate` 。
 
-Multiple smaller changes for refactoring, improved test coverage and documentation, and bug fixes.
+进行了多个小范围调整，以进行重构，改进测试覆盖的范围和文档以及错误修复。
 
-[dcrwallet](https://github.com/decred/dcrwallet): dcrwallet's Go code now uses `decred.org` instead of `github.com` in its module name. The idea to adopt this more widely to reduce dependence on GitHub is discussed [here](https://github.com/decred/dcrd/issues/1264).
+[dcrwallet](https://github.com/decred/dcrwallet): dcrwallet的Go代码现在其模块名称使用`decred.org`而不是`github.com`。[这里](https://github.com/decred/dcrd/issues/1264)讨论了更广泛地采用这种方法以减少对GitHub的依赖的看法。
 
-Build support was added for Go 1.13 and dropped for 1.11.
+为Go 1.13添加了构建支持，以及为1.11提供了构建支持。
 
-Work continues on integrating [CoinShuffle++ support](https://github.com/decred/dcrwallet/pull/1541).
+集成[CoinShuffle++](https://github.com/decred/dcrwallet/pull/1541)的工作仍在继续。
 
-[Decrediton](https://github.com/decred/decrediton): Account view received incremental [improvements](https://github.com/decred/decrediton/pull/2178), while Security view gained the display of [derivation](https://github.com/decred/decrediton/pull/2184) info for addresses owned by the wallet (useful for debugging purposes).
+[Decrediton](https://github.com/decred/decrediton): “帐户”界面进行了改善，而“安全”界面则显示了钱包的地址[派生](https://github.com/decred/decrediton/pull/2184)信息（可用于调试）。
 
-Lightning Network integration is [nearing completion](https://github.com/decred/decrediton/pull/2107). Work continues to [refactor startup](https://github.com/decred/decrediton/pull/2182) to a finite state machine in order to make it more robust.
+闪电网络的集成工作[即将完成](https://github.com/decred/decrediton/pull/2107)。工作继续将 [启动重构](https://github.com/decred/decrediton/pull/2182)为有限状态机，使其更加安全可靠。
 
-[Politeia](https://github.com/decred/politeia): Politeia's redesign is live on [testnet](https://test-proposals.decred.org/) and testing/feedback is welcome.
+[Politeia](https://github.com/decred/politeia): 新的Politeia设计在[测试网](https://test-proposals.decred.org/)上进行，欢迎进行测试/反馈。
 
-Significant progress is being made on the CMS, with the DCC Proposal System [foundation](https://github.com/decred/politeia/pull/980) and [functionality](https://github.com/decred/politeia/pull/981) for contractors to interact with it being merged along with a range of smaller improvements and bug fixes for both CMS and proposals site. Upcoming priorities on the proposals site are [RFP proposals](https://github.com/decred/politeia/issues/966) and [Trillian](https://github.com/google/trillian) integration which will allow for timestamping of individual pieces of content.
+CMS系统取得了重大进展，DCC系统的基础和与承包商交互的[功能](https://github.com/decred/politeia/pull/981)已[合并](https://github.com/decred/politeia/pull/980)，同时为CMS和DCC提供了一系列较小的改进和错误修复。提案网站上即将出现的优先事项是[RFP提案](https://github.com/decred/politeia/issues/966)和[Trillian](https://github.com/google/trillian)集成，这将为单个内容加盖时间戳。
 
-[dcrstakepool](https://github.com/decred/dcrstakepool): Major v1.2 release has landed on master.
+[dcrstakepool](https://github.com/decred/dcrstakepool): v1.2版本已发布在主网上。
 
-A new admin-only page for handling low-fee tickets has been added to the front-end. This page will list all tickets which have been purchased with an insufficient fee, and allow the admin to manually add or remove those tickets from the list of eligible voting tickets. Previously this operation had to be performed manually by directly manipulating the database.
+前端增加了一个新的仅用于管理低价票的管理员页面。此页面将列出所有已购买且费用不足的选票，并允许管理员手动将这些选票添加到符合条件的选票中。以前，必须通过直接操作数据库来手动执行此操作。
 
-A new front-end design brings dcrstakepool up to the professional standard seen in other Decred software such as Decrediton.
+新的前端设计使dcrstakepool达到了其他Decred软件（例如Decrediton）中看到的专业标准。
 
-Requested by VSP operators, support for encrypted SMTP connections has been implemented, including support for self-signed certificates. This allows VSPs to protect registration and account recovery emails in transit with SMTPS.
+根据VSP运营商的要求，已经实现了对加密SMTP连接的支持，包括对自签名证书的支持。这使VSP可以保护通过SMTPS传输的注册和帐户找回电子邮件。
 
-All communication with dcrwallet now goes through stakepoold. This architectural change lowers the number of RPC calls going over the network, decreases code complexity and allows ports between dcrstakepool and dcrwallet to be closed.
+与dcrwallet的所有通信现在都必须通过StakePoold进行。这种架构改变降低了RPC调用在网络上的数量，降低了代码复杂度，并且允许关闭DCRelpSpCon和DCRWalk之间的端口。
 
-A custom MySQL data store has replaced the file-based storage solution for storing session cookies. This addresses several known security issues related to session data.
+自定义MySQL数据存储已取代了用于存储会话cookie的基于文件的存储解决方案。这解决了与会话数据有关的几个已知的安全问题。
 
-Google's reCAPTCHA has been replaced with a self-hosted solution implemented [in Go](https://github.com/dchest/captcha). All resources required for it are now hosted by the VSP rather than by a third party. The front-end included in this release executes no external JavaScript at all, granting a significant boost to user security and privacy.
+Google的reCAPTCHA已被[Go](https://github.com/dchest/captcha)中实现的自托管解决方案取代。现在，所需的所有资源都由VSP托管，而不是由第三方托管。此版本中包含的前端完全不执行任何外部JavaScript，从而大大提高了用户的安全性和隐私性。
 
-Several security improvements were made to prevent cross-site request forgery (CSRF) attacks, leaking of private data to third parties, malicious links and caching of sensitive information by browsers.
+进行了一些安全性改进，为了防止跨站点请求伪造（CSRF）攻击，将私人数据泄露给第三方，恶意链接以及浏览器缓存敏感信息。
 
-The release is a result of 160 pull requests from 20 contributors made since Sep 2017. For full details of the release, see [release notes](https://github.com/decred/dcrstakepool/releases/tag/v1.2.0).
+此次发布是自2017年9月以来20位贡献者发出的160个合并的成果。有关正式版的完整详细信息，请参见[版本说明](https://github.com/decred/dcrstakepool/releases/tag/v1.2.0)。
 
-[dcrpool](https://github.com/decred/dcrpool): After more than a year in the making, Decred's open source mining pool is finally [released](https://twitter.com/decredproject/status/1176914732399439873) along with a blog [post](https://blog.decred.org/2019/09/25/Introducing-Dcrpool/) about it. dcrpool features:
+[dcrpool](https://github.com/decred/dcrpool): 经过一年多的酝酿之后，Decred的开源矿池程序终于 [发布](https://twitter.com/decredproject/status/1176914732399439873)了([博客](https://blog.decred.org/2019/09/25/Introducing-Dcrpool/))。dcrpool功能：
 
-* can operate as private or publicly available pool
-* supports all relevant miners
-* PPS and PPLNS payment modes
-* a web UI with stats and account data
-* connection details for all miners
-* account work and payment analysis
+* 可以作为私人矿池或公共矿池使用
+* 支持所有相关的矿机
+* PPS和PPLNS支付方式
+* 具有网络统计信息和帐户数据的用户界面
+* 所有矿机的连接详细信息
+* 帐户工作量和支付分析
 
-Developed by @dnldd in Go, this software is an important step in decentralizing PoW mining for Decred. Congrats on the release!
+该软件由@dnldd使用Go开发，是让Decred的PoW挖矿去中心化的重要一步。恭喜发布！
 
-[dcrlnd](https://github.com/decred/dcrlnd): The big work to port pull requests from the upstream lnd is finally [merged](https://github.com/decred/dcrlnd/pull/36).
+[dcrlnd](https://github.com/decred/dcrlnd): 最终合并了来自上游lnd的端口[合并](https://github.com/decred/dcrlnd/pull/36)请求的大量工作。
 
-Work has begun on enabling [remote wallet](https://github.com/decred/dcrlnd/pull/40) functionality. This allows users to use their existing wallet instead of having to manage a separate wallet with separate seed for dcrlnd. It also allows users to launch a LN wallet directly for a wallet running in Decrediton, easing the UX.
+启用[远程钱包](https://github.com/decred/dcrlnd/pull/40)功能的工作已经开始。这将使用户可以使用现有的钱包，而不必为dcrlnd管理具有单独种子的额外钱包。它还允许用户直接在Decrediton中运行的钱包启动LN钱包，从而简化了UX。
 
-[cspp](https://github.com/decred/cspp): added [reconnection](https://github.com/decred/cspp/pull/18) support, updated setup instructions, added Go 1.13 builds, bug fixes.
+[cspp](https://github.com/decred/cspp)（CoinShuffle ++）: 添加了重新连接[支持](https://github.com/decred/cspp/pull/18)，更新了安装说明，添加了Go 1.13版本，错误修复。（CoinShuffle ++）
 
-[dcrdex](https://github.com/decred/dcrdex): The [foundations](https://github.com/decred/dcrdex/issues/8) are being laid out with thousands of lines of code merged in master. Initial backends for [DCR](https://github.com/decred/dcrdex/pull/17) and [BTC](https://github.com/decred/dcrdex/pull/26) have been added. The spec has undergone several minor [changes](https://github.com/decred/dcrdex/pulls?q=is%3Apr+is%3Aclosed+label%3Aspec+merged%3A2019-09-01..2019-09-30).
+[dcrdex](https://github.com/decred/dcrdex): [基础布局](https://github.com/decred/dcrdex/issues/8)已经完成，其中数千行代码合并在主库中。已添加[DCR](https://github.com/decred/dcrdex/pull/17)和[BTC](https://github.com/decred/dcrdex/pull/26)的初始后端。规范进行了几处小的[更改](https://github.com/decred/dcrdex/pulls?q=is%3Apr+is%3Aclosed+label%3Aspec+merged%3A2019-09-01..2019-09-30)。
 
-Unlike other software using the ISC license, dcrdex chose BlueOak. Motivation was discussed in [this chat](https://matrix.to/#/!EzTSRQITaqHuFBDFhM:decred.org/$RaxvOZy5x4cby5rwhph7gUED6LR0yQkKIihst4C5Og4).
+与使用ISC许可证的其他软件不同，dcrdex选择了BlueOak。在这次聊天中[讨论](https://matrix.to/#/!EzTSRQITaqHuFBDFhM:decred.org/$RaxvOZy5x4cby5rwhph7gUED6LR0yQkKIihst4C5Og4)了原因。
 
-[dcrandroid](https://github.com/decred/dcrandroid): Work on the new UI continues with an overhauled [home page](https://github.com/decred/dcrandroid/pull/401) and other improvements to bring the app into alignment with the standard app design recommendations for Android. Work has begun on [multi-wallet support](https://github.com/raedahgroup/dcrlibwallet/pull/57). This will allow users to import their public key from Decrediton so that they can monitor the status of their tickets from their phone.
+[dcrandroid](https://github.com/decred/dcrandroid): 新版UI的工作正在全面开展，对[主页](https://github.com/decred/dcrandroid/pull/401)进行了改进，以使该应用程序与Android的标准应用程序设计建议保持一致。[多钱包](https://github.com/raedahgroup/dcrlibwallet/pull/57)支持工作已经开始。这将允许用户从Decrediton导入其公钥，以便他们可以从手机监控选票的状态。
 
-[dcrios](https://github.com/raedahgroup/dcrios): Refactoring is underway to take advantage of new [tx filter methods](https://github.com/raedahgroup/dcrlibwallet/pull/48) in dcrlibwallet. This includes an overhaul of the [history page](https://github.com/raedahgroup/dcrios/pull/515), a new data [structure](https://github.com/raedahgroup/dcrios/pull/520) for storing transactions and an overhaul of the [send page](https://github.com/raedahgroup/dcrios/pull/521) to enable users to send DCR to multiple destinations simultaneously.
+[dcrios](https://github.com/raedahgroup/dcrios):正在进行重构以利用dcrlibwallet中的[新tx过滤器](https://github.com/raedahgroup/dcrlibwallet/pull/48)方法。这包括对[历史页面](https://github.com/raedahgroup/dcrios/pull/515)的全面检查，用于[存储事务](https://github.com/raedahgroup/dcrios/pull/520)的新数据结构以及对[发送页面](https://github.com/raedahgroup/dcrios/pull/521)的全面检查，以使用户能够将DCR同时发送到多个目标。
 
-[Background sync](https://github.com/raedahgroup/dcrios/pull/518) was streamlined and made more reliable. This addresses an issue some users were encountering when syncing the blockchain was stopped due to the phone going to sleep.
+简化了[后台同步](https://github.com/raedahgroup/dcrios/pull/518)并使其更加安全可靠。这解决了一些用户由于手机进入睡眠状态而停止同步区块链时遇到的问题。
 
-UI optimization continues with overhaul of [home page](https://github.com/raedahgroup/dcrios/pull/512).
+UI优化随着 [主页](https://github.com/raedahgroup/dcrios/pull/512)更新正在继续。
 
-[docs](https://github.com/decred/dcrdocs): A page for [dcrtime](https://docs.decred.org/advanced/dcrtime/) has been [added](https://github.com/decred/dcrdocs/pull/960).
+[docs](https://github.com/decred/dcrdocs):[dcrtime](https://docs.decred.org/advanced/dcrtime/)的页面已[添加](https://github.com/decred/dcrdocs/pull/960)。
 
-Work continues on developer documentation, which is expected to be ported from a private repo to the Decred GitHub organization soon for wider visibility.
+开发人员文档的工作仍在继续，预计将很快从私人存储库移植到Decred GitHub组织中，以提高可视性。
 
-[decred.org](https://github.com/decred/dcrweb): updated [Roadmap](https://decred.org/roadmap/), [Wallets](https://decred.org/wallets/) and [Exchanges](https://decred.org/exchanges/) pages.
+[decred.org](https://github.com/decred/dcrweb): 更新了[蓝图](https://decred.org/roadmap/)，[钱包下载](https://decred.org/wallets/)和[交易所](https://decred.org/exchanges/)页面。
 
-Several projects have switched their continuous integration (CI) system from Travis CI to GitHub Actions. Actions are faster, better integrated, are open source and shareable, and it's overall much more flexible in terms of what it will allow.
+多个项目已将其持续集成（CI）系统从Travis CI切换到GitHub Actions。动作速度更快，集成度更高，开源且可共享，并且在允许范围内总体上更加灵活。
 
-Dev activity stats for September: 248 active PRs, 201 master commits, 28K added and 17K deleted lines spread across 15 repositories. Contributions came from 2-8 developers per repository.
+9月的开发活动统计：分布在15个存储库中的248个活动PR，201个提交，添加2.8万行和删除1.7万行。每个存储库贡献者为2-8个开发人员。
 
-## People
+## 人员
 
-Welcome to new first time contributors with code merged to master: imestin ([dcrdocs](https://github.com/decred/dcrdocs/commits?author=imestin)), Muharem Hrnjadovic ([politeia](https://github.com/decred/politeia/commits?author=al-maisan)), Amir Massarwa ([politeiagui](https://github.com/decred/politeiagui/commits?author=amassarwi)).
+欢迎新的首次贡献者到来： imestin ([dcrdocs](https://github.com/decred/dcrdocs/commits?author=imestin)), Muharem Hrnjadovic ([politeia](https://github.com/decred/politeia/commits?author=al-maisan)), Amir Massarwa ([politeiagui](https://github.com/decred/politeiagui/commits?author=amassarwi)).
 
-@s\_ben wrote a great Medium [piece](https://medium.com/@seth.benton/i-dump-coins-on-you-ee6db4331e18) on his experience of working for the Decred DAO and makes observations on liquidity, volatility, shilling and his plans for the future.
+@s_ben写了一篇很棒的中等篇幅文章，介绍了他在Decred DAO工作的经历，并对流动性，波动性和他的未来计划进行了描述。
 
-Community stats as of Oct 2:
+截至10月2日的社区统计数据：
 
-* Politeia users: 181 (+7)
-* Twitter followers: 40,578 (-19)
-* Reddit subscribers: 9,631 (+37)
-* Matrix users: 436 (+24)
-* Slack users: 6,851 (+17)
-* Discord users: 2,487 (+45), verified to post: 325 (+15)
-* Telegram users: 3,048 (-100)
-* YouTube subscribers: 3,830 (+11)
-* Facebook followers: 3,278 (+7), likes: 3,003 (+4)
-* LinkedIn followers: 622 (+19)
-* GitHub dcrd stars: 517 (+1), forks: 1,394 (+11)
+* Politeia 用户: 181 (+7)
+* Twitter 粉丝: 40,578 (-19)
+* Reddit 订阅: 9,631 (+37)
+* Matrix 用户: 436 (+24)
+* Slack 用户: 6,851 (+17)
+* Discord 用户: 2,487 (+45), verified to post: 325 (+15)
+* Telegram 用户: 3,048 (-100)
+* YouTube 粉丝: 3,830 (+11)
+* Facebook 粉丝: 3,278 (+7), likes: 3,003 (+4)
+* LinkedIn 粉丝: 622 (+19)
+* GitHub dcrd库星星: 517 (+1), 分叉: 1,394 (+11)
 
-## Governance
+## 治理
 
-In September the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 14,510 DCR and spent 7,810 DCR (note: the spend occurred in early October). Using September's daily average DCR/USD rate of $22.02, this is $320K received and $172K spent. As these payments were for work completed in August, it is also informative to consider them in the context of the August average daily rate of $26.23 - in which case the USD spent figure is $205K. As of Oct 2, Treasury balance is 641,802 DCR (11 million USD at $17.12).
+九月份，[社区基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了14,510 DCR，支出了7,810 DCR（注意：支出发生在10月初）。使用9月份的每日DCR / USD平均价格$ 22.02，得出的总收入为$ 320K，支出为$ 172K。由于这些付款是针对8月份完成的工作，因此在8月份的每日平均费率$ 26.23的情况下考虑这些费用也很有帮助-在这种情况下，美元支出的金额为$ 205K。截至10月2日，社区基金余额为641,802 DCR（1,100万美元，折合17.12美元）。
 
-i2 Trading won the competition to become Decred's designated market maker, with approval of 68% vs 49% for Tantra Labs and 47% for Grapefruit Trading. i2 also attracted higher ticket participation of 41%, compared to 36% for Tantra and 33% for Grapefruit (the turnout is now visible on [dcrdata alpha](https://alpha.dcrdata.org/proposals)).
+i2 Trading赢得了成为Decred指定做市商的竞争，获得了68％的批准，而Tantra Labs和Grapefruit Trading的批准率分别为49％和47％。i2还吸引了41％的较高选票率参与，相比之下，Tantra Labs(41%)比Grapefruit Trading(33％)的票务参与度更高（现在在[dcrdata alpha](https://alpha.dcrdata.org/proposals)上可见投票率）
 
-Tantra Labs congratulated i2, published a [post](https://medium.com/@TantraLabs/proof-of-politeia-ac87f52243f4) about their experience on Politeia, and stated that they intend to continue with their plan to make DCR markets and will consult with i2 on this.
+Tantra Labs祝贺I2，发表后他们就Politeia的经验，并表示，他们打算继续他们的[计划](https://medium.com/@TantraLabs/proof-of-politeia-ac87f52243f4)。
 
-@permabullnino's [proposal](https://proposals.decred.org/proposals/f0d1bd7447182328b44c691de88cb660b63df17f1f3a94990af19acea57c09bb) for "Research & Publication of On-Chain DCRUSD & DCRBTC Indicators" was approved with 83% Yes votes and 27% turnout. Permabull will deliver 4-6 articles on the subject of the The Hyperactive HODLer's Price (HHP), over the course of around 3 months. $3,500 will be billed for Permabull's already published work and $13,000 will be billed for the new work.
+@ permabullnino的[提案](https://proposals.decred.org/proposals/f0d1bd7447182328b44c691de88cb660b63df17f1f3a94990af19acea57c09bb)为“关于DCRUSD＆DCRBTC指标的研究和出版”用83％的赞成票和27％的选票参与率获得批准。Permabull将在大约3个月的时间内提供4-6篇有关“ Hyperactive HODLer的价格（HHP）”的文章。Permabull已出版的作品将收取3500美元的费用，而新作品将收取13,000美元的费用。
 
-The [proposal](https://proposals.decred.org/proposals/fdd68c87961549750adf29e178128210cb310294080211cf6a35792aa1bb7f63) for "DECRED Events & Meetups in the CIS in 2019-2020" was rejected with 4% Yes votes and 25% turnout.
+否决了“在2019-2020年在CIS中举行大型活动和聚会” 的[提案](https://proposals.decred.org/proposals/fdd68c87961549750adf29e178128210cb310294080211cf6a35792aa1bb7f63)，赞成率为4％，选票参与率为25％。
 
-Politeia Digest [issue 22](https://medium.com/politeia-digest/issue-22-september-1-12-2019-d82f5f617c92) has more info about these proposals. The second half of Sep has been quiet on Politeia, a new issue of Politeia Digest will be published when there are some new proposals.
+Politeia Digest 第[22期](https://medium.com/politeia-digest/issue-22-september-1-12-2019-d82f5f617c92)提供了有关这些建议的更多信息。9月下半月的Politeia是安静的，当有新提案时，将出版新一期的《Politeia Digest》。
 
-## Network
+## 网络
 
-Hashrate: September's hashrate opened at ~619 Ph/s and closed ~472 Ph/s, bottoming at 404 Ph/s and peaking at 679 Ph/s throughout the month. Pool hashrate distribution as of Oct 2: UUPool 21%, Poolin 19%, F2Pool 19%, lab.antpool.com 5.8%, BTC.com 2.9%, Luxor 2.12%, Coinmine 0.10%, BeePool 0.10%, suprnova 0.03% and others 30% per [dcrstats.com](https://dcrstats.com/pow). Pool distribution numbers are approximate and cannot be accurately determined.
+全网算力: 9月份的哈希率以〜619 Ph/s开启，以〜472 Ph/s结束，最低为404 Ph/s，并在整个月达到峰值679 Ph/s。截至10月2日的池哈希率分布：UUPool 21％，Poolin 19％，F2Pool 19％，lab.antpool.com 5.8％，BTC.com 2.9％，Luxor 2.12％，Coinmine 0.10％，BeePool 0.10％，suprnova 0.03％和其他每个[dcrstats.com](https://dcrstats.com/pow)为 30％。池分配数是近似值，无法准确确定。
 
-Staking: 30-day average ticket price was 128.70 DCR (-1.35) per dcrstats.com. The price varied between 121.92-134.4 DCR. Locked amount was 5.22-5.33 million DCR, which corresponded to 49.87-51.15% of the available supply.
+Staking: 30天平均选票价格为128.70 DCR（-1.35）。价格在121.92-134.4 DCR之间变化。锁定金额为522-533万DCR，相当于可用供应量的49.87-51.15％。
 
-Nodes: Throughout [September](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1567296000000&to=1569888000000) there were around 182 listening nodes and 406 total nodes per dcr.farm. Roughly 81% run dcrd v1.4.0, 6.5% are dcrwallet v1.4.0 and 6% are v1.5.0(pre) dev builds as of Oct 4.
+Nodes: 整个9月，大约有182个监听节点，总共406个节点。截至10月4日，运行dcrd v1.4.0的大约81％，运行dcrwallet v1.4.0的6.5％，运行v1.5.0（pre）的6％。
 
-On average for the month of [September](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-network?orgId=1&from=1567296000000&to=1569888000000) the DCR testnet LN shows 17 nodes, 35 channels and a total capacity of 227 DCR.
+平均来看，9月的DCR测试网闪电网络[显示](https://charts.dcr.farm/d/DHPdAO4Wz/lightning-network?orgId=1&from=1567296000000&to=1569888000000)了17个节点，35个通道和227个DCR的总容量。
 
-## Integrations
+## 整合
 
-[Trust Wallet](https://trustwallet.com/), the [official](https://www.binance.com/en/blog/295063453682311168/Trust-Wallet-20-One-App-for-All-Your-Crypto) wallet for Binance, [announced](https://twitter.com/TrustWalletApp/status/1175864708961845253) the addition of Decred.
+Binance 的[官方](https://www.binance.com/en/blog/295063453682311168/Trust-Wallet-20-One-App-for-All-Your-Crypto)钱包[Trust Wallet](https://trustwallet.com/)宣布[增加](https://twitter.com/TrustWalletApp/status/1175864708961845253)Decred。
 
-Exodus [added](https://twitter.com/exodus_io/status/1168886493617840131) Decred to its mobile wallet. This had been highly requested. In response to a question on Twitter, Exodus linked to their [position](https://support.exodus.io/article/89-is-exodus-open-source) on open source.
+Exodus 将 Decred [添加](https://twitter.com/exodus_io/status/1168886493617840131)到了其手机钱包中。为了回应Twitter上的一个问题，Exodus表示了他们在开源上的[立场](https://support.exodus.io/article/89-is-exodus-open-source)。
 
-Decred support has been [added](https://github.com/joule-labs/joule-extension/pull/230) to [Joule](https://lightningjoule.com/), a popular Chrome extension that allows users to pay via Lightning Network and use their node as an identity on the web.
+decred支持已[添加](https://github.com/joule-labs/joule-extension/pull/230)到[Joule](https://lightningjoule.com/)（流行的Chrome扩展）中，该扩展允许用户通过闪电网络进行付款。
 
-[Uphold](https://uphold.com/) exchange added [support](https://twitter.com/UpholdInc/status/1172526504837693440) for [Decred](https://twitter.com/decredproject/status/1172564615546511362) as part of their #15daysofcrypto campaign.
+[Uphold](https://uphold.com/)增加了对Decred的支持。
 
-[StealthEX](https://stealthex.io/) has [added](https://twitter.com/StealthEX_io/status/1172201037958008837) DCR. The service offers anonymous and accountless instant exchange of crypto.
+[StealthEX](https://stealthex.io/)已添加 DCR。该服务提供匿名和无帐户即时加密交换。
 
-[InstaEx](https://instaex.io/) instant exchanger [added](https://twitter.com/instaex_io/status/1174367851139850241) DCR trading and submitted a [pull request](https://github.com/decred/dcrweb/pull/720) to get added on decred.org. In a short [comparison](https://medium.com/@instaex/instant-crypto-exchange-comparison-instaex-vs-changelly-vs-changenow-47770175bd54) with competitors, the service claims that no KYC or email is required, among other benefits.
+[InstaEx](https://instaex.io/)交换添加了 DCR交易，并提交了合并请求以在decred.org上添加。在与竞争对手的简短对比中，该服务声称无需KYC或电子邮件。
+[Tokenview](https://tokenview.com/en)已将Decred区块数据[添加](https://twitter.com/tokenview2018/status/1176394157327147008)到其多资产[区块浏览器](https://dcr.tokenview.com/en)中。
 
-Terms of both [StealthEx](https://stealthex.io/terms) and [InstaEx](https://instaex.io/) prohibit use from a range of countries.
+警告：Decred Journal的作者不了解上述任何服务的可信赖性。在将您的个人信息或资产信任给任何实体之前，请先自行研究。
 
-[Tokenview](https://tokenview.com/en) has [added](https://twitter.com/tokenview2018/status/1176394157327147008) the display of Decred [blockchain data](https://dcr.tokenview.com/en) to their multi-asset block explorer.
-
-Warning: the authors of Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
-
-## Outreach
+## 外联活动
 
 Decred outreach in September focused on education and awareness regarding the recent privacy implementation. Presentations were created for [Surveying the Privacy Landscape](https://www.notion.so/Transaction-Privacy-75c4bd707c194de18ff5d943f8909e26) and [Decred Privacy](https://www.notion.so/Privacy-Keynote-4902c63379894765a545351f8fcc7d7f), and Decred community organizers across the world have presented Privacy at various meetups. @jy-p travelled to San Francisco and Los Angeles, presenting Privacy at Decred meetups in both cities, and presenting the privacy landscape to the San Francisco Bitcoin Meetup. @Dustorf published a blog, [Decred Privacy, Taking the Long Road](https://medium.com/decred/decred-privacy-taking-the-long-road-62d218223db6), contextualizing privacy from a values and development perspective.
 
@@ -171,9 +168,9 @@ Ditto's September achievements:
 * Coordinated with the community to continue pushing Decred's privacy narrative across Twitter.
 * New Ditto team member Anastasia has joined Margaret Mei, Leslie Ankeny, and Liz Bagot on all our various Decred projects. Welcome!
 
-## Events
+## 社区活动
 
-Attended:
+出席:
 
 * Aug 25 - Poolin China Mining Tour - Shanghai, China. @Dominic was invited to participate in a panel discussion on PoW and delivered a keynote speech on Decred. Trivia - Poolin recently became [2nd largest](https://twitter.com/officialpoolin/status/1171451086999191557) mining pool for Bitcoin, and is contributing around [90 Ph/s](https://twitter.com/NoahPierau/status/1171527633391079424) to Decred network. ([event stats](https://twitter.com/officialpoolin/status/1166702227727310848), [photos](https://twitter.com/wanbihou/status/1166028812305321985), _missed in Aug issue_)
 * Sep 4 - [Campus Party](https://brasil.campus-party.org/campus-party-goias/) - Goiânia, Brazil. Decred team members delivered a total of 5 talks about blockchain, consensus, Decred and Lightning Network. (photos: [1](https://twitter.com/Decred_BR/status/1171402110031847424), [2](https://twitter.com/Decred_BR/status/1170136831272325121), [3](https://twitter.com/Decred_BR/status/1169812440051109888))
@@ -196,7 +193,7 @@ Attended:
 * Sep 28 - [Bali Block Confex](https://bali.blockconfex.com/) - Legian, Indonesia. Duyen Em talked to people at the event about Decred, handed out postcards and made some connections. Most people hear about Decred for the first time, and many get interested pretty quickly. Full report is [here](https://github.com/decredcommunity/events/blob/master/reports/20190928-bali-block-confex-legian-indonesia.md).
 * Sep 30 - [Voice of Blockchain](https://twitter.com/BlockchainVoice/status/1154772731575099392) - Chicago, USA. @jy-p talked about decentralizing the allocation of capital and why direct sovereignty will last into the future. (photos: [1](https://twitter.com/BlockchainVoice/status/1179100328102203392), [2](https://twitter.com/BlockchainVoice/status/1179088345638621185))
 
-Upcoming:
+即将到来的:
 
 * Oct 17 - Blockchain and Decred - Morelia, Mexico. @luisantoniocrag and @francov\_ will talk about blockchain and Decred in a university at Morelia city.
 * Oct 29-31 - [World Crypto Conference](https://worldcryptocon.com/) - Las Vegas, USA. @akinsawyerr will be speaking on a panel on "Governance Practices" and will also give a presentation titled: "Governing the Crypto Commons". The presentation will highlight Decred's governance process in contrast with other efforts across the public blockchain space.
@@ -208,7 +205,7 @@ A total of 4 new reports were added to the [events repo](https://github.com/decr
 
 Thanks to everybody for writing and submitting reports to grow our knowledge base!
 
-## Media
+## 媒体
 
 Selected articles:
 
@@ -240,7 +237,7 @@ Audio:
 * Decred in Depth Ep. 8 with @Checkmate - Checkmate talks about the DCR value stack and stock to flow ratio, Bitcoin and Decred on-chain metrics, monetary premiums, sustainable funding to attract committed contributors, and his own research plans. ([youtube](https://www.youtube.com/watch?v=2JbMWgJUoSQ), [soundcloud](https://soundcloud.com/decredindepth/dcr-checkmate))
 * POV Crypto Podcast Ep. 76 - @jy-p joins the POV Crypto crew for an episode titled "In Search of Sovereignty" which considers Bitcoin and Decred fundamentals, sovereignty, backwards compatibility and privacy. ([youtube](https://www.youtube.com/watch?v=WnY3c-F5caw), [libsyn](https://povcryptopod.libsyn.com/77-discovering-decred-w-jake-y-p))
 
-## Community Discussions
+## 社区讨论
 
 Comm systems news:
 
@@ -273,13 +270,13 @@ Selected Twitter discussions:
 * @lukebp's [prediction](https://twitter.com/lukebp_/status/1175441776041058304) about smart contract platforms vs permissionless money and society transformation.
 * [Summary](https://twitter.com/jcliff42/status/1170039176277835776) of Decred privacy tech from Jordan Clifford of Scalar Capital.
 
-## Markets
+## 市场表现
 
 In September DCR was trading between USD 16.49-25.20 / BTC 0.0020-0.0024. The average daily rate was $22.02.
 
 DCR/USD lost more than 20% together with BTC/USD around Sep 24. Among possible causes discussed in the media are: [sharp drop](https://www.ccn.com/bitcoin-hashrate-flashcrash-price-slump/) of Bitcoin's hashrate, [disappointing launch](https://cryptobriefing.com/bakkt-crypto-launch/) of Bakkt that didn't bring the anticipated institutional bull run, and [liquidations](https://bitcoinist.com/yes-bitmex-liquidations-caused-bitcoin-price-to-crash-heres-how/) on derivatives trading platforms.
 
-## Relevant External
+## 相关外部信息
 
 The [Crypto Rating Council](https://www.cryptoratingcouncil.com/) was [announced](https://blog.coinbase.com/introducing-the-crypto-rating-council-d6ee33a8f34d), this is a group of cryptocurrency businesses producing ratings of whether cryptoassets are likely to be considered as securities by the SEC. An initial set of 20 [ratings](https://www.cryptoratingcouncil.com/asset-ratings) which position assets on a scale between 1 (not a security) to 5 (very likely a security) were released. Bitcoin, Litecoin, Monero and DAI received the best score (1). Assets like EOS, Tezos, Stellar and Hedera Hashgraph all received a 3.75 score, XRP got 4 and Polymath 4.5. The CRC will not publish the names of projects that received a rating of 5. More ratings will be published in the future. While the methodology is not published, it can be inferred from the bullet-point summaries of ratings that emphasis is placed on whether there was a token sale, whether that occurred before the system had utility, whether there was investment-like language in promotional materials for a token sale, and whether there is decentralized development and usage of the system.
 
@@ -317,17 +314,29 @@ GitHub user "DecredCoin" registered on Oct 1 2019 released ["v1.5.0 Mandatory Up
 
 For people who like to follow the Bitcoin discussion on Twitter, be careful what you say, as it seems the threshold for being [blocked](https://twitter.com/NickSzabo4/status/1169992390339227648) is getting lower and the overton window of acceptable discussion points or opinions is shrinking.
 
-## About This Issue
+## 关于月报
 
-This is issue 18 of Decred Journal. Index of all issues, mirrors and translations is available [here](https://xaur.github.io/decred-news/).
+这是Decred月报的第18. [这里](https://xaur.github.io/decred-news/)提供所有问题，镜像和翻译的索引。
 
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
+来自第三方的大多数信息在经过小范围的检查后直接转发。Decred月报的作者无法验证所有声明。请注意诈骗并做自己的研究。
 
-Your [feedback](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback) and [contributions](https://github.com/xaur/decred-news/blob/docs/contributing.md) are always welcome.
+我们随时欢迎您的[反馈](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback)和[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)。
 
-Credits (alphabetical order):
+感谢(字母排列):
 
-* writing and editing: akinsawyerr, anastasia, bee, degeri, Dustorf, richardred, s\_ben
-* reviews and feedback: davecgh, emiliomann, isuldor, jholdstock, lukebp, matheusd, raedah
-* title image: saender
+* 编写和编辑: akinsawyerr, anastasia, bee, degeri, Dustorf, richardred, s\_ben
+* 评论和反馈: davecgh, emiliomann, isuldor, jholdstock, lukebp, matheusd, raedah
+* 封面图片: saender
 
+## 中文社区
+
+* [社区web](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [优酷频道](https://i.youku.com/decredproject)
+* QQ群号-258412796
+
+欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
+
+中文月报相关意见欢迎提交到[Github](https://github.com/Guang168/DecredCNJournal/issues)
