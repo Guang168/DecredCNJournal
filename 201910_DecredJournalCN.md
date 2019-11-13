@@ -1,6 +1,6 @@
 # Decred Journal – October 2019
 
-![abstract art](../img/journal-201910-384.png)
+![abstract art](img/journal-201910-384.png)
 
 _Image: Source Relay by @saender_
 
