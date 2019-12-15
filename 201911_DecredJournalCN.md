@@ -1,97 +1,95 @@
-# Decred Journal – November 2019
+# Decred月报 - 2019年10月
 
 ![abstract art](img/journal-201911-384.png)
 
-_Image: Powermove by @saender_
+_图片: Powermove by @saender
 
-Major news of November:
+11月的主要新闻：
 
-- Release candidates 2 and 3 for v1.5.0 have come out and issues have been identified with both of them (the problem in RC3 affects Decrediton in Windows), so expect another release candidate soon. Thanks to everyone who contributes by downloading these release candidates and reporting any bugs they encounter.
-- The Decred DEX infrastructure project saw significant advances this month, with initial versions of the Decred wallet, auth management and epoch processing being added.
-- The Latam marketing and events proposal from @elian was approved, making it the first regional marketing effort to be approved with a budget that is independent of the main marketing effort.
-- @matheusd dropped a huge series of blog post essays laying out a plan for ticket splitting on Lightning Network, the advantages of doing it this way (low minimum amount to participate, better user experience), and the consensus changes required to facilitate doing it well.
+- v1.5.0的最终测试版本2和3已经发布，并且两个版本都已确定存在问题（RC3中的问题影响到Windows中的Decrediton）。感谢所有通过下载这些发行候选版本并报告他们遇到BUG的贡献者。
+- Decred DEX基础设施项目本月取得了重大进展，增加了Decred钱包的初始版本，身份验证管理和Epoch时间处理。
+- @elian的拉美营销和活动提案已获得批准，这是其批准的第一个区域性营销工作，其预算不占用主要营销预算。
+- @matheusd删除了大量博客文章，列出了在Lightning Network上进行票务拆分的计划，以这种方式进行分票的优势（最低参与量低，更好的用户体验），需要进行共识的变更以促进其顺利实施。
 
-## Development
+## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): Performance enhancements and code cleanup.
+[dcrd](https://github.com/decred/dcrd): 性能增强和代码清除。
 
-While v1.5 is awaiting its final release, development is moving towards the [1.6.0](https://github.com/decred/dcrd/milestone/24) milestone.
+在等待v1.5最终版本的同时，开发正在朝着[1.6.0](https://github.com/decred/dcrd/milestone/24)迈进。
 
-[`regentemplate`](https://github.com/decred/dcrd/pull/1979) command introduced to force the generation of the latest template with any new transactions.
+[`regentemplate`](https://github.com/decred/dcrd/pull/1979) 引入命令以强制使用新事务生成最新模板。
 
-Mempool changed to [evict](https://github.com/decred/dcrd/pull/1982) any remaining orphan transactions when the peer they were sent from disconnects and to [modify](https://github.com/decred/dcrd/pull/1984) orphan tx policy in accordance with recent improvements.
+对内存池进行了更改，以在从对等方断开连接时[退出](https://github.com/decred/dcrd/pull/1982)所有剩余的孤立进程，并根据最近的改进来修改 [孤立](https://github.com/decred/dcrd/pull/1984)的TX策略。
 
-New chain parameter [added](https://github.com/decred/dcrd/pull/2000) for specifying minimum total known work of the chain. The code checking whether the chain is current is updated to use total work instead of height of the final checkpoint. This method does not rely on trusted known checkpoints, is valid regardless of the order that blocks are received and processed, and, in general, is a more objective value that can't be invalidated by a chain reorg.
+[添加](https://github.com/decred/dcrd/pull/2000)了新的区块链参数，用于指定区块链的最小已知总工作量。检查链条是否最新的代码已更新为使用总工作量而不是最终检查点的高度。此方法不依赖于受信任的已知检查点，无论区块的接收和处理顺序如何，该方法都是有效的，并且通常是链重组无法使之无效的更客观的值。
 
-`lru` package was [extended](https://github.com/decred/dcrd/pull/2002) to allow insertion and retrieval of key-value pairs (in addition to just values).
+`lru` [扩展](https://github.com/decred/dcrd/pull/2002)了程序包，以允许插入和检索键值对（除了值之外）。
 
-Block ancestor traversal significantly optimized by introducing a [deterministic skip list](https://github.com/decred/dcrd/pull/2010).
+[dcrwallet](https://github.com/decred/dcrwallet): Bug修复，代码清除。
 
-[dcrwallet](https://github.com/decred/dcrwallet): Bug fixes, new methods, code cleanup.
+添加了用于检测[重用地址](https://github.com/decred/dcrwallet/pull/1616)及其相应出站的方法。
 
-Method added to detect [reused addresses](https://github.com/decred/dcrwallet/pull/1616) and their corresponding outpoints.
+[Decrediton](https://github.com/decred/decrediton): 大量错误修复和UI调整，代码清除。
 
-[Decrediton](https://github.com/decred/decrediton): Numerous bug fixes and UI tweaks, code cleanup.
+首次初始化闪电网络钱包时，添加Toggle以[创建](https://github.com/decred/decrediton/pull/2310)特定于闪电网络的钱包帐户。这激励用户不要使用他们的大部分资金的默认钱包帐户，如果选择了自动开启功能，这可能会导致许多渠道自动打开。
 
-Toggle added to [create](https://github.com/decred/decrediton/pull/2310) LN-specific wallet account when first initializing an LN wallet. This incentivizes users to not use their default wallet account which is likely to have the majority of their funds, which could cause many channels to be automatically opened if the autopilot feature was selected.
+部署了新一批的[响应视图](https://github.com/decred/decrediton/pulls?q=is%3Apr+merged%3A2019-11-01..2019-11-30+responsive)。
 
-New batch of [responsive views](https://github.com/decred/decrediton/pulls?q=is%3Apr+merged%3A2019-11-01..2019-11-30+responsive) implemented.
+修复了在RC1和RC2测试期间发现的多个错误。
 
-Multiple bugs found during the testing of RC1 and RC2 were fixed.
+十一月总共[合并](https://github.com/decred/decrediton/pulls?q=is%3Apr+merged%3A2019-11-01..2019-11-30)了54个拉取请求。
 
-In total 54 pull requests were [merged](https://github.com/decred/decrediton/pulls?q=is%3Apr+merged%3A2019-11-01..2019-11-30) in November.
+[Politeia](https://github.com/decred/politeia): 付款信息已[添加](https://github.com/decred/politeia/pull/1051)到后端，使CMS可以完全恢复基于politeiad的发票信息。
 
-[Politeia](https://github.com/decred/politeia): Payment information has been [added](https://github.com/decred/politeia/pull/1051) to the backend, allowing the CMS to fully recover invoice information anchored on politeiad.
+现在支持在[Windows](https://github.com/decred/politeia/pull/1046)上构建politeiavoter 。
 
-Building politeiavoter on [Windows](https://github.com/decred/politeia/pull/1046) is now supported.
+CMS的前端重新设计正在进行中。
 
-Frontend redesign for CMS is well underway.
+[RFP流程](https://github.com/decred/politeia/pull/1054)流程的实施已开始。
 
-Implementation of [RFP process](https://github.com/decred/politeia/pull/1054) has started.
+[dcrstakepool](https://github.com/decred/dcrstakepool): 开始工作对服务器具有私钥的投票权的选票[进行](https://github.com/decred/dcrstakepool/pull/571)任意投票。工作继续实施[每张选票](https://github.com/decred/dcrstakepool/issues/568)认证和选票购买，以删除用户帐户，投票地址重用和电子邮件要求。
 
-[dcrstakepool](https://github.com/decred/dcrstakepool): Work started to [enable](https://github.com/decred/dcrstakepool/pull/571) arbitrarily voting on tickets whose voting rights the server has the private key for. Work continues to implement [per-ticket](https://github.com/decred/dcrstakepool/issues/568) authentication and ticket purchasing to remove user accounts, voting address reuse and the email requirement.
+[dcrpool](https://github.com/decred/dcrpool): 正在增加广泛的[测试范围](https://github.com/decred/dcrpool/pull/141)。
 
-[dcrpool](https://github.com/decred/dcrpool): Work in progress to add extensive [test coverage](https://github.com/decred/dcrpool/pull/141).
+[dcrlnd](https://github.com/decred/dcrlnd): BUG修复，改进测试和构建基础结构。Dockerfile 已[更新](https://github.com/decred/dcrlnd/pull/56)为dcrlnd。
 
-[dcrlnd](https://github.com/decred/dcrlnd): Bug fixes, improved tests and build infrastructure. Dockerfile [updated](https://github.com/decred/dcrlnd/pull/56) for dcrlnd.
+[cspp](https://github.com/decred/cspp): 加了RPC超时，改进了客户端-服务器错误处理，允许使用LetsEncrypt登台服务器。
 
-[cspp](https://github.com/decred/cspp): increased RPC timeout, improved client-server error handling, allowed use of LetsEncrypt staging server.
+[dcrdex](https://github.com/decred/dcrdex): 进度很快！11月实施的新组件包括：[身份验证管理器](https://github.com/decred/dcrdex/pull/50), [帐户注册商](https://github.com/decred/dcrdex/pull/58), initial version of [Decred钱包](https://github.com/decred/dcrdex/pull/49)客户端的初始版本，客户端[websocket](https://github.com/decred/dcrdex/pull/55)连接性，[初始时期处理](https://github.com/decred/dcrdex/pull/66)和匹配存储以及过渡。识别未用资金的方式已从txid / vout更改为更抽象的[coin ID](https://github.com/decred/dcrdex/issues/75)，以在将来可能支持基于非UTXO的资产。
 
-[dcrdex](https://github.com/decred/dcrdex): Development is hot! New components implemented in November: [auth manager](https://github.com/decred/dcrdex/pull/50), [account registrar](https://github.com/decred/dcrdex/pull/58), initial version of [Decred wallet](https://github.com/decred/dcrdex/pull/49) client, client [websocket](https://github.com/decred/dcrdex/pull/55) connectivity, and initial [epoch processing](https://github.com/decred/dcrdex/pull/66) and match storage, and a transition. The way to identify unspent funds changed from txid/vout to more abstract [coin ID](https://github.com/decred/dcrdex/issues/75) to possibly support non-UTXO-based assets in the future.
+[dcrandroid](https://github.com/decred/dcrandroid):继续增加[多钱包支持](https://github.com/decred/dcrandroid/pull/401)。
 
-[dcrandroid](https://github.com/decred/dcrandroid): Work continues to add [multi-wallet support](https://github.com/decred/dcrandroid/pull/401).
+[dcrios](https://github.com/raedahgroup/dcrios): 重新设计，UI调整，BUG修复。
 
-[dcrios](https://github.com/raedahgroup/dcrios): Redesign, UI tweaks, bug fixes.
+导航菜单重新[设计](https://github.com/raedahgroup/dcrios/pull/524)。当应用程序处于后台模式时，添加了通知以显示[同步状态](https://github.com/raedahgroup/dcrios/pull/529)。
 
-Nav menu [redesigned](https://github.com/raedahgroup/dcrios/pull/524). Notification added to show [sync status](https://github.com/raedahgroup/dcrios/pull/529) when the app is in background mode.
+继续对该书进行[修改](https://github.com/raedahgroup/dcrios/issues/506)，[钱包还原](https://github.com/raedahgroup/dcrios/pull/527)和[验证种子](https://github.com/raedahgroup/dcrios/pull/530)视图的工作。
 
-Work continues on overhauled [overview](https://github.com/raedahgroup/dcrios/issues/506), [wallet restore](https://github.com/raedahgroup/dcrios/pull/527) and [verify seed](https://github.com/raedahgroup/dcrios/pull/530) views.
+[dcrdata](https://github.com/decred/dcrdata): v5.2现已发布！
 
-[dcrdata](https://github.com/decred/dcrdata): v5.2 is out now!
+前端亮点：更新的标题和块页面，改进的图表，用于将文本复制到剪贴板上的地址和哈希值的按钮。后端：添加dcrd v1.5支持，删除了对PostgreSQL的SQLite支持，Insight API修复，性能改进。查看[发行说明](https://github.com/decred/dcrdata/releases/tag/v5.2.0)以查看所有更改。该版本在4个月内由9位贡献者进行了83次提交。祝贺dcrdata团队！
 
-Frontend highlights: updated header and blocks page, improved charts, button to copy text to clipboard on addresses and hashes. On the backend: dcrd v1.5 support, dropped SQLite support to focus on PostgreSQL, Insight API fixes, performance improvements. Check the [release notes](https://github.com/decred/dcrdata/releases/tag/v5.2.0) to see all changes. The release took 83 commits by 9 contributors over 4 months. Congrats to the dcrdata team!
+将添加[CSPP匿名混合](https://github.com/decred/dcrdata/pull/1610)（实时显示在[block](https://alpha.dcrdata.org/block/403513)页面的alpha上），计算攻击成本的工作正在进行中。
 
-Work is in progress to show [CSPP mixes](https://github.com/decred/dcrdata/pull/1610) (live on alpha on [block](https://alpha.dcrdata.org/block/403513) page) and calculate [attack cost](https://github.com/decred/dcrdata/pull/1617).
+[docs](https://github.com/decred/dcrdocs): 新的[隐私指南](https://github.com/decred/dcrdocs/pull/1029)，[治理概述](https://github.com/decred/dcrdocs/pull/1030)的检修，新的[开发者文档](https://github.com/decred/dcrdocs/pull/1017)的链接，次要更新和清理。
 
-[docs](https://github.com/decred/dcrdocs): New [privacy guide](https://github.com/decred/dcrdocs/pull/1029), overhaul of [governance overview](https://github.com/decred/dcrdocs/pull/1030), links to new [devdocs](https://github.com/decred/dcrdocs/pull/1017), minor updates and cleanup.
+[decred.org](https://github.com/decred/dcrweb): 较小的更新和清理。
 
-[decred.org](https://github.com/decred/dcrweb): Minor updates and cleanup.
+[删除了](https://github.com/decred/dcrweb/pull/745) Cobo 托管钱包，认为不应推广其资产托管的解决方案。交易页面已[更新](https://github.com/decred/dcrweb/pull/746) （Nanex，OOOBTC已删除）。
 
-Cobo custodial wallet was [removed](https://github.com/decred/dcrweb/pull/745), with the view that custodial solutions should not be promoted. The Exchanges page was [updated](https://github.com/decred/dcrweb/pull/746) (Nanex, OOOBTC removed).
+其它:
 
-Other:
+- @matheusd [概述](https://blog.decred.org/2019/11/11/LN-Multi-Owner-Tickets/)了在Lightning Network上实施多所有者票证（“票据拆分”）的方法。正确地进行操作需要一些渐进的改进和共识中的一些新操作码。该博客是技术性很强的文章，但是链接到4个更深的[帖子](https://www.reddit.com/r/decred/comments/duzv3m/ln_multiowner_tickets_blog_post_from_matheus/)，这些链接对我们强大的社区成员来说是最重要的。Reddit的讨论对帖子进行了补充，并解决了@bee提出的一系列问题（tl; dr：这不仅仅是对共享门票的史诗性投资，因为大多数建议的更改本身都是有用的改进）。
+- @karamble [发布了](https://twitter.com/karamblez/status/1197676296240861186)带有EPaper显示屏的Raspberry Pi Decred [仪表板](https://github.com/karamble/dcraspaper) 。
+- 开发者正在使用Go 1.13和@jrick的发布工具（在[这里](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$157308464734953aRCth:decred.org)讨论）[测试](https://github.com/jrick/release)可复制的内部版本。希望有更多的人来验证构建，为您提供帮助。
 
-- @matheusd [outlined](https://blog.decred.org/2019/11/11/LN-Multi-Owner-Tickets/) a path to implement multi-owner tickets ("ticket splitting") on Lightning Network. Doing it right requires several incremental improvements and a few new opcodes in the consensus. The blog is pretty technical, but links to 4 even deeper posts for the strongest of us. A Reddit [discussion](https://www.reddit.com/r/decred/comments/duzv3m/ln_multiowner_tickets_blog_post_from_matheus/) complements the posts and addresses a bunch of concerns from @bee (tl;dr: it is not an epic investment just for the shared tickets because most of the proposed changes are useful improvements on their own).
-- @karamble [released](https://twitter.com/karamblez/status/1197676296240861186) a Decred [dashboard](https://github.com/karamble/dcraspaper) for Raspberry Pi with an EPaper display.
-- Developers are testing reproducible builds with Go 1.13 and @jrick's [release](https://github.com/jrick/release) tool (discussed [here](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$157308464734953aRCth:decred.org)). Help is appreciated to have more people verify the builds.
+11月的开发活动统计：分布在12个存储库中的173个活动PR，342个主提交，添加72K和删除19K的行。每个存储库的贡献来自1-7个开发者。
 
-Dev activity stats for November: 173 active PRs, 342 master commits, 72K added and 19K deleted lines spread across 12 repositories. Contributions came from 1-7 developers per repository.
+## 人员
 
-## People
+欢迎新到来的首次贡献者，他们的代码已合并到主库中：zeoio ([dcrdex](https://github.com/decred/dcrdex/commits?author=zeoio)), githubsands ([dcrlnd](https://github.com/decred/dcrlnd/commits?author=githubsands)), eharris128 ([dcrweb](https://github.com/decred/dcrweb/commits?author=eharris128))。
 
-Welcome to new first time contributors with code merged to master: zeoio ([dcrdex](https://github.com/decred/dcrdex/commits?author=zeoio)), githubsands ([dcrlnd](https://github.com/decred/dcrlnd/commits?author=githubsands)), eharris128 ([dcrweb](https://github.com/decred/dcrweb/commits?author=eharris128)).
-
-Two new contributors missed by our detection earlier: neddoz ([dcrios](https://github.com/raedahgroup/dcrios/commits?author=neddoz) since Jun) and quacklabs ([dcrios](https://github.com/raedahgroup/dcrios/commits?author=quacklabs) since Sep). Welcome aboard!
+我们检测早期遗漏的两个新贡献者：neddoz（[dcrios](https://github.com/raedahgroup/dcrios/commits?author=neddoz) （自6月）和quacklabs [dcrios](https://github.com/raedahgroup/dcrios/commits?author=quacklabs)自9月）。欢迎上车！
 
 Community stats:
 
