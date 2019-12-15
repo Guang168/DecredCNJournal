@@ -1,6 +1,6 @@
 # Decred Journal – November 2019
 
-![abstract art](../img/journal-201911-384.png)
+![abstract art](img/journal-201911-384.png)
 
 _Image: Powermove by @saender_
 
