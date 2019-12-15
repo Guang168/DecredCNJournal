@@ -1,10 +1,10 @@
-# Decred月报 - 2019年10月
+# Decred月报 - 2019年11月
 
 ![abstract art](img/journal-201911-384.png)
 
 _图片: Powermove by @saender
 
-11月的主要新闻：
+11月的主要内容：
 
 - v1.5.0的最终测试版本2和3已经发布，并且两个版本都已确定存在问题（RC3中的问题影响到Windows中的Decrediton）。感谢所有通过下载这些发行候选版本并报告他们遇到BUG的贡献者。
 - Decred DEX基础设施项目本月取得了重大进展，增加了Decred钱包的初始版本，身份验证管理和Epoch时间处理。
@@ -91,64 +91,64 @@ CMS的前端重新设计正在进行中。
 
 我们检测早期遗漏的两个新贡献者：neddoz（[dcrios](https://github.com/raedahgroup/dcrios/commits?author=neddoz) （自6月）和quacklabs [dcrios](https://github.com/raedahgroup/dcrios/commits?author=quacklabs)自9月）。欢迎上车！
 
-Community stats:
+社区统计：
 
-- Twitter followers: 40,641 (+9)
-- Reddit subscribers: 9,703 (+47)
-- Matrix users: 474 (+18)
-- Slack users: 6,872 (+14)
-- Discord users: 2,592 (+40), verified to post: 379 (+21)
-- Telegram users: 2,903 (-63)
-- YouTube subscribers: 3,920 (+60)
-- Facebook followers: 3,307 (+11), likes: 3,027 (+8)
-- LinkedIn followers: 662 (+24)
-- GitHub dcrd stars: 520 (+3), forks: 1,400 (+0)
+- Twitter 粉丝: 40,641 (+9)
+- Reddit 订阅: 9,703 (+47)
+- Matrix 用户: 474 (+18)
+- Slack 用户: 6,872 (+14)
+- Discord 用户: 2,592 (+40), 已验证发布: 379 (+21)
+- Telegram 用户: 2,903 (-63)
+- YouTube 订阅: 3,920 (+60)
+- Facebook 粉丝: 3,307 (+11), 喜欢: 3,027 (+8)
+- LinkedIn 粉丝: 662 (+24)
+- GitHub dcrd 星星: 520 (+3), 分叉: 1,400 (+0)
 
-## Governance
+## 治理
 
-In November the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 14,096 DCR and spent 17,889 DCR. Using November's daily average DCR/USD rate of $19.97, this is $281K received and $357K spent. At October's average daily rate of $15.59, the USD figure billed for work completed in that month is $279K. As of Dec 2, Treasury balance is 640,201 DCR ($12.4 million USD at $19.44).
+十一月份，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了14,096 DCR，并花费了17,889 DCR。按照11月份的每日DCR / USD汇率$ 19.97计算，这是收到的$ 281K和花费的$ 357K。以10月份的每日平均汇率$ 15.59计算，该月完成工作的美元费用为$ 279K。截至12月2日，库存余额为640201 DCR（12.40百万美元，$ 19.44）。
 
-There were two new proposals submitted, one for $650 for a DCR version of Point of Sale app [PlusBit](https://proposals.decred.org/proposals/e559188b0febcab29c49c1f7dd5c66645e31be00894a150ef7d0b8ceb6486605), and one by @buck54321 requesting $30,000 for continued development of [TinyDecred](https://proposals.decred.org/proposals/ad0f9688b3467734e2581604914b2cc32c6eb7991dff460eff41d21f66d88451). Voting started for both proposals on Dec 3.
+提交了两份新提案，一份是DCR版本的Point of Sale应用程序[PlusBit](https://proposals.decred.org/proposals/e559188b0febcab29c49c1f7dd5c66645e31be00894a150ef7d0b8ceb6486605)，售价为650美元，另一份是@ buck54321，要求30,000美元来继续开发[TinyDecred](https://proposals.decred.org/proposals/ad0f9688b3467734e2581604914b2cc32c6eb7991dff460eff41d21f66d88451)。对这两个提案的投票于12月3日开始。
 
-The [proposal](https://proposals.decred.org/proposals/5af0ce1cd325be6be39109c2750f34095c4e8feeea962ede058a1e4f4a61473e) for Latam Marketing and Events by @elian was approved with 75% Yes votes and 29% participation, and the research and education [proposal](https://proposals.decred.org/proposals/65bde4146b845e7e839d6916d4d8f642bc39c250df5379c2f1e26c4ab778ec1a) by @ammarooni was approved with 80% Yes votes and 29% participation. The Dota2 prize [proposal](https://proposals.decred.org/proposals/5a1bd4116565d107c1672799ed16cae9e92ec633c6e39d9b463b8218e66ff759) was rejected with 5% approval and 29% participation.
+拉丁美洲市场营销[提案](https://proposals.decred.org/proposals/5af0ce1cd325be6be39109c2750f34095c4e8feeea962ede058a1e4f4a61473e)由@elian提出，已获得75％赞成票，29％的参与获得批准，研究和教育的提案通过@ammarooni用80％赞成票，29％的参与获得批准。Dota2奖金提案被拒绝，获得5％的批准和29％的参与。
 
-@richardred produced a [report](https://www.blockcommons.red/publication/mm-tracking-1/) into the DCR order books from mid-October to mid-November, as i2 Trading started making DCR markets in line with their approved [proposal](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9). The additional liquidity is available, although according to the way it has been measured over this timeframe (where price volatility created difficult conditions), it was probably not available with 90% uptime across all exchanges and pairs.
+@richardred 在10月中旬至11月中旬向DCR订单簿中生成了一份[报告](https://www.blockcommons.red/publication/mm-tracking-1/)，因为i2 Trading开始使DCR市场符合其批准[提案](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9)。可以增加额外的流动性，尽管根据在此时间范围内测量的方式（价格波动造成困难的条件），可能无法在所有交易所和货币对中使用90％的正常运行时间。
 
-For more in-depth coverage of Politeia activity see Politeia Digest [issue 25](https://blockcommons.red/politeia-digest/issue025/).
+有关Politeia活动的更深入报道，请参见Politeia Digest [第25期](https://blockcommons.red/politeia-digest/issue025/)。
 
-## Network
+## 网络
 
-Hashrate: November's hashrate opened at ~442 Ph/s and closed ~381 Ph/s, bottoming at 322 Ph/s and peaking at 571 Ph/s throughout the month. Pool hashrate distribution as of Dec 4: Poolin 35%, UUPool 32%, F2Pool 11.6%, lab.antpool.com 6.8%, BTC.com 2.8%, Luxor 2.3%, Coinmine 0.11%, BeePool 0.10%, suprnova 0.01% and others 9.45% per [dcrstats.com](https://dcrstats.com/pow). Pool distribution numbers are approximate and cannot be accurately determined.
+全网算力：11月份的哈希率以约442 Ph/s的速度开始，而以约381 Ph/s的速度结束，在整个月触底达到322 Ph/s的谷值。截至12月4日的池哈希率分布：Poolin 35％，UUPool 32％，F2Pool 11.6％，lab.antpool.com 6.8％，BTC.com 2.8％，Luxor 2.3％，Coinmine 0.11％，BeePool 0.10％，suprnova 0.01％和其他[dcrstats.com](https://dcrstats.com/pow)的 9.45％。池分配数是近似值，无法准确确定。
 
-Staking: 30-day average ticket price was 134.8 DCR (+2.5) per dcrstats.com. The price varied between 123.9-150.4 DCR. Locked amount was 5.29-5.49 million DCR, which corresponded to 49.50-51.17% of the available supply.
+Staking: 每个dcrstats.com的30天平均票价为134.8 DCR（+2.5）。价格在123.9-150.4 DCR之间变化。锁定金额为5.29-54.9百万DCR，相当于可用供应量的49.50-51.17％。
 
-The ticket price made a new high since the sdiff algorithm change, while the 51.17% is the new all-time high of [stake participation](https://explorer.dcrdata.org/charts?chart=stake-participation).
+自从sdiff算法更改以来，门票价格创下了新高，而51.17％是新的历史[最高参与率](https://explorer.dcrdata.org/charts?chart=stake-participation)。
 
-Another spike of missed votes happened on [Nov 29](https://explorer.dcrdata.org/charts?chart=missed-votes&zoom=k0x6wa44-k3ucpasw&bin=window&axis=time).
+[11月29日](https://explorer.dcrdata.org/charts?chart=missed-votes&zoom=k0x6wa44-k3ucpasw&bin=window&axis=time)又发生了一次投票失败的事件。
 
-Nodes: Throughout [November](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1572566400000&to=1575158400000) there was an average of 189 public listening nodes and 398 normal nodes per dcr.farm. Version distribution: 73% use dcrd v1.4, 9.6% are dcrd v1.5 dev builds and RCs, 2% use dcrd v1.6 dev builds and 8.8% are dcrwallet v1.4.
+节点：整个[11月](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1572566400000&to=1575158400000)，每个dcr.farm平均有189个公共侦听节点和398个普通节点。版本分发：73％使用dcrd v1.4，9.6％使用dcrd v1.5开发版本和RC，2％使用dcrd v1.6开发版本，而8.8％使用dcrwallet v1.4。
 
-As of Dec 4, around 24% of PoS voters are signalling that they have upgraded and are ready to vote for the consensus rule change, per [dcrdata](https://explorer.dcrdata.org/agendas).
+截至12月4日，根据[dcrdata](https://explorer.dcrdata.org/agendas)，大约有24％的PoS选民表示他们已经升级并准备投票赞成共识规则更改。
 
-On Nov 24 block [400,000](https://www.reddit.com/r/decred/comments/e0yvyb/block_400000/) was mined and approved by voters.
+11月24日，有[400,000](https://www.reddit.com/r/decred/comments/e0yvyb/block_400000/)个区块被利益相关者挖出并审核。
 
-## Integrations
+## 整合
 
-Bittrex [added](https://twitter.com/BittrexExchange/status/1194330471385186316) a DCR/USD [pair](https://global.bittrex.com/Market/Index?MarketName=USD-DCR) to their exchange. @jz provided some [context](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$157358651139766wUsaK:decred.org) and explained that i2trading will be providing liquidity on this market.
+Bittrex 在其交易所中[添加](https://twitter.com/BittrexExchange/status/1194330471385186316)了DCR / USD [交易对](https://global.bittrex.com/Market/Index?MarketName=USD-DCR)。@jz提供了一些[背景信息](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$157358651139766wUsaK:decred.org)，并解释说i2trading将为该市场提供流动性。
 
-Abra wallet/exchange [added](https://support.abra.com/hc/en-us/articles/360001777271-We-ve-added-new-cryptocurrencies-) Decred support for both U.S. and international customers. According to [this page](https://www.abra.com/cryptocurrency/investing-guide/) Abra does not hold custody for several largest assets, but DCR is not one of them, and is therefore custodied.
+Abra钱包/交易所[增加](https://support.abra.com/hc/en-us/articles/360001777271-We-ve-added-new-cryptocurrencies-)了 Decred对美国和国际客户的支持。根据[此页面](https://www.abra.com/cryptocurrency/investing-guide/)， Abra没有为几项最大的资产保管，但DCR并不是其中的一员，因此被保管。
 
-Warning: the authors of Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+警告: Decred Journal的作者不了解上述任何服务的可信赖性。在将您的个人信息或资产信任给任何实体之前，请先进行自己的研究。
 
-## Outreach
+## 外联活动
 
-November featured Decred at a number of high profile events across the world. Many of the same team members from last year returned this year to Web Summit in Lisbon, Portugal, where Decred was the [only](https://twitter.com/NoahPierau/status/1192045467435188224) cryptocurrency project with significant physical presence this year. @moo31337 represented the crypto industry on a panel titled "Can You Trust Your Bank?", which can be viewed [here](https://vimeo.com/375884648). @Dominic [represented](https://twitter.com/wanbihou/status/1193218449721311233) Decred at the 2019 World Blockchain Conference in Jiaxing, China on November 8.
+11月在世界各地的许多知名活动中均以Decred为特色。去年的许多相同团队成员今年又回到了葡萄牙里斯本的Web Summit，Decred是今年[唯一](https://twitter.com/NoahPierau/status/1192045467435188224) 拥有大量活动的加密货币项目。@ moo31337在名为“您可以信任您的银行吗？”的面板上代表加密货币行业，可以在[这里](https://vimeo.com/375884648)查看。@Dominic [代表](https://twitter.com/wanbihou/status/1193218449721311233) Decred参加了11月8日在中国嘉兴举行的2019年世界区块链大会上。
 
-@Dustorf shared drafts of all new decred.org subpages in the #writers room, and after community input, everything has been submitted to EETER for final assembly, testing and publication.
+@Dustorf在#writers会议室中共享了所有新的decred.org子页面的草稿，在社区输入之后，所有内容都已提交给EETER，以进行最终组装，测试和发布。
 
-The Decred Assembly featured a [Deep Dive on v1.5 RC1](https://www.youtube.com/watch?v=gGQuY0kOt7g) with @davecgh, and episodes of Decred in Depth featuring [@liz_bagot on PR](https://soundcloud.com/decredindepth/ep-11-liz-bagot-pr-marketing) and [@akinsawyerr on Africa and Governance](https://soundcloud.com/decredindepth/ep-12-akin-sawyerr-dcr-africa-governance).
+Decred Assembly在v1.5 RC1上通过@davecgh进行了[Decred深度](https://www.youtube.com/watch?v=gGQuY0kOt7g)，在Decred in Depth中以PRICE的[@liz_bagot on PR](https://soundcloud.com/decredindepth/ep-11-liz-bagot-pr-marketing)和在[Africa and Governance](https://soundcloud.com/decredindepth/ep-12-akin-sawyerr-dcr-africa-governance)上的@akinsawyerr为特色。
 
-Ditto's November achievements include 9 pieces of media coverage:
+Ditto11月的成就包括9种媒体报道：
 
 - An op-ed for @jy-p in [Cointelegraph](https://cointelegraph.com/news/secrets-they-missed-at-devcon-what-its-really-like-in-a-working-dao) titled "Secrets They Missed at DevCon: What It's Really Like in a Working DAO".
 - [A podcast](https://podcasts.apple.com/us/podcast/base-layer-episode-086-jake-yocom-piatt-decred/id1445373535?i=1000457565007) with @jy-p on the Base Layer Podcast with David Nage.
@@ -159,7 +159,7 @@ Ditto's November achievements include 9 pieces of media coverage:
 - [An interview](https://messari.io/podcast/developer-funding-governance-and-the-evolution-of-decred-with-jake-yocom-piat) with @jy-p on Messari's Unqualified Opinions podcast about developer funding, governance, and Decred.
 - [A TV appearance](https://blocktv.com/watch/2019-10-30/5db9ab4487a7e-resolving-corporate-governance-in-cryptocurrency) on BlockTV about resolving corporate governance in cryptocurrency.
 
-Also:
+其它:
 
 - @liz\_bagot appeared on the Decred in Depth [podcast](https://podcasts.apple.com/us/podcast/liz-bagot-pr-marketing/id1466716734?i=1000455667566) to talk about Ditto's work with Decred.
 - Supported Decred's media presence at Web Summit. Secured an interview with BBC, and facilitated meetings with CoinDesk and Cointelegraph. We also created a briefing book of top-tier journalists for the Decred team to speak with and helped @moo31337 prep for his panel discussion in order to maximize their impact at the event.
@@ -170,9 +170,9 @@ Also:
 
 @bee wrote an overview of [marketing strategies](https://xaur.github.io/writings/posts/20191127-marketing-strategies.html) to explore. Some of the key topics are to improve reporting, use word "money", promote the actual use of DCR for tipping, donations and funding projects, pitch DCR to highly aligned communities and individuals as a way to transfer value, and boost social media presence. ([Reddit](https://www.reddit.com/r/decred/comments/e2lhwd/marketing_strategies/))
 
-## Events
+## 活动
 
-Attended:
+参加:
 
 - Nov 4-7 - [Web Summit](https://websummit.com/) - Lisbon, Portugal. Decred team ran a [stand](https://twitter.com/marco_peereboom/status/1191651269640888320) for 2 days. Very [few](https://twitter.com/NoahPierau/status/1192045467435188224) blockchain projects have secured speaking slots, likely due to the bear market. @moo31337 [talked](https://twitter.com/decredproject/status/1192469998175948801) on the stage with representatives of the finance industry on the topic "Can you really trust your bank?". (photos: [1](https://twitter.com/JamieHoldstock/status/1191760511878279168), [2](https://twitter.com/NoahPierau/status/1192056049764904960), [3](https://twitter.com/kakalordao/status/1192131145141555201), [4](https://twitter.com/marco_peereboom/status/1192990143822454784))
 - Nov 6 - [Decred Meetup](https://twitter.com/amxromero/status/1192241858816217089) - Medellín, Colombia. @elian and @victorarubin talked to around 40 people of age 20-50 who asked amazing questions about Politeia, Decred's plans for Latam, PoS attack vectors and smart contracts. ([report](https://github.com/decredcommunity/events/blob/master/reports/20191106-decred-meetup-medellin-colombia.md))
@@ -185,7 +185,7 @@ Attended:
 - Nov 21 - [Blockchain Conference](https://www.eventbrite.com.ar/e/conferencia-blockchain-tickets-81397410847) - Veracruz, Mexico. The event took place in the largest technology university in the city. @francov\_ and @luisantoniocrag introduced blockchains, Bitcoin and Decred to students and challenged fiat beliefs of a few teachers. ([report](https://github.com/decredcommunity/events/blob/master/reports/20191121-blockchain-and-decred-veracruz-mexico.md))
 - Nov 30 - [Decred Meetup](https://twitter.com/RodgersJabz/status/1194309441774063617) - Kampala, Uganda. @jabz's team introduced the audience of 53 to Decred and its features and gave a practical session showing how to use the wallet. ([report](https://github.com/decredcommunity/events/blob/master/reports/20191130-decred-meetup-kampala-uganda.md)).
 
-Upcoming:
+即将到来:
 
 - Dec 12-13 - Labitconf - Montevideo, Uruguay. Decred team members will be present at the biggest cryptocurrency and blockchain conference in Latin America.
 - Jan 7 - [Digital Money Forum](https://thedigitalmoneyforum.com/) - Las Vegas, USA. The event is part of CES 2020. @akinsawyerr will talk on a [session](https://thedigitalmoneyforum.com/Sessions/the-problem-with-old-money-a-great-debate/) about future economy.
@@ -196,7 +196,7 @@ Upcoming:
 
 Full report for October's Decred meetup in Bogota, Colombia, has been [added](https://github.com/decredcommunity/events/blob/master/reports/20191029-decred-meetup-bogota-colombia.md) to the [events repo](https://github.com/decredcommunity/events). There are 37 reports in total. Thanks to everyone for submitting!
 
-## Media
+## 媒体
 
 Selected articles:
 
@@ -216,11 +216,11 @@ Selected articles:
   - Decred X / Part VIII - Silver Linings Field Manual B ([medium](https://medium.com/@imagnusholdings/decred-x-part-viii-silver-linings-field-manual-b-d38cb0e6e17c))
   - Decred X / Part IX - Sub Economics ([medium](https://medium.com/@imagnusholdings/decred-x-part-ix-sub-economics-e3b0a5e948e1))
 
-Translations:
+翻译:
 
-- Decred Journal November 2019 was translated to Arabic (@arij), Chinese (@Dominic and co), Polish (@kozel) and Spanish (@francov\_ and @luisantoniocrag). Thank you for keeping the world updated!
+- Decred Journal November 2019 was translated to Arabic (@arij), Chinese (@Dominic), Polish (@kozel) and Spanish (@francov\_ and @luisantoniocrag). Thank you for keeping the world updated!
 
-Videos:
+视频:
 
 - Building a Store-of-Value with Decred's Jake Yocom-Piatt on Messari's Unqualified Opinions ([player.fm](https://player.fm/series/messaris-unqualified-opinions/building-a-store-of-value-with-decreds-jake-yocom-piatt), [apple](https://podcasts.apple.com/us/podcast/building-a-store-of-value-with-decreds-jake-yocom-piatt/id1455666979?i=1000457903445)) - live stream viewers ([youtube](https://www.youtube.com/watch?v=LMJp8rKLkkM)) were treated to an angelic performance by @jy-p, answering interesting questions about Decred's history and approach.
 - Decred Assembly Deep Dive with @davecgh ([youtube](https://www.youtube.com/watch?v=gGQuY0kOt7g)) - in depth discussion of consensus rules and v1.5.0 RC1.
@@ -229,7 +229,7 @@ Videos:
 - Why Decred is Overdue for a Coinbase Listing by @Exitus ([youtube](https://www.youtube.com/watch?v=Og3kGX_fYho), discussed on [reddit](https://www.reddit.com/r/decred/comments/dyl6vr/why_decred_is_overdue_for_a_coinbase_listing/))
 - Can You Really Trust Your Bank? ([vimeo](https://vimeo.com/375884648)) - @moo31337 features in a panel at Web Summit. @Exitus made a couple of hilarious meme cuts ([first](https://www.youtube.com/watch?v=0Bq48X3cO_s), [second](https://twitter.com/coveryfire7777/status/1199866746192171010))
 
-Audio:
+音频:
 
 - Base Layer Episode 086 - Jake Yocom Piatt (Decred) ([podbean](https://www.podbean.com/media/share/pb-9ah38-c88678), [spotify](https://open.spotify.com/episode/4vMtWg6lejqR9pfKkmsgXc))
 - Market Disruptors: Developing Privacy on the Blockchain with Jake Yocom-Piatt ([anchor.fm](https://anchor.fm/markmoss/episodes/Developing-Privacy-On-The-Blockchain-With-Jake-Yocom-e934qv), [stitcher](https://www.stitcher.com/podcast/anchor-podcasts/market-disruptors/e/65439848))
