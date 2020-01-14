@@ -87,7 +87,7 @@ UI的其它改进包括显示进度条和[重新扫描](https://github.com/decre
 
 ## 人员
 
-欢迎使用新的首次贡献者，其代码已合并到主版本：vdg0 ([tinydecred](https://github.com/decred/tinydecred/commits?author=vdg0))。
+欢迎新的贡献者，其代码已合并到主版本：vdg0 ([tinydecred](https://github.com/decred/tinydecred/commits?author=vdg0))。
 
 祝贺[decred.org](https://decred.org/contributors/)上列出的新贡献者：
 
