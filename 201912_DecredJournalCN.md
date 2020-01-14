@@ -108,7 +108,7 @@ UI的其它改进包括显示进度条和[重新扫描](https://github.com/decre
 
 ## 治理
 
-十二月，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了14,406 DCR，并花费了10,106 DCR。使用12月份的每日DCR/USD每日汇率$18.32，则得出的收入为$264K，支出为$185K。以11月的平均每日汇率$19.97计算，当月完成工作的美元费用为$202K。截至1月1日，库存余额为643,836 DCR（1,090万美元，16.87美元）。
+十二月，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了14,406 DCR，并花费了10,106 DCR。使用12月份的每日DCR/USD每日汇率$18.32计算，得出的收入为$264K，支出为$185K。以11月的平均每日汇率$19.97计算，当月完成工作的美元费用为$202K。截至1月1日，库存余额为643,836 DCR（1,090万美元，16.87美元）。
 
 对于Politeia来说，12月是一个非常安静的月份，没有提交新的提案。11月的两个提案在12月进行了投票：
 
