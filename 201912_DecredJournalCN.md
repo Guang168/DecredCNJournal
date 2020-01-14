@@ -318,7 +318,7 @@ Algorand中继节点投票接受了对他们从Algorand基金会获得的代币�
 
 ## 中文社区
 
-* [社区web](https://blog.dcrclub.org/)
+* [社区网址](https://blog.dcrclub.org/)
 * [微博](https://www.weibo.com/DecredProject)
 * [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
 * [中文电报群](https://t.me/decred_cn)
