@@ -40,7 +40,7 @@ txsizes软件包已[导出](https://github.com/decred/dcrwallet/pull/1573)，以
 
 [Decrediton](https://github.com/decred/decrediton): 大量Bug得到解决，包括[Trezor钱包](https://github.com/decred/decrediton/pull/2362)中的Bug，如果Trezor钱包的非dcrwallet发件人收到资金且从未正确设置Sequence字段，则可能触发该Bug。
 
-[Politeia](https://github.com/decred/politeia):12月Politeia开发的主要重点是解决一个问题，即[状态更改](https://github.com/decred/politeia/pull/1073)签名未保存，而另一个问题是[开始投票](https://github.com/decred/politeia/pull/1088)签名仅是提案令牌的签名，应该是整个投票结构的签名（这也是包括投票参数和选项）。这些问题对用户没有影响。这些修补程序不向后兼容，因此需要对元数据进行版本控制。由于无论如何都需要对开始投票元数据进行版本控制，因此第二个修订还添加了一些更改，这些更改将使支持[RFP提案](https://github.com/decred/politeia/issues/966)更加容易。 
+[Politeia](https://github.com/decred/politeia):12月Politeia开发的主要重点是解决一个问题，即[状态更改](https://github.com/decred/politeia/pull/1073)签名未保存，而另一个问题是[开始投票](https://github.com/decred/politeia/pull/1088)签名仅是提案令牌的签名，应该是整个投票结构的签名（包括投票参数和选项）。这些问题对用户没有影响。这些修补程序不向后兼容，因此需要对元数据进行版本控制。由于无论如何都需要对开始投票元数据进行版本控制，因此第二个修订还添加了一些更改，这些更改将使支持[RFP提案](https://github.com/decred/politeia/issues/966)更加容易。 
 
 支持CMS的后端工作仍在继续，CMS UI的重新设计[正在进行中](https://github.com/decred/politeiagui/pull/1605)。
 
