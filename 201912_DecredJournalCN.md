@@ -50,17 +50,17 @@ txsizes软件包已[导出](https://github.com/decred/dcrwallet/pull/1573)，以
 
 [修改](https://github.com/decred/dcrlnd/pull/62)了端口选择，以使集成测试更加可靠。Docker构建已[添加](https://github.com/decred/dcrlnd/pull/67)到Github操作中。删除了[decred 前缀](https://github.com/decred/dcrlnd/pull/68)。继续进行[Docker示例](https://github.com/decred/dcrlnd/pull/66)的工作，以实现运行LN集群所需的全部自动化simnet环境。
 
-[dcrdex](https://github.com/decred/dcrdex): 实施的新组件包括[BTC交换钱包](https://github.com/decred/dcrdex/pull/72)， [用户订单簿](https://github.com/decred/dcrdex/pull/79)后端以及市场经理，订单路由和书路由器之间的进一步[整合](https://github.com/decred/dcrdex/pull/85)。
+[dcrdex](https://github.com/decred/dcrdex): 实施的新组件包括[BTC交易钱包](https://github.com/decred/dcrdex/pull/72)、 [用户订单列表](https://github.com/decred/dcrdex/pull/79)后端以及市场经理，订单路由之间的进一步[整合](https://github.com/decred/dcrdex/pull/85)。
 
 其他变化：[订单承诺](https://github.com/decred/dcrdex/pull/83)已添加到规格中，订单时间戳解析度从秒更改为[毫秒](https://github.com/decred/dcrdex/pull/96)，完成了对[硬币 ID](https://github.com/decred/dcrdex/pull/91)的切换，从而可以在将来支持更多资产。
 
 DEX的剩余任务是：
 
 - 服务器：将所有子系统结合在一起（正在审查中）和终端应用程序（正在进行中）的DEX管理器
-- 客户端：Web用户界面（正在审核），终端用户界面（正在草稿中），DCR钱包（正在审核中），图书管理员和永久性数据库（正在审核中）
+- 客户端：Web用户界面（正在审核），终端用户界面（正在草稿中），DCR钱包（正在审核中），管理员和永久性数据库（正在审核中）
 - 服务器和客户端的RPC服务器
 
-[dcrandroid](https://github.com/decred/dcrandroid): 经过数月的工作，对用户界面的[重新设计](https://github.com/decred/dcrandroid/pull/401)终于合并了。这一重大变化还包括多钱包支持（同时运行多个钱包）。剩余的Java代码和文件已转换为Kotlin。在后端，向dcrlibwallet [添加](https://github.com/raedahgroup/dcrlibwallet/pull/57)了多钱包支持，它使用dcrwallet的SPV模块的修改版在一个过程中同步所有钱包。
+[dcrandroid](https://github.com/decred/dcrandroid): 经过数月的工作，对用户界面的[重新设计](https://github.com/decred/dcrandroid/pull/401)终于合并了。这一重大变化还包括多钱包支持（同时运行多个钱包）。剩余的Java代码和文件已转换为Kotlin。在后端，向dcrlibwallet [添加](https://github.com/raedahgroup/dcrlibwallet/pull/57)了多钱包支持。
 
 UI的其它改进包括显示进度条和[重新扫描](https://github.com/decred/dcrandroid/pull/414)时的估计剩余时间，并且QR码扫描仪具有检测[付款金额](https://github.com/decred/dcrandroid/pull/411)的能力。
 
