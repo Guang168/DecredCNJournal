@@ -26,7 +26,7 @@ _图片: Icyhedron by @saender_
 
 ## 开发进展总结
 
-[dcrd](https://github.com/decred/dcrd): [简化](https://github.com/decred/dcrd/pull/2014)了检查点逻辑，从而为仅基于块头支持检查点铺平了道路。现在，调用者还可以[配置](https://github.com/decred/dcrd/pull/2013)检查点。从更大程度上，这些更改将有助于断开连接代码与下载逻辑的耦合，以及[对等](https://github.com/decred/dcrd/issues/1145)并行下载所必需的。
+[dcrd](https://github.com/decred/dcrd): [简化](https://github.com/decred/dcrd/pull/2014)了检查点逻辑，从而为仅基于块头支持检查点铺平了道路。现在，调用者还可以[配置](https://github.com/decred/dcrd/pull/2013)检查点。从更大程度上，这些更改将有助于断开连接代码与下载逻辑的耦合，是[对等](https://github.com/decred/dcrd/issues/1145)并行下载必需具备的。
 
 通过用两个整数替换条件堆栈，[优化了](https://github.com/decred/dcrd/pull/2011)txscript中条件执行逻辑的内存使用情况。
 
