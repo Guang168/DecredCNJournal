@@ -213,8 +213,6 @@ Ditto 12月的成就：:
 - Off the Chain - 加密如何弥合银行与非银行之间的鸿沟。@akinsawyerr对Anthony Pompliano进行了有关加密货币和非洲的广泛采访。 ([youtube](https://www.youtube.com/watch?v=NNg5G_EZxtU), [spotify](https://open.spotify.com/episode/1FGOnQb84YpGTZfwbEzdAg))
 - Cigars and Crypto 73 - @akinsawyerr谈论非洲和Decred。([anchor.fm](https://anchor.fm/investnoir3/episodes/Episode-73---AkinSawyerr-e9pnmu))
 
-Decred bullish sentiment hit a yearly high, according to [LunarCRUSH](https://twitter.com/LunarCRUSH/status/1208975910013026304).
-
 @ AGNFAB1发布了[更多](https://www.reddit.com/r/decred/comments/eevd8f/decred/)他的Decred艺术作品。先前的作品：[Christmas](https://twitter.com/AGNFAB1/status/1208044700634157056), [Banking on Decred](https://twitter.com/AGNFAB1/status/1199788339404181504), [Tacotime Trilogy](https://www.reddit.com/r/Monero/comments/dzh6vr/tacotime_trilogy/), [Decentralized Credits](https://www.reddit.com/r/decred/comments/dqocpf/decentralized_credits/).
 
 ## 社区讨论
