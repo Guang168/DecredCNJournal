@@ -8,9 +8,9 @@ _图片: Icyhedron by @saender_
 
 - decred v1.5正式版于12月16日发布，感谢所有测试新版本的人。
 
-- 已达到块头承诺共识规则更改投票的PoS和PoW升级阈值。新的共识规则更改投票将在1月16日左右开始。
+- 已达到"区块头承诺"共识规则更改投票的PoS和PoW升级阈值。新的共识规则更改投票将在1月16日左右开始。
 
-- Decred闪电网络已在主网上启用！查看@jholdstock的网络[浏览器](https://ln-map.jamieholdstock.com/)。到目前为止，@ matheusd赢得了11个开放频道。记住：闪电网络仍然被认为是实验性的，是危险的，请谨慎操作。
+- Decred闪电网络已在主网上启用！查看@jholdstock的网络[浏览器](https://ln-map.jamieholdstock.com/)。到目前为止，@ matheusd赢得了11个开放通道。记住：闪电网络仍然被认为是实验性的，请谨慎操作。
 
 - 利益相关者批准了3万美元的预算，用于资助TinyDecred（开源Python工具包）的持续开发。
 
