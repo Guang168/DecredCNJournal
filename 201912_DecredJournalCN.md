@@ -46,7 +46,7 @@ txsizes软件包已[导出](https://github.com/decred/dcrwallet/pull/1573)，以
 
 [dcrpool](https://github.com/decred/dcrpool): 添加了对处理[手动付款](https://github.com/decred/dcrpool/pull/140)请求的后端支持，该支持允许在离开池之前清除所有剩余余额。为大多数组件增加了广泛的[测试范围](https://github.com/decred/dcrpool/pull/141)。
 
-[dcrlnd](https://github.com/decred/dcrlnd): 主网上的Decred LN映射处于[活动](https://ln-map.jamieholdstock.com/)状态。请注意，尽管LN已集成到Decrediton中，但仍应将其视为alpha状态。如果要在主网上使用LN，建议从testnet上启动，确保谨慎对主网上测试，并且不要大量使用。
+[dcrlnd](https://github.com/decred/dcrlnd): 主网上的Decred LN映射处于[活动](https://ln-map.jamieholdstock.com/)状态。请注意，尽管LN已集成到Decrediton中，但仍应将其视为alpha状态。如果要在主网上使用LN，建议从testnet上启动，并谨慎在主网上测试。
 
 [修改](https://github.com/decred/dcrlnd/pull/62)了端口选择，以使集成测试更加可靠。Docker构建已[添加](https://github.com/decred/dcrlnd/pull/67)到Github操作中。删除了[decred 前缀](https://github.com/decred/dcrlnd/pull/68)。继续进行[Docker示例](https://github.com/decred/dcrlnd/pull/66)的工作，以实现运行LN集群所需的全部自动化simnet环境。
 
