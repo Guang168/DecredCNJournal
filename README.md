@@ -1,8 +1,8 @@
-# DecredCNJournal
+# Decred中文月报
 
-这是Decred Journal。有关所有问题，镜像和翻译的索引，请参见[此处](https://xaur.github.io/decred-news/)。
+这是Decred中文月报。有关所有问题，镜像和翻译的索引，请参见[此处](https://xaur.github.io/decred-news/)。
 
-在经过最少的健全性检查之后，来自第三方的大多数信息都会直接从来源中继。Decred Journal的作者无权验证所有声明。请当心诈骗，并自行进行调查。
+在经过最少的健全性检查之后，来自第三方的大多数信息都会直接从来源中继。Decred月报的作者无权验证所有声明。请当心诈骗，并自行进行调查。
 
 我们随时欢迎您的[反馈](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback)和[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)。
 
