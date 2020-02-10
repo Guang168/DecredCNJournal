@@ -1,6 +1,6 @@
 # Decred Journal – January 2020
 
-![abstract art](../img/journal-202001-384.png)
+![abstract art](img/journal-202001-384.png)
 
 _Image: Event Horizon by @saender_
 
