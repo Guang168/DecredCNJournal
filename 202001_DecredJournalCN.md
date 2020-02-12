@@ -168,90 +168,88 @@ Decred in Depth播客发布了两集：Decred的Lightning Network上的@matheusd
 
 参加:
 
-- Jan 7 - [Digital Money Forum](https://thedigitalmoneyforum.com/) - Las Vegas, USA. @akinsawyerr argued for decentralized networks and individual sovereignty on [The Libra Effect](https://thedigitalmoneyforum.com/Sessions/the-problem-with-old-money-a-great-debate/) panel, which was featured on [CoinDesk](https://www.coindesk.com/libra-association-exec-world-needs-us-because-bitcoin-is-not-a-means-of-payment), and also talked to several journalists. ([report](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$157859800075195pLJde:decred.org), [photos](https://twitter.com/AkinSawyerr/status/1214614201517232128))
-- Jan 14 - [Cryptopia Documentary Premiere](https://www.meetup.com/en-AU/BC-Aus/events/267242503/) - Melbourne, Australia. Decred was invited to be an event sponsor and launch partner of Cryptopia Film, a documentary about the key themes within cryptocurrency, which include regulation, privacy, financial services, governance, marketing and development. The entire theatre was booked out with over 140 guests from the crypto and blockchain community. @eSizeDave and @zohand talked Decred on a panel discussion and were quoted in the official [press release](https://prwire.com.au/r/87706). ([report](https://github.com/decredcommunity/events/blob/master/reports/20200114-cryptopiafilm-world-premiere-melbourne-australia.md))
-- Jan 14 - [GoCracow #7](https://www.meetup.com/en-AU/GoCracow/events/265765051/) - Kraków, Poland. @kozel introduced ~30 Go devs to cryptocurrencies and Decred. The audience was attentive in general, but the most active participants were the ones who self-described as already familiar or enthusiastic about crypto. ([report](https://github.com/decredcommunity/events/blob/master/reports/20200114-gocracow7-meetup-krakow-poland.md))
-- Jan 24 - Blockchain Technology and Use Cases - Casablanca, Morocco. @arij was invited to talk at the event co-organized by the Moroccan Youth Ministry with the topic "The role of new technologies in promoting the positive development of young people". @arij talked about blockchains and introduced Politeia and LN to the audience of around 50 people of different backgrounds, mostly young people. ([photos](https://twitter.com/DecredArabia/status/1220819101586685952))
-- Jan 29-31 - [Crypto 101 Online Summit](https://www.crypto2020summit.com/) - Internet. @lukebp outlined Decred's plans for 2020, the presentation will be uploaded to YouTube when ready.
+- 1月7日- [Digital Money Forum](https://thedigitalmoneyforum.com/) -美国拉斯维加斯。@akinsawyerr主张去中心化网络和个人主权的[The Libra Effect](https://thedigitalmoneyforum.com/Sessions/the-problem-with-old-money-a-great-debate/) ，这是精选的[CoinDesk](https://www.coindesk.com/libra-association-exec-world-needs-us-because-bitcoin-is-not-a-means-of-payment)，也谈过几个记者。([报告](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$157859800075195pLJde:decred.org), [照片](https://twitter.com/AkinSawyerr/status/1214614201517232128))
+- 1月14日- [Cryptopia Documentary Premiere](https://www.meetup.com/en-AU/BC-Aus/events/267242503/ -澳大利亚墨尔本。Decred受邀成为Cryptopia Film的活动赞助商和发布合作伙伴，这是一部有关加密货币内关键主题的纪录片，包括监管，隐私，金融服务，治理，营销和发展。整个剧院的门票被加密货币和区块链社区的140多名客人预订。@eSizeDave和@zohand在小组讨论中谈到了Decred，并在官方新闻稿中引用。 ([报告](https://github.com/decredcommunity/events/blob/master/reports/20200114-cryptopiafilm-world-premiere-melbourne-australia.md))
+- 1月14日- [GoCracow #7](https://www.meetup.com/en-AU/GoCracow/events/265765051/)  -波兰克拉科夫。@kozel向大约30位Go开发人员介绍了加密货币和Decred。观众总体上很专心，但是最活跃的参与者是那些自称为已经很熟悉或热衷于加密技术的人。([报告](https://github.com/decredcommunity/events/blob/master/reports/20200114-gocracow7-meetup-krakow-poland.md))
+- 1月24日- Blockchain Technology and Use Cases -摩洛哥卡萨布兰卡。@arij受邀参加了由摩洛哥青年部组织的活动，主题是“新技术在促进年轻人的积极发展中的作用”。@arij谈论了区块链，并向大约50个不同背景的人群介绍了Politeia和LN，其中大多数是年轻人。([照片](https://twitter.com/DecredArabia/status/1220819101586685952))
+- 1月29日至31日- [Crypto 101 Online Summit](https://www.crypto2020summit.com/) -互联网。@lukebp概述了Decred的2020年计划，PPT准备就绪后将上传到YouTube。
 
-Upcoming:
+即将到来的：
 
-- Feb 8 - [Blockchain and AI](https://www.eventbrite.com/e/blockchain-and-ai-best-tools-for-the-development-of-nations-tickets-91389994935) - Casablanca, Morocco. @arij will talk about Decred's achievements during its 4 years. A small party at the end will mark Decred's anniversary.
-- Feb 8 - [Decred Crypto Hangouts](https://www.eventbrite.com/e/decred-crypto-hangout-learn-about-career-opportunities-in-the-industry-tickets-91830803405) - Ikeja, Lagos. Huobi, Yellowcard and Telos4Africa will be in attendance.
-- Feb 8 - [Decred Global Meetup](https://www.meetup.com/pt-BR/DecredBrasil/events/268496816/) - Salvador, Brazil.
-- Mar 12-13 - [Blockchain Summit Latam](https://www.blockchainsummit.la) - Panama City, Panama. Decred will be a silver sponsor.
-- Mar 18 - [Campus Party Amazonia](https://brasil.campus-party.org/campus-party-amazonia-2020/) - Manaus, Brazil. Decred will have 2 talks and several other activities.
-- Mar 20 - [BlockchainUA](https://blockchainua.com/en/) - Kyiv, Ukraine. Speakers are wanted to represent Decred at the biggest event in Eastern Europe. Contact @cryptotexty in the [#events](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org) room for details.
-- Mar 20-21 - [CIBTC Blockchain Summit](http://cibtc.es/) - Motril, Spain. Decred will be gold sponsor. The event is part of a big Decred en Español tour in Spain where @elian will be organizing meetups and a workshop with local communities in Madrid, Barcelona, Bilbao, Valencia, Vigo and Motril.
-- May 30-31 - [Bitconf](https://www.bitconf.com.br/portal/) - São Paulo, Brazil. Decred will have multiple talks on various subjects.
+- 2月8日- [Blockchain and AI](https://www.eventbrite.com/e/blockchain-and-ai-best-tools-for-the-development-of-nations-tickets-91389994935) -摩洛哥卡萨布兰卡。@arij将谈论Decred在过去四年中的成就。最后的小型聚会将纪念Decred周年。
+- 2月8日- [Decred Crypto Hangouts](https://www.eventbrite.com/e/decred-crypto-hangout-learn-about-career-opportunities-in-the-industry-tickets-91830803405) -Ikeja, Lagos. Huobi, Yellowcard和Telos4Africa将出席。
+- 2月8日- [Decred Global Meetup](https://www.meetup.com/pt-BR/DecredBrasil/events/268496816/) -巴西萨尔瓦多。
+- 3月12日至13日- [Blockchain Summit Latam](https://www.blockchainsummit.la) -巴拿马巴拿马城。Decred将成为白银赞助商。
+- 3月18日- [Campus Party Amazonia](https://brasil.campus-party.org/campus-party-amazonia-2020/) -巴西马瑙斯。Decred将进行2次演讲和其他一些活动。
+- 3月20日- [BlockchainUA](https://blockchainua.com/en/) -乌克兰基辅。希望演讲者代表Decred参加东欧最大的活动。有关详细信息，请联系#events 室中的@cryptotexty。
+- 3月20日至21日- [CIBTC Blockchain Summit](http://cibtc.es/) -西班牙莫特里尔。Decred将成为金牌赞助商。该活动是西班牙Decred enEspañol大型巡回演出的一部分，@ elian将组织聚会和与马德里，巴塞罗那，毕尔巴鄂，巴伦西亚，巴伦西亚，维哥和莫特里尔的当地社区举行的研讨会。
+- 5月30日至31日- [Bitconf](https://www.bitconf.com.br/portal/) -巴西圣保罗。Decred将就各个主题进行多次演讲。
 
-## Media
+## 媒体
 
-[Decred Drive](https://medium.com/@decreddrive), a new weekly newsletter, was [launched](https://twitter.com/DecredDragon/status/1215309738293985280) by @decreddragon on Jan 9 and published 5 issues so far.
+[Decred Drive](https://medium.com/@decreddrive), 一个新的每周通讯，由@decreddragon维护。
 
-Decred was featured in the new Our Network weekly newsletter issues [#2](https://ournetwork.substack.com/p/our-network-issue-2) and [#6](https://ournetwork.substack.com/p/our-network-issue-6), with @Checkmate providing charts and insights about Decred on-chain data and @richardred providing one chart about Politeia. Each week the newsletter includes 5 graphs and comments for a number of different blockchain projects.
+在新的《我们的网络》每周通讯第2期和第6期中介绍了Decred，其中@Checkmate提供了有关Decred链上数据的图表和见解，而@richardred提供了有关Politeia的图表。每周时事通讯都会为许多不同的区块链项目提供5张图表和注释。
 
-Checkmate made the bear case for Ethereum as part of an intended "[crypto rumble](https://bankless.substack.com/p/why-eth-wont-sustain-a-monetary-premium)" in the Bankless newsletter. Vitalik Buterin [responded](https://www.reddit.com/r/ethereum/comments/ewb9as/why_eth_wont_sustain_a_monetary_premium/fg2x4oz/) to some comments about the write-up on Reddit, and there are now 3 [responses](https://bankless.substack.com/p/why-eth-will-sustain-a-monetary-premium) on the Bankless substack from prominent Ethereum community members.
+Checkmate 在无银行通讯中将以太坊作为空头案例，作为有意进行的"[crypto rumble](https://bankless.substack.com/p/why-eth-wont-sustain-a-monetary-premium)"的一部分。Vitalik Buterin 回应了有关Reddit撰写的一些评论，现在在以太坊社区知名成员的无银行子堆栈上有3条回应。
 
-Decrypt has [covered](https://decrypt.co/17371/we-found-the-no-coiner-troll-guarding-wikipedia) some of Decred's [experience](https://github.com/decredcommunity/issues/issues/79) with Wikipedia, which triggered an intelligent Twitter [exchange](https://twitter.com/decryptmedia/status/1220069033405485057) with one of the WP crypto experts.
+Decrypt [涵盖](https://decrypt.co/17371/we-found-the-no-coiner-troll-guarding-wikipedia)了Decred 在Wikipedia 上的一些经验，该经验引发了与WP加密专家之一的智能Twitter[交流](https://twitter.com/decryptmedia/status/1220069033405485057)。
 
-Selected articles:
+精选文章:
 
-- Building a Transparent Future with the Decred Blockchain by @ammarooni ([medium](https://medium.com/decred/building-a-transparent-future-with-the-decred-blockchain-e77471d28059))
-- Decred On-Chain: HODLer Conversion Rates by @permabullnino ([medium](https://medium.com/@permabullnino/decred-on-chain-hodler-conversion-rates-87e16a4c78cd))
-- 2019 Review: Distributed Governance ([Smith and Crown](https://sci.smithandcrown.com/research/2019-governance-review)) - this comprehensive overview of blockchain governance in 2019 features many accurate observations about Decred, with a special note about Politeia participation rates.
-- The Future of Digital Currencies in Africa? Meet Decred the Autonomous Digital Currency ([appsafrica.com](https://www.appsafrica.com/the-future-of-digital-currencies-in-africa-meet-decred-the-autonomous-digital-currency/))
-- Is Bitcoin Really Like the Early Internet? by Leigh Cuen ([coindesk.com](https://www.coindesk.com/is-bitcoin-in-2020-really-like-the-early-internet)) - this reflection piece on the similarities between Bitcoin and the early Internet features interviews with @moo31337 and Zooko Wilcox of Zcash. The article also has some figures related to Decred Treasury spending, as noted in the Governance section.
+- @ammarooni([medium](https://medium.com/decred/building-a-transparent-future-with-the-decred-blockchain-e77471d28059))与Decred区块链共建透明未来
+- Decred On-Chain: @permabullnino的HODLer转换率([medium](https://medium.com/@permabullnino/decred-on-chain-hodler-conversion-rates-87e16a4c78cd))
+- 019年回顾：分布式治理([Smith和Crown](https://sci.smithandcrown.com/research/2019-governance-review)) -此2019年区块链治理的全面概述以关于Decred的许多准确观察为特色，并特别介绍了Politeia参与率。
+- 非洲数字货币的未来？满足减量自主数字货币 ([appsafrica.com](https://www.appsafrica.com/the-future-of-digital-currencies-in-africa-meet-decred-the-autonomous-digital-currency/))
+- 比特币真的像早期的互联网吗？作者：Leigh Cuen([coindesk.com](https://www.coindesk.com/is-bitcoin-in-2020-really-like-the-early-internet))-有关比特币与早期互联网之间相似之处的反思，专访了Zcash的@ moo31337和Zooko Wilcox。如“治理”部分所述，该文章还包含一些与减少的国库支出有关的数据。
 
-> We were equally as excited to see the engagement sparked by the CoinDesk [article](https://www.coindesk.com/is-bitcoin-in-2020-really-like-the-early-internet) last weekend! It was certainly interesting to see various projects discussing who ended up being mentioned in the article, with only Decred and a handful of others making the cut. This type of coverage is the result of months of communication with reporters: education, timely responses, interviews, supplying information and statistics, etc. Stories like this don't happen overnight or of their own accord - and the old adage "out of sight, out of mind" does apply to media. ([@liz_bagot](https://proposals.decred.org/proposals/012b4e335f25704e28ef196d650316dca421f730225d39e37b31b3c646eb8497/comments/71))
+>我们同样很高兴看到上周末CoinDesk[文章](https://www.coindesk.com/is-bitcoin-in-2020-really-like-the-early-internet)引起的参与！看到各种项目讨论谁最终在本文中提到，这无疑是很有趣的，只有Decred和其他几个项目才有所斩获。这种类型的报道是与记者数月沟通的结果：教育，及时响应，访谈，提供信息和统计数据等。此类故事不会在一夜之间或并非一帆风顺-古老的格言“视而不见” ，“”确实适用于媒体。 ([@liz_bagot](https://proposals.decred.org/proposals/012b4e335f25704e28ef196d650316dca421f730225d39e37b31b3c646eb8497/comments/71))
 
-Translations:
+翻译:
 
-- Beginner guide to the Decred Lightning Network - [in Arabic](https://insaf01.github.io/decred-arabic/articles/beginner-guide-to-the-decred-lightning-network.html) by @arij, [in Spanish](https://medium.com/decred-es/gu%C3%ADa-para-probar-el-lightning-network-de-decred-dcr-344cad6be20e) by @francov\_.
-- Decred Journal December 2019 translated to Arabic (@arij), Chinese (@Dominic) and Spanish (@francov\_). Thank you for your hard work!
+- Decred闪电网络入门指南-@arij [阿拉伯语](https://insaf01.github.io/decred-arabic/articles/beginner-guide-to-the-decred-lightning-network.html)，@ francov_ [西班牙语](https://medium.com/decred-es/gu%C3%ADa-para-probar-el-lightning-network-de-decred-dcr-344cad6be20e)。
+- Decred Journal 2019年12月翻译成阿拉伯文（@arij），中文（@Dominic）和西班牙文（@francov_）。谢谢你们！
 
-Videos:
+视频:
 
-- Is a Public Relations Firm in Crypto Worth It? Decred Stakeholders Vote and Decide Using Politeia by @Exitus ([youtube](https://www.youtube.com/watch?v=uzhc2CKI2wk))
-- Decred's Akin Sawyerr Says Blockchain Is Part of Africa's Political Future ([coindesk.com](https://www.coindesk.com/decreds-akin-sawyerr-says-blockchain-is-part-of-africas-political-future), [youtube](https://www.youtube.com/watch?v=8w7uCSVuuVw))
-- The Libra Effect at CES2020: Highlights of @akinsawyerr by @Exitus ([youtube](https://www.youtube.com/watch?v=5Zi5wYZhEDE)) - the full panel can be found [here](https://www.youtube.com/watch?v=prz6ILpLNLE) (@akinsawyerr starts around [17 min](https://www.youtube.com/watch?v=prz6ILpLNLE&t=17m00s))
+- 公关公司的加密货币值得吗？由@Exitus决定利益相关者投票并决定使用Politeia ([youtube](https://www.youtube.com/watch?v=uzhc2CKI2wk))
+- Decred的Akin Sawyerr说区块链是非洲政治未来的一部分 ([coindesk.com](https://www.coindesk.com/decreds-akin-sawyerr-says-blockchain-is-part-of-africas-political-future), [youtube](https://www.youtube.com/watch?v=8w7uCSVuuVw))
+- CES2020的Libra效应：@Exitus的@akinsawyerr[亮点](https://www.youtube.com/watch?v=prz6ILpLNLE) (@akinsawyerr starts around [17 min](https://www.youtube.com/watch?v=prz6ILpLNLE&t=17m00s))
 
-Audio:
+音频:
 
-- @akinsawyerr appeared on Tom Shaugnessy's Chain Reaction podcast to talk about Governance Reimagined. ([podbean](https://fiftyonepercent.podbean.com/e/decred/))
-- Crypto 101 Ep. 302 - Governing the Masses w/ Decred, featured @lukebp. ([podbean](https://www.podbean.com/media/share/dir-j5baa-7c90e87), [soundcloud](https://soundcloud.com/crypto101podcast/ep-302-governing-the-masses-w-decred))
-- Decred in Depth Ep. 16 - @permabullnino discusses the Politeia proposal process and his ongoing work analyzing ticket movements on the Decred chain, introducing concepts like TVWAP and Hodler conversion rates. ([libsyn](https://decredindepth.libsyn.com/permabull-nino-block-subsidies-ticket-pool-vwap-hodler-conversion-rates), [soundcloud](https://soundcloud.com/decredindepth/ep-16-permabull-nino-block-subsidies-ticket-pool-vwap-hodler-conversion-rates))
-- Decred in Depth Ep. 17 - @ammarooni talks about Toronto's rich crypto history, the tokenomics of DCR, BTC and ETH, and considers Decred as an infrastructure provider, productive asset and economic breakthrough. ([libsyn](http://decredindepth.libsyn.com/ammar-nasier-decred-an-economic-breakthrough))
+- @akinsawyerr出现在汤姆·肖格尼（Tom Shaugnessy）的《连锁反应》播客中，谈论重新构想的治理。 ([podbean](https://fiftyonepercent.podbean.com/e/decred/))
+- Crypto 101 Ep. 302 - 执政的群众与Decred， @lukebp. ([podbean](https://www.podbean.com/media/share/dir-j5baa-7c90e87), [soundcloud](https://soundcloud.com/crypto101podcast/ep-302-governing-the-masses-w-decred))
+- Decred in Depth Ep. 16 - @permabullnino讨论了Politeia提案流程以及他正在进行的工作，分析了Decred链上的票证运动，并介绍了TVWAP和Hodler转换率等概念。 ([libsyn](https://decredindepth.libsyn.com/permabull-nino-block-subsidies-ticket-pool-vwap-hodler-conversion-rates), [soundcloud](https://soundcloud.com/decredindepth/ep-16-permabull-nino-block-subsidies-ticket-pool-vwap-hodler-conversion-rates))
+- Decred in Depth Ep. 17 - @ammarooni谈论了多伦多的丰富加密历史，DCR，BTC和ETH的代币经济学，并将Decred视为基础设施提供商，生产性资产和经济突破。([libsyn](http://decredindepth.libsyn.com/ammar-nasier-decred-an-economic-breakthrough))
 
-@AGNFAB1 published two new pieces of artwork: [Politeia pirate](https://www.reddit.com/r/decred/comments/end3lc/d_e_c_r_e_d/) (unofficial title), [DCR is Water BTC is Fire](https://twitter.com/AGNFAB1/status/1220091425737580544).
+@ AGNFAB1发布了两幅新作品： [Politeia pirate](https://www.reddit.com/r/decred/comments/end3lc/d_e_c_r_e_d/) , [DCR 是水 BTC 是火](https://twitter.com/AGNFAB1/status/1220091425737580544).
 
-## Community Discussions
+## 社区讨论
 
-Comm systems news:
+通讯系统新闻：
 
-- Slack is going down, bridge is being burned, flee to the [Matrix](https://decred.org/matrix/) while you still can!
+- 松散下来，桥被烧毁，在您仍然可以的情况下逃离 [Matrix](https://decred.org/matrix/) !
 
-Selected Reddit posts:
+精选Reddit帖子：
 
-- [Update](https://www.reddit.com/r/decred/comments/eo3tje/decred_dex_progress_the_client_and_server_are/) on dcrdex, atomic testnet trading up next.
-- [How](https://www.reddit.com/r/decred/comments/ervlvw/how_to_runstartmove_decrd_to_the_background_i_can/) to move dcrd to the background - a common question for new CLI users.
-- Is Decred [dead](https://www.reddit.com/r/decred/comments/ekhi2l/is_decred_dead_hash_rate_has_stagnated_and/)? Nope.
-- Interesting discussion on @Checkmate's Ethereum bear case [post](https://www.reddit.com/r/ethereum/comments/ewb9as/why_eth_wont_sustain_a_monetary_premium/fg1q9q7/) on /r/ethereum, including some discussion with Vitalik Buterin.
+- [更新](https://www.reddit.com/r/decred/comments/eo3tje/decred_dex_progress_the_client_and_server_are/) dcrdex，然后使用原子测试网进行交易。
+- [如何](https://www.reddit.com/r/decred/comments/ervlvw/how_to_runstartmove_decrd_to_the_background_i_can/)将dcrd移到后台-新CLI用户的常见问题。
+- Decred [死了](https://www.reddit.com/r/decred/comments/ekhi2l/is_decred_dead_hash_rate_has_stagnated_and/)吗？不。
+- 对@@Checkmate的情况下有趣的讨论后开/ R /以太坊，包括Vitalik Buterin一些讨论。
 
-Selected Twitter discussions:
+精选的Twitter讨论：
 
-- Stakey reminds everyone to [control their keys](https://twitter.com/DCRComic/status/1212754642481881088).
-- First to market vs adaptable, a historical [example](https://twitter.com/BarnardTheBear/status/1213893268351672320).
-- Why Decred is [boring](https://twitter.com/marco_peereboom/status/1218178834786324480).
-- How often does your CEO/project lead tell you to [engineer him out](https://twitter.com/marco_peereboom/status/1212849047456927744) of the project?
-- @DCRComic: Atomic Swaps [comic](https://twitter.com/DCRComic/status/1222874521507717121), a [take](https://twitter.com/DCRComic/status/1220367582479425537) on the BCH development funding story, a [thread](https://twitter.com/DCRComic/status/1218189767759859713) about dcrdata.
-- An [update](https://twitter.com/chappjc/status/1222004371199864834) on dcrdex from @chappjc, "this Spring".
-- @richardred [opened](https://twitter.com/RichardRed0x/status/1219381114768429057) the pod bay doors to vote for the open source research program.
-- @lukebp [tweets](https://twitter.com/lukebp_/status/1217871970420711424) about the benefits of being able to amend consensus rules to enhance network security and UX.
-- The Ditto and Monde PR proposals drew some attention from journalists in the space, including the Block's [Frank Chaparro](https://twitter.com/fintechfrank/status/1215704016564428802).
-- @Dustorf on the digital Decred contractor [collective](https://twitter.com/lefebvre_dustin/status/1220397690602901504).
-- @degeri points out that the websites of most top blockchain projects are [feeding](https://twitter.com/degeri_crypto/status/1217372695483965441) information to Google.
-- [#DrawStakey](https://twitter.com/DCRComic/status/1220732376088809477) contest.
+- Stakey提醒每个人都要控制自己的[秘钥](https://twitter.com/DCRComic/status/1212754642481881088)。
+- 一个历史性的[例子](https://twitter.com/BarnardTheBear/status/1213893268351672320)，首先是上市与适应。
+- 为什么Decred很[无聊](https://twitter.com/marco_peereboom/status/1218178834786324480)。
+- 您的首席执行官/项目负责人多久告诉您一次将他从项目中引诱出来？
+- @DCRComic：原子互换[漫画](https://twitter.com/DCRComic/status/1222874521507717121)，一个就BCH发展资金的故事，一个dcrdata。
+- 一个更新的@chappjc上dcrdex，“今年春天”。
+- @lukebp在[推文](https://twitter.com/lukebp_/status/1217871970420711424)中谈到了能够修改共识规则以增强网络安全性和UX的好处。
+- @Dustorf在数字Decred贡献者[集体](https://twitter.com/lefebvre_dustin/status/1220397690602901504)中。
+- @degeri指出，大多数顶级区块链项目的网站都在向Google 提供信息。
+- [#DrawStakey](https://twitter.com/DCRComic/status/1220732376088809477) 竞赛。
 
 ## 市场
 
