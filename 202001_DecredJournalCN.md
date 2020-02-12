@@ -57,9 +57,7 @@ Decrediton：修复了行为故障单的错误显示，更改生成期间的空�
 
 [dcrdex](https://github.com/decred/dcrdex): 完成了更多的构建模块。亮点：客户端DCR交易[钱包](https://github.com/decred/dcrdex/pull/92)，基于客户端bbolt的[数据库](https://github.com/decred/dcrdex/pull/99)，支持通过浏览器进行客户端访问的客户端[web服务器](https://github.com/decred/dcrdex/pull/103)，初始[核心客户端](https://github.com/decred/dcrdex/pull/120)应用程序，客户端应用[程序框架](https://github.com/decred/dcrdex/pull/100)，通过Web界面的新[DEX账户](https://github.com/decred/dcrdex/pull/140)的客户端注册，服务器应用程序配置和资产驱动程序[系统](https://github.com/decred/dcrdex/pull/81)，实现64位Mersenne Twister PRNG。
 
-More building blocks completed. Highlights: client DCR exchange [钱包](https://github.com/decred/dcrdex/pull/92), client bbolt-based [数据库](https://github.com/decred/dcrdex/pull/99), client [web服务器](https://github.com/decred/dcrdex/pull/103) to enable client access via browser, initial [核心客户端](https://github.com/decred/dcrdex/pull/120) application, client application [程序框架](https://github.com/decred/dcrdex/pull/100), client registration of new [DEX账户](https://github.com/decred/dcrdex/pull/140) through the web interface, server app config and asset drivers [系统](https://github.com/decred/dcrdex/pull/81), implementation of 64-bit [Mersenne Twister](https://github.com/decred/dcrdex/pull/137) PRNG.
-
-又一个繁忙的开发月份：总共合并了27个拉取请求，添加22000行以及删除了4000行代码。
+又是一个繁忙的开发月份：总共合并了27个拉取请求，添加22000行以及删除了4000行代码。
 
 [dcrandroid](https://github.com/decred/dcrandroid):还原钱包页面上的布局已得到[改进](https://github.com/decred/dcrandroid/pull/422)。 
 
