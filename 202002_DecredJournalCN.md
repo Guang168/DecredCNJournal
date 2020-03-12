@@ -2,7 +2,7 @@
 
 ![second known Decred cake](img/cake-202002-384.jpg)
 
-_Image: Second known Decred Cake spotted in Morocco by @arij_
+_图片: 来自摩纳哥@arij的第二个Decred庆生蛋糕
 
 - The fourth anniversary of the Decred genesis block arrived on Feb 8, and was celebrated around the world as attendees in at least 11 cities participated in the first #DecredGlobalMeetup!
 - @Dustorf published a report on the project's marketing efforts in 2019, giving an in depth account of what was done, how the DCR was spent, what went well and what didn't - along with thoughts on how to advance in 2020.
