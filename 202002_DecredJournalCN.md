@@ -1,4 +1,4 @@
-# Decred Journal – February 2020
+# Decred月报 - 2020年2月
 
 ![second known Decred cake](img/cake-202002-384.jpg)
 
