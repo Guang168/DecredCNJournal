@@ -266,14 +266,14 @@ Attended:
 
 精选文章：
 
-- Decred 2019 Marketing Report by @Dustorf gives an account of 2019's marketing effort, in which 785K USD was spent (similar to the previous year). The report also has thoughtful reflections on how to evolve and decentralize the project's marketing effort. ([blog.decred.org](https://blog.decred.org/2020/02/26/Decred-2019-Marketing-Report/))
-- Decred On-Chain: Ticket Funding Rates by @permabullnino ([medium](https://medium.com/@permabullnino/decred-on-chain-ticket-funding-rates-4e7233c7b64f))
-- Decred On-Chain: Macro + Micro Outlook by @permabullnino ([medium](https://medium.com/@permabullnino/decred-on-chain-macro-micro-outlook-12a26930623e))
-- Decred, The Resilient Stronghold by @Checkmate, closing the 3 part series by looking at Bitcoin and Decred in terms of resilience, aggregate psychology, and user adoption ([medium](https://medium.com/decred/decred-the-resilient-stronghold-4038dc64dd2a))
-- New issues of the [Decred Drive](https://medium.com/@decreddrive) continued to appear every Thursday courtesy of @DecredDragon - thanks also for your kind words about the Journal, from the team.
-- CryptoEQ gave Decred a Bronze rating, citing concerns with high USD cost to buy a ticket, relatively high inflation compared to other SoV coins, and the cost of a ticket becoming more volatile ([cryptoeq.io](https://cryptoeq.io/coreReports/decred-abridged))
-- The State of Blockchain: Experts Weigh in on Adoption Around the World by Joseph Birch - featuring @elian on LATAM and @akinsawyerr on Africa ([cointelegraph.com](https://cointelegraph.com/news/the-state-of-blockchain-experts-weigh-in-on-adoption-around-the-world))
-- After Four Years, is Decred Better than Bitcoin Yet? by Liam Kelly ([cryptobriefing.com](https://cryptobriefing.com/after-four-years-is-decred-better-bitcoin-yet/))
+- @Dustorf发布的Decred 2019年营销报告介绍了2019年的营销工作，其中花费了785K USD（与上一年相似）。该报告还对如何发展和分散项目的营销工作进行了深思熟虑。([blog.decred.org](https://blog.decred.org/2020/02/26/Decred-2019-Marketing-Report/))
+- Decred On-Chain: @permabullnino的选票出资率 ([medium](https://medium.com/@permabullnino/decred-on-chain-ticket-funding-rates-4e7233c7b64f))
+- Decred On-Chain: @permabullnino的宏观+微观展望 ([medium](https://medium.com/@permabullnino/decred-on-chain-macro-micro-outlook-12a26930623e))
+- Decred，@ Checkmate的The Resilient Stronghold，通过查看比特币和Decred的弹性，总体心理以及用户采用率来结束这3部分系列 ([medium](https://medium.com/decred/decred-the-resilient-stronghold-4038dc64dd2a))
+- @DecredDragon每周四继续发行新的Decred Drive期刊-也感谢《华尔街日报》的客气话。
+- CCryptoEQ给予Decred铜牌评级，理由是人们担心购买选票的美元成本较高，与其他SoV硬币相比通货膨胀率较高以及选票成本变得更加不稳定 ([cryptoeq.io](https://cryptoeq.io/coreReports/decred-abridged))
+- 区块链现状：专家权衡约瑟夫·伯奇（Joseph Birch）的全球采用情况-拉塔姆（LATAM）上的@elian和非洲（@tein）上的@akinsawyerr([cointelegraph.com](https://cointelegraph.com/news/the-state-of-blockchain-experts-weigh-in-on-adoption-around-the-world))
+- 四年后，Decred会比特币更好吗？由Liam Kelly ([cryptobriefing.com](https://cryptobriefing.com/after-four-years-is-decred-better-bitcoin-yet/))
 
 翻译:
 
@@ -281,38 +281,38 @@ Attended:
 
 视频:
 
-- "Why DEX", put simply, illustrated quote from @moo31337 about the different motivations of bankers and FOSS developers, produced by @Exitus ([youtube](https://www.youtube.com/watch?v=TNcmLrSPMRc))
-- Decred Bi-Weekly News Update - February 25th, 2020 by @Exitus, this is the first bi-weekly update being delivered as part of the approved proposal ([youtube](https://www.youtube.com/watch?v=RMqrIZcR-Iw))
-- @ivandecredfan has continued making educational Decred videos in Russian even after his proposal failed ([youtube](https://www.youtube.com/channel/UCFjXbEDeyhhj2bH2t_eGKGA))
+- Why DEX由@Exitus制作 ([youtube](https://www.youtube.com/watch?v=TNcmLrSPMRc))
+- @Exitus决定每两周更新一次新闻-2020年2月25日，这是批准的提案中首次发布的每两周一次更新 ([youtube](https://www.youtube.com/watch?v=RMqrIZcR-Iw))
+- @ivandecredfan在提案失败后仍继续用俄语制作教育性Decred视频 ([youtube](https://www.youtube.com/channel/UCFjXbEDeyhhj2bH2t_eGKGA))
 
 音频:
 
-- Decred in Depth Ep. 18. @elian talks about life on the road representing Decred all over LATAM, different use cases in different places, and a strategy for accentuating the tropical contingent of the global Decred community. ([libsyn](https://decredindepth.libsyn.com/elian-huesca-dcr-in-latam), [soundcloud](https://soundcloud.com/decredindepth/elian-huesca-dcr-in-latam))
-- Rough Consensus Ep. 1. @Checkmate and @permabullnino open a new show, talking about derivatives, alt season, and blockchain dynamics ([libsyn](https://roughconsensus.libsyn.com/rough-consensus-1-rough-start))
-- Decred in Depth Roundup Ep. 1 (or Ep. 20 of Decred in Depth). Join @Checmkate, @permabullnino and @mr.black for a discussion of blockchain funding and security, 51% attacks, and their latest projects. ([soundcloud](https://soundcloud.com/decredindepth/dcr-round-up-with-checkmate))
+- Decred in Depth Ep. 18. @elian谈到代表拉丁美洲各地的Decred的道路上的生活，在不同地方的不同用例，以及强调全球Decred社区的战略。 ([libsyn](https://decredindepth.libsyn.com/elian-huesca-dcr-in-latam), [soundcloud](https://soundcloud.com/decredindepth/elian-huesca-dcr-in-latam))
+- Rough Consensus Ep. 1. @Checkmate和@permabullnino开启了一个新节目，谈论衍生工具，替代季节和区块链动力学([libsyn](https://roughconsensus.libsyn.com/rough-consensus-1-rough-start))
+- Decred in Depth Roundup Ep. 1 (or Ep. 20 of Decred in Depth). 加入@ Checmkate，@ permabullnino和@ mr.black讨论区块链资金和安全性，51％攻击及其最新项目。 ([soundcloud](https://soundcloud.com/decredindepth/dcr-round-up-with-checkmate))
 
 ## 社区讨论
 
-Comm systems news:
+通讯系统新闻：
 
-- The Slack bridge to Matrix and Discord was decommissioned on Feb 28 and most of the channels shuttered. Issues that led to this decision include the disruptive shutdown of automatic invites in 2018, DMs and other history disappearing after about a week, and migration of most active moderators to Matrix. Those who wished to continue following and participating in the chats moved to Matrix and Discord, to the rest we say a fond farewell.
-- @Exitus purged inactive accounts from Discord, cementing his iron grip on power among the denizens of Decred Discord. The pruning removed accounts that were not verified and had not logged on in over 30 days. Any account removed is free to re-join and go through the verification process.
-- The DCRComic team added a pack of stickers on Telegram, they can be added by following this [link](https://t.me/addstickers/DCRComic) or by clicking a sticker posted by someone else in the chat. Telegram users now have a choice of two Stakey themed sticker packs! The new set complement the [existing set](https://t.me/addstickers/dcrstakey) of Stakey stickers produced by @lustosa. Looks like it was a good call to not spend $1,400 on an additional set of Telegram stickers from that [proposal](https://proposals.decred.org/proposals/4acb95564d36488a7ee64683a84dd7954982b2f4743e2f7a15477231f863442f) 2 months ago!
+- 2月28日，通向Matrix和Discord的Slack桥退役，大部分通道关闭。导致此决定的问题包括2018年自动邀请的中断性关闭，大约一周后DM和其他历史记录消失以及大多数活跃的主持人迁移到Matrix。那些希望继续关注并参与聊天的人转移到了Matrix和Discord，其他人则表示了欢送。
+- @Exitus清除了Discord的闲置账户，巩固了Decred Discord居民中对权力的坚定控制。修剪会删除30天内未验证且未登录的帐户。任何删除的帐户都可以自由重新加入并通过验证过程。
+- DCRComic团队在Telegram上添加了一包贴纸，可以通过单击此链接或单击聊天中其他人发布的贴纸来添加它们。电报用户现在可以选择两个Stakey主题贴纸包！新的设置补充了@lustosa生产的Stasta贴纸的现有设置。似乎最好不要在2个月前从该提案中花1400美元购买另一套Telegram贴纸！
 
-Selected Reddit posts:
+精选的Reddit帖子：
 
-- @Checkmate shared his Decred [Wishlist](https://www.reddit.com/r/decred/comments/f4i870/decred_wishlist/), and others responded with their thoughts about @Checkmate's suggestions, and some suggestions of their own.
-- The Decred Marketing Report saw [15 comments](https://www.reddit.com/r/decred/comments/fa70c3/decred_2019_marketing_report/), some celebrating it, others taking issue with aspects of it.
+- @Checkmate分享了他的Decred Wishlist，其他人则对@Checkmate 的建议以及自己的一些建议进行了回应。
+- Decred营销报告中有15条评论，有的在庆祝，有的则在它的某些方面存在问题。
 
-Selected Twitter discussions:
+精选的Twitter讨论：
 
-- @Exitus identified and extracted a [clip](https://twitter.com/coveryfire7777/status/1229517588138528768) from an Ark Invest video, where Cathie Wood mentions Decred as "promising".
-- @degeri [shared](https://twitter.com/degeri_crypto/status/1233658256737918976) a screengrab from Altered Carbon Season 2 Episode 5, where prices are quoted on screen in a range of cryptocurrencies, including Decred. DCR is the only currency shown with two numbers, and this cued speculation about what that meant for the interpretation of this year 2400 price prediction for DCR.
-- @jy-p is back on twitter after a long hiatus, and he's [wondering](https://twitter.com/behindtext/status/1232381271252271104) what people who work on cc projects and aren't actively engineering out oracles are doing.
-- @richardred [thread](https://twitter.com/RichardRed0x/status/1231223498787508224) about Decred DAO, prompted by a [response](https://medium.com/@rzs/im-continually-amazed-at-the-lack-of-attention-decred-gets-4a40679246ba) by @rzs on Medium asking why Decred was not featured in a DAO [update](https://medium.com/@rebeccarachmany/dao-falloff-and-revival-2cf74f3c18c1).
-- [DCR Time](https://twitter.com/DCRComic/status/1232714622819602432) artwork by DCR Comic.
-- Chris Burniske with a nice Joel Monegro [quote](https://twitter.com/cburniske/status/1227617853211336704) from his Sovereign Cryptonetworks paper, about Decred being set up for long-term sovereignty thanks to its decentralized governance principles.
-- @Checkmate sums up the [Treasury](https://twitter.com/_Checkmatey_/status/1224764330878603266) as the beating heart of the Decred project.
+- @Exitus 从Ark Invest视频中识别并提取了一段[剪辑](https://twitter.com/coveryfire7777/status/1229517588138528768)，其中Cathie Wood提到Decred是“有前途的”。
+- @degeri [分享](https://twitter.com/degeri_crypto/status/1233658256737918976)了Altered Carbon Season 2第5集的屏幕截图，其中在屏幕上以一系列加密货币（包括Decred）报价价格。DCR是唯一显示有两个数字的货币，这暗示了对于解释DCR今年2400价格预测的含义的猜测。
+- @ jy-p经过一段漫长的休假后又回到了Twitter，他想知道[从事](https://twitter.com/behindtext/status/1232381271252271104CC项目但没有积极设计Oracle的人们正在做什么。
+- @richardred 有关Decred DAO的[系列](https://medium.com/@rzs/im-continually-amazed-at-the-lack-of-attention-decred-gets-4a40679246ba)，这是@rzs在Medium上的响应提示，为什么Decred没有出现在DAO [更新](https://medium.com/@rebeccarachmany/dao-falloff-and-revival-2cf74f3c18c1)中。
+- [DCR Time](https://twitter.com/DCRComic/status/1232714622819602432)来自DCR漫画团队。
+- 克里斯·伯尼斯克（Chris Burniske）在他的《主权加密网络》论文中[引用](https://twitter.com/cburniske/status/1227617853211336704)了乔尔·莫内格罗（Joel Monegro）的一句好话，他说Decred由于其分散的治理原则而被确立为长期主权。
+- @Checkmate将[社区基金](https://twitter.com/_Checkmatey_/status/1224764330878603266)总结为Decred项目的心脏。
 
 ## 市场
 
@@ -342,9 +342,9 @@ Tron的Justin Sun忙碌了一个月，他购买了基于Steem区块链（及其�
 
 IOTA的协调员已于2月13 日暂停，暂停了网络，以调查Trinity盗窃总额达160万美元的索赔。当协调员关闭了几天的停机时间后，IOTA进入了灾难状态，这表明台式Trinity客户端（由IOTA Foundation维护）的所有用户的所有私钥都受到了破坏。IOTA的8.55 Ti被盗，当时价值约230万美元。Trinity受到在MoonPay服务的第三方依赖关系中插入的恶意代码的破坏，该代码使用户能够直接在Trinity中购买IOTA令牌。该最新是有Trinity的固定版本和种子迁移工具，IOTA持有者在基金会于3月7日至3月10日之间重新启动网络之前，有7天的时间进行转移程序。IOTA损失了其美元价值的30％撰写本文时（3月5日），但由于网络暂停，拥有自己的IOTA的用户无法移动它们。
 
-阿拉贡法院推出的，旨在提供一个数字管辖权的DAO在工作。在阿拉贡法院的纠纷是由谁的股份ANJ令牌，并试着猜测的决定，大多数陪审员会选择陪审员解决。247名评委通过共同下注100万个ANT（价值约130万美元）签约了此次发布会。首先，陪审员需要完成带有模拟争议的“ 优先运动 ”（陪审员培训）。
+Aragon法院推出的，旨在提供一个数字管辖权的DAO在工作。在阿拉贡法院的纠纷是由谁的股份ANJ令牌，并试着猜测的决定，大多数陪审员会选择陪审员解决。247名评委通过共同下注100万个ANT（价值约130万美元）签约了此次发布会。首先，陪审员需要完成带有模拟争议的“ 优先运动 ”（陪审员培训）。
 
-殖民地的公开测试版开放。Colony是在以太坊上创建DAO的平台。没有公开列出各个殖民地，因此目前尚不清楚有多少个殖民地或将其用于什么目的。Colony计划成为一个通过“ Metacolony”管理的自我维持的公用事业，将来将拥有自己的CLNY代币。在此之前，推出了“ Betacolony ”这个月并获得了10,000个DAI的资助-贡献者可以通过完成任务来赚取DAI和BLNY代币，这些任务从修复硬件钱包支持到博客或发布有关Colony的推文。Betacolony中没有决策工具的迹象，管理员可以创建任务，然后由成员完成并由管理员验证的任务，该管理员处理赏金。
+Colony的公开测试版开放。Colony是在以太坊上创建DAO的平台。没有公开列出各个Colony，因此目前尚不清楚有多少个殖民地或将其用于什么目的。Colony计划成为一个通过“ Metacolony”管理的自我维持的公用事业，将来将拥有自己的CLNY代币。在此之前，推出了“ Betacolony ”这个月并获得了10,000个DAI的资助-贡献者可以通过完成任务来赚取DAI和BLNY代币，这些任务从修复硬件钱包支持到博客或发布有关Colony的推文。Betacolony中没有决策工具的迹象，管理员可以创建任务，然后由成员完成并由管理员验证的任务，该管理员处理赏金。
 
 DeFi项目bZx一直是本月有关漏洞利用的许多故事的中心，其新的“快速贷款”功能以创造性的方式用于建立一系列操纵价格预言并立即从中获利的交易。这些漏洞利用的新颖之处在于，所有交易都在同一块中进行处理，这既可以使攻击者获利，也可以使交易无效-由于不需要提供抵押品，因此攻击者的风险非常低。利用之后，主密钥被用来编辑智能合约，以使它们不再能够以相同的方式被利用。
 
