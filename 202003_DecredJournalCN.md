@@ -1,6 +1,6 @@
 # Decred Journal – March 2020
 
-![abstract art](../img/journal-202003-384.png)
+![abstract art](img/journal-202003-384.png)
 
 _Image: Expand Vector by @saender_
 
