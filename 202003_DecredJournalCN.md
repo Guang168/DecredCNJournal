@@ -1,208 +1,205 @@
-# Decred Journal – March 2020
+# Decred月报 - 2020年3月
 
 ![abstract art](img/journal-202003-384.png)
 
-_Image: Expand Vector by @saender_
+_图片: Expand Vector by @saender_
 
-Highlights for March:
+三月重点:
 
-- DCP-0005 activated, bringing arguably the most secure and privacy preserving SPV implementation for lightweight clients to the Decred network. Any v1.4 nodes that were still running have been forked off the network.
-- The first order-driven atomic swap trade on testnet was coordinated by the DEX.
-- There has been spectacular progress across just about all of the key software repositories this month, check it out below.
-- Yearly budgets for US/English and Brazilian outreach were approved for $286K in total, including some funding to continue production of the Journal.
-- This is issue 24 of the Decred Journal and marks two years of uninterrupted monthly coverage of the Decred project!
+- DCP-0005已激活, 这为Decred网络的轻量级客户端（SPV）用户带来史无前例的安全性和隐私保护。同时，任何仍在运行v1.4版本的客户端将被分叉，请尽快升级到最新版本。
+- Decred DEX撮合了测试网上的第一笔由原子交换驱动的交易。
+- 本月几乎所有关键的代码库都取得了惊人的进展，请在下面查看。
+- 利益相关者批准的美国(英语内容创作)和巴西营销的年度预算为28.6万美元，其中的一些资金，用来继续制作《Decred月报》。
+- 本期是Decred月报的第24期，标志着Decred项目的每月报道持续了两年时间！
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能在发布的二进制文件中使用。
 
 [dcrd](https://github.com/decred/dcrd):
 
-- ECDSA signatures [decoupled](https://github.com/decred/dcrd/pull/2139) from secp256k1 package to make it clear that ECDSA is only one possible digital signature algorithm, and to enable Schnorr signatures to be made first-class citizens of the codebase
-- exported [field value type](https://github.com/decred/dcrd/pull/2134) to allow external callers to perform optimized field math
-- signature verification further optimized by minimizing expensive operations
-- added method to [clear](https://github.com/decred/dcrd/pull/2117) private key from memory and [reduced](https://github.com/decred/dcrd/pull/2131) number of internal copies of private keys to enhance security against memory scraping
-- big integers [removed](https://github.com/decred/dcrd/pull/2107) completely from signature parsing and signing operations in favor of the specialized mod n scalar code
-- schnorr verification tests [reworked](https://github.com/decred/dcrd/pull/2128) to resolve multiple issues
-- prevented the misuse of code in several areas
-- removed unused code
+- ECDSA签名 与 secp256k1 软件包[分离](https://github.com/decred/dcrd/pull/2139)，从而清楚表明ECDSA只是一种可能的数字签名算法，并使Schnorr签名成为代码库的一级签名
+- 导出的[字段值类](https://github.com/decred/dcrd/pull/2134)，以允许外部调用者执行优化的数学字段
+- 通过谨慎精简化的操作来进一步优化签名验证
+- 添加了从内存中[清除](https://github.com/decred/dcrd/pull/2117)私钥的方法，并[减少](https://github.com/decred/dcrd/pull/2131)了私钥的内部副本数量，从而增强了防止内存刮取的安全性
+- 从签名解析和签名操作中完全[删除](https://github.com/decred/dcrd/pull/2107)大整数，而使用专门的mod n标量代码
+- 对schnorr验证重新设计以解决多个问题
+- 防止在几个方面滥用代码
+- 删除未使用的多余代码
 
-A vulnerability was [disclosed](https://bounty.decred.org/2020/03/status-update/) that allowed a potential multi-day memory exhaustion attack that could lead to a node crash in dcrd v1.4.0. On Mar 13 the network forked to new consensus rules implemented in dcrd v1.5.0 which means all nodes on the network are required to run that as a minimum version. Since this and later versions contain a fix for the vulnerability, it is now mitigated.
+[披露](https://bounty.decred.org/2020/03/status-update/)了一个漏洞，该漏洞允许多天内存耗尽攻击，可能导致dcrd v1.4.0中的节点崩溃。3月13日，网络分叉了dcrd v1.5.0中实现了新共识规则，这意味着网络上的所有节点都必须以最新版本运行。由于此版本和更高版本包含该漏洞的修复程序，因此现已解决
 
-dcrd has less than 16% code overlap with btcd meaning that 84% is the new development work, according to an [analysis](https://coincode.sh/c/dcr/) by CoinCode.sh. @davecgh [confirmed](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15862843869377LGlSK:decred.org) that the numbers look plausible given how much new code has been written and noted that the divergence is even more pronounced in dcrwallet (which was not analyzed).
+根据CoinCode.sh 的[分析](https://coincode.sh/c/dcr/)，dcrd 与 btcd 的代码重叠少于16％，这意味着84％是新的开发工作。经过 @davecgh [确认](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$15862843869377LGlSK:decred.org)，鉴于已编写的新代码，数字似乎合理，并指出dcrwallet中的差异甚至更为明显（尚未分析）
 
 [dcrwallet](https://github.com/decred/dcrwallet):
 
-- `fundrawtransaction` command [implemented](https://github.com/decred/dcrwallet/pull/1706) that adds unsigned inputs and change output to a raw transaction
-- wallet operations [switched](https://github.com/decred/dcrwallet/pull/1648) to use version 2 committed filters (v1 filters are deprecated but are still served by the network and used by dcrwallet, next release will use v2 filters)
-- `getaddressesbyaccount` command [fixed](https://github.com/decred/dcrwallet/pull/1695) to also return imported addresses for the `imported` account
-- unencrypted P2SH redeem scripts are [moved](https://github.com/decred/dcrwallet/pull/1688) to address manager storage (this simplifies storage and removes the requirement to unlock the wallet to view or store the scripts)
-- internal improvements to efficiency and semantics
-- cleanup to remove deprecated and unused code
+- `fundrawtransaction`[实现的](https://github.com/decred/dcrwallet/pull/1706)命令可添加未签名的输入并将输出更改为原始交易
+- 钱包操作已[切换](https://github.com/decred/dcrwallet/pull/1648)为使用版本2的过滤器（不建议使用v1过滤器，但仍由网络提供并由dcrwallet使用，下一版本将使用v2过滤器）
+- `getaddressesbyaccount`固定的命令也[返回](https://github.com/decred/dcrwallet/pull/1695)该imported帐户的导入地址
+- 未加密的P2SH兑换脚本已[移至](https://github.com/decred/dcrwallet/pull/1688)地址管理器存储中（这简化了存储并消除了解锁钱包以查看或存储脚本的要求）
+- 对效率和语义的进行改进
+- 清除不推荐使用的和未使用的代码
 
 [Decrediton](https://github.com/decred/decrediton):
 
-- support for [cold staking](https://github.com/decred/decrediton/pull/2424) (also required for staking with hardware wallets)
-- support for [importing scripts](https://github.com/decred/decrediton/pull/2423) in watch-only wallets
-- retrieve passed [agendas](https://github.com/decred/decrediton/pull/2442) from dcrdata
-- check for [new proposals](https://github.com/decred/decrediton/pull/2420) on the Governance tab
-- responsive [proposal view](https://github.com/decred/decrediton/pull/2444), [address](https://github.com/decred/decrediton/pull/2416) display on overview and transaction views, and other UI tweaks
+- 支持[冷Staking](https://github.com/decred/decrediton/pull/2424)（使用硬件钱包链接也需要）
+- 支持在观察钱包中[导入脚本](https://github.com/decred/decrediton/pull/2423)
+- 从dcrdata 检索已通过的[议程](https://github.com/decred/decrediton/pull/2442)
+- 在“治理”选项卡上检查[新提案](https://github.com/decred/decrediton/pull/2420)
+- 新的[投票视图](https://github.com/decred/decrediton/pull/2444)，[地址](https://github.com/decred/decrediton/pull/2416)显示在概述和事务视图上以及其他UI调整
 
-In development:
+正在开发中:
 
-- [CoinShuffle++](https://github.com/decred/decrediton/pull/2452) support
+- [CoinShuffle++](https://github.com/decred/decrediton/pull/2452)隐私保护的集成
 
 [Politeia](https://github.com/decred/politeia):
 
-- [invalidate](https://github.com/decred/politeia/pull/1159) sessions on password change
-- test improvements and bug fixes
+- 更改密码使种子[无效](https://github.com/decred/politeia/pull/1159)
+- 测试改进和bug修复
 
-tlog integration has begun and is [projected](https://github.com/decred/politeia/issues/1112#issuecomment-606147106) to take ~2 months. In [July 2019](201907.md#development) we've inaccurately reported the start of tlog integration but that work was actually a reference implementation to serve as a proof of concept and demonstrate that Google's [Trillian](https://github.com/google/trillian) data store can replace existing Git backend. It was [merged](https://github.com/decred/politeia/pull/951) in August and contained a [client/server](https://github.com/decred/politeia/tree/master/tlog) with basic functionality for storing documents. This experience gave enough insight to know that it will work. The next step is to write a Politeia backend that uses Trillian.
+tlog集成已经开始，[预计](https://github.com/decred/politeia/issues/1112#issuecomment-606147106)需要2个月的时间。在[2019年7月的月报中](201907.md#development)，我们不准确地报告了tlog集成的开始，但该工作实际上仅是开始研究，旨在作为概念验证并证明Google的[Trillian](https://github.com/google/trillian)数据存储可以替代现有的Git后端。它在八月份进行了[合并](https://github.com/decred/politeia/pull/951)，并包含一个具有基本功能的[客户端/服务器](https://github.com/decred/politeia/tree/master/tlog)，用于存储文档。这项工作经验提供了足够的见解，知道它会起作用。下一步是编写使用Trillian的Politeia后端。
 
-The major advantage of the tlog backend is it will make Politeia more scalable and allow censoring content after it's been made public while keeping the audit trail of all data ever submitted. It will also allow a proper fix of the duplicate comments bug.
+tlog后端的主要优点是它将使Politeia具有更高的可延展性，并允许在公开内容之后审查内容，同时保留对所有已提交数据的审核记录。它还将允许正确解决重复注释的bug。
 
 CMS:
 
-- ability to assign proposal [ownership](https://github.com/decred/politeia/pull/1135), which will be used in upcoming changes to let proposal owners see what is billed against their proposal
-- ability to [deactivate](https://github.com/decred/politeia/pull/1154) temporary contractor account on paid invoice and require admin approval to allow another invoice
-- redesign work started in October finally [merged](https://github.com/decred/politeiagui/pull/1828). This large change adds 9K and deletes 24K lines of code.
+- 分配提案[所有权](https://github.com/decred/politeia/pull/1135)的功能，该功能将在即将进行的更改中使用，以使提案所有者查看针对他们的提案收取的费用
+- 可以[停用](https://github.com/decred/politeia/pull/1154)已付款发票上的临时承包商帐户并需要获得管理员批准才能允许其他发票
+- 十月开始的重新设计工作终于[合并](https://github.com/decred/politeiagui/pull/1828)了。较大的更改将增加9K行代码和删除24K行代码
 
-Behind the visual updates, redesign of the CMS concludes the [process](https://matrix.to/#/!VFRvyndKpzcLrVslQD:decred.org/$158644942810878cUwaw:decred.org) of migrating politeiagui code from [snew-classic-ui](https://github.com/decred/snew-classic-ui) to [pi-ui](https://github.com/decred/pi-ui) library. Back in 2018 snew allowed to get Politeia out quickly with Reddit-style look and feel, but it quickly became hard to develop with. Building pi-ui and switching to it improved code modularization and gave flexibility to compose and style the UI components the way it was required to match the design specs, as well as performance gains.
+视觉更新的背后，重新设计的CMS总结了迁移politeiagui代码 [snew经典的UI](https://github.com/decred/snew-classic-ui)[过程](https://matrix.to/#/!VFRvyndKpzcLrVslQD:decred.org/$158644942810878cUwaw:decred.org)，以[pi-ui](https://github.com/decred/pi-ui)库。早在2018年，snew允许Redite风格的外观和感觉迅速使Politeia脱颖而出，但很快就变得难以开发。构建pi-ui并切换到它可以改善代码模块化，并提供了灵活的方式来组成和样式化UI组件，以使其符合设计规范，并提高性能。
 
 [dcrstakepool](https://github.com/decred/dcrstakepool):
 
-- code maintenance to improve error handling and cancellation, added documentation, upgraded dependencies and added tests
+- 代码维护，bug处理和消除，增加文档，升级依赖关系和增加测试
 
 [dcrpool](https://github.com/decred/dcrpool):
 
-- support for [Obelisk DCR1](https://github.com/decred/dcrpool/issues/110)
-- pool database is [backed up](https://github.com/decred/dcrpool/pull/164) before shutdown
-- [pagination](https://github.com/decred/dcrpool/pull/163) for mined blocks
-- connection code [refactored](https://github.com/decred/dcrpool/pull/171) to simplify testing
-- increased test coverage
-- smaller improvements to UX, config and a few bug fixes
-- the work is a preparation for an upcoming 1.1.0 release
+- 支持[方尖碑DCR1](https://github.com/decred/dcrpool/issues/110)
+- [关闭](https://github.com/decred/dcrpool/pull/164)之前备份池数据库
+- [重构](https://github.com/decred/dcrpool/pull/171)连接代码以简化测试
+- 增加测试范围
+- 对UX，配置的较小改进，并修复了一些错误
+- 这项工作是为即将发布的1.1.0版本做的准备
 
 [dcrlnd](https://github.com/decred/dcrlnd):
 
-- build system [improvements](https://github.com/decred/dcrlnd/pull/84)
+- 对系统进行[改进](https://github.com/decred/dcrlnd/pull/84)
 
-In development:
+正在开发:
 
-- new [chainscan](https://github.com/decred/dcrlnd/pull/83) package that uses committed filters to detect transactions relevant for the LN node more efficiently and can also operate in SPV mode
-- [implementations](https://github.com/decred/dcrlnd/pull/92) for chainntnfs package that use embedded and remote dcrwallet as a source of chain events. This allows to further decouple dcrlnd from an underlying dcrd, which is a requirement for having a dcrlnd instance running in SPV mode.
-- building on the above, enable and test [SPV mode](https://github.com/decred/dcrlnd/pull/95) for remote wallets ("remote wallet" is the connection mode where dcrlnd connects to an already running dcrwallet instance, i.e. does not need its own embedded wallet with a separate seed)
+- 新的[chainscan](https://github.com/decred/dcrlnd/pull/83)软件包，它使用提交的筛选器来更有效地检测与LN节点相关的事务，并且还可以在SPV模式下运行
+- 使用嵌入式和远程dcrwallet作为事件源的chainntnfs软件包的[实现](https://github.com/decred/dcrlnd/pull/92)。这允许将dcrlnd与基础dcrd进一步解耦，这是让dcrlnd实例以SPV模式运行的要求
+- 在上面的基础上，为远程钱包启用和测试[SPV模式](https://github.com/decred/dcrlnd/pull/95)（“远程钱包”是dcrlnd连接到已经运行的dcrwallet实例的连接模式，即不需要带有单独种子的自己的嵌入式钱包）
 
-> SPV mode is a requirement for mobile LN wallets. It's likely SPV will be the dominant sync mode even in desktop wallets, so it's essential for dcrlnd to support SPV mode. It's also the last item of the "immediate work" section of my "roadmap" of sorts that I outlined in the [announcement post](https://matheusd.com/post/announcing-dcrlnd/) for LN, so this concludes the majority of the porting effort from lnd to dcrlnd. Concluding SPV means we can start exploring more exotic changes that are available in Decred (such as [PTLCs](https://suredbits.com/payment-points-monotone-access-structures/) which depend on the Schnorr work that @davecgh is also concluding). ([@matheusd](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$1586258547807544APZNe:matrix.org))
+> 移动LN钱包需要SPV模式。即使在台式机钱包中，SPV可能仍将是主导的同步模式，因此dcrlnd支持SPV模式至关重要。这也是我在LN的[公告中](https://matheusd.com/post/announcing-dcrlnd/)概述的“路线图”中“立即工作”部分的最后一项，因此，总结了从lnd到dcrlnd的大部分移植工作。结束此次SPV的任务意味着我们可以开始探索Decred中可用的更多奇特更改（例如[PTLCs](https://suredbits.com/payment-points-monotone-access-structures/)依赖@davecgh也得出结论的Schnorr工作）。（@matheusd）
 
 [dcrdex](https://github.com/decred/dcrdex):
 
-- command-line [control app](https://github.com/decred/dcrdex/pull/181) for the DEX client
-- ability to [place orders](https://github.com/decred/dcrdex/pull/195) through the client in-browser GUI
-- [backup and restore](https://github.com/decred/dcrdex/pull/210) for client keys and other account data (an earlier [#183](https://github.com/decred/dcrdex/pull/183) added backup of client order data)
-- client tracking of [epoch orders](https://github.com/decred/dcrdex/pull/188) and verification of order [shuffling and matching](https://github.com/decred/dcrdex/pull/189) performed at the end of the epoch
-- [cancellation ratio](https://github.com/decred/dcrdex/pull/206) computation that allows the server to reliably track user's completed vs canceled orders, with the ability to reconstruct any user's recent order history from the database. This is an important part of community conduct enforcement.
-- codebase refactoring and cleanup
+- DEX客户端的命令行[控制应用程序](https://github.com/decred/dcrdex/pull/181)
+- 通过客户端浏览器GUI[下订单](https://github.com/decred/dcrdex/pull/195)的能力
+- [备份和还原](https://github.com/decred/dcrdex/pull/210)客户端密钥和其他帐户数据（较早的[#183](https://github.com/decred/dcrdex/pull/183)添加了客户端订单数据的备份）
+- 客户跟踪[纪元订单](https://github.com/decred/dcrdex/pull/188)，并在纪元结束时验证订单[改组和匹配](https://github.com/decred/dcrdex/pull/189)
+- [取消比率计算](https://github.com/decred/dcrdex/pull/206)，使服务器能够可靠地跟踪用户的已完成订单与已取消订单，并能够从数据库中重建任何用户最近的订单历史记录。这是社区行为执法的重要组成部分。
+- 代码库重构和清理
 
-A major milestone is the completion of [match negotiation](https://github.com/decred/dcrdex/pull/213). This is the last big piece of the client that finally lets it execute a swap. The PR specifically makes the client go through the entire swap process (match negotiation), communicating with the server, performing necessary auditing of counterparty transactions, and creating and broadcasting the client's own contract and redeem transactions as required by the swap process.
+一个重要的里程碑是[撮合交易](https://github.com/decred/dcrdex/pull/213)的完成。这是客户端的最后一个重要部分，它能够执行交换。使客户经历整个交换过程（撮合交易），与服务器进行通信，对交易对手交易进行必要的审计，并根据交换过程的要求创建和广播自己的合同和赎回交易。
 
-A total of 19 pull requests merged from 6 contributors adding 11K and deleting 3K lines of code (commit summary [here](https://github.com/decred/dcrdex/compare/94310f66c06fdf5ca31eeb80c9f6af7aecf4c31d...d3bd07f822200041092bdc85f5c1b752b3c9ee24)).
+6个贡献者总共合并了19个拉取请求，添加了11K行代码并删除了3K行代码（在[此处](https://github.com/decred/dcrdex/compare/94310f66c06fdf5ca31eeb80c9f6af7aecf4c31d...d3bd07f822200041092bdc85f5c1b752b3c9ee24)提交摘要）。
 
-Congratulations to the dcrdex team for [coordinating](https://twitter.com/chappjc/status/1245075450625511425) the first order-driven atomic swap on testnet!
+祝贺dcrdex团队在testnet上[完成](https://twitter.com/chappjc/status/1245075450625511425)了第一个由订单驱动的原子交换！
 
 [dcrandroid](https://github.com/decred/dcrandroid):
 
-- added [statistics page](https://github.com/decred/dcrandroid/pull/440)
-- UI tweaks and fixes
+- 添加[统计信息页面](https://github.com/decred/dcrandroid/pull/440)
+- UI调整和修复
 
-Testnet version of the next release is available [here](https://play.google.com/apps/testing/com.decred.dcrandroid.testnet).
+下一个版本的测试网版本可在[此处](https://play.google.com/apps/testing/com.decred.dcrandroid.testnet)获得。
 
 [dcrios](https://github.com/raedahgroup/dcrios):
 
-- revamped [Send page](https://github.com/raedahgroup/dcrios/pull/557)
-- new UI for [More menu](https://github.com/raedahgroup/dcrios/pull/559)
-- new [wallet selector](https://github.com/raedahgroup/dcrios/pull/600) widget for Transactions page
-- reading DCR amount from [QR codes](https://github.com/raedahgroup/dcrios/pull/581)
-- multiple bug fixes and UI tweaks
+- 修改[发送页面](https://github.com/raedahgroup/dcrios/pull/557)
+- 新的“[更多](https://github.com/raedahgroup/dcrios/pull/559)”菜单用户界面
+- 交易页面的[新钱包](https://github.com/raedahgroup/dcrios/pull/600)选择器小部件
+- 从[二维码](https://github.com/raedahgroup/dcrios/pull/581)读取DCR数量
+- 多项bug修复和UI调整
 
-Testnet version of the next release is available [here](https://testflight.apple.com/join/7KL4VnB2).
+下一个版本的测试网版本可在[此处](https://testflight.apple.com/join/7KL4VnB2)获得。
 
 [dcrdata](https://github.com/decred/dcrdata):
 
-- a commonly requested URL for [raw JSON](https://github.com/decred/dcrdata/pull/1716) chart data was added to chart pages
-- small tweaks and bug fixes
+- [原始JSON](https://github.com/decred/dcrdata/pull/1716)图表数据的通用URL 已添加到图表页面
+- 小调整和bug修复
 
 [tinydecred](https://github.com/decred/tinydecred):
 
-- [staking view](https://github.com/decred/tinydecred/pull/53) showing spent, unspent and live tickets
-- simple [accounts view](https://github.com/decred/tinydecred/pull/94)
-- simple [views](https://github.com/decred/tinydecred/pull/125) to create accounts and send DCR
-- [account discovery](https://github.com/decred/tinydecred/pull/124)
-- changed tests to use [in-memory](https://github.com/decred/tinydecred/pull/116) databases
-- increased overall test coverage [to 98%](https://github.com/decred/tinydecred/issues/70#issuecomment-606669036) and fixed a few bugs uncovered in the process, all files now have at least 94% coverage
+- [Staking视图](https://github.com/decred/tinydecred/pull/53)显示已完成，未完成和正在等待被选的门票
+- 简单[帐户视图](https://github.com/decred/tinydecred/pull/94)
+- 创建帐户并发送DCR的简单[视图](https://github.com/decred/tinydecred/pull/125)
+- [帐户发现](https://github.com/decred/tinydecred/pull/124)
+- 更改测试以使用内存[数据库](https://github.com/decred/tinydecred/pull/116)
+- 将整体测试覆盖率提高到[98%](https://github.com/decred/tinydecred/issues/70#issuecomment-606669036)，并修复了此过程中发现的一些错误，现在所有文件的覆盖率至少为94％
 
-A total of 56 pull requests merged from 3 contributors adding 11K and deleting 6K lines of code (commit summary [here](https://github.com/decred/tinydecred/compare/fa081e7f17d303f0eea31e9f07499db4e0acc53a...e1ef1ff72cb924d27098f9df151f6805d5db3e90)).
+3个贡献者合并了总共56个拉取请求，添加了11K行代码和6K行代码（请在[此处](https://github.com/decred/tinydecred/compare/fa081e7f17d303f0eea31e9f07499db4e0acc53a...e1ef1ff72cb924d27098f9df151f6805d5db3e90)提交摘要）。
 
 [docs](https://github.com/decred/dcrdocs):
 
-- [dcrlnd](https://docs.decred.org/lightning-network/overview/) docs [updated](https://github.com/decred/dcrdocs/pull/1083) for latest release 0.2.1, commands grouped into categories
-- [guide](https://docs.decred.org/getting-started/joining-matrix-channels/) on how to join Matrix [added](https://github.com/decred/dcrdocs/pull/1081)
-- Inflation page [renamed](https://github.com/decred/dcrdocs/issues/1074) to [Issuance](https://docs.decred.org/advanced/issuance/) to remove ambiguity
-- [documented](https://github.com/decred/dcrdocs/pull/1073) accessing CoinShuffle++ server as a [Tor hidden service](https://docs.decred.org/privacy/cspp/how-to-cspp/#tor-hidden-service)
+- [dcrlnd](https://docs.decred.org/lightning-network/overview/)文档[已更新](https://github.com/decred/dcrdocs/pull/1083)为最新版本0.2.1，将命令分为几类
+- [添加](https://github.com/decred/dcrdocs/pull/1081)了有关[如何](https://docs.decred.org/getting-started/joining-matrix-channels/)加入Matrix的指南
+- 通货膨胀页已[重命名](https://github.com/decred/dcrdocs/issues/1074)为“[发行](https://docs.decred.org/advanced/issuance/)”以消除歧义
+- [记录了](https://github.com/decred/dcrdocs/pull/1073)作为[Tor隐藏服务](https://docs.decred.org/privacy/cspp/how-to-cspp/#tor-hidden-service)访问CoinShuffle ++服务器
 
 [decred.org](https://github.com/decred/dcrweb):
 
-- large cleanup pass fixing minor issues with the new website
-- updated VSP [copy](https://github.com/decred/dcrweb/pull/853)
-- recruiting page removed and decred.org/recruiting now redirects to the [Contributing](https://docs.decred.org/contributing/overview/) page
-- roadmap page [removed](https://github.com/decred/dcrweb/pull/857)
+- 大幅度清理，修复了新网站中的小问题
+- 更新的VSP[页面](https://github.com/decred/dcrweb/pull/853)
+- 招聘页面已删除，decred.org/recruiting 现在重[定向](https://docs.decred.org/contributing/overview/)到“贡献”页面
+- 路线图页面已[删除](https://github.com/decred/dcrweb/pull/857)
 
-Other:
+其他：
 
-- most projects upgraded to build with Go 1.14 and dropped support of Go 1.12
-- @mm released DigiSign Oracle, a free and open source web app that helps end users verify digital signatures. It was created to help Decred users verify package signatures without having to use complicated command line programs. You can access it at [stakey.club](https://stakey.club/digisign-oracle/) or download the [source code](https://github.com/mmartins000/digisign-oracle) to your computer and open with a web browser.
+- 大多数项目升级为使用Go 1.14构建，并放弃了对Go 1.12的支持
+- @mm发布了DigiSign Oracle，这是一个免费的开源Web应用程序，可帮助最终用户验证数字签名。它的创建是为了帮助Decred用户验证软件包签名，而不必使用复杂的命令行程序。您可以在[stakey.club](https://stakey.club/digisign-oracle/)上访问它，或将[源代码](https://github.com/mmartins000/digisign-oracle)下载到您的计算机上并使用网络浏览器打开。
 
-## Plans for v1.6
+## v1.6版本计划
 
-> The rough plan is for v1.6 to get released at end of Q2. We're planning to include: decentralized treasury consensus change, Decrediton staking and non-staking CSPP support, ticket-based VSP support, and a myriad dcrd improvements. (@jy-p on [2020-03-20](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15855719584400kpyNr:decred.org))
+> v1.6的粗略计划是在第二季度末发布。我们计划包括：去中心化的社区开发基金共识变更，Decrediton的Staking和非Staking CSPP支持，基于选票的VSP支持以及无数dcrd改进。(@jy-p 在[2020-03-20](https://matrix.to/#/!MgQoetFiyjrHAywokv:decred.org/$15855719584400kpyNr:decred.org))
 
-## People
+## 人员
 
-Welcome to new first time contributors with code merged to master: @unimere ([decrediton](https://github.com/decred/decrediton/commits?author=unimere)).
+欢迎新的首次贡献者，他的代码已合并到主代码库中： @unimere ([decrediton](https://github.com/decred/decrediton/commits?author=unimere)).
 
-Community stats:
+社区统计：
 
-- Twitter followers: 40,694 (-207)
-- Reddit subscribers: 9,760 (+22)
-- Matrix users: 601 (+36)
-- Discord users: 1,160 (+73), verified to post: 479 (+29)
-- Telegram users: 2,607 (-71)
-- YouTube subscribers: 3,980 (-10)
-- Facebook followers: 3,606 (+26), likes: 3,273 (+24)
-- LinkedIn followers: 744 (+25)
-- GitHub dcrd stars: 536 (+1), forks: 1,507 (+11)
+- Twitter 粉丝: 40,694 (-207)
+- Reddit 订阅: 9,760 (+22)
+- Matrix 用户: 601 (+36)
+- Discord 用户: 1,160 (+73), 已验证发布: 479 (+29)
+- Telegram 用户: 2,607 (-71)
+- YouTube 订阅: 3,980 (-10)
+- Facebook 粉丝: 3,606 (+26), 喜欢: 3,273 (+24)
+- LinkedIn 粉丝: 744 (+25)
+- GitHub dcrd 星星: 536 (+1), 分叉: 1,507 (+11)
 
-## Governance
+## 治理
 
-In March the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 13,713 DCR and spent 17,153 DCR. Using March's daily average DCR/USD rate of $13.40, this is $184K received and $230K spent. At February's average daily rate of $20.48, the USD figure billed for work completed in that month is $281K. As of Apr 3, Treasury balance is 640K DCR (7.41 million USD at $11.58).
+3月份，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了13,713 DCR，并花费了17,153 DCR。以3月份的每日 DCR/USD 汇率 $ 13.40计算，这是收到的$ 184K和花费的$ 230K。以2月份的每日平均价格$ 20.48计算，该月完成工作的美元费用为$ 281K。截至4月3日，库存余额为640K DCR（741万美元，折合11.58美元）。
 
-This month saw the publication of 4 new proposals.
+本月发布了4个新提案。
 
-The new [proposal](https://proposals.decred.org/proposals/2f08f8518bc7672069a10ac6461fd9ab341d4a9e4c343fd4a7ec426250f3896f) from the DCRComic team requested an increased budget of $16,200 for 12 more comics plus supporting activity, with an extra $150 per comic added for extra time spent adapting the assets for social media use. The proposal was put on [hold](https://twitter.com/DCRComic/status/1243197581104041984) to reformulate the cast of characters, after some criticism that Stakey was being over-used in representing many different roles in the Decred ecosystem. On Apr 6 the proposal was edited to add new [characters](https://github.com/pLabarta/dcrwebcomic/blob/master/Proposal2/NewChars.md) that will join the line-up alongside Stakey, and on Apr 9 voting opened.
+DCRComic团队提出的新[提案](https://proposals.decred.org/proposals/2f08f8518bc7672069a10ac6461fd9ab341d4a9e4c343fd4a7ec426250f3896f)要求预算16,200美元，以制作12部漫画以及其它活动，并为每部漫画额外增加150美元，以花费更多时间调整产品以供社交媒体使用。在有人批评Stakey被过度使用来代表Decred生态系统中的许多不同角色之后，该提案被[搁置](https://twitter.com/DCRComic/status/1243197581104041984)以重新设计角色。4月6日对提案进行了修改，以添加新角色，这些[角色](https://github.com/pLabarta/dcrwebcomic/blob/master/Proposal2/NewChars.md)将与Stakey一起加入阵容，并于4月9日开始投票。
 
-The US Marketing [proposal](https://proposals.decred.org/proposals/c830ea5afea45a0aabf4092d1bea51fb10b8bfa2d8474aac03224f0f94d3d1af) was, after being edited down to $177,800 to remove the community organizing of events in light of COVID-19, approved with 74% support and voter turnout of 31%.
+在社区根据COVID-19削减到177,800美元后，美国市场营销[提案](https://proposals.decred.org/proposals/c830ea5afea45a0aabf4092d1bea51fb10b8bfa2d8474aac03224f0f94d3d1af)被批准，获得74％的支持和31％的投票率。
 
-The Brazilian marketing [proposal](https://proposals.decred.org/proposals/bc20f986c3ea2fed2ea074c377a89f1a4b956ea0d527a8b6c099a5a8f175beb5), which requests $108K for the rest of the year was also approved, with 65% support and turnout of 34%. This proposal was edited to say that events will not be organized or billed for while the COVID-19 situation persists, but the item was not removed from the budget and some of this activity may take place later in the year.
+巴西的营销[提案](https://proposals.decred.org/proposals/bc20f986c3ea2fed2ea074c377a89f1a4b956ea0d527a8b6c099a5a8f175beb5)也获得了批准，该提案要求在今年余下时间提供$ 108K，获得65％的支持，投票率达到34％。编辑该提案的目的是，在COVID-19局势持续存在的情况下，不会组织活动或为活动付费，但该项目并未从预算中删除，某些活动可能会在今年晚些时候进行。
 
-Two further proposals were submitted and are under discussion. A [proposal](https://proposals.decred.org/proposals/d3b16861a7e555db2fdd25b589123f4b6c4289c857fbdff329a4ffb1cb60c4d9) from PolisPay App seeks $5,000 to support DCR. There is also a [proposal](https://proposals.decred.org/proposals/7d42c6f4bf3059b64789185af615c1df97cb61a379425933be5ff01d074ed4d5) to fund the Decred Daily twitter [account](https://twitter.com/Decred_Daily) for 6 months and make a website for it (total budget $5,280). The Decred Daily proposal started voting on Apr 9.
+提交了另外两个提案，正在讨论中。PolisPay App的一项[提案](https://proposals.decred.org/proposals/d3b16861a7e555db2fdd25b589123f4b6c4289c857fbdff329a4ffb1cb60c4d9)寻求5,000美元以支持DCR。还有一个建议为Decred Daily Twitter 帐户提供资金6个月并为其建立一个网站（总预算$ 5,280）。Decred Daily[提案](https://proposals.decred.org/proposals/7d42c6f4bf3059b64789185af615c1df97cb61a379425933be5ff01d074ed4d5)于4月9日开始投票。
 
-Shortly before publication on Apr 9 another proposal was published, requesting $24,450 for a [billboard](https://proposals.decred.org/proposals/bce7bf3cd1f74d571d23ac8a330ddf29a14a547ed0cc9c995f1a97dce733d1e1) marketing campaign.
+i2 Trading的做市提案已经历六个月的做市活动，该活动于2019年10月下旬开始，因此将在2020年4月下旬结束.i2的交易日志由Company 0 审查，发现性能令人满意。i2计划提交一份提案，以继续进行做市活动，但将按比例缩小以反映当前的市场状况。
 
-The Market Making proposal from i2 Trading is nearing the end of the six months of market making activity, this commenced in late October 2019 and so will come to an end in late April 2020. i2's trading logs continue to be audited monthly by Company 0 and performance has been found to be satisfactory. i2 are planning to submit a proposal to continue MM activity for Decred, but it will be scaled down to reflect the current market conditions.
+有关本月“Politeia活动”的更多详细信息，请参见《Politeia摘要》第[29期](https://blockcommons.red/politeia-digest/issue029/)。
 
-For more detail on the month's Politeia activity see Politeia Digest [issue 29](https://blockcommons.red/politeia-digest/issue029/).
-
-## Network
+## 网络
 
 Hashrate: [March's hashrate](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=k73pwcch-k8jayo3s&bin=block&axis=time) opened at ~359 Ph/s and closed ~309 Ph/s, bottoming at 274 Ph/s and peaking at 556 Ph/s throughout the month. Pool [hashrate distribution](https://dcrstats.com/pow) as of Apr 1: UUPool 55%, Poolin 18%, lab.antpool.com 17%, Luxor 2.5%, BTC.com 2.2%, F2Pool 1.5%, BeePool 0.13%, CoinMine 0.08%, Suprnova 0.02% and others ~3.8%. Pool distribution numbers are approximate and cannot be accurately determined.
 
