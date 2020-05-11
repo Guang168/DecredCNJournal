@@ -6,7 +6,7 @@ _图片: Bridge Verticals by @saender_
 
 四月重点:
 
-- dcrd的优化仍在继续，dcr的速度越来越快，必须更新兼容标准以防被旧版本禁用。
+- dcrd的优化仍在继续，dcrd的速度越来越快，必须更新兼容标准以防被旧版本禁用。
 - @moo31337发布了一项WIP PR，用于去中心化的开发基金支出工作。
 - 非常欢迎新加入Decred GitHub的5位贡献者！
 - Transak和Metal Pay进行集成DCR支付的最重要一个月。Steelbackup（金属DCR种子存储解决方案）还添加了新的预算选项。
