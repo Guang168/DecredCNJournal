@@ -183,160 +183,168 @@ Staking: [30天的平均票价](https://dcrstats.com/)为137.8 DCR（-4.1）。�
 
 ## 整合
 
-[dcr.blue](https://dcr.blue/) VSP announced that it will shut down in a message sent to all users with verified email on Apr 20. It was [removed](https://github.com/decred/dcrwebapi/pull/97) from the [listing](https://www.decred.org/vsp/) and Decrediton but will stay online for the rest of 2020. Since the maximum lifetime of a ticket is roughly 4.7 months, this gives users around 3 months to stop buying tickets assigned to DCR.Blue. Users are advised to backup their redeem scripts if they haven't already (a copy is available in the VSP account) and start buying tickets to a different VSP. Please avoid joining too large VSPs to maintain a healthy distribution and better security for the network. This is the first VSP to attempt a "graceful shutdown" rather than just disappearing without notice as some other VSPs have done in the past.
+[dcr.blue](https://dcr.blue/)VSP宣布将于4月20日关闭，已经通过邮件通知注册用户。它已从[列表](https://www.decred.org/vsp/)和Decrediton中[删除](https://github.com/decred/dcrwebapi/pull/97)，但在2020年剩余时间内将保持在线状态。大约4.7个月，这使用户大约有3个月的时间停止购买分配给DCR.Blue的选票。建议用户备份尚未兑换的脚本（VSP帐户中有副本），然后开始购买其他VSP的选票。请避免加入太大的VSP，以保持健康和更好的网络安全性。这是第一个尝试“正常关闭”的VSP，而不是像其他一些VSP过去所做的那样在没有通知的情况下消失了。
 
-[decred.raqamiya.net](https://decred.raqamiya.net/) VSP that was [delisted](https://github.com/decred/dcrwebapi/pull/95) in March is now again operational and was [added back](https://github.com/decred/dcrwebapi/pull/96) to the listing. As of writing, it holds about 330 live tickets (0.8%), has 4 servers, and features a custom UI.
+在三月份退市的[decred.raqamiya.net](https://decred.raqamiya.net/) VSP 现在 [可以](https://github.com/decred/dcrwebapi/pull/95)再次使用，并[重新添加](https://github.com/decred/dcrwebapi/pull/96)到列表中。截至撰写本文时，它拥有约330张选票（0.8％），具有4台服务器并具有自定义UI。
 
-Metal Pay [added](https://twitter.com/metalpaysme/status/1249745420206686208) [support](https://blog.metalpay.com/metal-pay-welcomes-decred/) for DCR on their marketplace. It provides another fiat onramp and works in most US states. They followed the announcement with [tweets](https://twitter.com/metalpaysme/status/1250424090172612615) about Decred.
+Metal Pay 在其市场上[增加](https://twitter.com/metalpaysme/status/1249745420206686208)了 对DCR的支持。它提供了另一个法定通道，并且在美国大多数州都可以使用。他们在公告之后发表了有关Decred的[推文](https://twitter.com/metalpaysme/status/1250424090172612615)。
 
-[Transak](https://global.transak.com/) [announced](https://twitter.com/transak_finance/status/1256654711412776961) that trading DCR against EUR, GBP and INR is [available](https://global.transak.com/?defaultCryptoCurrency=DCR) on their fiat < > crypto payment gateway. USD pairs are coming soon.
+[Transak](https://global.transak.com/) [宣布](https://twitter.com/transak_finance/status/1256654711412776961)可在其法定加密支付网关上对欧元，英镑和印度卢比进行DCR交易。美元对即将推出。
 
-An instant exchange [SwapSpace](https://swapspace.co/) [added](https://twitter.com/SwapSpaceCo/status/1250078395884539906) support for Decred.
+即时交换[SwapSpace](https://swapspace.co/)[增加](https://twitter.com/SwapSpaceCo/status/1250078395884539906)了对Decred的支持。
 
-[Steelbackup](https://steelbackup.com/), a physical seed backup solution added a [light version](https://twitter.com/steelbackup/status/1248058631523905538) of the product. Currently, there are two types of steel plates: [laser engraved](https://steelbackup.com/product/decred-laser-engraved/) and [laser marked](https://steelbackup.com/product/decred-laser-marked/). The engraved one is the most robust solution as steel is removed which makes the marking grid as permanent as the steel. The laser marked product is marked with a molybdenum disulfide solution which makes it resistant to scratches, acids, and high temperatures (up to 340 degrees C). The products are designed to be simple with no moving parts, users just need a center punch (found at a local hardware store) to indent their seed. Tamper evident bags are included. SteelBackup was launched in Feb 2020 by @zubair and ships worldwide.
+物理种子备份解决方案[Steelbackup](https://steelbackup.com/)添加了该产品的[简化版本](https://twitter.com/steelbackup/status/1248058631523905538)。当前，有两种类型的钢板：激光雕刻和激光标记。雕刻是最坚固的解决方案，因为去除了钢，使标记网格与钢一样永久。激光打标的产品用二硫化钼溶液打标，使其耐刮擦，耐酸和耐高温（最高340摄氏度）。产品设计简单，没有活动部件，用户只需要一个中心冲头（可在当地五金店找到）来压入种子。包括防篡改袋。SteelBackup由@zubair于2020年2月推出，并在全球范围内发售。
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+警告：Decred Journal的作者不了解上述任何服务的可信赖性。在将您的个人信息或资产信任给任何实体之前，请先进行自己的研究。
 
-## Outreach
+## 外展活动
 
-Decred's YouTube [channel](https://www.youtube.com/decredchannel) grew by 4 new videos, while Decred in Depth and Rough Consensus podcasts released 3 episodes in total (see [Media](#media) below).
+Decred的YouTube[频道](https://www.youtube.com/decredchannel)增加了4个新视频，而Decred in Depth和Rough Consensus播客总共发布了3集（请参阅下面[媒体](#media)）。
 
-Decred Brazil [channel](https://www.youtube.com/channel/UC73wa2ddXuPWsmenVfeFTYg) keeps actively generating content. Decred Semanal ("Decred Weekly") published 5 new episodes in April which received ~150 views on average, up from ~50 views in previous months (likely a result of [improved](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org/$158896614628001AwmOM:decred.org) distribution tactics). The series is also available in podcast format on all major platforms like [Apple](https://podcasts.apple.com/podcast/decred-brasil/id1451017413) (59 episodes total), Google, Spotify, [SoundCloud](https://soundcloud.com/decredbrasil) and others.
+Decred巴西[频道](https://www.youtube.com/channel/UC73wa2ddXuPWsmenVfeFTYg)持续积极地制作内容。Decred Semanal（“ Decred Weekly”）在4月份发布了5个新剧集，平均获得了约150次观看，而前几个月的观看次数为50次（可能是由于改进了分发策略）。该系列还可以在所有主要平台（如[Apple](https://podcasts.apple.com/podcast/decred-brasil/id1451017413)（共59集），Google，Spotify，[SoundCloud](https://soundcloud.com/decredbrasil)等）上以播客格式使用。
 
-On Medium, [Decred Drive](https://twitter.com/decreddrive) keeps delivering nice weekly updates, [Decred Spanish](https://medium.com/decred-es) is adding new articles and translations, and [Phoenix Green](https://medium.com/@kencameron77) has emerged with writings about his crypto/Decred journey.
+在Medium上，[Decred Drive](https://twitter.com/decreddrive)继续提供不错的每周更新，[Decred Spanish](https://medium.com/decred-es)正在添加新文章和翻译，[Phoenix Green](https://medium.com/@kencameron77)出现了有关他的加密货币/ Decred旅程的著作。
 
-@jy-p commented on fiat credit issuance and remote work in a project survey by [8btc.com](https://news.8btc.com/8btc-interview-cryptos-and-coronavirus-what-we-learned-from-foreign-communities). 8btc is the oldest Bitcoin forum in China.
+@ jy-p在[8btc.com](https://news.8btc.com/8btc-interview-cryptos-and-coronavirus-what-we-learned-from-foreign-communities)的项目调查中评论了法定货币发行和远程工作。8btc是中国最早的比特币论坛。
 
-Monde PR's achievements for April:
+Monde PR四月份成就：
 
-- created and pitched a story idea targeted at investing, VC and tech publications
-- created and pitched a story idea targeted at crypto and fintech publications
-- created and pitched a story idea targeted at personal finance publications
-- submitted comments from Decred spokespeople to 8 news stories
-- secured a media interview with a mainstream newswire and 3 email Q&As with mainstream and crypto publications
+- 创建并提出了一个针对投资，风险投资和技术出版物的故事创意
+- 创建并提出了针对加密货币和金融科技出版物的故事创意
+- 创建并提出了针对个人理财出版物的故事创意
+- 提交Decred发言人对8个新闻故事的评论
+- 通过主流新闻专线进行媒体采访，并通过主流和加密出版物获得3封电子邮件问答
 
-News coverage secured by Monde PR:
+Monde PR保证的新闻报道：
 
-- a thought leadership piece in [ValueWalk](https://www.valuewalk.com/2020/04/open-source-response-covid-19/) by @richardred
-- an article in [Cointelegraph](https://cointelegraph.com/news/harsh-stablecoin-recommendations-from-g-20-are-a-step-in-the-right-direction-but-regulators-need-more-education) featuring commentary by @jy-p on the future of stablecoins, syndicated to [Investing.com](https://www.investing.com/news/cryptocurrency-news/g20s-harsh-stance-on-stablecoin-is-a-step-forward-but-regulators-have-more-to-learn-2144200) and [Bitcoin News Network](https://www.btcnn.com/harsh-stablecoin-recommendations-from-g-20-are-a-step-in-the-right-direction-but-regulators-need-more-education/)
+- @richardred在[ValueWalk](https://www.valuewalk.com/2020/04/open-source-response-covid-19/)中进行思想领导的文章
+- [Cointelegraph](https://cointelegraph.com/news/harsh-stablecoin-recommendations-from-g-20-are-a-step-in-the-right-direction-but-regulators-need-more-education)上的一篇文章，收录了[Investing.com](https://www.investing.com/news/cryptocurrency-news/g20s-harsh-stance-on-stablecoin-is-a-step-forward-but-regulators-have-more-to-learn-2144200)和[比特币新闻网](https://www.btcnn.com/harsh-stablecoin-recommendations-from-g-20-are-a-step-in-the-right-direction-but-regulators-need-more-education/)发布的@ jy-p关于稳定币未来的评论
 
-## Events
+## 活动
 
-Attended:
+参加：
 
-- Apr 4 - [Paxful Conversations](https://twitter.com/paxful_LATAM/status/1245066931155148800) - Internet. @elian was invited by Paxful LATAM to talk about how to spot scams and what to look at when researching cryptocurrency fundamentals. It was not a direct Decred talk but it was mentioned as an example of good practices within the industry. The webinar was "powered by Decred" and was viewed by ~70 people.
-- Apr 9 - Hablemos Decred 03 - Internet. @pablito and @elian explained the PoS system. There were only 3 new viewers this time, although some lessons were learned about promoting the event and picking the optimal time. ([report](https://github.com/decredcommunity/events/blob/master/reports/20200409-hablemosdecred-03-internet.md))
-- Apr 16 - [Jalisco Talend Land @ Home](https://www.talent-land.tv/) - Internet. Decred team presented a panel titled "The future of money and remote work" to explore the intersection of money, technology, and remote working through the lens and experience of 4 Decred contractors in LATAM. They shared their experience working from Argentina, Colombia, and Mexico, and covered the challenges and opportunities of working for Decred remotely. ([report](https://github.com/decredcommunity/events/blob/master/reports/20200416-talent-land-at-home-internet.md))
-- Apr 16 - Hablemos de Criptomonedas - Internet. The webinar was co-hosted with Ibero University through its innovation hub IDIT. @adcade and @elian talked about cryptocurrency and blockchain to an audience of 22 (out of 34 registrations), mostly students. ([report](https://github.com/decredcommunity/events/blob/master/reports/20200416-hablemos-de-criptomonedas-internet.md))
-- Apr 23 - Hablemos Decred 04 - Internet. @pablito and @elian focused on exchanges and the DEX that Decred is building. Attendance was up to 15 this time, and the LATAM team is continuing to explore the best ways to host such events. ([report](https://github.com/decredcommunity/events/blob/master/reports/20200423-hablemosdecred-04-internet.md))
-- Apr 30 - [Decred Virtual Meetup](https://www.meetup.com/Decred-Australia/events/270252645/) - Internet. @Checkmate presented his BTC and DCR on-chain analytics. The recording was uploaded to [YouTube](https://www.youtube.com/watch?v=H_COE9A-t3I).
+- 4月4日 - [Paxful Conversations](https://twitter.com/paxful_LATAM/status/1245066931155148800) - 互联网。Paelful LATAM邀请@elian讨论在研究加密货币基础知识时如何发现骗局以及如何看待。这不是直接的Decred演讲，但被提及为行业内良好实践的一个例子。该网络研讨会由“ Decred提供支持”，约有70人观看。
+- 4月9日 - Hablemos Decred 03 - 互联网。@pablito和@elian解释了PoS系统。这次只有3名新观众，尽管从推广活动和选择最佳时间方面获得了一些经验教训。([报告](https://github.com/decredcommunity/events/blob/master/reports/20200409-hablemosdecred-03-internet.md))
+- 4月16日 - [Jalisco Talend Land @ Home](https://www.talent-land.tv/) - 互联网。Decred团队介绍了一个题为“金钱与远程工作的未来”的小组，通过4位Decred承包商在拉美的经验和经验，探讨了金钱，技术和远程工作的交集。他们分享了他们在阿根廷，哥伦比亚和墨西哥工作的经验，并介绍了为Decred远程工作的挑战和机遇。([报告](https://github.com/decredcommunity/events/blob/master/reports/20200416-talent-land-at-home-internet.md))
+- 4月16日 - Hablemos de Criptomonedas - 互联网。该网络研讨会通过其创新中心IDIT与Ibero University共同举办。@adcade和@elian与22位观众（共34个注册）讨论了加密货币和区块链，其中大多数是学生。([报告](https://github.com/decredcommunity/events/blob/master/reports/20200416-hablemos-de-criptomonedas-internet.md))
+- 4月23日 - Hablemos Decred 04 - 互联网。@pablito和@elian专注于交流和Decred正在建立的DEX。这次参加人数最多为15人，并且LATAM团队正在继续探索举办此类活动的最佳方法。([报告](https://github.com/decredcommunity/events/blob/master/reports/20200423-hablemosdecred-04-internet.md))
+- 4月30日 - [Decred Virtual Meetup](https://www.meetup.com/Decred-Australia/events/270252645/) - 互联网。@Checkmate介绍了他的BTC和DCR链分析。录音已上传到[YouTube](https://www.youtube.com/watch?v=H_COE9A-t3I)。
 
-Upcoming:
+即将到来的:
 
-- May 12 - [Decred Foundations at Consensus Distributed](https://next.brella.io/events/consensusdistributed/schedule/118434) (requires signup at brella.io to view and "attend") - Internet. Consensus Distributed is the remote replacement for the annual Consensus conference, and Decred is one of the projects which was invited to contribute an hour of content, broken into 3 segments. In Construct, @richardred checks in with contributors to some important Decred subprojects to find out what they're about and what the latest is. Featuring @lukebp on Politeia, @matheusd on dcrlnd, @chappjc, and @buck54321 on dcrdex, dcrdata and TinyDecred. The second segment is Trade Secrets, where @Checkmate will be giving a quick intro to his top 5 Decred on-chain metrics. To finish, @jy-p will present a review of the year's progress across all of the major aspects of the project in ChangeLog, followed by a 10 minute live Q&A with Lucas Nuzzi. Video will be available on the Coindesk website afterwards, and an extended version of Trade Secrets will be uploaded to Youtube.
-- May 14 - [Virtual meetup with BlockchainEx](https://twitter.com/Decred_ES/status/1258905004510973953) - Internet. Decred will participate in the panel "What is decentralized governance and DAOs?" co-hosted by @adcade and @caibarrad from Decred, Nadia Alvarez from MakerDAO, Gustavo Segovia from Colony and Jhonny Gomez from BlockchainEx. This panel will be live-streamed to the blockchain community in Colombia.
-- May 14 - [Decred meetup with BlockConf](https://twitter.com/Decred_ES/status/1258165218204618759) - Internet. This will be a virtual meetup to showcase the platform and a fireside chat before the main conference. The team will give a brief on Decred's fundamentals and new developments in the pipeline.
-- May 25 - [BlockConf](https://blockconf.digital/) - Internet. Decred is a [bronze sponsor](https://twitter.com/BlockconfD/status/1251194332079697922). Decred LATAM team will run a virtual booth for Decred to answer questions from the attendees. If anyone wants to help with keeping the booth active in several time zones during the 48-hour event, please contact @elian.
+- 5月12日 - [Decred Foundations at Consensus Distributed](https://next.brella.io/events/consensusdistributed/schedule/118434)（需要在brella.io进行注册才能查看和“出席”）- 互联网。共识分发是年度共识会议的远程替代，Decred是受邀贡献一个小时内容的项目之一，分为三个部分。在Construct中，@ richardred与一些重要的Decred子项目的参与者进行签到，以了解它们的含义以及最新的内容。在Politeia上具有@lukebp，在dcrlnd上具有@matheusd，在dcrdex，dcrdata和TinyDecred上具有@chappjc和@ buck54321。第二部分是商业机密，其中@Checkmate将快速介绍他的前5个Decred链上指标。最后，@ jy-p将在ChangeLog中介绍该项目所有主要方面的年度进展回顾，然后与Lucas Nuzzi进行10分钟的现场问答。
+- 5月14日 - [Virtual meetup with BlockchainEx](https://twitter.com/Decred_ES/status/1258905004510973953) - 互联网。Decred将参加“什么是分散式治理和DAO？”小组。由Decred的@adcade和@ caibarrad，MakerDAO的Nadia Alvarez，Colony的Gustavo Segovia和BlockchainEx的Jhonny Gomez共同主持。该小组将直播到哥伦比亚的区块链社区。
+- 5月14日 - [Decred meetup with BlockConf](https://twitter.com/Decred_ES/status/1258165218204618759) - Internet。这将是一次虚拟聚会，以展示平台并在主要会议之前进行炉边聊天。该团队将简要介绍Decred的基础知识和正在开发的新发展。
+- 5月25日 - [BlockConf](https://blockconf.digital/) - 互联网。Decred是铜牌赞助商。Decred LATAM团队将为Decred运行一个虚拟展位，以回答与会者的问题。如果有人希望在48小时活动中在多个时区保持摊位处于活动状态，请联系@elian。
 
 ![Jalisco Talent Land @ Home shot](img/latam-stakeys-360.jpg)
 
-_Image: No shortage of Stakey in LATAM_
+_图片: No shortage of Stakey in LATAM_
 
-## Media
+## 媒体
 
-Selected articles:
+精选文章：
 
-- Decred on-chain: Strongest hand market cap + ratio by @PermabullNino ([medium](https://medium.com/@permabullnino/decred-on-chain-strongest-hand-market-cap-ratio-146d6854e1d6))
-- Decred market maker monitoring - Phase 1 wrap-up by @richardred ([blockcommons.red](https://blockcommons.red/publication/mm-phase1-wrapup/))
-- Our Network issue #15 - featuring Decred updates from @Checkmate ([substack.com](https://ournetwork.substack.com/p/our-network-issue-15))
-- Decred governance proposal: Protecting the Treasury by Phoenix Green ([medium](https://medium.com/phoenix-green/decred-governance-proposal-protecting-the-treasury-2bcab84800ad))
-- Finance 2.0 by Phoenix Green ([medium](https://medium.com/@kencameron77/finance-2-0-5dea40e4b60e))
-- The open-sourced mindset for finance by Phoenix Green ([medium](https://medium.com/@kencameron77/open-sourced-finance-7ce8a3fdb648)) - calls to think collectively and find common grounds, and lists tools to build a community
-- 3 things everyone should know about cryptocurrencies by Phoenix Green ([medium](https://medium.com/@kencameron77/3-things-everyone-should-know-about-cryptocurrencies-e38c3db4127b))
-- The Bitcoin time machine by Phoenix Green ([medium](https://medium.com/@kencameron77/the-bitcoin-time-machine-29f228656cd3)) - compared Bitcoin with Decred
-- What if Bitcoin had a Treasury? by Ryan Watkins ([messari.io](https://messari.io/article/what-if-bitcoin-had-a-treasury), paywalled)
-- Project Rundown interview with Decred by The Capital (former Altcoin Magazine, [medium](https://medium.com/the-capital/project-rundown-interview-with-decred-on-the-capital-8b647919a339))
-- Let's talk about Decred and remote work by @adcade (in Spanish, [medium](https://medium.com/decred-es/hablemos-decred-sobre-el-proyecto-y-sobre-el-trabajo-remoto-e5a2510364ae))
-- Article on the 4th Decred virtual meetup about CEXes and DEXes (in Spanish, [es.cointelegraph.com](https://es.cointelegraph.com/news/decred-organizes-virtual-meeting-on-decentralized-exchanges-for-the-spanish-speaking-community))
+- Decred 链上：@PermabullNino ([medium](https://medium.com/@permabullnino/decred-on-chain-strongest-hand-market-cap-ratio-146d6854e1d6))
+- Decred 做市商第一阶段总结 @richardred ([blockcommons.red](https://blockcommons.red/publication/mm-phase1-wrapup/))
+- 我们网络的问题 #15 ：@Checkmate ([substack.com](https://ournetwork.substack.com/p/our-network-issue-15))
+- Decred 提案治理：Phoenix Green ([medium](https://medium.com/phoenix-green/decred-governance-proposal-protecting-the-treasury-2bcab84800ad))
+- 金融2.0：Phoenix Green ([medium](https://medium.com/@kencameron77/finance-2-0-5dea40e4b60e))
+- 开源金融思维方式：”Phoenix Green ([medium](https://medium.com/@kencameron77/open-sourced-finance-7ce8a3fdb648))
+- 每个人都应该了解的有关加密货币的三件事：Phoenix Green ([medium](https://medium.com/@kencameron77/3-things-everyone-should-know-about-cryptocurrencies-e38c3db4127b))
+- 比较比特币和Decred：Phoenix Green ([medium](https://medium.com/@kencameron77/the-bitcoin-time-machine-29f228656cd3))
+- 如果比特币有开发基金怎么办？：Ryan Watkins ([messari.io](https://messari.io/article/what-if-bitcoin-had-a-treasury))
+- The Capital的Decred采访 (前Altcoin杂志, [medium](https://medium.com/the-capital/project-rundown-interview-with-decred-on-the-capital-8b647919a339))
+- 让我们谈论Decred和远程工作： @adcade (西班牙语, [medium](https://medium.com/decred-es/hablemos-decred-sobre-el-proyecto-y-sobre-el-trabajo-remoto-e5a2510364ae))
+- Decred虚拟会议 (西班牙语, [es.cointelegraph.com](https://es.cointelegraph.com/news/decred-organizes-virtual-meeting-on-decentralized-exchanges-for-the-spanish-speaking-community))
 
-Translations:
+翻译:
 
-- Secrets they missed at DevCon: What it's really like in a working DAO - [in Portuguese](https://stakey.club/translated/working-dao/) by @mm.
-- Decred Journal March 2020 was translated to Arabic (@arij), Chinese (@Dominic), Polish (@kozel), and Spanish (@francov\_). @kozel is back in the game with 4 translated issues since December. Shortened Spanish versions are available on [Medium](https://medium.com/decred-es/revista-2020/home). Thank you all for building awareness of the project!
+- 在DAO中工作的真正含义 - [葡萄牙语](https://stakey.club/translated/working-dao/) @mm.
+- 2020年3月的Decred月报被翻译成阿拉伯语（@arij），中文（@Dominic），波兰语（@kozel）和西班牙语（@francov_）。自12月以来，@kozel再次加入队伍，并翻译了4期。缩短的西班牙语版本在[Medium](https://medium.com/decred-es/revista-2020/home)展示。谢谢大家对月报项目的支持！
 
-Videos:
+视频:
 
-- DCR 101 - Working for the Decred DAO by @Exitus ([youtube](https://www.youtube.com/watch?Ud4LVhFwL9g))
-- Decred bi-weekly news update - April 18th, 2020 by @Exitus ([youtube](https://www.youtube.com/watch?v=3TLeEO8Mz1k))
-- Decred Australia virtual meetup - BTC & DCR on-chain analytics event with @Checkmate ([youtube](https://www.youtube.com/watch?v=H_COE9A-t3I))
-- Psychic Andre has good feelings about things going up, the video is mostly about the Federal Reserve but on the subject of Decred Andre says "they're fine" ([youtube](https://www.youtube.com/watch?v=ddjelXN5KZs))
-- The Federal Reserve in its own words. Protect your wealth, buy Decentralized Credits ([twitter](https://twitter.com/coveryfire7777/status/1246169256020107266))
-- DCR 101 - How to stake Decred by @Exitus ([youtube](https://www.youtube.com/watch?v=m5lcm6yttEk))
-- Decred price analysis - 17th April 2020 by Brave New Coin ([youtube](https://www.youtube.com/watch?v=Q33i6xK_SPg))
+- DCR 101 - @Exitus为decred DAO工作([youtube](https://www.youtube.com/watch?Ud4LVhFwL9g))
+- Decred双周报 - 4月18日@Exitus([youtube](https://www.youtube.com/watch?v=3TLeEO8Mz1k))
+- Decred Australia virtual meetup - @Checkmate([youtube](https://www.youtube.com/watch?v=H_COE9A-t3I))进行了BTC和DCR链上分析活动
+- 用美联储自己的话来说。保护您的财富，购买去中心化的信用([twitter](https://twitter.com/coveryfire7777/status/1246169256020107266))
+- DCR 101-如何购买选票 @Exitus([youtube](https://www.youtube.com/watch?v=m5lcm6yttEk))
+- Decred价格分析 - 4月17日 - Brave New Coin ([youtube](https://www.youtube.com/watch?v=Q33i6xK_SPg))
 
-Audio:
+音频:
 
-- Rough Consensus Ep. 4 - Gold, Bitcoin, and Decred. @mr.black, @Checkmate, and @PermabullNino discuss the state of macro and crypto markets in the context of collapsing economies and unlimited QE. The conversation considers the nature of sound money and how gold, Bitcoin, and Decred represent different areas of the sound money spectrum. ([libsyn](https://roughconsensus.libsyn.com/rough-consensus-4-gold-bitcoin-and-decred))
-- Decred in Depth - Round Up 2 with @mr.black, @Checkmate and @PermabullNino. ([libsyn](https://decredindepth.libsyn.com/dcr-round-up-2-with-checkmate-permabull-nio), [youtube](https://www.youtube.com/watch?v=eb_GFdOkjwA), [soundcloud](https://soundcloud.com/decredindepth/dcr-round-up-2-with-checkmate))
-- Decred in Depth (has given up on numbering) - Chris Burniske of Placeholder VC talks about recent developments, why Decred HAS (Hypersecure Adaptable Sustainable) it, opportunities for dcrdex, and Politeia to expand the Decred ecosystem, and much more! ([libsyn](https://decredindepth.libsyn.com/chris-burniske-institutional-investment-dcr-as-a-sov-current-events-dcr-custody-solutions), [youtube](https://www.youtube.com/watch?v=Q4wbt0JLA5k), [soundcloud](https://soundcloud.com/decredindepth/chris-burniske-crypto-in-the))
+- Rough Consensus Ep. 4 - 黄金，比特币和Decred。@ mr.black，@ Checkmate和@PermabullNino在经济崩溃和量化宽松的背景下讨论了宏观和加密市场的状况。对话中考虑了有形货币的性质以及金，比特币和Decred如何代表有形货币频谱的不同区域。（libsyn） ([libsyn](https://roughconsensus.libsyn.com/rough-consensus-4-gold-bitcoin-and-decred))
+- Decred in Depth - @mr.black, @Checkmate 和 @PermabullNino. ([libsyn](https://decredindepth.libsyn.com/dcr-round-up-2-with-checkmate-permabull-nio), [youtube](https://www.youtube.com/watch?v=eb_GFdOkjwA), [soundcloud](https://soundcloud.com/decredindepth/dcr-round-up-2-with-checkmate))
+- Decred in Depth - Placeholder的VC Chris Burniske谈论了最近的发展，为何使用Decred HAS（超安全适应性可持续发展），dcrdex的机会以及Politeia扩展Decred生态系统的方法等等！ ([libsyn](https://decredindepth.libsyn.com/chris-burniske-institutional-investment-dcr-as-a-sov-current-events-dcr-custody-solutions), [youtube](https://www.youtube.com/watch?v=Q4wbt0JLA5k), [soundcloud](https://soundcloud.com/decredindepth/chris-burniske-crypto-in-the))
 
-## Community Discussions
+## 社区讨论
 
-Selected Reddit posts:
+精选Reddit帖子：
 
-- The Decred Journal's own Reddit [post](https://www.reddit.com/r/decred/comments/fy493y/decred_journal_march_2020/) was the most discussed one on the subreddit this month with 42 comments!
-- The discussion of @bee's idea to add [vote reason](https://github.com/decredcommunity/issues/issues/118) information to Politeia votes [concluded](https://www.reddit.com/r/decred/comments/g2ozqc/reason_bits_for_politeia_no_votes_feature_idea/) that implementing it properly requires a privacy solution like a blind voting scheme.
-- Phase 1 market making report [discussion](https://www.reddit.com/r/decred/comments/g5he83/decred_market_maker_monitoring_phase_1_wrapup/) speculated about the rate of adoption.
-- [Perspectives](https://www.reddit.com/r/decred/comments/g66onn/perspectives/) thread collected 33 comments of which many are long read quality thinking.
-- [Decred: Do Different](https://www.reddit.com/r/decred/comments/g66msa/decred_challenge_do_different/) mini-game.
-- The [post](https://www.reddit.com/r/decred/comments/fyi49j/checkmate_on_twitter_cost_to_launch_a_1hr_double/) discussing @Checkmate's methodology of comparing the attack cost of Decred and other chains.
+- Decred月报自己的Reddit[帖子](https://www.reddit.com/r/decred/comments/fy493y/decred_journal_march_2020/)是本月subreddit上讨论最多的帖子，有42条评论！
+- 对@bee 将[投票原因](https://github.com/decredcommunity/issues/issues/118)信息添加到Politeia投票的想法的讨论得出的结论是，正确实施它需要像盲目投票方案这样的隐私解决方案。
+- 第一阶段做市[报告](https://www.reddit.com/r/decred/comments/g5he83/decred_market_maker_monitoring_phase_1_wrapup/)的讨论推测了采用率。
+- [Decred: Do Different](https://www.reddit.com/r/decred/comments/g66msa/decred_challenge_do_different/)做不同的试验。
+- 这个[帖子](https://www.reddit.com/r/decred/comments/fyi49j/checkmate_on_twitter_cost_to_launch_a_1hr_double/)@Checkmate讨论和比较了Decred和其它链的攻击成本
 
-Selected Twitter discussions:
+精选Twitter讨论：
 
-- @Checkmate [tweeted](https://twitter.com/_Checkmatey_/status/1248498765113126912) about the cost to double spend attack DCR being 54x higher than BTC, stimulating much discussion.
-- @Checkmate [announced](https://twitter.com/_Checkmatey_/status/1253116008639811585) the launch of a new project, with a team of contributors working on a new Decred on-chain metrics site.
-- Messari [musing](https://twitter.com/MessariCrypto/status/1255579343973232640) on what if Bitcoin had Decred's treasury, and [graphing](https://twitter.com/MessariCrypto/status/1255579345319596033) out how much that would have been worth if Bitcoin had spent ~23% of its monthly treasury income and saved the rest.
-- @moo31337 [tweeted](https://twitter.com/marco_peereboom/status/1251174260925779977) about a WIP PR for work on the decentralized treasury spending proposal, but more than half of the comments were really concerned about his next cooking adventure.
+- @Checkmate [发文](https://twitter.com/_Checkmatey_/status/1248498765113126912) 称，单小时双花攻击DCR的成本是BTC的54倍，这引起了很多讨论。
+- @Checkmate [宣布了](https://twitter.com/_Checkmatey_/status/1253116008639811585)一个新项目的启动，一个团队的成员正在一个新的Decred链上指标网站上工作。
+- @moo31337在[推特](https://twitter.com/marco_peereboom/status/1251174260925779977)上发布了关于在分散的国库支出提案上进行工作的WIP PR，但其中一半以上的评论确实与他的下一次烹饪冒险有关。
 
 ![pork](img/marco-cooking.jpg "pork")
 
-## Markets
+## 市场
 
-In April DCR was trading between USD 11.08-15.01 / BTC 0.00151-0.00179. The average daily rate was $12.34.
+4月DCR交易价格在11.08-15.01美元 / BTC 0.00151-0.00179之间。每日平均价格为$12.34。
 
-@richardred wrote a [report](https://blockcommons.red/publication/mm-phase1-wrapup/) about the performance of the market makers during the term of their first [proposal](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9).
+@richardred撰写了一份有关做市商在其第一个[提案](https://proposals.decred.org/proposals/2eb7ddb29f151691ba14ac8c54d53f6692c1f5e8fe06244edf7d3c33fb440bd9)期限内的表现的[报告](https://blockcommons.red/publication/mm-phase1-wrapup/)。
 
-## Relevant External
+## 相关外部信息
 
-[Another](https://www.coindesk.com/dforce-hacker-returns-almost-all-of-stolen-25m-in-crypto) DeFi attack occurred, although this time dForce got most of its lost $25 million back from the attacker and users are being reimbursed.
+发生了另一次 DeFi攻击，尽管这次dForce从攻击者那里收回了损失的大部分2500万美元，并且用户得到了补偿。
 
-On the more obscure stablecoin network [PegNet](https://www.coindesk.com/miners-trick-stablecoin-protocol-pegnet-turning-11-into-almost-7m-hoard), rogue miners turned a $11 pJYP balance into a 6.7 million pUSD balance by manipulating price oracles with a form of 51% attack. The attackers were unable to liquidate more than a small proportion of the pUSD, and have subsequently reached out to say they were just trying to pen test the network, and have burned the magically created pUSD.
+在更模糊的稳定币网络PegNet上，流氓矿工通过操纵价格甲骨文以51％的攻击方式，将11美元的pJYP余额变成了670万pUSD余额。攻击者无法清算超过一小部分的pUSD，随后伸出援手说，他们只是试图对网络进行笔测试，并烧掉了神奇创建的pUSD。
 
-People are [wondering](https://twitter.com/econoar/status/1254063336779444226) why ProgPoW is back on the Ethereum Core devs agenda, and whether the inability to shake it off means there is something [rotten](https://twitter.com/hasufl/status/1254065039105024001) in Ethereum's governance.
+人们想知道为什么ProgPoW会重新回到以太坊核心开发者的议程上，以及是否无法摆脱它意味着在以太坊的治理中有些烂透了。
 
-The US Government's $349 billion loan program for small businesses has so far generated $10 billion in [fees](https://www.npr.org/2020/04/22/840678984/small-business-rescue-earned-banks-10-billion-in-fees) for banks, 1-5% for each loan processed, despite the very low risk the loans posed to the banks, considering that they were effectively just passing them on to the Small Business Administration which guaranteed all the loans. ([plaintext version](https://www.npr.org/2020/04/22/840678984/small-business-rescue-earned-banks-10-billion-in-fees))
+迄今为止，美国政府为小企业提供的3490亿美元贷款计划已为银行产生了100亿美元的费用，每笔贷款的处理费用为1-5％，尽管向银行提供的贷款风险很小，因为它们实际上只是通过了银行由小企业管理局（Small Business Administration）担保所有贷款。（纯文本版本）
 
-Maker Foundation is subject to a [lawsuit](https://www.coindesk.com/makerdao-users-sue-stablecoin-issuer-following-black-thursday-losses) from investors who lost money in Black Thursday.
+Maker Foundation受到在黑色星期四亏损的投资者的诉讼。
 
-There have been a whole [barrage](https://www.theblockcrypto.com/post/60930/top-crypto-exchanges-token-issuers-named-in-friday-barrage-of-u-s-class-action-lawsuits) of class-action lawsuits filed against crypto exchanges and token issuers.
+已经有一个整体攻势对加密的交流和令牌发行商提起集体诉讼的。
 
-USDT balance held on exchanges has reached a new ATH of [$1.8 billion](https://twitter.com/glassnodealerts/status/1253343292403724294) on Apr 23, according to glassnode alerts.
+根据glassnode的警报，4月23日，交易所持有的USDT余额达到了18亿美元的新ATH 。
 
-YouTube have updated their policies to disallow anything about COVID-19 that goes against "authoritative sources" like the World Health Organization's guidelines, as disclosed in an [interview](https://reclaimthenet.org/youtube-ceo-coronavirus-right-information-misinformation/) with YouTube's CEO. While YouTube censoring videos on certain topics is not new, having these decisions be determined fluidly with reference to what "authoritative sources" are saying, and deliberately channelling traffic to those sources, is new.
+YouTube已经更新了其政策，以禁止任何违反“权威消息来源”（例如世界卫生组织指南）的COVID-19内容，正如YouTube首席执行官在接受采访时透露的那样。YouTube审查某些主题的视频并不是什么新鲜事，但要根据“权威来源”的说法灵活地决定这些决定，并故意将流量吸引到这些来源，这是新鲜事。
 
-In an update to the story about the sale of .org domain to a private equity firm, ICANN has [voted](https://twitter.com/EFF/status/1256053946289774594) to reject the sale, effectively blocking it.
+在有关将.org域名出售给私募股权公司的报道的更新中，ICANN 投票决定拒绝出售，从而有效地阻止了出售。
 
-## About This Issue
+## 关于月报
 
-This is issue 25 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是Decred Journal的第25期。有关所有问题，镜像和翻译的索引，请参见[此处](https://xaur.github.io/decred-news/)。
 
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of the Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
+在经过最少的健全性检查之后，来自第三方的大多数信息都会直接从来源中继。Decred Journal的作者无权验证所有声明。请当心诈骗，并自行进行调查。
 
-Your [feedback](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback) and [contributions](https://github.com/xaur/decred-news/blob/docs/contributing.md) are always welcome.
+我们随时欢迎您的[反馈](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback)和[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)。
 
-Credits (alphabetical order):
+感谢 (字母排列):
 
-- writing and editing: bee, degeri, elian, Exitus, l1ndseymm, pablito, richardred, s\_ben, zubair
-- reviews and feedback: chappjc, davecgh, emiliomann, jholdstock, jrick, lukebp
-- title image: saender
+- 写作和编辑: bee, degeri, elian, Exitus, l1ndseymm, pablito, richardred, s_ben, zubair
+- 评论和反馈: chappjc, davecgh, emiliomann, jholdstock, jrick, lukebp
+- 封面图片: saender
+
+## 中文社区
+
+* [社区网址](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [优酷频道](https://i.youku.com/decredproject)
+* QQ群号-258412796
+
+欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
 
