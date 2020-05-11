@@ -77,7 +77,7 @@ dcrd存储库不再配置为[btcd](https://github.com/btcsuite/btcd)的fork。�
 - 添加了GUI以手动[请求付款](https://github.com/decred/dcrpool/pull/198)并清除所有余额（离开矿池时很有用）
 - 增加测试范围
 
-[dcrlnd](https://github.com/decred/dcrlnd): In progress:
+[dcrlnd](https://github.com/decred/dcrlnd):
 
 - 为远程钱包启用和测试[SPV模式](https://github.com/decred/dcrlnd/pull/95)（有关更多背景信息，请参见[3月月报](202003.md#development)）
 - 在v0.9.0-beta和0.10.0-beta之间[移植](https://github.com/decred/dcrlnd/pull/99)上游lnd更改-包括139个上游PR（加上一些非PR提交）。
