@@ -1,110 +1,109 @@
-# Decred Journal – May 2020
+# Decred月报 – 2020年5月
 
 ![abstract art](img/journal-202005-384.png)
 
-_Image: Ascending Bits by @saender_
+_图片: Ascending Bits by @saender_
 
-May's highlights:
+五月亮点：
 
-- The new vspd software was introduced, this will replace the existing dcrstakepool software used by VSP operators, and significantly improve the VSP staking experience for all users once v1.6 is released by eliminating the requirement for VSP user accounts.
-- The Decred DEX software is in open testing, if you're feeling adventurous why not atomic swap some testnet credits?
-- Significant new components of Politeia are falling into place, RFP proposals and on the CMS side all-contractor voting functionality.
-- Test builds of the v1.5 updates for both mobile apps are now available through the respective app stores - testers are very welcome to submit issues on GitHub.
+- 发布新的vspd软件，它将取代VSP运营商使用的现有dcrstakepool软件，降低VSP注册需求，大大提高了所有VSP用户使用体验。
+- Decred DEX软件正在进行公开测试，如果您有冒险精神，为什么尝试一下？
+- Politeia新的重要组成部分已经发布，RFP提案以及CMS方面的承包商投票功能。
+- 最新的v1.5移动客户端的测试版本现已在相应的APP商店中发布-非常欢迎测试人员在GitHub上提交问题。
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能在发布的二进制文件中使用。
 
 [dcrd](https://github.com/decred/dcrd):
 
-- reworked HTTPS [seeding](https://github.com/decred/dcrd/pull/2188) (for reference, the network is [migrating](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$156556717014681nMMAT:decred.org) to seeding over HTTPS because it is more secure, does not require a large dependency surface like DNSSEC, and is more flexible)
-- [banning](https://github.com/decred/dcrd/pull/2110) peers that don't follow the wire protocol
-- more code migrated to the Go 1.13 error handling
+- 重做的HTTPS[种子](https://github.com/decred/dcrd/pull/2188)(作为参考，网络正在[迁移](https://matrix.to/#/!HEeJkbPRpAqgAwhXWO:decred.org/$156556717014681nMMAT:decred.org)到HTTPS上的种子，因为它更安全，并且更灵活）
+- [禁止](https://github.com/decred/dcrd/pull/2110)不遵循有线协议的节点
+- 更多代码迁移到Go 1.13
 
-In progress:
+进行中：
 
-- TSPEND opcode needed for decentralized control of the Treasury by the stakeholders was successfully [tested](https://twitter.com/marco_peereboom/status/1263185839028350976) on testnet
+- 去中心化开发基金支付所需的TSPEND操作码已在测试网上[成功测试](https://twitter.com/marco_peereboom/status/1263185839028350976)
 
 [dcrwallet](https://github.com/decred/dcrwallet):
 
-- added client [package](https://github.com/decred/dcrwallet/pull/1726) for JSON-RPC calls
-- ability to request multiple blocks from the same peer [concurrently](https://github.com/decred/dcrwallet/pull/1730) (one of the needed changes for SPV support in dcrlnd)
-- ability to save [per-ticket](https://github.com/decred/dcrwallet/pull/1737) vote preferences (step towards ticket-based VSP)
+- 为JSON-RPC调用添加了客户端[软件包](https://github.com/decred/dcrwallet/pull/1726)
+- 能够[同时](https://github.com/decred/dcrwallet/pull/1730)从同一个对等节点请求多个块（dcrlnd中SPV支持所需的更改之一）
+- 能够保存[每张选票](https://github.com/decred/dcrwallet/pull/1737)的投票首选项（基于选票的VSP）
 
-In progress:
+进行中：
 
-- [hardened](https://github.com/decred/dcrwallet/pull/1743) account support for ticket-based VSP API
+- 对基于选票的VSP API的强化帐户[支持](https://github.com/decred/dcrwallet/pull/1743)
 
 [Decrediton](https://github.com/decred/decrediton):
 
-- code refactoring, more components reused from pi-ui
-- codebase [prettified](https://github.com/decred/decrediton/pull/2481) with automated rules to improve readability
-- UI tweaks
+- 代码重构，可从pi-ui重用更多组件
+- 能够[同时](https://github.com/decred/decrediton/pull/2481)从同一个对等方请求多个块（dcrlnd中SPV支持所需的更改之一）
+- 用户界面调整
 
-In progress:
+进行中：
 
-- [mixed](https://twitter.com/_vctt/status/1265397168317366283) transactions
+- [混合](https://twitter.com/_vctt/status/1265397168317366283)交易
 
 [Politeia](https://github.com/decred/politeia):
 
-- RFP process implemented in the [backend](https://github.com/decred/politeia/pull/1054) and the [GUI](https://github.com/decred/politeiagui/pull/1910) - a big change in development for a long time, has been implemented and is in testing
-- admin utility to [change email](https://github.com/decred/politeia/pull/1178) address
-- [short URLs](https://github.com/decred/politeia/issues/900) for proposals
-- arrow key [navigation](https://github.com/decred/politeiagui/pull/1878) for attached images
-- progress towards viewing Politeia with [no javascript](https://github.com/decred/politeiagui/pull/1834)
-- two temporary workarounds were implemented to mitigate the annoying duplicate comments bug: one where the expensive file system check is run [once a day](https://github.com/decred/politeia/pull/1205) instead of once an hour, and another where commenting is temporarily [blocked](https://github.com/decred/politeiagui/pull/1944) during the time when the bug would be triggered
-- lots of bug fixes
+- 在[后端](https://github.com/decred/politeia/pull/1054)和[GUI](https://github.com/decred/politeiagui/pull/1910)中的RFP流程已经实施并正在测试中
+- 用于[更改电子邮件地址](https://github.com/decred/politeia/pull/1178)的管理实用程序
+- [简短的URL](https://github.com/decred/politeia/issues/900)
+- 图像[导航](https://github.com/decred/politeiagui/pull/1878)模式
+- 不启用[javascript](https://github.com/decred/politeiagui/pull/1834)查看Politeia进度
+- 为了减轻烦人的注释错误，实施了两种临时的解决方法：一种方法是[每天](https://github.com/decred/politeia/pull/1205)运行一次而不是每小时一次，执行昂贵的文件系统检查；另一种方法是在触发该错误的过程中暂时[阻止](https://github.com/decred/politeiagui/pull/1944)注释
+- 许多bug修复
 
 CMS:
 
-- [all-contractor](https://github.com/decred/politeia/pull/1104) vote for contentious DCCs, weighted by the number of billed hours over the previous 6 months - the final part of implementing the DCC process [proposal](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4)
-- [utility](https://github.com/decred/politeia/pull/1179) to test DCC issuance and DCC vote processes
+- [全体承包商](https://github.com/decred/politeia/pull/1104)对有争议的DCC的投票，由前6个月的计费小时数加权-这是实施DCC流程[提案](https://proposals.decred.org/proposals/fa38a3593d9a3f6cb2478a24c25114f5097c572f6dadf24c78bb521ed10992a4)的最后一部分
+- 发布用于测试DCC发行和DCC投票过程的[程序](https://github.com/decred/politeia/pull/1179)
 
-In progress:
+进行中：
 
-- admin feature to query [code stats](https://github.com/decred/politeia/pull/1185) for contractors
+- 管理员功能可查询承包商的[代码统计信息](https://github.com/decred/politeia/pull/1185)
 
 [vspd](https://github.com/decred/vspd):
 
-vspd is a from-scratch implementation of VSP software that will bring a huge improvement to the privacy of VSP users, and by extension, the security of the Decred network. It will also be much easier to use for having no registration, no emails, no CAPTCHAs, and no redeem scripts to back up. Check the [announcement](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/) for more details.
+vspd是VSP软件从头开始的实现，它将极大地改善VSP用户的隐私，并进而改善Decred网络的安全性。没有注册，没有电子邮件，没有验证码以及没有要备份的脚本，使用起来也将更加容易。查看[公告](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/)以获取更多详细信息。
 
-[MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) for vspd is nearing completion and dcrwallet integration is starting. The only outstanding feature for MVP is to get cross-wallet consistency checks to ensure all wallets are voting on the right tickets, and with the right voting choices.
+vspd的[MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)即将完成，并且dcrwallet已经开始集成。MVP的杰出的功能是获得跨钱包一致性检查，以确保所有钱包都对正确的选票进行投票，并具有正确的投票选择。
 
 [dcrpool](https://github.com/decred/dcrpool):
 
-v1.1 release candidate is ready for testing! This release includes [reworked](https://github.com/decred/dcrpool/pull/207) payments processing, refreshed UI/UX, higher efficiency via dcrd's work notifications, and a host of smaller improvements and bug fixes. Check the full [release notes](https://github.com/decred/dcrpool/releases/tag/v1.1.0-rc1) for details.
+v1.1候选发布版已准备好进行测试！此版本包括[重新设计](https://github.com/decred/dcrpool/pull/207)的付款处理，新的UI/UX，通过dcrd的工作通知实现更高的效率以及一系列较小的改进和bug修复。有关详细信息，请查看完整的[发行说明](https://github.com/decred/dcrpool/releases/tag/v1.1.0-rc1)。
 
 [dcrlnd](https://github.com/decred/dcrlnd):
 
-@matheusd posted a [demo](https://twitter.com/matheusd_tech/status/1263118566418776065) of swapping between BTC and DCR invoices across their respective LNs. This is effectively an "instant exchange", except it is using LN and is non-custodial. Note that this prototype has a known gaming vector and more R&D is required to resolve it (ideally based on [PTLCs](https://suredbits.com/payment-points-monotone-access-structures/), but it is quite far away in the future). More details in [this chat](https://matrix.to/#/!LtiDnUlfuRJMekjFSx:decred.org/$ILkQ49LXwBrUcMq5R_JRIkTcjR7FG9lxwMWsxDve2K0).
+@matheusd发布了一个BTC和DCR发票在其各自的LN之间交换的[演示](https://twitter.com/matheusd_tech/status/1263118566418776065)。这实际上是一种“即时交换”，除了它使用的是LN并且是非托管的。请注意，该原型具有已知的向量，并且需要更多的研发才能解决（理想情况下基于[PTLCs](https://suredbits.com/payment-points-monotone-access-structures/), but it is quite far away in the future)，但将来还很遥远）。在[这个聊天中](https://matrix.to/#/!LtiDnUlfuRJMekjFSx:decred.org/$ILkQ49LXwBrUcMq5R_JRIkTcjR7FG9lxwMWsxDve2K0)更多详细信息。
 
 [dcrdex](https://github.com/decred/dcrdex):
 
-- more secure [handling](https://github.com/decred/dcrdex/pull/291) of encryption password
-- overhaul of client wallet configuration, allowing the user to specify a wallet config file or manually enter settings (parts: [1](https://github.com/decred/dcrdex/pull/311), [2](https://github.com/decred/dcrdex/pull/335), [3](https://github.com/decred/dcrdex/pull/346), [4](https://github.com/decred/dcrdex/pull/352))
-- server support for graceful [trade suspension](https://github.com/decred/dcrdex/pull/287) and client notifications that are used for planned maintenance and market reconfiguration
-- [expanded](https://github.com/decred/dcrdex/pull/378) "Your Orders" table in client's browser interface
-- [display](https://github.com/decred/dcrdex/pull/348) of epoch (pending) limit orders on depth chart as a separate dashed line. Epoch orders are orders that have been submitted, but yet to be processed by the order matching algorithm. This provides a preview of how the market is changing during an open epoch, which is on the order of 10 seconds. 
-- client [balance update](https://github.com/decred/dcrdex/pull/418) improvements to give a more up-to-date balance value
-- [Litecoin support](https://github.com/decred/dcrdex/pull/372) for the client. LTC was already supported by the server, dcrdex, but now the client can use LTC wallets and place orders for LTC markets.
-- [trade command](https://github.com/decred/dcrdex/pull/315) to allow placing trades from the command line
-- [exchanges command](https://github.com/decred/dcrdex/pull/314) to allow listing and configuring exchanges from the command line
-- market [search box](https://github.com/decred/dcrdex/pull/426) to the Markets page of the client's browser interface
-- improved [notification](https://github.com/decred/dcrdex/pull/343) of registration events (e.g. fee payment confirmations completed)
-- [sign out](https://github.com/decred/dcrdex/pull/347) action
-- multiple bug fixes and code refactoring
+-更安全地加密密码
+- 检修客户钱包配置，允许用户指定一个钱包配置文件或手动输入设置 ( [1](https://github.com/decred/dcrdex/pull/311), [2](https://github.com/decred/dcrdex/pull/335), [3](https://github.com/decred/dcrdex/pull/346), [4](https://github.com/decred/dcrdex/pull/352))
+- 服务器支持用于计划中的维护和市场重新配置的正常[中止交易](https://github.com/decred/dcrdex/pull/287)和客户通知
+- 用户浏览器界面中[扩展](https://github.com/decred/dcrdex/pull/378)的 “您的订单”
+- 对用户[余额更新](https://github.com/decred/dcrdex/pull/418)改进，以提供最新的余额值
+- 添加[莱特币](https://github.com/decred/dcrdex/pull/372)支持。服务器dcrdex已支持LTC，现在客户可以使用LTC钱包并在LTC市场下订单。
+- 允许从[trade命令](https://github.com/decred/dcrdex/pull/315)进行交易
+- [exchanges命令](https://github.com/decred/dcrdex/pull/314)允许从命令行列出和配置交换
+- 添加用户浏览器界面“市场”页面上的市场[搜索框](https://github.com/decred/dcrdex/pull/426)
+- 改进了注册事件的[通知](https://github.com/decred/dcrdex/pull/343)（例如完成费用支付确认）
+- 多个bug修复和代码重构
 
-A total of 59 PRs from 10 contributors were [merged](https://github.com/decred/dcrdex/pulls?q=is%3Apr+merged%3A2020-05-01..2020-05-31+sort%3Aupdated-asc), adding 10K and deleting 3K lines of code.
+[合并](https://github.com/decred/dcrdex/pulls?q=is%3Apr+merged%3A2020-05-01..2020-05-31+sort%3Aupdated-asc)了来自10个贡献者的59个PR ，添加10K行删除了3K行代码。
 
-Upcoming work includes: Server support for suspend/restore active swaps (swap state), better support for client-initiated refund or swap completion (refund) in the event of failure of the server-driven swap negotiation due to a down server or counter party inaction, expanded client RPCs, expanded server admin commands, improved client handling of server suspend/resume messages.
+即将进行的工作包括：服务器支持待机/还原活动交换（交换状态），如果由于服务器或对手方导致服务器驱动的交换协商失败，则更好地支持客户端启动的退款或交换完成（退款）不活动，扩展的客户端RPC，扩展的服务器管理命令，改进的客户端对服务器挂起/恢复消息的处理。
 
-Testnet testing [has begun](https://twitter.com/chappjc/status/1267115398610255874) and everybody is welcome to [participate](https://github.com/decred/dcrdex/wiki/Testnet-Testing). There's still a good chance that mainnet DEX will launch this summer.
+测试网测试[已经开始](https://twitter.com/chappjc/status/1267115398610255874)，欢迎大家[参加](https://github.com/decred/dcrdex/wiki/Testnet-Testing)。主网DEX很有可能在今年夏天启动。
 
 [dcrandroid](https://github.com/decred/dcrandroid):
 
-- [watch-only](https://github.com/decred/dcrandroid/pull/471) wallet support
-- [encrypt](https://github.com/raedahgroup/dcrlibwallet/pull/131) wallet seed and tighten up the privacy of [seed entry](https://github.com/decred/dcrandroid/pull/473) (_privacy [concerns](https://github.com/decred/dcrandroid/issues/351) around Google Keyboard - who would have thought_)
-- request [passphrase](https://github.com/decred/dcrandroid/pull/467) before showing or verifying seed
+- 支持[只读](https://github.com/decred/dcrandroid/pull/471)钱包模式
+- [加密](https://github.com/raedahgroup/dcrlibwallet/pull/131)钱包种子并加强种子输入的隐私性（有关Google Keyboard的隐私问题）
+- 
+request [passphrase](https://github.com/decred/dcrandroid/pull/467) before showing or verifying seed
 - [limit](https://github.com/decred/dcrandroid/pull/472) user to 1 wallet per 1 GB of RAM
 - [Polish](https://github.com/decred/dcrandroid/pull/405) translation
 - multiple bug fixes
@@ -113,7 +112,7 @@ Testnet build of the v1.5 release is available on [Google Play](https://play.goo
 
 [dcrios](https://github.com/raedahgroup/dcrios):
 
-- [watch-only](https://github.com/raedahgroup/dcrios/pull/685) wallet support
+- 支持[只读](https://github.com/decred/dcrandroid/pull/471)钱包模式
 - blockchain [rescan](https://github.com/raedahgroup/dcrios/pull/675) implemented
 - Decred [logo](https://github.com/raedahgroup/dcrios/pull/674) on QR codes
 - [Polish](https://github.com/raedahgroup/dcrios/pull/683) translation ported from Android
