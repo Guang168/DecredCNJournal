@@ -214,104 +214,94 @@ Monde PR在五月份的成就：
 
 Monde PR保证的新闻报道：
 
-- an article in [Forbes](https://www.forbes.com/sites/cbovaird/2020/05/05/is-this-the-perfect-time-for-central-bank-digital-currencies/) featuring commentary by @jy-p on CBDC privacy concerns 
-- an article in [Cointelegraph](https://cointelegraph.com/news/bitcoin-s-halving-incentivizes-miners-to-sell-for-double-decred-co-founder-says) featuring commentary by @jy-p on the impact of Bitcoin's halving, syndicated to 12 news outlets including [FXStreet](https://www.fxstreet.com/cryptocurrencies/news/decred-co-founder-expects-bitcoin-halving-to-spike-btcs-price-202005070208). The comments were also included in a [Zero Hedge](https://www.zerohedge.com/markets/paul-tudor-jones-buys-bitcoin-hedge-against-central-bank-money-printing) article and a second story in [Cointelegraph](https://cointelegraph.com/news/top-experts-make-bitcoin-price-predictions-as-btc-halving-approaches), syndicated to 12 news outlets including [Miami Diario](https://miamidiario.com/bitcoin-a-la-mitad-los-expertos-creen-que-solo-se-debe-comprar-si-se-retiene-a-largo-plazo/) and [Crypto News Australia](https://cryptonews.com.au/story/top-experts-make-bitcoin-price-predictions-as-btc-halving-approaches-121382).
-- an article in [Finance Magnates](https://www.financemagnates.com/cryptocurrency/news/will-the-upcoming-halving-increase-bitcoins-price/) featuring commentary from @raedah on Bitcoin's halving. @raedah's comments were also included in a second [Finance Magnates](https://www.financemagnates.com/cryptocurrency/news/will-the-bitcoin-halving-kill-independent-miners/) article on this topic. 
-- an article in [Cointelegraph](https://cointelegraph.com/news/stairway-to-scarcity-bitcoin-sentiment-to-rise-despite-halving-impact) featuring commentary from @Checkmate on Bitcoin's halving, syndicated to 5 news outlets including [Investing.com](https://www.investing.com/news/cryptocurrency-news/stairway-to-scarcity-bitcoin-sentiment-to-rise-despite-halving-impact-2164431)
-- an article in [Reuters](https://www.reuters.com/article/crypto-currencies-bitcoin/as-pandemic-rages-anything-goes-for-bitcoins-third-halving-idUSL1N2CP13B) featuring commentary from @jy-p, syndicated to 70 news outlets including [The New York Times](https://www.nytimes.com/reuters/2020/05/08/business/08reuters-crypto-currencies-bitcoin.html) (now removed), [Business Insider](https://www.businessinsider.com/as-pandemic-rages-anything-goes-for-bitcoins-third-halving-2020-5) and [Nasdaq](https://www.nasdaq.com/articles/as-pandemic-rages-anything-goes-for-bitcoins-third-halving-2020-05-08). @jy-p's comments were also picked up in subsequent articles about the halving in [Yahoo Finance](https://finance.yahoo.com/news/bitcoin-halved-price-165148071.html), [CryptoSlate](https://cryptoslate.com/bitcoin-goes-through-the-most-brutal-halving-ever-recorded-heres-why/) and [msn.com](https://www.msn.com/en-us/money/markets/demand-for-bitcoin-surges-as-halving-countdown-approaches/ar-BB13RavI).
-- an article in [8btc.com](https://m.8btc.com/article/594407) featuring commentary from @jy-p on Bitcoin's halving 
-- an article in [Cointelegraph](https://cointelegraph.com/news/bitcoin-halving-was-not-the-apocalyptic-event-some-in-crypto-feared) featuring commentary from @Checkmate on Bitcoin's halving
-- an article in [AMB Crypto](https://eng.ambcrypto.com/xrp-trades-wide-as-iota-decred-look-to-make-room/) featuring commentary from @jy-p on CBDCs
-- in total 123 articles appeared across 21 countries in May from the above efforts, see full list [here](https://docs.google.com/spreadsheets/d/1oef5U9R_JZ7hxmRRNKDCQNia7u-1lRuGk6w3w3LU-p0/edit?usp=sharing)
+- 《[福布斯](https://www.forbes.com/sites/cbovaird/2020/05/05/is-this-the-perfect-time-for-central-bank-digital-currencies/)》上的一篇文章，重点介绍@ jy-p关于CBDC隐私问题的评论
+- [Cointelegraph](https://cointelegraph.com/news/bitcoin-s-halving-incentivizes-miners-to-sell-for-double-decred-co-founder-says)中的一篇文章，重点介绍了@ jy-p对比特币减半的影响的评论，并联合了[FXStreet](https://www.fxstreet.com/cryptocurrencies/news/decred-co-founder-expects-bitcoin-halving-to-spike-btcs-price-202005070208)等 12个新闻媒体。评论还包括在[Zero Hedge](https://www.zerohedge.com/markets/paul-tudor-jones-buys-bitcoin-hedge-against-central-bank-money-printing)文章和[Cointelegraph](https://cointelegraph.com/news/top-experts-make-bitcoin-price-predictions-as-btc-halving-approaches)的第二篇文章中，并联合了12个新闻媒体，包括 [Miami Diario](https://miamidiario.com/bitcoin-a-la-mitad-los-expertos-creen-que-solo-se-debe-comprar-si-se-retiene-a-largo-plazo/)和[Crypto News Australia](https://cryptonews.com.au/story/top-experts-make-bitcoin-price-predictions-as-btc-halving-approaches-121382)。
+- [Finance Magnates](https://www.financemagnates.com/cryptocurrency/news/will-the-upcoming-halving-increase-bitcoins-price/) 中的一篇文章，重点介绍@raedah对比特币减半的评论。@raedah的评论也包含在与此主题相关的第二篇《金融大亨》文章中。
+- [Cointelegraph](https://cointelegraph.com/news/stairway-to-scarcity-bitcoin-sentiment-to-rise-despite-halving-impact)中的一篇文章，重点介绍了@Checkmate对比特币减半的评论，并联合了5个新闻媒体，包括Investing.com
+- [路透社](https://www.reuters.com/article/crypto-currencies-bitcoin/as-pandemic-rages-anything-goes-for-bitcoins-third-halving-idUSL1N2CP13B)的一篇文章，其特色是@ jy-p的评论，并与包括《纽约时报》（现已删除），《商业内幕》和纳斯达克在内的 70个新闻机构联合发布。在随后有关Yahoo Finance，CryptoSlate和msn.com减半的文章中，也引用了 @ jy-p的评论。
+- [8btc.com](https://m.8btc.com/article/594407)上的一篇文章，内容来自@ jy-p关于比特币减半的评论 
+- [Cointelegraph](https://cointelegraph.com/news/bitcoin-halving-was-not-the-apocalyptic-event-some-in-crypto-feared)中的一篇文章，重点介绍@Checkmate对比特币减半的评论
+- [AMB Crypto](https://eng.ambcrypto.com/xrp-trades-wide-as-iota-decred-look-to-make-room/)上的一篇文章，其中介绍了@ jy-p对CBDC的评论
+- 通过上述努力，5月在21个国家/地区总共发表了123篇文章，请点击[这里](https://docs.google.com/spreadsheets/d/1oef5U9R_JZ7hxmRRNKDCQNia7u-1lRuGk6w3w3LU-p0/edit?usp=sharing)查看完整列表
 
 ## 活动
 
-Attended:
+参加：
 
-- Apr 2 - [AMA with Walicj.com](https://twitter.com/DecredCN/status/1245279133082324997) - Internet. DecredCN and Walicj.com jointly organized an AMA in WeChat group, mainly introducing Decred's governance model, atomic swaps, and dcrdex. The record was [posted](http://walicj.com/#/layout/article_detail/16720) on their site. (_missed in April_)
-- Apr 23 - [Jueves CryptoDrinks Decred](https://twitter.com/Decred_ES/status/1253427311707213824) - Internet. [@elian](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$158898257628136ERmQY:decred.org): "It was a very casual video call with community members of Blockchain Land and Decred was one of the hosts of the call. I gave a small brief on the project and the rest was answering questions about crypto in general (where to buy, how to store, how to spot scams, thoughts on the halving, strategies for trading, and if mining is profitable). It lasted for one hour and half and had 20-25 attendees." (_missed in April_)
-- Apr 28 - [Panel on Cryptosecurity](https://twitter.com/elianhuesca/status/1255293877373800448) - Internet. [@elian](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$158898257628136ERmQY:decred.org): "It was organised by Binance in Spanish and it was a sort of AMA but on crypto security, the questions were around how to store and OPSEC best practices. I got several opportunities to highlight Decred's work on hybrid blockchains, DEX, open source software, and hard fork resistance. There was a very good response from both the audience and the other guests of the AMA." (_missed in April_)
-- May 2 - [Bitconf Live](https://www.eventbrite.com.br/e/bitconf-live-edition-tickets-103094542552) - Internet. Decred was a sponsor. Edilson Osorio Jr, creator, and CEO of OriginalMy gave a talk "The impact of blockchain during the pandemic" and introduced a [new app](https://devpost.com/software/open-prescription) to authenticate and validate the process of prescribing drugs without physical contact with the patient (Decred is one of the 4 blockchains used by the app). João Ferreira (@girino) talked about "Decentralization and Governance", DEX, atomic swaps, and Politeia, and this talk was watched by [~2,500](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$158859699024140OzoCg:decred.org) people. The videos are available on [Facebook](https://www.bitconf.com.br/portal/2020/05/03/assista-as-palestras-da-bitconf-live-edition/) and [Decred Brasil](https://www.youtube.com/channel/UC73wa2ddXuPWsmenVfeFTYg) YouTube channel.
-- May 6 - [Crypto Resources Livestream](https://twitter.com/cryptorc_tech/status/1257765517626130433) - Internet. The stream was 2 hours long and was watched by ~300 people. @camilolwi introduced blockchains and Bitcoin, and then @elian talked about Decred for almost an hour. ([video](https://www.youtube.com/watch?v=x2QUGV4ezZQ))
-- May 7 - [Hablemos Decred 5](https://twitter.com/Decred_ES/status/1257774155677630464) - Internet. On the fifth edition of \#HablemosDecred the Latam team talked about cryptocurrencies and journalism with [Fernando Quiros](https://twitter.com/ferquiros_com) from [Cointelegraph in Spanish](https://twitter.com/EsCointelegraph).
-- May 12 - [Consensus: Distributed](https://www.coindesk.com/events/consensus-2020) - Internet. Decred was represented by talks from @lukebp on Politeia, @matheusd on LN, @chappjc and @buck54321 on dcrdex and dcrdata, @Checkmate on on-chain insights, and finally @jy-p with an overview of 1 year of Decred development. All links in the [Media](#media) section below.
-- May 13 - [Digital Governance](https://twitter.com/Decred_ES/status/1260574384667983875) - Internet. This ~20 person webinar about Decred, blockchain governance and decentralized digital currencies was co-organized with [Hack por la Paz](https://www.facebook.com/HackporlaPaz/). Questions revolved around understanding governance in our everyday lives, how that can be extrapolated to digital currencies and wealth, and the impact of CBDCs on the cryptocurrency markets. ([video](https://www.facebook.com/HackporlaPaz/videos/900552810355885/))
-- May 14 - [Decentralized Governance Panel](https://twitter.com/Decred_ES/status/1258905004510973953) - Internet. @caibarrad and @adcade represented Decred in the panel "What is decentralized governance and DAOs?", which was co-organized with BlockchainEx and was part of the development of Decred ecosystem in Colombia. ([video](https://www.youtube.com/watch?v=Pvqp_1skrxM))
-- May 16 - [Open-Source Funding Webinar](https://twitter.com/Decred_ES/status/1259984598102093828) - Internet. @victorarubin and @tomee co-organized the event with Hack Space Peru as part of outreach in the region. @pablito gave a presentation about one of the biggest challenges of open-source software, funding, explored more than a dozen approaches, and finally introduced the Decred solution. ([video](https://www.youtube.com/watch?v=UVtOBAAerXk))
-- May 19 - [Latoken Blockchain Economic Forum](https://latoken.com/events/Keynote-133) - Internet. @elian gave a 36-minute keynote about Decred, project funding/expenditure, Politeia, LN, and the privacy implementation. ([video](https://www.youtube.com/watch?v=xZvp0us44wo))
-- May 20 - Bitcoin and Crypto Panel - Internet. [@elian](https://matrix.to/#/!aNPTuiryMFmdMQWUzb:decred.org/$159001320735424sZqPg:decred.org): "I was on a panel on Bitcoin and cryptocurrency use cases as part of Business Land at Talent Land, and highlighted Politeia and dcrtime as FOSS infrastructure with cases for government and enterprises, and how the DAO pays its global workforce. Also talked about the remittance market for DCR and payment processing infrastructure for increasing adoption." ([video](https://www.youtube.com/watch?v=gmWSmxb5yvg))
-- May 25 - [BlockConf Digital](https://blockconf.digital/) - Internet. Decred was a [bronze sponsor](https://twitter.com/BlockconfD/status/1251194332079697922). Contrary to what was expected, it was not possible to know if people attended the virtual booth and there was no easy way to interact with people. @elian gave a talk on cryptocurrencies in Latam and a brief on Decred, Politeia, and the Latam proposal.
+- 4月2日 - [Walicj.com](https://twitter.com/DecredCN/status/1245279133082324997) - 互联网。DecredCN和Walicj.com在微信小组中共同组织了AMA，主要介绍Decred的治理模型，原子交换和dcrdex。该记录[已发布](http://walicj.com/#/layout/article_detail/16720)在他们的网站上。（四月错过）
+- 4月23日 - [Jueves CryptoDrinks Decred](https://twitter.com/Decred_ES/status/1253427311707213824) 互联网。@elian：“这是一个非常休闲的视频通话，与Blockchain Land的社区成员进行了通话，Decred是通话的主持人之一。我对该项目进行了简短介绍，其余的则回答了有关加密货币的一般问题（在哪里购买，如何存储，如何发现诈骗，对减半的想法，交易策略以及采矿是否有利可图。它持续了一个半小时，并有20-25名参与者。” （四月错过）
+- 4月28日 - [Panel on Cryptosecurity](https://twitter.com/elianhuesca/status/1255293877373800448) - 互联网。@elian：“它是由Binance用西班牙语组织的，它是一种AMA，但是在加密安全方面，有关如何存储和OPSEC最佳实践的问题。我有很多机会重点介绍Decred在开放式混合区块链上的工作源软件和抗硬性。AMA的观众和其他来宾都给予了很好的回应。” （四月错过）
+- 5月2日 - [Bitconf Live](https://www.eventbrite.com.br/e/bitconf-live-edition-tickets-103094542552) - 互联网。Decred是赞助商。OriginalMy的创建者兼首席执行官小Edilson Osorio Jr发表了题为“大流行期间区块链的影响”的演讲，并介绍了一个新的应用程序来验证和验证开处方的过程，而无需与患者进行身体接触（Decred是4个区块链之一）由应用使用）。JoãoFerreira（@girino）谈到了“权力下放与治理”，DEX，原子交换和Politeia，约有2500人观看了此演讲。这些视频可在Facebook和Decred Brasil YouTube频道上找到。
+- 5月6日 - [Crypto Resources Livestream](https://twitter.com/cryptorc_tech/status/1257765517626130433) - 互联网。该视频流长达2小时，约有300人观看。@camilolwi介绍了区块链和比特币，然后@elian谈论了Decred将近一个小时。
+- 5月7日 - [Hablemos Decred 5](https://twitter.com/Decred_ES/status/1257774155677630464) - 互联网。
+- 5月12日 - [Consensus: Distributed](https://www.coindesk.com/events/consensus-2020) - 互联网。Decred的代表来自@lukebp的Politeia，@ matheusd的LN，@ chappjc和@ buck54321的dcrdex和dcrdata，@ Checkmate的链上见解，最后是@ jy-p的演讲，概述了Decred开发的1年。以下媒体部分中的所有链接。
+- 5月13日 - [Digital Governance](https://twitter.com/Decred_ES/status/1260574384667983875) - 互联网。这个与Decred，区块链治理和去中心化数字货币有关的约20人网络研讨会是与Hack por la Paz共同组织的。问题围绕着理解我们日常生活中的治理，如何将其推算到数字货币和财富以及CBDC对加密货币市场的影响。
+- 5月14日 - [Decentralized Governance Panel](https://twitter.com/Decred_ES/status/1258905004510973953) - 互联网。@caibarrad和@adcade在“什么是分散式治理和DAO？”小组中代表Decred，该小组与BlockchainEx共同组织，是哥伦比亚Decred生态系统发展的一部分。
+- 5月16日 - [Open-Source Funding Webinar](https://twitter.com/Decred_ES/status/1259984598102093828) - 互联网。@victorarubin和@tomee与Hack Space Peru共同组织了该活动，作为该地区推广活动的一部分。@pablito进行了有关开源软件最大挑战之一的演讲，资金筹集，探索了十几种方法，最后介绍了Decred解决方案。
+- 5月19日 - [Latoken Blockchain Economic Forum](https://latoken.com/events/Keynote-133) - 互联网。@elian在36分钟的主题演讲中谈到了Decred，项目资金/支出，Politia，LN和隐私实施。
+- 5月20日 - Bitcoin and Crypto Panel - 互联网。@elian：“作为Talent Land的Business Land的一部分，我参加了有关比特币和加密货币用例的小组讨论，并重点介绍了Politeia和dcrtime作为FOSS基础设施，包括针对政府和企业的案例，以及DAO如何支付其全球劳动力。有关DCR和支付处理基础设施的汇款市场以提高采用率的信息。” 
+- 5月25日 - [BlockConf Digital](https://blockconf.digital/) - 互联网。Decred是铜牌赞助商。与预期相反，无法知道人们是否参加了虚拟展位，也没有与人互动的简便方法。@elian在Latam上发表了关于加密货币的演讲，并简要介绍了Decred，Politeia和Latam提案。
 
-## Media
+## 媒体
 
-Selected articles:
+精选文章：
 
-- Decred on-chain: Mining pulse by @PermabullNino ([medium](https://medium.com/@permabullnino/decred-on-chain-mining-pulse-3b28d5155a04))
-- Decred price: A seasonality study by OneAnalyst ([medium](https://medium.com/coinmonks/decred-price-a-seasonality-study-414bac98bc99))
-- In the network - Decred by Lewis Harland ([formalverification.substack.com](https://formalverification.substack.com/p/in-the-network-decred))
-- A more private way to stake by @jholdstock ([blog.decred.org](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/))
-- Decred. Forks in the road by @mrbulb ([github](https://github.com/monsieurbulb/forksintheroad/blob/master/Decred_forks_in_the_road.md))
-- Four points of failure by Phoenix Green ([medium](https://medium.com/@Phoenixgreen/four-points-of-failure-2b1b2199397b))
+- Decred on-chain: @PermabullNino  ([medium](https://medium.com/@permabullnino/decred-on-chain-mining-pulse-3b28d5155a04))
+- Decred price: @OneAnalyst ([medium](https://medium.com/coinmonks/decred-price-a-seasonality-study-414bac98bc99))
+- 更隐私的Staking方案 @jholdstock ([blog.decred.org](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/))
+- Decred. 分叉之路 by @mrbulb ([github](https://github.com/monsieurbulb/forksintheroad/blob/master/Decred_forks_in_the_road.md))
 
-Translations:
+翻译:
 
-- A new kind of DEX - [in Spanish](https://medium.com/decred-es/un-nuevo-tipo-de-dex-8d7b5f8681c9) by @francov\_
-- Politeia Digest 31 - [in Spanish](https://medium.com/decred-es/politeia-digest-edici%C3%B3n-31-abril-16-mayo-22-2020-28fc2fc75784) by @pablito. Congrats on the first PD translation!
-- Decred Journal April 2020 was translated to Arabic (@arij), Chinese (@Dominic), Polish (@kozel), and Spanish (@francov\_). Notably, all four are on GitHub. Thank you all!
+- 一种新型的DEX - [西班牙语](https://medium.com/decred-es/un-nuevo-tipo-de-dex-8d7b5f8681c9) by @francov\_
+- Politeia Digest 31 - [西班牙语](https://medium.com/decred-es/politeia-digest-edici%C3%B3n-31-abril-16-mayo-22-2020-28fc2fc75784) by @pablito. 
+- 2020年4月的Decred Journal被翻译成阿拉伯语（@arij），中文（@Dominic），波兰语（@kozel）和西班牙语（@francov_）。值得注意的是，所有四个都在GitHub上。谢谢你们！
 
-Videos:
+视频:
 
-- Decred bi-weekly news update - May 3rd, 2020 by @Exitus ([youtube](https://www.youtube.com/watch?v=oHqzvN3TMU0))
-- Decred Construct feat. devs Luke Powell on Politeia & Matheus Degiovani on LN - Consensus 2020 ([youtube](https://www.youtube.com/watch?v=HexsUmqA7-Y))
-- Decred Construct DEX interview feat. devs Brian Stafford and Jon Chappelow - Consensus 2020 ([youtube](https://www.youtube.com/watch?v=fS9j7RaawjY))
-- Trade Secrets feat. Decred on-chain analyst Checkmate - Consensus 2020 ([youtube](https://www.youtube.com/watch?v=NOyyAx6Ab_0)) - @Checkmate talking about HODL conviction signals, realized price and MVRV, 142-day sum of USD ticket value, block subsidy valuation, transaction demand, and Treasury flows
-- Decred Changelog overview feat. project lead Jake Yocom-Piatt - Consensus 2020 ([youtube](https://www.youtube.com/watch?v=OmwI62HZerg)) with Q&A ([youtube](https://www.youtube.com/watch?v=Uzf2ZGXWoss))
-- 365 Decred days - CoinDesk ([coindesk.com](https://www.coindesk.com/video/365-decred-days)) - this is the full Decred Foundations program from the CoinDesk website, they broadcast it through Zoom so the quality is not as good as the YouTube uploads above
-- Bull case for Decred, on chain metrics & monetary premiums with Checkmatey by Nugget's News ([youtube](https://www.youtube.com/watch?v=QWfq1tn8xs0))
-- Akin Sawyerr joins @JillMalandrino on @Nasdaq \#TradeTalks to discuss governance on the blockchain to build a fairer financial system for all ([youtube](https://www.youtube.com/watch?v=NW-pwO9PUG4))
-- Finding value in cryptocurrencies - economic, social, environment by Phoenix Green ([youtube](https://www.youtube.com/watch?v=4fwMXos3u3A)) - first YouTube video by the author, which he followed with 6 more [videos](https://www.youtube.com/channel/UCZSFAqUMp8v58eEQl_bzWYg) explaining different ways of buying DCR
-- Decred bi-Weekly news update - May 22nd, 2020 by @Exitus ([youtube](https://www.youtube.com/watch?v=9i56ly5SS6M))
+- Decred 双周报 - 2020年5月3日 @Exitus ([youtube](https://www.youtube.com/watch?v=oHqzvN3TMU0))
+- Decred Construct 开发人员Luke Powell谈Politeia和Matheus Degiovani谈LN ([youtube](https://www.youtube.com/watch?v=HexsUmqA7-Y))
+- Decred Construct DEX 开发人员Brian Stafford和Jon Chappelow0 ([youtube](https://www.youtube.com/watch?v=fS9j7RaawjY))
+- Trade Secrets Decred链上分析师Checkmate ([youtube](https://www.youtube.com/watch?v=NOyyAx6Ab_0))
+- Decred Changelog 项目负责人Jake Yocom-Piatt ([youtube](https://www.youtube.com/watch?v=OmwI62HZerg)) with Q&A ([youtube](https://www.youtube.com/watch?v=Uzf2ZGXWoss))
+- 365 Decred days - CoinDesk ([coindesk.com](https://www.coindesk.com/video/365-decred-days)) - 这是CoinDesk网站上完整的Decred Foundations程序，它们通过Zoom进行广播，因此质量不如YouTube在上面上传的质量 ([youtube](https://www.youtube.com/watch?v=QWfq1tn8xs0))
+- Decred 双周报 - 2020年5月22日 @Exitus ([youtube](https://www.youtube.com/watch?v=9i56ly5SS6M))
 
-Audio:
+音频:
 
-- Gold Goats N Guns Podcast Ep. 34 - @jy-p and the case for a return to sovereign money ([tomluongo.me](https://tomluongo.me/2020/05/19/podcast-episode-34-jake-yocom-piatt-and-the-case-for-a-return-to-sovereign-money/))
-- Decred in Depth Ep. 24 - @chappjc and @buck54321 talk about dcrdex ([libsyn](https://decredindepth.libsyn.com/chappj-buck-the-decred-dex))
-- Decred in Depth Ep. 25 - @raedah talks about years working on Decred, from contributing to DCP-0001 and dcrdata, to newer projects like mobile wallets, forming a group with African and Asian devs, and the new Planet Decred proposal ([libsyn](https://decredindepth.libsyn.com/raedah-planet-decred-development), [soundcloud](https://soundcloud.com/decredindepth/raedah-planet-decred-dcr))
-- Rough Consensus Ep. 5 - Deflation, dollars, & Decred. @mr.black, @Checkmate, and @PermabullNino discuss Bitcoin halving, the relief rally in traditional markets, the realities of deflation and inflation on the economy, and how Decred stands out as an undervalued SoV contender. ([libsyn](https://roughconsensus.libsyn.com/episode-5-deflation-dollars-decred))
-- Rough Consensus Ep. 6 - Narratives with Seth Simmons. Seth joins the spidey crew to talk about how narratives drive the cryptocurrency space. ([libsyn](https://roughconsensus.libsyn.com/episode-6-narratives-with-seth-simmons))
+- Decred in Depth Ep. 24 - @chappjc和@ buck54321谈论dcrdex ([libsyn](https://decredindepth.libsyn.com/chappj-buck-the-decred-dex))
+- Decred in Depth Ep. 25 - @raedah谈论了Decred的开发工作，从为DCP-0001和dcrdata做贡献到移动钱包等新项目，与非洲和亚洲开发者组成了一个小组，以及新的Planet Decred提案 ([libsyn](https://decredindepth.libsyn.com/raedah-planet-decred-development), [soundcloud](https://soundcloud.com/decredindepth/raedah-planet-decred-dcr))
+- Rough Consensus Ep. 5 - 通货紧缩，美元和贬值。@ mr.black，@ Checkmate和@PermabullNino讨论了比特币减半，传统市场的救济集会，通货紧缩和通货膨胀对经济的现实，以及Decred如何被低估为SoV竞争者。 ([libsyn](https://roughconsensus.libsyn.com/episode-5-deflation-dollars-decred))
+- Rough Consensus Ep. 6 - Seth Simmons和间谍团队一起谈论叙事如何驱动加密货币。 ([libsyn](https://roughconsensus.libsyn.com/episode-6-narratives-with-seth-simmons))
 
-## Community Discussions
+## 社区讨论
 
-Comm systems news:
+通讯系统新闻：
 
-- Riot released a [huge update](https://blog.riot.im/e2e-encryption-by-default-cross-signing-is-here/) which was deployed to chat.decred.org. End-to-end encryption is enabled by default for new DMs. Make sure to backup your keys to not lose access to encrypted chat history.
+- Riot发布了一个巨大的更新，该更新已部署到chat.decred.org。默认情况下，新DM启用端到端加密。确保备份密钥，以免丢失对加密聊天记录的访问权限。
 
-Selected Reddit posts:
+精选Reddit帖子：:
 
-- @mrbulb's [post](https://www.reddit.com/r/decred/comments/gnfjci/decred_forks_in_the_road/) about his "Forks in the road" article had 19 comments, mostly from people saying they appreciated it, but there is one user who has deleted their comments
-- a commercial lawyer is really [impressed](https://www.reddit.com/r/decred/comments/gqewwe/really_impressed_by_decred/) by Decred
-- pre-proposal for outreach in [Iran](https://www.reddit.com/r/decred/comments/glzckw/preproposal_decredforiran/)
-- possible applications of [time locks](https://www.reddit.com/r/decred/comments/gcyquz/decred_timelocks/)
+- @mrbulb 关于他的“ Forks in the road”文章的帖子有19条评论，大多数是来自表示对此表示感谢的人，但是有一位用户删除了他们的评论
+- 在伊朗进行宣传的预案
+- [时间锁](https://www.reddit.com/r/decred/comments/gcyquz/decred_timelocks/)的应用
 
-Selected Twitter discussions:
+精选Twitter讨论:
 
-- on the day of Bitcoin halving, @ammarooni [reminds](https://twitter.com/Ammarooni/status/1259985075460063232) that Austrian economics recommends against abrupt changes to monetary issuance
-- @lukebp getting more vocal on Twitter about [Politeia work](https://twitter.com/lukebp_/status/1258139602516193280)
-- @lukebp [explains](https://twitter.com/lukebp_/status/1262871839035977728) Politeia, CMS and the DCC process in few short tweets
-- @lukebp's translation of @moo31337 console output [to English](https://twitter.com/lukebp_/status/1263213648471707648) received an unusual amount of likes and replies discussing the mechanics of voting on Treasury transactions
+- 在比特币减半的那天，@ ammarooni 提醒奥地利经济学家建议不要突然改变货币发行
+- @lukebp在Twitter上表达了更多有关[Politeia](https://twitter.com/lukebp_/status/1258139602516193280)工作的声音
+- @lukebp 在一些简短的推文中解释了 Politeia，CMS和DCC流程
 - @chappjc makes the dcrdex testnet pre-alpha [official](https://twitter.com/chappjc/status/1267115398610255874)
-- updated DCR market [charts](https://twitter.com/BlockCommons/status/1265379141995712512) following the end of MM activity, from @richardred
-- @elian unveiled the [harsh reality](https://twitter.com/elianhuesca/status/1263463096401747970) about what is coming for bank accounts
+- @chappjc使dcrdex testnet pre-alpha 正式
+- @elian揭露了有关银行账户即将发生的严酷现实
 
-> I gave my young son some Bitcoin at Christmas and was fearful he wouldn't engage and he hadn't mentioned it much since. Last week he came to me and asked "Should we not be stacking Decred Dad?" Ultimate Father/Son moment. ([@veganreboot](https://twitter.com/veganreboot/status/1265952035280732160))
+## 市场表现
 
-## Markets
+5月DCR交易价格在12.62-15.66美元，BTC 0.0014-0.00167之间。每日平均价格为$14.11。
 
-In May DCR was trading between USD 12.62-15.66 / BTC 0.0014-0.00167. The average daily rate was $14.11.
+OneAnalyst进行的一项[季节性研究](https://medium.com/coinmonks/decred-price-a-seasonality-study-414bac98bc99)探讨了DCR的每日、每周和每月的收益影响（DCR似乎更倾向于星期六）。
 
-A [seasonality study](https://medium.com/coinmonks/decred-price-a-seasonality-study-414bac98bc99) by OneAnalyst explored day-of-the-week and month-of-the-year effect on DCR's daily returns (DCR seems to favor Saturdays).
-
-A [wrap-up](https://blockcommons.red/publication/mm-phase1-wrapup/) of phase 1 market maker activity by @richardred analyzed order book depth over time for DCR and other assets, concluding that it didn't see an organic increase beyond the orders maintained by i2.
+[总结](https://blockcommons.red/publication/mm-phase1-wrapup/)第一阶段做市商行为由@richardred分析订单簿的深度随着时间DCR和其它资产，他认为没有看到有机增长超出I2维护的订单。
 
 ## 相关外部信息
 
