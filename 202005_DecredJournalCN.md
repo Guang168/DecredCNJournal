@@ -102,116 +102,117 @@ v1.1候选发布版已准备好进行测试！此版本包括[重新设计](http
 
 - 支持[只读](https://github.com/decred/dcrandroid/pull/471)钱包模式
 - [加密](https://github.com/raedahgroup/dcrlibwallet/pull/131)钱包种子并加强种子输入的隐私性（有关Google Keyboard的隐私问题）
-- 
-request [passphrase](https://github.com/decred/dcrandroid/pull/467) before showing or verifying seed
-- [limit](https://github.com/decred/dcrandroid/pull/472) user to 1 wallet per 1 GB of RAM
-- [Polish](https://github.com/decred/dcrandroid/pull/405) translation
-- multiple bug fixes
+- 在显示或验证种子之前请求[密码](https://github.com/decred/dcrandroid/pull/467)
+- 每1GB R内存限制[限制](https://github.com/decred/dcrandroid/pull/472)1个钱包
+- [波兰语](https://github.com/decred/dcrandroid/pull/405)翻译
+- 多个bug修复
 
-Testnet build of the v1.5 release is available on [Google Play](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.testnet). Bug reports are welcome on [GitHub](https://github.com/decred/dcrandroid/issues).
+[Google Play](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.testnet)提供了v1.5版本的Testnet版本。发现Bug欢迎在[GitHub](https://github.com/decred/dcrandroid/issues)上提交。
 
 [dcrios](https://github.com/raedahgroup/dcrios):
 
 - 支持[只读](https://github.com/decred/dcrandroid/pull/471)钱包模式
-- blockchain [rescan](https://github.com/raedahgroup/dcrios/pull/675) implemented
-- Decred [logo](https://github.com/raedahgroup/dcrios/pull/674) on QR codes
-- [Polish](https://github.com/raedahgroup/dcrios/pull/683) translation ported from Android
-- multiple bug fixes
+- 支持区块链重新[扫描](https://github.com/raedahgroup/dcrios/pull/675)
+- 添加Decred [logo](https://github.com/raedahgroup/dcrios/pull/674)二维码
+- [波兰语](https://github.com/decred/dcrandroid/pull/405)翻译
+- 多个bug修复
 
-Testnet build of the v1.5 release is available on [Apple TestFlight](https://testflight.apple.com/join/7KL4VnB2). Bug reports are welcome on [GitHub](https://github.com/raedahgroup/dcrios/issues).
+v1.5的Testnet版本在[Apple TestFlight](https://testflight.apple.com/join/7KL4VnB2)上可用。发现Bug欢迎在[GitHub](https://github.com/raedahgroup/dcrios/issues)上提交。
+
 
 [dcrdata](https://github.com/decred/dcrdata):
 
-- attack cost page now takes [circulating DCR](https://github.com/decred/dcrdata/pull/1736) into consideration
-- v5.3 beta is [deployed](https://twitter.com/decredexplorer/status/1262827698986127360) to [main site](https://dcrdata.decred.org/)
+- 攻击成本页面现在[DCR流通总量](https://github.com/decred/dcrdata/pull/1736)条件
+- v5.3 Beta[已部署](https://dcrdata.decred.org/)
 
-In progress:
+进行中：
 
-- DCR price increase [prediction](https://github.com/decred/dcrdata/pull/1738) on the attack cost page, based on the current order books on exchanges (WIP version deployed at [planetdecred.org](https://explorer.planetdecred.org/attack-cost) for testing)
-- display Swap Contract and Swap Redemption labels for [atomic swap](https://github.com/decred/dcrdata/pull/1733) transactions
-- [/nextreduction](https://github.com/decred/dcrdata/pull/1753) page with a countdown till next block reward reduction and basic information about it (a fun entry point to share with people learning about Decred)
+- 基于交易的当前订单簿（在[planetdecred.org](https://explorer.planetdecred.org/attack-cost) for testing)上部署的WIP版本进行测试），在攻击成本页面上的DCR价格[增长](https://github.com/decred/dcrdata/pull/1738)预测
+- 添加[原子交换交易](https://github.com/decred/dcrdata/pull/1733)标签
+- 新增[网络信息](https://github.com/decred/dcrdata/pull/1753)页面包含减少区块奖励倒计时，以及其它基本信息（一个有趣的入口点，可与了解Decred的人分享）
 
 [tinydecred](https://github.com/decred/tinydecred):
 
-- foundations for [SPV peer](https://github.com/decred/tinydecred/pulls?q=is%3Apr+merged%3A2020-05-01..2020-05-31+sort%3Aupdated-asc+spv) support
-- added BTC network [parameters](https://github.com/decred/tinydecred/pull/184) (first step for multi-asset support)
-- tooling to measure [test coverage](https://github.com/decred/tinydecred/pull/180)
-- [v0.1.0](https://github.com/decred/tinydecred/releases/tag/v0.1.0) is the first tagged release (_congrats!_)
+- 基础的[SPV节点](https://github.com/decred/tinydecred/pulls?q=is%3Apr+merged%3A2020-05-01..2020-05-31+sort%3Aupdated-asc+spv)
+- 添加了BTC网络[参数](https://github.com/decred/tinydecred/pull/184)（支持多资产的第一步）
+- 衡量[测试覆盖率](https://github.com/decred/tinydecred/pull/180)的工具
+- [v0.1.0](https://github.com/decred/tinydecred/releases/tag/v0.1.0)是第一个版本（恭喜！）[
 
 [docs](https://github.com/decred/dcrdocs):
 
-- [overhauled](https://github.com/decred/dcrdocs/pull/1090) the [Verifying Binaries](https://docs.decred.org/advanced/verifying-binaries/) page which now explains what the user needs to do and why, updated multiple pages to [encourage](https://github.com/decred/dcrdocs/pull/1094) users to verify binaries (_you should too!_)
-- [added](https://github.com/decred/dcrdocs/pull/1089) new [Redeem Script](https://docs.decred.org/proof-of-stake/redeem-script/) page that explains what it is, backup, and recovery
+- [全面检查](https://github.com/decred/dcrdocs/pull/1090)“[验证二进制文件](https://docs.decred.org/advanced/verifying-binaries/)”页面，该页面现在说明了用户需要执行的操作以及原因，并更新了多个页面以[鼓励](https://github.com/decred/dcrdocs/pull/1094)用户验证二进制文件（您也应该这样做！）
+- [添加](https://github.com/decred/dcrdocs/pull/1089)了新的“[赎回脚本](https://docs.decred.org/proof-of-stake/redeem-script/)”页面，该页面解释了怎样备份和恢复
 
-Other:
+其它:
 
-- @mm published [InvalidationGame](https://github.com/mmartins000/invalidationgame), a script that simulates a double-spending attack on a simulated pure PoW network, or a hybrid PoW+PoS network like Decred.
-- Bug Bounty website posted a new [update](https://bounty.decred.org/2020/05/status-update/): a total of 123 submissions have been processed (+19), with 13 of them being eligible for a payout (+2).
-- Some developers are more active on Twitter now with the dev updates. You can follow [@lukebp_](https://twitter.com/lukebp_), [@marco_peereboom](https://twitter.com/marco_peereboom), [@degeri_crypto](https://twitter.com/degeri_crypto), and others to get more of those. If you are a developer with a Twitter account, you can help to spread the builder culture of Decred by tweeting such dev updates (and don't hesitate to suggest them for a retweet in [#media](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org)!).
+- @mm发布了[InvalidationGame](https://github.com/mmartins000/invalidationgame)，该脚本可在纯PoW网络或混合的PoW + PoS网络（如Decred）上模拟双花攻击。
+- Bug Bounty网站发布了一个[更新](https://bounty.decred.org/2020/05/status-update/)：总共处理了123个提交（+19），其中13个有资格获得付款（+2）
+- 随着新内容的推出，一些开发人员在Twitter上更加活跃。您可以关注 [@lukebp_](https://twitter.com/lukebp_), [@marco_peereboom](https://twitter.com/marco_peereboom), [@degeri_crypto](https://twitter.com/degeri_crypto)等，以获取更多信息。如果您是拥有Twitter帐户的开发人员，则可以通过在Twitter上发布此类dev更新来帮助传播Decred的构建者文化（不要犹豫[加入聊天室](https://matrix.to/#/!kdpEDksmOMNrlMqffD:decred.org)!)！）
 
-Dev activity stats for May (approximate): ~300 active PRs, ~340 master commits, ~51K added and ~26K deleted lines spread across 16 repositories (note: line counts exclude Decrediton [#2481](https://github.com/decred/decrediton/pull/2481) that reformatted a huge repository). Contributions came from 2-10 developers per repository.
+5月（大约）的开发活动统计：〜300个活动PR，〜340个主提交，〜51K行添加和〜26K行删除的分布在16个存储库中（注意：行数不包括Decrediton [#2481](https://github.com/decred/decrediton/pull/2481)重新格式化了一个大型存储库）。每个存储库贡献2-10个开发人员。
 
-## People
 
-Welcome to new first time contributors with code merged to master: @blaltarriba ([politeiagui](https://github.com/decred/politeiagui/commits?author=blaltarriba)), @dreacot ([dcrandroid](https://github.com/decred/dcrandroid/commits?author=dreacot)), @Ekeh ([dcrdata](https://github.com/decred/dcrdata/commits?author=Ekeh)), @guilhermemntt ([decrediton](https://github.com/decred/decrediton/commits?author=guilhermemntt)), @rstaudt2 ([dcrd](https://github.com/decred/dcrd/commits?author=rstaudt2)) and @song50119 ([dcrdex](https://github.com/decred/dcrdex/commits?author=song50119)).
+## 人员
 
-Congratulations to new contractors granted the Decred Contractor Clearance (DCC): [@camilolwi](https://twitter.com/Camilolwi) (marketing), [@itswisdomagain](https://github.com/itswisdomagain) (development), [@nachito](https://github.com/Reidiojed) (marketing), [@tomee](https://twitter.com/tomasgroos) (marketing).
+欢迎新到来的首次贡献者，他的代码已合并到主代码库中： @blaltarriba ([politeiagui](https://github.com/decred/politeiagui/commits?author=blaltarriba)), @dreacot ([dcrandroid](https://github.com/decred/dcrandroid/commits?author=dreacot)), @Ekeh ([dcrdata](https://github.com/decred/dcrdata/commits?author=Ekeh)), @guilhermemntt ([decrediton](https://github.com/decred/decrediton/commits?author=guilhermemntt)), @rstaudt2 ([dcrd](https://github.com/decred/dcrd/commits?author=rstaudt2)) 和 @song50119 ([dcrdex](https://github.com/decred/dcrdex/commits?author=song50119)).
 
-Three Decred community members were [included](https://twitter.com/Decred_BR/status/1262454667700768769) in the list of top 50 names in the Brazilian Crypto Market by Cointelegraph: Rafaela Romano in #35, Gabriel Rhama in #31 and the number one Edilson Osório Jr.
+祝贺新承包商获得了承包商认可的支付证书（DCC）：[@camilolwi](https://twitter.com/Camilolwi)（市场营销），[@itswisdomagain](https://github.com/itswisdomagain)（开发），[@nachito](https://github.com/Reidiojed)（市场营销），[@tomee](https://twitter.com/tomasgroos)（市场营销）。
 
-Community stats as of Jun 1:
+三个Decred社区成员包含在巴西加密市场Cointelegraph的前50名名单那日：Rafaela Romano在＃35，Gabriel Rhama在＃31和Edilson Osório Jr
 
-- Twitter followers: 40,492 (-78)
-- Reddit subscribers: 9,792 (+31)
-- Matrix users: 655 (+31)
-- Discord users: 1,222 (+38)
-- Telegram users: 2,603 (+46)
-- YouTube subscribers: 4,030 (+40), views: 144K (+3.5K since May 8) 
-- Facebook followers: 3,632 (+14), likes: 3,291 (+11)
-- LinkedIn followers: 810 (+36)
-- GitHub dcrd stars: 543 (+4), forks: 240 (+5)
+截至6月1日的社区统计数据：
 
-## Governance
+- Twitter 关注: 40,492 (-78)
+- Reddit 订阅: 9,792 (+31)
+- Matrix 用户: 655 (+31)
+- Discord 用户: 1,222 (+38)
+- Telegram 用户: 2,603 (+46)
+- YouTube 订阅: 4,030 (+40), 点赞: 144K (+3.5K since May 8) 
+- Facebook 关注: 3,632 (+14), 点赞: 3,291 (+11)
+- LinkedIn 关注: 810 (+36)
+- GitHub dcrd 星星: 543 (+4), 叉子: 240 (+5)
 
-In May the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 13,594 DCR and spent 19,153 DCR. Using May's daily average DCR/USD rate of $14.11, this is $192K received and $270K spent. At April's average daily rate of $12.34, the USD figure billed for work completed in that month is $236K. As of Jun 5, Treasury balance is 630,983 DCR (11.4 million USD at $18.12).
+## 治理
 
-There were 5 proposals submitted in May, and 4 of these started voting in early Jun. There was no Politeia proposal voting in May.
+5月份，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了13594 DCR，并花费了19153 DCR。以3月份的每日 DCR/USD 汇率 $14.11计算，这是收到的$192K和花费的$270K。以2月份的每日平均价格$12.34计算，该月完成工作的美元费用为$236K。截至6月5日，库存余额为630983DCR（1140万美元，折合18.12美元）。
 
-The new proposals are described in [issue 31](https://blockcommons.red/politeia-digest/issue031/) of Politeia Digest and the vote outcomes will be covered in the next issue.
+5月份共提交了5份提案，其中4份于6月初开始投票。5月份没有Politeia提案投票。
 
-## Network
+新提案在《Politeia Digest》第[31期](https://blockcommons.red/politeia-digest/issue031/)中进行了描述，投票结果将在下一期中讨论。
 
-Hashrate: [May's hashrate](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=k9nb7wvw-kavn2b1a&scale=linear&bin=block&axis=time) opened at ~357 Ph/s and closed ~386 Ph/s, bottoming at 260 Ph/s and peaking at 541 Ph/s throughout the month. Pool [hashrate distribution](https://dcrstats.com/pow) as of Jun 1 (approximate): UUPool 38%, Poolin 18%, lab.antpool.com 12%, F2Pool 1.5%, Luxor 1.3%, BTC.com 1.3%, BeePool 0.1%, CoinMine 0.03%, Suprnova 0.02% and others ~28%.
+## 网络
 
-Staking: [30-day average](https://dcrstats.com/) ticket price was 141.5 DCR (+3.7). The [price](https://explorer.dcrdata.org/charts?chart=ticket-price&zoom=k9nb7wvw-kavn2b1a&bin=window&axis=time&visibility=true-false&mode=stepped) varied between 132.9-159.2 DCR. [Locked amount](https://explorer.dcrdata.org/charts?chart=ticket-pool-value&zoom=k9nb7wvw-kavn2b1a&scale=linear&bin=block&axis=time) was 5.59-5.80 million DCR, which corresponded to 48.7-50.3% of the available supply [participating](https://explorer.dcrdata.org/charts?chart=stake-participation&zoom=k9nb7wvw-kavn2b1a&scale=linear&bin=block&axis=time) in PoS.
+全网算力: [5月的全网算力](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=k9nb7wvw-kavn2b1a&scale=linear&bin=block&axis=time)以约357 Ph/s 的速度开始，而以约386 Ph/s的速度结束，最低为260 Ph/s，峰值为541 Ph / s。截至6月1日的池哈希率分布（大约）：UUPool 38％，Poolin 18％，lab.antpool.com 12％，F2Pool 1.5％，Luxor 1.3％，BTC.com 1.3％，BeePool 0.1％，CoinMine 0.03％，Suprnova 0.02％，其他〜28％。
 
-Nodes: Throughout [May](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1588291200000&to=1590969600000) there was an average of 144 public listening nodes and 229 total nodes per dcr.farm. Average version distribution for May: 48% dcrd v1.5.1, 11% dcrd v1.5.0, 6% dcrd v1.6 dev builds, 4% dcrd v1.5 dev and RC builds, 2% dcrd v1.4, 9% dcrwallet v1.5.1, 1.4% dcrwallet v1.5, 1.4% dcrwallet v1.4, and 13% others.
+Staking: [30天的平均票价](https://dcrstats.com/)为141.5 DCR（+3.7）。[票价](https://explorer.dcrdata.org/charts?chart=ticket-price&zoom=k9nb7wvw-kavn2b1a&bin=window&axis=time&visibility=true-false&mode=stepped) 132.9-159.2 DCR之间变化。锁定金额为5.59-5,080,000 DCR，相当于参与 PoS 的占[流通量](https://explorer.dcrdata.org/charts?chart=stake-participation&zoom=k9nb7wvw-kavn2b1a&scale=linear&bin=block&axis=time)的48.7-50.3％。
 
-Lewis Harland published a piece of [research](https://formalverification.substack.com/p/in-the-network-decred) about the Decred network that considers a number of metrics, including the ratio of hashrate to USD block reward which represents miners' risk. It notes a decline of several metrics since Jan 2020 and suggests that DCR is trading at a loss relative to the total USD input to the network.
+节点: 整个[5月](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1588291200000&to=1590969600000)，平均有144个公共监听节点，总共229个节点。五月份的平均版本分布：48％dcrd v1.5.1、11％dcrd v1.5.0、6％dcrd v1.6开发版本，4％dcrd v1.5开发和RC版本，2％dcrd v1.4、9％dcrwallet v1.5.1、1.4％dcrwallet v1.5、1.4％dcrwallet v1.4和其他13％。
 
-@PermabullNino released another on-chain [research piece](https://medium.com/@permabullnino/decred-on-chain-mining-pulse-3b28d5155a04) where he explores Decred block times and introduces the Mining Pulse indicator.
+Lewis Harland发表了一篇有关Decred网络的研[研究报告](https://formalverification.substack.com/p/in-the-network-decred)，该研究考虑了许多指标，包括代表矿工风险的算力与美元的比率。报告指出，自2020年1月以来，一些指标有所下降，这表明DCR相对于投入网络的美元处于亏损状态。
 
-## Integrations
+@PermabullNino发布了另一个链上[研究文章](https://medium.com/@permabullnino/decred-on-chain-mining-pulse-3b28d5155a04)，他在其中探索Decred块时间并介绍了Mining Pulse指示器。
 
-[Transak](https://global.transak.com/) brought a new way to purchase DCR with a debit card for residents of the US, EU, and many other countries, thanks to a [partnership](https://twitter.com/transak_finance/status/1265690509844131846) with Wyre. "Transak uses smart contracts to connect the end-user to liquidity on centralized and decentralized exchanges. Users will have to input simple KYC information, but the process from start to finish will take less than 5 minutes". Now Transak is live in 32 countries, supporting 14 fiat currencies and 300+ cryptoassets.
+## 整合
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+[Transak](https://global.transak.com/)通过与Wyre 的合作，为美国，欧盟和许多其他国家的居民带来了一种通过借记卡购买DCR的新方法。“ Transak使用智能合约将最终用户连接到集中式和分散式交易所的流动性。用户将必须输入简单的KYC信息，但是从头到尾的过程将不到5分钟。” 现在，Transak遍布32个国家/地区，支持14种法定货币和300多种加密资产。
 
-## Outreach
+警告：Decred Journal的作者不了解上述任何服务的可信赖性。在将您的个人信息或资产信任给任何实体之前，请先进行自己的研究。
 
-Decred was present at the Consensus: Distributed virtual event where 6 community members delivered 4 sessions, all of which are on YouTube now. Besides this event that was based in USA, all other (known) events in May were targeting the Latam/Brazil region.
+## 外展活动
 
-Decred in Depth and Rough Consensus podcasts published a total of 4 new episodes.
+Decred参加了Consensus2020：分布式线上活动，其中6个社区成员录制4条视频，所有这些现在都在YouTube上。除了该活动位于美国以外，所有其他（已知）活动在5月都针对拉坦/巴西地区。
 
-After starting his Medium [blog](https://medium.com/@Phoenixgreen) in April, Phoenix Green expanded to YouTube video creation and as of writing his [channel](https://www.youtube.com/channel/UCZSFAqUMp8v58eEQl_bzWYg) has 10 videos about Decred. Congrats on the launch and keep up the original quality content!
+Decred in Depth 和 Rough Consensus 总共发布了4个新播客。
 
-Monde PR's achievements for May: 
+在4月开始撰写Medium [博客](https://medium.com/@Phoenixgreen)后，Phoenix Green扩展到了YouTube视频创作领域，截至撰写本文时，他的[频道](https://www.youtube.com/channel/UCZSFAqUMp8v58eEQl_bzWYg)中有10篇关于Decred的视频。恭喜发布，并保持原始质量内容！
 
-- created and pitched 3 story ideas to investing, finance and crypto publications
-- submitted comments from Decred spokespeople to 7 news stories
-- secured one media interview and one email Q&A with crypto publications
+Monde PR在五月份的成就：
 
-News coverage secured by Monde PR:
+- 创造并向投资，金融和加密出版物发行3个故事创意
+- 提交Decred发言人对7个新闻故事的评论
+- 通过加密出版物获得了一次媒体采访和一封电子邮件问答
+
+Monde PR保证的新闻报道：
 
 - an article in [Forbes](https://www.forbes.com/sites/cbovaird/2020/05/05/is-this-the-perfect-time-for-central-bank-digital-currencies/) featuring commentary by @jy-p on CBDC privacy concerns 
 - an article in [Cointelegraph](https://cointelegraph.com/news/bitcoin-s-halving-incentivizes-miners-to-sell-for-double-decred-co-founder-says) featuring commentary by @jy-p on the impact of Bitcoin's halving, syndicated to 12 news outlets including [FXStreet](https://www.fxstreet.com/cryptocurrencies/news/decred-co-founder-expects-bitcoin-halving-to-spike-btcs-price-202005070208). The comments were also included in a [Zero Hedge](https://www.zerohedge.com/markets/paul-tudor-jones-buys-bitcoin-hedge-against-central-bank-money-printing) article and a second story in [Cointelegraph](https://cointelegraph.com/news/top-experts-make-bitcoin-price-predictions-as-btc-halving-approaches), syndicated to 12 news outlets including [Miami Diario](https://miamidiario.com/bitcoin-a-la-mitad-los-expertos-creen-que-solo-se-debe-comprar-si-se-retiene-a-largo-plazo/) and [Crypto News Australia](https://cryptonews.com.au/story/top-experts-make-bitcoin-price-predictions-as-btc-halving-approaches-121382).
@@ -223,7 +224,7 @@ News coverage secured by Monde PR:
 - an article in [AMB Crypto](https://eng.ambcrypto.com/xrp-trades-wide-as-iota-decred-look-to-make-room/) featuring commentary from @jy-p on CBDCs
 - in total 123 articles appeared across 21 countries in May from the above efforts, see full list [here](https://docs.google.com/spreadsheets/d/1oef5U9R_JZ7hxmRRNKDCQNia7u-1lRuGk6w3w3LU-p0/edit?usp=sharing)
 
-## Events
+## 活动
 
 Attended:
 
@@ -312,28 +313,40 @@ A [seasonality study](https://medium.com/coinmonks/decred-price-a-seasonality-st
 
 A [wrap-up](https://blockcommons.red/publication/mm-phase1-wrapup/) of phase 1 market maker activity by @richardred analyzed order book depth over time for DCR and other assets, concluding that it didn't see an organic increase beyond the orders maintained by i2.
 
-## Relevant External
+## 相关外部信息
 
-Bitcoin's long-anticipated third halving of new issuance occurred on May 11, dominating the crypto news agenda for some period around this date and even penetrating [more](https://www.cnbc.com/2020/05/11/bitcoin-halving-heres-what-you-need-to-know.html) [mainstream](https://www.bbc.co.uk/news/business-52628034) [sources](https://www.independent.co.uk/life-style/gadgets-and-tech/features/bitcoin-halving-price-prediction-2020-a9488506.html) - much of it focusing on what effect it might have on the price.
+比特币一直期待已久的减半发生在5月11日，它占据了加密新闻的主导地位，甚至渗透了更多的 主流 消息来源 -其中大部分集中在对价格可能产生的影响上。
 
-One of several live events to mark the occasion, a seven-hour livestream organized by Cointelegraph, was unceremoniously [halted](https://cointelegraph.com/news/youtube-cancels-cointelegraphs-btc-halving-livestream-for-being-harmful-content) mid-stream and deleted by YouTube for being "harmful content".
+Cointelegraph组织的长达7个小时的现场直播是为纪念这一事件而进行的几项现场活动之一，因此中途毫不客气地暂停了播放，并因YouTube是“有害内容”而被YouTube删除。
 
-The Dash Investment Foundation has responded to some friction (rejected proposals and private criticism from master nodes) by [announcing](https://github.com/DashInvests/dif-communication/blob/master/DIF_Statement_15.05.2020-For_Immediate_Release.pdf) that it will no longer seek decision-making autonomy and will reduce its ask from the Dash Treasury, coming up with a new VC strategy during Q2 2020.
+达世币投资基金会（Dash Investment Foundation）宣布将不再寻求决策自主权，并将减少其对达世币司令部的要求，从而应对了一些摩擦（主节点拒绝了提案和私人批评），并在第二季度提出了新的风险投资策略2020年。
 
-Reddit introduced new blockchain-based tokens to be trialled on /r/cryptocurrency ([Moons](https://www.reddit.com/r/CryptoCurrency/comments/gj96lb/introducing_rcryptocurrency_moons/)) and /r/FortNiteBR ([Bricks](https://www.reddit.com/r/FortNiteBR/comments/gj8tm1/introducing_rfortnitebr_bricks/)). Tokens will be awarded to users of a subreddit in relation to their karma scores (50%), 10% for moderators, 20% for Reddit, and 20% for the "broader Reddit community". In addition to serving as a badge of reputation on the subreddit points can be used to unlock features like posting gifs in comments. Points-weighted variants of polls have also been described.
+Reddit引入了新的基于区块链的令牌，将在/ r / cryptocurrency（Moons）和/ r / FortNiteBR（Bricks）上进行试用。相对于业力分数（50％），主持人10％，Reddit 20％和“更广泛的Reddit社区” 20％，subreddit的用户将获得令牌。除了充当subreddit点上的声誉徽章之外，还可以用于解锁功能，例如在评论中发布gif。还描述了民意测验的点加权变体。
 
-Tech giants and dozens of governments have decided that smartphones are not backdoored _enough_ and initiated an unprecedented mass [surveillance](https://en.wikipedia.org/wiki/COVID-19_surveillance#Digital_surveillance) program (attributed to COVID-19). Many [technologies](https://en.wikipedia.org/wiki/COVID-19_apps) have "privacy-preserving" added somewhere in the title and it might be [really secure](https://en.wikipedia.org/wiki/List_of_data_breaches) this time. There is even a promise to [terminate](https://www.cnet.com/news/apple-and-google-say-they-will-shut-down-covid-19-tracking-tools-once-pandemic-ends/) the tracking systems once the pandemic "ends". Sarcasm aside, for cryptocurrency users it means a bunch of new privacy and security risks on their mobile devices and a strong incentive to consider [alternative](https://itsfoss.com/open-source-alternatives-android/) operating systems or even hardware.
+科技巨头和数十个政府已经决定，智能手机的后门能力还不够，并发起了前所未有的大规模监视计划（归因于COVID-19）。许多技术的标题中都添加了“保留隐私”，这一次可能真的很安全。一旦大流行“结束”，甚至有可能终止跟踪系统。除了讽刺，对于加密货币用户来说，这意味着他们的移动设备上存在许多新的隐私和安全风险，并且是考虑使用替代操作系统甚至硬件的强烈动机。
 
-## About This Issue
+## 关于月报
 
-This is issue 26 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是Decred Journal的第26期。有关所有问题，镜像和翻译的索引，请参见此处。
 
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of the Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
+在经过最少的健全性检查之后，来自第三方的大多数信息都会直接从来源中继。Decred Journal的作者无权验证所有声明。请当心诈骗，并自行进行调查。
 
-Your [feedback](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback) and [contributions](https://github.com/xaur/decred-news/blob/docs/contributing.md) are always welcome.
+我们随时欢迎您的反馈和贡献。
 
-Credits (alphabetical order):
+感谢 (字母排列):
 
-- writing and editing: bee, chappjc, degeri, elian, Exitus, l1ndseymm, richardred
-- reviews and feedback: davecgh, dnldd, Dominic, emiliomann, jholdstock, jrick, lukebp, matheusd, raedah
-- title image: saender
+- 写作和编辑: bee, chappjc, degeri, elian, Exitus, l1ndseymm, richardred
+- 评论和反馈: davecgh, dnldd, Dominic, emiliomann, jholdstock, jrick, lukebp, matheusd, raedah
+- 封面图片:  saender
+
+## 中文社区
+
+* [社区网址](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [优酷频道](https://i.youku.com/decredproject)
+* QQ群号-258412796
+
+欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
+
