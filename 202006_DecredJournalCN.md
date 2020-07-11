@@ -1,49 +1,50 @@
-# Decred Journal – June 2020
+# Decred月报 – 2020年6月
 
 ![abstract art](img/journal-202006-384.png)
 
-_Image: Ambience at 3000K by @saender_
+_图片: Ambience at 3000K @saender_
 
-June's highlights:
+六月亮点：
 
-- Mobile apps for Android and iOS are upgraded to v1.5.
-- Decred's implementation of the new Rosetta standard by Coinbase was released, this will greatly simplify the process of adding DCR support for any merchants/exchanges using Rosetta.
-- @richardred published the first results of his on-chain research, also see the Integrations section of the Journal for monitoring of KuCoin's staking activity.
-- Decred DEX seems poised for a limited initial release that supports mainnet DEXing.
-- There has been an increase in discussion activity on Reddit, and several new Decred-inspired artists have appeared on Twitter.
+- 适用于Android和iOS的移动应用已升级到v1.5。
+- 发布了Decred的Rosetta中间件，这将大大简化为使用Rosetta的任何商家/交易所添加DCR的支持。
+- @richardred发表了他的链上研究的第一批结果，另请参阅《月报》的“整合”部分查看KuCoin的抵押活动。
+- Decred DEX似乎准备好了支持主网的初始版本。
+- 关于Reddit的讨论活动有所增加，并且有一些受Decred启发的新艺术家出现在Twitter上。
 
-## Mobile Wallets v1.5 Release
+## 移动钱包v1.5
 
-After ~1 year of development, Android and iOS wallets v1.5 are now out on [Google Play](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet) and [Apple Store](https://apps.apple.com/us/app/decred-wallet/id1462247643). Changes include:
+经过约1年的开发，Android和iOS钱包v1.5现已在[Google Play](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet)和[Apple Store](https://apps.apple.com/us/app/decred-wallet/id1462247643)推出。更新包含：
 
-- Completely redesigned user interface that conforms to platform style guidelines.
-- Support for multiple wallets and watch-only wallets.
-- Delayed seed backup confirmation to get up and running quickly.
+- 全部重新设计的用户界面，符合Decred样式准则。
+- 支持多个钱包和仅观察钱包。
+- 延迟种子备份确认，可快速启动并运行。
 
-Congratulations to all contributors!
+祝贺所有贡献者！
 
-Please check the full Reddit [announcement](https://www.reddit.com/r/decred/comments/hc5jut/decred_mobile_wallet_v150_has_been_released_for/) and support the [tweet](https://twitter.com/planetdecred/status/1274041667520090112).
+请查看完整的Reddit[公告](https://www.reddit.com/r/decred/comments/hc5jut/decred_mobile_wallet_v150_has_been_released_for/)并支持该[推文](https://twitter.com/planetdecred/status/1274041667520090112)。
 
-## Decred's Rosetta Middleware Implementation
+## Decred的Rosetta中间件实现
 
-An [implementation](https://community.rosetta-api.org/t/decreds-rosetta-middleware-implementation/79) of the [Rosetta API](https://www.rosetta-api.org/) for Decred was [released](https://twitter.com/decredproject/status/1279127834137636866) in early July, just 2 weeks after Rosetta itself was [released](https://twitter.com/coinbase/status/1273269255610531841) by Coinbase:
+在7月初[发布](https://community.rosetta-api.org/t/decreds-rosetta-middleware-implementation/79)了[Rosetta API](https://www.rosetta-api.org/) 的 Decred[实现](https://twitter.com/decredproject/status/1279127834137636866)，距Coinbase 发布 Rosetta本身仅2周：
 
-> Coinbase initially developed Rosetta as the middleware used to integrate blockchains into its platform securely and painlessly (...)
+> Coinbase最初开发了Rosetta作为中间件，该中间件用于将区块链安全、轻松地集成到其平台中 (...)
 > 
-> For developers of new blockchain projects, the Rosetta interface makes it easier to ensure compatibility with exchanges that use Rosetta, and can dramatically speed up the time it takes exchanges to integrate with new blockchains and protect customer funds by ensuring specific security conditions are met.
+> 对于新的区块链项目开发人员而言，Rosetta界面可以更轻松地确保与使用Rosetta的交易所的兼容性，并且可以通过确保满足特定的安全条件，大大缩短交易所与新区块链集成所需的时间。
 > 
-> For the broader community of crypto developers, Rosetta makes it easier to build cross-blockchain applications such as block explorers, wallets, and dapps. Instead of writing custom parsing for every supported blockchain, applications can use a blockchain project's Rosetta implementation to read on-chain data and construct transactions in a standard format; minimizing code and simplifying maintenance.
+> 对于更广泛的加密货币开发者社区而言，Rosetta使得构建跨区块链应用程序（如区块浏览器，钱包和dapp）更加容易。应用程序可以使用区块链项目的Rosetta实现读取链上数据并以标准格式构造交易，而不必为每个受支持的区块链编写自定义解析。减少代码并简化维护。
 
-Rosetta features interesting design [principles](https://www.rosetta-api.org/docs/principles_introduction.html), [no gatekeepers](https://www.rosetta-api.org/docs/no_gatekeepers.html) policy, strict security requirements for [wallet](https://www.rosetta-api.org/docs/wallet_api_introduction.html) implementations, [staking](https://www.rosetta-api.org/docs/staking_contract_support.html) support, and a [test suite](https://github.com/coinbase/rosetta-cli) to validate implementations. The first released [SDK](https://www.rosetta-api.org/docs/rosetta_sdk_go.html) is for the Go language as it is heavily [used](https://github.com/coinbase/rosetta-specifications#user-content-sdks-in-more-languages) at Coinbase.
+Rosetta拥有有趣的[设计原则](https://www.rosetta-api.org/docs/principles_introduction.html)、没有[守门人](https://www.rosetta-api.org/docs/no_gatekeepers.html)要求、严格的安全要求[钱包](https://www.rosetta-api.org/docs/wallet_api_introduction.html)实现，完善的支持和[测试套件](https://github.com/coinbase/rosetta-cli)。第一个发布的[SDK](https://www.rosetta-api.org/docs/rosetta_sdk_go.html)适用于Go语言，因此在Coinbase中大量[使用](https://github.com/coinbase/rosetta-specifications#user-content-sdks-in-more-languages)。
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能在发布的二进制文件中使用。
 
 [dcrd](https://github.com/decred/dcrd):
 
-- refactored the [rpcserver](https://github.com/decred/dcrd/pull/2211) package to test it more easily
-- fixed [mempool](https://github.com/decred/dcrd/pull/2232) view construction when dealing with disapproved blocks (resolves some issues around transactions on testnet being rejected by the mempool that really shouldn't have been in certain conditions)
+- 重构[rpcserver](https://github.com/decred/dcrd/pull/2211)软件包以更轻松地对其进行测试
+- 
+fixed [mempool](https://github.com/decred/dcrd/pull/2232) view construction when dealing with disapproved blocks (resolves some issues around transactions on testnet being rejected by the mempool that really shouldn't have been in certain conditions)
 - fixed [edge](https://github.com/decred/dcrd/pull/2218) [case](https://github.com/decred/dcrd/pull/2221) crashes of the RPC server with crafted JSON
 - [removed](https://github.com/decred/dcrd/pull/2222) Encrypt and Decrypt functions to discourage their use and instead recommend to use modern encryption scheme (e.g. [AEAD ciphers](https://crypto.stackexchange.com/a/27248))
 
