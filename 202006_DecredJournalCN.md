@@ -1,6 +1,6 @@
 # Decred Journal – June 2020
 
-![abstract art](../img/journal-202006-384.png)
+![abstract art](img/journal-202006-384.png)
 
 _Image: Ambience at 3000K by @saender_
 
