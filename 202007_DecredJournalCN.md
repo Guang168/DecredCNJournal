@@ -399,3 +399,14 @@ Credits (alphabetical order):
 - writing and editing: bee, chappjc, degeri, elian, l1ndseymm, richardred
 - reviews and feedback: adcade, buck54321, davecgh, emiliomann, jholdstock, jz
 - title image: saender
+
+## 中文社区
+
+* [社区网址](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [bilibili频道](https://space.bilibili.com/425519478)
+* QQ群号-258412796
+
+欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
