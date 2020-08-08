@@ -1,38 +1,37 @@
-# Decred Journal – July 2020
+# Decred月报 – 2020年7月
 
 ![abstract art](img/journal-202007-384.png)
 
-_Image: Relay Pylons by @saender_
+_图片: Relay Pylons by @saender_
 
-July's highlights:
+七月亮点：
 
-- The decentralized approval of Treasury transactions, for which a DCP is forthcoming, will use Schnorr signatures, and the implementation is currently under review.
-- Politeia saw a round of significant new features deployed, including RFP proposals and dark mode. On the CMS end accountability features are being added.
-- vspd has received the last major change it needed, and is being tested on testnet and soon mainnet.
-- There has been more progress towards running dcrlnd in SPV mode, and a huge codebase upgrade to match new lnd version.
-- Discussion of community outreach activity has increased considerably across Reddit, Matrix and Discord channels - with a corresponding increase in the number of marketing-related proposals appearing on Politeia.
+- 去中心化基金支付DCP0006(链上共识规则修改提案)将使用Schnorr签名，目前正在对其进行审核。
+- Politeia部署了一系列重要的新功能，包括RFP模式天和暗模式。在CMS端，添加了责任功能。
+- vspd已完成最后一项核心更改，目前正在测试网测试，很快就会登录主网测试。
+- 在以SPV模式运行dcrlnd方面取得了巨大的进步，进行了大量的代码升级以匹配新的lnd版本。
+- 在Reddit、Matrix和Discord频道中，出现大量有关社区外展活动的讨论-在Politeia上出现的与营销相关的提案也相应增加。
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能在发布的二进制文件中使用。
 
 [dcrd](https://github.com/decred/dcrd):
 
-- added handling of [`notfound`](https://github.com/decred/dcrd/pull/2253) peer message (if a peer indicates it has some data but does not serve it upon request, that peer is very likely misbehaving and gets banned)
-- added more [test coverage](https://github.com/decred/dcrd/issues/2069) for the `rpcserver` package
-- field normalization code [hardened](https://github.com/decred/dcrd/pull/2258) against the possibility of non-constant time operations due to branch prediction (primarily based on a [pull request](https://github.com/btcsuite/btcd/pull/1084) to btcd from 2017). The PR demonstrates a way of detecting non-constant time behavior by simply _looking_ at the assembly output.
-- memory usage optimizations in [stake](https://github.com/decred/dcrd/pull/2294) node pruning, txscript [stack](https://github.com/decred/dcrd/pull/2298), trace [logging](https://github.com/decred/dcrd/pull/2301), and [chain tip](https://github.com/decred/dcrd/pull/2302) tracking code
-- [exported](https://github.com/decred/dcrd/pull/2240) various consensus functions and types as a step to remove all non-consensus code out of the `txscript` package
-- mining code [moved](https://github.com/decred/dcrd/pull/1965) into `mining` package
-- [`mempool`](https://github.com/decred/dcrd/pull/2274), [`mining`](https://github.com/decred/dcrd/pull/2275) and [`fees`](https://github.com/decred/dcrd/pull/2287) converted from exported modules to internal packages to reduce the maintenance burden. This is part of the overall effort to reduce the total number of modules and eventually get to the point that it will be possible to follow [semantic versioning](https://semver.org/) for the root module.
-- `rpcserver` code [moved](https://github.com/decred/dcrd/pull/2288) from the main module to a standalone internal package
-- `cpuminer` [refactored](https://github.com/decred/dcrd/pull/2276) into its own package to improve testability and facilitate reuse
-- `cpuminer` [reworked](https://github.com/decred/dcrd/pull/2277) to use the background block template generator to simplify testing with simulation test networks
-- [exported](https://github.com/decred/dcrd/pull/2243) several `txscript` functions that are independently useful to make the Treasury PR a bit smaller
+- 添加[`notfound`](https://github.com/decred/dcrd/pull/2253)对等消息处理
+- 增加了更多`rpcserver`[测试范围](https://github.com/decred/dcrd/issues/2069)
+- 对因分支预测而引起的非恒定时间操作的可能性进行了[强化](https://github.com/decred/dcrd/pull/2258)（主要基于从2017年起对btcd 的拉取请求）。PR通过简单地查看程序集输出演示了一种检测非恒定时间行为的方法。
+- [stake](https://github.com/decred/dcrd/pull/2294)节点修剪，txscript[堆栈](https://github.com/decred/dcrd/pull/2298)，跟踪[日志](https://github.com/decred/dcrd/pull/2301)记录和[链提示](https://github.com/decred/dcrd/pull/2302)跟踪代码中的内存使用优化
+- [导出了](https://github.com/decred/dcrd/pull/2240)各种共识函数和类型，以从`txscript`包中删除所有非共识代码
+- 挖矿代码[移动](https://github.com/decred/dcrd/pull/1965)到`mining`包
+- [`mempool`](https://github.com/decred/dcrd/pull/2274), [`mining`](https://github.com/decred/dcrd/pull/2275) 和 [`fees`](https://github.com/decred/dcrd/pull/2287)转换为内部软件包，以减少维护负担。这是减少模块总数并最终达到对根模块进行语义版本控制的努力的一部分。
+- `rpcserver`代码[移动](https://github.com/decred/dcrd/pull/2288)到一个独立的内部包
+- `cpuminer` [重构](https://github.com/decred/dcrd/pull/2276)以提高可测试性并促进重用
+- `cpuminer` [重新设计](https://github.com/decred/dcrd/pull/2277)以使用后台模块模板生成器来简化模拟测试网络的测试
 
-Commenting on the status of optimizations:
+评论优化状态：
 
-> Flame graph for CPU usage shows pretty clearly that things are being dominated by IO now, so the biggest speedups left will definitely come from that front. ~10% GC, <1% validation, ~3.5% peer I/O, ~55% disk I/O, ~3% profiling cost, ~27% idle, and the rest in minor bits and bobs. ([@davecgh](https://chat.decred.org/#/room/!zefvTnlxYHPKvJMThI:decred.org/$U9ybkey7ppiqGR_K_BagIHwcoyNGTS-H91hEaXzghmI))
+> CPU使用率的火焰图非常清楚地表明，现在事情已由IO主导，因此，剩下的最大加速无疑将来自这一方面。大约10％的GC，<1％的验证，〜3.5％的对等I / O，〜55％的磁盘I / O，〜3％的性能分析成本，〜27％的空闲时间，其余部分则很少。 ([@davecgh](https://chat.decred.org/#/room/!zefvTnlxYHPKvJMThI:decred.org/$U9ybkey7ppiqGR_K_BagIHwcoyNGTS-H91hEaXzghmI))
 
 A total of 53 pull requests from 8 contributors were [merged](https://github.com/decred/dcrd/pulls?q=is%3Apr+merged%3A2020-07-01..2020-07-31+sort%3Aupdated-asc), adding 11K and deleting 5K lines of code.
 
