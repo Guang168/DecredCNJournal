@@ -159,7 +159,7 @@ godcr是Decred即将推出的跨平台桌面SPV钱包。有关简介，请参见
 
 ## 治理
 
-7月份，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了13050，并花费了16073。以3月份的每日 DCR/USD 汇率 $15.13这是收到的$197花费的$243以5月份的每日平均价格$16.05该月完成工作的美元费用为$258。截止到8月1日，基金余额为630766DCR。（约1070万美元，汇率16.92usd）
+7月份，[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了13050，并花费了16073。以7月份的每日 DCR/USD 汇率 $15.13这是收到的$197花费的$243以5月份的每日平均价格$16.05该月完成工作的美元费用为$258。截止到8月1日，基金余额为630766DCR。（约1070万美元，汇率16.92usd）
 
 7月提交了7份提案：
 
