@@ -1,134 +1,132 @@
-# Decred Journal – August 2020
+# Decred Journal – 2020年8月
 
 ![abstract art](img/journal-202008-384.png)
 
-_Image: Bidirectional by @saender_
+_图片: Bidirectional @saender_
 
-Highlights for August:
+八月重点:
 
-- A v1.5.2 patch was released to fix a potential denial of service vector.
-- Team dcrdex is up to 6 active members, and they must be burning through keyboards with over 50 PRs merged in the month, clearing up bugs and edge cases as these are revealed by testing.
-- Review of the epic Treasury decentralization PR has concluded and the finishing touches are being applied.
-- vspd has been receiving some polish and work has now moved on to Decrediton and dcrwallet integrations.
-- The key elements for Politeia's switch to tlog are now in place, once some refactoring to accommodate these is completed, testing will begin.
+- 发布v1.5.2以修补潜在的拒绝矢量服务。
+- dcrdex团队最多有6位活跃成员，每月合并50多个PR(键盘在燃烧)，以清除通过测试发现的bug。
+- 去中心化国库支付代码的审查已经结束，收尾工作正在进行中。
+- vspd得到了一些提升，现在工作已转移到Decrediton和dcrwallet的集成中。
+- Politeia转换为tlog已经准备实施，重构达到适应需求就将开始测试。
 
-## v1.5.2 Patch Release
+## v1.5.2补丁发布
 
-This release closes a potential denial of service vector. People running their own nodes as well as Proof-of-Work miners are advised to upgrade.
+此版本修补了潜在的拒绝矢量服务。建议自己运行节点的人以及PoW矿工进行升级。
 
-New binaries for dcrd and Decrediton are available [here](https://github.com/decred/decred-binaries/releases/tag/v1.5.2). Make sure to [verify them](https://docs.decred.org/advanced/verifying-binaries/) - the instructions are more detailed and friendly now.
+dcrd和Decrediton的新二进制文件在[此处](https://github.com/decred/decred-binaries/releases/tag/v1.5.2)提供。使用前请确保对其进行[验证](https://docs.decred.org/advanced/verifying-binaries/) -现在的说明更加详细和友好。
 
-On Sep 10 it was [disclosed](https://invdos.net/) that the vulnerability is [CVE-2018-17145](https://nvd.nist.gov/vuln/detail/CVE-2018-17145). It was reported to Decred team on Jul 7 and patched Jul 8. The v1.5.2 binary release came out on Aug 27.
+该漏洞[CVE-2018-17145](https://nvd.nist.gov/vuln/detail/CVE-2018-17145)于9月10日在NIST(美国国家标准与技术研究院)披露。Decred团队已于7月7日发布了补丁并于7月8日对其进行了修补。v1.5.2二进制版本于8月27日发布。
 
-As of Sep 10, more than 20% of nodes have upgraded according to [dcr.farm](https://charts.dcr.farm/d/000000014/nodes).
+截至9月10日，根据[dcr.farm](https://charts.dcr.farm/d/000000014/nodes)，超过20％的节点已升级。
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users. 
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能在发布的二进制文件中使用。
 
-Speaking of building from source, changes in v1.5.2 were actually backported from an earlier [fix](https://github.com/decred/dcrd/pull/2253) on the master branch. It means that people building from source received it 1.5 months in advance of the binary release. If you would like to try it a new detailed and gentle [walkthrough](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c) by @kozel is available to help.
+说到从源代码构建，v1.5.2中的更改实际上是从master分支上的[早期修复程序](https://github.com/decred/dcrd/pull/2253)中向后移植的。这意味着使用源代码构建的人在二进制发布之前1.5个月就收到了这些修复程序。如果您想尝试使用源代码构建，可以查看@kozel 制作的[教程](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)以获取帮助。
 
-> by compiling your Decred software from source you can make use of code upgrades, bug fixes, and, amongst others, @davecgh's epic performance optimisations the moment they come out, without having to wait for an official release that they will be featured in. (...) this is as cutting-edge as it gets.
+> @davecgh:通过从源代码编译Decred软件，您可以利用代码升级体验最新版本带来的舒适体验，而不必等待正式版本的发布，这是最先进的。
 
 [dcrd](https://github.com/decred/dcrd):
 
-- several historical [release notes](https://github.com/decred/dcrd/pull/2314) added to the repository. Compared to using GitHub's Release pages only, this better protects these documents from loss, reduces dependency on GitHub, and allows people to contribute improvements in a standard workflow.
-- added [simnet](https://github.com/decred/dcrd/pull/2315) environment documentation and setup script. This increases developer productivity when testing and also facilitates writing reproducible bug reports using a common setup.
-- introduced [contrib](https://github.com/decred/dcrd/pull/2317) directory to house optional tools which may be useful when working with dcrd and related software. Currently, this includes operating system service configurations and the new simnet setup script.
-- added a database [migration](https://github.com/decred/dcrd/pull/2321) to remove block index data that is no longer needed after all the recent optimizations. This results in ~19.5% less memory used by dcrd.
-- [limited](https://github.com/decred/dcrd/pull/2337) the amount of [data](https://github.com/decred/dcrd/pull/2338) read from seeder response
-- the build was updated to Go 1.15 which brings substantial linker improvements that result in ~5% smaller binaries
-- improved documentation and test coverage
+- 向存储库添加了一些历史[发行说明](https://github.com/decred/dcrd/pull/2314)。与仅使用GitHub的发行页面相比，这可以更好地保护这些文档不丢失，减少对GitHub的依赖，并允许人们在标准工作流程中做出改
+- 添加了[simnet](https://github.com/decred/dcrd/pull/2315)环境文档和设置脚本。这可以提高开发人员在测试时的工作效率，还有助于使用通用设置编写可重现的bug报告。
+- 引入的[contrib](https://github.com/decred/dcrd/pull/2317)目录中包含可选工具，这些可选工具在使用dcrd和相关软件时可能会很有用。当前，这包括操作系统服务配置和新的simnet设置脚本。
+- 添加了数据库[迁移](https://github.com/decred/dcrd/pull/2321)，以删除所有最近优化后不再需要的区块索引数据。这使dcrd内存占用率减少了约19.5％。
+- 已更新为Go 1.15，带来了可观的链接程序提升，使二进制文件减小了5％。
+- 改进了文档和测试范围
 
-Notably, the handling of `notfound` messages that triggered the v1.5.2 release was quickly [backported](https://github.com/btcsuite/btcd/pull/1603) to btcd and was part of its August [release](https://github.com/btcsuite/btcd/releases/tag/v0.21.0-beta).
+值得注意的是，`notfound`触发v1.5.2发行版的消息处理很快又被[移植](https://github.com/btcsuite/btcd/pull/1603)到btcd，并且是其8月[发行版](https://github.com/btcsuite/btcd/releases/tag/v0.21.0-beta)的一部分。
 
-In progress:
+进行中：
 
-- The majority of time has been spent on the [decentralized treasury](https://github.com/decred/dcrd/pull/2170) work and the [passing](https://twitter.com/marco_peereboom/status/1296908604243611655) of all tests was achieved.
+- 大部分的时间都用在了去[中心化国库支付](https://github.com/decred/dcrd/pull/2170)测试工作。
 
 [dcrwallet](https://github.com/decred/dcrwallet):
 
-- implemented basic VSP v3 (vspd) [infrastructure](https://github.com/decred/dcrwallet/pull/1785)
-- added discovery of [mix accounts](https://github.com/decred/dcrwallet/pull/1773) to restore wallets with CoinJoin transactions
-- added optional [account](https://github.com/decred/dcrwallet/pull/1787) parameter to the `listlockunspent` command (originally requested by dcrdex, but it is useful in general too)
-- [allow](https://github.com/decred/dcrwallet/pull/1807) wallets to be created from standard input (useful for automated testing, this has helped multiple other projects)
-- optimized [database](https://github.com/decred/dcrwallet/pull/1817) layout for faster access and less reads/writes
-- limited the amount of [data](https://github.com/decred/dcrwallet/pull/1826) read from seeder response and the [duration](https://github.com/decred/dcrwallet/pull/1824) of the call
-- [fixed](https://github.com/decred/dcrwallet/pull/1806) a bug where `listunspent` was reporting stake outputs even when they were locked
+- 已部署的基本VSP v3（vspd）[基础结构](https://github.com/decred/dcrwallet/pull/1785)
+- 增加了检索[混合帐户](https://github.com/decred/dcrwallet/pull/1773)，以恢复钱包与CoinJoin交易
+- 在`listlockunspent`命令中添加了可选的[account](https://github.com/decred/dcrwallet/pull/1787)参数（最初由dcrdex请求，但通常也很有用）
+- [允许](https://github.com/decred/dcrwallet/pull/1807)从标准输入创建钱包（对于自动化测试很有用，这有助于多个其他项目）
+- 优化[数据库](https://github.com/decred/dcrwallet/pull/1817)布局可实现更快的访问速度和更少的读/写
+- [修复](https://github.com/decred/dcrwallet/pull/1806)了一个bug，其中`listunspent`在锁定时报告收益
 
 [Decrediton](https://github.com/decred/decrediton):
 
-- added support for running LN wallet with the base wallet in [SPV mode](https://github.com/decred/decrediton/pull/2629) and enabled SPV by default
-- added support for restoring wallets with [mixed accounts](https://github.com/decred/decrediton/pull/2565)
-- [restored](https://github.com/decred/decrediton/pull/2604) refactored legacy code to support both old and new staking models
-- continued upgrading to using functional components, custom hooks, and CSS modules
-- added first [automated tests](https://github.com/decred/decrediton/pull/2606) for the sidebar component
-- numerous bug fixes
+- 添加了对使用[SPV](https://github.com/decred/decrediton/pull/2629)模式运行LN钱包的支持，并默认启用SPV
+- 增加了对使用[混合帐户](https://github.com/decred/decrediton/pull/2565)还原钱包的支持
+- [还原](https://github.com/decred/decrediton/pull/2604)重构的遗留代码以支持旧的和新的staking模型
+- 继续升级为使用功能组件，自定义挂钩和CSS模块
+- 为侧边栏组件添加了第一个[自动化测试](https://github.com/decred/decrediton/pull/2606)
+- 大量bug修复
 
-There have been many questions about staking with hardware wallets. @jz [summarized](https://www.reddit.com/r/decred/comments/imbv74/staking_decred_with_ledger/) the recent developments as of Sep 4:
+关于使用硬件钱包进行购票有很多问题。@jz [总结了](https://www.reddit.com/r/decred/comments/imbv74/staking_decred_with_ledger/)截至9月4日的最新动态：
 
-- @JoeGruff has ticket purchasing with Trezor [working](https://matrix.to/#/!frQxfmcoOmtseMqzby:decred.org/$D02jsxFbrVDCXsdbMx71fy6wluJfIaw-en-GwEAyj9E) on simnet with Decrediton and a PR to their firmware repo is forthcoming.
-- Before that's usable by regular people the firmware changes will need to be reviewed and merged upstream by the Trezor people.
-- As far as I know nobody is working on Ledger support right now, that may get tackled after Trezor is complete.
-- It's unreasonable to expect that staking will ever be supported in Ledger Live (their software wallet), as it would require a large commitment on their part, it's not something we can do for them.
+- @JoeGruff 与Trezor 一起为在Decrediton的simnet上进行选票购买[工作](https://matrix.to/#/!frQxfmcoOmtseMqzby:decred.org/$D02jsxFbrVDCXsdbMx71fy6wluJfIaw-en-GwEAyj9E)，并且即将提交固件的PR。
+- 在常规人员可以使用该固件之前，Trezor人员需要审查固件将其合并到上游。
+- 据我所知，目前没人在Ledger的支持上工作，Trezor完成后可能会解决该问题。
+- 期望在Ledger Live（他们的软件钱包）中支持Staking是不合理的，这不是我们可以为他们做的事情。
 
 [Politeia](https://github.com/decred/politeia):
 
-- backend support for [TOTP](https://github.com/decred/politeia/pull/1210) (time-based codes for 2FA)
-- improved handling of [reconnection](https://github.com/decred/politeia/pull/1274) to dcrdata in Politeia and [CMS](https://github.com/decred/politeia/pull/1232)
-- RFP proposal fetching [optimized](https://github.com/decred/politeiagui/pull/2084) with finite state machines
-- numerous bugfixes
+- 后端支持[TOTP](https://github.com/decred/politeia/pull/1210)（2FA的基于时间的代码）
+- [改进了](https://github.com/decred/politeia/pull/1274)Politeia和[CMS](https://github.com/decred/politeia/pull/1232)中与dcrdata的重新连接的处理
+- 通过有限状态机优化 RFP提案 [获取](https://github.com/decred/politeiagui/pull/2084)
+- 大量bug修复
 
-The Contractor Management System (CMS) is steadily developing to improve accountability and spending efficiency:
+承包商管理系统（CMS）稳步发展，将提高问责制和支出效率:
 
-- UI for [reviewing](https://github.com/decred/politeiagui/pull/2051) same domain invoices
-- added new contractor [type](https://github.com/decred/politeia/pull/1276) for those who have been approved by a proposal but not a DCC, and a rule that such contractors cannot see domain invoices
-- added a [limit](https://github.com/decred/politeia/pull/1275) where contractors of same domain can only see each other's 6 past months of invoices
-- removed the use of [cache](https://github.com/decred/politeia/pull/1282) to prepare for tlog migration
+- 用户界面，用于[查看](https://github.com/decred/politeiagui/pull/2051)相同的域发票
+- 为那些已被提案批准但尚未通过DCC批准的承包商添加了新的承包商[类型](https://github.com/decred/politeia/pull/1276)，并且规定了此类承包商无法查看域发票的规则
+- 增加了一个[限制](https://github.com/decred/politeia/pull/1275)，即相同域的承包商只能查看彼此过去6个月的发票
+- 删除了使用[缓存](https://github.com/decred/politeia/pull/1282)为tlog迁移做准备
 
-Progress update on tlog migration from @lukebp:
+从@lukebp处获取的迁移tlog的更新进度：
 
-> The politeiad tlog backend and the politeiad plugins work is complete. The current focus is on refactoring politeiawww. The CockroachDB cache dependency has been removed, which was heavily relied upon by politeiawww previously, so refactoring the politeiawww routes involves what is essentially a full rewrite. We never hammered out a proper plugin architecture for the git backend, leading us to rely on the cache far too much. Now that we do have proper plugin architecture with tlog we're having to pull apart large parts of the politeiawww logic and move it into the plugin layer. Over reliance on the cache also meant not building out the politeiad API since it was faster and easier to run the same queries against the cache. All of this is now having to be addressed.
+> politeiad tlog后端和politeiad插件的工作已经完成。当前的焦点是重构礼貌。rockroachdb缓存依赖关系已经被删除，而politeiawww以前对其依赖很大，因此重构politeiawww路由涉及到本质上的完全重写。我们从来没有为git后端敲定一个合适的插件架构，导致我们过度依赖缓存。现在我们已经有了正确的tlog插件架构，我们必须把politeiawww逻辑的大部分分离出来，并将其移入插件层。过度依赖缓存也意味着不构建politeiad API，因为对缓存运行相同的查询更快更容易。所有这些现在都必须得到解决。
 > 
-> Once the politieiawww refactor is complete we can run performance tests. If performance tests go off without any issues we'll be able to put the tlog work up on testnet and start prepping for a release.
+> 一旦politieawww重构完成，我们就可以运行性能测试。如果性能测试顺利进行，我们就可以将tlog放到testnet上，并开始为发布做准备。
 
 [vspd](https://github.com/decred/vspd):
 
-- Basic HTTP [authentication](https://github.com/decred/vspd/pull/167) for admin status endpoint (used for automated monitoring)
-- write a backup [after](https://github.com/decred/vspd/pull/169) closing the database, not before
-- multiple smaller updates
+- 管理员状态端点的基本HTTP [身份验证](https://github.com/decred/vspd/pull/167)（用于自动监视）
+- 在关闭数据库[之后](https://github.com/decred/vspd/pull/169)写入备份
+- 多个小型更新
 
-Thanks to @isuldor ([test.stakey.net](https://test.stakey.net/)) and @sethsimmons ([vspd.realprivacy.cc](https://vspd.realprivacy.cc/)) for helping to test vspd.
+感谢 @isuldor ([test.stakey.net](https://test.stakey.net/))和 @sethsimmons ([vspd.realprivacy.cc](https://vspd.realprivacy.cc/))）帮助测试了vspd。
 
-Final changes for the minimum viable vspd have been merged and the next step is to complete dcrwallet and Decrediton integrations.
+最小可行的vspd最终更改已合并，下一步是完成dcrwallet和Decrediton集成。
 
 [dcrpool](https://github.com/decred/dcrpool):
 
-- test harness [improvements](https://github.com/decred/dcrpool/pull/243)
+- 测试工具 [改进](https://github.com/decred/dcrpool/pull/243)
 
 [dcrlnd](https://github.com/decred/dcrlnd):
 
-- made config options [saner](https://github.com/decred/dcrlnd/pull/107)
+- 使配置选项更[智能](https://github.com/decred/dcrlnd/pull/107)
 
 [dcrdex](https://github.com/decred/dcrdex):
 
-- taker/maker contract [lock times](https://github.com/decred/dcrdex/pull/612) changed from 24/48 to 8/20 hours
-- allow to [zoom out](https://github.com/decred/dcrdex/pull/573) to see more orders on the the depth chart
-- added ["split"](https://github.com/decred/dcrdex/pull/562) transactions to prepare outputs of the right size. At the cost of one extra transaction, this allows the user to better control how much funds are locked and to free up funds for more orders, thus creating a healthier order book and a better user experience.
-- indicate immediate [time-in-force](https://github.com/decred/dcrdex/pull/586) for user orders on markets view
-- [notifications](https://github.com/decred/dcrdex/pull/537) for penalized accounts
-- [asynchronous](https://github.com/decred/dcrdex/pull/565) request/notification handling and parallel new match negotiation to fix long-running client `init` and `redeem` requests and a few other issues
-- [disable](https://github.com/decred/dcrdex/pull/519) account on the client side if it is not recognized by the server
-- added [myorders](https://github.com/decred/dcrdex/pull/581) endpoint with some pre-computed useful information such as age of the order and amount settled
-- deduplicated [websocket](https://github.com/decred/dcrdex/pull/585) code
-- updated and locked down npm [dependencies](https://github.com/decred/dcrdex/pull/584)
-- fixed [balance](https://github.com/decred/dcrdex/pull/548) calculation
-- fixed multiple concurrency bugs
-- lots of other backend and UI changes
+- 合约的接受者/创建者，[锁定时间](https://github.com/decred/dcrdex/pull/612)从24/48小时更改为8/20小时
+- 允许[缩小](https://github.com/decred/dcrdex/pull/573)深度图上查看更多订单
+- 添加了["拆分"](https://github.com/decred/dcrdex/pull/562)交易以适应大小多笔输出。以一笔额外交易为代价，使用户可以更好地控制锁定了多少资金，并释放更多订单的资金，从而创建更健康的订单簿和更好的用户体验。
+- 指示市场视图上用户订单的即时[生效时间](https://github.com/decred/dcrdex/pull/586)
+- [罚款账户](https://github.com/decred/dcrdex/pull/537)通知
+- [异步](https://github.com/decred/dcrdex/pull/565)请求/通知处理和并行新匹配协商，以修复长期运行的客户端`init`和`redeem`请求以及其他一些问题
+- 如果服务器无法识别，请在客户端[禁用](https://github.com/decred/dcrdex/pull/519)帐户
+- 在[myorders](https://github.com/decred/dcrdex/pull/581)端点中添加了一些预先计算的有用信息，例如订单的期限和结算的金额
+- 重复数据删除的[websocket](https://github.com/decred/dcrdex/pull/585)代码
+- 更新并锁定了npm [依赖项](https://github.com/decred/dcrdex/pull/584)
+- 固定[余额](https://github.com/decred/dcrdex/pull/548)计算
+- 修复了多个并发bug
+- 许多其他后端和UI更改
 
-A total of 51 PRs from 6 contributors were [merged](https://github.com/decred/dcrdex/pulls?q=is%3Apr+merged%3A2020-08-01..2020-08-31+sort%3Aupdated-asc), adding 19K and deleting 4K lines of code.
+[合并了](https://github.com/decred/dcrdex/pulls?q=is%3Apr+merged%3A2020-08-01..2020-08-31+sort%3Aupdated-asc)来自6个贡献者的51个PR ，添加了19K并删除了4K行代码。
 
-Thanks to everyone who [joined](https://twitter.com/stakeynet/status/1291960465904435200) the alpha testing.
+感谢所有[参加](https://twitter.com/stakeynet/status/1291960465904435200) alpha测试的人。
 
 [dcrandroid](https://github.com/planetdecred/dcrandroid):
 
@@ -137,34 +135,34 @@ Thanks to everyone who [joined](https://twitter.com/stakeynet/status/12919604659
 
 [dcrios](https://github.com/planetdecred/dcrios):
 
-- show ticket [reward](https://github.com/planetdecred/dcrios/pull/706) and days it took to vote on the transactions list page
-- added [rebroadcast](https://github.com/planetdecred/dcrios/pull/709) button to pending transaction dialog
-- added button to [switch](https://github.com/planetdecred/dcrios/pull/714) currency of the amount input field
+- 在交易列表页面上显示票券[奖励](https://github.com/planetdecred/dcrios/pull/706)和投票所需的天数
+- 在未决交易对话框中添加了[重播](https://github.com/planetdecred/dcrios/pull/709)按钮
+- 添加了按钮以[切换](https://github.com/planetdecred/dcrios/pull/714)金额输入字段的货币
 
 [godcr](https://github.com/planetdecred/godcr):
 
-- account [rename](https://github.com/planetdecred/godcr/pull/247) feature
-- show [network](https://github.com/planetdecred/godcr/pull/248) in window title
-- custom [editor](https://github.com/planetdecred/godcr/pull/223) with rounded corners
-- bug fixes
+- 帐户[重命名](https://github.com/planetdecred/godcr/pull/247)功能
+- 在窗口标题中显示[网络](https://github.com/planetdecred/godcr/pull/248)
+- 具有圆角的自定义[编辑器](https://github.com/planetdecred/godcr/pull/223)
+- bug修复
 
 [dcrdata](https://github.com/decred/dcrdata):
 
-- show hashes and links for [alternative](https://github.com/decred/dcrdata/pull/1735) (sidechain) blocks on the Block page
-- short URL for [Treasury](https://github.com/decred/dcrdata/pull/1752) address page
-- filter to only list [unspent](https://github.com/decred/dcrdata/pull/1724) outputs on the Address page
+- 在“阻止”页面上显示哈希和[其它](https://github.com/decred/dcrdata/pull/1735)（侧链）阻止的链接
+- [国库](https://github.com/decred/dcrdata/pull/1752)地址页面的简短URL
+- 过滤器仅在“地址”页面上列[出未使用](https://github.com/decred/dcrdata/pull/1724)的输出
 
 [docs](https://github.com/decred/dcrdocs):
 
-- [added](https://github.com/decred/dcrdocs/pull/1118) page describing LN [Watchtowers](https://docs.decred.org/lightning-network/watchtowers/)
-- [reworked](https://github.com/decred/dcrdocs/pull/1120) PoS FAQ
-- added info on how full node [maturation](https://github.com/decred/dcrdocs/pull/1122) can take several days before accepting inbound connections ([Configuration](https://docs.decred.org/faq/configuration/#6-why-do-i-have-no-inbound-connections-after-forwarding-the-appropriate-port) FAQ)
-- added info on contractor [pay rates](https://github.com/decred/dcrdocs/pull/1123) ([Contributor Compensation](https://docs.decred.org/contributing/contributor-compensation/#pay-rates) page)
-- [added](https://github.com/decred/dcrdocs/pull/1121) a page for [Mobile Wallets](https://docs.decred.org/wallets/mobile-wallets/)
+- [添加](https://github.com/decred/dcrdocs/pull/1118)了描述LN [守望台](https://docs.decred.org/lightning-network/watchtowers/)的页面
+- [重新添加](https://github.com/decred/dcrdocs/pull/1120) PoS FAQ
+- 如何充分节点添加信息的成熟可能需要数天接受入站连接之前（配置 FAQ）
+- 添加了有关承包商[工资率](https://github.com/decred/dcrdocs/pull/1123)的信息（[捐助方补偿](https://docs.decred.org/contributing/contributor-compensation/#pay-rates)页面）
+- 为[移动钱包](https://docs.decred.org/wallets/mobile-wallets/)[添加](https://github.com/decred/dcrdocs/pull/1121)了页面
 
 [decred.org](https://github.com/decred/dcrweb):
 
-- icon updates and bug fixes
+- 图标更新和bug修复
 
 Other:
 
