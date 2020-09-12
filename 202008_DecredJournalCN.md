@@ -1,6 +1,6 @@
 # Decred Journal – August 2020
 
-![abstract art](../img/journal-202008-384.png)
+![abstract art](img/journal-202008-384.png)
 
 _Image: Bidirectional by @saender_
 
