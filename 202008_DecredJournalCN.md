@@ -1,4 +1,4 @@
-# Decred Journal – 2020年8月
+# Decred月报 – 2020年8月
 
 ![abstract art](img/journal-202008-384.png)
 
