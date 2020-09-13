@@ -233,7 +233,7 @@ Staking: [30天平均票价](https://dcrstats.com/)为151.4 DCR (+7.1)。该价�
 
 我们的网络[更新](https://ournetwork.substack.com/p/our-network-issue-34)由@Checkmate分享的观察结果显示，平均每天10万个DCR混合，构成链上交易量的一个重要组成部分，散列率在“thermocap”之上的市场复苏后有所提升，以及三个Decred的特定指标的变化。
 
-新 [研究成果](https://medium.com/decred/decred-mining-market-mechanics-fd26b921dc46)全面概述了衰退的挖矿市场机制。对于那些喜欢视频/音频格式的人，可以在 [YouTube](https://www.youtube.com/watch？v=TJn6qTko0Xw）上获得论文和图表的概要概述。强烈建议阅读全文。
+新 [研究成果](https://medium.com/decred/decred-mining-market-mechanics-fd26b921dc46)全面概述了衰退的挖矿市场机制。对于那些喜欢视频/音频格式的人，可以在 [YouTube](https://www.youtube.com/watch?v=TJn6qTko0Xw)上获得论文和图表的概要概述。强烈建议阅读全文。
 
 > 了解Decred区块链最大的自然卖方的激励机制，机制和性能指标，既可以了解市场定价，也可以了解网络安全性。这项研究为解释Decred挖矿市场的背景和表现提供良好的基础。
 
