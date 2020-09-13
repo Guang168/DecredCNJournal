@@ -130,8 +130,8 @@ dcrd和Decrediton的新二进制文件在[此处](https://github.com/decred/decr
 
 [dcrandroid](https://github.com/planetdecred/dcrandroid):
 
-- added [rebroadcast](https://github.com/planetdecred/dcrandroid/pull/495) button to pending transaction dialog
-- UI tweaks and translation updates
+- 在未发送交易对话框中添加了[重新广播](https://github.com/planetdecred/dcrandroid/pull/495)按钮
+- UI调整和翻译更新
 
 [dcrios](https://github.com/planetdecred/dcrios):
 
@@ -164,78 +164,78 @@ dcrd和Decrediton的新二进制文件在[此处](https://github.com/decred/decr
 
 - 图标更新和bug修复
 
-Other:
+其它:
 
-- most projects build and test with Go [1.15](https://github.com/decred/dcrd/pull/2334), which [came out](https://golang.org/doc/go1.15) in August
-- multiple developers used the [release](https://github.com/decred/release) tool to [reproduce](https://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$l62fxKNyrDN_RhzY93vopaCLwh0Y9aulr6j7DjbFVd0) the v1.5.2 build and computed the same manifest hash
+- 自[八月](https://golang.org/doc/go1.15)以来，大多数项目使用Go [1.15](https://github.com/decred/dcrd/pull/2334)构建
+- 多个开发人员使用发布工具重新[生成](https://github.com/decred/release) 1.5.2版本，并[计算](https://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$l62fxKNyrDN_RhzY93vopaCLwh0Y9aulr6j7DjbFVd0)了相同的清单哈希
 
-## People
+## 人员
 
-Welcome to new first time contributors with code merged to master: @hsyia ([dcrdocs](https://github.com/decred/dcrdocs/pull/1122)), @brandoncurtis ([decred-release](https://github.com/decred/decred-release/pull/173)), @isuldor ([dcrwebapi](https://github.com/decred/dcrwebapi/pull/107)), @JustinBeBoy ([dcrios](https://github.com/planetdecred/dcrios/commits?author=JustinBeBoy)).
+欢迎新到来的首次贡献者，他们的代码已合并到主代码库中： @hsyia ([dcrdocs](https://github.com/decred/dcrdocs/pull/1122)), @brandoncurtis ([decred-release](https://github.com/decred/decred-release/pull/173)), @isuldor ([dcrwebapi](https://github.com/decred/dcrwebapi/pull/107)), @JustinBeBoy ([dcrios](https://github.com/planetdecred/dcrios/commits?author=JustinBeBoy)).
 
-Community stats as of Sep 1:
+截至9月1日的社区统计数据：
 
-- Twitter followers: 40,816 (+179)
-- Reddit subscribers: 9,906 (+31), online: 320
-- Matrix #general users: 174 (+50) \*
-- Discord users: 1,394 (+22)
-- Telegram users: 2,468 (-52)
-- YouTube subscribers: 4,180 (+30), views: 154K (+3K)
-- LinkedIn followers: 875 (+13)
-- GitHub dcrd stars: 557 (+7), forks: 246 (+6)
+- Twitter 粉丝: 40,816 (+179)
+- Reddit 订阅: 9,906 (+31), 在线: 320
+- Matrix #general 用户: 174 (+50) \*
+- Discord 用户: 1,394 (+22)
+- Telegram 用户: 2,468 (-52)
+- YouTube 订阅: 4,180 (+30), 浏览: 154K (+3K)
+- LinkedIn 追踪: 875 (+13)
+- GitHub dcrd 星: 557 (+7), 分叉: 246 (+6)
 
-\* reminder: Matrix had a big "purge" [in July](202007.md#people).
+\* 提醒：Matrix 在[7月](202007.md#people)进行了一次大的“清洗” 。
 
-Some observations from other accounts tracked by the [social-media-data](https://github.com/decredcommunity/social-media-stats) repository:
+来自[社交媒体数据](https://github.com/decredcommunity/social-media-stats)存储库跟踪的其它帐户的一些观察结果：
 
-- Facebook: [decredbrasil](https://www.facebook.com/groups/decredbrasil/) 5,799 members (-36) and 57 posts in 30 days, [decredinternational](https://www.facebook.com/groups/decredinternational/) 802 members and 20 posts in 30 days
-- Instagram: [decred_es](https://www.instagram.com/decred_es/) 390 followers (+15), [decredbr](https://www.instagram.com/decredbr/) 767 followers (+50), [decredproject](https://www.instagram.com/decredproject/) 578 followers (+2). Unlike the other two, English account has no active maintainer (_hint_).
-- Twitter: [DecredArabia](https://twitter.com/DecredArabia) 218 followers (+5), [DecredAustralia](https://twitter.com/DecredAustralia) 436 followers, [Decred_BR](https://twitter.com/Decred_BR) 540 followers (+13), [Decred_CA](https://twitter.com/Decred_CA) 334 followers, [Decred_ES](https://twitter.com/Decred_ES) 909 followers (+49), [Decred_PL](https://twitter.com/Decred_PL) 226 followers (+3)
-- YouTube: [Decred Arabia](https://www.youtube.com/channel/UCCtB2BfsA2VdT0FJXpsYICA) 29 subscribers and 0.6K views, [Decred Brasil](https://www.youtube.com/channel/UC73wa2ddXuPWsmenVfeFTYg) 369 subscribers (+108) and 13K views (+4K), [Decred en Español](https://www.youtube.com/channel/UCCprOo4gR1vsjJTAzv8BMBQ) 74 subscribers (+28) and 1.3K views (+0.4K)
-- #planetdecred Matrix room at the planetdecred.org homeserver has 151 users
+- Facebook：在30天内[decredbrasil](https://www.facebook.com/groups/decredbrasil/) 5,799名成员（-36）和57个帖子，在30天内[decredinternational](https://www.facebook.com/groups/decredinternational/) 802个成员和20个帖子
+- Instagram：[decred_es](https://www.instagram.com/decred_es/) 390位关注者（+15），[decredbr](https://www.instagram.com/decredbr/) 767位关注者（+50），[decredproject](https://www.instagram.com/decredproject/) 578位关注者（+2）。与其他两个帐户不同，英语帐户没有活动的维护者（hint）。
+- Twitter：[DecredArabia](https://twitter.com/DecredArabia) 218位关注者（+5），[DecredAustralia](https://twitter.com/DecredAustralia) 436位关注者，[Decred_BR](https://twitter.com/Decred_BR) 540位关注者（+13），[Decred_CA](https://twitter.com/Decred_CA) 334位关注者，[Decred_ES](https://twitter.com/Decred_ES) 909位关注者（+49），[Decred_PL](https://twitter.com/Decred_PL) 226位关注者（+3）
+- YouTube：[Decred Arabia](https://www.youtube.com/channel/UCCtB2BfsA2VdT0FJXpsYICA) 29个订阅者和0.6K观看次数，[Decred Brasil](https://www.youtube.com/channel/UC73wa2ddXuPWsmenVfeFTYg) 369订阅者（+108）和13,000观看次数（+ 4K），[Decred en Español](https://www.youtube.com/channel/UCCprOo4gR1vsjJTAzv8BMBQ)l74订阅者（+28）和1.3K观看次数（+ 0.4K）
+- planetdecred.org主服务器上的#planetdecred Maitrix聊天室 有151个用户
 
-## Governance
+## 治理
 
-In August the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 12,961 DCR and spent 10,787 DCR. Using August's daily average DCR/USD rate of $17.02, this is $221K received and $184K spent. At July's average daily rate of $15.13, the USD figure billed for work completed in that month is $163K. As of Sep 6, Treasury balance is 634,747 DCR (8.5 million USD at $13.37).
+八月[社区开发基金](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到12961 DCR，花费10787 DCR。按照8月份的每日平均DCR/USD汇率17.02美元计算，这是22.1万美元的收入和18.4万美元的支出。按7月平均汇率15.13美元计算，当月完成工程的美元账单金额为16.3万美元。截至9月6日，社区开发基金余额为634747 DCR（850万美元，13.37美元）。
 
-New and concluded proposals:
+新的和已完成的提案：
 
-- [proposal](https://proposals.decred.org/proposals/1dc1571) for design domain funding to cover 6 months of work in subdomains for UI/UX ($35K), Identity ($16K), and Visual Comms ($14K) - was approved with 80% yes votes and 25% turnout
-- [proposal](https://proposals.decred.org/proposals/32cba00) to continue paying the moderators of Politeia, Matrix, Discord, and Telegram (max $9K over 6 months) was approved with 73% yes votes and a voter turnout of 29%
-- [proposal](https://proposals.decred.org/proposals/2dcbc3e) to pay $50K for integration and promotional campaigns on two travel booking sites was rejected with 15% approval and a voter turnout of 24%
-- a new [proposal](https://proposals.decred.org/proposals/1e55a41) for video production from @Exitus was published in early September
-- early September also saw the first RFP [proposal](https://proposals.decred.org/proposals/91becea) published, it aims to change the messaging on decred.org and is inviting proposals for which changes to make
+- [设计领域资金提案](https://proposals.decred.org/proposals/1dc1571) 涵盖UI/UX（$ 35K），身份（$ 16K）和可视化通讯（$ 14K）子域中6个月的工作，获得了80％的赞成票和25％的参投率
+- [提案](https://proposals.decred.org/proposals/32cba00) 继续向Politeia，Matrix，Discord和Telegram的主持人支付费用（6个月内最多支付9000美元），该决议获得了73％的赞成票和29％的参投率
+- [提案](https://proposals.decred.org/proposals/2dcbc3e) 为两个旅行预订网站上的整合和促销活动支付5万美元的提案被拒绝，只有15％的批准和24％的参投率
+- @Exitus的视频制作新[提案](https://proposals.decred.org/proposals/1e55a41)于9月初发布
+- 9月初发布了第一个RFP [提案](https://proposals.decred.org/proposals/91becea)，该提案旨在更改decred.org上的消息传递，并邀请需要对其进行更改的提案
 
-Four proposals have been abandoned: [augmented reality posters](https://proposals.decred.org/proposals/dedf452), [marketing by @fst_nml](https://proposals.decred.org/proposals/3372cfc), [social media memes](https://proposals.decred.org/proposals/4f81031) and [Decred poker series](https://proposals.decred.org/proposals/7a67ed5) (@darthcrypto plans to return with a more developed proposal).
+四个提案已被放弃：增强现实海报，[AR海报](https://proposals.decred.org/proposals/dedf452), [@fst_nml的营销](https://proposals.decred.org/proposals/3372cfc), [社交媒体段子](https://proposals.decred.org/proposals/4f81031) 和 [Decred扑克系列](https://proposals.decred.org/proposals/7a67ed5)（@darthcrypto将计划一个更完善的提案）。
 
-@pavel shared a [screenshot](https://twitter.com/_Checkmatey_/status/1295858198260248576) and an update on the development of the [Decred OnChain](https://proposals.decred.org/proposals/0230918) website:
+@pavel分享了[Decred OnChain](https://proposals.decred.org/proposals/0230918)网站开发的[屏幕截图](https://twitter.com/_Checkmatey_/status/1295858198260248576)和更新：
 
-> Chart subpages are almost done. From UX/UI perspective, we are working on homepage. I would say we are ±75% done. ([chat](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$3FcfGt9YIOR81fM5CnqEFib4d7HYJPqGe_2oE3Q4JL4?via=decred.org&via=matrix.org&via=planetdecred.org))
+> 图表子页面即将完成。从UX/UI的角度来看，我们正在设计主页。我会说我们已完成了±75％。([聊天](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$3FcfGt9YIOR81fM5CnqEFib4d7HYJPqGe_2oE3Q4JL4?via=decred.org&via=matrix.org&via=planetdecred.org)
 
-Pre-proposals:
+预备提案:
 
-- @kozel is shepherding a [pre-proposal](https://www.reddit.com/r/decred/comments/igfqjc/decred_content_and_asset_translation_proposal_an/) for content translation
-- @lewildbeast is gathering feedback on a [pre-proposal](https://github.com/decredcommunity/proposals/pull/6) to offer awards to developers and researchers who pioneered new technology that Decred benefits from (e.g. HD wallets)
+- @kozel主持了内容翻译的[预备提案](https://www.reddit.com/r/decred/comments/igfqjc/decred_content_and_asset_translation_proposal_an/)
+- @lewildbeast正在收集有关[预备提案](https://github.com/decredcommunity/proposals/pull/6)的反馈，以奖励那些开创了Decred受益的新技术（例如HD钱包）的开发人员和研究人员
 
-@bee is testing GitHub-based "proposal drafting infrastructure" that allows multiple people to edit the draft, get feedback and formatting help, track revisions, and post comments. Keeping drafts in a well-known place makes them discoverable and allows to save any progress for others to pick up even if the original author stops developing the proposal. Currently @lewildbeast's [awards](https://github.com/decredcommunity/proposals/pull/6) and @elian's [BTCPay](https://github.com/decredcommunity/proposals/pull/7) integration pre-proposals are hosted. To use this, submit a pull request to [proposals](https://github.com/decredcommunity/proposals/pulls) repo or ping @bee in [Matrix](https://decred.org/matrix/) #proposals room.
+@bee正在测试基于GitHub的“提案制图基础架构”，该架构允许多个人编辑草稿，获取反馈和格式帮助，跟踪修订并发表评论。将草稿保存在众所周知的地方可以使它们容易被发现，并且即使原始作者停止开发该提案，也可以保存其它任何进展。
 
-Check Politeia Digest [issue 34](https://blockcommons.red/politeia-digest/issue034/) and [issue 35](https://blockcommons.red/politeia-digest/issue035/) for a more detailed review of the governance activity.
+想要更详细地查看治理活动，请查看《Politeia Digest》第[34](https://blockcommons.red/politeia-digest/issue034/)期和第[35](https://blockcommons.red/politeia-digest/issue035/)期。
 
-## Network
+## 网络
 
-Hashrate: [August's hashrate](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=kd8zvp86-kek04pzi&scale=linear&bin=block&axis=time) opened at ~313 Ph/s and closed ~486 Ph/s, bottoming at 248 Ph/s and peaking at 557 Ph/s throughout the month. Pool [hashrate distribution](https://dcrstats.com/pow) as of Sep 1: UUPool 39%, Poolin 30%, lab.antpool.com 9%, BTC.com 2.3%, Luxor 0.8%, F2Pool 0.6%, BeePool 0.09%, CoinMine 0.03%, Suprnova 0.02% and others ~19%.
+全网算力: [8月哈希率](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=kd8zvp86-kek04pzi&scale=linear&bin=block&axis=time) 以313 Ph/s开启并以 486 Ph/s结束。月内，最低为248 Ph/s，峰值为557 Ph/s。[哈希率分布](https://dcrstats.com/pow) 截至9月1日：UUPool 39%，池30%，lab.antpool.com 9%，BTC.com 2.3%，Luxor 0.8%，F2Pool 0.6%，BeePool 0.09%，CoinMine 0.03%，Suprnova 0.02%，其他~19%。
 
-Staking: [30-day average](https://dcrstats.com/) ticket price was 151.4 DCR (+7.1). The [price](https://explorer.dcrdata.org/charts?chart=ticket-price&zoom=kd8zvp86-kek04pzi&axis=time&visibility=true-false&mode=stepped) varied between 141.2-168.1 DCR. [Locked amount](https://explorer.dcrdata.org/charts?chart=ticket-pool-value&zoom=kd8zvp86-kek04pzi&bin=block&axis=time) was 5.82-6.09 million DCR, which corresponded to 49.11-51.03% of the available supply [participating](https://explorer.dcrdata.org/charts?chart=stake-participation&zoom=kd8zvp86-kek04pzi&bin=block&axis=time) in PoS.
+Staking: [30天平均票价](https://dcrstats.com/)为151.4 DCR (+7.1)。该价格在141.2-168.1 DCR之间变化。锁定金额为582-609万DCR，相当于占可用供应量的49.11-51.03％。
 
-Ticket price hit 168.12 DCR, which is a new high since the change of the price algorithm in 2017.
+选票价格达到168.12 DCR，这是自2017年更改价格算法以来的新高。
 
-Nodes: Throughout [August](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1596240000000&to=1598918400000) there was an average of 141 public listening nodes and 139 total nodes per dcr.farm (the total was ~250 before a sharp drop on Aug 10, some data might have been missed). Average version distribution for August: 41% dcrd v1.5.1, 11% dcrd v1.5.0, 7% dcrd v1.5.2, 6% dcrd v1.6 dev builds, 5% dcrd v1.5 dev and RC builds, 0.9% dcrd v1.4, 10% dcrwallet v1.5.1, 1.1% dcrwallet v1.5, 1% dcrwallet v1.4, 16% others.
+节点: 在整个[8月](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1596240000000&to=1598918400000)中，每个dcr.farm平均有141个公共侦听节点，总共139个节点（总数约为250个，而在8月10日急剧下降之前，可能会丢失一些数据）。8月的平均版本分布：41％dcrd v1.5.1、11％dcrd v1.5.0、7％dcrd v1.5.2、6％dcrd v1.6开发版本，5％dcrd v1.5开发和RC版本，0.9％dcrd v1.4、10％dcrwallet v1.5.1、1.1％dcrwallet v1.5、1％dcrwallet v1.4，其他16％。
 
-Our Network [update](https://ournetwork.substack.com/p/our-network-issue-34) by @Checkmate shares observations about an average of 100K DCR mixed daily making a significant part of the on-chain volume, hashrate boost following some market recovery above the "thermocap", and changes in three Decred-specific metrics.
+我们的网络[更新](https://ournetwork.substack.com/p/our-network-issue-34)由@Checkmate分享的观察结果显示，平均每天10万个DCR混合，构成链上交易量的一个重要组成部分，散列率在“thermocap”之上的市场复苏后有所提升，以及三个Decred的特定指标的变化。
 
-New [research piece](https://medium.com/@_Checkmatey_/decred-mining-market-mechanics-fd26b921dc46) by @Checkmate gives a comprehensive overview of Decred mining market mechanics. For those preferring video/audio format, a summary overview of the paper and charts is available on [YouTube](https://www.youtube.com/watch?v=TJn6qTko0Xw). A full read is highly recommended.
+新[研究成果](https://medium.com/@\u Checkmatey\u/decred-@Checkmate的mining-market-mechanics-fd26b921dc46）全面概述了衰退的挖矿市场机制。对于那些喜欢视频/音频格式的人，可以在[YouTube](https://www.youtube.com/watch？v=TJn6qTko0Xw）上获得论文和图表的概要概述。强烈建议阅读全文。
 
-> Understanding the incentives, mechanics, and performance metrics of the Decred chain's largest natural seller sheds light on both market pricing, and the strength of network security. This research should provide a sound basis for interpreting the context and performance of the Decred mining market.
+> 了解Decred区块链最大的自然卖方的激励机制，机制和性能指标，既可以了解市场定价，也可以了解网络安全性。这项研究为解释Decred挖矿市场的背景和表现提供良好的基础。
 
 ## Integrations
 
