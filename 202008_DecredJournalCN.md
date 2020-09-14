@@ -6,7 +6,7 @@ _图片: Bidirectional @saender_
 
 八月重点:
 
-- 发布v1.5.2以修补潜在的拒绝矢量服务。
+- 发布v1.5.2以修补潜在的拒绝服务攻击。
 - dcrdex团队最多有6位活跃成员，每月合并50多个PR(键盘在燃烧)，以清除通过测试发现的bug。
 - 去中心化国库支付代码的审查已经结束，收尾工作正在进行中。
 - vspd得到了一些提升，现在工作已转移到Decrediton和dcrwallet的集成中。
@@ -14,7 +14,7 @@ _图片: Bidirectional @saender_
 
 ## v1.5.2补丁发布
 
-此版本修补了潜在的拒绝矢量服务。建议自己运行节点的人以及PoW矿工进行升级。
+此版本修补了潜在的拒绝服务攻击。建议自己运行节点的人以及PoW矿工进行升级。
 
 dcrd和Decrediton的新二进制文件在[此处](https://github.com/decred/decred-binaries/releases/tag/v1.5.2)提供。使用前请确保对其进行[验证](https://docs.decred.org/advanced/verifying-binaries/) -现在的说明更加详细和友好。
 
