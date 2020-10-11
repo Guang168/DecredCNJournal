@@ -2,36 +2,36 @@
 
 ![abstract art](img/journal-202009-384.png)
 
-_Image: Hidden Structures on Quadratic Orbit by @saender_
+_图片: by @saender_
 
-Decred's highlights for September:
+九月重点:
 
-- The decentralize Treasury spending PR is finally merged, after a comprehensive review process.
-- dcrdex is addressing many sophisticated trustless swap scenarios discovered in early testing, the first mainnet swap was conducted in early Oct and the MVP should be ready for general use soon.
-- The first RFP proposal on Politeia, to change messaging on decred.org, was approved, and received 4 candidate proposals. Voting will begin on these soon.
-- The dcronchain.com on-chain metrics site, as approved by a proposal in June, has now launched.
-- The withdecred.org onboarding portal had its initial launch, and also had an associated proposal submitted to fund promotional giveaways, approved in early Oct.
+- 经过全面审查后，去中心化国库支付代码已完成合并。
+- dcrdex正在解决早期测试中发现的许多复杂去信任交易方案，第一次主网交换在十月初完成，正式发行版应该很快就可以投入使用。
+- 第一个关于Politeia的RFP提案（更改decred.org上的消息传递）获得批准，并收到了4个候选提案。不久将开始投票。
+- 6月份批准的提案dcronchain.com 链上指标网站现已启动。
+- withdecred.org门户网站已经启动，已提交相关提案以资助奖品，该提案已于10月初获得批准。
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能在发布的二进制文件中使用。
 
 [dcrd](https://github.com/decred/dcrd):
 
-The decentralize treasury spending [pull request](https://github.com/decred/dcrd/pull/2170) is [merged](https://twitter.com/marco_peereboom/status/1308125042149134336) to master. It got 576 review comments, changed 115 files, added 15K lines of code, and took 5 months since the first draft was published. Several developers have been pulled from other projects to thoroughly review and test this consensus-critical code. Thanks to everyone for the hard work on this epic change!
+去中心化国库支付被[合并](https://github.com/decred/dcrd/pull/2170)到主数据库中。自初始计划发布以来，获得了576条评论意见，更改了115个文件，添加了1.5万行代码，花费了5个月的时间。目前已从其它项目中撤出了几名开发人员，以彻底检查和测试新共识的关键代码。感谢大家为这一重大变化所做的辛勤工作！
 
-DCP0006 describing the upcoming consensus change is under [review](https://github.com/decred/dcps/pull/17).
+DCP0006共识变化的描述文件正在[审查中](https://github.com/decred/dcps/pull/17)。
 
-Merged follow-up treasury work:
+国库代码合并的后的工作:
 
-- one-way [migration](https://github.com/decred/dcrd/pull/2336) of the database to support the new treasury implementation
-- [tracking](https://github.com/decred/dcrd/pull/2350) of tspend (treasury spend) transactions in the mempool
-- new peer messages to [relay](https://github.com/decred/dcrd/pull/2349) tspend transactions as nodes startup (this is to help both mining nodes and the voting wallets discover tspends in a timely manner)
-- new RPC command to [tally](https://github.com/decred/dcrd/pull/2351) the vote count of tspend transactions (initially only tspends in the mempool or that were mined can be queried)
-- removed [footguns](https://github.com/decred/dcrd/pull/2389) from code for calculating tspend window values
-- reworked [consistency](https://github.com/decred/dcrd/pull/2394) in the `standalone` package and brought the test coverage back to 100%
+- 单向[迁移](https://github.com/decred/dcrd/pull/2336)数据库以支持新的国库支付代码部署
+- [跟踪](https://github.com/decred/dcrd/pull/2350)内存池中的tspend（国库支出）交易
+- 在节点启动时[中继](https://github.com/decred/dcrd/pull/2349)tspend交易（这是为了帮助挖矿节点和投票钱包及时发现tspends）
+- 新的RPC命令来[统计](https://github.com/decred/dcrd/pull/2351)tspend交易的投票计数（初步实现内存池中的tspend或已挖掘的tspend查询）
+- 从代码中删除了[footguns](https://github.com/decred/dcrd/pull/2389)以计算tspend窗口值
+- 重新设计封装了`standalone`的[一致性](https://github.com/decred/dcrd/pull/2394)，并使测试覆盖率恢复到100％
 
-Other merged work:
+其它合并工作:
 
 - optimized signature [cache](https://github.com/decred/dcrd/pull/2358) to proactively evict entries related to transactions in a block that is already 2 blocks deep
 - consolidated ban [disable/whitelist](https://github.com/decred/dcrd/pull/2363) logic
