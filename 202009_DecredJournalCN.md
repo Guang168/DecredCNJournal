@@ -217,145 +217,140 @@ Staking: [30天的平均票价](https://dcrstats.com/)为148.6 DCR（-2.8）。[
 
 ## 外展活动
 
-@Exitus' second [proposal](https://proposals.decred.org/proposals/1e55a41) for making video content for another 6 months was approved with very high support. @Checkmate will join in the second phase to help with scripts and feedback. The proposal shared some stats for the last 6 months: 21K views gained with 98% like rate, ~500 subscribers gained and ~250 lost, 170 comments received. The most popular video was [DCR 101 - How to Stake Decred 2020](https://www.youtube.com/watch?v=m5lcm6yttEk) with 1.6K views. Various videos uploaded to Twitter gained ~18K views.
+@Exitus关于制作视频内容再延长6个月的第二项建议获得了极高的支持。@Checkmate将加入第二阶段，以帮助提供脚本和反馈。该提案共享了过去6个月的一些统计数据：获得了21K次观看，观看率达到98％，获得了约500个订阅者，失去了约250个，收到了170条评论。最受欢迎的视频是DCR 101-如何在2020年以1600的观看次数筹码量。上载到Twitter的各种视频获得了约1.8万次观看。
 
-@pavel, @pablito, and @el\_capitan [launched](https://www.reddit.com/r/decred/comments/it9mkf/withdecredorg_new_portal_to_onboard_newcomers_to/) a new website [withdecred.org](https://withdecred.org/) to find a new scalable approach for how to onboard new users to Decred community. The website contains a series of articles that form a structured "funnel" that leads the person to purchase a few DCR. A [proposal](https://proposals.decred.org/proposals/2bf72e6) followed to fund the operations and a distribution of $5,000 worth of DCR to drive initial engagement, approved in early October. Historically, some community members have been skeptical about giveaways and this project will finally bring some empirical data and gauge the ROI of that model. Companion Twitter handle is [@withdecred](https://twitter.com/withdecred).
+@pavel，@pablito和@el_capitan推出一个新的网站withdecred.org找到如何板载新用户Decred社会一个新的可扩展的方法。该网站包含一系列文章，这些文章构成了一个结构化的“渠道”，可引导人们购买一些DCR。随后提出了一项为运营提供资金的提议，并分配了价值5,000美元的DCR以推动初期参与，该提议于10月初获得批准。从历史上看，一些社区成员对赠品持怀疑态度，该项目最终将带来一些经验数据并评估该模型的ROI。伴侣Twitter句柄为@withdecred。
 
-A few community members [organized](https://www.reddit.com/r/decred/comments/it0idm/decred_on_quora/) to answer a stash of questions about Decred on Quora.
+一些社区成员组织起来回答了有关Decred on Quora的一系列问题。
 
-@pavel started experimenting with publishing [Decred](https://www.publish0x.com/withdecred/why-we-need-decred-an-inclusive-approach-to-sound-money-xgdwkjl) [content](https://www.publish0x.com/crypto-as-an-agent-for-change/monero-and-decred-are-the-new-bitcoin-xlldpze) on Publish0x since it is a [promising](https://github.com/Decred-Bulls/decred-marketing#why-to-invest-time-into-publish0xcom) crypto portal.
+@pavel开始尝试在Publish0x 上发布Decred内容，因为它是一个很有前途的加密门户。
 
-@pablito and @caibarrad launched the first episode of Decred en Español podcast, available on [YouTube](https://twitter.com/Decred_ES/status/1310654270056923136) and [Spotify](https://twitter.com/Decred_ES/status/1310055071200292869).
+@pablito和@caibarrad启动了Decred enEspañol播客的第一集，可在YouTube和Spotify上观看。
 
-@jazzah posted a [contest](https://www.reddit.com/r/decred/comments/ifyb03/contest/) themed "KYC vs Shuffle++" where participants need to complete non-trivial tasks by inspecting a crazy hilarious image. Prize #1 has been claimed but prizes 2-4 are still open for anyone.
+@jazzah发布了一个主题为“ KYC vs Shuffle ++”的竞赛，参与者需要检查疯狂的搞笑图像来完成不平凡的任务。第一名奖已被领取，但2-4号奖仍对任何人开放。
 
-Monde PR's achievements for September:
+Monde PR在9月份的成就：
 
-- created/pitched 2 story ideas to the finance and crypto publications
-- responded to 3 requests for comments
-- responded to 2 news stories about DCR
+- 为金融和加密货币出版物创建/编写2个故事创意
+- 回应了3条评论请求
+- 回应了2条有关DCR的新闻报道
 
-News coverage secured by Monde PR:
+Monde PR保证的新闻报道：
 
-- an article in [Authority Magazine](https://medium.com/authority-magazine/meet-the-disruptors-how-jake-yocom-piatt-of-decred-aims-to-redefine-governance-with-blockchain-5c3724f20e74) featuring commentary by @jy-p on how Decred aims to redefine governance with blockchain technology
-- an article in [AMB Crypto](https://eng.ambcrypto.com/will-defi-crash-the-crypto-economy-the-same-way-cdos-did/) featuring commentary by @richardred on the 'DeFi bubble', syndicated to 12 news outlets including [Crypto Fund Report](https://www.cryptofundreport.com/articles/will-defi-crash-the-crypto-economy-the-same-way-cdos-did/) and [Coingenius.news](https://coingenius.news/will-defi-crash-the-crypto-economy-the-same-way)
-- an article in [The Daily Chain](https://thedailychain.com/decred-clarify-details-of-reported-vulnerability/) featuring commentary by @davecgh clarifying details of a reported vulnerability
+- [Authority Magazine](https://medium.com/authority-magazine/meet-the-disruptors-how-jake-yocom-piatt-of-decred-aims-to-redefine-governance-with-blockchain-5c3724f20e74) 的一篇文章，特约作者@ jy-p评论了Decred如何通过区块链技术重新定义治理
+- [AMB Crypto](https://eng.ambcrypto.com/will-defi-crash-the-crypto-economy-the-same-way-cdos-did/) 的一篇文章，其中@richardred对“ DeFi泡沫”的评论，与12个新闻媒体联合发布，包括Crypto Fund Report和Coingenius.news
+- [The Daily Chain](https://thedailychain.com/decred-clarify-details-of-reported-vulnerability/) 的一篇文章，其中包含@davecgh的评论，以澄清所报告漏洞的详细信息
 
 ## 活动
 
-Attended:
+参加：
 
-- Sep 4 - [Hablemos Decred 11](https://twitter.com/Decred_ES/status/1301583356644282368) - Internet. @elian and guest Jose Zarate from Stamping.io discussed timestamping on blockchains. ([video](https://www.youtube.com/watch?v=QwsWiJ8v5qE))
-- Sep 10 - [Hablemos Decred 12](https://twitter.com/Decred_ES/status/1304153821631791104) - Internet. @caibarrad and @elian invited David Riascos from @cLabs to talk about the importance of the community in the development of open protocols and the challenges of adoption in the cryptocurrency industry. ([video](https://www.youtube.com/watch?v=QC5_1PqJb_4))
-- Sep 17 - [Hablemos Decred 13](https://twitter.com/Decred_ES/status/1305595709257846785) - Internet. @adcade and @elian talked with guest Nancy Salazar from Platzi about how to start a career in technology and how to overcome the challenges of complex areas such as blockchains. ([video](https://www.youtube.com/watch?v=f_ppC-GVDk8))
-- Sep 25 - [Hablemos Decred 14](https://twitter.com/Decred_ES/status/1308582624772927494) - Internet. @elian and guest Eloisa Cadenas from CryptoFintech explored the origins of [maximalism](https://es.cointelegraph.com/news/wild-crypto-maximalism), the risks of such lines of thought, the future of interoperable blockchains and what are the challenges for adoption and innovation in the cryptocurrency space. The event was [announced](https://es.cointelegraph.com/news/virtual-talk-where-does-the-concept-of-maximalist-come-from) on Cointelegraph Spanish. ([video](https://www.youtube.com/watch?v=EGaMhQX3Wd4))
+- 9月4日 - [Hablemos Decred 11](https://twitter.com/Decred_ES/status/1301583356644282368) - 互联网。@elian和Stamping.io的来宾Jose Zarate讨论了在区块链上加盖时间戳的问题。([视频](https://www.youtube.com/watch?v=QwsWiJ8v5qE))
+- 9月10日 - [Hablemos Decred 12](https://twitter.com/Decred_ES/status/1304153821631791104) - 互联网。@caibarrad和@elian邀请了@cLabs的David Riascos来谈论社区在开发开放协议中的重要性以及在加密货币行业中采用的挑战。([视频](https://www.youtube.com/watch?v=QC5_1PqJb_4))
+- 9月17日 - [Hablemos Decred 13](https://twitter.com/Decred_ES/status/1305595709257846785) - 互联网。@adcade和@elian与来自Platzi的来宾Nancy Salazar进行了交谈，讨论了如何开始从事技术事业以及如何克服诸如区块链之类的复杂领域的挑战。([视频](https://www.youtube.com/watch?v=f_ppC-GVDk8))
+- 9月25日 - [Hablemos Decred 14](https://twitter.com/Decred_ES/status/1308582624772927494) - 互联网。@elian和来自CryptoFintech的来宾Eloisa Cadenas探索了极简主义的起源，这种思路的风险，可互操作的区块链的未来以及在数字货币领域采用和创新的挑战是什么。该事件在西班牙Cointelegraph网站上宣布。([视频](https://www.youtube.com/watch?v=EGaMhQX3Wd4))
 
-Upcoming:
+即将到来：
 
-- Oct 15 - Hablemos Decred 17 - Internet. @elian and Gus Grilliesca will explore the future of art and cryptocurrencies.
-- Oct 17 - [Introduction to blockchain API](https://www.eventbrite.com/e/open-source-workshop-introduccion-a-blockchain-api-de-decred-dcrdata-tickets-124107662359) - Internet. A workshop to explore Decred blockchain with dcrdata API.
-- Oct 19 - [Open Source Software Summit](https://www.eventbrite.com.mx/e/cumbre-de-contribuidores-de-open-source-software-ccoss-2020-tickets-91491063233) - Internet. @adcade will present Decred with the talk "open source contractor model in the cryptocurrency industry".
+- 10月15日 - Hablemos Decred 17日 - 互联网。@elian和Gus Grilliesca将探索艺术和加密货币的未来。
+- 10月17日 - [Introduction to blockchain API](https://www.eventbrite.com/e/open-source-workshop-introduccion-a-blockchain-api-de-decred-dcrdata-tickets-124107662359) - 互联网。一个使用dcrdata API探索Decred区块链的研讨会。
+- 10月19日 - [Open Source Software Summit](https://www.eventbrite.com.mx/e/cumbre-de-contribuidores-de-open-source-software-ccoss-2020-tickets-91491063233) - 互联网。@adcade将向Decred演讲“加密货币行业的开源承包商模型”。
 
 ## 媒体
 
-Decred was mentioned in a long [report](https://medium.com/greenfield-one/the-state-of-blockchain-governance-governance-by-and-of-blockchains-f6418c46077) on blockchain governance. Full 115-page PDF is [here](https://65eocu3ftlpiygeym3g5kply6zy2dtdjyrhbm4m26cb6bt3msyla.arweave.net/90jhU2Wa3owYmGbN1T149nGhzGnEThZxmvCD4M9slhY) (Decred on pages 64-66).
+在一份关于区块链治理的[报告](https://medium.com/greenfield-one/the-state-of-blockchain-governance-governance-by-and-of-blockchains-f6418c46077)中提到了Decred 。完整的115页PDF在[这里](https://65eocu3ftlpiygeym3g5kply6zy2dtdjyrhbm4m26cb6bt3msyla.arweave.net/90jhU2Wa3owYmGbN1T149nGhzGnEThZxmvCD4M9slhY)（第64-66页）。
 
-Selected articles:
+精选文章：
 
-- Why I Decred by Decred Citizen ([medium](https://medium.com/@decred.citizen/why-i-decred-8d83081b6fb8))
-- Decred on-chain: DAO + Treasury accounting by @permabullnino ([medium](https://medium.com/@permabullnino/decred-on-chain-dao-treasury-accounting-afb1ed989b0a))
-- Blockchain governance - Part 2 by @mm ([stakey.club](https://stakey.club/en/blockchain-gov-part2/))
-- Meet the Disruptors: How Jake Yocom-Piatt of Decred aims to redefine governance, with blockchain technology by Tyler Gallagher ([medium](https://medium.com/authority-magazine/meet-the-disruptors-how-jake-yocom-piatt-of-decred-aims-to-redefine-governance-with-blockchain-5c3724f20e74))
-- Monero and Decred are the new Bitcoin by John Dennehy ([medium](https://medium.com/@john_dennehy/monero-and-decred-are-the-new-bitcoin-34a8c1fb2515))
+- 为什么我选择Decred by Decred Citizen ([medium](https://medium.com/@decred.citizen/why-i-decred-8d83081b6fb8))
+- Decred on-chain:DAO + 国库会计 by @permabullnino ([medium](https://medium.com/@permabullnino/decred-on-chain-dao-treasury-accounting-afb1ed989b0a))
+- Blockchain governance - 第2部分 by @mm ([stakey.club](https://stakey.club/en/blockchain-gov-part2/))
+- 洞见未来: Decred的Jake Yocom-Piatt如何通过Tyler Gallagher的区块链技术来重新定义治理 by Tyler Gallagher ([medium](https://medium.com/authority-magazine/meet-the-disruptors-how-jake-yocom-piatt-of-decred-aims-to-redefine-governance-with-blockchain-5c3724f20e74))
+- Monero和Decred是新比特币 by John Dennehy ([medium](https://medium.com/@john_dennehy/monero-and-decred-are-the-new-bitcoin-34a8c1fb2515))
 
-> Since decentralization is a founding principle of the crypto-space it gets a lot of lip-service but one of the oldest problems with power is that it is extremely rare that once someone has it, they will give it up voluntarily. Decred is a rare exception and notable in the progress its developers have made in converting the project's resources into this autonomous system. Monero is another outlier here, as its development is completely funded by community donations.
+> 由于去中心化是加密领域的基本原则，因此它获得了大量的口头宣扬，但是权力的最古老的问题之一是，一旦有人拥有权力，自愿放弃它是极为罕见的。Decred是一个罕见的例外，开发人员将项目资源转换为自治系统方面取得了显着进展。门罗币（Monero）是这里的另一个，因为其发展完全由社区捐赠提供资金。
 
-Crypto media has picked up the [INVDoS](https://invdos.net/) vulnerability disclosed on Sep 9, which brought some mixed press for Decred. [CoinDesk](https://www.coindesk.com/high-severity-bug-in-bitcoin-software-revealed-2-years-after-fix) release was the first and didn't mention Decred at all. Notably, it was published just 45 min after the PDF was last updated at invdos.net and 28 min _before_ the email on [bitcoin-dev](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2020-September/018164.html) mailing list. [ZDNet](https://www.zdnet.com/article/researcher-kept-a-major-bitcoin-bug-secret-for-two-years-to-prevent-attacks/) briefly mentioned Decred's bug bounty program. [Decrypt](https://decrypt.co/41685/developers-reveal-2018-bitcoin-bug-used-to-crash-entire-networks) has overblown the issue and posted some inaccuracies. [The Daily Chain](https://thedailychain.com/bitcoin-engineers-identify-and-patch-vulnerability-in-decred-btcd-blockchains/) went as far as to say that "Bitcoin engineers patched vulnerability in Decred". A common pattern is that these outlets didn't reach out for comments from the experts most familiar with the software (Decred developers). @l1ndseymm contacted The Daily Chain and they posted a follow-up [clarification](https://thedailychain.com/decred-clarify-details-of-reported-vulnerability/) with a comment from @davecgh. @degeri addressed the misinformation in a tweet [thread](https://twitter.com/degeri_crypto/status/1305591774698786821). A detailed account of media coverage, misinformation, timeline of events and reflection is available [here](https://github.com/xaur/notes/blob/master/invdos.md).
+加密媒体发现了9月9日披露的INVDoS漏洞，这给Decred带来了一些压力。CoinDesk版本是第一个，完全没有提到Decred。值得注意的是，PDF在invdos.net上一次更新PDF后仅45分钟，在bitcoin-dev邮件列表中的电子邮件之前28分钟已发布。ZDNet简要提到了Decred的漏洞赏金计划。Decrypt夸大了该问题，并发布了一些错误之处。日常链甚至说“比特币工程师在Decred中修补了漏洞”。一种常见的模式是，这些渠道没有向最熟悉该软件的专家（Decred开发人员）征求意见。@ l1ndseymm与每日连锁店联系，他们发表了后续澄清，并附有@davecgh的评论。@degeri在推特线程中解决了错误信息。有关媒体报道，错误信息，事件时间表和反思的详细说明，请点击此处。
 
-Translations:
+翻译：
 
-- Meet the Disruptors: How Jake Yocom-Piatt of Decred aims to redefine governance, with blockchain technology - [in Chinese](https://github.com/Decred-CN/articles/blob/master/Meet%20The%20Disruptors.md) by @Dominic
-- Politeia Digest issues 36-37 - [in Arabic](https://insaf01.github.io/politeia-digest-ar/) by @arij and @abdulrahman4
-- Decred Journal August 2020 was [translated](https://xaur.github.io/decred-news/) to Arabic (@arij, @abdulrahman4), Chinese (@Dominic) and Spanish (@francov\_). Thank you all for spreading the word!
+- 洞见未来: Decred的Jake Yocom-Piatt如何通过Tyler Gallagher的区块链技术来重新定义治理 - [中文](https://github.com/Decred-CN/articles/blob/master/Meet%20The%20Disruptors.md) by @Dominic
+- Politeia Digest第36-37期- @arij和@ abdulrahman4用[阿拉伯语](https://insaf01.github.io/politeia-digest-ar/)撰写
+- 2020年8月的Decred Journal被[翻译](https://xaur.github.io/decred-news/)成阿拉伯文（@arij，@ abdulrahman4），中文（@Dominic）和西班牙文（@francov_）。谢谢大家！
 
-A list of all known translations of Decred content has been compiled [here](https://github.com/decredcommunity/translations/blob/master/index.md). If you enjoy DJ for reading about all the work being done for Decred, open this ~280 item list and scroll it for a minute to get a similar injection.
+如果您想要参与翻译，请加入新的公共[#translations](https://chat.decred.org/#/room/#translations:decred.org)聊天室与他人进行协调。
 
-If you translate content, join the new public [#translations](https://chat.decred.org/#/room/#translations:decred.org) chat room to coordinate with others.
+视频:
 
-Videos:
+- Decred攻击成本 by Decred Society ([youtube](https://www.youtube.com/watch?v=yv2wzRsK6zc))
+- 安全性和货币供应 by Decred Society ([youtube](https://www.youtube.com/watch?v=M5HWV_a1gj8))
+- 顺着Decred走向新世界 by Decred Society ([youtube](https://www.youtube.com/watch?v=cI1jbIAe4YE))
+- Decred 勇敢的新硬币 by Brave New Coin ([youtube](https://www.youtube.com/watch?v=ABjp9RYnDrk))
 
-- The Cost of attacking Decred by Decred Society ([youtube](https://www.youtube.com/watch?v=yv2wzRsK6zc))
-- Security and coin supply by Decred Society ([youtube](https://www.youtube.com/watch?v=M5HWV_a1gj8))
-- Going down the Decred rabbit hole by Decred Society ([youtube](https://www.youtube.com/watch?v=cI1jbIAe4YE))
-- Decred price analysis - 6th September 2020 by Brave New Coin ([youtube](https://www.youtube.com/watch?v=ABjp9RYnDrk))
+音频:
 
-Audio:
+-Decred Australia团队的@eSizeDave和@zohand进行了深度讨论，向不同的观众介绍了Decred的-坚持到底和错过了什么([libsyn](https://decredindepth.libsyn.com/zohand-dave-decred-australia), [player.fm](https://player.fm/series/decred-in-depth/zohand-dave-decred-australia))
+- Decred in Depth 31 @ l1ndseymm担任了PR的角色，她与Decred的社区合作并经历了提案流程的经验，以及提高项目知名度的策略。 ([libsyn](https://decredindepth.libsyn.com/lindsey-mcconaghy-dcr-pr-marketing-2020), [anchor.fm](https://anchor.fm/staked-podcast/episodes/Staked-Podcast-Episode-0-0-3-ejq685/a-a38c12o))
 
-- Decred in Depth 30 with @eSizeDave and @zohand of the Decred Australia team talking about their experiences presenting Decred to various audiences - what sticks, and what misses ([libsyn](https://decredindepth.libsyn.com/zohand-dave-decred-australia), [player.fm](https://player.fm/series/decred-in-depth/zohand-dave-decred-australia))
-- Decred in Depth 31 with @l1ndseymm giving her take on the role of PR, her experience of working with Decred's community and going through the proposal process, and strategies for raising the project's profile. ([libsyn](https://decredindepth.libsyn.com/lindsey-mcconaghy-dcr-pr-marketing-2020), [anchor.fm](https://anchor.fm/staked-podcast/episodes/Staked-Podcast-Episode-0-0-3-ejq685/a-a38c12o))
-- Cyber Hacker podcast: Crypto-Security and blockchain innovations featuring @jy-p ([player.fm](https://player.fm/series/cyber-hacker/crypto-security-and-block-chain-innovations), [apple](https://podcasts.apple.com/au/podcast/cyber-hacker/id1462830605?i=1000489977562))
+Decred dork本月忙于制作新的Staked Podcast：
 
-The Decred dork has been busy this month, with 4 episodes of the new Staked Podcast:
+- Episode 0.0.1 - Decred的历史
+- Episode 0.0.2 - Decred的宪法
+- 与@pavel进行的播客采访
+- Episode 0.0.3 - Decred的投资逻辑
 
-- Episode 0.0.1 - History of Decred
-- Episode 0.0.2 - Decred Constitution
-- Staked podcast interview with @pavel
-- Episode 0.0.3 - Decred investment thesis
-
-Staked Podcast is available on [YouTube](https://www.youtube.com/channel/UCWoknbkENz-W4pg18p57rNA) (with video), [anchor.fm](https://anchor.fm/staked-podcast), [Spotify](https://open.spotify.com/show/4KWpxBXn26Ek4VVeNg8D3S) and [Google](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xNDY5ZjRlYy9wb2RjYXN0L3Jzcw==).
+播客播客可在[YouTube](https://www.youtube.com/channel/UCWoknbkENz-W4pg18p57rNA) (with video), [anchor.fm](https://anchor.fm/staked-podcast), [Spotify](https://open.spotify.com/show/4KWpxBXn26Ek4VVeNg8D3S) 和 [Google](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xNDY5ZjRlYy9wb2RjYXN0L3Jzcw==)上使用。
 
 ## 社区讨论
 
-Comm systems news:
+通讯系统新闻：
 
-- traders rejoice, #trading chat is now available via [Telegram](https://t.me/DecredTrading) and is bridged to Matrix and Discord
+- 交易者欢欣鼓舞，现在可以通过[Telegram](https://t.me/DecredTrading)获得#trading聊天信息，并桥接到Matrix和Discord
 
-Selected Reddit posts:
+精选Reddit帖子：
 
-- everyone's favorite Wall Street CEO, u/jamie-demon, has been busy publishing [dcrdocs](https://www.reddit.com/r/decred/comments/j1ia6k/dcrdocs_on_ipfs_and_zeronet/), [decredpower](https://www.reddit.com/r/decred/comments/iu9f31/decredpower_on_the_ipfs/), and [DCRComic](https://www.reddit.com/r/decred/comments/iw333o/dcr_comic_on_ipfs/) to IPFS and ZeroNet distributed web networks
-- a [post](https://www.reddit.com/r/decred/comments/iwu75w/bch_has_some_funding_and_governance_issues/) about BCH funding and governance issues attracted 45 comments, mostly in response to someone complaining about DCR
-- @pavel is arranging an AMA interview and submitted a [post](https://www.reddit.com/r/decred/comments/j2gz5f/ask_me_anything_ama_what_would_you_ask_decreds/) to collect questions at the end of the month
-- in-depth [discussion](https://www.reddit.com/r/decred/comments/i11tjv/porting_cloak_coins_enigma_protocol_and/g4psjpr/) about the merits of CloakCoin's Enigma privacy protocol with one of that project's developers
+- jamie-demon一直在忙于向IPFS和ZeroNet分布式Web网络发布 [dcrdocs](https://www.reddit.com/r/decred/comments/j1ia6k/dcrdocs_on_ipfs_and_zeronet/), [decredpower](https://www.reddit.com/r/decred/comments/iu9f31/decredpower_on_the_ipfs/),和 [DCRComic](https://www.reddit.com/r/decred/comments/iw333o/dcr_comic_on_ipfs/) to IPFS and ZeroNet distributed web networks
+- 关于生物安全信息交换所资金和治理问题的帖子吸引了45条评论，主要是针对有人抱怨DCR
+- @pavel正在安排AMA采访，并在月底提交了一个[帖子](https://www.reddit.com/r/decred/comments/j2gz5f/ask_me_anything_ama_what_would_you_ask_decreds/)以收集问题
+- 与该项目的一名开发人员深入[讨论](https://www.reddit.com/r/decred/comments/i11tjv/porting_cloak_coins_enigma_protocol_and/g4psjpr/)了CloakCoin的Enigma隐私协议的优点
 
-Selected Twitter discussions:
+精选Twitter讨论：
 
-- @richardred [tweeted](https://twitter.com/RichardRed0x/status/1310700935216271360) an animated painting, titled "Ticket Price All Time Highs Again"
-- latest development news breaking on twitter from [@moo31337](https://twitter.com/marco_peereboom/status/1308125042149134336) (Decentralize Treasury Spending) and [@chappjc](https://twitter.com/chappjc/status/1302798545439817730) (dcrdex)
-- @jz asserts that Decred is a [#ChadCoin](https://twitter.com/jz_bz/status/1310639727477915648)
+- @richardred在[推特](https://twitter.com/RichardRed0x/status/1310700935216271360)上发布了一段动画，标题为“选票价格再创历史新高”
+- [@moo31337](https://twitter.com/marco_peereboom/status/1308125042149134336)（去中心化国库支出）和[@chappjc](https://twitter.com/chappjc/status/1302798545439817730)（dcrdex）在Twitter上发布的最新发展新闻
+- @jz断言Decred是[#ChadCoin](https://twitter.com/jz_bz/status/1310639727477915648)
 
 ## 市场
 
-In September DCR was trading between USD 11.03-17.30 / BTC 0.00106-0.00148. The average daily rate was $13.26.
+9月DCR美元交易价格在11.03-17.30 / BTC交易价格在 0.00106-0.00148之间。每日平均价格为$13.26。
 
 ## 相关外部信息
 
-The Wasabi wallet was subject to a DoS [vulnerability](https://blog.wasabiwallet.io/responsible-disclosure-v4-hard-fork/) which would have allowed an attacker to halt the CoinJoin process for all participants without revealing themselves - fixed before it could be exploited.
+Wasabi钱包遭受了DoS漏洞的攻击，该漏洞可能使攻击者在不暴露自己的情况下就停止了所有参与者的CoinJoin流程-在被利用之前已修复。
 
-Bitcoin Cash's current situation was [summarised](https://read.cash/@Cain/the-current-bch-drama-for-outsiders-50b4dbb8) nicely by Cain. The BCH (aka BCH ABC) chain looks set to fork over a dispute about developer funding. The Bitcoin ABC developers are adding a rule from Nov 15 that 8% of the block reward must go to an address controlled by them, to fund infrastructure development. This idea has been controversial in the BCH community for some time, and an alternative BCHN implementation is planned. This sets up an interesting hash war scenario, where ABC miners will not mine on BCHN blocks without a developers' reward, whereas the BCHN miners will mine on anything - if the BCHN chain does not have a significant majority of hashpower, BCHN miners would be likely to see a lot of orphaned blocks. BCH has a checkpointing system, which adds some further intrigue around the possibility of chain splits and new nodes ending up on different chains. So far around 50% of PoW mining power is signalling for BCHN, and the rest is not signalling for anything.
+总结了比特币现金的现状该隐很好。BCH（又名BCH ABC）链似乎准备解决有关开发商资金的争议。比特币ABC开发人员从11月15日开始增加一条规则，规定8％的区块奖励必须去到他们控制的地址，以资助基础设施开发。这个想法在BCH社区中引起争议已有一段时间，并且计划了另一种BCHN实施方案。这建立了一个有趣的哈希战争场景，在这种情况下，ABC矿工将不会在没有开发人员奖励的情况下在BCHN区块上进行挖矿，而BCHN矿工将在任何情况下进行挖矿-如果BCHN链没有很大的哈希能力，BCHN矿工将可能会看到很多孤立的块。BCH有一个检查点系统，这增加了对链分裂和新节点最终落在不同链上的可能性的更多好奇。
 
-BitShares has a [forthcoming](https://finbold.com/binance-huobi-announces-support-for-upcoming-bitshares-hardfork/) hardfork which is being supported by Binance and Huobi, after the BitShares China Association alleged that one of the BitShares developers had tampered with voting system code without community approval.
+BitShares有一个即将到来正由Binance和Huobi支持，后BitShares中国协会声称的BitShares开发商之一曾与投票系统代码篡改没有社会认可hardfork。
 
-The SushiSwap saga provided peak DeFi drama in September. SushiSwap is a "decentralized exchange" running on Ethereum which copied the open source smart contracts of an established (VC-funded) decentralized exchange, UniSwap. When the SushiSwap developer, Chef Nomi, announced that SushiSwap would do a "fair launch" and grant almost all the SUSHI tokens to liquidity providers, SushiSwap began to draw a lot of liquidity away from UniSwap, and SUSHI gained considerable value in a short space of time. 10% of all the SUSHI tokens go into a development fund, and when the hype was peaking Chef Nomi [liquidated](https://www.coindesk.com/sushiswap-liquidation-weekend) the dev SUSHI (worth over $10 million at the time) for ETH and announced that he was not exit scamming because he would still be around to do development, but he had sold all the dev SUSHI. This was not well received by the SUSHI community, who sought to replace Nomi in short order, with Nomi then handing the reigns (keys?) to Sam Bankman-Fried of the FTX exchange. SushiSwap then went on to elect a set of multi-sig governors with a token vote. Subsequently, Chef Nomi [returned](https://www.coindesk.com/sushiswap-creator-chef-nomi-returns-dev-fund) along with the ETH they had obtained by selling dev SUSHI, offering that the community determine how much they should be rewarded for their part. There was some speculation that Chef Nomi had been effectively unmasked and did not want to live with the stigma of their hasty exit.
+为响应SUSHI的成功及其吸引的流动资金，UniSwap推出了自己的代币UNI。流动性提供者可以使用60％的创始代币（预计覆盖前四年），最初的15％分配给在9月初截止之前使用UniSwap的人。剩余的40％是UNI分配给投资者和雇员。
 
-UniSwap [launched](https://uniswap.org/blog/uni/) their own token, UNI, in response to SUSHI's success and the amount of liquidity it was attracting. 60% of the genesis tokens (intended to cover the first four years) are available to liquidity providers, with an initial 15% being allocated to people who had used UniSwap before a cut-off of early Sep. The remaining 40% of UNI is allocated to investors and employees.
+以太坊经典实验室已经与Chainsafe和OpenRelay合作开发了一种解决方案，可以防止进一步的51％攻击。宣布合作3天后，已经有一个综合性的MESS计划，用于弱主观性的确定性。
 
-Ethereum Classic Labs have [teamed](https://medium.com/etc-core/ethereum-classic-labs-teams-up-with-openrelay-and-chainsafe-8248d1182612) up with Chainsafe and OpenRelay to develop a solution which prevents further 51% attacks. 3 days after the teaming up announcement there is already a comprehensive [MESS](https://medium.com/etc-core/agreeing-to-disagree-proposing-a-weakly-subjective-finality-solution-for-ethereum-classic-7daad47efc0e) plan for weakly-subjective finality.
+KuCoin交易所（其中列出了DCR）被黑，据报道被盗1.5亿美元，后来升级为2.81亿美元，尽管随后追回了2.04亿美元（在集中式稳定币运营商的帮助下），KuCoin声称已查明了嫌疑人并报告给执法部门。
 
-The KuCoin exchange (which lists DCR) was hacked, and a [reported](https://www.coindesk.com/hackers-drain-kucoin-crypto-exchanges-funds) $150 million was stolen, later [upgraded](https://www.coindesk.com/kucoin-ceo-says-perpetrators-of-281m-hack-identified-authorities-on-the-case) to $281 million, although $204 million was subsequently [recovered](https://www.coindesk.com/kucoin-ceo-says-perpetrators-of-281m-hack-identified-authorities-on-the-case) (with help from the operators of centralized stablecoins), and KuCoin claims to have identified the suspects and reported them to law enforcement authorities.
+Coinbase Pro宣布，加密货币取款的费用现在将转嫁给客户（Coinbase以前已经涵盖了这些费用以提供“免费”取款）。
 
-Coinbase Pro [announced](https://twitter.com/CoinbasePro/status/1306641678506360832) that fees for crypto withdrawals would now be passed on to customers (Coinbase had previously covered these to provide "free" withdrawals).
+bZxHQ DeFi放款人遭到另一次利用，这次是800万美元，这比今年早些时候的前两次利用要大。他们有一个保险基金来弥补损失。根据CoinDesk的说法，“该漏洞在来自网络安全公司Certik和Peckshield的两次广泛的代码审核中都未能发现”。
 
-The bZxHQ DeFi lender was subjected to another [exploit](https://www.coindesk.com/defi-lender-bzx-third-attack), this time for $8 million, which is larger than the previous two exploits earlier this year. They have an insurance fund which is covering the damage. According to CoinDesk, "the bug managed to remain undetected in two extensive code audits from cybersecurity firms Certik and Peckshield".
+Square成立了加密货币开放专利联盟（COPA），成员承诺永远不会出于进攻目的主张专利权，并且反过来可以在需要时以防御性方式使用任何成员组织的专利。Blockstream在推特上发布了关于加入COPA作为其防御性专利战略的下一步的推文。
 
-Square [formed](https://www.coindesk.com/square-alliance-patents-crypto) the Cryptocurrency Open Patent Alliance (COPA), where members pledge to never assert patent rights for offensive purposes, and in turn can use the patents of any member organization defensively if required. Blockstream [tweeted](https://twitter.com/Blockstream/status/1304529416131940352) about joining COPA as the next step in their defensive patent strategy.
+Polkadot财政部收到了第一个建议。Polkadot的财政部由交易费，大幅削减和降低效率低下的资金提供资金；如果不使用这些资金，则每24天会消耗掉余额的1％。资金目前由Polkadot理事会管理，以这种方式资助的前四个团队正在开发托盘合同的开发环境，Go Substrate RPC客户，Polkascan，以及一个用于本地社区货币和自行发行的平台普遍基本收入。
 
-The Polkadot Treasury received its first [proposals](https://polkadot.network/writing-history-the-first-teams-submit-their-proposal-to-the-polkadot-treasury-2/). Polkadot's Treasury is funded by transaction fees, slashing and staking inefficiencies - and every 24 days if these funds are not used 1% of the balance is burned. The funds are presently administered by the Polkadot Council, and the first four teams to be funded this way are working on a development environment for pallet-contracts, a Go Substrate RPC Client, Polkascan, and a platform for local community currencies and self-issued universal basic income.
+关于“私人采矿”的这篇文章，用户将交易交给特定的矿工，该矿工每当在一个区块中进行开采时都会收集相关的奖励，并将其视为洗钱的可能工具，并且将来可能也是合法的矿工收入来源。
 
-This [article](https://decrypt.co/41024/researchers-find-new-way-for-criminals-to-launder-money-using-bitcoin) about "private mining", where a user gives their transaction to a specific miner, who collects the associated reward whenever they mine it in a block, sees it as a possible tool for money laundering, and in the future potentially also a legitimate source of miner income.
+美国国税局正在提供的$ 625,000赏金的人谁可以提供技术的工作原型跟踪Monero或避雷网交易。截止日期是9月16日，因此，不幸的是，如果您碰巧可以拿到那个破坏隐私的原型，现在为时已晚。
 
-The United States Internal Revenue Service are [offering](https://cointelegraph.com/news/the-irs-offers-a-625-000-bounty-to-anyone-who-can-break-monero-and-lightning) a bounty of $625,000 to anyone who can provide a working prototype of technology to trace Monero or Lightning Network transactions. The deadline was Sep 16, so unfortunately it is now too late to cash in on that privacy-breaking prototype, if you happen to have one to hand.
-
-Relevant External fans will likely enjoy the [@Scams_alarms](https://twitter.com/Scams_alarms) Twitter account for more horrifying stories.
+相关外部粉丝可能会喜欢@Scams_alarms Twitter帐户，以获得更多恐怖故事。
 
 ## 关于月报
 
