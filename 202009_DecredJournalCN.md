@@ -1,6 +1,6 @@
-# Decred Journal – September 2020
+# Decred月报 – 2020年9月
 
-![abstract art](../img/journal-202009-384.png)
+![abstract art](img/journal-202009-384.png)
 
 _Image: Hidden Structures on Quadratic Orbit by @saender_
 
