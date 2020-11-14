@@ -21,44 +21,45 @@ _图片: @saender_
 
 > 我要感谢所有我们早期的测试人员的帮助,反馈和耐心。我们考虑了很多反馈，并解决了许多UI / UX问题，同时修复了在操作时弹出的几个错误。 ([@chappjc](https://matrix.to/#/!mlRZqBtfWHrcmgdTWB:decred.org/$AQsNUyN7WWfYR6IhOgtGckBAecXP5ASXCYKFBpNWrcM))
 
-Congratulations everyone with the release!
+祝贺DCRDEX的发布！
 
-## v1.6 Release Candidates
+## v1.6候选版本
 
-Release candidates for dcrd, dcrwallet, Decrediton and dcrlnd are available for testing [here](https://github.com/decred/decred-binaries/releases). Please bear in mind that while key features are there and working in Decrediton, a number of UI improvements and bug fixes are forthcoming in a third release candidate.
+dcrd，dcrwallet，Decrediton和dcrlnd的候选版本可在[此处](https://github.com/decred/decred-binaries/releases)进行下载测试。请注意，虽然Decrediton中有新的重要功能也可以使用，但第三个候选版本中将提供许多UI改进和bug修复。
 
-As always, [verify the binaries](https://docs.decred.org/advanced/verifying-binaries/) before running them.
+总之，请记住访问[这个](https://docs.decred.org/advanced/verifying-binaries/)说明文档运行它们。
 
-Version 1.6 will be one of the biggest releases Decred ever made. If you would like to help with outreach please check that [section](#outreach) below.
+Decred版本v1.6将是迄今为止最重要的更新，如果你想协助推广，请点击[这里](#outreach)查看。
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能使用。
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-v1.6 Release Candidate 1 and 2 have been made for public testing. You can read the RC2 release notes and get the source code [here](https://github.com/decred/dcrd/releases/tag/release-v1.6.0-rc2). Bug reports are welcome [here](https://github.com/decred/dcrd/issues).
+v1.6候选版本1和2已进行公开测试。您可以阅读RC2发行说明并在[此处](https://github.com/decred/dcrd/releases/tag/release-v1.6.0-rc2)获取源代码。欢迎在[这里](https://github.com/decred/dcrd/issues)提交bug。
 
-Work included in v1.6 release:
+v1.6版本中包含的工作：
 
-- mining code changed to prioritize transactions with higher [aggregate fee](https://github.com/decred/dcrd/pull/1829) based on its ancestors in the mempool (aka Child Pays for Parent)
-- ticket [exhaustion](https://github.com/decred/dcrd/pull/2398) check to prevent a theoretical scenario when the ticket pool goes too low and the chain can become unrecoverable if certain blocks are added
-- optimized block template generation for [disapproved](https://github.com/decred/dcrd/pull/2397) blocks
-- multiple tweaks and fixes for the new treasury code
-- tool for generating certificates [rewritten](https://github.com/decred/dcrd/pull/2425) to support more use cases (like not including hostname and interface in the certificate or specify any of the 4 supported algorithms)
-- improved chain generation [test harness](https://github.com/decred/dcrd/pull/2329)
-- fixed database [migration](https://github.com/decred/dcrd/pull/2446) to support upgrading from v1.4
-- for upgrading from even older clients where the database is too old to migrate, redownloading the chain from scratch was [automated](https://github.com/decred/dcrd/pull/2449) to not require any manual intervention from the user
+- 更改了挖矿代码，优化[交易费用](https://github.com/decred/dcrd/pull/1829)
+- 选票池优化，细节请查看[这里](https://github.com/decred/dcrd/pull/2398)
+- 为[被否定](https://github.com/decred/dcrd/pull/2397)的区块优化了区块模板生成规则
+- 对新的国库代码进行了多次调整和修复
+- [重写](https://github.com/decred/dcrd/pull/2425)生成证书以支持更多实例工具（例如不包括证书中的主机名和接口或指定4种受支持的算法中的任何一种）
+- 改进区块链生成[测试工具](https://github.com/decred/dcrd/pull/2329)
+- 修复数据库[迁移](https://github.com/decred/dcrd/pull/2446)以支持从v1.4升级
+- 对数据库优化以解决新版本数据库和软件的兼容性，从头开始重新下载区块链是[自动的](https://github.com/decred/dcrd/pull/2449)，不需要用户任何手动干预
 
-Continued merged work past the v1.6 branching point:
+v1.6的后续工作:
 
-- continued the saga to cover [rpcserver](https://github.com/decred/dcrd/issues/2069) with tests
-- `mining` package reorganized for easier testing and navigation
+- 继续开发以覆盖测试[rpcserver](https://github.com/decred/dcrd/issues/2069)
+- 对`mining` 程序包惊醒了整理，以方便新用户导航和测试
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
-- allow wallet accounts to be individually [encrypted](https://github.com/decred/dcrwallet/pull/1823) and unlocked, each with its own passphrase
-- commands to query and set [voting policy](https://github.com/decred/dcrwallet/pull/1897) for treasury spend transactions created by particular keys
+- 允许单独[加密](https://github.com/decred/dcrwallet/pull/1823)和解锁钱包帐户，使每个钱包都有自己的密码
+- 添加用于查询和设置国库的投票策略命令
+commands to query and set [voting policy](https://github.com/decred/dcrwallet/pull/1897) for treasury spend transactions created by particular keys
 - commands to set voting policy for [individual](https://github.com/decred/dcrwallet/pull/1905) tspend transactions
 - require [TLS certificate](https://github.com/decred/dcrwallet/pull/1867) authentication for gRPC clients and allow it for JSON-RPC clients. This is a more secure way for programs to talk to dcrwallet. Other projects were updated to support this change (Decrediton, Politeia, dcrlnd, and others).
 - allow gRPC clients to [lock/unlock](https://github.com/decred/dcrwallet/pull/1883) wallet once and then call methods without a [passphrase](https://github.com/decred/dcrwallet/pull/1880)
