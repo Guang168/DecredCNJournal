@@ -1,25 +1,25 @@
-# Decred Journal – October 2020
+# Decred月报 – 2020年10月
 
 ![abstract art](img/journal-202010-384.png)
 
-_Image: Restructuring I by @saender_
+_图片: @saender_
 
-Decred's highlights in October:
+十月重点:
 
-- v1.6.0 had its first two release candidates, following community testing fixes and improvements are being rolled into a third release candidate which is coming soon.
-- The initial release of the dcrdex MVP on mainnet accompanied the first v1.6.0 release candidate. CLI users can now add dcrdex to the installation by adding an extra argument to the install command.
-- The attention of many community members has now turned to making the most of the proper v1.6 release when it happens, check the Outreach section to see what they're planning.
-- Politeia celebrated 2 years in production, congratulations to the people behind the 47 approved proposals and the stakeholders who voted for them.
+- v1.6.0的前两个候选版本(rc1,rc2)，在经过社区测试,修复和改进之后，即将发布第三个候选版本。
+- dcrdex 初始发行版在主网上与第一个v1.6.0候选版本一起发布。CLI用户现在可以通过在install命令中添加额外的参数到dcrdex中。
+- 现在，许多社区成员的注意力都转向到v1.6版本，请查看“外展”部分以了解他们的计划。
+- 庆祝Politeia工作2周年，祝贺47个已批准提案的发布者以及投票支持这些提案的利益相关者。
 
-## DCRDEX Initial Release
+## DCRDEX初始发行版
 
-A little more than a year since the [RFP](https://proposals.decred.org/proposals/5431da8) and [development](https://proposals.decred.org/proposals/417607a) proposals have been approved on Politeia, Decred users can now trade between DCR and BTC without risking their funds and personal information with custodial exchanges.
+自DCRDEX的[RFP](https://proposals.decred.org/proposals/5431da8)和[开发](https://proposals.decred.org/proposals/417607a)提案在Politeia上获得批准以来，已经有一年多的时间了，Decred用户现在可以在DCR和BTC之间进行交易，从而免受资金和个人信息泄露风险。
 
-First MVP [release](https://github.com/decred/dcrdex/releases/tag/release-v0.1.0) was followed by a quick [v0.1.1](https://github.com/decred/dcrdex/releases/tag/release-v0.1.1) patch release that is currently the latest.
+首先[发布](https://github.com/decred/dcrdex/releases/tag/release-v0.1.0)了初始版本 ，然后最新的[v0.1.1](https://github.com/decred/dcrdex/releases/tag/release-v0.1.1)补丁程序也随即发布。
 
-Visit [dex.decred.org](https://dex.decred.org/) to get started, or follow the [guide](https://www.publish0x.com/block-commons/how-to-get-on-dcrdex-mvp-xolpzmv) by @richardred, or just see it in action in a [video](https://twitter.com/Decred_News/status/1320184172749721600). Latest price and order books can be viewed at dcrdata's [Market](https://explorer.dcrdata.org/market) dashboard, with more public data to follow.
+请访问[dex.decred.org](https://dex.decred.org/)查看详情，按照@richardred的[指南](https://www.publish0x.com/block-commons/how-to-get-on-dcrdex-mvp-xolpzmv)进行操作，或在[视频](https://twitter.com/Decred_News/status/1320184172749721600)中查看它的使用情况。你也可以在dcrdata的“[市场](https://explorer.dcrdata.org/market)”图表上查看最新的价格和订单以及其它更多的公共数据。
 
-> I want to thank ALL of our earlier testers for your feedback and patience as we get this thing moving. We have taken a lot of the feedback into account, and resolved a number of UI/UX issues, and fixed a couple of bugs that have popped up in match recovery scenarios. ([@chappjc](https://matrix.to/#/!mlRZqBtfWHrcmgdTWB:decred.org/$AQsNUyN7WWfYR6IhOgtGckBAecXP5ASXCYKFBpNWrcM))
+> 我要感谢所有我们早期的测试人员的帮助,反馈和耐心。我们考虑了很多反馈，并解决了许多UI / UX问题，同时修复了在操作时弹出的几个错误。 ([@chappjc](https://matrix.to/#/!mlRZqBtfWHrcmgdTWB:decred.org/$AQsNUyN7WWfYR6IhOgtGckBAecXP5ASXCYKFBpNWrcM))
 
 Congratulations everyone with the release!
 
