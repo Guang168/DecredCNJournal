@@ -58,21 +58,20 @@ v1.6的后续工作:
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
 - 允许单独[加密](https://github.com/decred/dcrwallet/pull/1823)和解锁钱包帐户，使每个钱包都有自己的密码
-- 添加用于查询和设置国库的投票策略命令
-commands to query and set [voting policy](https://github.com/decred/dcrwallet/pull/1897) for treasury spend transactions created by particular keys
-- commands to set voting policy for [individual](https://github.com/decred/dcrwallet/pull/1905) tspend transactions
-- require [TLS certificate](https://github.com/decred/dcrwallet/pull/1867) authentication for gRPC clients and allow it for JSON-RPC clients. This is a more secure way for programs to talk to dcrwallet. Other projects were updated to support this change (Decrediton, Politeia, dcrlnd, and others).
-- allow gRPC clients to [lock/unlock](https://github.com/decred/dcrwallet/pull/1883) wallet once and then call methods without a [passphrase](https://github.com/decred/dcrwallet/pull/1880)
-- better handling of [low](https://github.com/decred/dcrwallet/pull/1875) [balance](https://github.com/decred/dcrwallet/pull/1879) when purchasing tickets
-- track [status](https://github.com/decred/dcrwallet/pull/1866) of vspd ticket fees to handle failures of vspd's fee processing
-- multiple fixes for vspd staking
-- fixes for new `getminingstate` and `getinitstate` messages
+- 添加用于查询和设置国库的[投票策略](https://github.com/decred/dcrwallet/pull/1897)命令
+- 用于为[单个](https://github.com/decred/dcrwallet/pull/1905)tspend交易设置投票策略的命令
+- 要求gRPC客户端进行[TLS证书](https://github.com/decred/dcrwallet/pull/1867)认证，并允许JSON-RPC客户端认证。这是与dcrwallet进行通信的一种更安全的方式。更新了其它项目以支持此更改（Decrediton，Politia，dcrlnd等）。
+- 允许gRPC客户端一次[锁定/解锁](https://github.com/decred/dcrwallet/pull/1883)钱包，在[没有密码](https://github.com/decred/dcrwallet/pull/1880)的情况下调用
+- 购买选票时更好地处理[低](https://github.com/decred/dcrwallet/pull/1875) [余额](https://github.com/decred/dcrwallet/pull/1879)问题
+- [跟踪](https://github.com/decred/dcrwallet/pull/1866)vspd选票费用的状态以解决vspd费用处理失败
+- vspd多项修复
+- 修复`getminingstate`和`getinitstate`消息
 
 **[Decrediton](https://github.com/decred/decrediton)**
 
-- LN [Watchtowers](https://github.com/decred/decrediton/pull/2638) support
-- multiple UI/UX improvements for [LN views](https://github.com/decred/decrediton/pull/2641)
-- initial auto [ticket buyer](https://github.com/decred/decrediton/pull/2577) for the new vspd
+- 添加闪电网络[守望塔](https://github.com/decred/decrediton/pull/2638)支持
+- [闪电网络界面](https://github.com/decred/decrediton/pull/2641)的多个UI/UX改进
+- 添加新的vspd[自动购票](https://github.com/decred/decrediton/pull/2577)
 - manual ticket [purchasing](https://github.com/decred/decrediton/pull/2729) with the new vspd
 - initial integration of ticket purchasing combined with [CSPP](https://github.com/decred/decrediton/pull/2773)
 - [listing](https://github.com/decred/decrediton/pull/2747) of vspd tickets
