@@ -288,80 +288,78 @@ Monde PR十月份的成就：
 
 Monde PR保证的新闻报道：
 
-- the DCRDEX announcement was covered by [Geek Insider](https://geekinsider.com/decred-announces-launch-of-dcrdex/), Fortune's [The Ledger](https://fortune.com/2020/10/21/digital-banks-feature-product-or-business/) newsletter, [Crowdfund Insider](https://www.crowdfundinsider.com/2020/10/168215-decred-a-security-and-scalability-focused-digital-currency-project-launches-dcrdex-a-non-custodial-exchange/), [Bankless Times](https://www.banklesstimes.com/2020/10/21/decred-launches-dcrdex/), [Crypto Comes](https://cryptocomes.com/news/decred-dcr-blockchain-veterans-break-into-defi-turf-dex-goes-live), [Day Crypto Trading](https://daycryptotrading.com/noticias/dcrdex-exchange-descentralizado-decred/), [Crypto Option](https://www.crypto-option.com/decred-announces-the-launch-of-its-first-decentralized-exchange-dcrdex/) and [Crypto Potato](https://cryptopotato.com/decred-announces-dcrdex-decentralized-exchange/), which was syndicated to 3 news outlets including [CoinMarketCap](https://coinmarketcap.com/headlines/news/decred-announces-dcrdex-decentralized-exchange/) and [Bitcoin Insider](https://www.bitcoininsider.org/article/96269/decred-announces-its-first-zero-fees-decentralized-exchange-dcrdex).
-- the announcement was also distributed via [PRweb](http://www.prweb.com/releases/decred_announces_launch_of_dcrdex_first_exchange_with_no_trading_fees_seeks_to_disrupt_billion_dollar_crypto_exchange_market/prweb17487844.htm) which was picked up by 99 news outlets including [MarketWatch](https://www.marketwatch.com/press-release/decred-announces-launch-of-dcrdex---first-exchange-with-no-trading-fees-seeks-to-disrupt-billion-dollar-crypto-exchange-market-2020-10-21) and [Benzinga](https://www.benzinga.com/pressreleases/20/10/n17998254/decred-announces-launch-of-dcrdex-first-exchange-with-no-trading-fees-seeks-to-disrupt-billion-dol). The list of syndications can be viewed [here](https://drive.google.com/file/d/161nx5O9V8gDWIZ_z6rXyvySpv32OOR9g/view?usp=sharing).
-- an article in [Cointelegraph](https://cointelegraph.com/news/defi-market-fall-showcases-how-rising-tvl-doesn-t-tell-the-full-story) featuring commentary by @richardred on the DeFi market, syndicated to 21 news outlets including [Cointelegraph China](https://cointelegraphcn.com/news/defi-market-fall-showcases-how-rising-tvl-doesn-t-tell-the-full-story) and [Cointelegraph Spain](https://es.cointelegraph.com/news/defi-market-fall-showcases-how-rising-tvl-doesn-t-tell-the-full-story)
-- articles in [Cointelegraph Italy](https://it.cointelegraph.com/news/paypal-to-offer-crypto-payments-starting-in-2021) and [TrendOnline](https://www.trend-online.com/prp/paypal-bitcoin/) featuring commentary by @jy-p on PayPal offering cryptocurrency payments
+- DCRDEX公告由[Geek Insider](https://geekinsider.com/decred-announces-launch-of-dcrdex/)，[The Ledger](https://fortune.com/2020/10/21/digital-banks-feature-product-or-business/)时事通讯，[Crowdfund Insider](https://www.crowdfundinsider.com/2020/10/168215-decred-a-security-and-scalability-focused-digital-currency-project-launches-dcrdex-a-non-custodial-exchange/), [Bankless Times](https://www.banklesstimes.com/2020/10/21/decred-launches-dcrdex/), [Crypto Comes](https://cryptocomes.com/news/decred-dcr-blockchain-veterans-break-into-defi-turf-dex-goes-live), [Day Crypto Trading](https://daycryptotrading.com/noticias/dcrdex-exchange-descentralizado-decred/), [Crypto Option](https://www.crypto-option.com/decred-announces-the-launch-of-its-first-decentralized-exchange-dcrdex/) 和 [Crypto Potato](https://cryptopotato.com/decred-announces-dcrdex-decentralized-exchange/)覆盖，并与3个新闻媒体联合发行，包括[CoinMarketCap](https://coinmarketcap.com/headlines/news/decred-announces-dcrdex-decentralized-exchange/)和 [Bitcoin Insider](https://www.bitcoininsider.org/article/96269/decred-announces-its-first-zero-fees-decentralized-exchange-dcrdex)。
+- 公告还通过[PRweb](http://www.prweb.com/releases/decred_announces_launch_of_dcrdex_first_exchange_with_no_trading_fees_seeks_to_disrupt_billion_dollar_crypto_exchange_market/prweb17487844.htm) 发布，并被包括MarketWatch和Benzinga在内的99个新闻媒体所采用。联合列表可以在[这里](https://drive.google.com/file/d/161nx5O9V8gDWIZ_z6rXyvySpv32OOR9g/view?usp=sharing)查看。
+- [Cointelegraph](https://cointelegraph.com/news/defi-market-fall-showcases-how-rising-tvl-doesn-t-tell-the-full-story)中的一篇文章，着重@richardred在DeFi市场上的评论，并联合了21个新闻媒体，包括Cointelegraph China和Cointelegraph Spain
+- 意大利[Cointelegraph](https://it.cointelegraph.com/news/paypal-to-offer-crypto-payments-starting-in-2021)和[TrendOnline](https://www.trend-online.com/prp/paypal-bitcoin/)上的文章，其中@ jy-p在PayPal提供加密货币支付方面的评论
 
 ## 活动
 
-Attended:
+参加:
 
-- Oct 2 - [Hablemos Decred 15](https://twitter.com/Decred_ES/status/1310685771884625920) - Internet. @elian talked with guest Jose Rodriguez from Bitso and Talent Land about the future of decentralized finance, non-fungible tokens, and investments of the future using blockchain tech. ([video](https://www.youtube.com/watch?v=wkT01O_mRZk))
-- Oct 2 - [Decentralized Governance Panel](https://twitter.com/Decred_ES/status/1310961312105672705) - Internet. @elian represented Decred project in a panel with Crypto Resources Academy, Kleros, and Maker DAO. The discussion was about the relevance and future of decentralized governance and cryptocurrencies. ([video](https://twitter.com/Decred_ES/status/1312150389160988673))
-- Oct 8 - [Criptolugares Instagram live](https://twitter.com/Decred_ES/status/1313869491160444929) - Internet. @elian talked with Jose Manuel da Silva from Criptolugares to explain the governance model of Decred, Politeia, and how to start contributing to the project. ([video](https://www.instagram.com/p/CGGZc5Gntil/))
-- Oct 9 - [Hablemos Decred 16](https://twitter.com/Decred_ES/status/1313526622927171585) - Internet. @elian and guests Anibal Cripto (cryptofinances consultant) and Ezio Rojas (head of news at Cointelegraph en Español) about cryptocurrencies in Venezuela, challenges of adoption, and the future of money. ([video](https://www.youtube.com/watch?v=xxNFxZJuOwA))
-- Oct 16 - [Hablemos Decred 17](https://es.cointelegraph.com/news/21-heads-crypto-art-show-they-will-analyze-the-intersection-between-art-and-cryptocurrencies) - Mexico City, Mexico. The event was the presentation of "21 Heads Crypto Art Show" at the Bitcoin Embassy. The panel was about the intersection of cryptocurrencies and art the potential role of non-fungible tokens. ([video](https://www.youtube.com/watch?v=b89-CTM0bYk))
-- Oct 17 - [Introduction to Blockchain API for Decred (dcrdata)](https://www.eventbrite.com/e/open-source-workshop-introduccion-a-blockchain-api-de-decred-dcrdata-tickets-124107662359) - Internet. @pablito hosted a workshop on working with Decred blockchain data. ([video](https://www.youtube.com/watch?v=XSmdwWykmSo))
-- Oct 21 - [CCOSS 2020](https://www.eventbrite.com.mx/e/cumbre-de-contribuidores-de-open-source-software-ccoss-2020-tickets-91491063233) - Internet. CCOSS was a 5-day event dedicated to open source. @adcade presented Decred in a talk "Open source contractor model in the cryptocurrency industry". ([video](https://www.youtube.com/watch?v=TuRAeBmnScQ))
-- Oct 23 - [Hablemos Decred 18](https://es.cointelegraph.com/news/what-new-launches-are-planned-by-the-decred-ecosystem) - Internet. @adcade and @elian explored all the details about the project and what will be released this year. ([video](https://www.youtube.com/watch?v=rjfYxi6CXyI))
-- Oct 29 - [Blockchain and Cryptocurrencies](https://www.eventbrite.es/e/entradas-blockchain-y-criptomonedas-america-latina-evento-online-124390452191) - Internet. @elian presented Decred features coming in v1.6. Organized by Territorio Bitcoin. ([video](https://www.youtube.com/watch?v=dx8D18jlr9s))
-- Oct 29 - [Criptolugares Instagram live](https://twitter.com/criptolugares/status/1321810282264645632) - Internet. In this second live episode with Criptolugares @elian explored the latest updates from Decred. Also there was a giveaway of $100 in DCR among 10 participants. ([video](https://www.instagram.com/p/CG8ebPOnQg7/))
-- Oct 30 - [Hablemos Decred 19](https://es.cointelegraph.com/news/new-edition-of-hablemos-decred-will-deal-with-cryptomontages-in-mexico) - Internet. Guest Manuel Flores (founder of the Bitcoin Monterrey community) shared his vision on the real use cases of Bitcoin and cryptocurrencies in Mexico and Latam, adoption and a future where cryptocurrencies are at the center of the global economy. ([video](https://www.youtube.com/watch?v=ok9TVEXF8mM))
+- 10月2日 - [Hablemos Decred 15](https://twitter.com/Decred_ES/status/1310685771884625920) - 互联网。@elian与来自Bitso和Talent Land的来宾Jose Rodriguez讨论了去中心化金融的未来，不可替代的代币以及使用区块链技术的未来投资。([视频](https://www.youtube.com/watch?v=wkT01O_mRZk))
+- 10月2日 - [Decentralized Governance Panel](https://twitter.com/Decred_ES/status/1310961312105672705) - 互联网。@elian在由Crypto Resources Academy，Kleros和Maker DAO组成的小组中代表Decred项目。讨论是关于分散治理和加密货币的相关性和未来的。([视频](https://twitter.com/Decred_ES/status/1312150389160988673))
+- 10月8日 - [Criptolugares Instagram live](https://twitter.com/Decred_ES/status/1313869491160444929) - 互联网。@elian与Criptolugares的Jose Manuel da Silva进行了交谈，解释了Decred，Politeia的治理模型，以及如何开始对该项目做出贡献。([视频](https://www.instagram.com/p/CGGZc5Gntil/))
+- 10月9日 - [Hablemos Decred 16](https://twitter.com/Decred_ES/status/1313526622927171585) - 互联网。@elian和来宾Anibal Cripto（加密货币顾问）和Ezio Rojas（西班牙Cointelegraph的新闻负责人）介绍了委内瑞拉的加密货币，采用的挑战以及货币的未来。([视频](https://www.youtube.com/watch?v=xxNFxZJuOwA))
+- 10月16日 - [Hablemos Decred 17](https://es.cointelegraph.com/news/21-heads-crypto-art-show-they-will-analyze-the-intersection-between-art-and-cryptocurrencies) - 墨西哥墨西哥城。该活动是在比特币大使馆的“ 21 Heads Crypto Art Show”的演示。小组讨论的主题是加密货币与不可替代令牌的潜在作用。([视频](https://www.youtube.com/watch?v=b89-CTM0bYk))
+- 10月17日 - [Introduction to Blockchain API for Decred (dcrdata)](https://www.eventbrite.com/e/open-source-workshop-introduccion-a-blockchain-api-de-decred-dcrdata-tickets-124107662359) - 互联网。@pablito主持了关于使用Decred区块链数据的研讨会。([视频](https://www.youtube.com/watch?v=XSmdwWykmSo))
+- 10月21日 - [CCOSS 2020](https://www.eventbrite.com.mx/e/cumbre-de-contribuidores-de-open-source-software-ccoss-2020-tickets-91491063233) - 互联网。CCOSS是为期5天的开源活动。@adcade在演讲“加密货币行业的开源承包商模型”中介绍了Decred。([视频](https://www.youtube.com/watch?v=TuRAeBmnScQ))
+- 10月23日 - [Hablemos Decred 18](https://es.cointelegraph.com/news/what-new-launches-are-planned-by-the-decred-ecosystem) - 互联网。@adcade和@elian探索了有关该项目的所有细节以及今年将发布的内容。([视频](https://www.youtube.com/watch?v=rjfYxi6CXyI))
+- 10月29日 - [Blockchain and Cryptocurrencies](https://www.eventbrite.es/e/entradas-blockchain-y-criptomonedas-america-latina-evento-online-124390452191) - 互联网。@elian介绍了v1.6中提供的Decred功能。由Territorio比特币组织。([视频](https://www.youtube.com/watch?v=dx8D18jlr9s))
+- 10月29日 - [Criptolugares Instagram live](https://twitter.com/criptolugares/status/1321810282264645632) - 互联网。在Criptolugares的第二个现场直播中，@ elian探索了Decred的最新更新。此外，在10位参与者中有100美元的DCR赠品。([视频](https://www.instagram.com/p/CG8ebPOnQg7/))
+- 10月30日 - [Hablemos Decred 19](https://es.cointelegraph.com/news/new-edition-of-hablemos-decred-will-deal-with-cryptomontages-in-mexico) - 互联网。Guest Manuel Flores（比特币蒙特雷社区的创始人）分享了他对墨西哥和拉美的比特币和加密货币的实际使用案例，采用率以及加密货币成为全球经济中心的未来的看法。([视频](https://www.youtube.com/watch?v=ok9TVEXF8mM))
 
-Note that Spanish Decred events are often announced by [Cointelegraph in Spanish](https://es.cointelegraph.com/tags/decred).
+请注意，[Cointelegraph](https://es.cointelegraph.com/tags/decred)经常用西班牙语宣布西班牙发生的Decred事件。
 
-Upcoming:
+即将来临：
 
-- Dec 11-12 - [Cripto Latin Fest Online 2020](https://twitter.com/Criptolatinfest/status/1321588347203162112).
+- 12月11日至12日 - [2020年Cripto拉丁音乐节](https://twitter.com/Criptolatinfest/status/1321588347203162112)。
 
 ## Media
 
-[Decred Journal](https://www.publish0x.com/decredjournal), [Politeia Digest](https://www.publish0x.com/politeia-digest) and [Block Commons](https://www.publish0x.com/block-commons) are now on Publish0x.
+[Decred 月报](https://www.publish0x.com/decredjournal), [Politeia Digest](https://www.publish0x.com/politeia-digest)和[Block Commons](https://www.publish0x.com/block-commons)现在会在Publish0x上同步发出。
 
-Selected articles:
+精选文章：
 
-- Decred announces launch of DCRDEX - First exchange with no trading fees seeks to disrupt billion-dollar crypto exchange market by @l1ndseymm ([prweb.com](https://www.prweb.com/releases/decred_announces_launch_of_dcrdex_first_exchange_with_no_trading_fees_seeks_to_disrupt_billion_dollar_crypto_exchange_market/prweb17487844.htm))
-- How I learned to stop worrying and love the Decred DEX by @bochinchero ([publish0x.com](https://www.publish0x.com/bochinchero/how-i-learned-to-stop-worrying-and-love-the-decred-dex-xpjglkw))
-- How to get on DCRDEX MVP by @richardred ([publish0x.com](https://www.publish0x.com/block-commons/how-to-get-on-dcrdex-xolpzmv))
-- Year two of Decred's Politeia in numbers and graphs by @richardred ([blockcommons.red](https://blockcommons.red/publication/politeia-at-2/))
+- Decred宣布推出DCRDEX-第一个不收取交易费用的交易所试图通过@l1ndseymm([prweb.com](https://www.prweb.com/releases/decred_announces_launch_of_dcrdex_first_exchange_with_no_trading_fees_seeks_to_disrupt_billion_dollar_crypto_exchange_market/prweb17487844.htm))破坏十亿美元的加密货币交易市场
+- 我如何学会并喜欢Decred DEX@bochinchero([publish0x.com](https://www.publish0x.com/bochinchero/how-i-learned-to-stop-worrying-and-love-the-decred-dex-xpjglkw))
+- 如何运行DCRDEX MVP@richardred([publish0x.com](https://www.publish0x.com/block-commons/how-to-get-on-dcrdex-xolpzmv))
+- Decred的Politeia的第二年，数字和图表来自@richardred([blockcommons.red](https://blockcommons.red/publication/politeia-at-2/))
 
-Videos:
+视频:
 
-- DCRDEX is live - animation by @karamble ([youtube](https://www.youtube.com/watch?v=XwGJyRBjdtM))
-- Decred DEX flow by [GhostWridah](https://twitter.com/GhostWridah) ([youtube](https://www.youtube.com/watch?v=hwIzAQqxyt8))
-- Decred bi-weekly news update - October 19th, 2020 by @Exitus ([youtube](https://www.youtube.com/watch?v=ZC65h2sklIQ))
-- Staked Podcast 0.0.4 talking about Politeia ([youtube](https://www.youtube.com/watch?v=tbL_auhbsE0))
-- Why run a Decred full node? by Decred Society ([youtube](https://www.youtube.com/watch?v=JX-HWGJZjoE))
-- Interview with Akin Sawyerr (Strategy and Africa Decred Lead) by Staked Podcast ([youtube](https://www.youtube.com/watch?v=dXnA_rZwCTo))
-- Interview with Checkmate (ReadySetCrypto Analyst, Co-host of @RoughConsensus Podcast) by Staked Podcast ([youtube](https://www.youtube.com/watch?v=U6Rcmipfuzo))
-- What is Decred? - DCR beginners guide by Ternio ([youtube](https://www.youtube.com/watch?v=h0jMlrDqxyQ))
+- DCRDEX直播-@karamble制作的动画([youtube](https://www.youtube.com/watch?v=XwGJyRBjdtM))
+- Decred DEX使用记录 [GhostWridah](https://twitter.com/GhostWridah) ([youtube](https://www.youtube.com/watch?v=hwIzAQqxyt8))
+- Decred 双周报2020年10月19日 @Exitus ([youtube](https://www.youtube.com/watch?v=ZC65h2sklIQ))
+- Staked Podcast 0.0.4谈论Politeia ([youtube](https://www.youtube.com/watch?v=tbL_auhbsE0))
+- 为什么要运行Decred完整节点？由Decred Society ([youtube](https://www.youtube.com/watch?v=JX-HWGJZjoE))
+- Staked Podcast对Akin Sawyerr的访谈 ([youtube](https://www.youtube.com/watch?v=dXnA_rZwCTo))
+- Staked Podcast采访Checkmate（ReadySetCrypto分析师，@ RoughConsensus Podcast的共同主持人） ([youtube](https://www.youtube.com/watch?v=U6Rcmipfuzo))
+- 什么是Decred？-Ternio的DCR初学者指南 ([youtube](https://www.youtube.com/watch?v=h0jMlrDqxyQ))
 
-Audio:
+音频:
 
-- Rough Consensus 11. In this episode the spidermen and Chris Dannen from Iterative Capital discuss open source, Bitcoin, Decred, bootstrapping cryptocurrencies and more. ([libsyn](https://roughconsensus.libsyn.com/episode-11-open-source-bitcoin-decred-with-chris-dannen))
-- Decred in Depth 32: Pavel - Grassroots Marketing + Growing the Decred Community ([libsyn](https://decredindepth.libsyn.com/pavel-grassroots-marketing-growing-the-decred-community))
+- Rough Consensus 11. 在这一集中和来自Iterative Capital的Chris Dannen讨论了开源，比特币，Decred，引导加密货币等等。 ([libsyn](https://roughconsensus.libsyn.com/episode-11-open-source-bitcoin-decred-with-chris-dannen))
+- Decred in Depth 32: Pavel-基层营销+扩大Decred社区 ([libsyn](https://decredindepth.libsyn.com/pavel-grassroots-marketing-growing-the-decred-community))
 
-Art/Fun:
+艺术/娱乐：
 
-- The stars await with your [vote](https://twitter.com/coveryfire7777/status/1314866865781592064) by @Exitus
-- Hidden [Hydra](https://twitter.com/real_rouse_/status/1321395402248200193) (Decred v1.6) by @rouse
-- [Chad](https://www.reddit.com/r/decred/comments/jc6vck/chad_memes/) memes by @Checkmate
-- Decred logo [word art](https://twitter.com/coveryfire7777/status/1321964399431720962) by @Exitus
-- [The Big Long](https://twitter.com/ChadDegenerate/status/1321276927252967425): A Decred Story. Coming Soon™️ by @ChadDegenerate
-- Clay Stakey: [Time to Chill](https://twitter.com/RichardRed0x/status/1315375919532515329) by @richardred (18+)
+- @Exitus的星星等待着你的[投票](https://twitter.com/coveryfire7777/status/1314866865781592064) by @Exitus
+- @rouse的Hidden [Hydra](https://twitter.com/real_rouse_/status/1321395402248200193)（Decred v1.6）
+- [Chad](https://www.reddit.com/r/decred/comments/jc6vck/chad_memes/) 段子 @Checkmate
+- Decred标志[艺术字](https://twitter.com/coveryfire7777/status/1321964399431720962) @Exitus
 
-Translations:
+翻译:
 
-- Meet the Disruptors: How Jake Yocom-Piatt of Decred aims to redefine governance, with blockchain technology - [in Spanish](https://medium.com/decred-es/conoce-a-los-disruptores-como-jake-yocom-piat-redefine-la-gobernanza-con-la-tecnolog%C3%ADa-blockchain-d959bb1ac296) by @francov\_
-- How to get on DCRDEX MVP - [in Spanish](https://medium.com/decred-es/c%C3%B3mo-instalar-y-usar-dcrdex-93c59d96f176) by @pablito
-- Blockchain governance - [Part 1](https://github.com/DecredES/traducciones/blob/master/Gobernanza-blockchain-parte-uno.md) and [Part 2](https://github.com/DecredES/traducciones/blob/master/Gobernanza-blockchain-parte-dos.md) in Spanish by @francov\_
-- Decred Journal September 2020 was [translated](https://xaur.github.io/decred-news/) to Arabic (@arij, @abdulrahman4), Chinese (@Dominic), Spanish (@francov\_) and Vietnamese (@duyenemdo, welcome back!). Thank you everyone for spreading the word!
+- 遇见颠覆者：Decred的Jake Yocom-Piatt如何通过区块链技术重新定义治理 - [西班牙语](https://medium.com/decred-es/conoce-a-los-disruptores-como-jake-yocom-piat-redefine-la-gobernanza-con-la-tecnolog%C3%ADa-blockchain-d959bb1ac296) @francov\_
+- 如何使用DCRDEX MVP- @pablito - [西班牙语](https://medium.com/decred-es/c%C3%B3mo-instalar-y-usar-dcrdex-93c59d96f176) by @pablito
+- 区块链治理- @francov_用西班牙语撰写的第[1](https://github.com/DecredES/traducciones/blob/master/Gobernanza-blockchain-parte-uno.md)部分和第[2](https://github.com/DecredES/traducciones/blob/master/Gobernanza-blockchain-parte-dos.md)部分
+- 2020年9月的Decred月报被[翻译](https://xaur.github.io/decred-news/)成阿拉伯文（@arij，@ abdulrahman4），中文（@Dominic），西班牙文（@francov_）和越南语（@duyenemdo，欢迎回来！）。谢谢大家传播！
 
-Other non-English content:
+其它非英语内容：
 
-- "Decred Project, the journey of decentralized credits" was published in a popular Arabic crypto news site [satoshiat.com](https://www.satoshiat.com/2020/09/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D9%85%D9%84%D8%A9-decred-%D8%A8%D8%B1%D9%85%D8%B2%D9%87%D8%A7-dcr/). The article is quite comprehensive and covers everything from the origin and history of Decred, importance of governance and hybrid consensus, to the latest developments like LN, privacy and DEX.
-- @rramires wrote a detailed [guide](https://rramires.medium.com/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-da-dcrdex-no-windows-793d78994fde) and recorded a [video](https://www.youtube.com/watch?v=ZsDLbhc7iBY) in Portuguese on how to set up dcrdex on Windows.
+- “ Decred，去中心化信用的旅程”已在一个流行的阿拉伯加密新闻网站[satoshiat.com](https://www.satoshiat.com/2020/09/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D9%85%D9%84%D8%A9-decred-%D8%A8%D8%B1%D9%85%D8%B2%D9%87%D8%A7-dcr/上发布。本文内容非常全面，涵盖了从Decred的起源和历史，治理的重要性和混合共识到LN，隐私和DEX等最新发展。
+- @rramires撰写了详细的[指南](https://rramires.medium.com/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-da-dcrdex-no-windows-793d78994fde)，并用葡萄牙语录制了有关如何在Windows上设置dcrdex的[视频](https://www.youtube.com/watch?v=ZsDLbhc7iBY)。
 
 ## 社区讨论
 
