@@ -260,40 +260,40 @@ Staking: [30天平均票价](https://dcrstats.com/)为 151.7 DCR (+3.1). [票价
 
 警告：Decred Journal的作者不了解上述任何服务的可信赖性。在将您的个人信息或资产信任给任何实体之前，请先进行自己的研究。
 
-## 外展
+## 外展活动
 
 @Checkmate呼吁所有Decred利益相关者为发布Decred v1.6做准备。[10月16日](https://www.reddit.com/r/decred/comments/jc6qjq/forward_thinking_friday_160_time_to_shine_16/)和[10月23日](https://www.reddit.com/r/decred/comments/jgzs57/forward_thinking_friday_23_october_2020_the/)星期五进行的前瞻性思考中的讨论，以及另一个[组织](https://www.reddit.com/r/decred/comments/ji9gm4/calling_all_stakeholders_prepare_to_release_the/)起来的帖子，收集了数十个想法，可以做些什么来使人们了解Decred v1.6和DCRDEX。一切Decred倡导者可能需要被组织在[这里](https://github.com/decredcommunity/outreach/pull/12)（一切帮助都是值得鼓励的）
 
 Decred拉美发表了他们第二个提案的[第四次报告](https://github.com/decredcommunity/proposals/blob/master/proposals/3c02b67/updates/20201012.md)，其中列出了所有值得注意的事件，媒体形象，业务发展和财务状况。正在探索的一个值得注意的策略是开发人员的外展和西班牙语入门：
 
 - 自7月以来发布了4集CódigoDecred：[Git和GitHub](https://www.youtube.com/watch?v=RFX0P9MKLKg)简介，使用[Python](https://www.youtube.com/watch?v=FGhklclRNt0)探索Decred ，[验证](https://www.youtube.com/watch?v=U3BwnmmF1Ro)Decred二进制文件和DCR[DCR钱包](https://www.youtube.com/watch?v=S2SeVZqnO9A)
-
 - 区块链和dcrdata研讨会简介于10月举行
 - 截至撰写时，新的@decredES_devs电报频道已有70多个用户
-A long-running Blockchain Learning and Development [Challenge](https://www.talentland.talent-republic.tv/challenge/blockchain-learning-challenge-decred/) by Decred Latam was opened for registration in October and will run until December 9. In Phase 1 participants will attend workshops to learn about Bitcoin and blockchain, DAOs, governance, dcrdata API etc. In Phase 2 they will need to build an original project using Decred public blockchain data, release it with ISC license and present in a 3-minute video pitch. All comms, mentoring and support will take place in @decredES\_devs Telegram. 3 winners will get $1,500, $700 and $300 in DCR. 90+ people from 8+ Latam countries have registered so far.
 
-@michae2xl published a [report](https://github.com/decredcommunity/proposals/blob/master/proposals/bc20f98/updates/20201102.md) of his October activities for the Brazil Marketing proposal.
+Decred 拉美长期运行的区块链学习与开发[挑战赛](https://www.talentland.talent-republic.tv/challenge/blockchain-learning-challenge-decred/)于10月开放注册，并将持续到12月9日。在第一阶段，参与者将参加研讨会，以学习有关比特币和区块链，DAO，治理，dcrdata API等的知识。他们将需要使用Decred公共区块链数据构建原始项目，并以ISC许可证发布它，并在3分钟的视频演示中进行演示。所有通信，指导和支持都将在@decredES_devs电报中进行。3名中奖者将获得$ 1,500，$ 700和$ 300的DCR奖励。到目前为止，来自8个以上的拉美国家/地区的90余人已经注册。
 
-@pavel announced that a new withDecred.org giveaway [campaign](https://www.reddit.com/r/decred/comments/jhb5do/withdecred_on_twitter_new_earned_giveaway_campaign/) is live. It uses a smart combination of QR codes and Twitter to maximize engagement and spreading of the message at the same time.
+@ michae2xl发布了他10月份针对“巴西营销”提案的活动的[报告](https://github.com/decredcommunity/proposals/blob/master/proposals/bc20f98/updates/20201102.md)。
 
-New website [WhyDecred.com](https://whydecred.com/) by Paris Smithson has a draft version up for [discussion](https://www.reddit.com/r/decred/comments/jkmhbv/whydecredcom_proposal_open_talk/) and feedback. This project takes the big picture approach by first explaining all the problems with _money_ we have today, and then explaining how Decred solves them. Quality artwork will be used to communicate. A formal [proposal](https://proposals.decred.org/proposals/8a09324) to fund the completion of the website is now being discussed.
+@pavel宣布了一个新的withDecred.org赠品[活动](https://www.reddit.com/r/decred/comments/jhb5do/withdecred_on_twitter_new_earned_giveaway_campaign/)。它使用QR码和Twitter的巧妙组合，以最大程度地同时吸引和传播消息。
 
-A new project [winatoms.com](https://winatoms.com/) by @buck54321 is up for testing. Users can create and solve each other's [puzzles](https://winatoms.com/challenge/TckpZfv9RMCtTkPfFyfGjV7wjfeurpPoky7), winning DCR if the submitted solution is correct. Currently it only works with testnet DCR and project status is "prototype for discussion". Follow [@winatoms](https://twitter.com/winatoms) on Twitter for updates.
+Paris Smithson为新网站[WhyDecred.com](https://whydecred.com/)提供了草稿版本，供讨论和反馈。这个项目采用全局方法，首先说明我们今天遇到的所有金钱问题，然后说明Decred如何解决这些问题。高质量的艺术品将被用于交流。现在正在讨论为网站建设提供资金的正式建议。
 
-Monde PR's achievements for October:
+@ buck54321的一个新项目[winatoms.com](https://winatoms.com/)正在测试中。用户可以创建和解决彼此的难题，如果提交的解决方案正确，则可以赢得DCR。当前，它仅适用于testnet DCR，项目状态为“讨论原型”。在Twitter上关注[@winatoms](https://twitter.com/winatoms)以获取更新。
 
-- created/pitched 2 story ideas to finance and crypto publications including the DCRDEX announcement
-- responded to 4 requests for comments
-- secured 4 media interviews
+Monde PR十月份的成就：
 
-News coverage secured by Monde PR:
+- 为金融和加密货币出版物（包括DCRDEX公告）创建/编写了2个故事创意
+- 回应了4条评论请求
+- 获得4次媒体采访
+
+Monde PR保证的新闻报道：
 
 - the DCRDEX announcement was covered by [Geek Insider](https://geekinsider.com/decred-announces-launch-of-dcrdex/), Fortune's [The Ledger](https://fortune.com/2020/10/21/digital-banks-feature-product-or-business/) newsletter, [Crowdfund Insider](https://www.crowdfundinsider.com/2020/10/168215-decred-a-security-and-scalability-focused-digital-currency-project-launches-dcrdex-a-non-custodial-exchange/), [Bankless Times](https://www.banklesstimes.com/2020/10/21/decred-launches-dcrdex/), [Crypto Comes](https://cryptocomes.com/news/decred-dcr-blockchain-veterans-break-into-defi-turf-dex-goes-live), [Day Crypto Trading](https://daycryptotrading.com/noticias/dcrdex-exchange-descentralizado-decred/), [Crypto Option](https://www.crypto-option.com/decred-announces-the-launch-of-its-first-decentralized-exchange-dcrdex/) and [Crypto Potato](https://cryptopotato.com/decred-announces-dcrdex-decentralized-exchange/), which was syndicated to 3 news outlets including [CoinMarketCap](https://coinmarketcap.com/headlines/news/decred-announces-dcrdex-decentralized-exchange/) and [Bitcoin Insider](https://www.bitcoininsider.org/article/96269/decred-announces-its-first-zero-fees-decentralized-exchange-dcrdex).
 - the announcement was also distributed via [PRweb](http://www.prweb.com/releases/decred_announces_launch_of_dcrdex_first_exchange_with_no_trading_fees_seeks_to_disrupt_billion_dollar_crypto_exchange_market/prweb17487844.htm) which was picked up by 99 news outlets including [MarketWatch](https://www.marketwatch.com/press-release/decred-announces-launch-of-dcrdex---first-exchange-with-no-trading-fees-seeks-to-disrupt-billion-dollar-crypto-exchange-market-2020-10-21) and [Benzinga](https://www.benzinga.com/pressreleases/20/10/n17998254/decred-announces-launch-of-dcrdex-first-exchange-with-no-trading-fees-seeks-to-disrupt-billion-dol). The list of syndications can be viewed [here](https://drive.google.com/file/d/161nx5O9V8gDWIZ_z6rXyvySpv32OOR9g/view?usp=sharing).
 - an article in [Cointelegraph](https://cointelegraph.com/news/defi-market-fall-showcases-how-rising-tvl-doesn-t-tell-the-full-story) featuring commentary by @richardred on the DeFi market, syndicated to 21 news outlets including [Cointelegraph China](https://cointelegraphcn.com/news/defi-market-fall-showcases-how-rising-tvl-doesn-t-tell-the-full-story) and [Cointelegraph Spain](https://es.cointelegraph.com/news/defi-market-fall-showcases-how-rising-tvl-doesn-t-tell-the-full-story)
 - articles in [Cointelegraph Italy](https://it.cointelegraph.com/news/paypal-to-offer-crypto-payments-starting-in-2021) and [TrendOnline](https://www.trend-online.com/prp/paypal-bitcoin/) featuring commentary by @jy-p on PayPal offering cryptocurrency payments
 
-## Events
+## 活动
 
 Attended:
 
@@ -363,29 +363,27 @@ Other non-English content:
 - "Decred Project, the journey of decentralized credits" was published in a popular Arabic crypto news site [satoshiat.com](https://www.satoshiat.com/2020/09/%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D9%85%D9%84%D8%A9-decred-%D8%A8%D8%B1%D9%85%D8%B2%D9%87%D8%A7-dcr/). The article is quite comprehensive and covers everything from the origin and history of Decred, importance of governance and hybrid consensus, to the latest developments like LN, privacy and DEX.
 - @rramires wrote a detailed [guide](https://rramires.medium.com/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-da-dcrdex-no-windows-793d78994fde) and recorded a [video](https://www.youtube.com/watch?v=ZsDLbhc7iBY) in Portuguese on how to set up dcrdex on Windows.
 
-## Community Discussions
+## 社区讨论
 
-Selected Reddit posts:
+精选的Reddit帖子：
 
-- Skepticism Sunday [Oct 4](https://www.reddit.com/r/decred/comments/j56uys/decred_skepticism_sunday_4_october_2020/) got 35 comments
-- Forward Thinking Friday (FTF) [Oct 9](https://www.reddit.com/r/decred/comments/j8btv5/forward_thinking_friday_9_october_2020_airdrops/) imagining a second airdrop and using DCR as collateral
+- Skepticism Sunday在[10月4日](https://www.reddit.com/r/decred/comments/j56uys/decred_skepticism_sunday_4_october_2020/)星期日有35条评论
 
-Selected Twitter discussions:
+精选的Twitter讨论：
 
-- @QuadraQ [explains](https://twitter.com/QuadraQ/status/1317335576048062464) how Decred fixes the weaknesses of Bitcoin in five simple steps
-- Jared Tate notes that DEX is [game changing](https://twitter.com/jaredctate/status/1321293730125651972)
-- Decred Journal got its first official tweet [thread](https://twitter.com/decredproject/status/1318250359740039169) summary to chase down anyone who avoids reading the full thing
-- [shoutout](https://twitter.com/cburniske/status/1317234859899678720) to key features of the v1.6 by @cburniske/@Checkmate: "The full sovereign secure money stack"
+- @QuadraQ通过五个简单步骤说明Decred如何[修复](https://twitter.com/QuadraQ/status/1317335576048062464)比特币的弱点
+- Jared Tate指出DEX正在改变[游戏规则](https://twitter.com/jaredctate/status/1321293730125651972)
+- Decred月报获得了第一个官方推文[主题](https://twitter.com/decredproject/status/1318250359740039169)摘要，以追捕那些避免阅读全文的人
 
-## Markets
+## 市场
 
-In October DCR was trading between USD 11.17-13.84 / BTC 0.00085-0.00124. The average daily rate was $12.01.
+10月DCR美元交易价格在11.17-13.84 / BTC交易价格 0.00085-0.00124之间。每日平均价格为$12.01。
 
-[dcrdex](https://dex.decred.org/) was reported to have traded a total of 4 BTC on [Oct 26](https://matrix.to/#/!mlRZqBtfWHrcmgdTWB:decred.org/$vfxOI7g-SkKc1nMIOid39Wm_Lk1OOSx-6TFxLOmkWAI) and 25 BTC on [Oct 28](https://matrix.to/#/!aNnAOHkWUdNcEXRGjJ:decred.org/$BUsJJwTfvakxhAxuvgxYefQBgaJCe3oIaf6iPyDtY30).
+据报道，[dcrdex](https://dex.decred.org/)在[10月26日](https://matrix.to/#/!mlRZqBtfWHrcmgdTWB:decred.org/$vfxOI7g-SkKc1nMIOid39Wm_Lk1OOSx-6TFxLOmkWAI)的总交易量为4 BTC，在[10月28日](https://matrix.to/#/!aNnAOHkWUdNcEXRGjJ:decred.org/$BUsJJwTfvakxhAxuvgxYefQBgaJCe3oIaf6iPyDtY30)的总交易量为25 BTC 。
 
-Bitcoin fees have [skyrocketed](https://jochen-hoenicke.de/queue/#0,1y) to values unseen for a long time at the end of Oct, which made dcrdex transactions more expensive. The mempool was cleared during the first week of November and fees went back to normal.
+十月底，比特币交易费用[飙升](https://jochen-hoenicke.de/queue/#0,1y)，这使得dcrdex交易变得更加昂贵。内存池在11月的第一周被清除，费用恢复了正常。
 
-dcrdex order books can be viewed at dcrdata's [Market](https://explorer.dcrdata.org/market) dashboard. Volume data will follow.
+可以在dcrdata的[市场](https://explorer.dcrdata.org/market)仪表盘上查看dcrdex订单簿。交易量数据将随之而来。
 
 ## 相关外部信息
 
