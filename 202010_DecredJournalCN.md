@@ -262,14 +262,14 @@ Staking: [30天平均票价](https://dcrstats.com/)为 151.7 DCR (+3.1). [票价
 
 ## 外展
 
-@Checkmate is calling all Decred stakeholders to prepare for the release of the Hidden Hydra aka Decred v1.6. Discussions in Forward Thinking Fridays [Oct 16](https://www.reddit.com/r/decred/comments/jc6qjq/forward_thinking_friday_160_time_to_shine_16/) and [Oct 23](https://www.reddit.com/r/decred/comments/jgzs57/forward_thinking_friday_23_october_2020_the/), and one other call to [organize](https://www.reddit.com/r/decred/comments/ji9gm4/calling_all_stakeholders_prepare_to_release_the/) have collected dozens of ideas what can be done to get the word out about Decred v1.6 and DCRDEX. A cheat sheet with everything a Decred advocate might need is being assembled [here](https://github.com/decredcommunity/outreach/pull/12) (help is welcome).
+@Checkmate呼吁所有Decred利益相关者为发布Decred v1.6做准备。[10月16日](https://www.reddit.com/r/decred/comments/jc6qjq/forward_thinking_friday_160_time_to_shine_16/)和[10月23日](https://www.reddit.com/r/decred/comments/jgzs57/forward_thinking_friday_23_october_2020_the/)星期五进行的前瞻性思考中的讨论，以及另一个[组织](https://www.reddit.com/r/decred/comments/ji9gm4/calling_all_stakeholders_prepare_to_release_the/)起来的帖子，收集了数十个想法，可以做些什么来使人们了解Decred v1.6和DCRDEX。一切Decred倡导者可能需要被组织在[这里](https://github.com/decredcommunity/outreach/pull/12)（一切帮助都是值得鼓励的）
 
-Decred Latam published [4th report](https://github.com/decredcommunity/proposals/blob/master/proposals/3c02b67/updates/20201012.md) of their second proposal that lists all notable events, media presence, business development and finances. A notable strategy being explored is developer outreach and onboarding in Spanish:
+Decred拉美发表了他们第二个提案的[第四次报告](https://github.com/decredcommunity/proposals/blob/master/proposals/3c02b67/updates/20201012.md)，其中列出了所有值得注意的事件，媒体形象，业务发展和财务状况。正在探索的一个值得注意的策略是开发人员的外展和西班牙语入门：
 
-- 4 episodes of Código Decred released since July: Introduction to [Git and GitHub](https://www.youtube.com/watch?v=RFX0P9MKLKg), Exploring Decred with [Python](https://www.youtube.com/watch?v=FGhklclRNt0), [Verifying](https://www.youtube.com/watch?v=U3BwnmmF1Ro) Decred binaries, and [DCR Wallet](https://www.youtube.com/watch?v=S2SeVZqnO9A)
-- intro to blockchain and [dcrdata](https://www.youtube.com/watch?v=XSmdwWykmSo) workshop was held in October
-- new [@decredES_devs](https://t.me/decredES_devs) Telegram channel has 70+ users as of writing
+- 自7月以来发布了4集CódigoDecred：[Git和GitHub](https://www.youtube.com/watch?v=RFX0P9MKLKg)简介，使用[Python](https://www.youtube.com/watch?v=FGhklclRNt0)探索Decred ，[验证](https://www.youtube.com/watch?v=U3BwnmmF1Ro)Decred二进制文件和DCR[DCR钱包](https://www.youtube.com/watch?v=S2SeVZqnO9A)
 
+- 区块链和dcrdata研讨会简介于10月举行
+- 截至撰写时，新的@decredES_devs电报频道已有70多个用户
 A long-running Blockchain Learning and Development [Challenge](https://www.talentland.talent-republic.tv/challenge/blockchain-learning-challenge-decred/) by Decred Latam was opened for registration in October and will run until December 9. In Phase 1 participants will attend workshops to learn about Bitcoin and blockchain, DAOs, governance, dcrdata API etc. In Phase 2 they will need to build an original project using Decred public blockchain data, release it with ISC license and present in a 3-minute video pitch. All comms, mentoring and support will take place in @decredES\_devs Telegram. 3 winners will get $1,500, $700 and $300 in DCR. 90+ people from 8+ Latam countries have registered so far.
 
 @michae2xl published a [report](https://github.com/decredcommunity/proposals/blob/master/proposals/bc20f98/updates/20201102.md) of his October activities for the Brazil Marketing proposal.
