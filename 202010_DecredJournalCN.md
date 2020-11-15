@@ -53,7 +53,7 @@ v1.6版本中包含的工作：
 v1.6的后续工作:
 
 - 继续开发以覆盖测试[rpcserver](https://github.com/decred/dcrd/issues/2069)
-- 对`mining` 程序包惊醒了整理，以方便新用户导航和测试
+- 对`mining` 程序包进行了整理，以方便新用户导航和测试
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
