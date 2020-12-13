@@ -449,5 +449,5 @@ GitHub删除了流行的youtube-dl项目的存储库，该项目允许从YouTube
 * [微博](https://www.weibo.com/DecredProject)
 * [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
 * [中文电报群](https://t.me/decred_cn)
-* [优酷频道](https://i.youku.com/decredproject)
+* [bilibili频道](https://space.bilibili.com/425519478)
 * QQ群号-258412796
