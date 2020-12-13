@@ -377,49 +377,58 @@ Selected Twitter discussions:
 
 ## 市场
 
-In November DCR was trading between USD 11.71-24.78 / BTC 0.00086-0.00135. The average daily rate was $18.19.
+11月DCR美元交易价格在11.71-24.78 USD / BTC交易价格 0.00086-0.00135之间。每日平均价格为$18.19。
 
-The TIE has [demonstrated](https://twitter.com/TheTIEIO/status/1334586246606319623) a correlation between the climbing DCR/USD and 30-day average tweet volume.
+TIE已证明DCR/USD[攀升](https://twitter.com/TheTIEIO/status/1334586246606319623)与30天平均推文量之间存在相关性。
 
-An odd panic spike down to BTC 0.00075 was [observed](https://twitter.com/Mr_DEX89/status/1326602830053068802) on Binance.
+在币安上[观察到](https://twitter.com/Mr_DEX89/status/1326602830053068802)一个奇怪的恐慌峰值，降至0.00075 BTC 。
 
-On Nov 12 @jy-p [informed](https://matrix.to/#/!mlRZqBtfWHrcmgdTWB:decred.org/$ZPdL5sG-IwT034pc7FldzbijUOjAe3u0ja1OkcabU_g) that the DEX had traded 191K DCR in total. This averages to 10 BTC/day.
+11月12日，@ jy-p [说到](https://matrix.to/#/!mlRZqBtfWHrcmgdTWB:decred.org/$ZPdL5sG-IwT034pc7FldzbijUOjAe3u0ja1OkcabU_g)DEX总共交易了191K DCR。平均每天10 BTC。
 
-Those wishing to peek at DCRDEX without installing anything can check the 24/7 [streaming](https://www.youtube.com/channel/UCSxEsULY1DUBsjdkZTbkKRA) on YouTube.
+那些希望在不安装任何内容的情况下窥视DCRDEX的人可以查看YouTube上的24/7[直播](https://www.youtube.com/channel/UCSxEsULY1DUBsjdkZTbkKRA)。
 
 ## 相关外部信息
 
-The replacement for P2SH in BSV's Electrum wallet was [found](https://www.reddit.com/r/bsv/comments/jq9jv3/and_its_gone_popular_bsv_multisig_provides_no/) to be fundamentally broken, allowing anyone to spend coins held in multi-sig hashes on the BSV chain.
+发现从根本上破坏了BSV Electrum钱包中P2SH的替代物，使任何人都可以将Bs链上以多重签名哈希保存的硬币花费掉。
 
-The Value DeFi protocol was [hacked](https://rekt.ghost.io/value-defi-rekt/) for $7M, although the attacker returned $2M to the contract address for unknown reasons. The exploit was executed with a flash loan, coming less than 24 hours after Value DeFi had tweeted (now deleted) to boast about robust security with "flash loan attack prevention".
+Value DeFi协议被黑客盗取了700万美元，尽管攻击者出于未知原因将200万美元退还给了合同地址。该漏洞利用Flash借贷执行，在Value DeFi发推文（现已删除）不到24小时后，吹嘘“ Flash借贷攻击预防”的强大安全性。
 
-The OUSD stablecoin was [hacked](https://medium.com/originprotocol/urgent-ousd-has-hacked-and-there-has-been-a-loss-of-funds-7b8c4a7d534c) with a flash loan used to conduct a reentrancy attack, to print and rebase (debase) OUSD equivalent to almost the entire circulating supply, allowing the hacker to extract $7M in value.
+OUSD稳定币遭到一笔用于进行再入攻击的快速贷款的黑客攻击，以打印和重置（降级）几乎相当于整个流通供应量的OUSD，从而使黑客能够提取700万美元的价值。
 
-A flash loan was also used to [exploit](https://decrypt.co/46575/group-uses-flash-loan-to-game-maker-protocol-governance) MakerDAO's governance system, by borrowing $7M worth of MKR tokens and using these to vote before immediately repaying the loan. MakerDAO's [response](https://forum.makerdao.com/t/urgent-flash-loans-and-securing-the-maker-protocol/4901) has been to disable certain executive functions in case an attacker is able to access them, and extend the cooling off period during which the community can respond to unexpected proposals passing. Such a weakness would not be exposed if MKR holders were required to lock tokens for some time in order to vote - or if the amount of MKR available to borrow was less than the amount legitimately engaged in the governance system.
+通过借入价值700万美元的MKR代币并在立即还清贷款之前对其进行投票，还利用了一笔快速贷款来开发MakerDAO的治理系统。MakerDAO的响应是禁用某些执行功能，以防攻击者能够访问它们，并延长冷静期，在此期间，社区可以应对意外的建议通过。如果要求MKR持有者锁定令牌一段时间以进行投票-或可借用的MKR数量少于合法参与治理系统的数量，则不会暴露这种弱点。
 
-The soft-fork implementation of Schnorr signatures and Taproot was [merged](https://github.com/bitcoin/bitcoin/pull/19953) to Bitcoin Core in October, but as yet there is no agreement on the method for [activating](https://www.coindesk.com/taproot-ready-bitcoin-developers-debate-activation) the change on the network. There is also an unpopular [argument](https://twitter.com/nikzh/status/1332246112196063232) that Taproot will make Bitcoin's privacy situation even worse for regular users by introducing a yet another address scheme. Taproot will add a new type of Schnorr signature, which will allow for greater flexibility with multi-signature wallets and for these transactions to look the same as regular transactions.
+Schnorr签名和Taproot的软叉实现在10月被合并到Bitcoin Core，但是到目前为止，在网络上激活更改的方法尚未达成协议。还有一个不受欢迎的论点，即Taproot通过引入另一种地址方案，将使普通用户的比特币隐私状况更加恶化。Taproot将添加新的Schnorr签名类型，这将为多签名钱包提供更大的灵活性，并使这些交易看起来与常规交易相同。
 
-The Ethereum 2.0 beacon chain deposit contract was [released](https://www.coindesk.com/ethereum-2-0-contract-deposit-mainnet) in early Nov and reached the target 540,000 ETH deposited on Nov 24, with the final 150,000 ETH coming just hours before a deadline set for a Dec 1 launch. The beacon chain is the first of 4 phases to the launch and migration to Ethereum 2.0, in this initial form the chain's only purpose is to ensure PoS validators can remain in consensus.
+以太坊2.0信标链存款合同于11月初发布，并于11月24日达到了目标540,000 ETH，最终的150,000 ETH将在12月1日启动截止日期前的几个小时内到来。信标链是启动和迁移到以太坊2.0的四个阶段中的第一阶段，以这种初始形式，链的唯一目的是确保PoS验证程序可以保持共识。
 
-The latest Bitcoin Cash hard fork [occurred](https://www.coindesk.com/bitcoin-cash-has-split-into-two-new-blockchains-again) in November, this time the focus of dispute is funding for the ABC developers. This hash war had a clear [winner](https://abc.coin.dance/blocks/hashrate), with the BCHN chain (no dev funding) attracting virtually all of the mining power. Ahead of the fork, over 1 million BCH was [observed](https://twitter.com/philip_gradwell/status/1326452365004861440) moving to exchanges (selling a risky asset and receiving split coins are two common reasons for doing so).
+最新的Bitcoin Cash硬分叉发生在11月，这次争议的焦点是为ABC开发人员筹集资金。这场哈希战争显然是赢家，BCHN链（无开发资金）吸引了几乎所有的采矿能力。在分叉之前，观察到超过100万个生物安全信息交换所正在转移到交易所（出售有风险的资产和接收拆分硬币是这样做的两个常见原因）。
 
-Ethereum network experienced a [disruption](https://www.coindesk.com/ethereums-hard-fork-disruption) on Nov 11. A recent version of Geth node software silently fixed a consensus bug that was dormant for over a year. Since it changed consensus code, it had a risk of an unintended hard fork. One vendor discovered the bug independently and seeing that the majority of nodes have upgraded, decided to test it [in production](https://twitter.com/jinglanW/status/1326651349912719360) and see what would happen. To everyone's surprise, among the minority of nodes running old software was Infura, a popular service provider used by "dapps" to sync with Ethereum network. The bug-triggering transaction halted Infura and a bunch of "decentralized" finance apps that relied on it, including Metamask, MakerDAO, Uniswap, Compound, and others. Binance and other exchanges have also halted trading after noticing conflicting transaction histories. Infura resolved the issue within hours and posted a [post-mortem](https://blog.infura.io/infura-mainnet-outage-post-mortem-2020-11-11/) explaining why they didn't upgrade and calling out the danger of silent consensus fixes. Ethereum developer also published a [post-mortem](https://gist.github.com/karalabe/e1891c8a99fdc16c4e60d9713c35401f) for Geth, which explained that the fix was done silently to not attract unwanted attention from attackers. Among other things, the incident teaches us that deploying critical fixes is challenging because it is a trade-off between informing good actors while not informing bad ones.
+以太坊网络在11月11日经历了一次中断。最新版本的Geth节点软件默默地修复了一个休眠状态已超过一年的共识错误。由于更改了共识代码，因此存在意外硬分叉的风险。一家供应商独立发现了该错误，并看到大多数节点已升级，因此决定在生产中对其进行测试。看看会发生什么。令所有人惊讶的是，运行旧软件的少数节点中有Infura，Infura是流行的服务提供商，被“ dapps”用来与以太坊网络同步。触发漏洞的交易使Infura和依赖它的一堆“去中心化”财务应用程序停止了运行，包括Metamask，MakerDAO，Uniswap，Compound等。币安和其他交易所在注意到相互矛盾的交易历史后也暂停了交易。Infura在几个小时内解决了该问题，并发布了验尸报告，解释了为何不进行升级，并指出了无提示共识修复的危险。以太坊开发人员还发布了验尸报告对盖斯（Geth）的解释是，该修复程序是静默完成的，不会引起攻击者的不必要关注。除其他事项外，该事件还告诉我们，部署关键修复程序具有挑战性，因为这是在告知好角色而不通知坏角色之间的权衡。
 
-The Aragon project is in the [process](https://aragon.org/blog/lightweight-process) of decommissioning the ANJ token which was introduced one year ago as the token to use with "Aragon Court", a dispute resolution service for Aragon DAOs. The ANJ token is now seen as a barrier to the success of Aragon Court, and will be bought out by the ANT holders by issuing ~1-5% inflation to the holders of ANJ.
+阿拉贡项目是在过程退役记号的引入一年前的令牌“阿拉贡苑”，阿拉贡DAO的争议解决服务使用ANJ的。现在，ANJ代币被视为Aragon Court成功的障碍，将由ANT持有者通过向ANJ持有者发行约1-5％的通货膨胀而被买断。
 
-US authorities [seized](https://www.coindesk.com/u-s-seized-more-than-1b-in-silk-road-linked-bitcoin-seeks-forfeiture-bloomberg) 69,370 BTC (and forks) worth around $1 billion, apparently with the consent of an unnamed hacker who had stolen the funds from Silk Road in 2013.
+美国当局没收了价值约10亿美元的69,370 BTC（和叉子），显然是在2013年从丝路窃取资金的一位不愿透露姓名的黑客的同意下进行的。
 
 ## 关于月报
 
-This is issue 32 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是Decred Journal的第32期。有关所有问题，镜像和翻译的索引，请参见[这里](https://xaur.github.io/decred-news/)。
 
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of the Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
+在经过最少的健全性检查之后，来自第三方的大多数信息都会直接从来源中继。Decred Journal的作者无权验证所有声明。请当心诈骗，并自行进行调查。
 
-You can submit a story [here](https://github.com/xaur/decred-news/labels/next%20release) to be considered for the next release. [Feedback](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback) and [contributions](https://github.com/xaur/decred-news/blob/docs/contributing.md) are always welcome.
+您可以在[此处](https://github.com/xaur/decred-news/labels/next%20release)提交内容，以供撰写下一期月报内容。我们随时欢迎您的[反馈](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback)和[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)。
 
-Credits (alphabetical order):
+感谢 (字母排列):
 
-- writing and editing: adcade, bee, degeri, elian, l1ndseymm, richardred
-- reviews and feedback: davecgh, dnldd, jholdstock, JoeGruff, lukebp
-- title image: saender
-- funding: Decred Treasury
+- 写作和编辑:  adcade, bee, degeri, elian, l1ndseymm, richardred
+- 评论和反馈: davecgh, dnldd, jholdstock, JoeGruff, lukebp
+- 封面图片: saender
+- 资助： Decred国库
+
+## 中文社区
+
+* [社区网址](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [bilibili频道](https://space.bilibili.com/425519478)
+* QQ群号-258412796
