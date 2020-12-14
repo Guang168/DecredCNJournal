@@ -327,54 +327,54 @@ Monde PR保证的新闻报道：
 
 影片：
 
-- Decred bi-weekly news update - New 1.6 release is inbound & DEX is live! by @Exitus ([youtube](https://www.youtube.com/watch?v=mYfOr4e9MZ8))
-- Decred bi-weekly news update - Development progress, staking participation all-time high - and more! by @Exitus ([youtube](https://www.youtube.com/watch?v=13YGyb27z5E))
-- Decred - The hybrid blockchain by Decred Society ([youtube](https://www.youtube.com/watch?v=dszDzH0OlEo))
-- Luke Powell on Decred governance, hybrid consensus, and new decentralized treasury on the Digital Cash Network ([youtube](https://www.youtube.com/watch?v=4_EafyDcJvk), [odysee.com](https://odysee.com/@DigitalCashNetwork:c/Decred:6), [anchor.fm](https://anchor.fm/digitalcashnetwork))
-- Interview with Permabull Niño (@PermabullNino) by Staked Podcast ([youtube](https://www.youtube.com/watch?v=nRryWFk_l7k))
-- Interview with Le\_Hibou\_ (@Frenchy\_LeDegen) by Staked Podcast ([youtube](https://www.youtube.com/watch?v=N5BnEB6MDLs))
-- Interview with L.O.L. DEFI (@loldefi) by Staked Podcast ([youtube](https://www.youtube.com/watch?v=eqpafR0E1SA))
-- Crypto Convo - Eduardo Lima of the Staked Podcast feat. DubDigital ([youtube](https://www.youtube.com/watch?v=ErezLZ-SG5o))
+- Decred双周报v1.6 和DEX最新进展 @Exitus ([youtube](https://www.youtube.com/watch?v=mYfOr4e9MZ8))
+- Decred双周报 开发进展概要 社区参与度 @Exitus ([youtube](https://www.youtube.com/watch?v=13YGyb27z5E))
+- Decred - 混合区块链 Decred Society ([youtube](https://www.youtube.com/watch?v=dszDzH0OlEo))
+- Luke Powell谈数字现金网络 Decred治理，混合共识和新的去中心化国库 ([youtube](https://www.youtube.com/watch?v=4_EafyDcJvk), [odysee.com](https://odysee.com/@DigitalCashNetwork:c/Decred:6), [anchor.fm](https://anchor.fm/digitalcashnetwork))
+- 对PermabullNiño(@PermabullNino)的采访 Staked Podcast ([youtube](https://www.youtube.com/watch?v=nRryWFk_l7k))
+- 对Le_Hibou_（@Frenchy_LeDegen）的采访 Staked Podcast ([youtube](https://www.youtube.com/watch?v=N5BnEB6MDLs))
+- 对LOL DEFI（@loldefi）的采访 by Staked Podcast ([youtube](https://www.youtube.com/watch?v=eqpafR0E1SA))
+- 加密货币Convo-播客壮举的Eduardo Lima。DubDigital ([youtube](https://www.youtube.com/watch?v=ErezLZ-SG5o))
 
-Audio-only version of Staked Podcast is available on [anchor.fm](https://anchor.fm/staked-podcast). Congrats on hitting [1,000](https://twitter.com/stakedpodcast/status/1326856050465792008) downloads/streams!
+Staked Podcast的纯音频版本可在[anchor.fm](https://anchor.fm/staked-podcast)上获取。恭喜您获得1000次下载/流！
 
-Audio:
+音频:
 
-- Hitechies Podcast - Richard Red and Pramod Dhakalrr talk about DeFi challenges, ETH, banking industry, future of payment systems and more. ([hitechies.com](https://www.hitechies.com/richard-red-at-decred-talks-to-pramod-dhakal/))
-- Crypto Conversation 074 - How the Decred DEX plans to disrupt the crypto exchange market with @jy-p ([bravenewcoin.com](https://bravenewcoin.com/insights/podcasts/how-the-decred-dex-plans-to-disrupt-the-crypto-exchange-market), [youtube](https://www.youtube.com/watch?v=i3LQza2sYNQ))
-- Decred in Depth 33: Seth Simmons on DCR + Monero privacy ([libsyn](https://decredindepth.libsyn.com/seth-simmons-dcr-monero-privacy))
-- Rough Consensus 12: Bitcoin has entered the China shop. The lads are joined by @ck\_SNARKs, co-host of @POVCryptoPod and Bitcoin Magazine, to discuss Bitcoin adoption, lessons from altcoin boom and bust cycles, the role of price within the cryptocurrency space, and more. ([libsyn](https://roughconsensus.libsyn.com/episode-12-bitcoin-has-entered-the-china-shop-w-ck_snarks))
-- Rough Consensus 13: Digital autonomy and freedom. The spidermen are joined by Frank Braun (@thefrankbraun) in a wide ranging conversation covering: cypherpunk digital societies, privacy and freedom in the digital age, role of BTC, DCR, Scrit and others in a brighter future. ([libsyn](https://roughconsensus.libsyn.com/episode-13-digital-autonomy-and-freedom-with-frank-braun))
+- Hitechies播客-Richard Red和Pramod Dhakalrr讨论了DeFi挑战，ETH，银行业，支付系统的未来等等。 ([hitechies.com](https://www.hitechies.com/richard-red-at-decred-talks-to-pramod-dhakal/))
+- 加密对话074-Decred DEX如何计划使用@ jy-p破坏加密交易市场 ([bravenewcoin.com](https://bravenewcoin.com/insights/podcasts/how-the-decred-dex-plans-to-disrupt-the-crypto-exchange-market), [youtube](https://www.youtube.com/watch?v=i3LQza2sYNQ))
+- Decred in Depth 33: Seth Simmons谈DCR + Monero隐私 ([libsyn](https://decredindepth.libsyn.com/seth-simmons-dcr-monero-privacy))
+- Rough Consensus 12: 比特币已进入中国市场。伙计们与@POVCryptoPod和比特币杂志的共同主持人@ck_SNARKs一起讨论了比特币的采用，山寨币繁荣与萧条的教训，价格在加密货币领域的作用等等。 ([libsyn](https://roughconsensus.libsyn.com/episode-12-bitcoin-has-entered-the-china-shop-w-ck_snarks))
+- Rough Consensus 13: 数字自治与自由。蜘蛛侠与Frank Braun（@thefrankbraun）进行了广泛的对话，涉及范围包括：数码朋克数字社会，数字时代的隐私和自由，BTC，DCR，Scrit等在更光明的未来中的作用。 ([libsyn](https://roughconsensus.libsyn.com/episode-13-digital-autonomy-and-freedom-with-frank-braun))
 
-Art and memes:
+艺术和段子:
 
-- Decred DAO space invitation [poster](https://twitter.com/coveryfire7777/status/1324430999212744704) by @Exitus
-- [Swiss Army Knife](https://twitter.com/_Checkmatey_/status/1324835192100413441) of sound money by @Checkmate
-- [Hidden Hydra](https://twitter.com/New_Copernicus/status/1333518011861372928) teaser clip by @New\_Copernicus
-- check out OfficialCrypto's merch designs at [Redbubble](https://officialcryptos.redbubble.com/) _(did you know Decred logo matches perfectly to "[Real Defi](https://twitter.com/OfficialCryptos/status/1325421754777526272)")_?
+- Decred DAO空间邀请[海报](https://twitter.com/coveryfire7777/status/1324430999212744704)由@Exitus 
+- [Swiss Army Knife](https://twitter.com/_Checkmatey_/status/1324835192100413441) 的声音金钱@Checkmate
+- [Hidden Hydra](https://twitter.com/New_Copernicus/status/1333518011861372928)预告片剪辑by @New_Copernicus
+- 在[Redbubble](https://officialcryptos.redbubble.com/)上 查看OfficialCrypto的商品设计（您知道Decred徽标与“ [Real Defi](https://twitter.com/OfficialCryptos/status/1325421754777526272) ”完美匹配）吗？
 
-Translations:
+翻译：
 
-- How I learned to stop worrying and love the Decred DEX - [in Spanish](https://medium.com/decred-es/c%C3%B3mo-aprend%C3%AD-a-dejar-de-preocuparme-y-amar-el-dcrdex-74e4ecf7bf70) by @francov\_
-- Monero and Decred are the new Bitcoin - [in Spanish](https://github.com/DecredES/traducciones/blob/master/Monero-y-Decred-son-el-nuevo-Bitcoin.md) by @francov\_
-- Utility of cryptoassets - [in Spanish](https://github.com/DecredES/traducciones/blob/master/La-utilidad-de-los-criptoactivos.md) by @francov\_
-- Decred Journal October 2020 was [translated](https://xaur.github.io/decred-news/) to Arabic (@arij, @abdulrahman4), Chinese (@Dominic), Spanish (@francov\_) and Vietnamese (@duyenemdo). Vietnamese readers can also catch up on August events. Thank you all for your continued work!
-- If you translate Decred content, come say hi in the [#translations](https://chat.decred.org/#/room/#translations:decred.org) chat room.
+- 我如何学会停止担忧和爱Decred DEX - [西班牙语](https://medium.com/decred-es/c%C3%B3mo-aprend%C3%AD-a-dejar-de-preocuparme-y-amar-el-dcrdex-74e4ecf7bf70) @francov\_
+- 门罗币和Decred是新的比特币 - [西班牙语](https://github.com/DecredES/traducciones/blob/master/Monero-y-Decred-son-el-nuevo-Bitcoin.md) @francov\_
+- cryptoassets的实用程序 - [西班牙语](https://github.com/DecredES/traducciones/blob/master/La-utilidad-de-los-criptoactivos.md) @francov\_
+- 2020年10月的Decred Journal被[翻译成](https://xaur.github.io/decred-news/)阿拉伯语（@arij，@ abdulrahman4），中文（@Dominic），西班牙语（@francov_）和越南语（@duyenemdo）。越南读者还可以赶上八月的活动。谢谢大家的不懈努力！
+- 如果您翻译Decred内容，请在[#translations](https://chat.decred.org/#/room/#translations:decred.org)聊天室打个招呼。
 
 ## 社区讨论
 
-Selected Reddit posts:
+精选的Reddit帖子：
 
-- Forward Thinking _Saturday_ Nov 14 started with the suggestion to pick "Decred is being repriced" as the new [narrative](https://www.reddit.com/r/decred/comments/jtx4y2/forward_thinkingsaturday_14_november/)
-- creating [multisig](https://www.reddit.com/r/decred/comments/jvhxea/how_to_create_a_decred_multisig_wallet/) addresses
-- a collection of original [marketing ideas](https://www.reddit.com/r/decred/comments/jx989d/tiny_marketing_ideas/) by u/oiezz and others
-- why [obfuscating](https://www.reddit.com/r/decred/comments/k39r3v/not_showing_result_of_a_votation_before_it_ends/) votes is a bad idea
-- applicability of higher-level [script languages](https://www.reddit.com/r/decred/comments/k3ioxi/how_feasible_is_to_implement_a_scripting_language/) like Miniscript, Minsc or RGB to Decred
+- 前瞻性思考11月14日星期六开始时，建议选择“ Decred正在重新定价”作为新的[叙述](https://www.reddit.com/r/decred/comments/jtx4y2/forward_thinkingsaturday_14_november/)
+- 创建[多重签名](https://www.reddit.com/r/decred/comments/jvhxea/how_to_create_a_decred_multisig_wallet/)地址
+- u / oiezz等人的原创[营销思想](https://www.reddit.com/r/decred/comments/jx989d/tiny_marketing_ideas/)集合
+- 为什么[混淆](https://www.reddit.com/r/decred/comments/k39r3v/not_showing_result_of_a_votation_before_it_ends/)选票是一个坏主意
+- Miniscript，Minsc或RGB等高级[脚本语言](https://www.reddit.com/r/decred/comments/k3ioxi/how_feasible_is_to_implement_a_scripting_language/)对Decred的适用性=
 
-Selected Twitter discussions:
+精选的Twitter讨论：
 
-- @PermabullNino's diagram of [value flows](https://twitter.com/PermabullNino/status/1323330573444632576) on dcrdex shows why injecting a token into the trade process is not necessary
-- @withdecred's fact-packed Decred pitch [thread](https://twitter.com/withdecred/status/1325147231935098880)
+- @PermabullNino在dcrdex上的[价值流](https://twitter.com/PermabullNino/status/1323330573444632576)图显示了为什么无需在交易过程中注入代币
+- @withdecred的事实丰富的Decred螺距[螺纹](https://twitter.com/withdecred/status/1325147231935098880)
 
 ## 市场
 
