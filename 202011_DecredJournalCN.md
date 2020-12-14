@@ -219,112 +219,113 @@ CMS:
 
 10月发布了4项建议，其中3项已被批准，1项已被放弃。
 
-- GoDCR [proposal](https://proposals.decred.org/proposals/e5c8051) from @raedah requested a budget of $60K to further develop (8 months) a Go-native desktop wallet using [Gio](https://gioui.org/) library. This proposal includes a $1,000/month sponsorship of Gio, for which GoDCR has become a pioneering project. Approved with 92% support and 38% turnout.
-- A related mobile wallets [proposal](https://proposals.decred.org/proposals/bc499c9) from @raedah requested $44K for a further 8 months of work on the Android and iOS wallets. Both mobile wallets and GoDCR share the [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet) component, which allows all three to access new features added to it. Approved with 93% support and 38% turnout.
-- A [proposal](https://proposals.decred.org/proposals/3943bff) from @joegruff to further develop a Decred Address Scanner Android app requested $3,000 for work already completed (app has been open source and in the Google Play store for a year) and $6,000 maximum for necessary updates and new features. By popular demand in comments Joe [agreed](https://proposals.decred.org/proposals/3943bff/comments/15) to add compact filters support to improve privacy, and even work voluntarily if needed (because it was too late to edit the proposal with this feature). The vote was tense as the support stayed [below](https://explorer.dcrdata.org/proposal/decred-address-scanner) 60% most of the time, but eventually the proposal was approved with 67% support and 34% turnout.
-- A [proposal](https://proposals.decred.org/proposals/8a09324) from @paris\_smithson to fund artwork production and marketing for [WhyDecred.com](https://www.whydecred.com/) originally requested $16,800 to fund 16 artworks, was edited to drop the request by $10K (to $6,800), before ultimately being abandoned with the idea that the site will be completed before another proposal is submitted.
+- 来自@raedah的GoDCR[提案](https://proposals.decred.org/proposals/e5c8051)要求预算为6万美元，以使用[Gio](https://gioui.org/)库进一步开发（8个月）Go-native桌面钱包。该提案包括每月$ 1,000的Gio赞助，GoDCR已成为该项目的先驱。批准获得92％的支持和38％的投票率。
+- @raedah提出的相关移动钱包[提案](https://proposals.decred.org/proposals/bc499c9)要求$ 44K，用于在Android和iOS钱包上再工作8个月。移动钱包和GoDCR都共享[dcrlibwallet](https://github.com/planetdecred/dcrlibwallet)组件，该组件允许所有三个组件访问添加到该组件的新功能。获得93％的支持和38％的投票率。
+- 一个[提案](https://proposals.decred.org/proposals/3943bff)来自@joegruff进一步制定Decred地址扫描Android应用程序请求已经完成的工作，$ 3,000（应用程序已经开源，并在谷歌Play商店一年）和$ 6000名最大的必要的更新和新功能。出于评论的普遍需求，Joe同意添加紧凑的过滤器支持以提高隐私性，甚至在需要时可以自愿工作（因为使用此功能编辑提案为时已晚）。投票很紧张，因为大多数情况下支持率保持在60％以下，但最终提案以67％的支持和34％的投票率获得批准。
+- 一个[提案](https://proposals.decred.org/proposals/8a09324)来自@paris_smithson到基金的艺术品的生产和销售为WhyDecred.com最初请求$ 16,800到基金16件作品，被编辑由$ 10K（至$ 6,800个），前最终被抛弃的想法，该网站将完成下降请求在提交另一个提案之前。
 
-Politeia Digest [issue 39](https://blockcommons.red/politeia-digest/issue039/) has more details on the month's proposals.
+《Politeia Digest》[第39期](https://blockcommons.red/politeia-digest/issue039/)提供了有关本月提案的更多详细信息。
 
-[decredcommunity/proposals](https://github.com/decredcommunity/proposals) repository has been reorganized for consistent structure. The repo currently holds 52 updates for 13 proposals. Please submit updates for your proposals as it helps to collect them in one place (vs searching across chats and Reddit) and protect from loss. _(summon @bee if you don't want to face GitHub alone)_
+[decredcommunity/proposals](https://github.com/decredcommunity/proposals)存储库已经过重组，以保持结构的一致性。回购协议当前包含13个投标的52个更新。请提交建议，因为它有助于将建议收集到一个地方（与在聊天室和Reddit中进行搜索相比）并防止丢失。（如果您不想独自面对GitHub，请召唤@bee）
 
 ## 网络
 
-Hashrate: November's [hashrate](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=kgw9asu9-ki79jtll&scale=linear&bin=block&axis=time) opened at ~226 Ph/s and closed ~293 Ph/s, bottoming at 215 Ph/s and peaking at 566 Ph/s throughout the month. Pool hashrate [distribution](https://miningpoolstats.stream/decred) as of Dec 1: UUPool 44%, Poolin 35%, easy2mine 13%, Huobipool 2.6%, Antpool 2%, F2Pool 1.6%, BTC.com 1.2%, Luxor 1%, CoinMine 0.02%.
+全网算力: 11月[哈希率](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=kgw9asu9-ki79jtll&scale=linear&bin=block&axis=time) 以226 Ph/s开启并以 293 Ph/s结束。月内，最低为215 Ph/s，峰值为566 Ph/s。[哈希率分布](https://miningpoolstats.stream/decred) 截至11月1日：UUPool 44%, Poolin 35%, easy2mine 13%, Huobipool 2.6%, Antpool 2%, F2Pool 1.6%, BTC.com 1.2%, Luxor 1%, CoinMine 0.02%.
 
-Staking: [30-day average](https://dcrstats.com/) ticket price was 158.66 DCR (+6.96). The [price](https://explorer.dcrdata.org/charts?chart=ticket-price&zoom=kgw9asu9-ki79jtll&bin=window&axis=time&visibility=true-false&mode=stepped) varied between 139.3-188.9 DCR. [Locked amount](https://explorer.dcrdata.org/charts?chart=ticket-pool-value&zoom=kgw9asu9-ki79jtll&scale=linear&bin=block&axis=time) was 6.09-6.61 million DCR, which corresponded to 49.88-53.64% of the available supply [participating](https://explorer.dcrdata.org/charts?chart=stake-participation&zoom=kgw9asu9-ki79jtll&scale=linear&bin=block&axis=time) in PoS.
+Staking: [30天平均票价](https://dcrstats.com/)为 158.66 DCR (+6.96). [票价](https://explorer.dcrdata.org/charts?chart=ticket-price&zoom=kgw9asu9-ki79jtll&bin=window&axis=time&visibility=true-false&mode=stepped)139.3-188.9 DCR之间变化。[锁定金额](https://explorer.dcrdata.org/charts?chart=ticket-pool-value&zoom=kgw9asu9-ki79jtll&scale=linear&bin=block&axis=time)为609-661万DCR，相当于参与PoS的可用供应量的49.88-53.64%。
 
-The ticket price once again reached new high of 188.85 DCR while stake participation (DCR locked in tickets) has hit an _all-time high_ of 53.6%.
+选票价格再次达到188.85 DCR的新高，而Staking参与（DCR锁定在门票中）达到了历史新高53.6％。
 
-Nodes: Throughout [November](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1604188800000&to=1606780800000) there was an average of 114 public listening nodes and 166 total nodes per dcr.farm. Average version distribution for November: 28% dcrd v1.5.2, 20% dcrd v1.5.1, 13% dcrd v1.6 dev builds, 5% dcrd v1.5.0, 3.4% dcrd v1.7 dev builds, 3% dcrd v1.5 dev and RC builds, 1.1% dcrd v1.4, 12% dcrwallet v1.5.1, 2.5% dcrwallet v1.6 dev and RC builds, 1.3% dcrwallet v1.5, 0.8% dcrwallet v1.4, 9% others.
+节点: 整个[11月](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1604188800000&to=1606780800000)份，每个dcr.farm平均有114个公共侦听节点，总共166个节点。11月的平均版本分布：dcrd v1.5.2、28％dcrd v1.5.1、13％dcrd v1.6开发版本，5％dcrd v1.5.0、3.4％dcrd v1.7开发版本，3％dcrd v1。 5个开发和RC版本，1.1％dcrd v1.4、12％dcrwallet v1.5.1、2.5％dcrwallet v1.6开发和RC版本，1.3％dcrwallet v1.5、0.8％dcrwallet v1.4、9％其他。
 
-In other news:
+其它新闻中：
 
-- Decred network has processed [500,000](https://twitter.com/decredproject/status/1324674240268898304) blocks!
-- there's a [new](https://twitter.com/CoinShuffle_BOT/status/1324444980308594689) [@CoinShuffle_BOT](https://twitter.com/CoinShuffle_BOT) account that tweets Decred's daily mixing stats
-- wealth distribution [study](https://coinmetrics.io/bitcoin-an-unprecedented-experiment-in-fair-distribution/) by Coin Metrics has found that Decred is second after Bitcoin by their Network Distribution Factor metric (note: NDF is based on addresses and many addresses may be controlled by the same person, discussion [here](https://www.reddit.com/r/decred/comments/jrsrbk/network_distribution_factor_ndf_btc_has_the/))
+- Decred网络已处理了[500,000](https://twitter.com/decredproject/status/1324674240268898304)个区块！
+- 有一个[新的](https://twitter.com/CoinShuffle_BOT/status/1324444980308594689) [@CoinShuffle_BOT](https://twitter.com/CoinShuffle_BOT)帐户通报Decred的每日混币统计信息
+- Coin Metrics的财富分布[研究](https://coinmetrics.io/bitcoin-an-unprecedented-experiment-in-fair-distribution/)发现，按其网络分布因子度量，Decred在比特币之后仅次于比特币（注意：NDF基于地址，许多地址可能由同一个人控制，请在[此处](https://www.reddit.com/r/decred/comments/jrsrbk/network_distribution_factor_ndf_btc_has_the/)进行讨论）
 
 ## 整合
 
-Welcome the new [vsp.decredcommunity.org](https://vsp.decredcommunity.org/) service that is running a mainnet instance of the new vspd software. As of writing it has ~70 live and ~30 voted tickets.
+欢迎新[vsp.decredcommunity.org](https://vsp.decredcommunity.org/)运行新VSPD软件的主网选票托管服务。在撰写本文时，它有70张现场选票和30张已投票的票。
 
-Existing providers [decredbrasil.com](https://vspd.decredbrasil.com/), [99split.com](https://vspd.99split.com/), and [stakeminer.com](https://vsp.stakeminer.com/) have all launched vspd instances in addition to their existing dcrstakepool servers listed at [decred.org/vsp](https://decred.org/vsp/).
+现有提供商 [decredbrasil.com](https://vspd.decredbrasil.com/), [99split.com](https://vspd.99split.com/), 和 [stakeminer.com](https://vsp.stakeminer.com/)除了在[decred.org/vsp](https://decred.org/vsp/) 中列出的现有dcrstakepool服务器之外，还都启动了vspd实例。
 
-As of writing we have a total of 5 mainnet vspd services to choose from. Thank you all for supporting [a more private](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/) way to stake.
+在撰写本文时，我们总共有5种主网vspd服务可供选择。谢谢大家支持以[更私密](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/)的方式进行抵押。
 
-[Stakey.net](https://stakey.net/) VSP is now posting status and support updates on [Mastodon](https://citadel.stakey.net/@support).
+[Stakey.net](https://stakey.net/) VSP现在在[Mastodon](https://citadel.stakey.net/@support)上发布状态和支持更新。
 
-Staked [announced](https://twitter.com/staked_us/status/1329173484598124546) the closure of their Decred VSP for lack of economic viability. As of Dec 8, Decred is still featured on the [site](https://staked.us/) and VSP [stats](https://decred.staked.us/stats) page shows 133 active users, 308 total users and 31 live tickets.
+Staked[宣布](https://twitter.com/staked_us/status/1329173484598124546)其Decred VSP的关闭缺乏经济可行性。截至12月8日，该网站上仍显示Decred ，VSP的统计信息页面显示133个活跃用户，308个总用户和31张实时门票。
 
-Hotbit Korea [announced](https://twitter.com/Hotbit_Korea/status/1331412789416534017) that they would list DCR/KRW market on Nov 26.
+Hotbit Korea[宣布](https://twitter.com/Hotbit_Korea/status/1331412789416534017)将于11月26日在DCR / KRW市场上市。
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+警告：Decred Journal的作者不了解上述任何服务的可信赖性。在将您的个人信息或资产信任给任何实体之前，请先进行自己的研究。
 
 ## 采用
 
-dcrtime was [used](https://twitter.com/Decred_BR/status/1328848031832215553) by VotoLegal to record and timestamp donations to Brazil's 2020 municipal elections campaign. According to [Geek Insider](https://geekinsider.com/decred-blockchain-for-brazil-municipal-elections/), more than 24K donations have been tracked totalling more than $600K as of Nov 19. ([discussion](https://www.reddit.com/r/decred/comments/jw4l9o/decred_blockchain_used_in_brazil_election/))
+VotoLegal使用dcrtime记录并为巴西2020年市政选举活动捐赠。据[Geek Insider](https://geekinsider.com/decred-blockchain-for-brazil-municipal-elections/)，超过24K的捐款已追踪总额超过$ 600K
 
 ## 外展活动
 
-To address the longstanding challenge of [spreading content and news](https://www.reddit.com/r/decred/comments/jz0bq1/decred_skepticism_sunday_22_november_2020/gd9auhx/), @Exitus and others have assembled a Marketing Workgroup in Telegram to help coordinate:
+为了应对[传播内容和新闻](https://www.reddit.com/r/decred/comments/jz0bq1/decred_skepticism_sunday_22_november_2020/gd9auhx/)的长期挑战，@ Exitus和其他人已经在Telegram中组建了一个营销工作组来帮助协调：
 
-> Thus far, it has proven to be a productive and a positive force. If anyone would like to participate and add value, please DM me.
+> 迄今为止，已证明这是一种生产力和积极力量。如果有人想参与并增加价值，请与我联系。
 
-Mastodon server launched by Stakey.net VSP for their [support](https://citadel.stakey.net/@support) account is open to the Decred community via this [invite link](https://citadel.stakey.net/invite/tZ2Cm5FX). [Mastodon](https://docs.joinmastodon.org/) is an open-source, self-hosted microblogging alternative to Twitter and is part of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse).
+Stakey.net VSP为[支持](https://citadel.stakey.net/@support)帐户启动的Mastodon服务器通过[此邀请链接](https://citadel.stakey.net/invite/tZ2Cm5FX)向Decred社区开放。[Mastodon](https://docs.joinmastodon.org/)是Twitter的一种开源，自托管的微博替代品，并且是[Fediverse](https://en.wikipedia.org/wiki/Fediverse)的一部分。
 
-Decred is now listed as a sponsor at [gioui.org](https://gioui.org/).
+Decred现在在[gioui.org](https://gioui.org/)上被列为赞助商。
 
-Decred in Spanish published 5th monthly [report](https://github.com/decredcommunity/proposals/blob/master/proposals/3c02b67/updates/20201120.md) of activities and expenses for their second proposal that is ending in December. A big final [report](https://github.com/DecredES/Monthly_reports/blob/master/Final_Report_June_December_2020.md) covering June-December was published together with the [3rd proposal](https://proposals.decred.org/proposals/350f64b) to continue the effort.
+以西班牙语发表的第二份提案的活动和费用第5个月度[报告](https://github.com/decredcommunity/proposals/blob/master/proposals/3c02b67/updates/20201120.md)已于12月结束。出版了一份涵盖6月至12月的重大最终报告以及[第3项提案](https://proposals.decred.org/proposals/350f64b)，以继续努力。
 
-Blockchain Learning Challenge (co-organized by Decred in Spanish and Talent Land Network) had 6 projects that made it to the finals. Participants published source code on GitHub and presented their projects in short video pitches. 5 judges have rated each project in 5 areas (how much data was used and how, how original and relevant for Decred the idea is, how easy it is to use the app, how finished the app is, and how well things are documented). Summary of the finals with all ratings and links is [here](https://github.com/DecredES/Challenge/blob/main/Proyectos-Finalistas.md), and the final award video is [here](https://www.youtube.com/watch?v=CQTitBVUMMY).
+区块链学习挑战赛（由Decred在西班牙和Talent Land Network共同组织）有6个项目进入了决赛。参与者在GitHub上发布了源代码，并以简短的视频演示了他们的项目。5名法官对5个领域的每个项目进行了评分（使用了多少数据，如何使用Decred创意，与创意相关性如何，使用该应用程序有多容易，该应用程序的完成程度如何，以及文件的记录情况如何） 。决赛的摘要和所有的评分和链接都在[这里](https://github.com/DecredES/Challenge/blob/main/Proyectos-Finalistas.md)，最终的颁奖视频在[这里](https://www.youtube.com/watch?v=CQTitBVUMMY)。
 
-@michae2xl published a [report](https://github.com/decredcommunity/proposals/blob/master/proposals/bc20f98/updates/20201203.md) of his November activities for the Brazil Marketing proposal.
+@ michae2xl发布了他11月份针对“巴西营销”提案的活动的[报告](https://github.com/decredcommunity/proposals/blob/master/proposals/bc20f98/updates/20201203.md)。
 
-Monde PR's achievements for November:
+Monde PR 11月份的成就：
 
-- created and pitched one story idea to finance and crypto publications
-- responded to 3 requests for comments
-- secured 2 media interviews
+- 创建并提出了一个故事的想法，以资助和加密出版物
+- 回应了3条评论
+- 获得2次媒体采访
 
-News coverage secured by Monde PR:
+Monde PR保证的新闻报道：
 
-- @richardred appeared on the [Hitechies podcast](https://www.hitechies.com/richard-red-at-decred-talks-to-pramod-dhakal/) talking about decentralization and the future of DeFi
-- @jy-p appeared on the [Crypto Conversation podcast](https://bravenewcoin.com/insights/podcasts/how-the-decred-dex-plans-to-disrupt-the-crypto-exchange-market) talking about the DCRDEX launch
-- an article in [Crypto Briefing](https://cryptobriefing.com/politicians-brazil-use-decred-record-political-donations/) featuring commentary from @jy-p on Decred's use in Brazil's election, syndicated to 6 news outlets including [Coin Market Cap](https://coinmarketcap.com/fr/headlines/news/politicians-brazil-use-decred-record-political-donations/)
-- an article in [Cryptonomist](https://en.cryptonomist.ch/2020/11/19/elections-in-brazil-donations-on-blockchain/) featuring commentary from @jy-p on Decred's use in Brazil's election, syndicated to 3 news outlets including [Bitcoin Ethereum News](https://ms.bitcoinethereumnews.com/blockchain/elections-in-brazil-donations-on-blockchain-the-cryptonomist/)
-- an article in [Geek Insider](https://geekinsider.com/decred-blockchain-for-brazil-municipal-elections/) featuring commentary from @jy-p on Decred's use in Brazil's election
-- an article in [Blockchain Latino America](https://blockchainlatinoamerica.com/blockchain/blockchain-para-donaciones-transparentes/) featuring commentary from @jy-p on Decred's use in Brazil's election
-- an article in [Explica.co](https://www.explica.co/ripples-waves-and-xrp-ahead-on-weekly-top-with-more-than-50-hikes/) about Decred's use in Brazilian election
-- an article in [Cointelegraph](https://cointelegraph.com/news/friendliest-of-them-all-these-could-be-the-best-countries-for-crypto) featuring commentary from @jy-p on the U.S. being the most crypto-friendly country, syndicated to 33 news outlets including [Cointelegraph Italy](https://it.cointelegraph.com/news/friendliest-of-them-all-these-could-be-the-best-countries-for-crypto) and [Investing.com](https://www.investing.com/news/cryptocurrency-news/friendliest-of-them-all-these-could-be-the-best-countries-for-crypto-2353744)
-- an article in [Master of Nodes](https://mastersofnodes.com/decred-blockchain-system-implemented-in-brazil-municipal-elections) featuring commentary from @jy-p on Decred's use in Brazil's election
-- @lukebp appeared on the [Digital Cash Network podcast](https://odysee.com/@DigitalCashNetwork:c/Decred:6) talking about Decred's governance model
-- an article in [Cointelegraph](https://cointelegraph.com/news/decred-co-founder-explains-rationale-behind-bitcoin-bull-and-bear-cycles) featuring commentary from @jy-p on Bitcoin's bull and bear cycles, syndicated to 17 news outlets including [Cointelegraph Germany](https://de.cointelegraph.com/news/decred-co-founder-explains-rationale-behind-bitcoin-bull-and-bear-cycles), [Cointelegraph Brazil](https://cointelegraph.com.br/news/decred-co-founder-explains-rationale-behind-bitcoin-bull-and-bear-cycles) and [Cointelegraph Italy](https://it.cointelegraph.com/news/decred-co-founder-explains-rationale-behind-bitcoin-bull-and-bear-cycles)
+- @richardred出现在[Hitechies播客](https://www.hitechies.com/richard-red-at-decred-talks-to-pramod-dhakal/)中，谈论去中心化和DeFi的未来
+- @ jy-p出现在[加密对话播客](https://bravenewcoin.com/insights/podcasts/how-the-decred-dex-plans-to-disrupt-the-crypto-exchange-market)中，谈论DCRDEX的发布
+- [Crypto Briefing](https://cryptobriefing.com/politicians-brazil-use-decred-record-political-donations/)中的一篇文章，重点介绍了@ jy-p对Decred在巴西大选中的使用的评论，并联合了6个新闻媒体，包括Coin Market Cap
+- [Cryptonomist](https://en.cryptonomist.ch/2020/11/19/elections-in-brazil-donations-on-blockchain/)中的一篇文章，重点介绍@ jy-p对Decred在巴西大选中的使用的评论，并联合了3个新闻媒体，包括[比特币以太坊新闻](https://ms.bitcoinethereumnews.com/blockchain/elections-in-brazil-donations-on-blockchain-the-cryptonomist/
+- [Geek Insider](https://geekinsider.com/decred-blockchain-for-brazil-municipal-elections/)中的一篇文章，重点介绍@ jy-p对Decred在巴西大选中的使用的评论
+- [Blockchain Latino America](https://blockchainlatinoamerica.com/blockchain/blockchain-para-donaciones-transparentes/)上的一篇文章，重点介绍@ jy-p对Decred在巴西大选中的使用的评论
+- [Explica.co](https://www.explica.co/ripples-waves-and-xrp-ahead-on-weekly-top-with-more-than-50-hikes/)中有关Decred在巴西大选中使用的文章
+- [Cointelegraph](https://cointelegraph.com/news/friendliest-of-them-all-these-could-be-the-best-countries-for-crypto)中的一篇文章，收录了@ jy-p关于美国是加密货币最友好国家的评论，并联合了33个新闻媒体，包括Cointelegraph Italy和Investing.com
+- [Master of Nodes](https://mastersofnodes.com/decred-blockchain-system-implemented-in-brazil-municipal-elections)中的一篇文章，重点介绍@ jy-p对Decred在巴西大选中的使用的评论
+- @lukebp出现在[Digital Cash Network](https://odysee.com/@DigitalCashNetwork:c/Decred:6)播客中，谈论Decred的治理模型
+- [Cointelegraph](https://cointelegraph.com/news/decred-co-founder-explains-rationale-behind-bitcoin-bull-and-bear-cycles)中的一篇文章，重点介绍@ jy-p对比特币的牛市和熊市周期的评论，并联合了17个新闻媒体，包括Cointelegraph德国，Cointelegraph巴西和Cointelegraph意大利
 
 ## 活动
 
-Attended:
+参加：
 
-- Nov 2 - [Blockchain Summit Latam](https://www.blockchainsummit.la/) - Internet. @elian gave a talk "Governance in public protocols" about the similarities and differences between several public blockchains and how does Decred stand out from these. ([video](https://www.youtube.com/watch?v=SiMoxHS8AAk&list=PLiJAJqCfjxwIR6q1W0bidE9W4369KMjzz))
-- Nov 5 - [Hablemos Decred 20](https://twitter.com/Decred_ES/status/1323671501212684288) - Internet. @elian and Fernando Quiros of Cointelegraph in Spanish talked about the possible use cases for blockchain technology and cryptocurrencies in the context of journalism, communication and advertising. ([video](https://www.youtube.com/watch?v=V1tl600djBA))
-- Nov 9 - [Talent Land Latinoamerica](https://www.talentland.talent-republic.tv/) - Internet. @adcade, @elian, @francov\_ and @pablito talked about "Our money, our rules: Leaving behind the national currencies". ([video](https://www.youtube.com/watch?v=B0tEYQ2l_RM))
-- Nov 12 - [Hablemos Decred 21](https://twitter.com/Decred_ES/status/1326279642169348096) - Internet. Joined by guest Cristobal Pereira (CEO LatAmTech) to recap Blockchain Summit Latam and discuss perspectives for the Latam ecosystem. ([video](https://www.youtube.com/watch?v=sTaghDgY5k8))
-- Nov 19 - [Hablemos Decred 22](https://twitter.com/Decred_ES/status/1328819770876162049) - Internet. Joined by guest Joaquin Moreno to discuss the topic "Companies buying Bitcoin, are you ready?". ([video](https://www.youtube.com/watch?v=N2hxP8I6hbM))
-- Nov 19 - [University of El Salvador](https://twitter.com/addcade/status/1329605293081288709) - Internet. @adcade talked to students of the economics faculty about cryptocurrencies, Decred, governance and contribution opportunities. It was a 2 hour conference with 77 people, extended to +1 hour with ~45 people.
-- Nov 27 - [Hablemos Decred 23](https://twitter.com/Decred_ES/status/1331372082354130946) - Internet. Joined by @caibarrad from Decred in Spanish and guest Felipe Montoya to discuss similarities and differences between "DLTs" and crypto. ([video](https://www.youtube.com/watch?v=tu5OqKQhSbk))
-- Nov 28 - [Partnership agreement with OMJD](https://decredcommunity.github.io/events/index/20201128.1) - Casablanca, Morocco. Following an online meetup with The Moroccan Organization of Young Decision Makers (OMJD) in July, @arij signed a 2-year agreement with them in order to hold meetups, workshops and conferences about Decred and blockchain technology for the benefit of the young.
+- 11月2日 - [Blockchain Summit Latam](https://www.blockchainsummit.la/) - 互联网。@elian在“公共协议中的治理”演讲中谈到了几个公共区块链之间的异同以及Decred如何从中脱颖而出。([视频](https://www.youtube.com/watch?v=SiMoxHS8AAk&list=PLiJAJqCfjxwIR6q1W0bidE9W4369KMjzz))
+- 11月5日 - [Hablemos Decred 20](https://twitter.com/Decred_ES/status/1323671501212684288) - 互联网。西班牙Cointelegraph的@elian和Fernando Quiros谈到了新闻业，传播业和广告业中区块链技术和加密货币的可能用例。([视频](https://www.youtube.com/watch?v=V1tl600djBA))
+- 11月9日 - [Talent Land Latinoamerica](https://www.talentland.talent-republic.tv/) - 互联网。@ adcade，@ elian，@ francov_和@pablito谈到了“我们的金钱，我们的规则：抛弃本国货币”。([视频](https://www.youtube.com/watch?v=B0tEYQ2l_RM))
+- 11月12日 - [Hablemos Decred 21](https://twitter.com/Decred_ES/status/1326279642169348096) - 互联网。与来宾Cristobal Pereira（LatAmTech首席执行官）一起回顾了Latam区块链峰会，并讨论了Latam生态系统的观点。([视频](https://www.youtube.com/watch?v=sTaghDgY5k8))
+- 11月19日 - [Hablemos Decred 22](https://twitter.com/Decred_ES/status/1328819770876162049) - 互联网。邀请嘉宾华金·莫雷诺（Joaquin Moreno）一起讨论主题“购买比特币的公司，您准备好了吗？”。([视频](https://www.youtube.com/watch?v=N2hxP8I6hbM))
+- 11月19日 - [University of El Salvador](https://twitter.com/addcade/status/1329605293081288709) - 互联网。@adcade与经济学系的学生讨论了加密货币，Decred，治理和贡献机会。这是一个有2人参加的2小时会议，而有45人参加的会议延长到+1小时。
+- 11月27日 - [Hablemos Decred 23](https://twitter.com/Decred_ES/status/1331372082354130946) - 互联网。来自Decred（西班牙语）的@caibarrad和来宾Felipe Montoya参加了会议，讨论了“ DLT”和加密货币之间的异同。([视频](https://www.youtube.com/watch?v=tu5OqKQhSbk))
+- 11月28日 - [Partnership agreement with OMJD](https://decredcommunity.github.io/events/index/20201128.1) - 摩洛哥卡萨布兰卡。在7月与摩洛哥青年决策者组织（OMJD）举行在线聚会之后，@ arij与他们签署了为期2年的协议，以举办有关Decred和区块链技术的聚会，研讨会和会议，以造福年轻人。
 
-Spanish Decred events keep getting announcements at [Cointelegraph in Spanish](https://es.cointelegraph.com/tags/decred).
+西班牙Decred活动不断在西班牙语[Cointelegraph](https://es.cointelegraph.com/tags/decred)上登出。
 
-Our [events repository](https://github.com/decredcommunity/events) that serves as a master source for event data above was upgraded with new "tech". Now key info about events is saved in (mostly human-readable) [YAML files](https://github.com/decredcommunity/events/tree/master/index), and requires writing less prose than full [reports](https://github.com/decredcommunity/events/tree/master/reports). Such structure allows us to generate a [pretty website](https://decredcommunity.github.io/events/index/) where each event gets a nice link with everything about it. This should help with reporting and knowledge sharing. To get your event listed please follow [these steps](https://github.com/decredcommunity/events/blob/master/docs/submit-index.md).
+我们用作以上事件数据主数据源的[事件存储库](https://github.com/decredcommunity/events)已使用新的“技术”进行了升级。现在，有关事件的关键信息被保存在（大多数是人类可读的）[YAML文件](https://github.com/decredcommunity/events/tree/master/index)中，并且与完整的[报告](https://github.com/decredcommunity/events/tree/master/reports)相比，编写的散文要少得多。这样的结构使我们可以生成一个[漂亮的网站](https://decredcommunity.github.io/events/index/)，每个事件在此网站上都具有与其相关的所有链接。这应该有助于报告和知识共享。要列出您的活动，请按照以下步骤操作。
 
 ## 媒体
 
-Selected articles:
+精选文章：
 
-- Polkadot governance overview by @richardred ([blockcommons.red](https://blockcommons.red/crypto-governance-research/overviews/polkadot/))
-- Uniswap/SushiSwap governance overview by @richardred ([blockcommons.red](https://blockcommons.red/crypto-governance-research/overviews/uniswap/))
+- @richardred([blockcommons.red](https://blockcommons.red/crypto-governance-research/overviews/polkadot/))的Polkadot治理概述
+- @richardred的Uniswap / SushiSwap治理概述([blockcommons.red](https://blockcommons.red/crypto-governance-research/overviews/uniswap/))
 
-Videos:
+
+影片：
 
 - Decred bi-weekly news update - New 1.6 release is inbound & DEX is live! by @Exitus ([youtube](https://www.youtube.com/watch?v=mYfOr4e9MZ8))
 - Decred bi-weekly news update - Development progress, staking participation all-time high - and more! by @Exitus ([youtube](https://www.youtube.com/watch?v=13YGyb27z5E))
