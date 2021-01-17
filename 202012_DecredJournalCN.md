@@ -1,6 +1,6 @@
 # Decred Journal – December 2020
 
-![abstract art](../img/journal-202012-384.png)
+![abstract art](img/journal-202012-384.png)
 
 _Image: Restructuring III by @saender_
 
