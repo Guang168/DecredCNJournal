@@ -1,63 +1,61 @@
-# Decred Journal – December 2020
+# Decred月报 – 2020年12月
 
 ![abstract art](img/journal-202012-384.png)
 
-_Image: Restructuring III by @saender_
+_图片: @saender_
 
-Happy New Year everyone!
+祝大家新年快乐！
 
-December highlights:
+十二月的亮点：
 
-- After another month of polishing, v1.6 is looking very shiny indeed. Stand by for Release Candidate 5.
-- On chain metrics went wild in December, including a big jump for the ticket price to 191 DCR.
-- Social media metrics are also taking off, with @decredproject breaking through a key resistance level.
-- DCR was delisted from Upbit, causing the price to spike, and margin trading was added to several other exchanges.
+- 经过一个月的完善，v1.6确实看起来更棒了。候选版本5准备发行。
+- 链上数据在12月变得很疯狂，包括选票价格大幅上涨至191 DCR。
+- 社交媒体指标也在迅速发展，推特@decredproject追踪数突破了关键阻力位。
+- DCR从Upbit退市，导致价格飙升，保证金交易被添加到其它几家交易所。
 
-## Development
+## 开发进展总结
 
-Unless otherwise noted, the work reported here has the "merged to master" status. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能使用。
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-Merged in master and backported to v1.6 release:
+合并在主版本中，并反向移植到v1.6：
 
-- corrected [fee calculations](https://github.com/decred/dcrd/pull/2530) to fix some transactions being considered lower priority in some reorg scenarios
-- whitelisted DCP-5 [violations](https://github.com/decred/dcrd/pull/2533). Due to a bug that has since been fixed, 5 blocks were accepted with an old block version 6 when the majority of the network had already upgraded to version 7. The blocks were otherwise valid and are now whitelisted to allow fully syncing the chain without checkpoints.
+- 更正了[费用计算](https://github.com/decred/dcrd/pull/2530)，以修复某些交易在某些重组方案中被视为较低优先级的交易
+- 将DCP-5[违规](https://github.com/decred/dcrd/pull/2533)列入白名单。由于已修复了bug，当大多数网络已升级到版本7时，旧版本6会接受5个块。这些块原本是有效的，现在已列入白名单，以允许完全同步链而无需检查点
 
-Merged in master:
+合并到主存储库：
 
-- moved [context checks](https://github.com/decred/dcrd/pull/2481) from sanity/positional functions to proper locations to restore the intended restrictions that were in place before the decentralized treasury work. These will be necessary to decouple block processing order from download order.
-- changed main chain [block cache](https://github.com/decred/dcrd/pull/2488) semantics to be less dependent on the order the block data is seen
-- extracted block manager into its own [`netsync`](https://github.com/decred/dcrd/pull/2500) package to improve its testability and more cleanly split syncing with the network from consensus validation
-- several other changes towards [multi-peer](https://github.com/decred/dcrd/issues/1145) block downloading
-- added mining [test harness](https://github.com/decred/dcrd/pull/2480) that will make it easier to add test coverage and help to optimize block template generation code
-- changed RPC server [authentication](https://github.com/decred/dcrd/pull/2486) to use HMAC-SHA256 with random key unique to each startup to harden against certain classes of memory dumping attacks
-- more [rpcserver](https://github.com/decred/dcrd/issues/2069) test coverage
-- multiple places updated to follow error handling [best practices](https://github.com/decred/dcrd/issues/2181)
-- smaller code and test updates across the board
+- 将[上下文检查](https://github.com/decred/dcrd/pull/2481)从健全性/位置功能移动到适当的位置，以恢复在去中心化国库支出工作之前的预期限制。这些将是必要的解耦块处理顺序从下载顺序。
+- 改变了主链[区块缓存](https://github.com/decred/dcrd/pull/2488)语义，减少了对块数据显示顺序的依赖
+- 将数据块管理器提取到其自己的[`netsync`](https://github.com/decred/dcrd/pull/2500)程序包中，以提高其可测试性，并从共识验证中更清晰地拆分与网络的同步
+- 对[对等](https://github.com/decred/dcrd/issues/1145)区块下载的其它一些更改
+- 添加了挖矿[测试工具](https://github.com/decred/dcrd/pull/2480)，可以更轻松地添加测试范围并帮助优化块模板生成代码
+- 更改了RPC服务器[身份验证](https://github.com/decred/dcrd/pull/2486)，以使用HMAC-SHA256以及每次启动时唯一的随机密钥来加强对某些类的内存转储攻击的能力
+- 更多[rpcserver](https://github.com/decred/dcrd/issues/2069)测试范围
+- 更新了多个位置以遵循错误处理[最佳试验](https://github.com/decred/dcrd/issues/2181)
+- 全面的代码更改和测试更新
 
-A total of 51 PRs and 92 commits from 6 contributors were [merged](https://github.com/decred/dcrd/pulls?q=is%3Apr+merged%3A2020-12-01..2020-12-31+sort%3Aupdated-asc), adding 10K and deleting 8K lines of code.
-
-In other news, there have been commits on Dec 30 and Jan 1 but thankfully none on Dec 31!
+总共[合并了](https://github.com/decred/dcrd/pulls?q=is%3Apr+merged%3A2020-12-01..2020-12-31+sort%3Aupdated-asc)来自6个贡献者的51个PR和92个提交，添加了10K行和删除了8K行代码。
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
-- [random coin](https://github.com/decred/dcrwallet/pull/1937) selection for paying VSP fees (this also enables to retry and complete some VSP ticket purchases that were always failing before)
-- fixed [unpublished](https://github.com/decred/dcrwallet/pull/1941) outputs being used for funding other transactions (occurred with VSP fees that stay in unpublished state until the ticket is submitted with the VSP)
-- code refactoring
+- [随机选择](https://github.com/decred/dcrwallet/pull/1937)硬币以支付VSP费用（这也可以重试并完成一些以前总是失败的VSP票证购买）
+- 固定的[未发布](https://github.com/decred/dcrwallet/pull/1941)输出用于为其他交易提供资金（与VSP费用保持一致，直到票证与VSP一起提交时才处于未发布状态）
+- 代码重构
 
-In progress:
+进行中：
 
-- ability to [import](https://github.com/decred/dcrwallet/pull/1945) voting accounts derived from a different seed (to support Trezor staking)
+- 能够[导入](https://github.com/decred/dcrwallet/pull/1945)来自其他种子的投票帐户（支持Trezor赌注）
 
 **[Decrediton](https://github.com/decred/decrediton)**
 
-- added button to mix [all funds](https://github.com/decred/decrediton/pull/3041)
-- added 1.6 [release notes](https://github.com/decred/decrediton/pull/3048) and animated images
-- updated translations (Arabic, Chinese, German, Japanese, Italian, Polish, Spanish)
-- ~23 fixes and UI tweaks
+- 添加了混合[所有资金](https://github.com/decred/decrediton/pull/3041)的按钮
+- 添加了v1.6的[版本说明](https://github.com/decred/decrediton/pull/3048)和动画图像
+- 更新翻译（阿拉伯语，中文，德语，日语，意大利语，波兰语，西班牙语）
+- 〜23个修复和UI调整
 
-There will very likely be an RC5 soon fixing a few remaining issues.
+发布rc5很可能解决一些剩余的问题。
 
 **[Politeia](https://github.com/decred/politeia)**
 
@@ -66,11 +64,11 @@ There will very likely be an RC5 soon fixing a few remaining issues.
 - removed annoying Logout modal and moved the rarely used "Logout permanently" function to Account tab
 - new `politeiavoter` command to [verify](https://github.com/decred/politeia/pull/1355) votes
 - UX improvements for CMS invoice handling and review
-- Politeia and CMS bug fixes
+- Politeia和CMS的bug修复
 
-tlog integration update from @lukebp:
+来自@lukebp的tlog集成更新：
 
-> The ability to retrieve the full timestamp (inclusion proof) for any piece of user submitted data has been added. Frontend work for this is still ongoing. The backend tlog branch is now feature complete and we'll be starting the code review process.
+> 添加了检索用户提交的任何数据的完整时间戳（包含证明）的功能。为此的前端工作仍在进行中。后端tlog分支现已完成功能，我们将开始代码审查过程。
 
 **[vspd](https://github.com/decred/vspd)**
 
