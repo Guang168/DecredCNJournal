@@ -59,11 +59,11 @@ _图片: @saender_
 
 **[Politeia](https://github.com/decred/politeia)**
 
-- removed [CSRF](https://github.com/decred/politeia/pull/1356) on public routes to prevent the possibility to link trickled votes by the CSRF token. The privacy impact was minimal: linking CSRF tokens to trickled votes would require writing additional code, since it is not done automatically by the CSRF library used.
-- end-to-end UI tests for proposal [editing](https://github.com/decred/politeiagui/pull/2227)
-- removed annoying Logout modal and moved the rarely used "Logout permanently" function to Account tab
-- new `politeiavoter` command to [verify](https://github.com/decred/politeia/pull/1355) votes
-- UX improvements for CMS invoice handling and review
+- 删除了公共路线上的[CSRF](https://github.com/decred/politeia/pull/1356)，以防止CSRF令牌链接点滴投票的可能性。对隐私的影响最小：将CSRF令牌链接到点滴投票将需要编写其他代码，因为所使用的CSRF库不会自动完成。
+- 用于提案[编辑](https://github.com/decred/politeiagui/pull/2227)的端到端UI测试
+- 删除了烦人的注销模式，并将很少使用的“永久注销”功能移至“帐户”选项卡
+- [验证](https://github.com/decred/politeia/pull/1355)选票的新`politeiavoter`命令
+- CMS发票处理和查看的UX改进
 - Politeia和CMS的bug修复
 
 来自@lukebp的tlog集成更新：
@@ -72,325 +72,325 @@ _图片: @saender_
 
 **[vspd](https://github.com/decred/vspd)**
 
-- reject reused or old [timestamps](https://github.com/decred/vspd/pull/215)
-- more test coverage for database code
-- smaller fixes and preparations for v1.0 release
+- 拒绝重用或旧[时间戳](https://github.com/decred/vspd/pull/215)
+- 数据库代码的更多测试范围
+- v1.0版本的较小修复程序和其它准备工作
 
 **[dcrpool](https://github.com/decred/dcrpool)**
 
-- [single miner](https://github.com/decred/dcrpool/pull/274) endpoint
-- save [client info](https://github.com/decred/dcrpool/pull/293) in the database and make it available on any dcrpool instance
-- support for NiceHash pool [validator](https://github.com/decred/dcrpool/pull/294) (allows it to connect to dcrpool and query basic stats)
+- [单独挖矿](https://github.com/decred/dcrpool/pull/274)节点
+- 将[客户端信息](https://github.com/decred/dcrpool/pull/293)保存在数据库中，并使其在任何dcrpool实例上可用
+- 支持NiceHash池[验证器](https://github.com/decred/dcrpool/pull/294)（允许它连接到dcrpool并查询基本统计信息）
 
 **[dcrdex](https://github.com/decred/dcrdex)**
 
-- new [max order](https://github.com/decred/dcrdex/pull/842) button that populates quantity fields with the maximum amount possible based on market, market side and wallet balance
-- public [market data](https://github.com/decred/dcrdex/pull/796) API endpoints via HTTP and WebSockets
-- show [account ID](https://github.com/decred/dcrdex/pull/825) for each DEX server
-- favor [confirmed](https://github.com/decred/dcrdex/pull/865) outputs for funding BTC orders
-- [resume](https://github.com/decred/dcrdex/pull/856) swapper from the database (better than the previous approach and less code)
-- allow apps to listen on [IPv6](https://github.com/decred/dcrdex/pull/899) addresses
-- improve colors to differentiate between buy and sell orders
-- many bug fixes and dependency upgrades
+- 新的[最大订单](https://github.com/decred/dcrdex/pull/842)按钮，可根据市场，市场面和钱包余额以最大数量填充数量字段
+- 通过HTTP和WebSockets公开[市场数据](https://github.com/decred/dcrdex/pull/796)API端点
+- 显示每个DEX服务器的[帐户ID](https://github.com/decred/dcrdex/pull/825)
+- 支持为BTC订单提供资金的[已确认](https://github.com/decred/dcrdex/pull/865)产出
+- 从数据库中[恢复](https://github.com/decred/dcrdex/pull/856)交换程序（比以前的方法更好，代码更少）
+- 允许应用监听[IPv6](https://github.com/decred/dcrdex/pull/899)地址
+- 改善颜色以区分买卖订单
+- 许多bug修复和依赖项升级
 
-A total of 28 PRs from 7 contributors were [merged](https://github.com/decred/dcrdex/pulls?q=is%3Apr+merged%3A2020-12-01..2020-12-31+sort%3Aupdated-asc), adding 8K and deleting 5K lines of code.
+来自7个贡献者的28个PR进行了[合并](https://github.com/decred/dcrdex/pulls?q=is%3Apr+merged%3A2020-12-01..2020-12-31+sort%3Aupdated-asc)，增加了8K行以及删除了5K行代码。
 
-Patch release [v0.1.4](https://github.com/decred/dcrdex/milestone/10) is getting close.
+修补程序版本[v0.1.4](https://github.com/decred/dcrdex/milestone/10)即将关闭。
 
 **[dcrandroid](https://github.com/planetdecred/dcrandroid)**
 
-- notification when cfilters are [fetched](https://github.com/planetdecred/dcrandroid/pull/523)
-- bug fixes
+- [提取](https://github.com/planetdecred/dcrandroid/pull/523)cfilter时的通知
+- bug修复
 
-Merged in dcrlibwallet shared library:
+合并到dcrlibwallet共享库中：
 
-- [vspd](https://github.com/planetdecred/dcrlibwallet/pull/163) support
-- method to query information about connected SPV [peers](https://github.com/planetdecred/dcrlibwallet/pull/160)
-- dependency upgrades and bug fixes
+- [vspd](https://github.com/planetdecred/dcrlibwallet/pull/163)支持
+- 查询有关已连接的SPV[对等节点](https://github.com/planetdecred/dcrlibwallet/pull/160)的信息的方法
+- 依赖项升级和bug修复
 
-Note that features added to dcrlibwallet become available for consumption by dcrandroid, dcrios and godcr, assuming these apps add necessary UI.
+请注意，假设这些应用程序添加了必要的UI，添加到dcrlibwallet的功能将可供dcrandroid，dcrios和godcr使用。
 
 **[dcrios](https://github.com/planetdecred/dcrios)**
 
-- [automated](https://github.com/planetdecred/dcrios/pull/707) UI tests for some scenarios using XCUI
+- XCUI在某些情况下[自动](https://github.com/planetdecred/dcrios/pull/707)进行UI测试
 
 **[godcr](https://github.com/planetdecred/godcr)**
 
-- [coin selection](https://github.com/planetdecred/godcr/pull/261) interface
-- [notifications](https://github.com/planetdecred/godcr/pull/274) when text is copied or transaction is created
-- new UI design for main [Wallets](https://github.com/planetdecred/godcr/pull/276) page
-- UI tweaks
-- bug fixes and optimizations
+- [投币](https://github.com/planetdecred/godcr/pull/261)选择界面
+- 复制文本或创建交易时的[通知](https://github.com/planetdecred/godcr/pull/274)
+- [钱包](https://github.com/planetdecred/godcr/pull/276)主页面的新UI设计
+- 用户界面调整
+- bug修复和优化
 
-API for overlaying widgets is required to fully implement the intended designs for godcr. This was brought to the attention of the Gio team on their Slack and is being treated as a priority.
-
-**[tinydecred](https://github.com/decred/tinydecred)**
-
-In progress:
-
-- script to [recover](https://github.com/decred/tinydecred/pull/194) funds from old Copay web wallets (one was previously at wallet.decred.org). The script has already helped to recover someone's mainnet funds.
+需要使用用于覆盖小部件的API才能完全实现Godcr的预期设计。这引起了Gio团队的注意，并被视为优先事项。
 
 **[dcrros](https://github.com/decred/dcrros)**
 
-- [offline mode](https://github.com/decred/dcrros/pull/14) support to fully fulfill the specs for the [Construction API](https://www.rosetta-api.org/docs/construction_api_introduction.html), where certain operations are only performed in offline instances
+- [脱机模式](https://github.com/decred/dcrros/pull/14)支持以完全满足[Construction API](https://www.rosetta-api.org/docs/construction_api_introduction.html)的规范，其中某些操作仅在脱机实例中执行
 
 **[decred.org](https://github.com/decred/dcrweb)**
 
-- removed [inactive](https://github.com/decred/dcrweb/pull/935) contributors
-- dependency upgrades
+- 删除[无效](https://github.com/decred/dcrweb/pull/935)的贡献者
+- 依赖升级
 
-Other:
+其他：
 
-- researchers from Electric Capital have mapped most [repositories](https://www.reddit.com/r/decred/comments/k9g76v/decred_developer_ecosystem_repositories/) in the Decred ecosystem and built a tool to visualize their activity
+- Electric Capital的研究人员已在Decred生态系统中绘制了大多数[存储库](https://www.reddit.com/r/decred/comments/k9g76v/decred_developer_ecosystem_repositories/)，并构建了可视化其活动的工具
 
-## People
+## 人员
 
-Welcome to new first time contributors with code merged to master: @piotrdelikat ([decrediton](https://github.com/decred/decrediton/commits?author=piotrdelikat))!
+欢迎新到来的首次贡献者，他们的代码已合并到主代码库中： @piotrdelikat ([decrediton](https://github.com/decred/decrediton/commits?author=piotrdelikat))!
 
-Community stats as of Jan 2:
+截至1月2日的社区统计数据：
 
-- Twitter followers: 41,320 (+423)
-- Reddit subscribers: 10,051 (+69)
-- Matrix #general users: 287 (+34)
-- Discord users: 1,723 (+222)
-- Telegram users: 2,338 (-1)
-- YouTube subscribers: 4,300 (+50), views: 165K (+3K)
-- LinkedIn followers: 944 (+12)
-- GitHub dcrd stars: 570 (+3), forks: 247 (+1)
+- Twitter 粉丝: 41,320 (+423)
+- Reddit 订阅: 10,051 (+69)
+- Matrix #general 用户: 287 (+34)
+- Discord 用户: 1,723 (+222)
+- Telegram 用户: 2,338 (-1)
+- YouTube 订阅: 4,300 (+50), 观看量: 165K (+3K)
+- LinkedIn 粉丝: 944 (+12)
+- GitHub dcrd 星星: 570 (+3), 叉: 247 (+1)
 
-A few highlights from the stats we [track](https://github.com/decredcommunity/social-media-stats):
+我们[跟踪](https://github.com/decredcommunity/social-media-stats)的统计数据有几个要点：
 
-- [@decredproject](https://twitter.com/decredproject) Twitter broke the magic ["resistance"](https://github.com/decredcommunity/social-media-stats/blob/graphs/graphs/index.md) of 41K followers with an unusual jump by +423
-- [Reddit](https://www.reddit.com/r/decred/) broke 10K subs :tada:
-- [Discord](https://discord.gg/GJ2GXfz) got a nice +14%
-- [DecredTrading](https://t.me/DecredTrading) Telegram got +72% users, to 158 _(God help us)_
-- [@Checkmate](https://twitter.com/_Checkmatey_) got +11% followers (to 3.5K) and made _another_ 1K tweets (~34/day)
-- [DecredES](https://t.me/DecredES) Telegram gained +18% (to 245)
-- [CoinMarketCap](https://coinmarketcap.com/currencies/decred/) has 17.8K watchers for Decred
+- [@decredproject](https://twitter.com/decredproject) Twitter打破了41K的粉丝，增加了+423
+- [Reddit](https://www.reddit.com/r/decred/)突破1万个订阅
+- [Discord](https://discord.gg/GJ2GXfz)提高14％
+- [DecredTrading](https://t.me/DecredTrading) Telegram的用户数增加了72％，达到158位（上帝帮助我们）
+- [@Checkmate](https://twitter.com/_Checkmatey_)得到了+ 11％的关注者（达到3.5K）并发出了1K的推文（〜34 /天）
+- [DecredES](https://t.me/DecredES) 上涨+ 18％（至245）
+- [CoinMarketCap](https://coinmarketcap.com/currencies/decred/)有17.8K的关注量
 
-Thanks to Decred ambassadors on all platforms for raising awareness about the project!
+感谢Decred在所有平台上的贡献者提高了对该项目的认识！
 
-## Governance
+## 治理
 
-In December the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 12,099 DCR and spent 7,466 DCR. Using December's daily average DCR/USD rate of $31.07, this is $376K received and $232K spent. At October's average daily rate of $18.19, the USD figure billed for past work is $136K. As of Jan 5, Treasury balance is 641,260 DCR (30.2 million USD at $47.16).
+十一月[国库](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到12099 DCR，花费7466 DCR。按照9月份的每日平均DCR/USD汇率31.07美元计算，这是37.6万美元的收入和23.2万美元的支出。按11月平均汇率18.19美元计算，当月完成工程的美元账单金额为13.6万美元。截至1月5日，社区开发基金余额为641260 DCR（3020万美元，47.16美元）。
 
-Two proposals were submitted and voted on in December:
+在12月提交了两个提案并进行了投票：
 
-- The third [proposal](https://proposals.decred.org/proposals/350f64b) from the Decred ES team requested $14,800 to fund six months work, scaled down from an initial ask of $42,000, with items relating to Talent Land Blockchain Challenge and Codigo Decred being cut. This proposal was rejected with 54.5% Yes votes, having failed to meet the 60% threshold - turnout was 37%.
-- The Decred Hackathons and LATAM Initial Chapter [proposal](https://proposals.decred.org/proposals/5ce1636) submitted after the hackathons element of the LATAM marketing proposal was cut, the people behind it are members of the ES team. The proposal requested a max budget of $17,000 to create materials for hackathons and run two hackathons, with $3,500 of the budget reserved for prizes. The proposal was rejected with 50.2% yes votes and turnout of 36%.
+- Decred ES团队的第三项[提案](https://proposals.decred.org/proposals/350f64b)要求14,800美元用于资助六个月的工作，从最初的要价42,000美元缩减到与Talent Land Blockchain Challenge和Codigo Decred有关的项目。该提案以54.5％的赞成票被否决，但未能达到60％的门槛-投票率为37％。
+- 在削减了LATAM市场营销[提案](https://proposals.decred.org/proposals/5ce1636)的hackathons元素之后，提交了Decred Hackathons和LATAM Initial Chapter提案，其背后的人是ES团队的成员。该提案要求最高预算为17,000美元，用于创建黑客马拉松的材料并运行两次黑客马拉松，其中3,500美元的预算用于奖励奖品。该提案以50.2％的赞成票和36％的投票率被拒绝。
 
-December is the last billable month for [US](https://proposals.decred.org/proposals/c830ea5), [Latam](https://proposals.decred.org/proposals/3c02b67) and [Brazil](https://proposals.decred.org/proposals/bc20f98) marketing proposals. Contractors working for them will need to submit renewal proposals to stay funded.
+12月是美国，拉美和巴西市场营销提案的最后一个可计费月份。为他们工作的承包商将需要提交续约提案以保持资金。
 
-@JoeGruff has published three short progress and expense [updates](https://github.com/decredcommunity/proposals/tree/master/proposals/3943bff/updates) for his [address scanner](https://proposals.decred.org/proposals/3943bff) proposal.
+@JoeGruff为他的地址扫描器建议发布了三个简短的进度和费用[更新](https://github.com/decredcommunity/proposals/tree/master/proposals/3943bff/updates)。
 
-While December was a quiet month for proposals, there are already two new ones in January, for renewed funding of [DCRDEX](https://proposals.decred.org/proposals/d462ac3) and [Decred in Depth](https://proposals.decred.org/proposals/391108e) (under new management).
+尽管12月对于提案来说是一个安静的月份，但是1月已经有两个新的提案，用于[DCRDEX](https://proposals.decred.org/proposals/d462ac3)和[Decred in Depth](https://proposals.decred.org/proposals/391108e)的新资金（在新的管理下）。
 
-Politeia Digest took a break in December but will be back soon.
+Politeia Digest在12月休息了一段时间，但很快就会回来。
 
-## Network
+## 网络
 
-Hashrate: December's [hashrate](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=ki3ivfpm-kjej4ggy&scale=linear&bin=block&axis=time) opened at ~292 Ph/s and closed ~340 Ph/s, bottoming at 240 Ph/s and peaking at 452 Ph/s throughout the month. Pool hashrate [distribution](https://miningpoolstats.stream/decred) as of Jan 1: UUPool 42%, Poolin 35%, easy2mine 12%, F2Pool 3.9%, Antpool 2.7%, Huobipool 2.6%, BTC.com 1.3%, Luxor 1.2%, CoinMine 0.02%.
+全网算力: 11月[哈希率](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=ki3ivfpm-kjej4ggy&scale=linear&bin=block&axis=time) 以292 Ph/s开启并以 340 Ph/s结束。月内，最低为240 Ph/s，峰值为452 Ph/s。[哈希率分布](https://miningpoolstats.stream/decred) 截至1月1日：UUPool 42%, Poolin 35%, easy2mine 12%, F2Pool 3.9%, Antpool 2.7%, Huobipool 2.6%, BTC.com 1.3%, Luxor 1.2%, CoinMine 0.02%。
 
-Staking: [30-day average](https://dcrstats.com/) ticket price was 163.9 DCR (+5.2). The [price](https://explorer.dcrdata.org/charts?chart=ticket-price&zoom=ki3ivfpm-kjej4ggy&axis=time&visibility=true-false&mode=stepped) varied between 150.6-190.99 DCR. [Locked amount](https://explorer.dcrdata.org/charts?chart=ticket-pool-value&zoom=ki3ivfpm-kjej4ggy&scale=linear&bin=block&axis=time) was 6.42-6.68 million DCR, which corresponded to 52.01-54.20% of the available supply [participating](https://explorer.dcrdata.org/charts?chart=stake-participation&zoom=ki3ivfpm-kjej4ggy&scale=linear&bin=block&axis=time) in PoS.
+Staking: [30天平均票价](https://dcrstats.com/)为 163.9 DCR (+5.2). [票价](https://explorer.dcrdata.org/charts?chart=ticket-price&zoom=ki3ivfpm-kjej4ggy&axis=time&visibility=true-false&mode=stepped)在150.6-190.99 DCR之间变化。[锁定金额](https://explorer.dcrdata.org/charts?chart=ticket-pool-value&zoom=ki3ivfpm-kjej4ggy&scale=linear&bin=block&axis=time)为642-668万DCR，相当于参与PoS的[可用供应量](https://explorer.dcrdata.org/charts?chart=stake-participation&zoom=ki3ivfpm-kjej4ggy&scale=linear&bin=block&axis=time)的52.01-54.20%。
 
-Another month, another high broken. Ticket price peaked at 190.9 DCR and stake participation at 54.2%.
+又高了。门票价格达到DCR 190.9的峰值，锁仓比例达到54.2％。
 
-Nodes: Throughout [December](https://charts.dcr.farm/d/000000014/nodes?orgId=1&from=1606780800000&to=1609459200000) there was an average of 87 public listening nodes and 200 total nodes per dcr.farm. Average version distribution for December: 27% dcrd v1.5.2, 21% dcrd v1.6 dev and RC builds, 16% dcrd v1.5.1, 5% dcrd v1.7 dev builds, 5% dcrd v1.5.0, 3% dcrd v1.5 dev and RC builds, 0.7% dcrd v1.4, 10% dcrwallet v1.5.1, 1.3% dcrwallet v1.6 dev and RC builds, 1% dcrwallet v1.5, 0.7% dcrwallet v1.4, 9% others.
+节点：整个12月，每个dcr.farm平均有87个公共侦听节点，总共200个节点。12月的平均版本分布：27％dcrd v1.5.2、21％dcrd v1.6开发人员和RC版本，16％dcrd v1.5.1、5％dcrd v1.7开发人员版本，5％dcrd v1.5.0、3％dcrd v1.5开发人员和RC版本，0.7％dcrd v1.4、10％dcrwallet v1.5.1、1.3％dcrwallet v1.6开发人员和RC版本，1％dcrwallet v1.5、0.7％dcrwallet v1.4、9％其它。
 
-@Checkmate reports via [Our Network](https://ournetwork.substack.com/p/our-network-issue-50-part-2) newsletter that a number of on-chain metrics are hitting all time highs.
+@Checkmate通过[我们的网络](https://ournetwork.substack.com/p/our-network-issue-50-part-2)新闻报道说，许多链上指标都达到了历史新高。
 
-@PermabullNino reports a ~500K DCR [increase](https://twitter.com/PermabullNino/status/1338497116864438273) in ticket pool balance over the 28-day period.
+@PermabullNino报告说，在28天内，票池余额的DCR[增加](https://twitter.com/PermabullNino/status/1338497116864438273)了约500K 。
 
-Mainnet Lightning Network is slowly growing. Throughout 2020 there was an average of 15 nodes, 30 channels and 6 DCR capacity. As of Jan 8 there are 24 nodes, 42 channels and a total capacity of 8.7 DCR according to @jholdstock's [LN map](https://ln-map.jamieholdstock.com/).
+Mainnet闪电网络正在缓慢增长。整个2020年，平均有15个节点，30个通道和6个DCR容量。截至1月8日，根据@jholdstock的[LN地图](https://ln-map.jamieholdstock.com/)，共有24个节点，42个通道，总容量为8.7 DCR 。
 
-## Integrations
+## 整合
 
-[Ultravsp](https://ultravsp.uk/) (formerly Ultrapool) and [Ubiq](https://dcrvsp.ubiqsmart.com/) VSPs have both launched mainnet instances of the new [vspd](https://github.com/decred/vspd) voting software. Their [dcrstakepool](https://github.com/decred/dcrstakepool) servers will continue running at [legacy.ultravsp.uk](https://legacy.ultravsp.uk/) and [dcr.ubiqsmart.com](https://dcr.ubiqsmart.com/), respectively.
+[Ultravsp](https://ultravsp.uk/)（以前是Ultrapool）和[Ubiq](https://dcrvsp.ubiqsmart.com/) VSP都已启动了新的[vspd](https://github.com/decred/vspd)投票软件的主网实例。他们的[dcrstakepool](https://github.com/decred/dcrstakepool)服务器将分别继续在[legacy.ultravsp.uk](https://legacy.ultravsp.uk/)和 [dcr.ubiqsmart.com](https://dcr.ubiqsmart.com/)上运行。
 
-Note that Ultravsp had to migrate from ultrapool.eu to a UK domain [ultravsp.uk](https://ultravsp.uk/) due to the Brexit [domain mess](https://www.theregister.com/2021/01/05/brexit_81000_eu_domains/), and there will be no automatic redirection due to prohibitive complexity of setting it up. VSP users who bought tickets recently have been notified via email.
+请注意，由于英国脱欧造成域名混乱，Ultravsp必须从ultrapool.eu迁移到英国域[ultravsp.uk](https://ultravsp.uk/)，并且由于设置它的过程过于繁琐，因此不会进行自动重定向。最近通过电子邮件通知了购买票的VSP用户。
 
-Bittrex [added](https://twitter.com/BittrexExchange/status/1341801493964308482) an [instant exchange](https://bittrex.com/instant) feature that allows users to quickly buy assets with a debit card or exchange's fiat balance. DCR was reported to work.
+Bittrex[添加](https://twitter.com/BittrexExchange/status/1341801493964308482)了即时交换功能，该功能使用户可以使用借记卡或交易所的法定余额快速购买资产。据报道DCR交易可以进行。
 
-Binance has enabled [margin trading](https://www.binance.com/en/support/announcement/d3614081a4254d1c815eb07e09f6cda8) for DCR/BTC and DCR/USDT, and announced a 1-week "zero-interest promotion for borrowing DCR". ([discussion](https://www.reddit.com/r/decred/comments/k8gy0d/margin_trading_for_dcr_enabled_on_binance/)) :supervillain:
+Binance已启用DCR / BTC和DCR / USDT的保证金交易，并宣布了为期1周的“借入DCR的零利率促销”。([讨论](https://www.reddit.com/r/decred/comments/k8gy0d/margin_trading_for_dcr_enabled_on_binance/))
 
-[MXC Exchange](https://www.mxc.com/) [added](https://twitter.com/MXC_Exchange/status/1334707659900035075) 5x leverage margin trading DCR/USDT pair in addition to regular DCR/USDT pair they listed in 2019.
 
-Turkish exchange [Bitexen](https://www.bitexen.com/) [announced](https://twitter.com/bitexencom/status/1339858540614266880) the listing of DCR among 11 other [assets](https://destek.bitexen.com/portal/tr/kb/articles/bitexen-11-adet-yeni-coin).
+[MXC交易所](https://www.mxc.com/)  在2019年列出的常规DCR / USDT对之外，MXC Exchange还[增加](https://twitter.com/MXC_Exchange/status/1334707659900035075)了5倍杠杆保证金交易DCR / USDT对。
 
-Malta-based instant exchange aggregator [Swapzone](https://swapzone.io/) has DCR support since [May](https://twiter.com/swapzoneio/status/1263049492963774465) or earlier but in December it got on our radar and was [added](https://github.com/decred/dcrweb/pull/937) to decred.org [exchanges](https://decred.org/exchanges/) page.
+土耳其交易所[Bitexen](https://www.bitexen.com/) 宣布DCR在其他11种资产中[上市](https://destek.bitexen.com/portal/tr/kb/articles/bitexen-11-adet-yeni-coin)。
 
-Korean Upbit has [delisted](https://www.reddit.com/r/decred/comments/kfu4sb/whats_going_on_in_korea_upbit/) DCR, apparently in disagreement with Decred's mission to protect individual privacy. :supervillain:
+总部位于马耳他的即时交换聚合服务商[Swapzone](https://swapzone.io/)自5月或更早就开始提供DCR支持，但是在12月，它受到了我们的关注，并添加到decred.org[交换](https://decred.org/exchanges/)页面。
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+Korean Upbit已将DCR[移除](https://www.reddit.com/r/decred/comments/kfu4sb/whats_going_on_in_korea_upbit/)，显然与Decred保护个人隐私的使命背道而驰。
 
-## Outreach
+警告：Decred Journal的作者不了解上述任何服务的可信赖性。在将您的个人信息或资产信任给任何实体之前，请先进行自己的研究。
 
-Decred in Spanish team published the final [6th report](https://github.com/decredcommunity/proposals/blob/master/proposals/3c02b67/updates/20201211.md) for their 2nd proposal. Voting has ended for their 3rd proposal with significant 54.5% and 50.2% Yes votes but did not reach the required threshold of 60%. The team is collecting [feedback](https://www.reddit.com/r/decred/comments/kkb97s/what_are_your_thoughts_on_the_decred_in_spanish/) on Reddit and planning what to do next.
+## 外展活动
 
-@michae2xl published the final [report](https://github.com/decredcommunity/proposals/blob/master/proposals/bc20f98/updates/20210105.md) that covers December activities for the Brazil marketing proposal.
+Decred西班牙团队发布了他们的第二份提案的最终[第六份报告](https://github.com/decredcommunity/proposals/blob/master/proposals/3c02b67/updates/20201211.md)。第3项提案的投票以54.5％和50.2％的赞成票结束，但未达到要求的60％门槛。该团队正在收集有关Reddit的[反馈](https://www.reddit.com/r/decred/comments/kkb97s/what_are_your_thoughts_on_the_decred_in_spanish/)，并计划下一步的工作。
 
-Monde PR's achievements for December:
+@ michae2xl发布了最终[报告](https://github.com/decredcommunity/proposals/blob/master/proposals/bc20f98/updates/20210105.md)，该报告涵盖了巴西市场营销提案的12月活动。
 
-- created and pitched two story ideas to finance and crypto publications
+Monde PR在12月成就：
 
-News coverage secured by Monde PR:
+- 创造并推销了两个故事创意，以资助和加密出版物
 
-- @jy-p was interviewed by [NASDAQ Trade Talks](https://www.nasdaq.com/videos/tradetalks:-how-can-blockchain-can-be-used-in-elections) talking about Decred's use in Brazilian elections. The interview was mentioned in subsequent articles in [Coin Journal](https://coinjournal.net/news/decred-bounces-off-42-after-spiking-50/), [Crypto Potato](https://cryptopotato.com/decred-dcr-pumps-50-as-social-sentiment-surges/), [Coin Market Cap](https://coinmarketcap.com/headlines/signals/decred-co-founder-on-nasdaq-tradetalks-decred/) and [CryptoMode](https://cryptomode.com/5-reasons-why-you-shouldnt-overlook-decred-dcr/)
-- details of the DCRDEX launch and Decred's use in Brazilian elections were featured in [Cointelegraph](https://cointelegraph.com/news/bitcoin-bull-market-pulls-kusama-ksm-decred-dcr-and-qtum-price-higher)
-- @jy-p was interviewed by the [Geek Insider Podcast](https://www.youtube.com/watch?v=mYK_Awn1wTk) talking about the origin of Decred, the DCRDEX launch and Decred's use in Brazilian elections
-- details of the DCRDEX launch were also featured in [Brave New Coin](https://bravenewcoin.com/insights/decred-price-analysis-active-addresses-hit-all-time-highs-as-trend-metrics)
-- comments from @jy-p's Cointelegraph interview about Bitcoin bull and bear cycles were featured in [Forex Academy](https://www.forex.academy/how-to-spot-bitcoin-bull-bear-cycles-beginners-edition/) and [Inside Bitcoin](https://insidebitcoins.com/news/bitcoin-btc-price-prediction-november-29-2020-2)
-- @jy-p's comments about Ledger's security challenges were featured in [The Union Journal](https://www.theunionjournal.com/ledger-cto-discusses-wallets-safety-after-multiple-security-setbacks/)
+Monde PR保证的新闻报道：
 
-## Events
+- [NASDAQ Trade Talks](https://www.nasdaq.com/videos/tradetalks:-how-can-blockchain-can-be-used-in-elections)对@ jy-p进行了采访，谈到Decred在巴西大选中的用途。随后的[Coin Journal](https://coinjournal.net/news/decred-bounces-off-42-after-spiking-50/), [Crypto Potato](https://cryptopotato.com/decred-dcr-pumps-50-as-social-sentiment-surges/), [Coin Market Cap](https://coinmarketcap.com/headlines/signals/decred-co-founder-on-nasdaq-tradetalks-decred/)和[CryptoMode](https://cryptomode.com/5-reasons-why-you-shouldnt-overlook-decred-dcr/)中提到了采访。
+- 在DCRDEX发布和Decred在巴西选举使用的细节在功能[Cointelegraph](https://cointelegraph.com/news/bitcoin-bull-market-pulls-kusama-ksm-decred-dcr-and-qtum-price-higher)
+- @ jy-p受到[Geek Insider播客](https://www.youtube.com/watch?v=mYK_Awn1wTk)的采访，谈论Decred的起源，DCRDEX的发布以及Decred在巴西大选中的使用
+- [Brave New Coin](https://bravenewcoin.com/insights/decred-price-analysis-active-addresses-hit-all-time-highs-as-trend-metrics)介绍了DCRDEX发布的详细信息
+- @ jy-p的Cointelegraph访谈中有关比特币牛市和熊市周期的评论在[Forex Academy](https://www.forex.academy/how-to-spot-bitcoin-bull-bear-cycles-beginners-edition/)和[Inside Bitcoin](https://insidebitcoins.com/news/bitcoin-btc-price-prediction-november-29-2020-2)发表
+- @ jy-p对Ledger的安全挑战的评论发表在[The Union Journal](https://www.theunionjournal.com/ledger-cto-discusses-wallets-safety-after-multiple-security-setbacks/)
+上
 
-Attended:
+## 活动
 
-- Dec 3 - [Hablemos Decred 24](https://decredcommunity.github.io/events/index/20201203.1) - Internet. @elian and @pablito discussed how private cryptocurrencies are.
-- Dec 5 - [World Blockchain Conference](https://decredcommunity.github.io/events/index/20201205.1) - Wuhan, China. There was no formal Decred event but @Dominic met with old friends at Cobo Wallet, F2Pool and others, to introduce them to the upcoming v1.6 and new consensus rules.
-- Dec 10 - [Hablemos Decred 25](https://decredcommunity.github.io/events/index/20201210.1) - Internet. Decred in Spanish team gathered to review 1 year working in the DAO, the good, the bad, the challenges, and what's coming for 2021.
-- Dec 11 - [Cripto Latin Fest Online 2020](https://decredcommunity.github.io/events/index/20201211.1) - Internet. Co-organized by Paxful Latam. Decred was a VIP sponsor. @elian presented common talking points for Decred and the upcoming Hidden Hydra, which got 1.6K views on Facebook and ~800 on YouTube. In another panel he talked about how to prevent crypto scams.
-- Dec 16 - [UAM Xochimilco](https://twitter.com/addcade/status/1338544856344317953) - Mexico City, Mexico. @adcade talked about Decred's organization and Politeia at Aula Multimedia lab of the UAM Xochimilco university.
-- Dec 18 - [New Year at CR!](https://decredcommunity.github.io/events/index/20201218.1) - Internet. Crypto Resources Academy organized a year-end event and invited partners like Decred, Bitso, Prime XBT DAI, Binance, and others. During the governance panel @elian presented how Decred governance works, the role of Politeia and the decentralization of the Treasury.
-- Dec 24 - [Decred AMA](https://decredcommunity.github.io/events/index/20201224.1) - Internet. This AMA for OKEx in Spanish community took place on their [Telegram](https://t.me/OKExLATAM) with ~500 users. Over 30 questions were asked about Decred's governance, privacy, future developments, history and the DEX. There was also a DCR giveaway ($20 from OKEx and $30 from Decred in Spanish). Over 30 new members joined [@DecredES](https://t.me/DecredES) channel.
-- Dec 30 - [Decred in Spanish New Year Giveaway](https://decredcommunity.github.io/events/index/20201230.1) - Internet. To participate, people needed to join @DecredES Telegram and tell what they like about Decred. Out of 28 comments, 9 best were selected based on the knowledge and understanding of the project and received 3 DCR in total.
+参加：
 
-The information above is available in greater detail in our [events tracker](https://decredcommunity.github.io/events/index/) that is being built to learn what works and improve reporting of marketing efforts. Thanks to everyone [submitting](https://github.com/decredcommunity/events/blob/master/docs/submit-index.md) and reviewing events.
+- 12月3日 - [Hablemos Decred 24](https://decredcommunity.github.io/events/index/20201203.1) - 互联网。@elian和@pablito讨论了私有加密货币的情况。
+- 12月5日 - [World Blockchain Conference](https://decredcommunity.github.io/events/index/20201205.1) - 中国武汉。没有正式的Decred活动，但@Dominic在Cobo Wallet，F2Pool等网站与老朋友会面，向他们介绍即将推出的v1.6和新的共识规则。
+- 12月10日 - [Hablemos Decred 25](https://decredcommunity.github.io/events/index/20201210.1) - 互联网。西班牙团队的代表聚集一堂，对在DAO工作1年进行了回顾，总结了DAO的好，坏，挑战以及2021年的未来。
+- 12月11日 - [Cripto Latin Fest Online 2020](https://decredcommunity.github.io/events/index/20201211.1) - 互联网。Paxful Latam协办。Decred是VIP赞助商。@elian介绍了Decred和即将推出的Hidden Hydra的常见话题，在Facebook上的观看次数为1.6千，在YouTube上的观看次数约为800。在另一个小组中，他谈到了如何防止加密骗局。
+- 12月16日 - [UAM Xochimilco](https://twitter.com/addcade/status/1338544856344317953) - 墨西哥墨西哥城。@adcade在UAM霍奇米尔科大学的Aula多媒体实验室中讨论了Decred的组织和礼节。
+- 12月18日 - [New Year at CR!](https://decredcommunity.github.io/events/index/20201218.1) - 互联网。加密资源学院组织了一次年终活动，邀请了Decred，Bitso，Prime XBT DAI，Binance等合作伙伴。在治理小组会议上，@ elian介绍了Decred治理的工作方式，POLITEIA的作用和财政部的权力下放。
+- 12月24日 - [Decred AMA](https://decredcommunity.github.io/events/index/20201224.1) - 互联网。西班牙社区中的OKEx AMA在其Telegram上进行了约500位用户。有关Decred的治理，隐私，未来发展，历史和DEX的问题超过30个。还有一个DCR赠品（OKEx提供20美元，西班牙语Decred提供30美元）。超过30个新成员加入了@DecredES频道。
+- 12月30日 - [Decred in Spanish New Year Giveaway](https://decredcommunity.github.io/events/index/20201230.1) - 互联网中有所下降。要参与，人们需要加入@DecredES Telegram，并告诉他们他们对Decred的看法。在28条评论中，根据对项目的了解和理解，选择了9条最佳评论，总共获得了3条DCR。
 
-## Media
+上面的信息可在我们的[活动跟踪器](https://decredcommunity.github.io/events/index/)中更详细地获取，该事件跟踪器旨在了解有效的方法并改进营销工作的报告。感谢大家提交和审阅活动。
 
-@mm completed his 7-part series on blockchain governance:
+## 媒体
 
-- [part 1](https://stakey.club/en/blockchain-gov-part1/) introduces cryptocurrencies, money printing and Bitcoin
-- [part 2](https://stakey.club/en/blockchain-gov-part2/) covers the technology behind cryptocurrencies, Proof-of-Work security, incentives and inflation
-- [part 3](https://stakey.club/en/blockchain-gov-part3/) explains basic architecture types (permissionless/permissioned, public/private), Bitcoin governance, privacy and fungibility, and applications of blockchain beyond digital money (esp. e-voting)
-- [part 4](https://stakey.club/en/blockchain-gov-part4/) introduces Decred Project fundamentals (security, consensus, funding, skin in the game) and compares it to pure PoW and PoS approaches
-- [part 5](https://stakey.club/en/blockchain-gov-part5/) assesses blockchain security and governance of Bitcoin vs Decred using @mm's [InvalidationGame](https://github.com/mmartins000/invalidationgame) attack simulator, considering external and internal attacks. Among other details, it provides separate estimates for capex and opex required for attacking Bitcoin and Decred.
-- [part 6](https://stakey.club/en/blockchain-gov-part6/) tests a number of hypotheses against real data (topics include correlation of on-chain metrics with price, voter turnout, OLS model, and more)
-- [part 7](https://stakey.club/en/blockchain-gov-part7/) concludes the series by summarizing simulation results, findings on security, and what Decred can offer to the world
+@mm完成了他的有关区块链治理的7部分系列文章：
 
-> Decred Project not only aims to provide an alternative to financial systems that depend on a trusted third party and to people that depend on the good will of giant financial institutions but also to show how e-voting may happen in a secure and transparent fashion.
+- [1](https://stakey.club/en/blockchain-gov-part1/) 介绍加密货币，货币印刷和比特币
+- [2](https://stakey.club/en/blockchain-gov-part2/) 介绍了加密货币，工作量证明安全性，激励措施和通货膨胀背后的技术
+- [3](https://stakey.club/en/blockchain-gov-part3/) 介绍了基本架构类型（免许可/许可，公共/私有），比特币治理，隐私和可替代性以及数字货币以外的区块链应用（尤其是电子投票）
+- [4](https://stakey.club/en/blockchain-gov-part4/) 介绍Decred Project的基础知识（安全性，共识性，资金，游戏中的皮肤）并将其与纯PoW和PoS方法进行比较
+- [5](https://stakey.club/en/blockchain-gov-part5/) 使用@mm的InvalidationGame攻击模拟器评估了比特币与Decred的区块链安全性和治理，并考虑了外部和内部攻击。除其他细节外，它提供了攻击比特币和Decred所需的资本支出和运营支出的单独估算。
+- [6](https://stakey.club/en/blockchain-gov-part6/) 测试了针对真实数据的许多假设（主题包括链上指标与价格，选民投票率，OLS模型等的相关性）
+- [7](https://stakey.club/en/blockchain-gov-part7/) 通过总结模拟结果，有关安全性的发现以及Decred可以为世界提供的内容来总结该系列
 
-Code in Python/R/SQL used in the research is available on [GitHub](https://github.com/mmartins000?tab=repositories).
+> Decred Project不仅旨在为依赖可信赖的第三方的金融系统和依赖大型金融机构的善意的人们提供替代方案，而且还展示了如何以安全透明的方式进行电子投票。
 
-Selected articles:
+研究中使用的Python / R / SQL代码可在[GitHub](https://github.com/mmartins000?tab=repositories)上获得。
 
-- Decred price analysis - Active addresses hit all-time highs as trend metrics flip bullish by Josh Olszewicz ([bravenewcoin.com](https://bravenewcoin.com/insights/decred-price-analysis-active-addresses-hit-all-time-highs-as-trend-metrics)) - comes with a [video](https://www.youtube.com/watch?v=oCYZS_qJ7us) version
+精选文章：
 
-Videos:
+- Decred价格分析 - 活跃指标创下历史新高，因为趋势指标被Josh Olszewicz([bravenewcoin.com](https://bravenewcoin.com/insights/decred-price-analysis-active-addresses-hit-all-time-highs-as-trend-metrics))）看涨-带有[视频](https://www.youtube.com/watch?v=oCYZS_qJ7us)版本
 
-- Decred bi-weekly news update - Privacy page revamped, lots of dev updates, 1.6 inbound, and more! by @Exitus ([youtube](https://www.youtube.com/watch?v=-3s9_jMWNuA))
-- New yearly high for Decred by Decred Society ([youtube](https://www.youtube.com/watch?v=qw-ohbTObeo))
-- Decred is ideal for savers by Decred Society ([youtube](https://www.youtube.com/watch?v=zYDT0n59C7k))
-- Decred crypto analysis - King DCR AWAKENS! Every action has an equal and opposite reaction! by DubDigital ([youtube](https://www.youtube.com/watch?v=kqAD_PSgyME))
-- Jake Yocom-Piatt talks Decred and blockchain at Geek Insider ([youtube](https://www.youtube.com/watch?v=mYK_Awn1wTk))
-- How can blockchain can be used in elections? with Jake Yocom-Piatt and Jill Malandrino of NASDAQ TradeTalks ([youtube](https://www.youtube.com/watch?v=pBSn_CdQYts))
-- Staked Podcast: Episode 0.0.5 ([youtube](https://www.youtube.com/watch?v=BbBcngzuxCw)) - update on the state of the podcast and an announcement regarding Eduardo and Decred
-- Interview with @BTC\_Uncle by Staked Podcast ([youtube](https://www.youtube.com/watch?v=__7LTz3nQKk), short [clip](https://www.youtube.com/watch?v=3ubS_27FEhE) on why Decred)
-- Interview with Ammar Naseer (@Ammarooni) by Staked Podcast ([youtube](https://www.youtube.com/watch?v=g0bFMuHXrkU))
-- 2020 onchain close out session BTC + DCR by @Checkmate ([youtube](https://www.youtube.com/watch?v=g60ovCl54OA))
-- Decred Deep Dive: Hidden hydra release is incoming! by @Checkmate ([youtube](https://www.youtube.com/watch?v=3AxBa-EE8RM), [discussion](https://www.reddit.com/r/decred/comments/klz8ue/decred_deep_dive_hidden_hydra/))
+视频:
 
-Audio:
+- Decred 双周报 - 修改了隐私页面，大量开发人员更新，1.6入站等等！@Exitus ([youtube](https://www.youtube.com/watch?v=-3s9_jMWNuA))
+- 价格年度新高 Decred Society ([youtube](https://www.youtube.com/watch?v=qw-ohbTObeo))
+- Decred 非常适合储蓄用户 Decred Society ([youtube](https://www.youtube.com/watch?v=zYDT0n59C7k))
+- Decred加密分析 DubDigital ([youtube](https://www.youtube.com/watch?v=kqAD_PSgyME))
+- ake Yocom-Piatt在Geek Insider上谈论Decred和区块链 ([youtube](https://www.youtube.com/watch?v=mYK_Awn1wTk))
+-区块链如何在选举中使用？与纳斯达克TradeTalks的Jake Yocom-Piatt和Jill Malandrino ([youtube](https://www.youtube.com/watch?v=pBSn_CdQYts))
+- Staked Podcast对@BTC_Uncle的采访 ([youtube](https://www.youtube.com/watch?v=__7LTz3nQKk))
+- Staked Podcast对Ammar Naseer（@Ammarooni）的采访([youtube](https://www.youtube.com/watch?v=g0bFMuHXrkU))
+- @Checkmate的2020年onchain封闭会议BTC + DCR([youtube](https://www.youtube.com/watch?v=g60ovCl54OA))
+- Decred Deep Dive：隐藏的hydra释放即将到来！由@Checkmate([youtube](https://www.youtube.com/watch?v=3AxBa-EE8RM), [discussion](https://www.reddit.com/r/decred/comments/klz8ue/decred_deep_dive_hidden_hydra/))
 
-- Rough Consensus 14: Rehashing bull market happenings. @Checkmate and @PermabullNino share their thoughts on Bitcoin ATHs, ETH 2.0, DCR 1.6, and more. ([libsyn](https://roughconsensus.libsyn.com/episode-14-rehashing-bull-market-happenings))
-- Rough Consensus 15: The next paradigm. Mav from Ready Set Crypto hops on the pod to talk big picture crypto. ([libsyn](https://roughconsensus.libsyn.com/episode-15-the-next-paradigm-with-mav-ready-set-crypto))
+音频:
 
-Art/fun:
+- Rough Consensus 14: 重塑牛市。@Checkmate和@PermabullNino分享了他们对比特币ATH，ETH 2.0，DCR 1.6等的想法。 ([libsyn](https://roughconsensus.libsyn.com/episode-14-rehashing-bull-market-happenings))
 
-- hilarious Decred [GOT cover](https://streamable.com/iam635) by @degeri
-- "They [don't know](https://twitter.com/aithzakaria1/status/1335706207395450880) I have Decred" by @aithzakaria1
-- it's [time](https://twitter.com/aithzakaria1/status/1330999761634258948) for Decred, Ben! by @aithzakaria1
-- survival through adaptation - [merch](https://twitter.com/OfficialCryptos/status/1338551937818562561) design by @OfficialCryptos
-- DCR violently [cutting through CMC](https://twitter.com/exitusdcr/status/1343774006344880130) by @Exitus
-- [Digital Nation State](https://twitter.com/AGNFAB1/status/1338963085537718275) by @AGNFAB
-- @New\_Copernicus shared more teaser clips on [Hidden Hydra](https://twitter.com/New_Copernicus/status/1336044535370092546), [Decred Rabbit Hole](https://twitter.com/New_Copernicus/status/1339649654842126337), cheerful [Happy Holidays!](https://twitter.com/New_Copernicus/status/1341665478935076865) and [Happy New Year!](https://twitter.com/New_Copernicus/status/1344509258176622593)
+艺术/娱乐：
 
-Translations:
+- 爆笑Decred [GOT cover](https://streamable.com/iam635) @degeri
+- @ aithzakaria1的“他们[不知道](https://twitter.com/aithzakaria1/status/1335706207395450880)我已经拒绝了”
+- 现在是Decred的[时间](https://twitter.com/aithzakaria1/status/1330999761634258948)了，Ben！@ aithzakaria1
+- 适应生存- @OfficialCryptos设计的[商品](https://twitter.com/OfficialCryptos/status/1338551937818562561)
+- DCR[暴力切断](https://twitter.com/exitusdcr/status/1343774006344880130)CMC@Exitus
+- @AGNFAB的[数字国家状态](https://twitter.com/AGNFAB1/status/1338963085537718275)
+- @New_Copernicus在[Hidden Hydra](https://twitter.com/New_Copernicus/status/1336044535370092546), [Decred Rabbit Hole](https://twitter.com/New_Copernicus/status/1339649654842126337), cheerful [Happy Holidays!](https://twitter.com/New_Copernicus/status/1341665478935076865)和[Happy New Year!](https://twitter.com/New_Copernicus/status/1344509258176622593)上分享了更多预告片！和新年快乐！
 
-- Arabic translation of "Decred: Where did it all begin?" published at [satoshiat.com](https://www.satoshiat.com/2020/12/%d8%a7%d9%84%d8%af%d9%8a%d9%83%d8%b1%d9%8a%d8%af-%d9%85%d9%86-%d8%a3%d9%8a%d9%86-%d8%a8%d8%af%d8%a3%d8%aa%d8%9f/) crypto-focused website.
-- The general "Utility of cryptoassets" and more technical "Security hardening for digital wallets" and "Verifying digital signatures: Decred" from stakey.club translated to Spanish by @francov\_ (see Spanish [translations](https://github.com/DecredES/traducciones) repo and their [Medium](https://medium.com/decred-es))
-- Decred Journal November 2020 was [translated](https://xaur.github.io/decred-news/) to Arabic (@arij, @abdulrahman4), Chinese (@Dominic), and Spanish (@francov\_). Thank you all for spreading Decred news!
-- all known translations are tracked in [this index](https://github.com/decredcommunity/translations/blob/master/index.md) that has 305 items as of writing
+翻译：
 
-Other non-English content:
+- 阿拉伯语翻译：“ decred：一切从哪里开始？” 发布在[satoshiat.com](https://www.satoshiat.com/2020/12/%d8%a7%d9%84%d8%af%d9%8a%d9%83%d8%b1%d9%8a%d8%af-%d9%85%d9%86-%d8%a3%d9%8a%d9%86-%d8%a8%d8%af%d8%a3%d8%aa%d8%9f/)加密专用网站上。
+- 一般的“加密资产的实用性”和更技术性的“数字钱包的安全性增强”和“验证数字签名：拒绝”，由@francov_译成西班牙文（请参见西班牙语[翻译库](https://github.com/DecredES/traducciones)及其媒介）
+- 2020年11月的Decred月报被[翻译成](https://xaur.github.io/decred-news/)阿拉伯文（@ arij，@ abdulrahman4），中文（@Dominic）和西班牙文（@francov_）。谢谢大家传播Decred月报！
+- 截至撰写时，[该索引中](https://github.com/decredcommunity/translations/blob/master/index.md)已跟踪305项所有已知译文
 
-- "The Decred cryptocurrency increased by 50% and surpassed DeFi coins" ([es.cointelegraph.com](https://es.cointelegraph.com/news/the-decred-cryptocurrency-increased-by-50-and-surpassed-defi-coins))
-- @arij recorded a greatly improved Decred introduction in Arabic ([youtube](https://www.youtube.com/watch?v=k6xXL_ttSDI))
+其它非英语内容：
 
-## Community Discussions
+- “Decred的加密货币增加了50％，超过了DeFi硬币” ([es.cointelegraph.com](https://es.cointelegraph.com/news/the-decred-cryptocurrency-increased-by-50-and-surpassed-defi-coins))
+- @arij用阿拉伯语大大改进的Decred简介([youtube](https://www.youtube.com/watch?v=k6xXL_ttSDI))
 
-Selected Reddit posts:
+## 社区讨论
 
-- adding [ERC-20](https://www.reddit.com/r/decred/comments/khnc35/adding_erc20_to_the_dex/) on DCRDEX
-- Is [churning](https://www.reddit.com/r/decred/comments/kho4db/is_churning_useful_with_coinshuffle/) (sending to self) useful with CoinShuffle++? (hint: CSPP is a non-trivial incentive to stake DCR)
-- [trade-offs](https://www.reddit.com/r/decred/comments/k6dn93/what_are_the_trade_offs_for_decreds_privacy/) of Decred privacy features
-- the benefits of the upcoming changes to the VSP system from a perspective of a [VSP operator](https://www.reddit.com/r/decred/comments/k9hegy/upcoming_changes_in_16_for_proofofstake_using_vsps/)
+精选Reddit帖子：
 
-Selected Twitter discussions:
+- 在DCRDEX上添加[ERC-20](https://www.reddit.com/r/decred/comments/khnc35/adding_erc20_to_the_dex/)
+- 权衡隐私权功能的[取舍](https://www.reddit.com/r/decred/comments/k6dn93/what_are_the_trade_offs_for_decreds_privacy/)
+- 从[VSP运营商](https://www.reddit.com/r/decred/comments/k9hegy/upcoming_changes_in_16_for_proofofstake_using_vsps/)的角度来看，即将对VSP系统进行更改的好处
 
-- @Ammarooni reminds that December 15 marked the [5th anniversary](https://twitter.com/Ammarooni/status/1338898342722605057) of Decred's first [announcement](https://bitcointalk.org/index.php?topic=1290358.0) on bitcointalk forum
-- short [history](https://twitter.com/lefebvre_dustin/status/1333816694922485761) how Decred coded on regardless of the oracles, by @Dustorf
+精选的Twitter讨论：
 
-## Markets
+- @Ammarooni提醒您，12月15日是Decred在bitcointalk论坛上首次[宣布成立5周年](https://twitter.com/Ammarooni/status/1338898342722605057)。
+- 简短的[历史](https://twitter.com/lefebvre_dustin/status/1333816694922485761)记录，Decred如何在不使用Oracle的情况下进行编码@Dustorf
 
-In December DCR was trading between USD 24.01-41.59 / BTC 0.0012-0.0020. The average daily rate was $31.07.
+## 市场
 
-With the massive Bitcoin runup, Decred has also been raising in USD without losing much ground in BTC value.
+12月DCR美元交易价格为24.01-41.59 USD，BTC价格为0.0012-0.002之间。每日平均价格为$31.07。
 
-DCR was trading [unusually](https://www.reddit.com/r/decred/comments/kfu4sb/whats_going_on_in_korea_upbit/) high up to $350 on Upbit until it was delisted there.
+DCR的交易异常的Upbit高达$ 3,500，直到它被下架。
 
-During the 48 days of DCRDEX operation it has [traded](https://ournetwork.substack.com/p/our-network-issue-50-part-2) ~600K DCR, which is 30% of Binance volume over the same period. Unlike any centralized exchange though, this volume is much more reliable and harder to cheat.
+在DCRDEX[开启交易](https://ournetwork.substack.com/p/our-network-issue-50-part-2)的48天中，DCR的交易量约为60万，相当于同期Binance交易量的30％。但是，与任何集中式交易所不同的是，该交易量更加真实可靠。
 
-@bochinchero [published](https://twitter.com/TheBochinchero/status/1339202616153284608) his first on-chain analysis piece on Decred, proposing new valuation metrics:
+@bochinchero在Decred上[发布](https://twitter.com/TheBochinchero/status/1339202616153284608)了他的第一篇链上分析文章，提出了新的评估指标：
 
-> Staked Realised Value is a metric that is analogous to the Realised Value but applied exclusively to coins circulating within the ticket pool, essentially treating every ticket as a UTXO. \[it\] provides a more accurate valuation of the capital locked into the security and governance of the network. During past sharp sell-offs it has acted as a psychological bottom - the point of maximum pain, where the buyers of last resort step in.
+> 抵押的已实现价值是一种类似于已实现价值的度量标准，但仅适用于选票池中流通的硬币，本质上将每张选票视为UTXO。[它]提供对锁定在网络安全性和治理中的资金的更准确评估。在过去的急剧抛售中，它充当了心理触底-最大痛苦的点，最后的买家介入其中。
 
-@Checkmate [announced](https://twitter.com/_Checkmatey_/status/1338418991212052485) the launch of [checkonchain.com](https://checkonchain.com/) with many, many (many) charts:
+@Checkmate宣布[启动](https://twitter.com/_Checkmatey_/status/1338418991212052485)[checkonchain.com](https://checkonchain.com/)，其中包含许多图表（许多图表）：
 
-> Now this is something I have been working on for a very long time. If you want serious edge in this market, pay attention to the beating heart of the chain. A full blown masterclass to learn how to properly apply each metric is coming in hot soon after.
+> 这是我已经从事很长时间的工作了。如果您想在这个市场上占据优势，请关注它。不久之后，将全面讨论如何正确应用每个指标。
 
-## Relevant External
+## 相关外部信息
 
-The Cover Protocol, a DeFi insurance project which "allows DeFi users to be protected against smart contract risk", was [hacked](https://www.coindesk.com/cover-protocol-plans-new-token-after-attack) and the attacker minted 40 quintillion COVER tokens, liquidating these for $4 million, but later returning the funds to the smart contract. The team are now looking at creating a new version of the COVER token with a snapshot to refund COVER holders, because otherwise those extra 40 quintillion tokens would mess up the tokenomics.
+Cover Protocol是一个DeFi保险项目，旨在“保护DeFi用户免受智能合约风险的侵害”，遭到黑客攻击，攻击者铸造了40亿个COVER代币，以400万美元的价格清算了这些代币，但随后将资金返还给了智能合约。该团队现在正在考虑使用快照创建一个新版本的COVER令牌，以退还COVER持有人，因为否则，那多余的40亿个令牌会破坏令牌系统。
 
-Nexus Mutual's CEO was hacked for $8.3 million when an attacker tricked him into signing a transaction that sent all his NXM to the attacker's wallet. The attacker [laundered](https://coingeek.com/nexus-mutual-attacker-cashes-out-3-million/) $2.7 million to BTC, and this sent the NXM price lower, they then sent a message on the Ethereum blockchain offering to return the rest (so NXM could avoid further pain) for a [ransom](https://coingeek.com/nexus-mutual-attacker-wants-3-million-in-ransom-money/) of $2.8 million in ETH.
+攻击者诱使Nexus Mutual的首席执行官欺骗了他，使其签署了一笔交易，将他所有的NXM都发送到了攻击者的钱包中，从而遭到830万美元的黑客攻击。攻击者向BTC洗了270万美元，这使NXM的价格降低了，然后他们在以太坊区块链产品上发送了一条消息，要求归还其余部分（以便NXM避免进一步的痛苦），以280万美元的ETH赎金。
 
-December's top DeFi rug pull was [Compounder finance](https://www.coindesk.com/compounder-developers-implicated-alleged-smart-contract-rug-pull), whose devs absconded with $10.8 million of investor funds after utilizing a hidden backdoor in the contracts.
+去年12月，DeFi融资最多的是Compounder finance，后者的开发人员在合同中利用了一个隐藏的后门，因此潜逃了1,080万美元的投资者资金。
 
-December's top flash loan attack victim was [Warp Finance](https://decrypt.co/52125/warp-finance-recovers-5-8-million-days-after-hack), with the exploit weighing in at $7.7 million, but $5.85 million is being returned to holders. This is arguably December's top DeFi hack refund too, but COVER is a contender for that title because although the dollar amount being returned was smaller, it represented a ridiculous proportion of the COVER supply.
+去年12月最大的快速贷款攻击受害者是Warp Finance，该漏洞的损失为770万美元，但585万美元将退还给持有人。可以说，这也是12月份DeFi黑客最多的退款，但是COVER是该头衔的竞争者，因为尽管返回的美元金额较小，但它却占COVER供应的可笑比例。
 
-Gitcoin ended a [strong 2020](https://gitcoin.co/blog/gitcoin-year-in-review/) with its 8th round of Ethereum funding seeing a matching pool of $450K, and also the first round of non-Ethereum funding for Zcash projects was [completed](https://electriccoin.co/blog/zcash-gitcoin-grants-round-1-retrospective/), dispensing a $25K matching pool from Zcash Foundation but attracting just 156 donations totalling $2,137.
+Gitcoin结束了强劲的2020年，其第8轮以太坊资金看到了45万美元的匹配资金，并且第一轮非以太坊资金也为Zcash项目完成了，从Zcash基金会分配了2.5万美元的匹配资金，但仅吸引了156笔捐款总计$ 2,137。
 
-A bill was [introduced](https://www.coindesk.com/us-lawmakers-introduce-bill-that-would-require-stablecoin-issuers-to-obtain-bank-charters) in US Congress that would require stablecoin issuers to obtain bank charters, requiring approval from the Federal Reserve and various other bodies before circulating any coins.
+美国国会提出了一项法案，要求稳定币发行人获得银行宪章，在流通任何硬币之前，必须先获得美联储和其他机构的批准。
 
-The front line in crypto regulations then [shifted](https://www.coindesk.com/self-hosted-bitcoin-wallets-become-front-line-in-fight-over-crypto-regulations) to "self-hosted wallets" (i.e. any self-custodied crypto) and the degree of due diligence that exchanges are required to carry out on transactions involving these questionable entities.
+然后，加密货币法规的第一线转移到“自托管钱包”（即任何自托管的加密货币），并要求交易所对涉及这些可疑实体的交易进行尽职调查的程度。
 
-Bittrex announced that it will be [delisting](https://www.coindesk.com/bittrex-to-delist-privacy-coins-monero-dash-and-zcash) privacy coins Monero, Zcash and Dash on Jan 15, without stating a specific reason. Around a month before that the same coins have been [delisted](https://www.coindesk.com/shapeshift-delists-privacy-coin-zcash-over-regulatory-concerns) by ShapeShift.
+Bittrex宣布将于1月15日将隐私币Monero，Zcash和Dash退市，但未说明具体原因。在此之前一个月左右，ShapeShift已将这些硬币除名。
 
-Bittrex also became the eleventh exchange to [delist](https://decrypt.co/52855/even-bittrex-is-halting-trading-of-xrp) XRP, a week after US SEC charged Ripple Labs with raising $1.3 billion by selling the coin in unregistered securities sales. This reminds that raising funds is a long-term systemic risk that may backfire years after the ICO.
+在美国证券交易委员会指控Ripple Labs通过出售未注册证券销售的代币来筹集13亿美元之后一周，Bittrex也成为第11家将XRP退市的交易所。这提醒我们，筹集资金是一项长期的系统性风险，可能会在ICO之后的数年内适得其反。
 
-In an effort to shake off regulators, Facebook's Libra [rebranded](https://www.forbes.com/sites/jasonbrett/2020/12/02/facebooks-libra-renamed-to-diem-prior-to-stablecoin-launch) to Diem and dropped the aspiration of being backed by a basket of currencies in favor of straight USD backing.
+为了摆脱监管机构的压力，Facebook的天秤座更名为Diem，放弃了获得一篮子货币支持的愿望，转而支持美元的直接支持。
 
-Ledger's leak of customer data, originally reported in July, has now been [dumped](https://cointelegraph.com/news/ledger-data-leak-a-simple-mistake-exposed-270k-crypto-wallet-buyers) publicly. In the original announcement Ledger stated that more detailed information such as physical address had been accessed for 9.5K customers, but it seems [now](https://www.ledger.com/message-ledgers-ceo-data-leak/) that this information was harvested for 272K customers.
+Ledger最初在7月份报告的客户数据泄漏，现已公开转储。在原来的公告莱杰表示，更详细的信息，如物理地址已经为9.5K的客户访问，但似乎现在这部分信息已收获272K客户。
 
-## Support DJ on the web!
+## 请在互联网上支持月报
 
-We don't know what you guys did but November DJ was an anomaly. 100+ Twitter likes up from average 60, 1K+ Medium claps vs regular ~300, hitting [top 10](https://medium.com/tag/decentralized-exchange/archive/2020/12) December posts tagged "DEX" on Medium, good views on Publish0x, and so on.
+100多个Twitter喜欢平均60个，1K+Medium的掌声，在12月10日在“Medium”上标记为“DEX”的帖子，在Publish0x上的良好观看率等等。
 
-Thank you for pressing all these buttons! Please keep going to bring visibility for the best cryptocurrency project.
+感谢您的支持！请继续为最好的加密货币项目带来更多知名度。
 
 ## About This Issue
 
-This is issue 33 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是Decred Journal的第33期。有关所有问题，镜像和翻译的索引，请参见[这里](https://xaur.github.io/decred-news/)。
 
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of the Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
+在经过最少的健全性检查之后，来自第三方的大多数信息都会直接从来源中继。Decred Journal的作者无权验证所有声明。请当心诈骗，并自行进行调查。
 
-You can submit a story [here](https://github.com/xaur/decred-news/labels/next%20release) to be considered for the next release. [Feedback](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback) and [contributions](https://github.com/xaur/decred-news/blob/docs/contributing.md) are always welcome.
+您可以在[此处](https://github.com/xaur/decred-news/labels/next%20release)提交内容，以供撰写下一期月报内容。我们随时欢迎您的[反馈](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback)和[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)。
 
-Credits (alphabetical order):
+感谢 (字母排列):
 
-- writing and editing: bee, degeri, l1ndseymm, lukebp, richardred
-- reviews and feedback: davecgh, elian, JoeGruff, oshorefueled
-- title image: saender
-- funding: Decred Treasury
+- 写作和编辑: bee, degeri, l1ndseymm, lukebp, richardred
+- 评论和反馈: davecgh, elian, JoeGruff, oshorefueled
+- 封面图片: saender
+- 资助： Decred Treasury
+
+## 中文社区
+
+* [社区网址](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [bilibili频道](https://space.bilibili.com/425519478)
+* QQ群号-258412796
