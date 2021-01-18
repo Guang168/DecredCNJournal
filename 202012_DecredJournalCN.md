@@ -367,11 +367,11 @@ Ledger最初在7月份报告的客户数据泄漏，现已公开转储。在原�
 
 ## 请在互联网上支持月报
 
-100多个Twitter喜欢平均60个，1K+Medium的掌声，在12月10日在“Medium”上标记为“DEX”的帖子，在Publish0x上的良好观看率等等。
+我们收获了100多个Twitter平均60个点赞，1K+Medium的掌声，12月10日在“Medium”上标记为“DEX”的帖子，在Publish0x上的良好观看率等等。
 
 感谢您的支持！请继续为最好的加密货币项目带来更多知名度。
 
-## About This Issue
+## 关于月报
 
 这是Decred Journal的第33期。有关所有问题，镜像和翻译的索引，请参见[这里](https://xaur.github.io/decred-news/)。
 
