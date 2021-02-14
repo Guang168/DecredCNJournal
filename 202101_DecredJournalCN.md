@@ -1,56 +1,57 @@
-# Decred Journal – January 2021
+# Decred Journal – 2021年1月
 
 ![abstract art](img/journal-202101-384.png)
 
-_Image: Overflow Dissipation by @saender_
+_图片: @saender_
 
-Happy Birthday, Decred!
+生日快乐, Decred!
 
-Behind are five years of non-stop development and delivery on the promise of decentralization, one pragmatic step at a time. January was no different:
+经过五年不的开发和努力，权力的下放更近一步：
 
-- v1.6 is out, check the Hidden Hydra section below for details of the release.
-- Ticket price and Proof of Stake participation continued rising to hit new highs.
-- The turnout record for a Politeia proposal was broken in January, and again already in February, going all the way to 70% participation!
-- Continued funding for DCRDEX was almost unanimously approved, Decred in Depth and the Decred Arabia team also had proposals approved.
-- The Journal finally has its own Politeia proposal (shared with junior partner Politeia Digest) which would see funding secured for 2021, and it's already being voted on.
+- v1.6已发布，请查看下面的“隐藏的九头蛇”部分了解更多详细信息。
+- 选票价格和权益证明的参与度持续上升，创下新高。
+- 一月份的Politeia提案投票记录打破了纪录，二月份又一次打破了纪录，一路攀升至70％！
+- DCRDEX第二阶段的开发提案高票通过，Decred in Depth和Decred Arabia团队的提案也获得了批准。
+- Journal finally终于有了自己的Politeia提案（与初级合作伙伴Politeia Digest共享），该提案将确保在2021年获得资金支持，并且已经在投票中。
 
-## Hidden Hydra is here!
+## 隐藏的九头蛇在这里！
 
-The long-awaited v1.6 aka Hidden Hydra is finally here! This is probably the biggest upgrade in Decred's history with several major and numerous smaller upgrades across all software projects. All changes are listed in the detailed release notes so here we will only highlight the big ones:
+期待已久的v1.6(隐藏的九头蛇)终于来了！这可能是Decred历史上最大的一次升级，其中包括所有软件项目中的几次巨大和多次小型升级。所有升级都列在详细的发行说明文件中，因此在这里我们仅介绍重点升级：
 
-- **Private transactions** are now accessible through the Decrediton graphical user interface. It works by mixing coins and making it extremely difficult to trace them and spy on your balance or activity. This feature is critical for protecting the privacy of regular users and especially voters, whose privacy improves security of the entire network. It also protects the fungibility principle in Decred's [Constitution](https://docs.decred.org/governance/decred-constitution/). The chosen implementation (StakeShuffle) has the beautiful properties of keeping coin supply auditable at all times, relying on simple cryptography and achieving high privacy thanks to smart integration with the staking system and large mixing volume.
+- 现在可以通过Decrediton图形用户界面钱包访问**匿名交易**。它的工作原理是混合硬币，使其很难追踪并监视您的余额或活动。此功能对于保护常规用户尤其是投票人的隐私至关重要，投票人隐私提高会增强整个网络的安全性。它还保护了Decred[宪法](https://docs.decred.org/governance/decred-constitution/)中的可替代性原则。所选择的实现（StakeShuffle）具有使硬币供应始终处于可审计状态的优美特性，它依靠简单的密码学并由于与Staking系统的智能集成和巨大混合集从而实现了高度隐私性。
 
-- **New VSP architecture** greatly improves experience of using Voting Service Providers, which are used by roughly half of all voters that don't run voting wallets 24/7. No accounts to create and remember, no redeem scripts to back up, no email to share, no addresses reused, and optional mixing support - all make staking easier and more private.
+- **新的VSP架构**极大地改善了使用投票服务提供商(VSP)的体验，非solo投票的选民几乎都使用了投票服务提供商。无需创建和记住帐户，无需备份脚本，无需共享电子邮件，无需重复使用地址以及可选的混合支持-所有这些都使购买选票变得更加轻松和隐秘。
 
-- **Decentralized treasury control** will transfer the power to approve or reject spending from the Treasury into the hands of Decred stakeholders. The required consensus changes will be voted on in the coming months and activate if approved.
+- **去中心化的国库控制权提案**将批准或拒绝国库支出的权力转移到Decred利益相关者手中。所需的共识更改将在未来几个月内投票表决，并在获得批准后激活。
 
-- **DCRDEX** bringing secure, private and fair exchange, where you control the keys at all times and the exchange never holds any coins. Private information is protected in the best way possible - by not collecting it. The combination of pseudorandom order matching within epochs, requiring on-chain funds and rate limits prevents bad behavior like high-frequency trading, front-running, order spoofing and faking the trading volume. And the exchange doesn't take any trading fees.
+- **DCRDEX**带来了安全，私密和公平的硬币交换以及完全掌控私钥。隐私信息将以最佳方式受到保护-不收集。伪随机定单匹配，可以防止不良行为，例如高频交易，抢先交易，定单欺骗和虚假交易量。而且交易不收取任何交易费用。
 
-And here are the high level steps to upgrade:
+以下是升级的重要提示：
 
-- check out the new [release page](https://decred.org/release/) for an overview of new features and download links, or watch the video [overview](https://www.youtube.com/watch?v=3AxBa-EE8RM) (v1.6 features start at 21:00)
-- [verify](https://docs.decred.org/advanced/verifying-binaries/) the downloads _(the routine is not fun but it ensures the files have not been tampered with!)_
-- read the [release notes](https://github.com/decred/decred-binaries/releases/tag/v1.6.0) and pay attention to downgrade warnings - it will not be possible to use previous versions after blockchain and wallet files have been upgraded
-- learn about mixing with @Exitus' short [video tutoral](https://www.youtube.com/watch?v=QC65PBNwAK4)
-- buy tickets the vspd way from within Decrediton by choosing a VSP from the drop-down and the number of tickets - and leave it open until the transaction is mined and the VSP fee is paid (may take up to 20 min). If you see "Error" on tickets, re-sync fixes it, found in the ticket status tab.
-- set your [vote choice](https://docs.decred.org/governance/consensus-rule-voting/how-to-vote/) for the upcoming consensus rule change vote to enable decentralized treasury. To learn how it works, read the [proposal](https://proposals.decred.org/proposals/c96290a) for a general concept and the [DCP](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki) for latest technical details. If you're new to Decred governance, see @Checkmate's quick governance [walkthrough](https://www.youtube.com/watch?v=1QiC0btcf7E) video.
-- watch network's upgrade and consensus vote progress [here](https://voting.decred.org/) or [here](https://explorer.dcrdata.org/agenda/treasury)
-- currently using DCRDEX requires some technical skills but this will be simplified in the next releases. In the meantime you can follow this [guide](https://medium.com/decred/how-to-get-on-dcrdex-mvp-816d713ec5c0) by @richardred
+- 请查看新[发行页面](https://decred.org/release/)以了解新功能和下载链接的概述，或观看视频[概述](https://www.youtube.com/watch?v=3AxBa-EE8RM) (v1.6功能从21:00开始）
+- [验证](https://docs.decred.org/advanced/verifying-binaries/)下载_(过程虽然无趣，但是可以确保文件没有被篡改！)_
+- 阅读[发行说明](https://github.com/decred/decred-binaries/releases/tag/v1.6.0)并注意降级警告 - 升级区块链和钱包文件后将无法使用以前的版本 -
+- 了解@Exitus的有关混合硬币的[操作视频](https://www.youtube.com/watch?v=QC65PBNwAK4)
+- 通过从下拉列表和选票数量中选择VSP，在Decrediton内以vspd方式购买选票，并将其保持打开状态，直到进行交易并支付VSP费用（最多可能需要20分钟）。如果您在故障单上看到“错误”，请重新同步以修复故障，可在故障单状态选项卡中找到它。
+- 为即将到来的共识规则更改[投票设置偏好](https://docs.decred.org/governance/consensus-rule-voting/how-to-vote/)，以启用去中心化的国库。要了解其工作原理，请阅读有关[提案](https://proposals.decred.org/proposals/c96290a)，以及有关最新技术细节的[DCP](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki)(Decred共识修改提案)。如果您不熟悉Decred治理，请参阅@Checkmate的快速参与治理[演练视频](https://www.youtube.com/watch?v=1QiC0btcf7E)。
+- 在[这里](https://voting.decred.org/)或[这里](https://explorer.dcrdata.org/agenda/treasury)观察网络的升级和共识投票进度
+- 当前正在使用DCRDEX的用户需要掌握一些计算机技术，但是在下一版本中将对此进行简化。当然，您也可以通过@richardred的[指南](https://medium.com/decred/how-to-get-on-dcrdex-mvp-816d713ec5c0)学到更多。
 
-There are some [known issues](https://www.reddit.com/r/decred/comments/lebx71/error_when_trying_to_purchase_tickets_with/) with buying tickets in Decrediton v1.6.0 that will be fixed in the upcoming patch release.
+在Decrediton v1.6.0中购买选票存在一些[已知问题](https://www.reddit.com/r/decred/comments/lebx71/error_when_trying_to_purchase_tickets_with/)，这些问题将在即将发布的补丁程序版本中修复。
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can build and run, but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以构建和运行的源代码中，但对于普通用户来说，还不能使用。
 
-January's updates to dcrd are a good example of what users building [from source](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c) can get today without waiting for the next release.
+一月份对dcrd的更新就是一个很好的例子，[从源代码](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)构建的用户今天可以得到无需等待新版本。
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-The main effort of the month was to prepare, thoroughly review and test several epic changes towards [multi-peer](https://github.com/decred/dcrd/issues/1145) block downloading, although the changes are generally useful for simplifying the code and unlocking future optimizations:
+本月的主要工作是准备，审查和测试针对多[对等节点](https://github.com/decred/dcrd/issues/1145)下载数据的几项重大更改，这些更改通常对于简化代码和解锁未来的优化非常有用：
 
-- completely [reworked](https://github.com/decred/dcrd/pull/2518) block indexing and processing to use headers-first semantics and support out of order processing of block data
-- reworked UTXO handling to work on a [per-outpoint](https://github.com/decred/dcrd/pull/2540) basis instead of at a transaction level
+- 完全[重新设计](https://github.com/decred/dcrd/pull/2518)了区块索引和处理，以使用区块头优先的语义并支持区块数据的乱序处理
+- 
+reworked UTXO handling to work on a [per-outpoint](https://github.com/decred/dcrd/pull/2540) basis instead of at a transaction level
 - [sync model](https://github.com/decred/dcrd/pull/2555) reworked to use header announcements. The small 180-byte [headers](https://devdocs.decred.org/developer-guides/block-header-specifications/) will be downloaded before any block data, and then only the needed blocks will be downloaded. This optimizes traffic, removes the concept of "orphan blocks", and opens the door for future enhancements.
 - preparations for implementing UTXO cache
 
