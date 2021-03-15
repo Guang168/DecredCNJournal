@@ -14,7 +14,7 @@ _图片：@saender
 
 内容：
 
-- [v1.6.1补丁发布](#v161-patch-release)
+- [v1.6.1补丁发布](#v1.6.1补丁发布)
 - [Vote on the New Consensus!](#vote-on-the-new-consensus)
 - [Development](#development)
 - [People](#people)
