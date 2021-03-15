@@ -1,6 +1,6 @@
 # Decred Journal – February 2021
 
-![abstract art](../img/202102.1.github.png)
+![abstract art](img/202102.1.github.png)
 
 _Image: L2 by @saender_
 
