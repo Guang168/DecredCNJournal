@@ -16,8 +16,8 @@ _图片：@saender
 
 - [v1.6.1补丁发布](#v1.6.1补丁发布)
 - [为新共识规则投票!](#vote-on-the-new-consensus)
-- [开发进展总结](#development)
-- [人员](#people)
+- [开发进展总结](#开发进展总结)
+- [人员](#人员)
 - [治理](#governance)
 - [网络](#network)
 - [整合](#integrations)
