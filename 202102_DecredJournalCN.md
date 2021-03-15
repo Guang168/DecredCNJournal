@@ -1,20 +1,20 @@
-# Decred Journal – February 2021
+# Decred月报 – 2021年2月
 
 ![abstract art](img/202102.1.github.png)
 
-_Image: L2 by @saender_
+_图片：@saender
 
-February's highlights:
+二月亮点：
 
-- v1.6.1 software was released, it adds bug fixes and UX improvements to the 1.6 release
-- PoW and PoS upgrade thresholds were met, but not before a ticket voting policy which forces miners to upgrade was released
-- PoS participation reached new heights, and the percentage of mixed DCR surged from 31% to 38%
-- Kohola, a front-end for dcrwallet geared towards expert users, was introduced and released
-- The Decred Journal and Open Source Research 2021 proposals were approved by stakeholder vote
+- v1.6.1软件已发布，相较于1.6版本进行了bug修复和UX改进
+- 在强制矿工升级的政策发布之后，PoW和PoS达到升级阈值
+- PoS参与度达到新高，混合DCR的比例从31％上升到38％
+- 推出并发布了面向专业用户的dcrwallet前端Kohola
+- 利益相关者在Politeia投票批准了Decred月报和开源研究2021制作的提案
 
-Contents:
+内容：
 
-- [v1.6.1 Patch Release](#v161-patch-release)
+- [v1.6.1补丁发布](#v161-patch-release)
 - [Vote on the New Consensus!](#vote-on-the-new-consensus)
 - [Development](#development)
 - [People](#people)
@@ -28,7 +28,7 @@ Contents:
 - [Markets](#markets)
 - [Relevant External](#relevant-external)
 
-## v1.6.1 Patch Release
+## v1.6.1补丁发布
 
 The new [release](https://twitter.com/decredproject/status/1364636813168693252) includes bug fixes and UX improvements for dcrd, dcrwallet, Decrediton, and dcrdex. Most changes have been addressing issues with the new VSP staking and how it plays together with mixing. Importantly, it allows Decrediton users to set consensus vote choices with both legacy and new VSP.
 
