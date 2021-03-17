@@ -1,4 +1,4 @@
-# Decred Journal – 2021年1月
+# Decred月报 – 2021年1月
 
 ![abstract art](img/journal-202101-384.png)
 
