@@ -50,9 +50,9 @@ _图片：@saender_
 
 其它合并工作：
 
-- 不在日志中记录[时间戳](https://github.com/decred/dcrd/pull/2608的选项
-- more accurate detection of [own IP](https://github.com/decred/dcrd/pull/2571) address to fix some UPnP configurations
-- increased test coverage for `rpcserver` and the new UTXO cache
+- 不在日志中记录[时间戳](https://github.com/decred/dcrd/pull/2608)的选项
+- 更准确地检测自己的[IP](https://github.com/decred/dcrd/pull/2571)地址以修复某些UPnP配置
+- `rpcserver`和新的UTXO缓存增加了测试范围
 
 <a id="dcrwallet" />
 
@@ -263,7 +263,7 @@ _图片：Decred Mapper的未来派设计_
 项目|数量|变化
 :--|---:|---:
 [Twitter](https://twitter.com/decredproject) 粉丝|43,628|+706
-[Reddit](https://www.reddit.com/r/decred/) 订阅s|10,797|+238
+[Reddit](https://www.reddit.com/r/decred/) 订阅|10,797|+238
 [Matrix](https://chat.decred.org/) #general 用户|407|+25
 [Discord](https://discord.gg/GJ2GXfz) 用户|1,409|-35
 [Telegram](https://t.me/Decred) 用户|2,594|+76
@@ -387,7 +387,7 @@ _图片: Bison PoWer_
 
 音频:
 
-- Decred的jake 讨论比特币，blockchain治理，DCR，及更多 Rachel McIntosh ([youtube](https://www.youtube.com/watch?v=SOoCbr51sus)
+- Decred的jake 讨论比特币，blockchain治理，DCR，及更多 Rachel McIntosh ([youtube](https://www.youtube.com/watch?v=SOoCbr51sus))
 
 翻译:
 
