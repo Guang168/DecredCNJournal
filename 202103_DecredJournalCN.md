@@ -254,53 +254,52 @@ PTLC（点时间锁定合约）是闪电网络中令人振奋的发展，因为�
 
 _图片：Decred Mapper的未来派设计_
 
-## People
+## 人员
 
-Welcome to new first time contributors with code merged to master: @tuhalang ([godcr](https://github.com/planetdecred/godcr/commits?author=tuhalang))!
+欢迎来到新的第一次贡献者，他们的代码已合并到主存储库中：@tuhalang ([godcr](https://github.com/planetdecred/godcr/commits?author=tuhalang))!
 
-Community stats as of Apr 2:
+截至4月2日的社区统计数据：
 
-metric|value|change
+项目|数量|变化
 :--|---:|---:
-[Twitter](https://twitter.com/decredproject) followers|43,628|+706
-[Reddit](https://www.reddit.com/r/decred/) subscribers|10,797|+238
-[Matrix](https://chat.decred.org/) #general users|407|+25
-[Discord](https://discord.gg/GJ2GXfz) users|1,409|-35
-[Telegram](https://t.me/Decred) users|2,594|+76
-[YouTube](https://www.youtube.com/decredchannel) subscribers / views|4,460 / 179K|+40 / +4K
-GitHub [dcrd](https://github.com/decred/dcrd) stars / forks|589 / 255| +5 / +3
+[Twitter](https://twitter.com/decredproject) 粉丝|43,628|+706
+[Reddit](https://www.reddit.com/r/decred/) 订阅s|10,797|+238
+[Matrix](https://chat.decred.org/) #general 用户|407|+25
+[Discord](https://discord.gg/GJ2GXfz) 用户|1,409|-35
+[Telegram](https://t.me/Decred) 用户|2,594|+76
+[YouTube](https://www.youtube.com/decredchannel) 订阅 / 观看|4,460 / 179K|+40 / +4K
+GitHub [dcrd](https://github.com/decred/dcrd) 星 / 叉|589 / 255| +5 / +3
 
-Notable activity detected across ~90 [tracked](https://github.com/decredcommunity/social-media-stats) accounts:
+在约90个跟踪的帐户中[检测到](https://github.com/decredcommunity/social-media-stats)显着的活动：
 
-- main Twitter, Reddit and Telegram had another month of good growth
-- [CoinGecko](https://www.coingecko.com/en/coins/decred) got +409 likes (to 9,516) since mid-March when we started tracking it
-- [@decredproject](https://gab.com/decredproject) account on Gab is 11 months old but is still at 7 followers. Any outreach is welcome to help it grow.
-- [@Checkmate](https://twitter.com/_Checkmatey_) aka "The Machine" gained +1,816 followers (+35%, to 7,042), posting _another_ 1K tweets at ~34 tweets per day
-- [@PermabullNino](https://twitter.com/PermabullNino) gained +398 followers (+13%, to 3,391)
-- [@ConsensusRough](https://twitter.com/ConsensusRough) got a surprising +34% followers (to 580)
-- [@decredbr](https://t.me/decredbr) TG got +6% users (to 384)
-- [@Decred_ES](https://twitter.com/Decred_ES) TW got +5% followers (to 1,365)
-- [DECRED BRasil](https://www.facebook.com/groups/decredbrasil/) FB had a noticeable drop in 30-day posts from ~50 to 19
+- 主要的Twitter，Reddit和Telegram又有一个月的良好增长
+- 自3月中旬开始追踪[CoinGecko](https://www.coingecko.com/en/coins/decred)以来，它获得了+409个赞（至9,516个）
+- [@Checkmate](https://twitter.com/_Checkmatey_) aka“ The Machine”获得+1,816位关注者（+ 35％，至7,042位），每天以〜34条推文发布另外1K条推文
+- [@PermabullNino](https://twitter.com/PermabullNino) 增加了398位关注者（+ 13％，达到3,391）
+- [@ConsensusRough](https://twitter.com/ConsensusRough) 的关注者人数达到惊人的+ 34％（达到580）
+- [@decredbr](https://t.me/decredbr) TG获得了6％的用户（至384）
+- [@Decred_ES](https://twitter.com/Decred_ES) TW拥有+ 5％的关注者（至1,365）
+- [DECRED BRasil](https://www.facebook.com/groups/decredbrasil/) FB在30天的帖子中从50下降到19明显下降
 
-The above are most notable highlights, but you can see full reports for [March](https://decredcommunity.github.io/social-media-stats/posts/20210407.1) and [February](https://decredcommunity.github.io/social-media-stats/posts/20210306.1) in a new dedicated place _(that can finally fit \*all\* my numbers -- @bee)_.
+上面是最值得注意的亮点，但是您可以在新的专用位置查看3月和2月的完整报告（最终可以容纳我所有的数字-@bee）。
 
-Thanks to Decred ambassadors on all platforms for raising awareness about the project!
+感谢Decred在所有平台上的大使提高了对该项目的认识！
 
-## Governance
+## 治理
 
-In March the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 11,531 DCR and spent 4,196 DCR - however 3,010 of this was delayed payment for Jan invoices, so the amount paid for Feb invoices was just 1,184 DCR. Using March's daily average DCR/USD rate of $161.01, this is $1.86M received and $676K spent. The USD figures billed for past work are $135K for Feb (at $113.76) and $163K delayed payments for Jan (at $54.25). As of Apr 4, Treasury balance is 663,658 DCR (124 million USD at $187.04).
+在3月份，[国库](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)收到了11,531 DCR，支出了4,196 DCR-但是其中3,010被延迟支付了1月份的发票，因此，支付给2月份的发票的金额仅为1,184 DCR。使用3月份的每日DCR / USD平均汇率$ 161.01，得出的总收入为186万美元，支出为67.6万美元。2月为过去工作支付的美元数据是2月的13.5万美元（113.76美元）和1月的16.3万美元延迟付款（54.25美元）。截至4月4日，国库余额为663,658 DCR（1.24亿美元，折合187.04美元）。
 
-Three proposals were published in March.
+三月份发表了三份提案。
 
-- The Moderation 2021 [proposal](https://proposals.decred.org/proposals/e1cda44) estimated a budget of $8,800 (maximum $16,500) for the year, and was approved with 93.4% support and turnout of 36%.
-- The Design [proposal](https://proposals.decred.org/proposals/76eba5a) to cover the remainder of 2021 requests a maximum of $58,850, and reported underspending on the previous proposal such that only 60% of its budget was used. Most of the underspend is associated with the identity and visual communication subdomains. Worklog report for the previous proposal was posted [here](https://github.com/decred/dcrdesign/issues/252).
-- The video content [proposal](https://proposals.decred.org/proposals/95a1409) (phase 3) is up for renewal with a maximum budget of $18,800 for another 6 months, and 2 new contributors (@karamble and @DecredSociety). During the previous phase only 41% of the budget was used.
+- The Moderation 2021 [提案](https://proposals.decred.org/proposals/e1cda44) 估算了该年度的预算为8,800美元（最高为16,500美元），并获得了93.4％的支持和36％的投票率。
+- The Design [提案](https://proposals.decred.org/proposals/76eba5a) 涵盖2021年余下时间的设计提案最多需要58,850美元，并且报告说，先前提案的支出不足，因此仅使用了其预算的60％。大部分的支出不足都与身份和视觉传达子域相关。先前提案的工作日志报告已发布在[此处](https://github.com/decred/dcrdesign/issues/252)。 
+- 视频内容[提案](https://proposals.decred.org/proposals/95a1409)（第3阶段）即将续订，另外6个月的最高预算为$ 18,800，并增加了2个新的贡献者（@karamble和@DecredSociety）。在上一个阶段中，仅使用了预算的41％。
 
-@bee published a list of all [active approved](https://decredcommunity.github.io/proposals/approved) proposals to track the ones expiring soon.
+@bee发布了所有[有效批准](https://decredcommunity.github.io/proposals/approved)提案的列表，以跟踪即将过期的提案。
 
-Politeia Digest [issue 41](https://blockcommons.red/politeia-digest/issue041/) has more details on the month's proposals.
+《Politeia Digest》第[41](https://blockcommons.red/politeia-digest/issue041/)期提供了有关本月提案的更多详细信息。
 
-## Network
+## 网络
 
 **Hashrate**: March's [hashrate](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=kln9bt1o-kn255ihw&scale=linear&bin=block&axis=time) opened at ~410 Ph/s and closed ~496 Ph/s, bottoming at 228 Ph/s and peaking at 620 Ph/s throughout the month.
 
@@ -424,35 +423,45 @@ In March DCR was trading between USD 140.16-180.60 / BTC 0.00275-0.00310. The av
 
 @Checkmate has updated his [comparison](https://twitter.com/_Checkmatey_/status/1369769392884436992) chart of "Lindy Coins" vs Bitcoin as it has rallied from $10K to $58K. DCR continues to stand out.
 
-## Relevant External
+## 相关外部信息
 
-March's big DeFi Dumpster Fire was PAID, which was subjected to an infinite minting [attack](https://cointelegraph.com/news/paid-network-exploiter-nets-3-million-in-infinite-mint-attack) that saw the attacker issue $180 million PAID to themselves, but they were apparently only able to capture $3 million of the value by converting it to something other than rapidly devaluing (down 85% at one stage) PAID tokens. In a [postmortem](https://paidnetwork.medium.com/paid-network-attack-postmortem-march-7-2021-9e4c0fef0e07) it was explained that the attacker gained access to the private key for the original contract deployer and used it to "upgrade" the contracts so that they could mint new tokens. A snapshot will be used to "reset" the PAID token to wipe out the attacker's tokens which they were not able to sell before being discovered.
+3月的大型DeFi Dumpster Fire是PAID，遭受了无限造币攻击，攻击者向自己发行了1.8亿美元的PAID，但他们显然只能通过将其转换为其他货币（而不是迅速贬值）来获取300万美元的价值（下降了85％）的付费代币。在验尸中，解释了攻击者获得了原始合同部署者对私钥的访问权，并使用它来“升级”合同，以便他们可以铸造新令牌。快照将用于“重置” PAID令牌，以清除攻击者被发现之前无法出售的令牌。
 
-SushiSwap has been dealing with a major [dilemma](https://decrypt.co/62522/defi-exchange-sushiswap-faces-an-880-million-dilemma) about how to distribute tokens which it owes to liquidity providers from Oct 2020, the tokens had a 6 month "vesting period", and the question of how to distribute them was raised in Jan 2021. SUSHI holders have already voted against a straight airdrop of the tokens and opted for a claiming mechanism which will cost claimants fees, but then it transpired that the smart contract's code had been edited so that it could no longer be claimed by users who interacted with it through third party smart contracts (like Harvest.finance, whose users are owed 5-6% of these tokens). The reason given by the developers who deployed this update is concern that "parasitic farms" will dump their token allocations. The latest is that these farms can submit proposals for how to distribute their allocations, for review by the Sushiswap community.
+SushiSwap一直在解决一个重大难题关于如何分配从2020年10月起欠流动性提供商的代币，代币有6个月的“归属期”，而如何分配代币的问题在2021年1月提出。SUSHI持有人已经投票反对直接空投代币并选择了一种索赔机制，该机制将收取索赔人的费用，但随后发现，智能合约的代码已经过编辑，因此通过第三方智能合约（例如Harvest.finance）与之交互的用户无法再对其进行索取。 ，其用户将被欠这些令牌的5-6％）。部署此更新的开发人员给出的原因与“寄生场”将转储其令牌分配有关。最新的是，这些农场可以提交有关如何分配其分配的提案，
 
-The Cosmos "inter blockchain communication (IBC)" protocol has been [approved](https://www.coindesk.com/cosmos-vote-approve-inter-blockchain-communication) by Cosmos voters by a whopping majority of 112 million to seventy five, it promises to enable secure communication between blockchains which satisfy certain criteria. As Cosmos is the only blockchain to support this IBC standard it is not currently very useful, but it is likely that other Tendermint based blockchains will add support soon too.
+Cosmos选民之间已批准了Cosmos“区块链内部通信（IBC）”协议，该协议以1.12亿至75的绝大多数获得批准，它有望实现满足特定条件的区块链之间的安全通信。由于Cosmos是唯一支持该IBC标准的区块链，因此目前还不是很有用，但是其他基于Tendermint的区块链也可能很快也会增加支持。
 
-Ethereum's EIP 1559 has been included in the forthcoming London hard fork, as decided on the Core Developers [call](https://www.youtube.com/watch?v=xWfR-WxjmYg) on Mar 5. EIP 1559 will fundamentally change how transaction fees are calculated and paid, winning the support of most users and developers by promising to significantly improve the user experience. Miners however have [signalled](https://twitter.com/_Checkmatey_/status/1366831390424068098) [opposition](https://www.coindesk.com/ethereum-improvement-proposal-1559-london-hard-fork) to this change, with over 60% opposing it as it will interfere with one source of revenue for them. [Analysis](https://insights.deribit.com/market-research/miners-will-accept-eip-1559-here-is-why/) from Hasu suggests that miners will go along with it anyway as they can still earn a good profit from block rewards and Miner Extractable Value (MEV), whereas the alternative can be interpreted as an attack on the network and is likely to damage the ETH price (thus miners' bottom line).
+根据3月5日核心开发者会议的决定，以太坊的EIP 1559已包含在即将到来的伦敦硬分叉中。EIP1559将从根本上改变交易费用的计算和支付方式，并承诺会大幅改善，从而赢得大多数用户和开发者的支持。用户体验。但是，矿工已经表示 反对这一变化，超过60％的人反对这一变化，因为它将干扰他们的一种收入来源。Hasu的分析表明，矿工无论如何都会坚持下去，因为他们仍然可以从区块奖励和矿工可提取价值（MEV）中获得丰厚的利润，而替代方案可以解释为对网络的攻击，并且很可能会破坏ETH。价格（因此是矿工的底线）。
 
-The UK Tax authority has [updated](https://www.coindesk.com/uk-tax-authority-updates-treatment-of-crypto-assets-to-incorporate-staking) its guidance for the treatment of crypto assets to cover staking for the first time - this is to be treated in the same way as mining income is currently treated, but may open the door for future differentiated treatment.
+英国税务局已经更新了其处理加密资产的指南，首次涵盖了抵押-这将以与目前处理采矿收入相同的方式进行处理，但可能会为将来的差异化处理敞开大门。
 
-Privacy advocate @6102bitcoin [received](https://twitter.com/6102bitcoin/status/1367376460214853632) a report that Bitstamp Europe asked their user to explain a CoinJoin transaction made with Wasabi wallet soon after withdrawing, and that request was made _months after_ the activity. One [reply](https://twitter.com/thibm_/status/1367613186950766603) pointed out that operators are pressured by the governments imposing these rules, such as the French DASP authorization that asks to inspect on-chain hops both ways (inbound and outbound). Earlier Bitstamp made the [news](https://cointelegraph.com/news/bitstamp-crypto-exchange-users-bemoan-additional-kyc-requirements) for asking a Dutch-based customer to share an unusual amount of personal information, including net worth and annual income, proof of residence, and the origins of fiat and crypto funds.
+隐私权倡导者@ 6102bitcoin收到一份报告，Bitstamp Europe要求用户在提款后不久向其用户说明使用Wasabi钱包进行的CoinJoin交易，该请求是在活动开始数月后提出的。一份答复指出，实施这些规则的政府对运营商施加了压力，例如法国DASP授权要求以两种方式（入站和出站）检查链上啤酒花。此前Bitstamp所做的消息询问基于荷兰客户共享的个人信息不寻常的数量，包括净资产和年收入，居住证明，以及菲亚特和加密资金的来源。
 
-CoinDesk's YouTube account got [suspended](https://www.coindesk.com/youtube-suspends-coindesk) for about 1 day, after what was apparently a mistaken takedown of their channel.
+在显然是错误地删除了他们的频道之后，CoinDesk的YouTube帐户被暂停了大约1天。
 
-A new method of cashing out cryptocurrency has apparently been popularized in Russia, "buried [treasure](https://www.nasdaq.com/articles/russias-darknet-criminals-have-novel-crypto-cash-out-system%3A-buried-treasure-2021-03-22)", or dead drops of cash to specific coordinates.
+兑现加密货币的新方法显然已在俄罗斯普及，“埋藏的宝藏”或将空投的现金滴落到特定坐标上。
 
-## About This Issue
+## 关于月报
 
-This is issue 36 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是Decred Journal的第36期。有关所有问题，镜像和翻译的索引，请参见[这里](https://xaur.github.io/decred-news/)。
 
-Most information from third parties is relayed directly from source after a minimal sanity check. The authors of the Decred Journal have no ability to verify all claims. Please beware of scams and do your own research.
+在经过最少的健全性检查之后，来自第三方的大多数信息都会直接从来源中继。Decred Journal的作者无权验证所有声明。请当心诈骗，并自行进行调查。
 
-You can submit a story [here](https://github.com/xaur/decred-news/labels/next%20release) to be considered for the next release. [Feedback](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback) and [contributions](https://github.com/xaur/decred-news/blob/docs/contributing.md) are always welcome.
+您可以在[此处](https://github.com/xaur/decred-news/labels/next%20release)提交内容，以供撰写下一期月报内容。我们随时欢迎您的[反馈](https://github.com/xaur/decred-news/blob/docs/contributing.md#feedback)和[贡献](https://github.com/xaur/decred-news/blob/docs/contributing.md)。
 
-Credits (alphabetical order):
+感谢 (字母排列):
 
-- writing and editing: bee, degeri, l1ndseymm, richardred
-- reviews and feedback: arij, davecgh, dnldd, jholdstock, JoeGruff, lukebp, matheusd
-- title image: saender
-- funding: Decred stakeholders
+- 写作和编辑: bee, degeri, l1ndseymm, richardred
+- 评论和反馈: arij, davecgh, dnldd, jholdstock, JoeGruff, lukebp, matheusd
+- 封面图片: saender
+- 资助: Decred stakeholders
+
+## 中文社区
+
+* [社区网址](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [bilibili频道](https://space.bilibili.com/425519478)
+* QQ群号-258412796
+
