@@ -395,30 +395,29 @@ _图片: Bison PoWer_
 
 ## 社区讨论
 
-Selected Reddit posts:
+精选的Reddit帖子：
 
-- odd [patterns](https://www.reddit.com/r/decred/comments/lzr2w8/decredbitcoin_chart/) on the price chart
-- a compilation of [rough edges](https://www.reddit.com/r/decred/comments/m3k31o/161_things_ive_learned/) in mixed staking with Decrediton v1.6.1 and how to workaround them
-- invitation to Twitter poll [tournament](https://www.reddit.com/r/decred/comments/m618sa/decred_is_in_the_2021_ultimate_crypto_tournament/) (and the irony of pitching it to a community obsessed with solid voting tech)
-- notes on [quantum](https://www.reddit.com/r/decred/comments/m6w2ue/q_re_quantum_resistance/) resistance
-- [generating](https://www.reddit.com/r/decred/comments/marjaa/generating_media_for_upcoming_consensus_vote/) media for the latest consensus vote (and challenges of getting the word out)
-- March's last [price talk](https://www.reddit.com/r/decred/comments/mg5hhj/has_anybody_noticed_that_decred_has_finally/) again got pretty intelligent and compared Decred to Python
+- Decrediton v1.6.1混币买票中[问题](https://www.reddit.com/r/decred/comments/m3k31o/161_things_ive_learned/)的汇编以及如何解决这些问题的方法
+- 邀请参加Twitter民意调查[锦标赛](https://www.reddit.com/r/decred/comments/m618sa/decred_is_in_the_2021_ultimate_crypto_tournament/)（以及讽刺于将其投向痴迷于可靠投票技术的社区的讽刺意味）
+- [产生](https://www.reddit.com/r/decred/comments/marjaa/generating_media_for_upcoming_consensus_vote/)媒体以进行最新的共识投票（以及发表这个挑战的挑战）
+- 三月的最后一次[价格讨论](https://www.reddit.com/r/decred/comments/mg5hhj/has_anybody_noticed_that_decred_has_finally/)再次变得非常明智，并将Decred与Python进行了比较
 
-Selected Twitter discussions:
+Twitter讨论：
 
-- @jy-p on going in the [opposite](https://twitter.com/behindtext/status/1368655110449094657) direction by creating a fairer opt-in financial system
-- @ammarooni [suggests](https://twitter.com/Ammarooni/status/1367655623698096128) to talk more about the USD value locked in tickets because it going above 1 billion is quite an achievement
-- @bochinchero has [linked](https://twitter.com/TheBochinchero/status/1375072938106445824) the price rally with rising stake participation, voter turnout and mixing activity, and noted that fungibility is strong when massive:
+- @ jy-p通过建立更公平的选择加入金融体系来朝[相反](https://twitter.com/behindtext/status/1368655110449094657)的方向发展
+- @ammarooni建议[多谈谈](https://twitter.com/Ammarooni/status/1367655623698096128)锁定在选票中的美元价值，因为超过10亿美元是相当可观的成就
+- @bochinchero已经[挂](https://twitter.com/TheBochinchero/status/1375072938106445824)价格涨势不断上升的股权参与，投票率和混合活动，并指出，可替代性强庞大时：
 
-> Over 43% of the available $DCR supply is now mixed and unspent. Some argue that opt-in privacy or a transparent ledger can never be truly fungible... I honestly can't think of a rational actor that would willingly accept a currency, but reject half of the circulating coins. ([@TheBochinchero](https://twitter.com/TheBochinchero/status/1375072954493636608))
+> 现在，超过$ DCR可用供应量的43％被混合使用了。有些人认为选择加入隐私或透明分类帐永远不可能真正替代……我实在想不出一个愿意接受货币但拒绝一半流通硬币的理性参与者。 ([@TheBochinchero](https://twitter.com/TheBochinchero/status/1375072954493636608))
 
-## Markets
+## 市场
 
-In March DCR was trading between USD 140.16-180.60 / BTC 0.00275-0.00310. The average daily rate was $161.01.
+3月DCR交易价格在140.16-180.60美元 / BTC 0.00275-0.00310之间。日平均价格为$161.01。
 
-@PermabullNino [posted](https://twitter.com/PermabullNino/status/1366915444355964932) that Decred's on-chain data is in beast mode, having settled 4x more native units than Bitcoin in February.
+@PermabullNino [发布](https://twitter.com/PermabullNino/status/1366915444355964932)了Decred的链上数据处于野兽模式，2月份的本地单位结算量比比特币多4倍。
 
-@Checkmate has updated his [comparison](https://twitter.com/_Checkmatey_/status/1369769392884436992) chart of "Lindy Coins" vs Bitcoin as it has rallied from $10K to $58K. DCR continues to stand out.
+@Checkmate更新了他的“ Lindy Coins”与比特币的[比较](https://twitter.com/_Checkmatey_/status/1369769392884436992)表，因为它从$10上涨到$58。DCR继续脱颖而出。
+
 
 ## 相关外部信息
 
