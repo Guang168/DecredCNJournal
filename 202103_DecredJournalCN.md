@@ -263,7 +263,7 @@ _图片：Decred Mapper的未来派设计_
 项目|数量|变化
 :--|---:|---:
 [Twitter](https://twitter.com/decredproject) 粉丝|43,628|+706
-[Reddit](https://www.reddit.com/r/decred/) 订阅s|10,797|+238
+[Reddit](https://www.reddit.com/r/decred/) 订阅|10,797|+238
 [Matrix](https://chat.decred.org/) #general 用户|407|+25
 [Discord](https://discord.gg/GJ2GXfz) 用户|1,409|-35
 [Telegram](https://t.me/Decred) 用户|2,594|+76
@@ -387,7 +387,7 @@ _图片: Bison PoWer_
 
 音频:
 
-- Decred的jake 讨论比特币，blockchain治理，DCR，及更多 Rachel McIntosh ([youtube](https://www.youtube.com/watch?v=SOoCbr51sus)
+- Decred的jake 讨论比特币，blockchain治理，DCR，及更多 Rachel McIntosh ([youtube](https://www.youtube.com/watch?v=SOoCbr51sus))
 
 翻译:
 
