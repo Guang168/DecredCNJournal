@@ -50,9 +50,9 @@ _图片：@saender_
 
 其它合并工作：
 
-- 不在日志中记录[时间戳](https://github.com/decred/dcrd/pull/2608的选项
-- more accurate detection of [own IP](https://github.com/decred/dcrd/pull/2571) address to fix some UPnP configurations
-- increased test coverage for `rpcserver` and the new UTXO cache
+- 不在日志中记录[时间戳](https://github.com/decred/dcrd/pull/2608)的选项
+- 更准确地检测自己的[IP](https://github.com/decred/dcrd/pull/2571)地址以修复某些UPnP配置
+- `rpcserver`和新的UTXO缓存增加了测试范围
 
 <a id="dcrwallet" />
 
