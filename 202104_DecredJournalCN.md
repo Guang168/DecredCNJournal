@@ -118,84 +118,84 @@ Politeia自己的第一个[提案](https://proposals.decred.org/record/91cfcc8)�
 - 为[服务器API](https://github.com/decred/dcrdex/pull/1047)和[资产后端](https://github.com/decred/dcrdex/pull/1054)添加了版本控制
 - 修复了一些同步问题
 
-An [update](https://www.reddit.com/r/decred/comments/n9i8z2/dcrdex_updates_v02_release_decrediton_integration/) on Phase 2 development was posted in May with the following key points:
+5月发布了有关第2阶段开发的[更新](https://www.reddit.com/r/decred/comments/n9i8z2/dcrdex_updates_v02_release_decrediton_integration/)，其中包含以下要点：
 
-- v0.2 release has finished beta testing, expect binaries and server update soon
-- v0.2 brings many improvements, including support for the upcoming Decrediton integration
-- SPV wallet support for both Decred and Bitcoin are planned in next releases this year
-- ETH development is in progress and is expected to release toward the end of Phase 2
-- for more exciting features read the [update](https://www.reddit.com/r/decred/comments/n9i8z2/dcrdex_updates_v02_release_decrediton_integration/) and the linked release notes
+- v0.2版本已完成Beta测试，预计二进制文件和服务器将很快更新
+- v0.2带来了许多改进，包括对即将到来的Decrediton集成的支持
+- 计划在今年的下一个版本中同时支持Decred和比特币的SPV钱包
+- ETH开发正在进行中，预计将在第二阶段结束时发布
+- 有关更多激动人心的功能，请阅读[更新](https://www.reddit.com/r/decred/comments/n9i8z2/dcrdex_updates_v02_release_decrediton_integration/)和链接的发行说明
 
 <a id="dcrandroid" />
 
 **[dcrandroid](https://github.com/planetdecred/dcrandroid)**
 
-- show [USD equivalent](https://github.com/planetdecred/dcrandroid/pull/539) balance on Overview page
-- dcrlibwallet [updated](https://github.com/planetdecred/dcrlibwallet/pull/183) to new dcrwallet module
+- 在“概述”页面上显示[美元等值余额](https://github.com/planetdecred/dcrandroid/pull/539)
+- dcrlibwallet[更新](https://github.com/planetdecred/dcrlibwallet/pull/183)为新的dcrwallet模块
 
 <a id="dcrios" />
 
 **[dcrios](https://github.com/planetdecred/dcrios)**
 
-- show Politeia [proposals](https://github.com/planetdecred/dcrios/pull/715) and notify on certain events (new proposal, vote started, vote ended)
-- database [upgraded](https://github.com/planetdecred/dcrios/pull/742) to BadgerDB
+- 显示Politeia[提案](https://github.com/planetdecred/dcrios/pull/715)并通知某些事件（新提案，投票开始，投票结束）
+- 数据库[升级](https://github.com/planetdecred/dcrios/pull/742)到BadgerDB
 
 <a id="godcr" />
 
 **[godcr](https://github.com/planetdecred/godcr)**
 
-- show Politeia [proposals](https://github.com/planetdecred/godcr/pull/331)
-- polished UI on [Transactions](https://github.com/planetdecred/godcr/pull/356), [Wallet](https://github.com/planetdecred/godcr/pull/355), and [Receive](https://github.com/planetdecred/godcr/pull/354) pages
-- show USD equivalent on the [nav bar](https://github.com/planetdecred/godcr/pull/380) and on the [Send](https://github.com/planetdecred/godcr/pull/371) confirmation popup
-- added sending to own [account](https://github.com/planetdecred/godcr/pull/353)
-- numerous smaller UX tweaks
+- 显示Politeia [提案](https://github.com/planetdecred/godcr/pull/331)
+- [交易](https://github.com/planetdecred/godcr/pull/356), [钱包](https://github.com/planetdecred/godcr/pull/355), 和[接受](https://github.com/planetdecred/godcr/pull/354)页面上的精美用户界面
+- 在导航栏和“发送确认”弹出窗口上显示等值的美元
+- 已添加发送到自己的帐户
+- 众多较小的UX调整
 
 <a id="dcrdata" />
 
 **[dcrdata](https://github.com/decred/dcrdata)**
 
-- improved [Attack cost](https://github.com/decred/dcrdata/pull/1777) page layout
-- improved display of [Treasury](https://github.com/decred/dcrdata/pull/1817)-related tx
-- updated to [Webpack 5](https://github.com/decred/dcrdata/pull/1809) and other dependencies
+- 改进的[攻击成本](https://github.com/decred/dcrdata/pull/1777)页面布局
+- 改进了与[国库](https://github.com/decred/dcrdata/pull/1817)相关的TX的显示
+- 更新到[Webpack 5](https://github.com/decred/dcrdata/pull/1809)和其它依赖项
 
 <a id="dcrdocs" />
 
 **[docs](https://github.com/decred/dcrdocs)**
 
-- [dark mode](https://github.com/decred/dcrdocs/pull/1161)!
-- [Migrations](https://github.com/decred/dcrdocs/pull/1163) page for the upcoming Decrediton v1.6.3
+- [暗模式](https://github.com/decred/dcrdocs/pull/1161)!
+- [即将推出](https://github.com/decred/dcrdocs/pull/1163)的Decrediton v1.6.3的“迁移”页面
 
-## People
+## 人员
 
-Get to know Decred contributors in the new interviews with [@lukebp](https://www.youtube.com/watch?v=J6IAjmwkki0) and [@phoenixgreen](https://www.youtube.com/watch?v=WOVUvzsp3Eo).
+在[@lukebp](https://www.youtube.com/watch?v=J6IAjmwkki0)和[@phoenixgreen](https://www.youtube.com/watch?v=WOVUvzsp3Eo)的新采访中认识Decred的贡献者。
 
-Community stats as of May 1:
+截至5月1日的社区统计数据：
 
-- [Twitter](https://twitter.com/decredproject) followers: 44,391 (+763)
-- [Reddit](https://www.reddit.com/r/decred/) subscribers: 10,987 (+190)
-- [Matrix](https://chat.decred.org/) #general users: 434 (+27)
-- [Discord](https://discord.gg/GJ2GXfz) users: 1,566 (+157)
-- [Telegram](https://t.me/Decred) users: 2,645 (+51)
-- [YouTube](https://www.youtube.com/decredchannel) subscribers: 4,500 (+40), views: 182K (+3K)
-- GitHub [dcrd](https://github.com/decred/dcrd) stars: 591 (+2), forks: 254 (-1)
+- [Twitter](https://twitter.com/decredproject) 粉丝: 44,391 (+763)
+- [Reddit](https://www.reddit.com/r/decred/) 订阅: 10,987 (+190)
+- [Matrix](https://chat.decred.org/) #general 用户: 434 (+27)
+- [Discord](https://discord.gg/GJ2GXfz) 用户: 1,566 (+157)
+- [Telegram](https://t.me/Decred) 用户: 2,645 (+51)
+- [YouTube](https://www.youtube.com/decredchannel) 订阅: 4,500 (+40), 观看: 182K (+3K)
+- GitHub [dcrd](https://github.com/decred/dcrd) 星: 591 (+2), 叉: 254 (-1)
 
-See the [April report](https://decredcommunity.github.io/social-media-stats/posts/20210506.1) for notable social media stats updates.
+有关重要的社交媒体统计信息更新，请参阅[4月的报告](https://decredcommunity.github.io/social-media-stats/posts/20210506.1)。
 
-## Governance
+## 治理
 
-In April the [Treasury](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) received 10,949 DCR and spent 984 DCR. Using April's average DCR rate of $198.60, this is $2.17M received and $195K spent. At March's average rate of $161.01, the USD billed for past work is $158K. As of May 2, the Treasury balance is 672,768 DCR (140 million USD at $208.13).
+4月份，[国库](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)获得了10,949 DCR，支出了984 DCR。使用4月份的平均DCR费率198.60美元，这就是收到的217万美元和花费的19.5万美元。以3月份的平均汇率$ 161.01计算，费用为15.8万美元。截至5月2日，国库余额为672,768 DCR（1.4亿美元，合208.13美元）。
 
-The consensus vote to enable the new treasury has [passed](https://explorer.dcrdata.org/agenda/treasury) with 99.9% approval and 83% voter participation. This is the second highest voter turnout in Decred's history after the [stake difficulty](https://dcrdata.decred.org/agenda/sdiffalgorithm) vote in 2017 (88%).
+支持新国库的共识投票[获得了](https://explorer.dcrdata.org/agenda/treasury)99.9％的赞成和83％的选民参与。这是Decred历史上第二高的选民投票率，仅次于2017年的[stake难度](https://dcrdata.decred.org/agenda/sdiffalgorithm)投票（88％）。
 
-Proposal news:
+提案新闻：
 
-- A new [proposal](https://proposals.decred.org/record/91cfcc8) for funding Politeia development accompanied the deployment of v1.0.0. This proposal requests a maximum budget of $118K to cover a range of new features, expected to be delivered over a six month period. The features on this roadmap include another upgrade to the plugin architecture, user API overhaul, email-free accounts, extra metadata for proposals, proposal life cycles, and proposal author updates. The vote started on May 11.
-- The video production phase 3 [proposal](https://proposals-archive.decred.org/proposals/95a1409) was approved with 98% approval and voter participation of 40%.
-- The Design domain [proposal](https://proposals-archive.decred.org/proposals/76eba5a) for the remainder of 2021 was approved with 97% approval and voter participation of 28%.
+- v1.0.0的部署伴随着一项新的资助Politeia开发的[提案](https://proposals.decred.org/record/91cfcc8)。该提案要求最高预算为11.8万美元，以涵盖一系列新功能，预计将在六个月内交付。该路线图的功能包括对插件体系结构的另一次升级，用户API的大修，无电子邮件帐户，提案的额外元数据，提案生命周期以及提案作者更新。投票于5月11日开始。
+- 视频制作第3阶段的[提案](https://proposals-archive.decred.org/proposals/95a1409)获得了98％的批准，40％的选票参与。
+- 2021年剩余时间的设计领域[提案](https://proposals-archive.decred.org/proposals/76eba5a)已获批准，批准率为97％，投票者参与率为28％。
 
-See Politeia Digest [issue 42](https://blockcommons.red/politeia-digest/issue042/) for more details on the month's proposals.
+有关本月提案的更多详细信息，请参见Politeia第[42](https://blockcommons.red/politeia-digest/issue042/)期。
 
-## Network
+## 网络
 
 **Hashrate**: April's [hashrate](https://explorer.dcrdata.org/charts?chart=hashrate&zoom=kmvlwq6x-ko7rp8zy&scale=linear&bin=block&axis=time) opened at ~464 Ph/s and closed ~429 Ph/s, bottoming at 219 Ph/s and peaking at 587 Ph/s throughout the month.
 
