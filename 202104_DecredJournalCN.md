@@ -1,123 +1,122 @@
-# Decred Journal – April 2021
+# Decred月报 – 2021年4月
 
 ![abstract art by @saender](img/202104.1.github.png)
 
-_Image: Point Integral by @saender_
+_图片:@saender_
 
-April's highlights:
+四月亮点：
 
-- Decred's 6th consensus vote has passed with unanimous approval and high voter turnout.
-- Politeia v1.0 is now live with more scalable and future-proof infrastructure.
-- Politeia's first proposal is being voted on to formalize the development roadmap and budget.
-- DCRDEX is heading towards v0.2 update with several backend and UX improvements, as well as the foundations for future exciting features.
-- Initial DCRDEX integration has been merged in Decrediton.
+- Decred的第六次共识投票已获得一致通过并获得了很高的参投率。
+- Politeia v1.0现在更具可扩展性并且是面向未来的基础架构。
+- 正在对Politeia的第一个开发提案进行投票，以正式确定发展路线和预算。
+- DCRDEX正朝着v0.2更新的方向发展，它对后端和UX进行了一些改进，并为将来令人兴奋的功能奠定了基础。
+- 初始版DCRDEX集成已合并到Decrediton中。
 
-Contents:
+内容：
 
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Community Discussions](#community-discussions)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [整合](#integrations)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [社区讨论](#community-discussions)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但对于普通用户来说，还不能使用。
 
 <a id="dcrd" />
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-- codebase [converted](https://github.com/decred/dcrd/pull/2625) to use the new `stdaddr` package. Code that deals with addresses now supports different script versions and is one step closer to being able to cleanly introduce new scripting language versions. As common for large changes, to make review easier this one was split into a series of individual commits such that everything builds and passes all tests each step of the way.
-- introduced [UTXO database](https://github.com/decred/dcrd/pull/2632). It paves the way for a specialized UTXO database implementation that can be made more efficient in terms of both processing time and memory usage.
-- added [median time](https://github.com/decred/dcrd/pull/2638) over the last 11 blocks to verbose `getblock` and `getblockheader` results (used by DCRDEX)
-- allow to specify network interfaces to listen by their [names](https://github.com/decred/dcrd/pull/2623) in addition to exact IP addresses
+- 代码库已[转换](https://github.com/decred/dcrd/pull/2625)为使用新`stdaddr`程序包。现在，处理地址的代码支持不同的脚本版本，并且距离能够干净地引入新的脚本语言版本仅一步之遥。与大的更改一样，为了使审核更容易，此操作被分成一系列单独的提交，以便每一个步骤的每一步都建立并通过所有测试。
+- 引入[UTXO](https://github.com/decred/dcrd/pull/2632)数据库。它为专门的UTXO数据库实现铺平了道路，可以在处理时间和内存使用方面提高效率。
+- 在最后11个区块中增加了[中位时间](https://github.com/decred/dcrd/pull/2638)来表示详细信息`getblock` 和 `getblockheader`结果（由DCRDEX使用）
+- 允许指定网络接口以使用其[名称](https://github.com/decred/dcrd/pull/2623)以及确切的IP地址进行侦听
 
-Initial chain sync [comparison](https://www.reddit.com/r/decred/comments/mi4ezt/initial_chain_sync_comparison_between_dcrd_v140/) between dcrd v1.4.0 and latest shows how all the improvements have accumulated into a big difference in performance. Despite there now being ~70% more blocks, the latest version takes almost the same time to sync while allocating way less memory.
+dcrd v1.4.0与最新版本之间的初始链同步[比较](https://www.reddit.com/r/decred/comments/mi4ezt/initial_chain_sync_comparison_between_dcrd_v140/)显示了所有改进如何累积到性能上的巨大差异。尽管现在的块增加了约70％，但最新版本几乎需要花费相同的时间来同步，同时分配的内存更少。
 
 <a id="dcrwallet" />
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
-- a new method that returns wallet's [sync status](https://github.com/decred/dcrwallet/pull/1991)
-- handle ticket status when the VSP has [received](https://github.com/decred/dcrwallet/pull/1965) its fee tx but has not yet broadcast it
-- fixed bugs found when used by DCRDEX
+- 一种返回钱包[同步状态](https://github.com/decred/dcrwallet/pull/1991)的新方法
+- 当VSP[收到](https://github.com/decred/dcrwallet/pull/1965)费用tx但尚未广播时，处理选票状态
+- 修复了由DCRDEX使用时发现的bug
 
 <a id="decrediton" />
 
 **[Decrediton](https://github.com/decred/decrediton)**
 
-- initial [DEX integration](https://github.com/decred/decrediton/pull/3356)
-- a form for [funding](https://github.com/decred/decrediton/pull/3426) the DEX account from the registration view
-- allow to use an [existing](https://github.com/decred/decrediton/pull/3438) wallet account for the DEX instead of making a new one
-- added [QR code](https://github.com/decred/decrediton/pull/3112) generation to export active tickets (for tracking with the Decred Address Scanner app)
-- [remember](https://github.com/decred/decrediton/pull/3441) ticket auto-buyer settings
-- added a migration to initialize [account](https://github.com/decred/decrediton/pull/2664) passphrases with the wallet passphrase. Also, some operations (send, purchase ticket, mixing, revoke) switched to only unlock a single account instead of unlocking an entire wallet.
-- lock [new accounts](https://github.com/decred/decrediton/pull/3424) after creation
-- allow restoring hex seeds up to 128 characters (including BIP0039 seeds)
-- updated design of [Transactions](https://github.com/decred/decrediton/pull/3326), [Proposals](https://github.com/decred/decrediton/pull/3345) and [Purchase tickets](https://github.com/decred/decrediton/pull/3349) views
-- many smaller design tweaks
-- switched to a strict Protobuf generation without `eval()` and restricted to only access external servers via `https` in production builds using the [CSP header](https://github.com/decred/decrediton/pull/3366)
-- refactoring of state management, separation of concerns, dependency upgrades
-- increased test coverage
-- ~24 bug fixes
+- 初始[DEX集成](https://github.com/decred/decrediton/pull/3356)
+- 允许使用现有的电子钱包帐户[代替](https://github.com/decred/decrediton/pull/3438)DEX
+- 添加了[QR码](https://github.com/decred/decrediton/pull/3112)生成功能以导出活动选票（用于使用Decred Address Scanner应用程序进行跟踪）
+- 选票自动购买设置[记忆](https://github.com/decred/decrediton/pull/3441)
+- 添加了一个迁移，以使用钱包密码来初始化[帐户](https://github.com/decred/decrediton/pull/2664)密码。此外，某些操作（发送，购买票证，混合，吊销）切换为仅解锁单个帐户，而不是解锁整个钱包。
+- 创建后锁定[新帐户](https://github.com/decred/decrediton/pull/3424)
+- 允许恢复最多128个字符的十六进制种子（包括BIP0039种子）
+- 更新了[交易](https://github.com/decred/decrediton/pull/3326), [提案](https://github.com/decred/decrediton/pull/3345)和[购票](https://github.com/decred/decrediton/pull/3349)视图的设计
+- 许多较小的设计调整
+- 切换到严格的Protobuf生成，而没有eval()并且仅限于https使用CSP标头通过生产版本访问外部服务器
+- 状态管理重构，关注点分离，依赖关系升级
+- 增加测试范围
+- 修复约为24个bug
 
-Release [v1.6.3](https://github.com/decred/decrediton/tree/release-v1.6%2B) is being prepared including many of the above changes.
+正在准备v1.6.3版，其中包括许多上述更改。
 
 <a id="politeia" />
 
 **[Politeia](https://github.com/decred/politeia)**
 
-Politeia v1.0.0 has been released with the new storage backend, streamlined API, new plugin architecture, and 5 plugins. Read the [release notes](https://github.com/decred/politeia/releases/tag/v1.0.0) for full details on each feature. The new version has been deployed at [proposals.decred.org](https://proposals.decred.org/).
+Politeia v1.0.0已发布，具有新的存储后端，简化的API，新的插件体系结构和5个插件。阅读[发行说明](https://github.com/decred/politeia/releases/tag/v1.0.0)以获取有关每个功能的完整详细信息。新版本已部署在[proposals.decred.org](https://proposals.decred.org/)上。
 
-2FA support tried hard to escape our attention and is now live. Users can set it up in account settings. Don't forget to backup the key.
+2FA双重验证已支持。用户可以在帐户设置中进行设置。不要忘记备份密钥。
 
-Merged in April:
+四月份合并：
 
-- list [proposals](https://github.com/decred/politeiagui/pull/2340) from [proposals-archive.decred.org](https://proposals-archive.decred.org/) on proposals.decred.org for convenience
-- [verify](https://github.com/decred/politeia/pull/1377) comment and vote bundles with the new `politeiaverify` tool
-- list registration fee in the [history](https://github.com/decred/politeiagui/pull/2322) of purchases
-- ~24 bugs discovered in the new version have been fixed
+- 为了方便起见，在proposal.decred.org上列出了[proposals-archive.decred.org](https://proposals-archive.decred.org/)中的提案
+- 使用新`politeiaverify`工具[验证](https://github.com/decred/politeia/pull/1377)评论和投票
+- 在购买[历史](https://github.com/decred/politeiagui/pull/2322)中列出注册费
+- 修复了新版本中发现的约24个bug
 
-One notable change is the addition of [timestamps](https://github.com/decred/politeia/pull/1395) to cast votes. In Git backend precise timestamps were not stored to improve voter privacy, and as a result, it was only possible to determine if a vote was cast within a ~60 min period. In tstore backend timestamp is already being recorded by Trillian and this cannot be changed without writing a custom Trillian implementation. Because vote timestamp is now public data anyway, adding it directly to the vote structure allows dcrdata to obtain it much easier (e.g. to build its vote [graphs](https://dcrdata.decred.org/proposal/video-content-production-for-decred-phase-3)). But it also means a bit lower privacy for people casting all their votes at once. People who want to protect their privacy are strongly advised to use `politeiavoter`'s [trickling feature](https://github.com/decred/politeia/blob/master/politeiawww/cmd/politeiavoter/README.md#privacy-considerations).
+一个显着的变化是添加了[时间戳](https://github.com/decred/politeia/pull/1395)以进行投票。在Git后端，没有存储准确的时间戳以改善选民的隐私，因此，只能确定是否在约60分钟内进行了投票。在tstore中，Trillian已经记录了后端时间戳，除非编写自定义Trillian实现，否则无法更改此时间戳。由于表决时间戳现在无论如何都是公共数据，因此将其直接添加到表决结构中可使dcrdata更加轻松地获取它（例如，构建其表决图）。但这也意味着对于一次投票的人们来说，隐私权会有所降低。谁想要保护自己的隐私的人，强烈建议使用politeiavoter的功能。
 
-@lukebp talked about Politeia development, latest releases, and future directions on Decred in Depth [podcast](https://www.youtube.com/watch?v=J6IAjmwkki0) (starts at 12 min).
+@lukebp讨论了Politeia的发展，最新版本以及Decred in Depth[播客](https://www.youtube.com/watch?v=J6IAjmwkki0)的未来方向（从12分钟开始）。
 
-Politeia's own first [proposal](https://proposals.decred.org/record/91cfcc8) is now live (and voting), formalizing its development roadmap and budget until the end of 2021.
+Politeia自己的第一个[提案](https://proposals.decred.org/record/91cfcc8)现已上线（并投票），正式制定了其发展路线图和预算，直至2021年底。
 
 <a id="dcrpool" />
 
 **[dcrpool](https://github.com/decred/dcrpool)**
 
-- improved [connectivity](https://github.com/decred/dcrpool/pull/317)
-- more [efficient](https://github.com/decred/dcrpool/pull/318) [miner](https://github.com/decred/dcrpool/pull/319) [handling](https://github.com/decred/dcrpool/pull/320)
+- 改善连接性
+- 更有效的 矿工 处理
 
 <a id="dcrlnd" />
 
 **[dcrlnd](https://github.com/decred/dcrlnd)**
 
-- support [unlocking](https://github.com/decred/dcrlnd/pull/136) a specific account (for Decrediton)
+- 支持[解锁](https://github.com/decred/dcrlnd/pull/136)特定帐户（对于Decrediton）
 
 <a id="dcrdex" />
 
 **[DCRDEX](https://github.com/decred/dcrdex)**
 
-- show important [server info](https://github.com/decred/dcrdex/pull/1042) (like the lot size - minimum tradeable amount) before the user pays registration fee
-- better handling of [inactive](https://github.com/decred/dcrdex/pull/1030) orders
-- use [median time](https://github.com/decred/dcrdex/pull/1058) for transaction finalization
-- ensure all [fee rates](https://github.com/decred/dcrdex/pull/1060) are capped by config
-- reduced [memory](https://github.com/decred/dcrdex/pull/1070) usage during database upgrade
-- [responsive](https://github.com/decred/dcrdex/pull/1016) GUI
-- support for CPU and HTTP [profiling](https://github.com/decred/dcrdex/pull/1035)
-- improved [couch testing](https://github.com/decred/dcrdex/pull/1038) experience
-- added versioning for [server API](https://github.com/decred/dcrdex/pull/1047) and [asset](https://github.com/decred/dcrdex/pull/1054) backends
-- fixed some sync issues
+- 在用户支付注册费之前显示重要的[服务器信息](https://github.com/decred/dcrdex/pull/1042)（例如最小可交易量）
+- 更好地处理[无效](https://github.com/decred/dcrdex/pull/1030)订单
+- 使用[中位数时间](https://github.com/decred/dcrdex/pull/1058)完成交易
+- 确保所有[费用费率](https://github.com/decred/dcrdex/pull/1060)均受配置限制
+- 减少数据库升级期间的[内存](https://github.com/decred/dcrdex/pull/1070)使用量
+- [响应式](https://github.com/decred/dcrdex/pull/1016)GUI
+- 支持CPU和HTTP[分析](https://github.com/decred/dcrdex/pull/1035)
+- 改进了[couch](https://github.com/decred/dcrdex/pull/1038)测试体验
+- 为[服务器API](https://github.com/decred/dcrdex/pull/1047)和[资产后端](https://github.com/decred/dcrdex/pull/1054)添加了版本控制
+- 修复了一些同步问题
 
 An [update](https://www.reddit.com/r/decred/comments/n9i8z2/dcrdex_updates_v02_release_decrediton_integration/) on Phase 2 development was posted in May with the following key points:
 
