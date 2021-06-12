@@ -1,10 +1,10 @@
-# Decred Journal – May 2021
+# Decred月报 – 2021年5月
 
 ![abstract art by @saender](img/202105.1.github.png)
 
-_Image: Qubism Ascend by @saender_
+_图片:@saender_
 
-Highlights for May:
+五月亮点：
 
 - The new Treasury system is actively receiving block rewards and has already been tested with the first of the new tspend transactions being approved and mined.
 - Version 1.6.3 of node and wallet software was released to patch some issues with VSP staking and add some of the latest features.
