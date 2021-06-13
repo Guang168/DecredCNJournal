@@ -6,117 +6,117 @@ _图片:@saender_
 
 五月亮点：
 
-- The new Treasury system is actively receiving block rewards and has already been tested with the first of the new tspend transactions being approved and mined.
-- Version 1.6.3 of node and wallet software was released to patch some issues with VSP staking and add some of the latest features.
-- DCRDEX v0.2.0 was released, incorporating more than 3 months work, and an experimental DCRDEX integration has been added to Decrediton v1.6.3.
+- 新国库已经开始接收区块奖励，并且已经批准和释放了第一笔交易进行了测试。
+- 节点和钱包软件版本 1.6.3 已发布，以修补 VSP 质押的一些问题以及添加了一些最新功能。
+- DCRDEX v0.2.0 发布，包含超过 3 个月的工作，并且实验性的将 DCRDEX 集成到 Decrediton v1.6.3中。
 
-Contents:
+内容:
 
-- [v1.6.3 Patch Release](#v163-patch-release)
-- [New Treasury Activated](#new-treasury-activated)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Media](#media)
-- [Discussions](#discussions)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+- [v1.6.3 补丁发布](#v163-patch-release)
+- [新国库启动](#new-treasury-activated)
+- [开发仅占总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [媒体](#media)
+- [社区讨论](#discussions)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
-## v1.6.3 Patch Release
+## v1.6.3 补丁发布
 
-Latest release of our flagship GUI wallet Decrediton fixes issues with VSP staking, makes the wallet "cooler" with granular unlocking of accounts, and adds experimental integration of the new [DCRDEX release](#dcrdex). Command-line dcrwallet is updated as well with VSP staking fixes and improvements.
+最新版本的 GUI 钱包 Decrediton 修复了 VSP 质押问题，并集成了新版本的[DCRDEX](#dcrdex)。命令行 dcrwallet 也随着 VSP 修复和改进而更新。
 
-Decrediton users please be aware:
+Decrediton 用户请注意：
 
-- the DEX tab is only shown in full mode and is hidden in SPV mode
-- you need to run Bitcoin Core and have it fully synced to use the DEX tab
-- Windows download was updated to fix default Bitcoin directory [bug](https://github.com/decred/decrediton/pull/3469), if you got the installer before May 25 please download again and reinstall
+- DEX 选项卡仅在全节点模式下显示，在 SPV 模式下隐藏
+- 需要运行 Bitcoin Core 并使其完全同步才能使用 DEX 
+- Windows版本已更新以修复默认比特币目录的[错误](https://github.com/decred/decrediton/pull/3469)，如果您在 5 月 25 日之前获得安装程序，请重新下载并重新安装
 
-See the full release notes and downloads [here](https://github.com/decred/decred-binaries/releases/tag/v1.6.3). As always, respect the signature [verification](https://docs.decred.org/advanced/verifying-binaries/) ritual to ensure you run unmodified binaries.
+请在[此处](https://github.com/decred/decred-binaries/releases/tag/v1.6.3)查看完整的发行说明和下载。与往常一样，请验证[程序签名](https://docs.decred.org/advanced/verifying-binaries/)以确保你运行的是未被篡改的二进制文件。
 
-## New Treasury Activated
+## 新国库启动
 
-The new consensus rules activated on May 8. Starting with block [552,448](https://explorer.dcrdata.org/block/00000000000000001c6fc262b2673d94827f87daa329b0bdeb7866562ef919cf), 10% of the block rewards are flowing to the new [Treasury account](https://explorer.dcrdata.org/treasury) and are no longer flowing to the [legacy address](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx).
+新共识规则于 5 月 8 日启动。从区块[552,448](https://explorer.dcrdata.org/block/00000000000000001c6fc262b2673d94827f87daa329b0bdeb7866562ef919cf)开始，10% 的区块奖励流向新的[国库账户](https://explorer.dcrdata.org/treasury)，不再流向[旧地址](https://explorer.dcrdata.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx)。
 
-The key difference is that the new Treasury account is controlled by Decred stakeholders. Spending from the legacy address only required a transaction signed by Decred Holdings Group LLC ("DHG"), a conventional corporate entity created to bootstrap Decred. Spending from the new account is only possible if stakeholders vote to approve a special "treasury spend" transaction ("tspend").
+主要区别在于新国库账户由 Decred 利益相关者控制。来自旧地址的支出只需要由 Decred Holdings Group LLC（“DHG”）签署交易，这是一家为引导 Decred 而创建的传统公司实体。新国库只有当利益相关者投票批准一项特殊的“国库支出”交易（“tspend”）时，支出才有可能。
 
-A sophisticated voting process to support it was specified in [Decred Change Proposal 6](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki) and implemented in software release v1.6. In simple terms, the key steps are:
+[Decred Change Proposal 6](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki) （Decred共识变更DCP） 中指定了一个复杂的投票过程来支持它，并在软件版本 v1.6 中实现。简单来说的步骤是：
 
-- Politeia admins create a tspend transaction conforming to certain requirements (not spending too much money, with not too long expiration time, signed by one of the two keys allowed by consensus, etc)
-- the transaction is published to the mempool and voting wallets start voting on it
-- the vote runs for up to 12 days but can "short-circuit" in as early as ~7 days if the outcome becomes unchangeable by any remaining votes
-- up to 17,280 tickets that are called to vote during this period may cast tspend votes (along with normal block approval and consensus upgrade votes)
-- if the vote passes, the transaction is included in a block (up to 1 day later) and the contractors are paid
+- Politeia 创建符合某些要求的 tspend 交易
+- 交易被发布到内存池，投票钱包开始对其进行投票
+- 投票最多持续 12 天，但如果结果无法被任何剩余投票改变，则可以在大约 7 天内通过
+- 在此期间被召集最多 17,280 张票可以进行 tspend 投票（以及正常的区块批准和共识升级投票）
+- 如果投票通过，交易将被包含在一个区块中（最多1天后），并支付给承包商
 
-The new Treasury system was successfully tested on mainnet quickly after the activation. On May 10 the stakeholders were [notified](https://twitter.com/decredproject/status/1391877816292151296) to configure their voting wallets. Then on May 12, a small test tspend [transaction](https://explorer.dcrdata.org/tx/7507bcc72bfde895065034e12e6d462f2360163cd0c879f0db35514f9456b2c1) was broadcast to the network. The nearest voting window was May 13-24, but the vote "short-circuited" after accumulating 6,755 Yes and 1 No vote over 9 days. Out of 12,550 tickets that had a chance to vote in that period, 54% actively voted. The tspend was mined in block [556,416](https://explorer.dcrdata.org/block/000000000000000000b8bed4b8511e3c5197d3eee6372db2ba199481e14d5376).
+新的国库系统在激活后很快就在主网上成功测试。5 月 10 日，利益相关者被[通知](https://twitter.com/decredproject/status/1391877816292151296)配置他们的投票钱包。然后在 5 月 12 日，一个小的测试 tspend [交易](https://explorer.dcrdata.org/tx/7507bcc72bfde895065034e12e6d462f2360163cd0c879f0db35514f9456b2c1)被广播到网络。最近的投票窗口是 5 月 13 日至 24 日，但在 9 天内累积 6,755 票赞成和 1 票反对后，投票支付。在此期间有机会投票的 12,550 张选票中，54% 的人积极投票。tspend 是在区块[556,416](https://explorer.dcrdata.org/block/000000000000000000b8bed4b8511e3c5197d3eee6372db2ba199481e14d5376)中开采的。
 
-As of software release v1.6.3, tspend voting is only supported for "solo voters" who run voting wallets 24/7 (~77% of all stakeholders as of Jun 1). Work is [underway](https://github.com/decred/decrediton/issues/3184) to enable this for VSP voters.
+从软件版本 v1.6.3 开始，tspend 投票仅支持 24/7 全天候运行投票钱包的“solo投票者”（截至 6 月 1 日，约占所有利益相关者的 77%）。
 
-Treasury spend voting will become an important monthly process to pay the people building Decred. Solo voters are [advised](https://twitter.com/decredproject/status/1391877959410233344) to prepare for upcoming tspend votes by configuring their voting wallets with the following command:
+国库支出投票将成为支付构建 Decred 人员的重要月度流程。[建议](https://twitter.com/decredproject/status/1391877959410233344)solo选民通过使用以下命令配置他们的投票钱包来为即将到来的 tspend 投票做准备：
 
     dcrctl --wallet settreasurypolicy "03f6e7041f1cf51ee10e0a01cd2b0385ce3cd9debaabb2296f7e9dee9329da946c" "yes or no"
 
-This command expresses your trust to the current Treasury management and its key `03f6e704...`, and sets how your wallet will vote for tspends signed by it. You can verify this key in the [DCP-0006](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki) or in the [source code](https://github.com/decred/dcrd/blob/master/chaincfg/mainnetparams.go#L389). The voting is semi-automated with this one-time configuration, but it is possible to vote on individual tspend transactions when more granular control is needed.
+此命令表示您对当前03f6e704...资金管理及其密钥的信任，并设置您的钱包将投票支持由其签名的 tspend。您可以在[DCP-0006](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki)或[源代码](https://github.com/decred/dcrd/blob/master/chaincfg/mainnetparams.go#L389)中验证此密钥。通过这种一次性配置，投票是半自动的，但是当需要更精细的控制时，可以对单个 tspend 交易进行投票。
 
-Congratulations to all stakeholders with this milestone and thanks to all [contributors](https://twitter.com/matheusd_tech/status/1390981711736053760) making it a reality!
+祝贺所有拥有这一里程碑的利益相关者，并感谢所有[贡献者](https://twitter.com/matheusd_tech/status/1390981711736053760)使其成为现实！
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但对于普通用户来说，还不能使用。
 
 <a id="dcrd" />
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-- moved code for handling [signing](https://github.com/decred/dcrd/pull/2642) standard scripts to its own subpackage in order to prepare for future splitting of standard script handling from consensus critical code
-- updated OpenBSD [rc script](https://github.com/decred/dcrd/pull/2646) for 6.9 features
-- reworked application [version](https://github.com/decred/dcrd/pull/2651) handling to parse it from a single string, which is easier to manage and is more error-proof
-- perform a graceful shutdown when the [SIGHUP](https://github.com/decred/dcrd/pull/2645) signal is received
-- added script [version](https://github.com/decred/dcrd/pull/2650) to the result of the `gettxout` RPC. The script version is going to become more important in the future when a new version is introduced.
-- [flush](https://github.com/decred/dcrd/pull/2649) block database to disk before UTXO database to ensure the latter can be recovered after an unclean shutdown
-- reworked [UTXO](https://github.com/decred/dcrd/pull/2652) related logic for better separation of concerns. This makes the flow easier to follow and paves the way for optimizing the UTXO database.
+- 将用于处理[签名](https://github.com/decred/dcrd/pull/2642)标准脚本的代码移动到其自己的子代码中，以便为将来将标准脚本处理与共识关键代码分开做准备
+- 更新了 OpenBSD [rc 脚本](https://github.com/decred/dcrd/pull/2646)
+- 重新设计应用程序[版本](https://github.com/decred/dcrd/pull/2651)处理以从单个字符串解析它，这更易于管理且更防错
+- 收到[SIGHUP](https://github.com/decred/dcrd/pull/2645)信号时执行正常关机
+- 将脚本[版本](https://github.com/decred/dcrd/pull/2650)添加到gettxoutRPC的结果中。将来引入新版本时，脚本版本将变得更加重要。
+- 在 UTXO 数据库之前将块数据库[刷新](https://github.com/decred/dcrd/pull/2649)到磁盘，以确保后者在非正常关机后可以恢复
+- 重新设计[UTXO](https://github.com/decred/dcrd/pull/2652)相关逻辑以更好地分离关注点。这使得流程更容易遵循，并为优化 UTXO 数据库铺平了道路。
 
 <a id="dcrwallet" />
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
-Merged in master and v1.6.3 release:
+合并在 master 和 v1.6.3 版本中：
 
-- improved heuristic for creating additional [split transactions](https://github.com/decred/dcrwallet/pull/2034) to fix more insufficient balance errors when buying tickets
-- fixed [input selection](https://github.com/decred/dcrwallet/pull/2035) when paying VSP fees, resolving two bugs: one where the intended inputs were not being used and could remain locked, and another where VSP fee could be paid out of the wrong account, possibly degrading the privacy of mixing wallets
-- ensure intended wallet [accounts](https://github.com/decred/dcrwallet/pull/2037) are used for paying VSP fee and receiving change when syncing failed VSP tickets
-- [multiple](https://github.com/decred/dcrwallet/pull/2045) [fixes](https://github.com/decred/dcrwallet/pull/2046) for [tracking](https://github.com/decred/dcrwallet/pull/2048) VSP-managed tickets regarding fee payment scheduling, error handling, revocations, and expired fee transactions
-- ensure there are [no duplicate](https://github.com/decred/dcrwallet/pull/2042) fee payments and that all are tracked by the VSP client
-- perform a graceful shutdown when the [SIGHUP](https://github.com/decred/dcrwallet/pull/2039) signal is received
-- added a new gRPC endpoint that exposes tickets and fees [tracked](https://github.com/decred/dcrwallet/pull/2040) by the VSP client (used by Decrediton)
+- 改进了用于创建额外[拆分交易](https://github.com/decred/dcrwallet/pull/2034)的方法，以修复购买选票时的余额不足错误
+- 修复了支付 VSP 费用时的[输入选择](https://github.com/decred/dcrwallet/pull/2035)，解决了两个错误：一个是未使用预期输入并可能保持锁定状态，另一个是 VSP 费用可能从错误的帐户中支付，这可能会降低混币钱包的隐私性
+- 确保预期的钱包[帐户](https://github.com/decred/dcrwallet/pull/2037)用于支付 VSP 费用并在同步失败的 VSP 选票时接收找零
+- 多个修复程序，用于跟踪有关费用支付安排、错误处理、撤销和过期费用交易的 VSP 管理的选票
+- 确保[没有重复](https://github.com/decred/dcrwallet/pull/2042)的费用支付，并且所有费用都由 VSP 客户端跟踪
+- 收到[SIGHUP](https://github.com/decred/dcrwallet/pull/2039)信号时执行正常关机
+- 添加了一个新的 gRPC 端点，用于公开VSP 客户端[跟踪](https://github.com/decred/dcrwallet/pull/2040)的选票和费用（由 Decrediton 使用）
 
-Merged in master:
+合并到 master:
 
-- implemented [`gettxout`](https://github.com/decred/dcrwallet/pull/1903) method returning information about an unspent transaction output, which is required for DCRDEX to operate a DCR wallet in [SPV mode](https://github.com/decred/dcrdex/pull/788)
-- implemented [methods](https://github.com/decred/dcrwallet/pull/1978) to obtain cfilters ([compact block filters](https://bitcoinops.org/en/topics/compact-block-filters/)) and the best block. These are similar to dcrd's implementations and also enable DCRDEX to manage DCR in SPV mode.
+- 已实现的[`gettxout`](https://github.com/decred/dcrwallet/pull/1903)方法返回有关未花费交易输出的信息，这是 DCRDEX 在SPV 模式下操作 DCR 钱包所必需的
+- 实现cfilters([紧凑块过滤器](https://bitcoinops.org/en/topics/compact-block-filters/))。这些类似于 dcrd 的实现，并且还使 DCRDEX 能够在 SPV 模式下管理 DCR。
 
 <a id="decrediton" />
 
 **[Decrediton](https://github.com/decred/decrediton)**
 
-Merged in master and v1.6.3 release:
+合并在 master 和 v1.6.3 版本中：
 
-- allow to [send](https://github.com/decred/decrediton/pull/3446) funds between accounts in privacy wallets (except into the mixed account)
-- only show the "Process Managed Tickets" view when it is [needed](https://github.com/decred/decrediton/pull/3457)
-- fixed blank page being shown on startup instead of a [loading bar](https://github.com/decred/decrediton/pull/3449)
-- fixed incorrect passphrase allowing to [skip](https://github.com/decred/decrediton/pull/3454) account security migration
-- fixed wallet account [locking](https://github.com/decred/decrediton/pull/3453) to prevent the locking of accounts where VSP tickets are being processed, but to also lock any accounts that no longer need to be unlocked
-- consistently use Lodash for [type checking](https://github.com/decred/decrediton/pull/3135)
-- fixed unmixed and change accounts not being [unlocked](https://github.com/decred/decrediton/pull/3476) when the ticket autobuyer is in privacy mode
-- fixed default Bitcoin [directory](https://github.com/decred/decrediton/pull/3469) on Windows
+- 允许在隐私钱包中的账户之间[发送](https://github.com/decred/decrediton/pull/3446)资金（混合账户除外）
+- 仅在[需要](https://github.com/decred/decrediton/pull/3457)时显示“处理托管选票”视图
+- 修复了启动时显示的空白页面而不是[加载栏](https://github.com/decred/decrediton/pull/3449)
+- 修复了错误的密码短语，允许[跳过](https://github.com/decred/decrediton/pull/3454)帐户安全迁移
+- 固定钱包帐户锁定以防止锁定正在处理 VSP 选票的帐户，但也锁定任何不再需要[解锁](https://github.com/decred/decrediton/pull/3453)的帐户
+- 始终使用 Lodash 进行[类型检查](https://github.com/decred/decrediton/pull/3135)
+- 修复了当自动购票处于隐私模式时[未解锁](https://github.com/decred/decrediton/pull/3476)的未混合和更改帐户
+- 修复了 Windows 上的默认比特币[目录](https://github.com/decred/decrediton/pull/3469)
 
-Merged in master:
+合并到 master:
 
-- fixed handling of [zero](https://github.com/decred/decrediton/pull/3468) "Balance to Maintain" value
-- introduced [preload script](https://github.com/decred/decrediton/pull/3397) and converted some comms between the main and renderer processes to a more robust approach using `invoke/handle`. This is a first step towards isolating all Node-related calls so that Node integration can be turned off for the main UI code.
+- 固定处理[零](https://github.com/decred/decrediton/pull/3468)“要维持的余额”值
+- 引入了[预加载脚本](https://github.com/decred/decrediton/pull/3397)，并使用`invoke/handle`. 这是隔离所有 Node 相关调用的第一步，以便可以关闭主 UI 代码的 Node 集成。
 
 ![DEX in Decrediton](img/202105.2.380.png)
 
@@ -124,57 +124,56 @@ Merged in master:
 
 **[Politeia](https://github.com/decred/politeia)**
 
-Most of the work has been dedicated to updating UI code, testing, and fixing bugs after the massive upgrade to the new storage backend and the new API.
+在对新存储后端和新 API 进行大规模升级后，大部分工作都致力于更新 UI 代码、测试和修复错误。
 
-- updated [About Politeia](https://github.com/decred/politeiagui/pull/2378) copy
-- put proposal token into email notification [subject](https://github.com/decred/politeia/pull/1417)
-- consistently handle [short](https://github.com/decred/politeiagui/pull/2365) proposal tokens across the UI codebase
-- fixed multiple [comment](https://github.com/decred/politeiagui/pull/2384)-related UI bugs
-- fixed [flickering](https://github.com/decred/politeiagui/pull/2395) during initial UI loading
-- ~2 other backend and ~14 UI bug fixes
-- fixed [unit](https://github.com/decred/politeiagui/pull/2364) and [end-to-end](https://github.com/decred/politeiagui/pull/2383) tests to work with the new backend API
-- dependency upgrades, code cleanup, API enhancement
+- 更新了[关于Politeia](https://github.com/decred/politeiagui/pull/2378)副本
+- 将提案令牌放入电子邮件通知[主题](https://github.com/decred/politeia/pull/1417)
+- 在整个 UI 代码库中始终如一地处理[简短](https://github.com/decred/politeiagui/pull/2365)的提案令牌
+- 修复了多条[评论](https://github.com/decred/politeiagui/pull/2384)相关的 UI 错误
+- 修复了初始 UI 加载期间的[闪烁](https://github.com/decred/politeiagui/pull/2395)
+- ~2 个其它后端和 ~14 个 UI 错误修复
+- 修复了[单元](https://github.com/decred/politeiagui/pull/2364)测试和[端到端](https://github.com/decred/politeiagui/pull/2383)测试以使用新的后端 API
+- 依赖升级、代码清理、API 增强
 
-Contractor Management System (CMS):
+承包商管理系统（CMS）：
 
-- changed invoice peer review [visibility](https://github.com/decred/politeia/pull/1351) from based on author's domain to based on invoice's line-item domain. This will allow contractors to review all billed work in their domain even if it is coming from contractors in other domains. The current domains are Development, Research, Design, and Marketing.
-- added more email [notifications](https://github.com/decred/politeia/pull/1353): "Timely submission of invoices will be much more important once the payout from the treasury is fully automated, so further nagging is due."
-- docs update and code cleanup
-- ~4 backend and ~1 UI bug fixes
+- 将发票同行评审[可见性](https://github.com/decred/politeia/pull/1351)从基于作者的域更改为基于发票的行项目域。这将允许承包商审查其域中的所有计费工作，即使它来自其它域的承包商。当前的领域是开发、研究、设计和营销。
+- 添加了更多电子邮件[通知](https://github.com/decred/politeia/pull/1353)：“一旦国库的支出完全自动化，及时提交发票将变得更加重要，因此需要进一步唠叨。”
+- 文档更新和代码清理
+- ~4 个后端和 ~1 个 UI 错误修复
 
-Politeia v1.0.1 has been [released](https://github.com/decred/politeia/releases/tag/v1.0.1) including all the above backend fixes and improvements.
+Politeia v1.0.1 [已发布](https://github.com/decred/politeia/releases/tag/v1.0.1)，包括上述所有后端修复和改进。
 
-Progress towards v1.1.0 can now be tracked on the [Milestones](https://github.com/decred/politeia/milestones) page.
+现在可以在[里程碑](https://github.com/decred/politeia/milestones)页面上跟踪 v1.1.0 的进度。
 
 <a id="vspd" />
 
 **[vspd](https://github.com/decred/vspd)**
 
-- added block explorer [links](https://github.com/decred/vspd/pull/247) for ticket and fee transactions to the UI
-- added best block [height](https://github.com/decred/vspd/pull/254) to status response (useful for detecting stalled VSPs)
-- populate ticket [purchase height](https://github.com/decred/vspd/pull/250) for all confirmed tickets and show it on the admin page
-- improved admin page [aesthetics](https://github.com/decred/vspd/pull/263)
-- added a framework for database [upgrades](https://github.com/decred/vspd/pull/242)
-- improved logging when [recovering](https://github.com/decred/vspd/pull/255) from request handling failures
-- added [config](https://github.com/decred/vspd/pull/249) params for max log size and max log files to keep
-- [remove](https://github.com/decred/vspd/pull/260) confirmed fee transactions from the database, cutting disk usage [by ~2x](https://github.com/decred/vspd/pull/243#issuecomment-844945549)
-- store each ticket in its own [DB bucket](https://github.com/decred/vspd/pull/243). Combined with the previous optimization, it allows to trade ~40% higher disk usage for ~50% faster insertion and ~85% faster iterating over tickets.
+- 将选票和费用交易的区块浏览器[链接](https://github.com/decred/vspd/pull/247)添加到 UI
+- 为状态响应添加了最佳块[高度](https://github.com/decred/vspd/pull/254)（用于检测停滞的 VSP）
+- 为所有已确认的选票填充[购买高度](https://github.com/decred/vspd/pull/250)并将其显示在管理页面上
+- 改进的管理页面[视觉](https://github.com/decred/vspd/pull/263)效果
+- 添加了数据库[升级](https://github.com/decred/vspd/pull/242)框架
+- 从请求处理失败中[恢复](https://github.com/decred/vspd/pull/255)时改进日志记录
+- 添加了最大日志大小和最大日志文件的[配置](https://github.com/decred/vspd/pull/249)参数以保留
+- 从数据库中[删除](https://github.com/decred/vspd/pull/260)确认的费用交易，将磁盘使用量减少约 2 倍
+- 将每张票存储在其自己的[数据库存储桶](https://github.com/decred/vspd/pull/243)中。结合之前的优化，它允许将大约 40% 的磁盘使用率提高大约 50% 的插入速度和大约 85% 的票证迭代速度。
 
 <a id="dcrstakepool" />
 
 **[dcrstakepool](https://github.com/decred/dcrstakepool)**
 
-- fixed [incompatibility](https://github.com/decred/dcrstakepool/pull/636) between dcrstakepool (legacy VSP software) and dcrwallet v1.6.3 in some [rare](https://github.com/decred/dcrwebapi/pull/139#issuecomment-843101864) configurations
+- 修复了 dcrstakepool（旧版 VSP 软件）和 dcrwallet v1.6.3 在一些罕见配置中的[不兼容](https://github.com/decred/dcrstakepool/pull/636)问题
 
 <a id="dcrpool" />
 
 **[dcrpool](https://github.com/decred/dcrpool)**
 
-- do not try to run with database version [newer](https://github.com/decred/dcrpool/pull/326) than expected
-- handle `SIGTERM` and `SIGHUP` shutdown [signals](https://github.com/decred/dcrpool/pull/327)
-- fixed chain notifications getting [blocked](https://github.com/decred/dcrpool/pull/324) by payment processing and added a workaround for dcrwallet's [reorg handling](https://github.com/decred/dcrwallet/issues/1740) bug
+- 不要尝试使用比预期[新的](https://github.com/decred/dcrpool/pull/326)数据库版本运行
+- 处理`SIGTERM` 和 `SIGHUP`关闭信号
 
-Third v1.2.0 release [candidate](https://github.com/decred/dcrpool/releases/tag/v1.2.0-rc3) fixed issues discovered since RC2, but coinbase confirmation failures remain unresolved. The release is postponed till further notice while the team is exploring solutions.
+第三个 v1.2.0 发布[候选](https://github.com/decred/dcrpool/releases/tag/v1.2.0-rc3)修复了自 RC2 以来发现的问题，但 coinbase 确认失败仍未解决。当团队正在探索解决方案时，发布被推迟到另行通知。
 
 <a id="dcrdex" />
 
