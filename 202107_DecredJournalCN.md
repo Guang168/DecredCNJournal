@@ -1,157 +1,156 @@
-# Decred Journal – July 2021
+# Decred月报 – 2021年7月
 
 ![abstract art by @saender](img/202107.1.github.png)
 
-_Image: Proximity Scaling by @saender_
+_图片: @saender_
 
-Highlights for July:
+七月重点：
 
-- There are now 3 consensus changes in various stages of development, and the ticket revocations one is already attracting some press coverage.
-- Solid progress on all of the usual repositories - dcrd took another 10% off the initial blockchain download time, and DCRDEX has added core ETH integration.
-- It has been a big month for interviews, with Decred in Depth recording episodes with a number of well-known community members, and some other publications and podcasts featuring interviews with project developers.
+- 现在有3个新的共识升级开发提案，自动撤销选票已经吸引了一些媒体报道。
+- dcrd将初始区块链下载时间又缩短了10%，并且 DCRDEX 增加了核心 ETH 集成。
+- Decred in Depth 录制了许多知名社区成员的采访，包括一些出版物和播客，包含了对开发人员的采访。
 
-Contents:
+内容：
 
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Discussions](#discussions)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [社区讨论](#discussions)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但对于普通用户来说，还不能使用。
 
 <a id="dcrd" />
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-- updated the `UtxoBackend` implementation to use `leveldb` directly rather than using the `database` package. This results in ~10% faster initial blockchain download and ~12% reduced memory usage.
-- block index changed to use [short keys](https://github.com/decred/dcrd/pull/2685), resulting in ~30 MiB memory savings
-- added size [limits](https://github.com/decred/dcrd/pull/2675) for RPC requests to help further harden the server against potential abuse in non-standard configurations on poorly configured networks
-- added a more strict [origin check](https://github.com/decred/dcrd/pull/2676) for WebSocket connections
-- smaller fixes and cleanup
+- 更新了`UtxoBackend`实现以`leveldb`直接使用而不是使用`database`包。这导致初始区块链下载速度提高约 10%，内存使用量减少约 12%。
+- 区块索引更改为使用[short keys](https://github.com/decred/dcrd/pull/2685)，从而节省约 30 MiB 内存
+- 增加了 RPC 请求的大小[限制](https://github.com/decred/dcrd/pull/2675)，以帮助进一步加强服务器以防止在配置不当的网络上的非标准配置中的潜在滥用
+- 为 WebSocket 连接添加了更严格的[来源检查](https://github.com/decred/dcrd/pull/2676)
+- 较小的修复和清理
 
-At this point we have 3 upcoming consensus changes at different stages of development:
+在这一点上，我们有 3 个即将到来的共识变化：
 
-- reverting to the originally-proposed treasury expenditure policy (to [fix spending](202106.md#new-treasury-bug) from the new treasury) has a draft [DCP](https://github.com/decred/dcps/pull/20) and a draft [pull request](https://github.com/decred/dcrd/pull/2680)
-- explicit version upgrades has an approved [proposal](https://github.com/decred/dcrd/pull/2680) and some support code already merged (like the standard script handling we covered [in June](202106.md#dcrd))
-- automatic ticket revocations has an approved [proposal](https://proposals.decred.org/record/e2d7b7d)
+- 恢复到最初的国库支出政策（以[修复](202106.md#new-treasury-bug)新国库的支出）有一个[DCP](https://github.com/decred/dcps/pull/20)提案和一个提案[拉取请求](https://github.com/decred/dcrd/pull/2680)
+- 版本升级[提案](https://github.com/decred/dcrd/pull/2680)已获批准，并且一些支持代码已经合并（就像我们在六月介绍的标准脚本处理）
+- 自动选票撤销[提案](https://proposals.decred.org/record/e2d7b7d)得到批准
 
-One less obvious benefit of automatic ticket revocation is that it simplifies [ticket splitting](https://www.reddit.com/r/decred/comments/ot8x7o/decred_memelord_13_part_tweet_thread_113_decreds/h6w1vnk/) implementation.
+自动选票撤销的一个好处是它简化了[选票分割](https://www.reddit.com/r/decred/comments/ot8x7o/decred_memelord_13_part_tweet_thread_113_decreds/h6w1vnk/)实施。
 
 <a id="dcrwallet" />
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
-- added an RPC method that will allow Decrediton to discover active addresses more efficiently
-- added an RPC method to [revoke](https://github.com/decred/dcrwallet/pull/2061) tickets in SPV mode (also for Decrediton)
-- fixed concurrency issues when [unlocking](https://github.com/decred/dcrwallet/pull/2067) the wallet
+- 添加了一个 RPC 方法，允许 Decrediton 更有效地发现活动地址
+- 添加了一个 RPC 方法来[撤销](https://github.com/decred/dcrwallet/pull/2061) SPV 模式下的选票（也适用于 Decrediton）
+- 修复了[解锁](https://github.com/decred/dcrwallet/pull/2067)钱包时的并发问题
 
 <a id="decrediton" />
 
 **[Decrediton](https://github.com/decred/decrediton)**
 
-User-facing:
+面向用户：
 
-- added [seed confirmation](https://github.com/decred/decrediton/pull/3521) window to the wallet creation flow
-- improved UI design for LN wallet [Connect](https://github.com/decred/decrediton/pull/3530) page
-- simplified responsive layout [breakpoints](https://github.com/decred/decrediton/pull/3525) (to ease integration with DCRDEX)
-- disallow some problematic [characters](https://github.com/decred/decrediton/pull/3511) in wallet names
-- fixed selecting [tx filters](https://github.com/decred/decrediton/issues/3528) on Transaction History page
-- ~7 other fixes
+- 在钱包创建流程中添加了[种子确认](https://github.com/decred/decrediton/pull/3521)窗口
+- 改进了 LN 钱包[连接](https://github.com/decred/decrediton/pull/3530)页面的UI 设计
+- 简化的响应式布局[断点](https://github.com/decred/decrediton/pull/3525)（以简化与 DCRDEX 的集成）
+- 禁止在钱包名称中使用一些有问题的[字符](https://github.com/decred/decrediton/pull/3511)
+- 修复了在交易历史页面上选择[交易过滤器](https://github.com/decred/decrediton/issues/3528)的问题
+- ~7 个其他修复
 
-Internal:
+面向内部开发者：
 
-- migrated to new [Politeia API](https://github.com/decred/decrediton/pull/3495)
-- automated tests for [Transaction](https://github.com/decred/decrediton/pull/3518) page
-- removed the use of [winston](https://github.com/decred/decrediton/pull/3536) logging library to reduce the project's dependency tree (and supply chain attack surface)
+- 迁移到新的[Politeia API](https://github.com/decred/decrediton/pull/3495)
+- [交易](https://github.com/decred/decrediton/pull/3518)页面的自动化测试
+- 删除了使用[winston](https://github.com/decred/decrediton/pull/3536)日志库以减少项目的依赖树（和供应链攻击面）
 
-![updated Decrediton LN page](../img/202107.2.559.png)
+![updated Decrediton LN page](img/202107.2.559.png)
 
-_Updated Decrediton LN setup page_
+_更新了 Decrediton LN 设置页面_
 
 <a id="politeia" />
 
 **[Politeia](https://github.com/decred/politeia)**
 
-User-facing:
+面向用户：
 
-- capture additional proposal [metadata](https://github.com/decred/politeiagui/pull/2469) like USD funding limit, start date, estimated end date, and domain. This will allow us to improve and automate contractor invoice validation, and also to generate proposal stats on Politeia.
-- added [rate limiting](https://github.com/decred/politeia/pull/1448) for email notifications to prevent malicious behavior
-- show who [censored](https://github.com/decred/politeiagui/pull/2454) a record, why, and when
-- improved UX of downloading [proposal bundles](https://github.com/decred/politeiagui/pull/2453)
-- forbid some [Markdown](https://github.com/decred/politeiagui/pull/2494) elements in comments to prevent text size abuse
-- show [placeholders](https://github.com/decred/politeiagui/pull/2484) while loading proposal data
-- show a [warning](https://github.com/decred/politeiagui/pull/2500) about possible data loss when saving drafts
-- ~11 frontend and ~1 backend bug fixes
+- 捕获额外的提案[元数据](https://github.com/decred/politeiagui/pull/2469)，如美元资金限额、开始日期、预计结束日期和域。这将使我们能够改进和自动化承包商发票验证，并在 Politeia 上生成提案统计数据。
+- 添加了电子邮件通知的[速率限制](https://github.com/decred/politeia/pull/1448)以防止恶意行为
+- 显示谁[审查](https://github.com/decred/politeiagui/pull/2454)了记录，为什么以及时间
+- 改进了下载[提案包](https://github.com/decred/politeiagui/pull/2453)的用户体验
+- 禁止评论中的某些[Markdown](https://github.com/decred/politeiagui/pull/2494)元素以防止滥用文字大小
+- 在加载提案数据时显示[占位符](https://github.com/decred/politeiagui/pull/2484)
+- 保存草稿时显示有关可能丢失数据的[警告](https://github.com/decred/politeiagui/pull/2500)
+- ~11 个前端和 ~1 个后端错误修复
 
-Internal and developer:
+内部和开发人员：
 
-- allow multiple values in [plugin settings](https://github.com/decred/politeia/pull/1451)
-- added test coverage for proposal [validation](https://github.com/decred/politeia/pull/1453)
-- automated UI tests for [proposal list](https://github.com/decred/politeiagui/pull/2473)
-- extended developer docs
-- ~1 frontend and ~7 backend bug fixes
+- 在[插件设置](https://github.com/decred/politeia/pull/1451)中允许多个值
+- 添加了提案[验证](https://github.com/decred/politeia/pull/1453)的测试覆盖率
+- [提案列表](https://github.com/decred/politeiagui/pull/2473)的自动化 UI 测试
+- 扩展开发者文档
+- ~1 个前端和 ~7 个后端错误修复
 
 CMS:
 
-- ~1 frontend and ~2 backend bug fixes
+- ~1 个前端和 ~2 个后端错误修复
 
-Changes awaiting deployment are marked with a `pi-not-deployed` label in both [politeiagui](https://github.com/decred/politeiagui/issues?q=label%3Api-not-deployed) and [politeia](https://github.com/decred/politeia/pulls?q=label%3Api-not-deployed) repos. In a similar way, changes in scope of the development [proposal](https://proposals.decred.org/record/91cfcc8) are labeled [`91cfcc8`](https://github.com/decred/politeia/issues?q=label%3A91cfcc8).
+等待部署的更改`pi-not-deployed`在[politeiagui](https://github.com/decred/politeiagui/issues?q=label%3Api-not-deployed)和[politeia](https://github.com/decred/politeia/pulls?q=label%3Api-not-deployed) repos 中都标有标签。以类似的方式，开发[提案](https://proposals.decred.org/record/91cfcc8)范围的变化被标记为[`91cfcc8`](https://github.com/decred/politeia/issues?q=label%3A91cfcc8)。
 
 <a id="dcrdex" />
 
 **[DCRDEX](https://github.com/decred/dcrdex)**
 
-User-facing:
+面向用户：
 
-- handle attempts to register with [insufficient balance](https://github.com/decred/dcrdex/pull/1092)
-- log [swap refund](https://github.com/decred/dcrdex/pull/1110) transactions so that the user can salvage funds when access to the client is lost but the logs are still available
-- added [export](https://github.com/decred/dcrdex/pull/1109) of orders in CSV file
-- group orders with [same rate](https://github.com/decred/dcrdex/pull/1090) into one table row
-- show the current price in browser window [title](https://github.com/decred/dcrdex/pull/1117)
-- show order errors [on the form](https://github.com/decred/dcrdex/pull/1093) instead of the notification bell
-- 4+ bug fixes
+- 处理[余额不足](https://github.com/decred/dcrdex/pull/1092)的注册尝试
+- 记录[退款交易](https://github.com/decred/dcrdex/pull/1110)，以便用户可以在无法访问客户端但日志仍然可用时挽救资金
+- 增加CSV文件的订单[出口](https://github.com/decred/dcrdex/pull/1109)
+- 将[相同费率](https://github.com/decred/dcrdex/pull/1090)的订单分组到一个表格行中
+- 在浏览器窗口[标题](https://github.com/decred/dcrdex/pull/1117)中显示当前价格
+- 4+ 错误修复
 
-Internal:
+面向内部开发者：
 
-- only allow one [preimage](https://github.com/decred/dcrdex/pull/1106) request on the client to protect against malicious server behavior
-- lot size and rate step made [market params](https://github.com/decred/dcrdex/pull/1102) instead of asset params
-- updated npm [dependencies](https://github.com/decred/dcrdex/pull/1111)
-- migrated to dcrd's [`stdaddr`](https://github.com/decred/dcrdex/pull/1096) package
-- 4+ bug fixes
+- 只允许客户端上的一个[原像](https://github.com/decred/dcrdex/pull/1106)请求以防止恶意服务器行为
+- 手数和利率步长使[市场参数](https://github.com/decred/dcrdex/pull/1102)而不是资产参数
+- 更新了 npm [依赖项](https://github.com/decred/dcrdex/pull/1111)
+- 迁移到 dcrd 的[`stdaddr`](https://github.com/decred/dcrdex/pull/1096)包
+- 4+ 错误修复
 
-Ethereum support:
+以太坊支持：
 
-- bare bones client-side [ETH](https://github.com/decred/dcrdex/pull/1005) infrastructure (mainnet use disabled for now)
-- store ETH balance in [gwei](https://github.com/decred/dcrdex/pull/1078) units to fit 64-bit integers
-- implemented ETH [sync status](https://github.com/decred/dcrdex/pull/1082) and fee rate information (with a workaround, missing Geth feature [requested](https://github.com/ethereum/go-ethereum/issues/23099))
+- 基础客户端[ETH](https://github.com/decred/dcrdex/pull/1005)基础设施（目前禁用主网）
+- 以[gwei](https://github.com/decred/dcrdex/pull/1078)为单位存储 ETH 余额以适合 64 位整数
+- 实现了 ETH [同步状态](https://github.com/decred/dcrdex/pull/1082)和费率信息（有一个解决方法，缺少请求的Geth 功能）
 
-A few fixes have been [backported](https://github.com/decred/dcrdex/commits/release-v0.2) to an upcoming v0.2.1 release.
+一些修复已[向后移植](https://github.com/decred/dcrdex/commits/release-v0.2)到即将发布的 v0.2.1 版本。
 
-Work started to replace the registration fee with [fidelity bonds](https://github.com/decred/dcrdex/pull/1120) where users lock funds to use DCRDEX (as a [disincentive](https://twitter.com/lukebp_/status/1412061031061508098) against bad behavior) but can redeem them after a certain time. This creates a time cost to use DCRDEX instead of a monetary cost.
+工作开始用[暂锁资金](https://github.com/decred/dcrdex/pull/1120)代替注册费，用户锁定资金以使用 DCRDEX（作为对不良行为的[抑制](https://twitter.com/lukebp_/status/1412061031061508098)），但可以在一定时间后赎回。这会产生使用 DCRDEX 的时间成本而不是货币成本。
 
 <a id="dcrandroid" />
 
 **[dcrandroid](https://github.com/planetdecred/dcrandroid)**
 
-@raedah commented on the question of when staking will be supported in the mobile apps:
+@raedah 评论了移动应用程序何时支持买票的问题：
 
-> Support for new style vspd staking has been built into dcrlibwallet for godcr and is currently in final testing. After godcr is released, it will be easy for the devs to import the same staking functionality into the mobile applications. There is not a strong incentive to prioritize building the mobile staking UI though until there is a functional hardware wallet that it can be paired with. ([2021-07-19](https://www.reddit.com/r/decred/comments/okrlg1/mobile_staking/h5rps6h/))
+> 对新的 vspd staking 的支持已内置到 Godcr 的 dcrlibwallet 中，目前正在最终测试中。在 Godcr 发布后，开发人员可以轻松地将相同的 staking 功能导入到移动应用程序中。尽管有一个可以与之配对的功能性硬件钱包，但并没有强烈的动机来优先构建移动质押 UI。([2021-07-19](https://www.reddit.com/r/decred/comments/okrlg1/mobile_staking/h5rps6h/))
 
 <a id="dcrios" />
 
 **[dcrios](https://github.com/planetdecred/dcrios)**
 
-- updated [Vietnamese](https://github.com/planetdecred/dcrios/pull/809) translation
+- 更新[越南语](https://github.com/planetdecred/dcrios/pull/809)翻译
 
 <a id="godcr" />
 
