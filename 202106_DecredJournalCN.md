@@ -47,7 +47,7 @@ _图片:@saender_
 
 处理标准脚本的方式已经过重新设计，以解决几个长期存在的问题。
 
-对于quick background，本](https://devdocs.decred.org/developer-guides/transactions/txscript/overview/)"是存储在交易中的小命令，它们消耗来自过去[交易](https://devdocs.decred.org/developer-guides/transactions/transaction-format/)的“输入”硬币并为接收者创建新的“输出”硬币。“标准脚本”是共识允许的所有脚本的子集，涵盖最有用的操作（发送资金、抵押、多重签名等），并针对效率和网络安全进行了优化。主网节点通常会拒绝接受和中继包含非标准脚本的独立交易（那些不属于区块的交易）。
+对于quick background，[“脚本”](https://devdocs.decred.org/developer-guides/transactions/txscript/overview/)"是存储在交易中的小命令，它们消耗来自过去[交易](https://devdocs.decred.org/developer-guides/transactions/transaction-format/)的“输入”硬币并为接收者创建新的“输出”硬币。“标准脚本”是共识允许的所有脚本的子集，涵盖最有用的操作（发送资金、抵押、多重签名等），并针对效率和网络安全进行了优化。主网节点通常会拒绝接受和中继包含非标准脚本的独立交易（那些不属于区块的交易）。
 
 [reworked code](https://github.com/decred/dcrd/pull/2656)添加了一个新的包叫做stdscript支持不同的脚本版本（这是很难先前支持并需要为下一个共识升级），为开发人员提供（包括multisig和原子交换佣工）更加人性化的API之间提高分离“标准”和“共识”（新开发人员的常见混淆点）。此外，进一步收紧了哪些脚本被视为“标准”脚本的政策，以帮助确保典型脚本占用更少的链上空间并进一步限制没有意义的情况。
 
