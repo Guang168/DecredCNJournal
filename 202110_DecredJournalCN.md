@@ -166,7 +166,7 @@ _DCRDEX 是一个去信任交易的非托管交易所，由原子交换提供支
 - 添加了在同一交易中发起[一批](https://github.com/decred/dcrdex/pull/1251)多次掉期的功能（节省gas）
 - 从 DEX 应用程序种子[派生](https://github.com/decred/dcrdex/pull/1225)内部以太坊钱包
 
-![DCRDEX markets overview](../img/202110.4.full.png)
+![DCRDEX markets overview](img/202110.4.full.png)
 
 _DCRDEX 市场概览。显示的数据不是真实的。_
 
