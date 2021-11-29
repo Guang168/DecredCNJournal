@@ -397,7 +397,7 @@ DeFi 协议 Indexed Finance 被黑客入侵了 1600 万美元，但确定了攻�
 
 感谢 (字母排列):
 
-- 写作和编辑 bee, bochinchero, degeri, l1ndseymm, richardred
+- 写作和编辑：bee, bochinchero, degeri, l1ndseymm, richardred
 - 评论和反馈： davecgh, lukebp
 - 封面图片： saender
 - 资助: Decred stakeholders
