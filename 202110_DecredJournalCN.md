@@ -1,309 +1,305 @@
-# Decred Journal – October 2021
+# Decred月报 – 2021 年 10 月
 
 ![abstract art by @saender](img/202110.1.github.png)
 
-_Image: Remote Node Outpost by @saender_
+_图片: @saender_
 
-Highlights for October:
+十月亮点：
 
-- Politeia celebrated its third year of operation and had another busy development month.
-- The mobile wallets proposal from @raedah was funded for another year.
-- The GoDCR proposal was rejected but a revised proposal is being prepared. Development continues to polish the wallet for a mainnet release.
-- Changes merged in DCRDEX make it possible to pay registration fees in BTC and use a built-in SPV wallet without running a Bitcoin full node.
+- 恭喜Politeia 创建的第三个年头，并迎来了又一个繁忙的开发提案月。
+- 来自@raedah 的移动钱包提案又获得了一年的资助。
+- GoDCR 提案被拒绝，正在准备重新修订提案。开发也正在继续。
+- DCRDEX 最新的更改使得可以在 BTC 中支付注册费并使用内置的 SPV 钱包而无需运行比特币全节点。
 
-Contents:
+内容：
 
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [媒体](#media)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则此处报告的工作仅限为“合并到主核心存储库”状态。这意味着这项工作已经完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但对于普通用户来说，还不能使用。
 
 <a id="dcrd" />
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-_dcrd is a full node implementation that powers Decred's peer-to-peer network around the world._
+_dcrd 是一个完整的节点实现，为 Decred 的全球点对点网络提供支持。_
 
-Merged changes:
+合并更改：
 
-- updating of indexes (transaction, address, exists address) has been made [asynchronous](https://github.com/decred/dcrd/pull/2219) to speed up the critical path of block validation and connection code. It allows for faster vote propagation and helps pave the way for other optimizations, sync models, and ultimately nicer data corruption recovery mechanisms.
-- simplified to use only one latest [checkpoint](https://github.com/decred/dcrd/pull/2763), since intermediate checkpoints are no longer necessary with [headers-first syncing](https://github.com/decred/dcrd/pull/2555)
-- improved consistency and clarity of `txscript` package [tests](https://github.com/decred/dcrd/pull/2757)
-- fixed handling of automatic ticket revocations when their block is [disconnected](https://github.com/decred/dcrd/pull/2768) during a chain reorganization
-- fixed a data [race](https://github.com/decred/dcrd/pull/2758) in peer address management
-- fixed [`findcheckpoint`](https://github.com/decred/dcrd/pull/2759) and [`addblock`](https://github.com/decred/dcrd/pull/2760) tools
-- [libFuzzer](https://llvm.org/docs/LibFuzzer.html) support has been added to dcrd's [continuous fuzzing](https://github.com/degeri/dcrd-continuous-fuzz) test suite
+- 索引（交易、地址、存在地址）的更新已[异步进行](https://github.com/decred/dcrd/pull/2219)，以加快区块验证和连接代码的关键路径。它允许更快的投票传播，并有助于为其它优化、同步模型和最终更好的数据损坏恢复机制铺平道路。
+- 简化为仅使用一个最新的[检查点](https://github.com/decred/dcrd/pull/2763)，因为标头优先同步不再需要中间检查点
+- 提高`txscript`封装[测试](https://github.com/decred/dcrd/pull/2757)的一致性和清晰度
+- 修复了在链重组期间当他们的区块[断开](https://github.com/decred/dcrd/pull/2768)时自动撤销票证的处理
+- 修复了对等地址管理中的数据[竞争](https://github.com/decred/dcrd/pull/2758)
+- 固定[`findcheckpoint`](https://github.com/decred/dcrd/pull/2759)和[`addblock`](https://github.com/decred/dcrd/pull/2760)工具
+- [libFuzzer](https://llvm.org/docs/LibFuzzer.html)支持已添加到 dcrd 的[连续模糊](https://github.com/degeri/dcrd-continuous-fuzz)测试套件中
 
 <a id="dcrwallet" />
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
-_dcrwallet is a wallet server used by command-line and graphical wallet applications._
+_dcrwallet 是命令行和图形钱包应用程序使用的钱包服务器。_
 
-- implemented [`getblockheader`](https://github.com/decred/dcrwallet/pull/2098) and [`getcurrentnet`](https://github.com/decred/dcrwallet/pull/2102) methods in SPV mode (to be used by DCRDEX)
-- added [`spv`](https://github.com/decred/dcrwallet/pull/2094) field to `walletinfo` result to distinguish between syncing modes
-- fixed [sync loss](https://github.com/decred/dcrwallet/pull/2099) in SPV mode
+- SPV 模式下的实现[`getblockheader`](https://github.com/decred/dcrwallet/pull/2098) 和 [`getcurrentnet`](https://github.com/decred/dcrwallet/pull/2102)方法（供 DCRDEX 使用）
+- 添加[`spv`](https://github.com/decred/dcrwallet/pull/2094)字段到`walletinfo`结果以区分同步模式
+- 固定SPV 模式下的[同步丢失](https://github.com/decred/dcrwallet/pull/2099)
 
 <a id="decrediton" />
 
 **[Decrediton](https://github.com/decred/decrediton)**
 
-_Decrediton is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_Decrediton 是一款功能齐全的桌面钱包应用程序，具有集成投票、StakeShuffle 混合、闪电网络、DEX 交易等功能。它在有或没有完整区块链的情况下运行（SPV 模式）。_
 
-User-facing changes:
+面向用户的变化：
 
-- implemented new UI design on [LN Overview](https://github.com/decred/decrediton/pull/3551) tab. Wallet, Network, and Watchtowers tabs have been grouped under a newly introduced Advanced tab.
-- new UI design for wallet [modals](https://github.com/decred/decrediton/pull/3534) with added password visibility toggle
-- added the ability to use [random VSP](https://github.com/decred/decrediton/pull/3560) in Automatic Ticket Purchases (with a configurable maximum fee)
-- automatically enable the new [per-account](https://github.com/decred/decrediton/pull/3579) encryption for new wallets
-- improved usability of the [VSP selector](https://github.com/decred/decrediton/pull/3563)
-- ~13 bug fixes
+- 在[闪电网络概览](https://github.com/decred/decrediton/pull/3551)选项卡上实施了新的 UI 设计。Wallet、Network 和 Watchtowers 选项卡已分组在新引入的高级选项卡下。
+- 钱包[模式](https://github.com/decred/decrediton/pull/3534)的新 UI 设计，增加了密码可见性切换
+- 添加了在自动购票中使用[随机 VSP](https://github.com/decred/decrediton/pull/3560) 的功能（具有可配置的最高费用）
+- 自动为新钱包启用新的[每个账户](https://github.com/decred/decrediton/pull/3579)加密
+- 改进了[VSP选择器](https://github.com/decred/decrediton/pull/3563)的可用性
+- ~13 个bug修复
 
-Internal:
+内部的：
 
-- updated DEX integration via [libdexc](https://github.com/decred/decrediton/pull/3549) to utilize upcoming 0.3 features (localized UI, restore from seed, and discovery of existing accounts)
-- updated to [Electron 15](https://github.com/decred/decrediton/pull/3571)
-- added a new GUI tool for [translating](https://github.com/decred/decrediton/pull/3569) strings and a [guide](https://github.com/decred/decrediton/blob/master/app/i18n/community_translators.md) for community translators
-- automated tests for [Accounts](https://github.com/decred/decrediton/pull/3577) views
+- 通过[libdexc](https://github.com/decred/decrediton/pull/3549)更新 DEX 集成以利用即将推出的 0.3 功能（本地化 UI、从种子恢复和发现现有帐户）
+- 更新到[Electron 15](https://github.com/decred/decrediton/pull/3571)
+- 添加了用于[翻译](https://github.com/decred/decrediton/pull/3569)字符串的新 GUI 工具和社区翻译人员[指南](https://github.com/decred/decrediton/blob/master/app/i18n/community_translators.md)
+- [帐户](https://github.com/decred/decrediton/pull/3577)视图的自动化测试
 
-![Decrediton LN Overview](../img/202110.2.github.png)
+![Decrediton LN Overview](img/202110.2.github.png)
 
-_Decrediton LN Overview_
+_Decrediton 闪电网络概览_
 
 <a id="politeia" />
 
 **[Politeia](https://github.com/decred/politeia)**
 
-_Politeia is Decred's proposal system. It is used to request funding from the Decred treasury._
+_Politeia 是 Decred 的提案系统。它用于向 Decred 国库申请资金。_
 
-User-facing changes:
+面向用户的变化：
 
-- added a standard way to show any status change. Admin that censored or abandoned the proposal is displayed along with the reason they gave for the status change.
-- support [multiple](https://github.com/decred/politeiagui/pull/2629) billing status changes. The default is to only allow a single billing status change (from Active to Completed or Closed), but it is a configurable setting. If an admin makes a mistake, the sysadmin can temporarily update the setting to allow for the mistake to be corrected. It is also possible to temporarily [disable](https://github.com/decred/politeia/pull/1533) status changes.
-- improved and standardized the [identity error](https://github.com/decred/politeiagui/pull/2623). The same error is now displayed anytime the user attempts to write data to Politeia without their active identity being loaded in the browser. The error message directs to the user details page to fix the issue.
-- fixed multiple [comment navigation](https://github.com/decred/politeiagui/pull/2638) UX issues: filtering preferences being lost, Go Back button not working properly, slow loading of individual threads, UI flickering
-- ~5 other bug fixes
+- 添加了一种标准方式来显示任何状态更改。审查或放弃提案的管理员与他们给出的状态更改原因一起显示。
+- 支持[多种](https://github.com/decred/politeiagui/pull/2629)计费状态更改。默认情况下只允许单个计费状态更改（从活动到已完成或已关闭），但它是一个可配置的设置。如果管理员出错，系统管理员可以临时更新设置以更正错误。也可以暂时[禁用](https://github.com/decred/politeia/pull/1533)状态更改。
+- 改进和规范了[身份错误](https://github.com/decred/politeiagui/pull/2623)。现在，只要用户尝试将数据写入 Politeia，而没有在浏览器中加载其活动身份，就会显示相同的错误。错误消息定向到用户详细信息页面以解决问题。
+- 修复了多条[评论导航](https://github.com/decred/politeiagui/pull/2638)UX 问题：过滤首选项丢失、返回按钮无法正常工作、单个线程加载缓慢、UI 闪烁
+- ~5个其它bug修复
 
-Changes in `politeiavoter` command-line tool:
+在更改`politeiavoter`命令行工具：
 
-- changed the method of [trickling](https://github.com/decred/politeia/pull/1556) method (slow sending of votes). Previously it has sent votes in a sequence with random time intervals. This has proven to be brittle as one slow/failed send was delaying all other votes. The new method uses independent parallel voting processes that start at random times and do not affect each other, making trickling more robust.
-- added an option to abort if vote trickling cannot finish with enough [extra time](https://github.com/decred/politeia/pull/1542) prior to the vote end. It alarms the user to adjust parameters so that enough time (12 hours by default) is left to retry any failed votes, which may happen over poor connections or Tor.
-- brought back printing of proposal [names](https://github.com/decred/politeia/pull/1548) in `inventory` command
+- 改变了[涓流](https://github.com/decred/politeia/pull/1556)方法（缓慢发送选票）的方法。以前它以随机时间间隔按顺序发送选票。这已被证明是脆弱的，因为一个缓慢/失败的发送延迟了所有其他投票。新方法使用独立的并行投票过程，这些过程在随机时间开始并且不会相互影响，使涓流更加稳健。
+- 如果在投票结束前有足够的[额外时间](https://github.com/decred/politeia/pull/1542)无法完成投票，则添加了一个中止选项。它会提醒用户调整参数，以便有足够的时间（默认为 12 小时）来重试任何失败的投票，这可能是由于连接不良或 Tor 造成的。
 
-Backend and internal changes:
+后端和内部变化：
 
-- added API to get billing [status changes](https://github.com/decred/politeia/pull/1526)
-- allow fetching billing status changes [in batches](https://github.com/decred/politeia/pull/1535)
-- use the server policy for [page size](https://github.com/decred/politeiagui/pull/2622)
-- added data integrity checks for [`ticketvote`](https://github.com/decred/politeia/pull/1531) and [`comments`](https://github.com/decred/politeia/pull/1544) plugins
-- added a new `pictl` command to test the [RFP flow](https://github.com/decred/politeia/pull/1551)
-- ~4 bug fixes
+- 添加了用于获取计费[状态更改](https://github.com/decred/politeia/pull/1526)的API
+- 允许[批量](https://github.com/decred/politeia/pull/1535)获取账单状态变化
+- 对[页面大小](https://github.com/decred/politeiagui/pull/2622)使用服务器策略
+- 添加的数据完整性检查[`ticketvote`](https://github.com/decred/politeia/pull/1531) 和 [`comments`](https://github.com/decred/politeia/pull/1544)插件
+- 添加了一个新`pictl`命令来测试 [RFP流程](https://github.com/decred/politeia/pull/1551)
+- ~4个bug修复
 
-Refactoring in preparation for the [user layer rewrite](https://github.com/decred/politeia/issues/1479) (largest chunk of work for the [2021 Q3](https://proposals.decred.org/record/91cfcc8) proposal):
+重构以准备[用户层重写](https://github.com/decred/politeia/issues/1479)（[2021 Q3](https://proposals.decred.org/record/91cfcc8)提案的最大工作量）：
 
-- politeiawww codebase reorganized to move legacy APIs into a [`legacy`](https://github.com/decred/politeia/pull/1523) package. This will make it easier to rewrite the user layer to use a plugin architecture and to allow for horizontal scaling.
-- extracted [`logger`](https://github.com/decred/politeia/pull/1527) package to allow plugins to configure their logging and become self-contained
-- extracted [`websockets`](https://github.com/decred/politeia/pull/1529) package (will make it easier to scale the servers)
-- extracted [config](https://github.com/decred/politeia/pull/1536) handling into its own package and separated out settings for legacy API for easier removal in the future
-- moved [identity](https://github.com/decred/politeia/pull/1530) handling methods to more appropriate places
-- added a generic [session store](https://github.com/decred/politeia/pull/1555) (will replace the [legacy](https://github.com/decred/politeia/pull/1554) one that did not have proper separation of concerns)
+- 对politeiawww 代码库进行了重组，将遗留API 移到一个[`legacy`](https://github.com/decred/politeia/pull/1523)包中。这将更容易重写用户层以使用插件架构并允许水平扩展。
+- 提取[`logger`](https://github.com/decred/politeia/pull/1527)包以允许插件配置其日志记录并成为独立的
+- 提取的[`websockets`](https://github.com/decred/politeia/pull/1529)包（将使扩展服务器更容易）
+- 将[配置](https://github.com/decred/politeia/pull/1536)处理提取到自己的包中，并分离出遗留 API 的设置，以便将来更容易删除
+- 将[身份](https://github.com/decred/politeia/pull/1530)处理方法移至更合适的位置
+- 添加了一个通用[会话存储](https://github.com/decred/politeia/pull/1555)（将替换没有适当关注点分离的[遗留存储](https://github.com/decred/politeia/pull/1554)）
 
-![No free money on Politeia](../img/202110.3.github.png)
+![No free money on Politeia](img/202110.3.github.png)
 
-_No free money on Politeia_
+_Politeia 上没有免费资金_
 
 <a id="vspd" />
 
 **[vspd](https://github.com/decred/vspd)**
 
-_vspd is server software for running a Voting Service Provider. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_vspd 是用于运行投票服务提供商的服务器软件。VSP 代表其用户 24/7 投票并且不能窃取资金。_
 
-- updated to latest [dcrd RPC](https://github.com/decred/vspd/pull/297) version. Since this commit, vspd will stop working against dcrd v1.6 and start to target the `master` branch.
-- allow setting an [alternative](https://github.com/decred/vspd/pull/287) signing address to support VSP staking with Trezor
+- 更新到最新的[dcrd RPC](https://github.com/decred/vspd/pull/297)版本。由于这次提交，vspd 将停止针对 dcrd v1.6 工作并开始定位`master`分支。
+- 允许设置[备用](https://github.com/decred/vspd/pull/287)签名地址以支持使用 Trezor 进行 VSP 质押
 
 <a id="dcrlnd" />
 
 **[dcrlnd](https://github.com/decred/dcrlnd)**
 
-_dcrlnd is Decred's Lightning Network node software. LN enables instant and low-cost transactions._
+_dcrlnd 是 Decred 的闪电网络节点软件。闪电网络支持即时和低成本的交易。_
 
-- perform account discovery only [once](https://github.com/decred/dcrlnd/pull/145) for embedded wallets (not applicable to remote wallets that are controlled externally)
-- improved [quickstart](https://github.com/decred/dcrlnd/pull/146) docs and added a new doc summarizing the 4 [operation modes](https://github.com/decred/dcrlnd/blob/master/docs/operation_modes.md) (dcrd or SPV sync, remote or embedded wallet)
+- 仅对嵌入式钱包执行[一次](https://github.com/decred/dcrlnd/pull/145)帐户发现（不适用于外部控制的远程钱包）
+- 改进了快速[入门文档](https://github.com/decred/dcrlnd/pull/146)并添加了一个新文档，总结了 4 种[操作模式](https://github.com/decred/dcrlnd/blob/master/docs/operation_modes.md)（dcrd 或 SPV 同步、远程或嵌入式钱包）
 
 <a id="dcrdex" />
 
 **[DCRDEX](https://github.com/decred/dcrdex)**
 
-_DCRDEX is a non-custodial exchange for trustless trading, powered by atomic swaps._
+_DCRDEX 是一个去信任交易的非托管交易所，由原子交换提供支持。_
 
-User-facing changes:
+面向用户的变化：
 
-- reworked register flow to accept [assets](https://github.com/decred/dcrdex/pull/1223) other than DCR
-- added [overview](https://github.com/decred/dcrdex/pull/1232) of current prices and 24-hour changes to the left sidebar
-- improved [registration](https://github.com/decred/dcrdex/pull/1234) sequence and form design/animations
-- added [Bitcoin SPV](https://github.com/decred/dcrdex/pull/1230) support to trade against BTC without managing a full Bitcoin blockchain. Built on top of [Neutrino](https://github.com/lightninglabs/neutrino) and [btcwallet](https://github.com/btcsuite/btcwallet) (_old investment paying off!_).
-- start BTC SPV wallet [scan](https://github.com/decred/dcrdex/pull/1249) from a certain date to save time
-- require ["zpub"](https://github.com/decred/dcrdex/pull/1255) extended public keys but offer to convert from "xpub" for convenience. This is for server operators willing to accept registration fees in BTC.
-- ~6 bug fixes
+- 重新设计的注册流程以接受DCR以外的[资产](https://github.com/decred/dcrdex/pull/1223)
+- 在左侧边栏中添加了当前价格和 24 小时变化的[概览](https://github.com/decred/dcrdex/pull/1232)
+- 改进[注册](https://github.com/decred/dcrdex/pull/1234)顺序和表单设计/动画
+- 添加了[Bitcoin SPV](https://github.com/decred/dcrdex/pull/1230)支持，无需管理完整的比特币区块链即可与 BTC 进行交易。建立在[Neutrino](https://github.com/lightninglabs/neutrino) 和 [btcwallet](https://github.com/btcsuite/btcwallet)之上（旧投资得到回报！）。
+- 从某个日期开始 BTC SPV 钱包[扫描](https://github.com/decred/dcrdex/pull/1249)以节省时间
+- 需要["zpub"](https://github.com/decred/dcrdex/pull/1255)扩展公钥，但为方便起见提供从“xpub”转换。这适用于愿意接受 BTC 注册费的服务器运营商。
+- ~6个bug修复
 
-Internal changes:
+内部变化：
 
-- support multiple [HD accounts](https://github.com/decred/dcrdex/pull/1210) for the same app seed, to allow registering additional accounts if the initial account is suspended. This change also retires legacy accounts with random keys to ensure all new accounts can be derived from app seed.
-- refactored client DCR backend to support alternative [wallet](https://github.com/decred/dcrdex/pull/1227) implementations. This will be used to integrate DCRDEX into GoDCR.
+- 支持同一个应用种子的多个[HD帐户](https://github.com/decred/dcrdex/pull/1210)，如果初始帐户被暂停，允许注册额外的帐户。此更改还会停用具有随机密钥的旧帐户，以确保所有新帐户都可以从应用程序种子派生。
+- 重构客户端 DCR 后端以支持替代[钱包](https://github.com/decred/dcrdex/pull/1227)实现。这将用于将 DCRDEX 集成到 GoDCR。
 
-Progress towards Ethereum support:
+以太坊支持的进展：
 
-- implemented several [backend methods](https://github.com/decred/dcrdex/issues/1154) ([swap](https://github.com/decred/dcrdex/pull/1218) and [redeem](https://github.com/decred/dcrdex/pull/1219) estimations, order [funding](https://github.com/decred/dcrdex/pull/1221), message [signing](https://github.com/decred/dcrdex/pull/1228), and more)
-- added function to initiate a [batch](https://github.com/decred/dcrdex/pull/1251) of multiple swaps in the same transaction (saves gas)
-- [derive](https://github.com/decred/dcrdex/pull/1225) the internal Ethereum wallet from DEX app seed
+- 实现了几种[后端方法](https://github.com/decred/dcrdex/issues/1154)（[交换](https://github.com/decred/dcrdex/pull/1218)和[赎回](https://github.com/decred/dcrdex/pull/1219)估计、订单[资金](https://github.com/decred/dcrdex/pull/1221)、消息签名等）
+- 添加了在同一交易中发起[一批](https://github.com/decred/dcrdex/pull/1251)多次掉期的功能（节省gas）
+- 从 DEX 应用程序种子[派生](https://github.com/decred/dcrdex/pull/1225)内部以太坊钱包
 
 ![DCRDEX markets overview](../img/202110.4.full.png)
 
-_DCRDEX markets overview. Shown data is not real._
+_DCRDEX 市场概览。显示的数据不是真实的。_
 
 <a id="dcrios" />
 
 **[Decred Wallet (iOS)](https://github.com/planetdecred/dcrios)**
 
-- show non-zero balances with [8 decimals](https://github.com/planetdecred/dcrios/pull/857)
-- fixed colors and icons for the dark mode
+- 显示[8位小数](https://github.com/planetdecred/dcrios/pull/857)的非零余额
+- 暗模式的固定颜色和图标
 
 <a id="godcr" />
 
 **[GoDCR](https://github.com/planetdecred/godcr)**
 
-_GoDCR is a lightweight desktop wallet app with integrated staking, privacy, and Politeia browsing._
+_GoDCR 是一款轻量级桌面钱包应用程序，集成了质押、隐私和 Politeia 浏览功能。_
 
-User-facing changes:
+面向用户的变化：
 
-- added a button to quickly [hide](https://github.com/planetdecred/godcr/pull/646) wallet balance to increase the user's over the shoulder privacy
-- added a [reminder](https://github.com/planetdecred/godcr/pull/663) to back up the seed words
-- cycle input fields with the [Tab key](https://github.com/planetdecred/godcr/pull/640)
-- unified [terminology](https://github.com/planetdecred/godcr/pull/645) about passwords and seeds
-- show more details in Politeia proposal [tooltips](https://github.com/planetdecred/godcr/pull/638)
-- show time since [last update](https://github.com/planetdecred/godcr/pull/642) of Politeia data
-- improved [time](https://github.com/planetdecred/godcr/pull/666) information on Transactions page
-- added draggable [scroll](https://github.com/planetdecred/godcr/pull/664) slider on long lists
-- allow [empty](https://github.com/planetdecred/godcr/pull/625) password in some cases
-- ~10 bug fixes
+- 添加了一个按钮来快速[隐藏](https://github.com/planetdecred/godcr/pull/646)钱包余额以增加用户的肩部隐私
+- 添加了备份种子词的[提醒](https://github.com/planetdecred/godcr/pull/663)
+- 使用[Tab](https://github.com/planetdecred/godcr/pull/640)键循环输入字段
+- 关于密码和种子的统一[术语](https://github.com/planetdecred/godcr/pull/645)
+- 在 Politeia 提案[工具提示](https://github.com/planetdecred/godcr/pull/638)中显示更多详细信息
+- 显示自[上次更新](https://github.com/planetdecred/godcr/pull/642)Politeia 数据以来的时间
+- 改进了交易页面上的[时间](https://github.com/planetdecred/godcr/pull/666)信息
+- 在长列表上添加了可拖动的[滚动](https://github.com/planetdecred/godcr/pull/664)滑块
+- 在某些情况下允许[空](https://github.com/planetdecred/godcr/pull/625)密码
+- ~10 个bug修复
 
-Internal changes:
+内部变化：
 
-- implemented a custom clickable [highlight](https://github.com/planetdecred/godcr/pull/630) effect with configurable color and borders and reused it across the app
-- updated to the latest [Gio](https://github.com/planetdecred/godcr/pull/665) and removed code that is no longer needed
-- support custom icons on [input fields](https://github.com/planetdecred/godcr/pull/677)
+- 使用可配置的颜色和边框实现了自定义的可点击[高亮](https://github.com/planetdecred/godcr/pull/630)效果，并在整个应用程序中重复使用
+- 更新到最新的[Gio](https://github.com/planetdecred/godcr/pull/665)并删除不再需要的代码
+- 支持[输入字段](https://github.com/planetdecred/godcr/pull/677)上的自定义图标
 
-Merged in [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet) library (shared by Android/iOS wallets and GoDCR):
+合并到[dcrlibwallet](https://github.com/planetdecred/dcrlibwallet)库中（由 Android/iOS 钱包和 GoDCR 共享）：
 
-- updated to [latest](https://github.com/planetdecred/dcrlibwallet/pull/209) dcrd, dcrwallet, and dcrdata modules
-- added function to get the [timestamp](https://github.com/planetdecred/dcrlibwallet/pull/208) of the last sync with Politeia
+- 更新到[最新](https://github.com/planetdecred/dcrlibwallet/pull/209)的dcrd、dcrwallet 和 dcrdata 模块
+- 添加了获取与 Politeia 上次同步的[时间戳](https://github.com/planetdecred/dcrlibwallet/pull/208)的功能
 
-![GoDCR Proposals view](../img/202110.5.full.png)
+![GoDCR Proposals view](img/202110.5.full.png)
 
-_GoDCR Proposals view_
+_GoDCR 提案视图_
 
-Development continued despite the second [GoDCR proposal](https://proposals.decred.org/record/f7d9fc8) getting rejected (49% Yes). Looking forward to the revised version and new app builds.
+尽管第二个[GoDCR提案](https://proposals.decred.org/record/f7d9fc8)被拒绝（49% 是），但开发仍在继续。期待修订版和新的应用程序构建。
 
 <a id="dcrdata" />
 
 **[dcrdata](https://github.com/decred/dcrdata)**
 
-_dcrdata is an explorer for Decred blockchain and off-chain data like Politeia proposals, markets, and more._
+_dcrdata 是 Decred 区块链和链下数据（如 Politeia 提案、市场等）的浏览器。_
 
-- updated [Decred](https://github.com/decred/dcrdata/pull/1874) [dependencies](https://github.com/decred/dcrdata/pull/1875)
-- upgraded to [Bootstrap 5](https://github.com/decred/dcrdata/pull/1872)
+- 更新了Decred [依赖项](https://github.com/decred/dcrdata/pull/1875)
+- 升级到[Bootstrap 5](https://github.com/decred/dcrdata/pull/1872)
 
+## 人员
 
-## People
+欢迎新的首次贡献者将代码合并到 master：@AdimekweEbuka ([godcr](https://github.com/planetdecred/godcr/commits?author=AdimekweEbuka))！
 
-Welcome to new first time contributors with code merged to master: @AdimekweEbuka ([godcr](https://github.com/planetdecred/godcr/commits?author=AdimekweEbuka))!
+截至 11 月 2 日的社区统计数据：
 
-Community stats as of Nov 2:
-
-- [Twitter](https://twitter.com/decredproject) followers: 49,503 (+830)
-- [Reddit](https://www.reddit.com/r/decred/) subscribers: 12,248 (+294)
-- [Matrix](https://chat.decred.org/) #general users: 551 (+16)
-- [Discord](https://discord.gg/GJ2GXfz) users: 2,267 (+190)
-- [Telegram](https://t.me/Decred) users: 2,940 (+31)
-- [YouTube](https://www.youtube.com/decredchannel) subscribers: 4,620 (+10), views: 197K (+1K)
-
-
-## Governance
-
-In October the new [treasury](https://dcrdata.decred.org/treasury) received 10,678 DCR worth $1.3 million at the month's average rate of $121.57. 974 DCR was spent to pay contractors, worth $118K at October's rate, or $136K at September's billing rate of $139.56. As of Nov 1, combined balance of [legacy](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) and [new treasury](https://dcrdata.decred.org/treasury) is 733,772 DCR (82.5 million USD at $112.42).
-
-One [proposal](https://proposals.decred.org/record/c1f5b5c) was submitted this month, @ammarooni returns with a proposal that revises an earlier book [proposal](https://proposals.decred.org/proposals/9e1d644) to remove the book in favor of a steady stream of papers and social media content, memes and meetups.
-
-The two proposals from @raedah were voted on this month, the one for [mobile wallets](https://proposals.decred.org/record/6db3c4e) was approved with 97.2% yes votes and 66% turnout, while the proposal to continue funding [GoDCR](https://explorer.dcrdata.org/proposal/f7d9fc852e309b31) was rejected with 49% approval and turnout of 73%.
-
-See Politeia Digest [issue 47](https://blockcommons.red/politeia-digest/issue047/) and [issue 48](https://blockcommons.red/politeia-digest/issue048/) for more details on the month's proposals.
-
-@richardred published numbers and graphs for Politeia's [third year](https://blockcommons.red/publication/politeia-at-3/). A few highlights:
-
-- 31 proposals published, of which 20 approved, 11 rejected, 2 abandoned
-- average (mean) voter participation improved considerably with 46% in year 3, compared to 31% in year 1 and 28% in year 2
-- software development proposals have increased in count, budgets, and voter support
-- marketing proposals have decreased in number so that these are no longer the dominant type, and particularly the number of marketing proposals that end with very low approval has reduced
-- the proportion of proposals from people who are already contractors has gone up from 48% in year 2 to 77% in year 3
-- the number of mixed tickets (those with extra privacy) has been increasing
-- all-time stats for 3 years: 128 proposals published, of which 66 approved, 42 rejected, 20 abandoned
-
-![Politeia third year](../img/202110.6.github.png)
-
-_Politeia third year_
+- [Twitter](https://twitter.com/decredproject) 粉丝: 49,503 (+830)
+- [Reddit](https://www.reddit.com/r/decred/) 订阅: 12,248 (+294)
+- [Matrix](https://chat.decred.org/) #general 用户: 551 (+16)
+- [Discord](https://discord.gg/GJ2GXfz) 用户: 2,267 (+190)
+- [Telegram](https://t.me/Decred) 用户: 2,940 (+31)
+- [YouTube](https://www.youtube.com/decredchannel) 订阅: 4,620 (+10), 观看: 197K (+1K)
 
 
-## Network
+## 治理
 
-**Hashrate**: October's [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time) opened at ~237 Ph/s and closed ~284 Ph/s, bottoming at 164 Ph/s and peaking at 323 Ph/s throughout the month.
+10 月，新[国库](https://dcrdata.decred.org/treasury)收到了价值 130 万美元的 10,678 DCR，当月平均利率为 121.57 美元。974 DCR 用于支付承包商，按 10 月的费率计算，价值 118,000 美元，或按 9 月的费率 139.56 美元计算，价值 136,000 美元。截至 11 月 1 日，[旧国库](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和 [新国库](https://dcrdata.decred.org/treasury)的总余额为 733,772 DCR（8250 万美元，合 112.42 美元）。
 
-Distribution of hashrate [reported](https://miningpoolstats.stream/decred) by the pools on Nov 1: Poolin 43%, F2Pool 29%, AntPool 10%, BTC.com 6.4%, ViaBTC 6%, Luxor 4.5%, HuobiPool 0.5%, OKEx 0.4%, CoinMine 0.2%
+本月提交了一项提案，@ammarooni 撤回了一项[提案](https://proposals.decred.org/proposals/9e1d644)，该提案修改了早期的书籍提案，以支持源源不断的论文和社交媒体内容、meme和聚会。
 
-Distribution of 1,000 blocks actually [mined](https://miningpoolstats.stream/decred) by Nov 1: Poolin 42%, F2Pool 31%, Antpool 9%, BTC.com 7%, Luxor 5%, ViaBTC 5%, OKEx 0.7%, unknown 0.3%.
+来自@raedah 的两项提案于本月投票，一项针对[移动钱包](https://proposals.decred.org/record/6db3c4e)的提案以 97.2% 的赞成票和 66% 的投票率获得批准，而继续资助[GoDCR](https://explorer.dcrdata.org/proposal/f7d9fc852e309b31)的提案以49% 的批准率和 73% 的投票率被拒绝。
 
-![Decred hashrate May-Oct 2021](../img/202110.7.github.png)
+有关本月提案的更多详细信息，请参阅 Politeia Digest第 [47](https://blockcommons.red/politeia-digest/issue047/) 和 第[48](https://blockcommons.red/politeia-digest/issue048/)期。
 
-_Decred hashrate May-Oct 2021_
+@richardred 发布了 Politeia [第三年](https://blockcommons.red/publication/politeia-at-3/)的数据和图表。几个亮点：
 
-**Staking**: [Ticket price](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=ku5ml4us-kvgwhe37&axis=time&visibility=true-true&mode=stepped) varied between 139.7-209.7 DCR, with 30-day [average](https://dcrstats.com/) at 191.6 DCR (-7.8).
+- 发表提案31条，其中通过20条，拒绝11条，放弃2条
+- 平均选民参与率在第 3 年显着提高，为 46%，而第 1 年为 31%，第 2 年为 28%
+- 软件开发提案在数量、预算和选民支持方面都有所增加
+- 营销提案数量减少，不再占主导地位，尤其是批准率很低的营销提案数量减少了
+- 已经是承包商的人的提案比例从第 2 年的 48% 上升到第 3 年的 77%
+- 混合选票（具有额外隐私的票）的数量一直在增加
+- 3 年历史数据：128 项提案发布，其中 66 项通过，42 项拒绝，20 项放弃
+- 
+![Politeia third year](img/202110.6.github.png)
 
-The [locked amount](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time) was 7.65-8.20 million DCR, meaning that 56.7-61.1% of the circulating supply [participated](https://dcrdata.decred.org/charts?chart=stake-participation&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time) in proof-of-stake.
-
-![Decred ticket pool May-Oct 2021](../img/202110.8.github.png)
-
-_Decred ticket pool May-Oct 2021_
-
-**VSP**: On Nov 1, ~7,400 (-200) live tickets were managed by [listed](https://decred.org/vsp/) vspd servers and 224 (+4) by listed legacy dcrstakepool servers. Collectively the 7 legacy and 15 new VSPs managed 18.9% (-0.1%) of the ticket pool.
-
-**Nodes**: Throughout October there were around 200 reachable nodes according to [dcrextdata](https://dcrextdata.planetdecred.org/nodes).
-
-Node versions as of Nov 1 [snapshot](https://nodes.jholdstock.uk/user_agents) (245 total, dcrd only): v1.6.2 - 59%, v1.7 dev builds - 13%, v1.6.0 - 12%, v1.6.1 - 9%, v1.6 dev builds - 3%, v1.5.2 - 2%, v1.5.1 - 0.8%.
-
-The share of [mixed coins](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q3lq8-l0s732o6&scale=linear&bin=day&axis=time&visibility=true-true-true) varied between 52.3-54.4% and set a new all-time high with the sum of mixed unspent coins above 7.3 million.
+_Politeia 第三年_
 
 
-## Ecosystem
+## 网络
 
-Legacy VSP stakepool.eu has been [removed](https://github.com/decred/dcrwebapi/pull/153) from the [VSP list](https://decred.org/vsp/) to facilitate user migration to the new [vspd system](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/). It is still online to vote on the remaining live tickets (7 as of Nov 1). This VSP launched in May 2016 with the codename `India`, just 3 months after Decred was [born](https://dcrdata.decred.org/block/1). Thank you for 5 years of service!
+**全网算力**: 10月份[算力](https://dcrdata.decred.org/charts?chart=hashrate&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time)初始为~237 Ph/s，结束时为~284 Ph/s，全月最低为164 Ph/s，最高为323 Ph/s。
 
-Legacy VSP from 99split.com has handled its final live ticket and was shutdown. It has served since late 2019 and was one of the few vendors to actively support [ticket splitting](https://github.com/matheusd/dcr-split-ticket-matcher) by coordinating sessions and creating user-friendly [video](https://www.youtube.com/watch?v=StF7GF5W_eM) [tutorials](https://www.youtube.com/watch?v=QOBjep3Ll7E). Users are welcome at its new [vspd instance](https://vspd.99split.com/) with a 0.99% fee and 1.7K voted tickets.
+11 月 1 日各矿池的[算力](https://miningpoolstats.stream/decred)分布：Poolin 矿池 43%、F2Pool 29%、蚂蚁矿池 10%、BTC.com 6.4%、ViaBTC 6%、Luxor 4.5%、HuobiPool 0.5%、OKEx 0.4%、CoinMine 0.2%
 
-For anyone still using legacy VSP, it is recommended to switch to [vspd providers](https://decred.org/vsp/) to avoid the risk of missed tickets, e.g. in case the legacy VSP shuts down or stops working with the coming consensus upgrades. As of Nov 1, all legacy VSPs managed less than 260 tickets or 0.6% of the ticket pool.
+11 月 1 日实际开采的 1,000 个区块的分布：Poolin 矿池 42%，F2Pool 31%，蚂蚁矿池 9%，BTC.com 7%，Luxor 5%，ViaBTC 5%，OKEx 0.7%，未知 0.3%。
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+![Decred hashrate May-Oct 2021](img/202110.7.github.png)
 
+_Decred 哈希率 2021 年 5 月至 10 月_
 
-## Outreach
+**Staking**: [票价](https://dcrdata.decred.org/charts?chart=ticket-price&zoom=ku5ml4us-kvgwhe37&axis=time&visibility=true-true&mode=stepped) 139.7-209.7 DCR之间变化，30天平均为191.6 DCR（-7.8）。
+
+[锁定量](https://dcrdata.decred.org/charts?chart=ticket-pool-value&zoom=ku5ml4us-kvgwhe37&scale=linear&bin=block&axis=time)为7.65-8.20百万DCR，这意味着循环供应的56.7-61.1％参加在验证。
+
+![Decred ticket pool May-Oct 2021](img/202110.8.github.png)
+
+_Decred 选票池 2021 年 5 月至 10 月_
+
+**VSP**: 在 11 月 1 日，大约 7,400 (-200) 个现场票由列出的vspd 服务器管理，224 (+4) 个由列出的旧版 dcrstakepool 服务器管理。7 个旧版 VSP 和 15 个新 VSP 总共管理着票池的 18.9% (-0.1%)。
+
+**Nodes**: 根据[dcrextdata](https://dcrextdata.planetdecred.org/nodes)，整个 10 月大约有 200 个可访问节点。
+
+截至 11 月 1 日[快照](https://nodes.jholdstock.uk/user_agents)的节点版本（共 245 个，仅 dcrd）：v1.6.2 - 59%，v1.7 dev builds - 13%，v1.6.0 - 12%，v1.6.1 - 9%，v1.6 dev builds - 3%，v1.5.2 - 2%，v1.5.1 - 0.8%。
+
+[混合代币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q3lq8-l0s732o6&scale=linear&bin=day&axis=time&visibility=true-true-true)的份额在 52.3-54.4% 之间变化，并创下历史新高，混合的代币总数超过 730 万。
+
+## 生态系统
+
+旧版 VSP stockpool.eu已从[VSP列表](https://decred.org/vsp/)中[删除](https://github.com/decred/dcrwebapi/pull/153)，以方便用户迁移到新的[vspd 系统](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/)。仍然在线投票剩余的现场选票（截至11月1日有7张）。这个 VSP 于 2016 年 5 月推出，代号为IndiaDecred诞生仅 3 个月后。感谢您的 5 年服务！
+
+来自 99split.com 的旧版 VSP 已处理其最后的现场选票并已关闭。它自 2019 年底开始服务，是少数通过协调会议和创建用户友好的视频教程来积极支持选票拆分的供应商之一。欢迎用户使用其新的[vspd](https://vspd.99split.com/) 实例，收取 0.99% 的费用和 1.7K 票。
+
+对于仍在使用旧版 VSP 的任何人，建议切换到[vspd服务商](https://decred.org/vsp/)以避免错过门票的风险，例如，如果旧版 VSP 关闭或停止与即将到来的共识升级一起工作。截至 11 月 1 日，所有旧版 VSP 管理的门票不足 260 张，占门票池的 0.6%。
+
+警告：Decred 期刊的作者不知道上述任何服务的可信度。在将您的个人信息或资产信任给任何实体之前，请自行研究。
+
+## 外展
 
 Monde PR's achievements for October:
 
