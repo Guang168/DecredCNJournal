@@ -301,106 +301,112 @@ _Decred 选票池 2021 年 5 月至 10 月_
 
 ## 外展
 
-Monde PR's achievements for October:
+Monde PR 十月份的成就：
 
-- pitched one story to finance and crypto publications
-- secured four media interviews
+- 向金融和加密出版物发表了一个故事
+- 获得四次媒体采访
 
-Secured the following news articles:
+获得以下新闻文章：
 
-- the news about Decred reaching 77% voter participation and marking three years of Politeia was covered by [Crowdfund Insider](https://www.crowdfundinsider.com/2021/10/182204-decentralized-digital-currency-project-decred-dcr-reaches-governance-milestone-of-77-voter-participation/)
+- [Crowdfund Insider](https://www.crowdfundinsider.com/2021/10/182204-decentralized-digital-currency-project-decred-dcr-reaches-governance-milestone-of-77-voter-participation/)报道了有关 Decred 达到 77% 的选民参与度并标志着 Politeia 成立三年的消息
 
-In response to a common question "What's up in Decred and where it is heading?" @bee wrote a [summary](https://www.reddit.com/r/decred/comments/q1402a/weekly_many_musings_mondays/hfji878/) of recent developments and mid-term goals.
+回答一个常见的问题“Decred 发生了什么以及它的发展方向？” @bee[总结](https://www.reddit.com/r/decred/comments/q1402a/weekly_many_musings_mondays/hfji878/)了最近的发展和中期目标。
 
-@cryptotivo congratulates everyone with 600K "boring" blocks milestone:
+@cryptotivo 祝贺大家获得 60 万个“无聊”块里程碑：
 
-> 👂Ever heard of the great #Decred hack?
+> 👂听说过伟大的#Decred 黑客吗？
 > 
-> How about the recent #Decred rug pull?
+> 最近的#Decred 地毯拉动怎么样？
 > 
-> Yeah, me neither because they don't exist.
+> 是的，我也没有，因为它们不存在。
 > 
-> #Decred has recently produced its 600 000th block.
+> #Decred 最近生产了第 600 000 个区块。
 > 
-> That's 600 fucking thousand bullshit free blocks.
-> 
-> Congrats to the team, stakers and visionaries. 🎖️ ([@cryptotivo](https://twitter.com/cryptotivo/status/1451632443665047557))
+> 祝贺团队、利益相关者和有远见的人 🎖️ ([@cryptotivo](https://twitter.com/cryptotivo/status/1451632443665047557))
 
 
-## Media
+## 媒体
 
-Selected articles:
+精选文章：
 
-- Year three of Decred's Politeia in numbers and graphs by @richardred ([blockcommons.red](https://blockcommons.red/publication/politeia-at-3/))
-- Decred hits governance milestone of 77% voter participation ([decred.org](https://decred.org/press/2021-10-27_decred_hits_governance_milestone/), altered version published on [crowdfundinsider.com](https://www.crowdfundinsider.com/2021/10/182204-decentralized-digital-currency-project-decred-dcr-reaches-governance-milestone-of-77-voter-participation/))
-- The Suppressor part 2: On-chain analysis by @tacorevenge ([medium](https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4))
+- 数字和图表中的 Decred Politeia 第三年 @richardred ([blockcommons.red](https://blockcommons.red/publication/politeia-at-3/))
+- 77％的选民参与的Decred命中治理的里程碑 ([decred.org](https://decred.org/press/2021-10-27_decred_hits_governance_milestone/)
+- The Suppressor 第 2 部分: @tacorevenge 的链上分析e ([medium](https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4))
 
-Videos:
+视频：
 
-- GoDCR progress demo of Oct 9 ([twitter](https://twitter.com/planetdecred/status/1446927031887745027))
-- Decred in Depth Ep. 44 - with Coin Artist - Decred historical outlook + NFTs + Metaverse + Neon District by @elima\_iii ([youtube](https://www.youtube.com/watch?v=PCcH04oVs18))
-- WDYT: Thoughts on Decred? Trending on CoinMarketCap by NFT Daily News ([youtube](https://www.youtube.com/watch?v=f7Q5j22vrCM))
-- Decred Price Analysis - 20th October 2021 by Brave New Coin ([youtube](https://www.youtube.com/watch?v=A0o8k1sECEk))
+- 10 月 9 日的 GoDCR 进度演示([twitter](https://twitter.com/planetdecred/status/1446927031887745027))
+- Decred 深度 Ep。44 - with Coin Artist - Decred 历史观 + NFTs + Metaverse + Neon District by @elima_iii ([youtube](https://www.youtube.com/watch?v=PCcH04oVs18))
+- WDYT：对 Decred 的想法？NFT 每日新闻  ([youtube](https://www.youtube.com/watch?v=f7Q5j22vrCM))
+- Decred 价格分析 - 2021 年 10 月 20 日，Brave New Coin ([youtube](https://www.youtube.com/watch?v=A0o8k1sECEk))
 
-Translations:
+翻译：
 
-- The future is now: Steven Wagner of Raedah Group on how their technological innovation will shake up the tech scene - [in Spanish](https://medium.com/authority-magazine/the-future-is-now-steven-wagner-of-raedah-group-on-how-their-technological-innovation-will-shake-4f272ced222f) by @francov\_
-- Politeia Digest 47 - [in Spanish](https://medium.com/decred-es/politeia-digest-47-septiembre-4-octubre-3-2021-3cb3bb3e6c01) by @francov\_
-- Decred Journal September 2021 was [translated](https://xaur.github.io/decred-news/) to Arabic (@arij, @abdulrahman4), Chinese (@Dominic), and Spanish (@francov\_). Thank you to all for staying around!
+- 未来就在眼前：Raedah Group 的 Steven Wagner 讲述他们的技术创新将如何改变科技界 - [西班牙语](https://medium.com/authority-magazine/the-future-is-now-steven-wagner-of-raedah-group-on-how-their-technological-innovation-will-shake-4f272ced222f) by @francov\_
+- Politeia Digest 47 - [西班牙语](https://medium.com/decred-es/politeia-digest-47-septiembre-4-octubre-3-2021-3cb3bb3e6c01) by @francov\_
+- Decred Journal 2021 年 9 月被[翻译成](https://xaur.github.io/decred-news/)阿拉伯语（@arij、@abdulrahman4）、中文（@Dominic）和西班牙语（@francov_）。感谢大家的陪伴！
 
-Other non-English content:
+其他非英语内容：
 
-- Decred presentation in Spanish by @elian ([youtube](https://www.youtube.com/watch?v=H3Ffr5-kzxY))
-- Decred erklärung deutsch - die blockchain mit Lightning Network ([youtube](https://www.youtube.com/watch?v=BG4cUkDmP7g))
-
-
-## Markets
-
-In October DCR was trading between USD 102.40-140.10 / BTC 0.0018-0.0025. The average daily rate was $121.57.
-
-@tacorevenge published the [second part](https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4) of an investigation of The Suppressor entity that is suspected of manipulating DCR markets. This time on-chain analysis was used to see how funds have been flowing between miners, centralized exchanges and DCRDEX.
-
-![DCRDEX October trading volume](../img/202110.9.full.png)
-
-_DCRDEX October trading volume_
+- @elian ([youtube](https://www.youtube.com/watch?v=H3Ffr5-kzxY)) 的西班牙语 Decred 演示文稿
+- Decred erklärung deutsch - 带有闪电网络的区块链 ([youtube](https://www.youtube.com/watch?v=BG4cUkDmP7g))
 
 
-## Relevant External
+## 市场
 
-Zcash has been [polling](https://electriccoin.co/blog/coin-holder-poll-results-summary/) its coinholders again, this time on the subject of whether to change the consensus mechanism away from Proof of Work. 85% of the 41,000 ZEC (0.3% of circulating supply) that voted put a switch from PoW as the number one priority for the project. The aim is to move away from Proof of Work entirely, to some form of Proof of Stake or equivalent.
+10 月 DCR 的交易价格在 102.40-140.10 美元 / BTC 0.0018-0.0025 之间。平均每日交易价格为 121.57 美元。
 
-Sam Altman and other Silicon Valley VCs [revealed](https://www.coindesk.com/tech/2021/10/25/why-everyone-is-mad-at-sam-altmans-worldcoin/) their vision for a universal basic income that people must submit unique eyeball hashes to claim, and privacy advocates have piled on to say it's a bad idea. Notable features are the orb-shaped eyeball scanners reminiscent of dystopian science fiction, and the 20% VC premine.
+@tacorevenge 发布了对涉嫌操纵 DCR 市场的 The Suppressor 实体的调查的[第二部分](https://medium.com/@tacorevenge/the-suppressor-part-2-on-chain-analysis-6561c5a478c4)。这次使用链上分析来查看资金如何在矿工、中心化交易所和 DCRDEX 之间流动。
 
-The latest DeFi airdrop farming [controversy](https://www.coindesk.com/tech/2021/10/08/airdrop-ethics-vc-firm-draws-ire-following-25m-ribbon-finance-exploit/) concerns Ribbon Finance, where one researcher from Divergence Ventures successfully met the qualifying criteria with hundreds of different wallets and received tokens worth $2.5 million. An independent researcher noticed the pattern and identified the wallet owner through association with an ENS domain, they [suggested](https://twitter.com/gabagooldoteth/status/1446498569603756033) copytrading them on Twitter, but it blew up and Divergence Ventures ended up giving back all the airdropped tokens.
+![DCRDEX October trading volume](img/202110.9.full.png)
 
-Cream Finance has been [hacked](https://rekt.news/cream-rekt-2/) for $130 million, which is the second major hack in the last 3 months. This attack used a flash loan to repeatedly lend and borrow funds across two addresses and took advantage of a pricing vulnerability to drain many of Cream's liquidity pools. [Analysis](https://mudit.blog/cream-hack-analysis/) by a DeFi insider suggests that this hack was executed by a skilled DeFi developer, likely working on a rival project. The attacker also left a cryptic message which appeared to taunt a list of projects and blame Yearn developers, and some DeFi developers have started referring to a "[war](https://decrypt.co/84840/behind-defi-war-words-aave-yearn)" in their tweets.
-
-The DeFi protocol Indexed Finance was [hacked](https://decrypt.co/83681/defi-protocol-indexed-finance-hacked-for-16-million-team-finds-hacker) for $16 million, but [identified](https://cryptobriefing.com/inside-the-war-room-how-indexed-finance-traced-its-16m-hacker/) the attacker. The [story](https://cryptobriefing.com/inside-the-war-room-how-indexed-finance-traced-its-16m-hacker/) of how the attacker was identified is an interesting one, involving an edit to Wikipedia which they made to describe themselves as a "notable mathematician". It subsequently transpired that the attacker is a [teenager](https://www.coindesk.com/tech/2021/10/22/after-stealing-16m-this-teen-hacker-seems-intent-on-testing-code-is-law-in-the-courts/), and rather than hand the funds back, or 90%, they have decided to test the "code is law" conjecture in court to see if they can keep their flash loan bounty.
-
-The Creature Toadz NFT community was [scammed](https://cryptobriefing.com/hacker-admits-to-stealing-88-eth-then-returns-it/) by an attacker who posted a fake minting link in their Discord - in the 45 minutes before it was taken down 88 ETH was sent to the attacker. The funds were quickly returned after the hacker's identity was discovered.
-
-In the dog eat dog world of [dog money](https://www.youtube.com/watch?v=cbI31x3FpS0), AnubisDAO executed a speedy [rug pull](https://decrypt.co/84924/anubisdao-investors-lose-60-million-in-alleged-rug-pull) with $60 million of investors' money, 20 hours into the initial token sale for this new dog token with no website. There is some dispute over whether the attack was executed by a project insider or someone who phished a project insider.
-
-A new crypto news wire has launched, and it is run by a DAO, [PubDAO](https://decrypt.co/84755/pubdao-media-dao-decentralized-news-wire).
-
-Popular patronage service Patreon is [considering](https://decrypt.co/84831/patreon-creators-fans-crypto-social-tokens) to drop the ban on its users offering and promoting social tokens on their platform.
-
-The infamous $1 trillion infrastructure bill has returned to the house of representatives and someone has discovered an even more egregious anti-crypto provision: [6050I](https://unchainedpodcast.com/not-reporting-info-on-some-transaction-partners-could-soon-be-a-felony/). This provision would require recipients of digital assets to, in many cases, collect a variety of information about the sender and report this to the IRS within 15 days. This provision has only recently been discovered, but it is [apparently](https://twitter.com/jchervinsky/status/1456275741398683648) already too late to do anything about amending the infrastructure bill on its passage through the house of representatives.
-
-The latest crypto [fad](https://www.wsj.com/articles/tungsten-cubes-bitcoin-gamestop-crypto-investors-11635431036) is not a new blockchain but small blocks of tungsten, which people are buying to touch and hold. It didn't take long for someone to come up with a [Tungsten DAO](https://twitter.com/tungsten_dao) which has minted an NFT representing a very large block of tungsten, and [sold](https://www.theverge.com/2021/11/3/22761305/tungsten-cube-meme-nft-crypto-midwest) this for $250,000, to a holder who is entitled to visit it once a year for looking and touching (it's too heavy to hold or deliver).
-
-That's all for October. Share your updates for the next issue in our [#journal](https://chat.decred.org/#/room/#journal:decred.org) chat room.
+_DCRDEX 10月交易量_
 
 
-## About
+## 相关外部信息
 
-This is issue 43 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+Zcash再次对其代币持有者进行了投票，这次的主题是是否将共识机制从工作量证明中移除。投票的 41,000 个 ZEC（占流通供应量的 0.3%）中有 85% 将放弃 PoW 作为该项目的第一要务。目的是完全从工作证明转向某种形式的股权证明或等效形式。
 
-Most information from third parties is relayed directly from the source after a minimal sanity check. The authors of the Decred Journal cannot verify all claims. Please beware of scams and do your own research.
+Sam Altman 和其他硅谷风投透露了他们对普遍基本收入的愿景，人们必须提交独特的眼球哈希才能声明，隐私倡导者纷纷表示这是一个坏主意。显着的特点是让人联想到反乌托邦科幻小说的球形眼球扫描仪，以及 20% 的 VC premine。
 
-Credits (alphabetical order):
+最新的 DeFi 空投农业争议涉及 Ribbon Finance，其中一位来自 Divergence Ventures 的研究人员使用数百个不同的钱包成功满足了资格标准，并收到了价值 250 万美元的代币。一位独立研究人员注意到了这种模式，并通过与 ENS 域的关联确定了钱包所有者，他们建议在 Twitter 上复制交易它们，但它爆炸了，Divergence Ventures 最终归还了所有空投的代币。
 
-- writing and editing: bee, bochinchero, degeri, l1ndseymm, richardred
-- reviews and feedback: davecgh, lukebp
-- title image: saender
-- funding: Decred stakeholders
+Cream Finance 已被黑客入侵1.3 亿美元，这是过去 3 个月内的第二次重大黑客攻击。这次攻击使用快速贷款在两个地址之间反复借出和借入资金，并利用定价漏洞耗尽了 Cream 的许多流动资金池。一位 DeFi 内部人士的分析表明，这次黑客攻击是由熟练的 DeFi 开发人员执行的，很可能在从事一个竞争对手的项目。攻击者还留下了一条隐晦的信息，似乎在嘲讽项目列表并指责 Yearn 开发人员，一些 DeFi 开发人员已经开始在他们的推文中提到“战争”。
+
+DeFi 协议 Indexed Finance 被黑客入侵了 1600 万美元，但确定了攻击者的身份。关于如何识别攻击者的故事很有趣，涉及对维基百科的编辑，他们将自己描述为“著名的数学家”。随后发现攻击者是一名青少年，他们决定在法庭上测试“代码就是法律”猜想，看看他们是否可以保留他们的闪电贷赏金，而不是返还 90% 的资金。
+
+生物Toadz NFT社区是被骗的45分钟，然后将拍摄下来之前88 ETH被发送到攻击-攻击者谁张贴在他们的不和谐假铸币链接。黑客的身份被发现后，资金很快被退回。
+
+在狗钱的狗吃狗世界中，AnubisDAO以 6000 万美元的投资者资金快速拉动了这个没有网站的新狗令牌的初始令牌销售 20 小时。对于攻击是由项目内部人员还是网络钓鱼项目内部人员执行的，存在一些争议。
+
+一个新的加密新闻专线已经启动，它由 DAO PubDAO运行。
+
+受欢迎的赞助服务 Patreon 正在考虑取消对用户在其平台上提供和推广社交代币的禁令。
+
+臭名昭著的 1 万亿美元基础设施法案已经回到众议院，有人发现了一个更加恶劣的反加密条款：6050I。该条款将要求数字资产的接收者在许多情况下收集有关发送者的各种信息，并在 15 天内向 IRS 报告。这项规定直到最近才被发现，但在基础设施法案通过众议院时对其进行修改显然已经为时已晚。
+
+最新的加密时尚不是新的区块链，而是人们购买并持有的小块钨。没过多久，有人想出了一个Tungsten DAO，它铸造了一个 NFT 代表一个非常大的钨块，并以250,000 美元的价格卖给了一个有权每年访问一次的持有者，以查看和触摸它（它太重而无法保持或交付）。
+
+这就是十月的全部。在我们的#journal聊天室中分享您对下一期的更新。
+
+## 关于月报
+
+这是Decred Journal的第43期。有关所有问题，镜像和翻译的索引，请参见[这里](https://xaur.github.io/decred-news/)。
+
+来自第三方的大多数信息都是在经过最低限度的健全性检查后直接从源中转过来的。Decred 月报的作者无法验证所有声明。请提防诈骗并自行研究。
+
+感谢 (字母排列):
+
+- 写作和编辑 bee, bochinchero, degeri, l1ndseymm, richardred
+- 评论和反馈： davecgh, lukebp
+- 封面图片： saender
+- 资助: Decred stakeholders
+
+## 中文社区
+
+* [社区网址](https://blog.dcrclub.org/)
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [中文电报群](https://t.me/decred_cn)
+* [bilibili频道](https://space.bilibili.com/425519478)
+* QQ群号-258412796
