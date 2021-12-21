@@ -228,7 +228,7 @@ _以其它代币支付注册费以节省更多 DCR_
 
 **[Decred Wallet (Android)](https://github.com/planetdecred/dcrandroid)**
 
-- 当 Internet连接[不可用时](https://github.com/planetdecred/dcrandroid/pull/604通知用户并暂停同步
+- 当 Internet连接[不可用时](https://github.com/planetdecred/dcrandroid/pull/604)通知用户并暂停同步
 - 始终如一地使用术语[“种子词”](https://github.com/planetdecred/dcrandroid/pull/600)
 - 更新[法语](https://github.com/planetdecred/dcrandroid/pull/586)翻译
 - 固定[链接](https://github.com/planetdecred/dcrandroid/pull/599)到提案网站
