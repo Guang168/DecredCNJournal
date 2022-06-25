@@ -212,58 +212,58 @@ _DCRDEX 是由原子交换提供支持的去信任交易的非托管交易所。
 
 内部和开发人员更改：
 
-- Allow [harness testing](https://github.com/decred/dcrdex/pull/1550) on testnet for the ETH client.
-- Simnet harness tests [generalized](https://github.com/decred/dcrdex/pull/1603) to work with all currently supported assets.
-- Implemented [stage 3](https://github.com/decred/dcrdex/pull/1530) of the signature message truncation fix. It is tricky to fix a bug when it is "deployed" on many co-dependent servers and clients, but the devs have a smart [4-stage plan](https://github.com/decred/dcrdex/pull/1526) for it.
-- Switched to Bitcoin Cash [testnet4](https://github.com/decred/dcrdex/pull/1606) now that it is first class in bchd. Also, added a custom encoder for BCH's [CashAddr](https://www.reference.cash/protocol/blockchain/encoding/cashaddr/) addresses.
-- Added methods for [calculating the median fee](https://github.com/decred/dcrdex/pull/1597) of the most recent block(s) in BTC/DOGE/LTC/BCH. Implemented a cache to prevent repeated scans between blocks, and a fallback if there is not enough data to estimate the fee.
-- Updates to newer modules from [btcsuite and go-ethereum](https://github.com/decred/dcrdex/pull/1542).
-- Dependency updates to build with [Node.js 18](https://github.com/decred/dcrdex/pull/1617).
-- Encoding now allows for transaction [data longer](https://github.com/decred/dcrdex/pull/1620) than 65,535 bytes.
-- Generic [wait and retry function](https://github.com/decred/dcrdex/pull/1623) reworked to gradually "taper off" (slow down) after a few initial frequent attempts.
-- Various bug fixes, dependency upgrades, and optimizations.
+- 允许在测试网上为 ETH 客户端进行[线束测试](https://github.com/decred/dcrdex/pull/1550)。
+- imnet 线束测试[普遍](https://github.com/decred/dcrdex/pull/1603)适用于所有当前支持的资产。
+- 实施了签名消息截断修复的[第 3 阶段](https://github.com/decred/dcrdex/pull/1530)。当它被“部署”在许多相互依赖的服务器和客户端上时，修复一个错误是很棘手的，但开发人员有一个聪明的 [4 阶段计划](https://github.com/decred/dcrdex/pull/1526)。
+- 现在切换到比特币现金[testnet4](https://github.com/decred/dcrdex/pull/1606)，因为它在 bchd 中是一流的。此外，还为 BCH 的[CashAddr](https://www.reference.cash/protocol/blockchain/encoding/cashaddr/)地址添加了自定义编码器。
+- 添加了用于[计算](https://github.com/decred/dcrdex/pull/1597)BTC/DOGE/LTC/BCH 中最近区块的中位数费用的方法。实施了缓存以防止块之间的重复扫描，并在没有足够的数据来估算费用时回退。
+- 从[btcsuite 和 go-ethereum](https://github.com/decred/dcrdex/pull/1542)更新到较新的模块。
+- 使用[Node.js 18](https://github.com/decred/dcrdex/pull/1617)构建的依赖项更新。
+- 编码现在允许超过 65,535 字节的[交易数据](https://github.com/decred/dcrdex/pull/1620)。
+- 在几次最初的频繁尝试后，通用[等待和重试功能](https://github.com/decred/dcrdex/pull/1623)被重新设计为逐渐“逐渐减少”（减速）。
+- 各种错误修复、依赖项升级和优化。
 
-While working on DCRDEX the developers have made [various contributions](https://twitter.com/blockchainbuck/status/1532146821300101120) to upstream projects: [btcd](https://github.com/btcsuite/btcd/commits?author=chappjc), [btcwallet](https://github.com/btcsuite/btcwallet/commits?author=chappjc), [go-ethereum](https://github.com/ethereum/go-ethereum/pull/24533), [neutrino](https://github.com/lightninglabs/neutrino/commits?author=chappjc), [zcash](https://github.com/zcash/zcash/commits?author=buck54321), and others.
+在 DCRDEX 工作期间，开发人员为上游项目做出了[各种贡献](https://twitter.com/blockchainbuck/status/1532146821300101120)： [btcd](https://github.com/btcsuite/btcd/commits?author=chappjc), [btcwallet](https://github.com/btcsuite/btcwallet/commits?author=chappjc), [go-ethereum](https://github.com/ethereum/go-ethereum/pull/24533), [neutrino](https://github.com/lightninglabs/neutrino/commits?author=chappjc), [zcash](https://github.com/zcash/zcash/commits?author=buck54321)等。
 
-Dev team has started a discussion on [renaming DCRDEX](https://www.reddit.com/r/decred/comments/v3gxa8/should_we_rebrand_decred_dex/) and are accepting name and logo ideas.
+开发团队已经开始讨论[重命名 DCRDEX](https://www.reddit.com/r/decred/comments/v3gxa8/should_we_rebrand_decred_dex/)并正在接受名称和徽标的想法。
 
-> Probably found a vendor to perform an audit of our Solidity atomic swap contracts. Notably, our contracts are so simple, we're under their minimum order size. That's what happens when you're not trying to extract trading fees and there's no admin functionality. \[[@blockchainbuck](https://twitter.com/blockchainbuck/status/1527105721724190722)\]
+> 可能找到了一个供应商来对我们的 Solidity 原子交换合约进行审计。值得注意的是，我们的合同非常简单，我们低于他们的最小订单量。当您不尝试提取交易费用并且没有管理功能时，就会发生这种情况。[[@blockchainbuck](https://twitter.com/blockchainbuck/status/1527105721724190722)\]
 
-![](../img/202205.6.github.png)
+![](img/202205.6.github.png)
 
-_Image: DCRDEX allows to accelerate swaps when the network is busy but you want that trade ASAP._
+_图片：DCRDEX 允许在网络繁忙但您希望尽快进行交易时加速交换。_
 
 <a id="dcrios" />
 
 **[Decred Wallet (iOS)](https://github.com/planetdecred/dcrios)**
 
-- GitHub build [workflow added](https://github.com/planetdecred/dcrios/pull/907) to ensure dcrios builds without any errors.
-- [Updated](https://github.com/planetdecred/dcrios/pull/899) automated UI tests.
+- 添加了GitHub 构建[工作流程](https://github.com/planetdecred/dcrios/pull/907)以确保 dcios 构建没有任何错误。
+- [更新](https://github.com/planetdecred/dcrios/pull/899)了自动化 UI 测试。
 
 <a id="godcr" />
 
 **[GoDCR](https://github.com/planetdecred/godcr)**
 
-_GoDCR is a lightweight desktop GUI wallet with integrated staking, privacy, Politeia voting, consensus voting, and more._
+_GoDCR 是一款轻量级桌面 GUI 钱包，集成了质押、隐私、Politeia 投票、共识投票等功能。_
 
-- [Default account](https://github.com/planetdecred/godcr/pull/910) is now filtered out when privacy is enabled.
-- All [signed messages](https://github.com/planetdecred/godcr/pull/918) can be verified, the restriction to just personal wallet addresses has been removed.
-- Redirect modals [added](https://github.com/planetdecred/godcr/pull/923) to debug page (sending to docs.decred.org) and transaction details page (sending to the block explorer).
-- Reworked [key event](https://github.com/planetdecred/godcr/pull/907) handling to be less error-prone and more efficient.
-- Option to [import watch-only](https://github.com/planetdecred/godcr/pull/943) wallet added to the splash screen.
-- Privacy is [enabled by default](https://github.com/planetdecred/godcr/pull/936) when a new wallet is created.
-- Gio [updated](https://github.com/planetdecred/godcr/pull/934) to latest stable version.
-- A bottom [navigation bar](https://github.com/planetdecred/godcr/pull/948) has replaced the side bar on screen-sizes below 479px (mobile devices).
-- [Fixes](https://github.com/planetdecred/godcr/pull/957) to wallet crashes and proposal titles.
-- Bug fixed where [incorrect locked balance](https://github.com/planetdecred/godcr/pull/956) was displayed in the Staking tab.
-- Fixed builds on [Android](https://github.com/planetdecred/godcr/pull/924) and [FreeBSD](https://github.com/planetdecred/godcr/pull/914).
-- ~6 other bug fixes and some optimizations.
+- 现在启用隐私时会过滤掉[默认帐户](https://github.com/planetdecred/godcr/pull/910)。
+- 所有[签名的消息](https://github.com/planetdecred/godcr/pull/918)都可以验证，对个人钱包地址的限制已被取消。
+- [添加](https://github.com/planetdecred/godcr/pull/923)到调试页面（发送到 docs.decred.org）和交易详情页面（发送到区块浏览器）的重定向模式。
+- 重新设计了[关键事件](https://github.com/planetdecred/godcr/pull/907)处理，使其不易出错且更高效。
+- 添加到启动画面的[导入仅手表](https://github.com/planetdecred/godcr/pull/943)钱包的选项。
+- 创建新钱包时[默认启用](https://github.com/planetdecred/godcr/pull/936)隐私。
+- Gio[更新](https://github.com/planetdecred/godcr/pull/934)到最新的稳定版本。
+- 底部[导航栏](https://github.com/planetdecred/godcr/pull/948)已取代 479 像素以下屏幕尺寸（移动设备）上的侧栏。
+- [修复](https://github.com/planetdecred/godcr/pull/957)了钱包崩溃和提案标题。
+- 修复了在 Staking 选项卡中显示[不正确的锁定余额的错误](https://github.com/planetdecred/godcr/pull/956)。
+- 修复了[Android](https://github.com/planetdecred/godcr/pull/924)和[FreeBSD](https://github.com/planetdecred/godcr/pull/914)上的构建。
+- ~6 个bug修复和一些优化。
 
-Android and iOS builds of GoDCR [already function](https://proposals.decred.org/record/0ef42e5/comments/31) in some capacity, although there remains a lot of work to polish the mobile/touch UX.
+GoDCR 的 Android 和 iOS 版本[已经](https://proposals.decred.org/record/0ef42e5/comments/31)在一定程度上发挥了作用，尽管还有很多工作要完善移动/触摸 UX。
 
-![](../img/202205.7.github.png)
+![](img/202205.7.github.png)
 
-_Image: First look of GoDCR running on an emulated mobile OS._
+_图片：在模拟移动操作系统上运行的 GoDCR_
 
 <a id="dcrdata" />
 
