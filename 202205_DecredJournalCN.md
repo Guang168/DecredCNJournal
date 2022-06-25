@@ -19,7 +19,7 @@ _图片: @saender_
 - [发布核心软件 v1.7.2 和 v1.7.3](#core-software-v172-and-v173-released)
 - [GoDCR v1.7.0 发布](#godcr-v170-released)
 - [安卓和iOS钱包v1.7.0发布](#android-and-ios-wallets-v170-released)
-- [发展](#development)
+- [开发进展总结](#development)
 - [人员](#people)
 - [治理](#governance)
 - [网络](#network)
@@ -94,7 +94,7 @@ Android 和 iOS 钱包 v1.7.0于 5 月 11 日[发布](https://www.reddit.com/r/d
 
 Android 应用程序可在 [Play Store](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet) 商店中找到。对于高级用户，有一个由 Planet Decred Release 密钥签名的新[APK下载](https://github.com/planetdecred/dcrandroid/releases/tag/v1.7.0)。
 
-## 发展
+## 开发进展总结
 
 除非另有说明，否则下面报告的工作具有“合并为主”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但在普通用户的发布二进制文件中尚不可用。
 
