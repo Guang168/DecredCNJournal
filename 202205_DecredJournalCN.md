@@ -1,6 +1,6 @@
 # Decred Journal – May 2022
 
-![abstract art by @saender](../img/202205.1.github.png)
+![abstract art by @saender](img/202205.1.github.png)
 
 _Image: Point Integral by @saender_
 
