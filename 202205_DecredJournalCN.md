@@ -79,138 +79,138 @@ dcrd 和 dcrwallet v1.7.2于 5 月 11 日[发布](https://twitter.com/decredproj
 _图片：显示每个子系统摘要的 GoDCR 概览。_
 
 
-## Android and iOS Wallets v1.7.0 Released
+## 安卓和iOS钱包v1.7.0发布
 
-Android and iOS wallets v1.7.0 were [released](https://www.reddit.com/r/decred/comments/umye1t/decred_mobile_wallet_v170_has_been_released_for/) on May 11.
+Android 和 iOS 钱包 v1.7.0于 5 月 11 日[发布](https://www.reddit.com/r/decred/comments/umye1t/decred_mobile_wallet_v170_has_been_released_for/)。
 
-Changes since v1.6.1 include:
+自 v1.6.1 以来的更改包括：
 
-- Updated Decred modules to v1.7.0
-- Updated certificate of the mixing server
-- Manual privacy setup improvements
-- Bug fixes and other minor improvements
+- 将 Decred 模块更新到 v1.7.0
+- 更新混币服务器证书
+- 手动隐私设置改进
+- 错误修复和其它小改进
 
-Mainnet iOS app is available on the [App Store](https://apps.apple.com/us/app/decred-wallet/id1462247643) and the testnet version on [TestFlight](https://testflight.apple.com/join/7KL4VnB2).
+主网 iOS 应用在[App Store](https://apps.apple.com/us/app/decred-wallet/id1462247643)和 [TestFlight](https://testflight.apple.com/join/7KL4VnB2) 上提供测试网版本。
 
-Android app is available on Google [Play Store](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet). For advanced users there is a new [APK download](https://github.com/planetdecred/dcrandroid/releases/tag/v1.7.0) signed by Planet Decred Release key.
+Android 应用程序可在 [Play Store](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet) 商店中找到。对于高级用户，有一个由 Planet Decred Release 密钥签名的新[APK下载](https://github.com/planetdecred/dcrandroid/releases/tag/v1.7.0)。
 
+## 发展
 
-## Development
-
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则下面报告的工作具有“合并为主”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但在普通用户的发布二进制文件中尚不可用。
 
 <a id="dcrd" />
 
 **[dcrd](https://github.com/decred/dcrd)**
 
-_dcrd is a full node implementation that powers Decred's peer-to-peer network around the world._
+_dcrd 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-The general direction in May was to further leverage the consensus changes that activated recently, by adding optimizations and removing unneeded code.
+5 月份的总体方向是通过添加优化和删除不需要的代码来进一步利用最近激活的共识更改。
 
-- Optimized [stake node pruning](https://github.com/decred/dcrd/pull/2943) by using block headers instead of checkpoints (reducing dependency on the latter). Header-based sync operations are more efficient and pave the way to multi-peer block downloads.
-- Retroactively fixed revocation [fee limit bug](https://github.com/decred/dcrd/pull/2948) that allowed one party to increase the fee paid to miners for another party in split transactions. This has never been exploited on `mainnet` and _can not_ be exploited since the automatic revocations agenda has activated.
-- Reworked [old block rejection](https://github.com/decred/dcrd/pull/2945) logic to replace the use of checkpoints with the `assumevalid` block (hard-coded in each release). Semantics have been clarified to reflect that "checkpoints" are now only used for handling old forks and are no longer used for optimizations (that now rely on other methods). The `--nocheckpoints` CLI option has been replaced with `--allowoldforks`. With this change, the role of checkpoints is reduced to a minimum, which is desirable since they are a kind of a workaround.
-- Removed the deprecated [address index](https://github.com/decred/dcrd/pull/2930) along with the associated CLI flags (`--addrindex` and `--dropaddrindex`) and `searchrawtransactions` JSON-RPC. Address index was a lot of overhead from a development perspective to maintain, it wasn't used by anything of note, and it didn't really easily provide what most people want from addresses anyway, which is a full balance as opposed to all of the individual transactions. All of the information it provided, and more, is available via dcrdata.
-- Added a function to make [basic transaction sanity](https://github.com/decred/dcrd/pull/2949) checks to the `blockchain/standalone` module, which is nice for consumers (e.g. DCRDEX) since this module has very few dependencies.
-- Implemented [header proof storage](https://github.com/decred/dcrd/pull/2938) along with a one-way database upgrade. This will avoid recalculating commitment hashes by storing/loading them from disk. The concept of "block header commitments" sounds scary, but it is a powerful piece of tech worth learning about. It was described well in the [proposal](https://proposals.decred.org/proposals/0a1ff84), but in short, these commitments are tiny fingerprints of blockchain data which allow to build fast _and_ secure lightweight apps. Currently there is only one type of commitment - the "compact block filters" that allow light wallets to find users' transactions quickly and securely. More commitments for other use cases may be added in the future.
-- Made [`blockchain`](https://github.com/decred/dcrd/pull/2952) package internal and not exported. This is part of a continuing overall effort to reduce the total number of exported packages and modules to reduce the maintenance burden, and eventually get to the point it will be possible to follow [semantic versioning](https://semver.org/) for the root module.
-- Continued [code](https://github.com/decred/dcrd/pull/2922) [cleanup](https://github.com/decred/dcrd/pull/2954) enabled by the recent consensus changes.
+- 通过使用块头而不是检查点来优化[权益节点修剪](https://github.com/decred/dcrd/pull/2943)（减少对后者的依赖）。基于标头的同步操作更有效，并为多对等块下载铺平了道路。
+- 追溯修复了撤销[费用限制错误](https://github.com/decred/dcrd/pull/2948)，该错误允许一方在拆分交易中为另一方增加支付给矿工的费用。由于自动撤销议程已激活，因此从未被利用过`mainnet`，也无法被利用。
+- 重新设计了[旧块拒绝逻辑](https://github.com/decred/dcrd/pull/2945)，以用块替换检查点的使用assumevalid（在每个版本中都硬编码）。语义已被澄清，以反映“检查点”现在仅用于处理旧分叉，不再用于优化（现在依赖于其他方法）。CLI 选项已--nocheckpoints替换为--allowoldforks. 通过此更改，检查点的作用降至最低，这是可取的，因为它们是一种解决方法。
+- 删除了不推荐使用的[地址索引](https://github.com/decred/dcrd/pull/2930)以及相关的 CLI 标志 (--addrindex和--dropaddrindex) 和searchrawtransactionsJSON-RPC。从开发的角度来看，地址索引需要大量维护，它没有被任何值得注意的东西使用，而且无论如何它也不容易提供大多数人想要的地址，这是一个完全平衡，而不是所有个别交易。它提供的所有信息以及更多信息都可以通过 dcrdata 获得。
+- 添加了一个对模块进行[基本事务完整性](https://github.com/decred/dcrd/pull/2949)检查的功能blockchain/standalone，这对消费者（例如 DCRDEX）非常有用，因为该模块几乎没有依赖关系。
+- 实施了[标头证明存储](https://github.com/decred/dcrd/pull/2938)以及单向数据库升级。这将通过从磁盘存储/加载它们来避免重新计算提交哈希。“区块头承诺”的概念听起来很吓人，但它是一项值得学习的强大技术。提案中对此进行了很好的描述，但简而言之，这些承诺是区块链数据的微小指纹，允许构建快速且安全的轻量级应用程序。目前只有一种类型的承诺——“紧凑型区块过滤器”，它允许轻钱包快速安全地找到用户的交易。未来可能会增加对其他用例的更多承诺。
+- 在内部制作[`blockchain`](https://github.com/decred/dcrd/pull/2952)包而不是导出。这是减少导出的包和模块的总数以减少维护负担的持续整体努力的一部分，并最终达到可以遵循根模块的语义版本控制的程度。
+- 最近的共识更改启用了持续的[代码](https://github.com/decred/dcrd/pull/2922)[清理](https://github.com/decred/dcrd/pull/2954)。
 
 <a id="dcrwallet" />
 
 **[dcrwallet](https://github.com/decred/dcrwallet)**
 
-Released with the v1.7.2 patch:
+随 v1.7.2 补丁发布：
 
-- [Fixed](https://github.com/decred/dcrwallet/pull/2150) verification of signed messages.
-- [Added](https://github.com/decred/dcrwallet/pull/2148) `walletpubpassphrasechange` to JSON-RPC methods. It allows to change wallet's public passphrase.
-- [Added](https://github.com/decred/dcrwallet/pull/2146) VSP host to the returned ticket information, enabling wallet apps to know which VSP the ticket is managed by.
-- [Removed](https://github.com/decred/dcrwallet/pull/2153) all ticket revoking functionality. Now that revocations are created [automatically](https://proposals.decred.org/record/e2d7b7d) there is no need for wallets to handle it.
+- [修复](https://github.com/decred/dcrwallet/pull/2150) 了签名消息的验证。
+- [添加](https://github.com/decred/dcrwallet/pull/2148) `walletpubpassphrasechange`到 JSON-RPC 方法。它允许更改钱包的公共密码。
+- 在返回的工单信息中[添加](https://github.com/decred/dcrwallet/pull/2146)了 VSP 主机，使钱包应用可以知道工单是由哪个 VSP 管理的。
+- [删除](https://github.com/decred/dcrwallet/pull/2153)了所有选票撤销功能。现在撤销是自动创建的，不需要钱包来处理它。
 
-Merged in `master`:
+合并`master`：
 
-- [Compatibility](https://github.com/decred/dcrwallet/pull/2158) updates to the latest dcrd changes regarding missed and expired tickets.
-- [Fixed](https://github.com/decred/dcrwallet/pull/2164) an error in the `getstakeinfo` command (caused by changes regarding expired tickets).
+- 有关错过和过期票证的最新 dcrd 更改的[兼容性更新](https://github.com/decred/dcrwallet/pull/2158)。
+- [修复](https://github.com/decred/dcrwallet/pull/2164)了getstakeinfo命令中的错误（由过期选票的更改引起）。
 
 <a id="decrediton" />
 
 **[Decrediton](https://github.com/decred/decrediton)**
 
-_Decrediton is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_Decrediton 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混合、闪电网络、DEX 交易等。它在有或没有完整区块链（SPV 模式）的情况下运行。_
 
-Merged and released with May's v1.7.2 and v1.7.3 patches:
+v1.7.2 和 v1.7.3 补丁合并并发布：
 
-- Users can now fetch the [VSP fee transaction hash and fee status](https://github.com/decred/decrediton/pull/3752) in transaction details. If the received fee transaction shows confirmed status for an unspent ticket but the dcrwallet thinks it's not yet confirmed, the app processes and updates the status in the background.
-- Improvements made to [Ticket Status and Ticket History views](https://github.com/decred/decrediton/pull/3751). Now the tabs remember their scroll positions after coming back from the transaction details page. Rows are loaded gradually using the infinite scroll functionality.
-- [Removed revoke](https://github.com/decred/decrediton/pull/3754) tickets functionality. Now that revocations are created [automatically](https://proposals.decred.org/record/e2d7b7d) there is no need for wallets to handle it.
-- Electron (the framework Decredtion is built on) has been [bumped to v17.4.2](https://github.com/decred/decrediton/pull/3765) to fix an issue that prevented dcrwallet/dcrd from launching on macOS 10.15 (Catalina).
-- ~7 bug fixes
+- 用户现在可以在交易详情中获取[VSP费用交易哈希和费用状态](https://github.com/decred/decrediton/pull/3752)。如果收到的费用交易显示未使用票证的确认状态，但 dcrwallet 认为它尚未确认，则应用程序会在后台处理并更新状态。
+- 对[工单状态和工单历史视图进行了改进](https://github.com/decred/decrediton/pull/3751)。现在选项卡在从交易详细信息页面返回后会记住它们的滚动位置。使用无限滚动功能逐渐加载行。
+- [删除了撤销](https://github.com/decred/decrediton/pull/3754)选票功能。现在撤销是自动创建的，不需要钱包来处理它。
+- 删除了撤销票证功能。现在撤销是自动创建的，不需要钱包来处理它。
+- 删除了撤销票证功能。现在撤销是自动创建的，不需要钱包来处理它。
+- Electron（Decredtion 所基于的框架）已[升级到 v17.4.2](https://github.com/decred/decrediton/pull/3765)，以修复阻止 dcrwallet/dcrd 在 macOS 10.15 (Catalina) 上启动的问题。
+- ~7 个bug修复
 
-![](../img/202205.5.github.png)
+![](img/202205.5.github.png)
 
-_Image: Decrediton showing additional VSP info for each ticket._
+_图片：Decrediton 显示每张票的附加 VSP 信息。_
 
 <a id="politeia" />
 
 **[Politeia](https://github.com/decred/politeia)**
 
-_Politeia is Decred's proposal system. It is used to request funding from the Decred treasury._
+_Politeia 是 Decred 的提案系统。它用于向 Decred 国库请求资金。_
 
-Backend changes:
+后端更改：
 
-- tlog client now has [its own package](https://github.com/decred/politeia/pull/1636) in politeiad (required for [importing](https://github.com/decred/politeia/pull/1632) legacy proposals).
-- Trillian version [updated](https://github.com/decred/politeia/pull/1642) to 1.4.1.
-- Fixed minimum proposal [start date bug](https://github.com/decred/politeia/pull/1637).
-- Fixed [CSRF error check](https://github.com/decred/politeia/pull/1638).
-- Fixed [error messages](https://github.com/decred/politeia/pull/1640) related to start and end dates.
-- Comments plugin [fsck function rewritten](https://github.com/decred/politeia/pull/1641) to fix several bugs. "fsck" is short for "file system check" and is responsible for verifying data integrity and rebuilding the caches.
+- tlog 客户端现在有它[自己的包](https://github.com/decred/politeia/pull/1636)（用于导入遗留提案）。
+- Trillian 版本[更新](https://github.com/decred/politeia/pull/1642)到 1.4.1。
+- 修复了最小提案[开始日期错误](https://github.com/decred/politeia/pull/1637)。
+- 修复[CSRF 错误检查](https://github.com/decred/politeia/pull/1638)。
+- 修复了与开始和结束日期相关的[错误消息](https://github.com/decred/politeia/pull/1640)。
+- 评论插件[fsck 函数重写](https://github.com/decred/politeia/pull/1641)以修复几个错误。“fsck”是“文件系统检查”的缩写，负责验证数据完整性和重建缓存。
 
-GUI changes:
+图形用户界面更改：
 
-- Fixed the [comment form component](https://github.com/decred/politeiagui/pull/2760) by replacing `formik` with ` react-hook-form`.
-- Reimplemented home page [Sidebar](https://github.com/decred/politeiagui/pull/2764), [External Link](https://github.com/decred/politeiagui/pull/2768) modal, and [Navbar](https://github.com/decred/politeiagui/pull/2763) in the new [GUI plugin architecture](https://github.com/decred/politeiagui/tree/master/plugins-structure#politeiagui---plugins-structure).
-- Fixed several bugs related to [proposal start/end dates](https://github.com/decred/politeiagui/pull/2771).
+- 通过替换为修复了[评论表单组件](https://github.com/decred/politeiagui/pull/2760)。formik react-hook-form
+- 修复了与[提案开始/结束日期](https://github.com/decred/politeiagui/pull/2771)相关的几个错误。 
 
-Changes in the pi-ui library (common UI elements for Politeia and Decrediton):
+pi-ui 库中的更改（Politeia 和 Decrediton 的常见 UI 元素）：
 
-- Support [keyboard navigation](https://github.com/decred/pi-ui/pull/446) in the `DatePicker` widget.
-- Added [info icon](https://github.com/decred/pi-ui/pull/447) with a tooltip to the text input field.
+- 支持小部件中的[键盘导航](https://github.com/decred/pi-ui/pull/446)。`DatePicker`
+- 在文本输入字段中添加了带有工具提示的[信息图标](https://github.com/decred/pi-ui/pull/447)。
 
 <a id="vspd" />
 
 **[vspd](https://github.com/decred/vspd)**
 
-_vspd is server software for running a Voting Service Provider. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_vspd 是用于运行投票服务提供商的服务器软件。VSP 24/7 代表其用户投票，不能窃取资金。_
 
-- 12 commits representing various code optimizations and refactoring.
+- 12 个提交，代表各种代码优化和重构。
 
 <a id="dcrlnlpd" />
 
 **[dcrlnlpd](https://github.com/decred/dcrlnlpd)**
 
-_dcrlnlpd stands for "DCR LN Liquidity Provider Daemon"._
+_dcrlnlpd 代表“DCR LN 流动性提供者守护程序”。_
 
-Meet the the newest project in Decred's LN ecosystem:
+了解 Decred LN 生态系统中的最新项目：
 
-> This service allows running a Lightning Network Liquidity Provider in the Decred network.
+> 该服务允许在 Decred 网络中运行闪电网络流动性提供者。
 > 
-> This LP allows remote clients to request the node associated to the LP to open an LN channel back to the requesting client. This allows the requesting client to have some inbound bandwidth to receive LN payments.
+> 此 LP 允许远程客户端请求与 LP 关联的节点打开返回请求客户端的 LN 通道。这允许请求客户端有一些入站带宽来接收 LN 付款。
 > 
-> To create the channel, the LP charges some amount, specified as a percentage of the desired channel size. \[[README file](https://github.com/decred/dcrlnlpd/blob/941743f09e2d01d5bae36b492de38e49c9565510/README.md)\]
+> 为了创建通道，LP 会收取一定的费用，指定为所需通道大小的百分比。 \[[自述文件](https://github.com/decred/dcrlnlpd/blob/941743f09e2d01d5bae36b492de38e49c9565510/README.md)\]
 
 <a id="dcrdex" />
 
 **[DCRDEX](https://github.com/decred/dcrdex)**
 
-_DCRDEX is a non-custodial exchange for trustless trading, powered by atomic swaps._
+_DCRDEX 是由原子交换提供支持的去信任交易的非托管交易所。_
 
-User-facing changes:
+面向用户的变化：
 
-- Added support for [accelerating BTC transactions](https://github.com/decred/dcrdex/pull/1555) using the [Child Pays For Parent](https://bitcoinops.org/en/topics/cpfp/) fee bumping technique. Orders page will show a button if the order is able to be accelerated. When clicking the button, a popup shows up which allows the user to choose a higher fee.
-- A button has been added to the Wallets page to [recreate the BTC SPV wallet](https://github.com/decred/dcrdex/pull/1507), as there are still many ways in which it could get [corrupted](https://github.com/decred/dcrdex/issues/1438).
-- Support updating server's [TLS certificate](https://github.com/decred/dcrdex/pull/1602) with one supplied by the user.
+- 添加了对使用[accelerating BTC transactions](https://github.com/decred/dcrdex/pull/1555)收费技术[加速 BTC 交易](https://bitcoinops.org/en/topics/cpfp/)的支持。如果订单能够加速，订单页面将显示一个按钮。单击按钮时，会出现一个弹出窗口，允许用户选择更高的费用。
+- 钱包页面添加了一个按钮来[重新创建 BTC SPV 钱包](https://github.com/decred/dcrdex/pull/1507)，因为它仍然有很多可能被破坏的方式。
+- 支持使用用户提供的证书更新服务器的[TLS证书](https://github.com/decred/dcrdex/pull/1602)。
 
-Internal and developer changes:
+内部和开发人员更改：
 
 - Allow [harness testing](https://github.com/decred/dcrdex/pull/1550) on testnet for the ETH client.
 - Simnet harness tests [generalized](https://github.com/decred/dcrdex/pull/1603) to work with all currently supported assets.
