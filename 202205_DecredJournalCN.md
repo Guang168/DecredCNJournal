@@ -1,83 +1,82 @@
-# Decred Journal – May 2022
+# Decred月报 – 2022 年 5 月
 
 ![abstract art by @saender](img/202205.1.github.png)
 
-_Image: Point Integral by @saender_
+_图片: @saender_
 
-May was quite an epic month for Decred:
+对于 Decred 来说，5月是一个史诗般的月份：
 
-- The four consensus changes (DCP0007-10) recently approved by voters have activated on mainnet.
-- There have been two interim bug fixing releases of the main software, v1.7.2 and v1.7.3.
-- GoDCR v1.7.0 has been released, the first version which is intended for mainnet use - and a new proposal for funding has been published.
-- Decred Magazine launched, it is a new platform for hosting and sharing Decred news and other content spearheaded by @phoenixgreen.
-- All of the old failed tickets which didn't get revoked by their owners have now been revoked thanks to the activation of DCP-0009.
-- Four new proposals have been published on Politeia.
+- 获得选民批准的四项共识变更（DCP0007-10）已在主网上激活。
+- 核心软件有两个临时bug修复版本，v1.7.2 和 v1.7.3。
+- GoDCR v1.7.0 已经发布，这是第一个供主网使用的版本 - 并且已经发布了新的资金提案。
+- Decred 杂志推出，这是一个托管和共享 Decred 新闻和其它内容的新平台，由 @phoenixgreen 带头。
+- 由于激活了 DCP-0009，所有撤销miss票错误的都已被撤销。
+- Politeia 上发布了四项新提案。
 
-Contents:
+内容：
 
-- [Four Consensus Changes Activated](#four-consensus-changes-activated)
-- [Core Software v1.7.2 and v1.7.3 Released](#core-software-v172-and-v173-released)
-- [GoDCR v1.7.0 Released](#godcr-v170-released)
-- [Android and iOS Wallets v1.7.0 Released](#android-and-ios-wallets-v170-released)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Discussions](#discussions)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
-
-
-## Four Consensus Changes Activated
-
-All four [consensus upgrades](https://docs.decred.org/governance/consensus-rule-voting/consensus-vote-archive/) added in v1.7 and approved by the stakeholders have activated on May 8, in [block 657,280](https://dcrdata.decred.org/block/657280):
-
-- [DCP-0007](https://github.com/decred/dcps/blob/master/dcp-0007/dcp-0007.mediawiki) - the algorithm that determines the maximum monthly spend from the new treasury was fixed, and should no longer interfere with making monthly payments to contractors.
-
-- [DCP-0008](https://github.com/decred/dcps/blob/master/dcp-0008/dcp-0008.mediawiki) - nodes now reject newer transaction versions they can't handle, and explicit consensus upgrades are now required to define and allow newer versions. It will be easier and less error-prone for all actors in the Decred ecosystem to integrate with future consensus changes. Some engineers would even say that _fully-validating nodes_ rejecting data they cannot _fully validate_ is the only sensible way to operate. With this upgrade, Decred doubles down on hard forks as the most secure and reliable way to upgrade consensus, "because we can".
-
-- [DCP-0009](https://github.com/decred/dcps/blob/master/dcp-0009/dcp-0009.mediawiki) - miners now revoke missed and expired tickets automatically. This removes a big user frustration of dealing with revocations, and especially the pain of lost (not backed up) redeem scripts. Wallet code and GUIs become simpler, staking becomes easier.
-
-- [DCP-0010](https://github.com/decred/dcps/blob/master/dcp-0010/dcp-0010.mediawiki) - 50% of each block's reward is redirected from PoW miners to PoS voters, changing the split from 60/30/10 to 10/80/10 for PoW/PoS/treasury. This will hopefully rebalance the supply and demand of DCR and reduce the ability of malicious actors to manipulate the markets. As a byproduct, higher PoS rewards make it more attractive to stake DCR. This was the [most debated proposal](https://proposals.decred.org/record/427e1d4) so far, but stakeholders said Yes and after around 6 months it is live.
-
-This is perhaps the biggest consensus upgrade in Decred's history.
+- [激活了四个共识变更](#four-consensus-changes-activated)
+- [发布核心软件 v1.7.2 和 v1.7.3](#core-software-v172-and-v173-released)
+- [GoDCR v1.7.0 发布](#godcr-v170-released)
+- [安卓和iOS钱包v1.7.0发布](#android-and-ios-wallets-v170-released)
+- [发展](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [讨论](#discussions)
+- [市场](#markets)
+- [相关外部](#relevant-external)
 
 
-## Core Software v1.7.2 and v1.7.3 Released
+## 激活了四个共识变更
 
-dcrd and dcrwallet v1.7.2 were [released](https://twitter.com/decredproject/status/1524430609543831553) on May 11 - the latest version as of writing. dcrd got a fix for a rare and hard to hit case when optional indexing is enabled. dcrwallet received a fix for `verifymessage`, enabled change of public wallet passphrase, and some internal/developer changes. [Release notes](https://github.com/decred/decred-binaries/releases/tag/v1.7.2).
+在 v1.7中添加并经利益相关者批准的所有四个[共识升级](https://docs.decred.org/governance/consensus-rule-voting/consensus-vote-archive/)已于 5 月 8 日在[区块657,280](https://dcrdata.decred.org/block/657280)中激活：
 
-[Decrediton v1.7.2](https://github.com/decred/decred-binaries/releases/tag/v1.7.2#decrediton-v172) added support for voting on treasury spends, more information in VSP staking, updated DEX module, and several bug fixes. v1.7.3 has [followed](https://twitter.com/decredproject/status/1528430113355878401) on May 18 with fixes for macOS 10.15 and setting treasury spending vote choices. [Release notes](https://github.com/decred/decred-binaries/releases/tag/v1.7.3).
+- [DCP-0007](https://github.com/decred/dcps/blob/master/dcp-0007/dcp-0007.mediawiki) - 确定新国库每月最大支出的算法已修复。
 
-[Verify the downloads](https://docs.decred.org/advanced/verifying-binaries/) to make sure they have not been modified. The files are signed with Decred Release subkey ending with `6D897EDF518A031D` (primary key ends with `6DF634AA7608AF04`).
+- [DCP-0008](https://github.com/decred/dcps/blob/master/dcp-0008/dcp-0008.mediawiki) - 现在需要明确的共识升级来定义和允许更新版本。对于 Decred 生态系统中的所有参与者来说，与未来的共识变化整合将更加容易且不易出错。一些工程师甚至会说，完全验证节点拒绝他们无法完全验证的数据是唯一明智的操作方式。通过这次升级，Decred 将硬分叉作为升级共识的最安全和可靠的方式加倍下注，“因为我们可以”。
+
+- [DCP-0009](https://github.com/decred/dcps/blob/master/dcp-0009/dcp-0009.mediawiki) - 矿工现在自动撤销错过和过期的选票。这消除了用户处理撤销的巨大挫败感，尤其是丢失（未备份）赎回脚本的痛苦。钱包代码和 GUI 变得更简单，质押变得更容易。
+
+- [DCP-0010](https://github.com/decred/dcps/blob/master/dcp-0010/dcp-0010.mediawiki) - 每个区块奖励的 50% 从 PoW 矿工重定向到 PoS 选民，将 PoW/PoS/国库的分配比例从 60/30/10 更改为 10/80/10。这有望重新平衡 DCR 的供需，并降低恶意行为者操纵市场的能力。作为副产品，更高的 PoS 奖励使质押 DCR 更具吸引力。
+
+这可能是 Decred 历史上最大的共识升级。
 
 
-## GoDCR v1.7.0 Released
+## 发布核心软件 v1.7.2 和 v1.7.3
 
-The debut Mainnet release of GoDCR was [announced](https://www.reddit.com/r/decred/comments/uwa6w2/godcr_desktop_wallet_for_decred_written_purely_in/) on May 23 after almost 8 months of development since the v0.9.0 Testnet release.
+dcrd 和 dcrwallet v1.7.2于 5 月 11 日[发布](https://twitter.com/decredproject/status/1524430609543831553)- 撰写本文时的最新版本。当启用可选索引时，dcrd 修复了一个罕见且难以命中的情况。dcrwallet 收到了一个修复verifymessage，启用了公共钱包密码的更改，以及一些内部/开发人员的更改。[发行说明](https://github.com/decred/decred-binaries/releases/tag/v1.7.2)。
 
-The following features are supported:
+[Decrediton v1.7.2](https://github.com/decred/decred-binaries/releases/tag/v1.7.2#decrediton-v172)增加了对国库支出投票的支持、更多关于 VSP 质押的信息、更新的 DEX 模块和几个错误修复。v1.7.3于 5 月 18 日紧随其后，修复了 macOS 10.15 并设置了国库支出投票选项。[发行说明](https://github.com/decred/decred-binaries/releases/tag/v1.7.3)。
 
-- Basic wallet send/receive
-- Staking (with automatic ticket buying)
-- Wallet privacy via StakeShuffle
-- Proposal voting
-- Consensus rule change voting
-- Message signing
-- Wallet restores
-- Running on Linux, macOS, Windows, and FreeBSD
+[验证下载](https://docs.decred.org/advanced/verifying-binaries/)以确保它们未被修改。`6DF634AA7608AF04`这些文件使用以（主键以）结尾的 Decred Release 子密钥进行签名`6DF634AA7608AF04`。
 
-[Download it here](https://github.com/planetdecred/godcr/releases/tag/v1.7.0) and verify the signature from `release@planetdecred.org` (key ends with `A3C9EB3218CCC3E8`).
+## GoDCR v1.7.0 发布
 
-This is just the start for GoDCR. Up next is DEX trading, coin selection, treasury spend voting, and the ambitious goal of building desktop and mobile apps from one unified codebase. Check the [proposal](https://proposals.decred.org/record/0ef42e5) seeking to fund this work in 2022-2023.
+自 v0.9.0 测试网发布以来，经过近 8 个月的开发，GoDCR 的首次主网版本于 5 月 23 日[宣布](https://www.reddit.com/r/decred/comments/uwa6w2/godcr_desktop_wallet_for_decred_written_purely_in/)。
 
-![](../img/202205.3.full.png)
+支持以下功能：
 
-_Image: GoDCR overview showing the summary of each subsystem._
+- 基本钱包发送/接收
+- 质押（自动购票）
+- 通过 StakeShuffle 的钱包隐私
+- 提案投票
+- 共识规则变更投票
+- 消息签名
+- 钱包恢复
+- 在 Linux、macOS、Windows 和 FreeBSD 上运行
+
+[在此处下载](https://github.com/planetdecred/godcr/releases/tag/v1.7.0)`release@planetdecred.org` 并验证来自（密钥以 结尾）的签名`A3C9EB3218CCC3E8`。
+
+这只是 GoDCR 的开始。接下来是 DEX 交易、硬币选择、国库支出投票，以及从一个统一的代码库构建桌面和移动应用程序的雄心勃勃的目标。检查寻求在 2022-2023 年资助这项工作的提案。
+
+![](img/202205.3.full.png)
+
+_图片：显示每个子系统摘要的 GoDCR 概览。_
 
 
 ## Android and iOS Wallets v1.7.0 Released
