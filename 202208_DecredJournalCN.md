@@ -36,7 +36,7 @@ _图片： @saender _
 - 改进的草稿用户体验。
 - 用于构建类似 Politeia 的应用程序的新架构的初步工作。
 
-请参阅 [politeia](https://github.com/decred/politeia/releases/tag/v1.4.0) 和 politeiagui](https://github.com/decred/politeiagui/releases/tag/v1.4.0) 存储库中的完整发行说明。
+请参阅 [politeia](https://github.com/decred/politeia/releases/tag/v1.4.0) 和 [politeiagui](https://github.com/decred/politeiagui/releases/tag/v1.4.0) 存储库中的完整发行说明。
 
 
 ## 开发进展总结
