@@ -372,7 +372,7 @@ Monde PR的成就：
 
 获得以下新闻文章：
 
-- Forbes Advisor](https://www.forbes.com/advisor/investing/cryptocurrency/what-are-meme-coins-are-they-worth-investing-in/)中的一篇文章，其中包含 @jz 对 meme 硬币优点的评论。该作品被联合发布给包括纳斯达克在内的 3 家出版物。
+- [Forbes Advisor](https://www.forbes.com/advisor/investing/cryptocurrency/what-are-meme-coins-are-they-worth-investing-in/)中的一篇文章，其中包含 @jz 对 meme 硬币优点的评论。该作品被联合发布给包括纳斯达克在内的 3 家出版物。
 - [Cointelegraph](https://cointelegraph.com/news/bitcoin-lightning-network-vs-visa-and-mastercard-how-do-they-stack-up)上的一篇文章以@jy-p 的评论为特色，内容涉及比特币的闪电网络如何与 Solana 和 Visa 相抗衡。这篇文章被联合发布给 30 家出版物，包括Bitcoin Insider和Crypto News Canada。
 - Cointelegraph 的文章也以葡萄牙语出现在[Cointelegraph Brazil](https://cointelegraph.com.br/news/bitcoin-lightning-network-vs-visa-and-mastercard-how-do-they-stack-up)上。
 
