@@ -394,7 +394,7 @@ DM 也将来到 Instagram - 关注[@decredmagazine](https://www.instagram.com/de
 **精选文章:**
 
 - [Decred 上的稳定币](https://www.decredmagazine.com/stablecoins-on-decred/) 来自Anon - 2018 年在 Decred 论坛上发布的概念文件，在 DM 上复活
-- [Decred 的 Brian 'Buck' Stafford 谈货币和银行业的未来](https://medium.com/authority-magazine/brian-buck-stafford-of-decred-on-the-future-of-money-and -banking-45f25305b409)由 Jason Hartman 为权威杂志撰写
+- [Decred 的 Brian 'Buck' Stafford 谈货币和银行业的未来](https://medium.com/authority-magazine/brian-buck-stafford-of-decred-on-the-future-of-money-and-banking-45f25305b409)由 Jason Hartman 为权威杂志撰写
 - [隧道尽头的光](https://www.decredmagazine.com/decred-light-at-the-end-of-the-tunnel/) - @Applesaucesome 的 DCR 技术分析
 - [Monde PR 2022 年 8 月](https://www.decredmagazine.com/mondepr-august-2022/) - @phoenixgreen
 - [介绍 Decred 社区成员 Ronnie Amato](https://www.decredmagazine.com/introducing-decred-community-member-ronnie-amato/) - @phoenixgreen
