@@ -394,7 +394,7 @@ DM 也将来到 Instagram - 关注[@decredmagazine](https://www.instagram.com/de
 **精选文章:**
 
 - [Decred 上的稳定币](https://www.decredmagazine.com/stablecoins-on-decred/) 来自Anon - 2018 年在 Decred 论坛上发布的概念文件，在 DM 上复活
-- [Decred 的 Brian 'Buck' Stafford 谈货币和银行业的未来](https://medium.com/authority-magazine/brian-buck-stafford-of-decred-on-the-future-of-money-and -banking-45f25305b409) 由 Jason Hartman 为权威杂志撰写
+- [Decred 的 Brian 'Buck' Stafford 谈货币和银行业的未来](https://medium.com/authority-magazine/brian-buck-stafford-of-decred-on-the-future-of-money-and -banking-45f25305b409)由 Jason Hartman 为权威杂志撰写
 - [隧道尽头的光](https://www.decredmagazine.com/decred-light-at-the-end-of-the-tunnel/) - @Applesaucesome 的 DCR 技术分析
 - [Monde PR 2022 年 8 月](https://www.decredmagazine.com/mondepr-august-2022/) - @phoenixgreen
 - [介绍 Decred 社区成员 Ronnie Amato](https://www.decredmagazine.com/introducing-decred-community-member-ronnie-amato/) - @phoenixgreen
@@ -409,7 +409,7 @@ DM 也将来到 Instagram - 关注[@decredmagazine](https://www.instagram.com/de
 - [Decred 每月回顾 - 新网站、开发更新、Politeia 1.4.0、文章 + 采访等！](https://www.youtube.com/watch?v=7IPj3rWmNY8) @Exitus
 - [DCRDATA 市场页面 - Decred Fundamentals](https://www.youtube.com/watch?v=6YW9JiMT2w8) by @phoenixgreen - 也作为 [文本帖子](https://www.decredmagazine.com/dcrdata-making-markets-decred-fundamentals/)
 - [DCRDEX 添加莱特币原子交换去中心化交易所](https://twitter.com/karamblez/status/1573453810005348353) - @karamble 的动画
-- 【为什么Decred有自己的交易所？ - DCRDEX 系列](https://www.youtube.com/watch?v=7mx3TCPS5rU) by @phoenixgreen - 也作为 [文字帖子](https://www.decredmagazine.com/why-does-decred-have-its-own-exchange/)
+- [为什么Decred有自己的交易所？ - DCRDEX 系列](https://www.youtube.com/watch?v=7mx3TCPS5rU) by @phoenixgreen - 也作为 [文字帖子](https://www.decredmagazine.com/why-does-decred-have-its-own-exchange/)
 
 **艺术娱乐:**
 
@@ -450,7 +450,7 @@ DM 也将来到 Instagram - 关注[@decredmagazine](https://www.instagram.com/de
 
 *以下不是投资建议。*
 
-@Applesaucesome 的新市场报道：[隧道尽头的光](https://www.decredmagazine.com/decred-light-at-the-end-of-the-tunnel/) 和 [万物皆可归的地方 看起来很糟糕，但我发布了很多 hopium]（https://www.decredmagazine.com/the-one-where-i-post-lots-of-hopium/）。
+@Applesaucesome 的新市场报道：[隧道尽头的光](https://www.decredmagazine.com/decred-light-at-the-end-of-the-tunnel/) 和 [万物皆可归的地方 看起来很糟糕，但我发布了很多 hopium](https://www.decredmagazine.com/the-one-where-i-post-lots-of-hopium/)。
 
 > 我不会粉饰它，一切看起来都很糟糕。斯托克斯，加密货币，应有尽有。过去几周获得的所有势头都被回撤。但正如我们都知道的那样，这就是所有的手都被甩掉的地方……或者我们只是第n次再次投降。[2022-09-25]
 
