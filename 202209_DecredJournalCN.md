@@ -437,8 +437,6 @@ DM 也将来到 Instagram - 关注[@decredmagazine](https://www.instagram.com/de
 - [Decred 在 Phemex 交易所上市](https://www.reddit.com/r/decred/comments/xqeqg8/listing_of_decred_token_on_phemex_exchange/) - @sirashtvm 的另一个合作理念，DCR 将在新加坡的 Phemex 交易所上市，还讨论了[关于 Matrix](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$BPzC-9nhy3gfgCNNXTXw8QTfV31DVrLVdERfGYqHPTk?via=decred.org&via=matrix.org&via=planetdecred.org)。争论的主要焦点是 Phemex 要求为交易比赛（2 万美元）和“KOL 影响者活动 + AMA”（1 万美元）提供资金的 3 万美元“营销费”。当得知 Phemex 代表对进一步讨论不感兴趣时，这个想法已经 [结束](https://www.reddit.com/r/decred/comments/xqeqg8/listing_of_decred_token_on_phemex_exchange/ir0m9nz/)。
 - [每周贡献 - 特别版](https://www.reddit.com/r/decred/comments/xsacjg/weekly_contributions_special_edition_bounty_pool/) - 赏金池已增长到 4 个 DCR，@fjsixfjdksfi 继续迭代格式和规则。此版本的重点是（但不限于）在 DCRDEX 上推广新的莱特币对。
 
-- [每周贡献 - 特别版](https://www.reddit.com/r/decred/comments/xsacjg/weekly_contributions_special_edition_bounty_pool/) - 赏金池已增长到 4 个 DCR，@fjsixfjdksfi 继续迭代格式和规则。此版本的重点是（但不限于）在 DCRDEX 上推广新的莱特币对。
-
 精选 Twitter 讨论：
 
 - [DCRDEX v0.5.3 已登陆莱特币支持](https://twitter.com/decredproject/status/1575900485864853504)
