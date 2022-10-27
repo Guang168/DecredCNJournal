@@ -401,7 +401,7 @@ DM 也将来到 Instagram - 关注[@decredmagazine](https://www.instagram.com/de
 - [一切看起来都很糟糕](https://www.decredmagazine.com/the-one-where-i-post-lots-of-hopium/) - @Applesaucesome 的 DCR 技术分析
 - [里约热内卢旨在成为加密货币之都](https://www.decredmagazine.com/rio-de-janeiro-aims-to-be-a-crypto-capital/) - @João
 - [Decred 发布 DCRDEX v0.5，使基于原子交换的安全交易更易于访问](https://decred.org/news/2022-09-28_decred_releases_dcrdex_0.5/) - decred.org 上的新闻稿
-- [使用 DCRDEX v0.5 推动高度便捷的 P2P 原子交换](https://www.decredmagazine.com/decred-pushes-for-highly-convenient-p2p-atomic-swaps-with-dcrdex-v0-5 /) 作者：瓦希德·佩萨莱
+- [使用 DCRDEX v0.5 推动高度便捷的 P2P 原子交换](https://www.decredmagazine.com/decred-pushes-for-highly-convenient-p2p-atomic-swaps-with-dcrdex-v0-5/) 作者：瓦希德·佩萨莱
 
 **视频:**
 
