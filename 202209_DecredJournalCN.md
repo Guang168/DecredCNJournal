@@ -1,4 +1,4 @@
-# Decred月报 – 2022 年 8 月
+# Decred月报 – 2022 年 9 月
 
 ![](img/202209.1.github.png)
 
