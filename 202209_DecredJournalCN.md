@@ -450,7 +450,7 @@ DM 也将来到 Instagram - 关注[@decredmagazine](https://www.instagram.com/de
 
 *以下不是投资建议。*
 
-@Applesaucesome 的新市场报道：[隧道尽头的光](https://www.decredmagazine.com/decred-light-at-the-end-of-the-tunnel/) 和 [万物皆可归的地方 看起来很糟糕，但我发布了很多 hopium](https://www.decredmagazine.com/the-one-where-i-post-lots-of-hopium/)。
+@Applesaucesome 的新市场报道：[隧道尽头的光](https://www.decredmagazine.com/decred-light-at-the-end-of-the-tunnel/) 和 [万物皆可归的地方 看起来很糟糕，但我发布了很多 hopium](https://www.decredmagazine.com/the-one-where-i-post-lots-of-hopium/ )。
 
 > 我不会粉饰它，一切看起来都很糟糕。斯托克斯，加密货币，应有尽有。过去几周获得的所有势头都被回撤。但正如我们都知道的那样，这就是所有的手都被甩掉的地方……或者我们只是第n次再次投降。[2022-09-25]
 
