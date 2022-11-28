@@ -48,9 +48,9 @@ _图片：@Exitus_
 
 _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-- 在连接到对等点时利用 [服务器上下文](https://github.com/decred/dcrd/pull/3011) 使关机更具响应性。
-- Use [context in RPC tests](https://github.com/decred/dcrd/pull/3012). It allows two things: test that cancellation and shutdown work correctly, and to be able to abort the test if necessary.
-- Make sure peer address is [added to address manager](https://github.com/decred/dcrd/pull/3013). It helps speed up discovery of new nodes on the network by ensuring they are added to the list of addresses that need to be tried in order to build reputation when they haven't otherwise been seen before.
+- 在连接到对等节点时利用 [服务器](https://github.com/decred/dcrd/pull/3011) 使其更具响应性。
+- 使用 [RPC 测试](https://github.com/decred/dcrd/pull/3012)。 它允许做两件事：测试取消和关闭是否正常工作，以及在必要时能够中止测试。
+- 确保对等地址已[添加到地址管理器](https://github.com/decred/dcrd/pull/3013)。 它有助于加快网络上新节点的发现速度，方法是确保将它们添加到需要尝试的地址列表中，以便在以前从未见过它们时建立声誉。
 
 
 ### dcrwallet
