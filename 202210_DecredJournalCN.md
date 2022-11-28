@@ -1,56 +1,54 @@
-# Decred Journal – October 2022
+# Decred月报 – 2022 年 10 月
 
 ![](img/202210.1.github.png)
 
-_Image: Untitled by @Exitus_
+_图片：@Exitus_
 
-Highlights of October:
+十月亮点：
 
-- Decred Core software v1.7.5 and DCRDEX v0.5.4 patches were released.
-- The Decred timestamping service (timestamp.decred.org) was used to timestamp political campaign documents for candidates in the Brazilian elections.
-- decred.org has received another round of updates, including the new News page where you can find all the latest Journal issues.
-- Monde PR's services were retained for another year after a successful proposal with 66% approval rate.
+- 发布 Decred 核心软件 v1.7.5 和 DCRDEX v0.5.4 补丁。
+- Decred 时间戳服务 (timestamp.decred.org) 用于为巴西选举中候选人的政治竞选文件添加时间戳。
+- decred.org 网站更新，包括新的新闻页面，您可以在其中找到所有最新的月报问题。
+- 在获得 66% 的支持率后，Monde PR 服务又持续了一年。
 
-Contents:
+内容：
 
-- [Core Software v1.7.5 Released](#core-software-v175-released)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Media](#media)
-- [Discussions](#discussions)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
-
-
-## Core Software v1.7.5 Released
-
-Highlights of the [v1.7.5 release](https://twitter.com/decredproject/status/1581003123287461888):
-
-- **dcrd** got UTXO cache updates to improve its robustness, optimize it, and correct some hard to hit corner cases that involve a mix of manual block invalidation, conditional flushing, and successive unclean shutdowns.
-
-- **dcrwallet** gained a method for importing public keys to watching-only wallets, and gRPC methods to command VSPs how they should vote on treasury spends. Fixes include: `signrawtransaction` now respects the private keys passed to it, auto ticket buyer no longer attempts to mix change if the server is unknown, and the list of nodes discovered from seeders is no longer limited to a deprecated SPV version. Finally, this release enforces testnet3 hardfork to prevent ASICs from halting the test network.
-
-- **Decredition** was mainly updated due to a critical fix included in DCRDEX v0.5.4. Other changes include a fix of the never ending loading button on the Treasury Spending tab.
-
-Visit the [GitHub release](https://github.com/decred/decred-binaries/releases) for the full list of changes and downloads. As always, we recommend to [verify the files](https://docs.decred.org/advanced/verifying-binaries) before running.
-
-Users of the standalone **DCRDEX app** should upgrade to the [latest release here](https://github.com/decred/dcrdex/releases), specifically to avoid issues with certain Taproot transactions on Bitcoin, which were fixed in v0.5.4 and v0.5.5.
+- [核心软件v1.7.5 发布](#core-software-v175-released)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [媒体](#media)
+- [讨论](#discussions)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
-## Development
+## 核心软件v1.7.5 发布
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+[v1.7.5 版本](https://twitter.com/decredproject/status/1581003123287461888)的亮点：
 
+- **dcrd** 获得了 UTXO 缓存更新，以提高其稳定性，并纠正一些难以解决的极端情况，这些情况涉及手动块失效、条件刷新和连续不干净关闭的混合。
+
+- **dcrwallet** 获得了一种将公钥导入观察钱包的方法，以及命令 VSP 如何对国库支出进行投票的 gRPC 方法。修复包括：`signrawtransaction` 现在尊重传递给它的私钥，如果服务器未知，自动购票者不再尝试混合更改，并且从自动购票器发现的节点列表不再限于已弃用的 SPV 版本。最后，此版本强制执行 testnet3 硬分叉以防止 ASIC 停止测试网络。
+
+- **Decredition** 的更新主要是由于 DCRDEX v0.5.4 中包含的关键修复。其他更改包括修复国库支出选项卡上永无止境的加载按钮。
+
+访问[GitHub 版本](https://github.com/decred/decred-binaries/releases)以获取更改和下载的完整列表。一如既往，我们建议在运行前[验证文件](https://docs.decred.org/advanced/verifying-binaries)。
+
+独立**DCRDEX 应用程序**的用户应在[此处](https://github.com/decred/dcrdex/releases)升级到最新版本，特别是为了避免比特币上的某些 Taproot 交易出现问题，这些问题已在 v0.5.4 和 v0.5.5 中修复。
+
+## 开发进展总结
+
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-- Utilize [server context](https://github.com/decred/dcrd/pull/3011) when connecting to peers to make shutdown more responsive.
+- 在连接到对等点时利用 [服务器上下文](https://github.com/decred/dcrd/pull/3011) 使关机更具响应性。
 - Use [context in RPC tests](https://github.com/decred/dcrd/pull/3012). It allows two things: test that cancellation and shutdown work correctly, and to be able to abort the test if necessary.
 - Make sure peer address is [added to address manager](https://github.com/decred/dcrd/pull/3013). It helps speed up discovery of new nodes on the network by ensuring they are added to the list of addresses that need to be tried in order to build reputation when they haven't otherwise been seen before.
 
