@@ -55,17 +55,17 @@ _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Dec
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-- Multiple fixes of [context usage](https://github.com/decred/dcrwallet/pull/2188). "Contexts" are used to signal to various services running concurrently that they must stop as part of a graceful wallet shutdown.
+- [context usage](https://github.com/decred/dcrwallet/pull/2188)的多项修复。 “context usage”用于向同时运行的各种服务发出信号，表明它们必须作为优雅的钱包关闭的一部分停止。
 
 
 ### Decrediton
 
-_[Decrediton](https://github.com/decred/decrediton) is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混币、闪电网络、DEX 交易等。它可在有或没有完整区块链（SPV 模式）的情况下运行。_
 
-- Upgraded DCRDEX module [to v0.5.3](https://github.com/decred/decrediton/pull/3812) and then [to v0.5.4](https://github.com/decred/decrediton/pull/3816). The latter includes a critical fix to Bitcoin block parsing.
-- Updated [English strings for translation](https://github.com/decred/decrediton/pull/3807). The codebase is periodically scanned for text shown on the UI and that text is collected in a [special file](https://github.com/decred/decrediton/blob/master/app/i18n/translations/original.json) that can be translated with an assistant web tool. In other words, the originals are fresh and now is good time to [translate](https://decredcommunity.github.io/translations/status#decrediton).
+- 升级 DCRDEX 模块从[v0.5.3](https://github.com/decred/decrediton/pull/3812)到[v0.5.4](https://github.com/decred/decrediton/pull/3816). 后者包括对比特币区块解析的关键修复。
+- 更新了[用于翻译的英文字符串](https://github.com/decred/decrediton/pull/3807)。 定期扫描代码库以查找 UI 上显示的文本，并将该文本收集在一个 [特殊文件](https://github.com/decred/decrediton/blob/master/app/i18n/translations/original.json) 中 可以用网页助手工具翻译。 换句话说，原文是新鲜的，现在是 [翻译](https://decredcommunity.github.io/translations/status#decrediton) 的好时机。
 
 
 ### Politeia
