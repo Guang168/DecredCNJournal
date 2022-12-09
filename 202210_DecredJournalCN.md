@@ -318,12 +318,12 @@ Monde PR's 成就:
 
 **视频:**
 
-- [谁负责 Decred？ - Decred 和市场状况。 Eduardo Lima](https://www.youtube.com/watch?v=COfKWnl7IYs) @phoenixgreen 和 @Exitus - 讨论@elima\_iii 的[法律研究论文](https://twitter.com/elima_iii/status/ 1567977181682479105) ([谷歌文档](https://docs.google.com/document/d/1xiFYTU5aFthkUs9gIK1elNKJACsaZf4r/edit), [镜像](https://www.decredmagazine.com/whos-in-charge-of-decred -市场现状/))
-- [点对点交换 - 未来就在这里 - Decred DCRDEX](https://www.youtube.com/watch?v=oBrJgG-x9UY) @phoenixgreen - 也作为[文本帖子](https:// www.decredmagazine.com/peer-to-peer-exchange-the-future-is-here-decred-dcrdex/)
-- [DCRDEX 第一眼 - DecredDEX 基础知识](https://www.youtube.com/watch?v=S4fVlYmo2Vk) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/dcrdex- 第一眼-decreddex-基础知识/）
-- [发现 DCRDEX 市场页面 - DCRDEX 基础知识](https://www.youtube.com/watch?v=67cduOxn7JM) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/discovering -dcrdex-市场页面/)
+- [谁负责 Decred？ - Decred 和市场状况。 Eduardo Lima](https://www.youtube.com/watch?v=COfKWnl7IYs) @phoenixgreen 和 @Exitus - 讨论@elima\_iii 的法律研究论文
+- [点对点交换 - 未来就在这里 - Decred DCRDEX](https://www.youtube.com/watch?v=oBrJgG-x9UY) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/peer-to-peer-exchange-the-future-is-here-decred-dcrdex/)
+- [DCRDEX 第一眼 - DecredDEX 基础知识](https://www.youtube.com/watch?v=S4fVlYmo2Vk) @phoenixgreen
+- [发现 DCRDEX 市场页面 - DCRDEX 基础知识](https://www.youtube.com/watch?v=67cduOxn7JM) @phoenixgreen
 - [Decred 新闻更新 - 巴西未来总统在 DEX 上使用时间戳、LTC 市场，dcrd v1.7.5](https://www.youtube.com/watch?v=OOWQ7sxr43E) @Exitus
-- [Jake Yocom-Piatt 谈 Decred 的 PoW/PoS 混合和敌对矿工问题](https://www.youtube.com/watch?v=SzUtXnoJBbc)，作者是数字现金网络的 Joël Valenzuela - 也作为 [播客](https ://anchor.fm/digitalcashnetwork/episodes/Jake-Yocom-Piatt-on-Decreds-PoWPoS-Hybrid-And-Hostile-Miner-Troubles-e1q1b0t)
+- [Jake Yocom-Piatt 谈 Decred 的 PoW/PoS 混合和敌对矿工问题](https://www.youtube.com/watch?v=SzUtXnoJBbc)，作者是数字现金网络的 Joël Valenzuela
 
 [Decred Magazine](https://anchor.fm/decred-magazine) 上的 Anchor 播客和所有常见的播客平台（如 Spotify 或 Apple）上的许多 Decred 视频都以音频格式提供。 它由 [Decred Society](https://anchor.fm/decred-society) 重命名，使其成为社区播客而不是个人播客。 如果您喜欢边走边听，请尝试一下。
 
@@ -363,7 +363,7 @@ _图片：以美元为单位的 DCRDEX 月交易量。_
 
 ## 相关外部信息
 
-10 月是加密黑客和漏洞利用的重要月份，到 13 日 [已经](https://www.coindesk.com/tech/2022/10/13/october-becomes-worst-month-for-crypto- hacks-with-to-weeks-to-go/) 是 11 次不同的 DeFi 攻击，其中黑客获得了 7.18 亿美元。 其中最突出的是 Mango Markets，它 [hit](https://www.coindesk.com/markets/2022/10/12/how-market-manipulation-led-to-a-100m-exploit-on- solana-defi-exchange-mango/) 因一名交易员操纵某些价格以借入平台上的所有资产而获得 1 亿美元的利用。 其中一名攻击者 [推特](https://twitter.com/avi_eisen/status/1581326197241180160) 在与该平台协商了一项允许其他存款人的和解协议后，他们参与了一项“高利润交易策略” 重新获得他们的资金。 这个故事的另一个怪癖是，攻击者提出了在没有刑事指控的情况下解决问题的提议，然后用他们从 利用。
+10 月是加密黑客和漏洞利用的重要月份，到 13 日 已经是 11 次不同的 DeFi 攻击，其中黑客获得了 7.18 亿美元。 其中最突出的是 Mango Markets，它因一名交易员操纵某些价格以借入平台上的所有资产而获得 1 亿美元的利用。 其中一名攻击者 [推特](https://twitter.com/avi_eisen/status/1581326197241180160) 在与该平台协商了一项允许其他存款人的和解协议后，他们参与了一项“高利润交易策略” 重新获得他们的资金。 这个故事的另一个怪癖是，攻击者提出了在没有刑事指控的情况下解决问题的提议，然后用他们从 利用。
 
 Kim Kardashian 已与 SEC [和解](https://www.coindesk.com/business/2022/10/03/us-sec-charges-kim-kardashian-for-promoting-ethereummax/)，同意支付 1.26 美元 M 在她 2021 年未公开的 EthereumMax 先令。美国证券交易委员会主席 Gary Gensler 一直[宣传](https://twitter.com/GaryGensler/status/1576897535427448832) 这是一个巨大的胜利。
 
