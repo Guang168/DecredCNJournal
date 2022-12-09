@@ -318,7 +318,7 @@ Monde PR's 成就:
 
 **视频:**
 
-- [谁负责 Decred？ - Decred 和市场状况。 Eduardo Lima](https://www.youtube.com/watch?v=COfKWnl7IYs) @phoenixgreen 和@Exitus - 讨论@elima\_iii 的[法律研究论文](https://twitter.com/elima_iii/status/ 1567977181682479105) ([谷歌文档](https://docs.google.com/document/d/1xiFYTU5aFthkUs9gIK1elNKJACsaZf4r/edit), [镜像](https://www.decredmagazine.com/whos-in-charge-of-decred -市场现状/))
+- [谁负责 Decred？ - Decred 和市场状况。 Eduardo Lima](https://www.youtube.com/watch?v=COfKWnl7IYs) @phoenixgreen 和 @Exitus - 讨论@elima\_iii 的[法律研究论文](https://twitter.com/elima_iii/status/ 1567977181682479105) ([谷歌文档](https://docs.google.com/document/d/1xiFYTU5aFthkUs9gIK1elNKJACsaZf4r/edit), [镜像](https://www.decredmagazine.com/whos-in-charge-of-decred -市场现状/))
 - [点对点交换 - 未来就在这里 - Decred DCRDEX](https://www.youtube.com/watch?v=oBrJgG-x9UY) @phoenixgreen - 也作为[文本帖子](https:// www.decredmagazine.com/peer-to-peer-exchange-the-future-is-here-decred-dcrdex/)
 - [DCRDEX 第一眼 - DecredDEX 基础知识](https://www.youtube.com/watch?v=S4fVlYmo2Vk) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/dcrdex- 第一眼-decreddex-基础知识/）
 - [发现 DCRDEX 市场页面 - DCRDEX 基础知识](https://www.youtube.com/watch?v=67cduOxn7JM) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/discovering -dcrdex-市场页面/)
