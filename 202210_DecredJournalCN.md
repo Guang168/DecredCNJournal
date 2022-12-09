@@ -329,7 +329,7 @@ Monde PR's 成就:
 
 **艺术娱乐:**
 
-- [Decred holding all cards](https://www.decredmagazine.com/decred-holding-all-cards/) @OfficialCryptos - 这种设计的商品 [在 Redbubble 上可用](https://www.redbubble. com/people/OfficialCryptos/explore?page=1&sortOrder=recent)（显然它是有时间戳的！）
+- [Decred holding all cards](https://www.decredmagazine.com/decred-holding-all-cards/) @OfficialCryptos - 这种设计的商品 [在 Redbubble 上可用](https://www.redbubble.com/people/OfficialCryptos/explore?page=1&sortOrder=recent)（显然它是有时间戳的！）
 - [Decred 是货币的进化！](https://www.decredmagazine.com/decred-is-money-evolved/) by @OfficialCryptos
 
 **翻译:**
