@@ -338,7 +338,7 @@ Monde PR's 成就:
 -
 **非英语内容:**
 
-- [卢拉和哈达德在区块链上注册政府计划以避免假新闻](https://haddadoficial.com.br/lula-e-haddad-registram-plano-de-governo-em-blockchain-para-evitar-fake-news/)（英文）- [Cointelegraph Brasil](https://cointelegraph.com.br/news/lula-and-haddad-register-government-plan-on-blockchain) 和 [BeInCrypto](https://br.beincrypto.com/planos-governo-lula-haddad-registrados-blockchain/）。
+- [卢拉和哈达德在区块链上注册政府计划以避免假新闻](https://haddadoficial.com.br/lula-e-haddad-registram-plano-de-governo-em-blockchain-para-evitar-fake-news/)（英文）- [Cointelegraph Brasil](https://cointelegraph.com.br/news/lula-and-haddad-register-government-plan-on-blockchain) 和 [BeInCrypto](https://br.beincrypto.com/planos-governo-lula-haddad-registrados-blockchain/)。
 
 ![](img/202210.9.github.jpg)
 
