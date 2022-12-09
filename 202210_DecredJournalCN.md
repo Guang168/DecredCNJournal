@@ -124,7 +124,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一个非托管、尊重隐私的
 - 修复了[未连接钱包](https://github.com/decred/dcrdex/pull/1891) 的恢复并增加了对恢复禁用钱包的支持。
 - 修复了 ZEC 的 [锁定余额](https://github.com/decred/dcrdex/pull/1918) 计算。 这需要为钱包实施一个解决方法，而不是自动解锁花掉的硬币。 目前 DOGE 和 ZEC 需要这个。
 - 修复并改进了 [simnet 测试](https://github.com/decred/dcrdex/pull/1909)。 大多数测试将运行两次，在客户之间交替进行制造商和接受者。 这有助于发现一些错误。
-- 修复了 HTML 模板解析 [包含Dash](https://github.com/decred/dcrdex/pull/1923)（欢迎来到 DCRDEX，[@norwnd]（https://github.com/decred/dcrdex/ 提交？author=norwnd）！）。
+- 修复了 HTML 模板解析 [包含Dash](https://github.com/decred/dcrdex/pull/1923)。
 - ~2 个其它错误修复。
 
 以太坊支持：
@@ -255,7 +255,7 @@ _图片：可访问的 dcrd 节点版本。_
 
 [混合硬币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true) 的份额在 60.7-61.0% 之间变化。 每日 [混合数量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 293-461K DCR 之间变化。
 
-截至 11 月 1 日，Decred 的闪电网络浏览器已经看到 69 个节点（-1）、112 个通道（+7），总容量为 46.9 DCR（+4.4）。感谢@karamble 在 [LN 地图] 期间提供数据 (https://ln-map.jholdstock.uk/) 正在维护中。
+截至 11 月 1 日，Decred 的闪电网络浏览器已经看到 69 个节点（-1）、112 个通道（+7），总容量为 46.9 DCR（+4.4）。感谢@karamble 在 [LN 地图](https://ln-map.jholdstock.uk/) 期间提供数据维护。
 
 
 ## 生态系统
