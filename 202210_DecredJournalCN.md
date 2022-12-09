@@ -160,7 +160,7 @@ _[dcrweb](https://github.com/decred/dcrweb) 是 decred.org 网站的源代码。
 - 添加了大量由以前版本组成的[新闻帖子](https://github.com/decred/dcrweb/pull/1084)。
 - 确保新闻项目始终按日期 [排序](https://github.com/decred/dcrweb/pull/1084)。
 - 添加了 [类别过滤器](https://github.com/decred/dcrweb/pull/1090) 到 `/news`。 这使观众可以轻松地在软件发布、Decred 期刊、新闻发布和 Decred 媒体报道之间切换。 每个类别都有一个 [直接链接](https://decred.org/news/#software_releases)，它们无需 JavaScript 即可工作。
-- 为 [波兰语和中文] 添加了“新闻”翻译 (https://github.com/decred/dcrweb/pull/1084)。
+- 为 [波兰语和中文](https://github.com/decred/dcrweb/pull/1084) 添加了“新闻”翻译 。
 - 修复了新闻页面上的[重叠](https://github.com/decred/dcrweb/pull/1084) 文本和按钮。
 
 ![](img/202210.3.full.png)
@@ -172,7 +172,7 @@ _图片：decred.org 上的新闻页面。_
 
 [dcrseeder](https://github.com/decred/dcrseeder) - 构建可靠 Decred 节点列表的节点爬虫，新节点使用它来引导它们的连接：
 
-- 不要添加 [RFC6598](https://github.com/decred/dcrseeder/pull/54) ([运营商级 NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT)) 地址 . 全球 dcrseeder 不应将这些地址返回给 Decred 节点，因为它们是为私有网络保留的，无法从互联网上的任何节点可靠地连接到。
+- 不要添加 [RFC6598](https://github.com/decred/dcrseeder/pull/54) ([运营商级 NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT)) 地址。 全球 dcrseeder 不应将这些地址返回给 Decred 节点，因为它们是为私有网络保留的，无法从互联网上的任何节点可靠地连接到。
 - 转换为使用 [`netip`](https://github.com/decred/dcrseeder/pull/55) 包来管理网络地址。
 - 检查节点的正常运行时间是否[足够长](https://github.com/decred/dcrseeder/pull/57) 被视为“良好”。
 
