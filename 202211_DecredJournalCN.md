@@ -364,15 +364,15 @@ Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 浏览器 已经看到 
 
 Decred 公告现在将反映在 [多元化](https://en.wikipedia.org/wiki/Fediverse) 的 [@decred](https://dcr.pw/@decred) at dcr.pw。 如果您使用 Mastodon 或与 ActivityPub 兼容的其他实例，请关注它。
 
-Fediverse 现在共有 3 个 Decred 服务：[citadel.stakey.net](https://citadel.stakey.net) 上的 Mastodon 实例，用于社交网络（[邀请链接](https://citadel.stakey. net/invite/vhmPf6ua))，[tube.decredcommunity.org](https://tube.decredcommunity.org/) 上的 PeerTube 实例镜像 YouTube 视频，以及最新的 [@decred](https://dcr.pw /@decred) 用于后续项目公告。 由于它们都使用 ActivityPub 协议，因此可以在同一帐户的时间轴中同时获取文本公告和新视频。
+Fediverse 现在共有 3 个 Decred 服务：[citadel.stakey.net](https://citadel.stakey.net) 上的 Mastodon 实例，用于社交网络（[邀请链接](https://citadel.stakey.net/invite/vhmPf6ua))，[tube.decredcommunity.org](https://tube.decredcommunity.org/) 上的 PeerTube 实例镜像 YouTube 视频，以及最新的 [@decred](https://dcr.pw/@decred)用于后续项目公告。 由于它们都使用 ActivityPub 协议，因此可以在同一帐户的时间轴中同时获取文本公告和新视频。
 
 推文时间戳机器人再次活跃。 在你的推文中提及 [@dcrtimestampbot](https://twitter.com/dcrtimestampbot)，机器人会将其保存到 IPFS，Decred 区块链上的时间戳，并回复链接以查看证明和保存的副本。 目前，该机器人仅限于保存一条直接提及该机器人的推文（即没有线程）。 这可用于制作声明并保护其免受修改。 愿意帮助改进机器人的 Python 黑客可以在 [此处](https://github.com/JC60522/dcr_timestampbot) 找到源代码。
 
-Android 和 iOS 的 Decred 钱包已从 [Google Play](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet) 和 [Apple Store](https:/ /apps.apple.com/us/app/decred-wallet/id1462247643) [v1.7.0 版本](https://www.reddit.com/r/decred/comments/umye1t/decred_mobile_wallet_v170_has_been_released_for/) 中公布的位置 ( 2022 年 5 月），以及从 [Android 版本](https://github.com/planetdecred/dcrandroid/releases) 下载的 APK。 [源代码](https://github.com/planetdecred) 在 GitHub 上仍然可用。
+Android 和 iOS 的 Decred 钱包已从 [Google Play](https://play.google.com/store/apps/details?id=com.decred.dcrandroid.mainnet) 和 [Apple Store](https://apps.apple.com/us/app/decred-wallet/id1462247643) [v1.7.0 版本](https://www.reddit.com/r/decred/comments/umye1t/decred_mobile_wallet_v170_has_been_released_for/) 中公布的位置 ( 2022 年 5 月），以及从 [Android 版本](https://github.com/planetdecred/dcrandroid/releases) 下载的 APK。 [源代码](https://github.com/planetdecred) 在 GitHub 上仍然可用。
 
-币安 [增加](https://matrix.to/#/!teQafvHMYpIbqLIieU:decred.org/$YgdoiqEwjnnrJIKugu6p6u95Edf9YsRHQpz-HmEoSaU?via=decred.org&via=matrix.org) [Simple Earn](https: //www.binance.com/en/support/announcement/binance-adds-new-assets-to-simple-earn-flexible-products-2022-10-20-87e0f4b74c884d83b09ae4f3c2fd7b82) 提供从 15 DCR 到 300 DCR 每 人，并将收益率从 2.5% 提高到 3.5%。
+币安 [增加](https://matrix.to/#/!teQafvHMYpIbqLIieU:decred.org/$YgdoiqEwjnnrJIKugu6p6u95Edf9YsRHQpz-HmEoSaU?via=decred.org&via=matrix.org) [简单赚取](https://www.binance.com/en/support/announcement/binance-adds-new-assets-to-simple-earn-flexible-products-2022-10-20-87e0f4b74c884d83b09ae4f3c2fd7b82) 提供从 15 DCR 到 300 DCR 每 人，并将收益率从 2.5% 提高到 3.5%。
 
-[Poloniex](https://poloniex.com) 已完成为期 10 个月的 DCR 钱包 [维护](https://twitter.com/PoloSupport/status/1486355294493888512) [v1] 后 2 天开始 .7.0 版本](https://github.com/decred/decred-binaries/releases/tag/v1.7.0)。 存款和取款恢复正常，并且有一个新的 DCR/USDT 交易对。
+[Poloniex](https://poloniex.com) 已完成为期 10 个月的 DCR 钱包 [维护](https://twitter.com/PoloSupport/status/1486355294493888512) [v1.7.0 发布](https://github.com/decred/decred-binaries/releases/tag/v1.7.0)。 存款和取款恢复正常，并且有一个新的 DCR/USDT 交易对。
 Join our [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) chat to follow Decred ecosystem updates.
 
 警告：Decred Journal 的作者不知道上述任何服务的可信度。 在将您的个人信息或资产委托给任何实体之前，请自行研究。
@@ -389,11 +389,11 @@ Monde PR 成就:
 获得以下新闻文章：
 
 - [Fintech Times](https://thefintechtimes.com/new-use-for-blockchain-setting-the-record-straight-in-political-battles/) 上关于如何使用 Decred 区块链打击假货的文章 巴西总统选举的新闻，来自@jy-p 的评论。 该文章已联合发布到 [英国经济新闻](https://ukeconomynews.co.uk/new-use-for-blockchain-setting-the-record-straight-in-political-battles/)。
-- [Cointelegraph](https://cointelegraph.com/news/ftx-collapse-the-crypto-industry-s-lehman-brothers-moment) 中的一篇文章，@jz 的评论称 FTX 传奇为“加密货币的雷曼兄弟时刻” ”。 这篇文章被联合发布到 24 家出版物，包括 [The New York Ledger](https://thenyledger.com/markets/crypto/ftx-collapse-the-crypto-industrys-lehman-brothers-moment/) 和 [Investing.com] （https://www.investing.com/news/cryptocurrency-news/ftx-collapse-the-crypto-industrys-lehman-brothers-moment-2942288）。
+- [Cointelegraph](https://cointelegraph.com/news/ftx-collapse-the-crypto-industry-s-lehman-brothers-moment) 中的一篇文章，@jz 的评论称 FTX 传奇为“加密货币的雷曼兄弟时刻” ”。 这篇文章被联合发布到 24 家出版物，包括 [The New York Ledger](https://thenyledger.com/markets/crypto/ftx-collapse-the-crypto-industrys-lehman-brothers-moment/) 和 [Investing.com](https://www.investing.com/news/cryptocurrency-news/ftx-collapse-the-crypto-industrys-lehman-brothers-moment-2942288)。
 - @jy-p 出现在 [Invezz 播客](https://podcast.invezz.com/2000526/11675106) 中，谈论 Decred 区块链如何用于巴西总统选举。 Invezz 还发表了一篇关于这次采访的[文章](https://invezz.com/news/2022/11/11/video-blockchain-and-elections-jake-yocom-piatt/)，该文章联合了 2 份出版物并翻译 成 9 种语言。
 - [手册](https://www.themanual.com/culture/what-experts-say-will-happen-next-for-crypto/) 中的一篇文章，其中包含@jz 对 FTX 之后加密货币未来的评论 坍塌。 该文章被联合到 [今日加拿大](https://canadatoday.news/ca/why-experts-say-ftx-failure-is-a-turning-point-not-the-end-for-crypto-155389/ ).
 - [The Fintech Times](https://thefintechtimes.com/sustainable-crypto-alternatives-to-mining-with-decred-sellix-and-omnia-markets/) 中的一篇文章介绍了@jy-p 对可持续加密的评论 采矿的替代品。 这篇文章被联合发布到 5 家出版物，包括 [英国经济新闻](https://ukeconomynews.co.uk/sustainable-crypto-alternatives-to-mining-with-decred-sellix-and-omnia-markets/) 和 [NYC 加密](https://nyccrypto.io/?p=106617)。
-- @jy-p 出现在 [Cryptonews.com 播客](https://cryptonews.com/exclusives/jake-yocom-piatt-co-founder-of-decred-on-blockchain-fixing-political-voting-campaign- spending-and-privacy.htm) 讨论区块链如何为政治投票、支出和隐私提供解决方案。 采访被联合到 7 家出版物，包括 [Daily Crypto](https://dailycrypto.us.com/jake-yocom-piatt-co-founder-of-decred-on-blockchain-fixing-political-voting-campaign-spending -and-privacy/) 和 [聪明的投资者](https://smartinvestor.online/jake-yocom-piatt-co-founder-of-decred-on-blockchain-fixing-political-voting-campaign-spending-and- 隐私-ep-182/)。
+- @jy-p 出现在 [Cryptonews.com 播客](https://cryptonews.com/exclusives/jake-yocom-piatt-co-founder-of-decred-on-blockchain-fixing-political-voting-campaign-spending-and-privacy.htm) 讨论区块链如何为政治投票、支出和隐私提供解决方案。 采访被联合到 7 家出版物，包括 [Daily Crypto](https://dailycrypto.us.com/jake-yocom-piatt-co-founder-of-decred-on-blockchain-fixing-political-voting-campaign-spending-and-privacy/) 和 [Smart Investor](https://smartinvestor.online/jake-yocom-piatt-co-founder-of-decred-on-blockchain-fixing-political-voting-campaign-spending-and-privacy-ep-182/)。
 
 
 ## 活动
@@ -441,7 +441,7 @@ _图片：Decred 技术栈概览。_
 - [区块链与选举，Jake Yocom-Piatt，Decred](https://invezz.com/news/2022/11/11/video-blockchain-and-elections-jake-yocom-piatt/) 作者：Dan Ashmore for Invezz - 也在 [YouTube](https://www.youtube.com/watch?v=cEQv7YdX2sM) 和 [播客](https://podcast.invezz.com/2000526/11675106)
 - [交易场景 - DCRDEX 基础知识](https://www.youtube.com/watch?v=6c6McCUMhMQ) @phoenixgreen
 - [DCRDEX 访问法币进出坡道 - DCRDEX 基础知识](https://www.youtube.com/watch?v=PM8HGR_CUv4) @phoenixgreen
-- [Decred 的联合创始人 Jake Yocom-Piatt，关于区块链修复政治投票、竞选支出和隐私](https://www.youtube.com/watch?v=xUqRw4mxjW0)，作者 Matt Zahab 为 CryptoNews 播客 ep。 182. 也可作为完整的[文字记录](https://cryptonews.com/exclusives/jake-yocom-piatt-co-founder-of-decred-on-blockchain-fixing-political-voting-campaign-spending- and-privacy.htm）和作为[播客]（https://www.buzzsprout.com/1735660/11757590-182-jake-yocom-piatt-on-on-blockchain-fixing-political-voting-campaign-spending - 和隐私）。
+- [Decred 的联合创始人 Jake Yocom-Piatt，关于区块链修复政治投票、竞选支出和隐私](https://www.youtube.com/watch?v=xUqRw4mxjW0)
 
 在 Anchor 和所有常见的播客平台（如 Spotify 或 Apple）上的 [Decred Magazine 播客](https://anchor.fm/decred-magazine) 上，许多 Decred 视频都以音频格式提供。
 
