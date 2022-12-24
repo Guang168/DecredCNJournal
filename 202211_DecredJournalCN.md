@@ -212,7 +212,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 
 [v0.5.7 发布](https://github.com/decred/dcrdex/releases/tag/v0.5.7):
 
-- 取消客户[不知道]的订单(https://github.com/decred/dcrdex/pull/1889)。 这修复了遇到的各种边缘情况，客户端可能会丢失一些订单（例如，通过使用损坏的数据库文件，无法保存订单等）。
+- 取消客户[不知道](https://github.com/decred/dcrdex/pull/1889)的订单。 这修复了遇到的各种边缘情况，客户端可能会丢失一些订单（例如，通过使用损坏的数据库文件，无法保存订单等）。
 - 修复了 [订单](https://github.com/decred/dcrdex/pull/1971) 在客户端上退出/不存在但仍在服务器上预订的错误。 如果客户端发起交易订单取消，未能响应来自服务器的 [原像请求](https://github.com/decred/dcrdex/blob/75bb91da9b2f65b52835cb8235bcc1a7fd7b893b/spec/orders.mediawiki#order-commitment)，则可能会发生这种情况 （例如通过短暂断开连接），并错误地将交易订单标记为[已撤销](https://github.com/decred/dcrdex/pull/1971)，而实际上取消失败并且交易订单仍在预订 服务器。
 
 接下来是合并到下一个主要版本的 `master` 中的更改。
