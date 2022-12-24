@@ -75,9 +75,9 @@ RPC 服务器:
 
 - 优化 WebSocket 客户端断开连接处理并修复 WebSocket 客户端断开连接时的虚假消息。
 - 修改WebSocket客户端的[lifecycle](https://github.com/decred/dcrd/pull/3025)使用context，调用代码更加灵活。
-- 为 `getwork` 请求添加了[取消支持](https://github.com/decred/dcrd/pull/3027) 并优化了对多个并发 `getwork` 请求的处理。 这应该有利于一些挖矿配置。 [`getwork`](https://en.bitcoin.it/wiki/Getwork) 被挖矿软件用来不断轮询节点以获取新工作，然后将其分发到挖矿硬件。 对于有挖矿的硬币来说，这是一种非常常见的方法，但是鼓励 Decred 矿工使用更高效的 [`notifywork`](https://github.com/decred/dcrd/blob/0e7920ce30257aa1aced00e34ac637423f50965e/docs/json_rpc_api.mediawiki# 通知工作）订阅。
+- 为 `getwork` 请求添加了[取消支持](https://github.com/decred/dcrd/pull/3027) 并优化了对多个并发 `getwork` 请求的处理。 这应该有利于一些挖矿配置。 [`getwork`](https://en.bitcoin.it/wiki/Getwork) 被挖矿软件用来不断轮询节点以获取新工作，然后将其分发到挖矿硬件。 对于有挖矿的硬币来说，这是一种非常常见的方法，但是鼓励 Decred 矿工使用更高效的 [`notifywork`](https://github.com/decred/dcrd/blob/0e7920ce30257aa1aced00e34ac637423f50965e/docs/json_rpc_api.mediawiki#notifywork）订阅。
 
-RPC 测试框架已移至名为 [`dcrtest`](https://github.com/decred/dcrtest) 的新存储库。 该框架连接到 dcrd 实例并通过 [RPC 接口](https://bitcoin.stackexchange.com/questions/24163/what-does-the-bitcoin-rpc-mean-and-how-is-it -用过的）。 它用于编写集成级测试，以执行完全编译的 dcrd 二进制文件的功能和行为。 现在位于一个单独的存储库中，它通过使用 Go 的模块系统而不是总是编译最新的“master”分支来选择特定版本的 dcrd 进行测试，从而提供更好的功能。 这允许测试框架的消费者（例如 dcrlnd）通过针对 dcrd 的发布版本以及最新的“master”进行测试来提供更多的质量保证。
+RPC 测试框架已移至名为 [`dcrtest`](https://github.com/decred/dcrtest) 的新存储库。 该框架连接到 dcrd 实例并通过 [RPC 接口](https://bitcoin.stackexchange.com/questions/24163/what-does-the-bitcoin-rpc-mean-and-how-is-it-used）。 它用于编写集成级测试，以执行完全编译的 dcrd 二进制文件的功能和行为。 现在位于一个单独的存储库中，它通过使用 Go 的模块系统而不是总是编译最新的“master”分支来选择特定版本的 dcrd 进行测试，从而提供更好的功能。 这允许测试框架的消费者（例如 dcrlnd）通过针对 dcrd 的发布版本以及最新的“master”进行测试来提供更多的质量保证。
 
 
 ### dcrwallet
