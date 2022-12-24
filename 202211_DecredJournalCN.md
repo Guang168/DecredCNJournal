@@ -299,7 +299,7 @@ _[dcrros](https://github.com/decred/dcrros) 是一种中间件服务，可通过
 
 [国库支出 tx](https://dcrdata.decred.org/tx/95ebb23a0846417eb1aa6a59bf6b4ad49d8cd72ff44c869d4af366fd1aef402e) 有 25 个输出支付给承包商，范围从 3 DCR 到 1,108 DCR。 它于 12 月 5 日以一致赞成票获得批准。 这是在 10 天内快速批准（在 [规范](https://github.com/decred/dcps/blob/master/dcp-0006/dcp-0006.mediawiki) 中也称为“短路批准”） 而不是最多 12 天的投票。 选民投票率为 49%，在 14,339 张合格选票中有 7,037 张赞成票有机会在缩短的投票期内投票。 可以在 dcrdata 的 [staging instance](https://tip.dcrdata.org/tx/95ebb23a0846417eb1aa6a59bf6b4ad49d8cd72ff44c869d4af366fd1aef402e) 中找到有关资金支出交易的更详细视图，并且很快就会到达区块浏览器的主实例。
 
-截至 12 月 10 日，[legacy](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和 [new treasury](https://dcrdata.decred.org/treasury) 的合并余额为 830,186 DCR（1780 万） 美元 21.48 美元）。
+截至 12 月 10 日，[旧国库](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和 [新国库](https://dcrdata.decred.org/treasury) 的合并余额为 830,186 DCR（1780 万） 美元 21.48 美元）。
 
 ![](img/202211.5.github.png)
 
