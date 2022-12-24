@@ -128,7 +128,7 @@ UX 升级:
 - 将包 `win32ipc` 重命名为 `dcrwin32ipc` 以 [避免混淆](https://github.com/decred/decrediton/pull/3828) 与同名的可疑远程包。 确定这个其他可疑包对 Decred 软件没有任何风险，并且 Decrediton 的模块总是从本地构建的资产加载。
 - 修改了[事务处理](https://github.com/decred/decrediton/pull/3777) 代码以提高性能并启用自动化测试。
 - 删除了所有 [旧版 stakepool 相关代码](https://github.com/decred/decrediton/pull/3808)。 还清理了与购票和汽车购买相关的代码结构。 隐私选项卡现在可以正确显示混音每 10 分钟创建一次，而不是 20 分钟。
-- 为[希腊语](https://github.com/decred/decrediton/pull/3719）添加翻译。
+- 为[希腊语](https://github.com/decred/decrediton/pull/3719)添加翻译。
 - 当代理类型为 SOCKS5 时，将 [代理设置](https://github.com/decred/decrediton/pull/3803) 应用于 dcrd 和 dcrwallet。 有了这个，用户可以配置 dcrd 和 dcrwallet 通过 Tor 网络进行通信。
 - 增加了自动化 UI 测试的覆盖范围。
 - 依赖升级，包括切换到 [Node 16](https://github.com/decred/decrediton/pull/3837) 和 [Electron 18](https://github.com/decred/decrediton/pull/3832) .
