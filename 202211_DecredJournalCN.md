@@ -364,7 +364,7 @@ Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 浏览器 已经看到 
 
 Decred 公告现在将反映在 [多元化](https://en.wikipedia.org/wiki/Fediverse) 的 [@decred](https://dcr.pw/@decred) at dcr.pw。 如果您使用 Mastodon 或与 ActivityPub 兼容的其他实例，请关注它。
 
-Fediverse 现在共有 3 个 Decred 服务：[citadel.stakey.net](https://citadel.stakey.net) 上的 Mastodon 实例，用于社交网络（[邀请链接](https://citadel.stakey. net/invite/vhmPf6ua)，[tube.decredcommunity.org](https://tube.decredcommunity.org/) 上的 PeerTube 实例镜像 YouTube 视频，以及最新的 [@decred](https://dcr.pw /@decred) 用于后续项目公告。 由于它们都使用 ActivityPub 协议，因此可以在同一帐户的时间轴中同时获取文本公告和新视频。
+Fediverse 现在共有 3 个 Decred 服务：[citadel.stakey.net](https://citadel.stakey.net) 上的 Mastodon 实例，用于社交网络（[邀请链接](https://citadel.stakey. net/invite/vhmPf6ua))，[tube.decredcommunity.org](https://tube.decredcommunity.org/) 上的 PeerTube 实例镜像 YouTube 视频，以及最新的 [@decred](https://dcr.pw /@decred) 用于后续项目公告。 由于它们都使用 ActivityPub 协议，因此可以在同一帐户的时间轴中同时获取文本公告和新视频。
 
 推文时间戳机器人再次活跃。 在你的推文中提及 [@dcrtimestampbot](https://twitter.com/dcrtimestampbot)，机器人会将其保存到 IPFS，Decred 区块链上的时间戳，并回复链接以查看证明和保存的副本。 目前，该机器人仅限于保存一条直接提及该机器人的推文（即没有线程）。 这可用于制作声明并保护其免受修改。 愿意帮助改进机器人的 Python 黑客可以在 [此处](https://github.com/JC60522/dcr_timestampbot) 找到源代码。
 
