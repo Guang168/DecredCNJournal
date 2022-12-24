@@ -2,7 +2,7 @@
 
 ![](img/202211.1.github.png)
 
-_ 图片：@Exitus _
+_图片：@Exitus_
 
 11 月亮点：
 
