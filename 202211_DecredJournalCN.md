@@ -220,7 +220,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 客户端，面向用户的更改：
 
 - 添加了 [做市商机器人](https://github.com/decred/dcrdex/pull/1738)。 该机器人使用一些内部和（可选）外部信号来计算理想的买卖价格和“盈亏平衡点差”，这是买卖序列的 tx 费用等于其利润的点差。 这些值可以用作 5 种“缺口策略”之一的输入，用于确定目标价差。 该代码的结构是为了在未来支持更多的交易程序。 添加了 UI 以创建、配置和监控现有的做市商机器人。
-- [服务器关闭]时添加了对“自治”交易的支持（https://github.com/decred/dcrdex/pull/1866）。 即使服务器出现故障或莫名其妙地丢失市场信息，客户也需要一种方法来完成已开始的交易。
+- [服务器关闭](https://github.com/decred/dcrdex/pull/1866)时添加了对“自治”交易的支持。 即使服务器出现故障或莫名其妙地丢失市场信息，客户也需要一种方法来完成已开始的交易。
 - 数据库 [路径](https://github.com/decred/dcrdex/pull/1951) 现在已在启动时登录。
 - 下订单 [更具响应性](https://github.com/decred/dcrdex/pull/1887)。 订单表格将很快关闭，订单提交将在后台继续。
 - 默认显示或隐藏 [高级订单选项](https://github.com/decred/dcrdex/pull/1885)。
