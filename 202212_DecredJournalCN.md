@@ -205,12 +205,12 @@ Bison Relay 技术堆栈概述：
 - [GUI 客户端](https://github.com/companyzero/bisonrelay/tree/master/bruig) 是用 Dart、Flutter 和实现 Bison Relay 协议的 Go 库编写的跨平台应用程序。 [Flutter](https://flutter.dev) 是一个很有前途的平台，可以从单个代码库为主要桌面（Linux、macOS、Windows）和移动（Android、iOS）系统构建跨平台 GUI 应用程序。
 - 所有客户端到服务器的通信都使用 TLS 隧道作为外层，“NaCl secretbox”作为内层进行双重加密。
 - 所有客户端到客户端的通信都使用 [double ratchet](https://signal.org/docs/specifications/doubleratchet/)（第三层加密）加密，密钥只有客户端拥有。
-- 更多细节可以在[文档目录](https://github.com/companyzero/bisonrelay/tree/39015e62770ae6b18e73599a6fe497ceec463047/doc)和[协议概述](https://github.com/companyzero/bisonrelay/ blob/39015e62770ae6b18e73599a6fe497ceec463047/rpc/README.md#protocol）。
+- 更多细节可以在[文档目录](https://github.com/companyzero/bisonrelay/tree/39015e62770ae6b18e73599a6fe497ceec463047/doc)和[协议概述](https://github.com/companyzero/bisonrelay/blob/39015e62770ae6b18e73599a6fe497ceec463047/rpc/README.md#protocol）。
 
 GUI 应用程序，在 [v0.1.1](https://github.com/companyzero/bisonrelay/releases/tag/v0.1.1) 中发布的更改：
 
 - 修复了通知、布局和数字格式方面的多个[问题](https://github.com/companyzero/bisonrelay/pull/13)。
-- 修复了用户在未完成的种子设置后 [stuck](https://github.com/companyzero/bisonrelay/pull/21) 并添加了一个选择以 [delete](https://github.com/companyzero/bisonrelay/ pull/42) 一个未完成的钱包。
+- 修复了用户在未完成的种子设置后 [卡住](https://github.com/companyzero/bisonrelay/pull/21) 并添加了一个选择以 [删除](https://github.com/companyzero/bisonrelay/ pull/42) 一个未完成的钱包。
 - 修复了 [服务器指纹](https://github.com/companyzero/bisonrelay/pull/21) 中不可读的字体颜色。
 - 修复了打开 LN 通道时达到 [差距限制](https://github.com/companyzero/bisonrelay/pull/39) 的问题。
 - 其他修复。
