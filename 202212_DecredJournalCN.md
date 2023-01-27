@@ -178,7 +178,7 @@ _[dcrdata](https://github.com/decred/dcrdata) 是 Decred 区块链和链下数�
 面向用户的变化：
 
 - [国库投票](https://github.com/decred/dcrdata/pull/1918) 规则和进度变得更容易理解和遵循。 国库支出交易页面将显示当前投票与最低法定人数和同意百分比要求的比较情况、投票开始和结束的大致日历日期、哪个 Politeia 密钥签署了 TSpend，等等。 [此处](https://tip.dcrdata.org/tx/49f141f51421a499d319bc617a4430f87db3a73ffa605dee8408eefb081bd11b) 可以看到最近的 TSpend 示例。
-- 修复了一个罕见的错误，即后来包含在批准区块中的[未批准交易](https://docs.decred.org/governance/overview/#block-voting) 的输出[错误地显示为未花费](https: //github.com/decred/dcrdata/pull/1938)。 在整个链历史中，只有不到 20 笔交易受到影响。
+- 修复了一个罕见的错误，即后来包含在批准区块中的[未批准交易](https://docs.decred.org/governance/overview/#block-voting) 的输出[错误地显示为未花费](https://github.com/decred/dcrdata/pull/1938)。 在整个链历史中，只有不到 20 笔交易受到影响。
 - 其它修复和 UI 调整。
 
 开发人员和 API 更改：
