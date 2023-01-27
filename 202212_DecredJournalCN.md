@@ -72,25 +72,25 @@ Bison Relay 是一个新的点对点社交媒体平台，具有抵抗审查、�
 > 推论是 Decred 应该尝试在没有传统营销的情况下发展其网络。 前进的道路不是穿越，而是绕过。 \[[Decred 有什么问题？](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/)\]
 
 
-## DCRDEX v0.5.8 Release
+## DCRDEX v0.5.8 发布
 
-This release fixes issues with requesting fiat rates from external sources, and adds options for advanced command-line and Go API users that allow skipping time consuming operations on startup and shutdown.
+此版本修复了从外部来源请求法币汇率的问题，并为高级命令行和 Go API 用户添加了选项，允许跳过启动和关闭时耗时的操作。
 
-v0.5.8 is available as a standalone DEX app [here](https://github.com/decred/dcrdex/releases).
+v0.5.8 作为独立的 DEX 应用程序在 [这里](https://github.com/decred/dcrdex/releases) 提供。
 
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-- Always serve known filters when peers ask for it with [`getcfilterv2`](https://github.com/decred/dcrd/pull/3035) request. Previously, a node would not serve the filters until its chain was fully synced with the network. This limitation was inherited from the old bloom filters logic, where it helped to avoid performance drops, especially during the initial chain sync. The downside is that the node could appear to be unresponsive or stalled in a variety of production and testing scenarios. The bloom filters have been replaced by version 2 filters and they are relatively cheap to serve now, so the node can always respond to `getcfilterv2` requests, even before the chain is fully synced.
-- Updated JSON-RPC API [documentation](https://github.com/decred/dcrd/pull/3032) for methods used for discovering transactions matching certain criteria: `loadtxfilter`, `notifynewtransactions`, and `rescan`. Information for removed API methods and notification has been [removed](https://github.com/decred/dcrd/pull/3034).
-- Smaller changes and cleanup.
+- 当同行通过 [`getcfilterv2`](https://github.com/decred/dcrd/pull/3035) 请求时，始终提供已知过滤器。 以前，节点在其链与网络完全同步之前不会为过滤器提供服务。 这个限制继承自旧的布隆过滤器逻辑，它有助于避免性能下降，尤其是在初始链同步期间。 缺点是节点在各种生产和测试场景中可能会出现无响应或停滞。 布隆过滤器已被版本 2 过滤器取代，它现在的服务成本相对较低，因此即使在链完全同步之前，节点也始终可以响应“getcfilterv2”请求。
+- 更新了 JSON-RPC API [文档](https://github.com/decred/dcrd/pull/3032)，用于发现符合特定条件的交易的方法：`loadtxfilter`、`notifynewtransactions` 和 `rescan`。 有关已删除的 API 方法和通知的信息已被 [删除](https://github.com/decred/dcrd/pull/3034)。
+- 较小的更改和清理。
 
 
 ### dcrwallet
