@@ -255,23 +255,23 @@ BR 本身已 [宣布](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0&t=47s) Bison R
 
 ## 人员
 
-Welcome the new first-time contributors:
+欢迎新的首次贡献者：
 
-- c12 ([Decred Magazine](https://www.decredmagazine.com/author/c12/) author, [@c12hz](https://twitter.com/c12hz) on Twitter)
+- c12（[Decred 杂志](https://www.decredmagazine.com/author/c12/) 作者，[@c12hz](https://twitter.com/c12hz) 在 Twitter 上）
 
-Community stats as of Jan 4 (compared to Dec 2):
+截至 1 月 4 日的社区统计数据（与 12 月 2 日相比）：
 
-- [Twitter](https://twitter.com/decredproject) followers: 53,392 (-342)
-- [Reddit](https://www.reddit.com/r/decred/) subscribers: 12,648 (+14)
-- [Matrix](https://chat.decred.org/) #general users: 738 (+9)
-- [Discord](https://discord.gg/GJ2GXfz) users: 1,530 (-348 - purged inactive users), verified to post: 929 (-7)
-- [Telegram](https://t.me/Decred) users: 2,872 (-22)
-- [YouTube](https://www.youtube.com/decredchannel) subscribers: 4,640 (+0), views: 221K (+2K)
+- [Twitter](https://twitter.com/decredproject) 粉丝: 53,392 (-342)
+- [Reddit](https://www.reddit.com/r/decred/) 订阅: 12,648 (+14)
+- [Matrix](https://chat.decred.org/) #general 用户: 738 (+9)
+- [Discord](https://discord.gg/GJ2GXfz) 用户: 1,530 （-348 - 清除非活动用户），验证后发布：929 (-7)
+- [Telegram](https://t.me/Decred) 用户: 2,872 (-22)
+- [YouTube](https://www.youtube.com/decredchannel) 订阅: 4,640 (+0), 观看量: 221K (+2K)
 
-Our main [@decredproject](https://twitter.com/decredproject) account has been [observed](https://chat.decred.org/#/room/!ggjLwhBHTjsMROezFf:decred.org/$ym0IL1s6fWqw9iu21vnMzVm1jmR0kdPm_4V3fKkV5Zs?via=decred.org&via=matrix.org&via=planetdecred.org) having 2 out of 4 bans activated: Ghost Ban and Reply Deboosting, according to [Twitter Shadowban Check](https://shadowban.jp/). Reportedly, not too long ago all 4 were active. This and other [reports](https://twitter.com/behindtext/status/1610663633498869760) somewhat explain Twitter performance seen so far.
+根据[Twitter Shadowban Check](https://shadowban.jp/)，我们观察到我们主要的[@decredproject](https://twitter.com/decredproject)帐户激活了 4 个禁令中的 2 个：Ghost Ban 和 Reply Deboosting 。据报道，不久前所有 4 个都处于活动状态。这份报告和其它报告在某种程度上解释了 Twitter 迄今为止的表现。
 
 
-## Governance
+## 治理
 
 In December the new [treasury](https://dcrdata.decred.org/treasury) received 8,712 DCR worth $172K at December's average rate of $19.79. 3,907 DCR was spent to pay contractors (but the transaction was not approved/mined until January 3), worth $77K at December's rate, or $86K at November's billing rate of $21.92.
 
