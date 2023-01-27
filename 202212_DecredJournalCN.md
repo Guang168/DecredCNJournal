@@ -354,8 +354,8 @@ Monde PR的成就：
 
 - [CoinJournal](https://coinjournal.net/news/expert-panel-what-mistakes-should-users-avoid-when-attempting-to-buy-cryptocurrencies/) 中的一篇文章，其中包含@jy-p 的评论 购买加密货币时要避免的错误。
 - [CoinJournal](https://coinjournal.net/news/expert-panel-what-is-your-biggest-tip-for-a-user-just-getting-into-crypto/) 中的一篇文章，其中包含来自 @jy-p 为那些刚刚进入加密领域的人提供提示。
-- [CoinJournal] 中的一篇文章(https://coinjournal.net/news/expert-panel-what-are-the-3-most-important-things-to-look-out-for-when-choosing-a- crypto-platform-to-sign-up-to/) 收录了@jy-p 关于如何选择加密平台的评论。
-- [加密新闻](https://cryptonews.com/news/today-in-crypto-decred-launches-social-media-messaging-platform-opera-announces-a-suite-of-security-features- t-systems-mms-participates-in-chainlink-staking.htm) 关于 Bison Relay 的发布。
+- [CoinJournal](https://coinjournal.net/news/expert-panel-what-are-the-3-most-important-things-to-look-out-for-when-choosing-a-crypto-platform-to-sign-up-to/)中的一篇文章收录了@jy-p 关于如何选择加密平台的评论。
+- [加密新闻](https://cryptonews.com/news/today-in-crypto-decred-launches-social-media-messaging-platform-opera-announces-a-suite-of-security-features-t-systems-mms-participates-in-chainlink-staking.htm) 关于 Bison Relay 的发布。
 - [Invezz](https://invezz.com/news/2022/12/16/decred-launches-new-social-media-platform-bison-relay/) 中关于 Bison Relay 发布的文章。
 - @jy-p 接受了 [Piece of the Py show](https://www.youtube.com/watch?v=OS_AOyMdAeU) 的采访，讨论了 Bison Relay 的启动、Decred 在 2022 年巴西大选中的使用以及 推出 DCRDEX v0.5。
 - [BeInCrypto](https://beincrypto.com/focus-on-decentralization-and-empower-users-in-2023-says-industry/) 中的一篇文章，其中包含@jz 对 2023 年关注权力下放的评论，以及 提及 DCRDEX。
@@ -398,8 +398,8 @@ Monde PR的成就：
 
 **视频:**
 
-- [2022 熊年 - Decred 和市场状况](https://www.youtube.com/watch?v=PO2byx7D8z0) 壮举。 @phoenixgreen、@Exitus 和@Tivra（播客 [音频版](https://anchor.fm/decred-magazine/episodes/2022-the-year-of-the-bear---Decred-and-the- 市场状况-e1rnn2k))
-- [Decred 和原子交换革命 - DCRDEX 基础知识](https://www.youtube.com/watch?v=JyBoe1z5h9U) @phoenixgreen - 也可作为 [音频播客](https://anchor.fm/ decred-magazine/episodes/Decred-and-the-Atomic-Swap-Revolution---DCRDEX-Fundamentals-e1s85ne) 和作为[文本帖子](https://www.decredmagazine.com/decred-and-the- 原子交换革命/)
+- [2022 熊年 - Decred 和市场状况](https://www.youtube.com/watch?v=PO2byx7D8z0) 壮举。 @phoenixgreen、@Exitus 和@Tivra
+- [Decred 和原子交换革命 - DCRDEX 基础知识](https://www.youtube.com/watch?v=JyBoe1z5h9U) @phoenixgreen
 - [在 macOS 上设置 BisonRelay 0.1.1](https://www.youtube.com/watch?v=L4jm-VMPmBo) @phoenixgreen
 - [Bison Relay - 第一眼（版本 0.1.1）](https://www.youtube.com/watch?v=ukRkQC4IXoo) 作者：@phoenixgreen
 - [我与 Decred 创始人/首席执行官 Jake 的聊天](https://www.youtube.com/watch?v=OS_AOyMdAeU)，作者 Py Patel 在 Piece of the Py Show 中
