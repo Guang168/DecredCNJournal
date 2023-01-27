@@ -28,40 +28,41 @@ _图片: @saender 的 Bison Relay 艺术作品_
 
 ## Bison Relay 发布
 
-Bison Relay is a new peer to peer social media platform with strong protections against censorship, surveillance and advertising. Messages are end-to-end encrypted to ensure only the intended recipients can see the contents. There are no accounts and metadata is minimized so that server operators cannot see message contents, sender, receiver, or which chats user participates in. Built-in payments allow content monetization via paid content access or tipping.
+Bison Relay 是一个新的点对点社交媒体平台，具有抵抗审查、监控和广告的强大保护。消息通过点对点加密，以确保只有预期的收件人才能看到内容。没有账户，元数据被最小化，因此服务器操作员无法看到消息内容、发送者、接收者或用户参与的聊天。内置支付允许通过付费内容访问及内容货币化。
 
-Initial release comes with the following features (incomplete list):
+初始版本具有以下功能（不完整列表）:
 
-- Direct chats
-- Sending files
-- Group chats
-- Making longer posts with Markdown and images
-- Commenting on posts
-- News feed with content from users you are subscribed to
-- Relaying posts (reposting)
-- Connecting with other users via invite files sent over an existing channel, or via Bison Relay directly (your existing contacts connect you with their contacts, aka mediated key exchange)
-- Sending and receiving DCR tips via Decred Lightning Network
-- Sharing files with optional price that users pay for access
-- Creating and paying invoices
-- GUI and command-line apps for Linux, macOS and Windows
+- 直接聊天
+- 发送文件
+- 群聊
+- 使用 Markdown 和图片制作更长的帖子
+- 评论帖子
+- 包含您订阅的用户的内容的提要
+- 转发帖子（转发）
+- 通过现有渠道发送的邀请文件或直接通过 Bison Relay 与其他用户联系（您现有的联系人将您与他们的联系人联系起来，也称为中介密钥交换）
+- 通过 Decred 闪电网络发送和接收 DCR 提示
+- 以用户为访问支付的可选价格共享文件
+- 创建和支付发票
+- 适用于 Linux、macOS 和 Windows 的 GUI 和命令行应用程序
 
-Payments for sending and receiving messages serve as anti-spam protection but Bison Relay is cheap to use, 0.1 DCR could last months for regular chatting.
+发送和接收消息的费用可以作为抗垃圾邮件保护，但 Bison Relay 使用起来很便宜，0.1 DCR 可以持续几个月进行常规聊天。
 
-Most users will want to download the GUI app [here](https://github.com/companyzero/bisonrelay/releases), get the file named `bisonrelay-xxx` for your operating system. The downloads have no hashes or signatures yet but those will be added in the future.
+大多数用户可[这里](https://github.com/companyzero/bisonrelay/releases)下载 GUI 应用程序，获取以`bisonrelay-xxx`您的操作系统命名的文件。下载尚无哈希值或签名，但将来会添加这些内容。
 
-Learn how to use Bison Relay:
+如何使用 Bison Relay:
 
-- Official [Features](https://bisonrelay.org/features/) and [Tutorial](https://bisonrelay.org/tutorial/)
-- [2-min overview in Decred News Update](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0)
-- [Setting up Bison Relay v0.1.1 on macOS](https://www.youtube.com/watch?v=L4jm-VMPmBo)
-- [First look and feature overview of v0.1.1](https://www.youtube.com/watch?v=ukRkQC4IXoo)
-- [News feed - connecting, creating and using markdown](https://www.youtube.com/watch?v=NuKVAp4fIBY)
+- 官方[功能](https://bisonrelay.org/features/)和[教程](https://bisonrelay.org/tutorial/)
+- [Decred 新闻更新中的 2 分钟概述](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0)
+- [在 macOS 上设置 Bison Relay v0.1.1](https://www.youtube.com/watch?v=L4jm-VMPmBo)
+- [v0.1.1 的功能概述](https://www.youtube.com/watch?v=ukRkQC4IXoo)
+- [News feed - 连接、创建和使用 markdown](https://www.youtube.com/watch?v=NuKVAp4fIBY)
 
-Once set up, read the [onboarding guide](https://chat.decred.org/#/room/!GHnoHXSgkVAsUknRUg:decred.org/$tdpPg8WYSQGCizeGngYeoXSG_lCBrTnDxcuLGiZbfuI?via=decred.org&via=matrix.org&via=zettaport.com) and contact @kozel on Matrix to get your initial invite(s).
+设置完成后，阅读[使用指南](https://chat.decred.org/#/room/!GHnoHXSgkVAsUknRUg:decred.org/$tdpPg8WYSQGCizeGngYeoXSG_lCBrTnDxcuLGiZbfuI?via=decred.org&via=matrix.org&via=zettaport.com) 和 联系 Matrix 上的@kozel 以获得您的初始邀请。
 
-Advanced users can also check the [command-line brclient app](https://github.com/companyzero/bisonrelay/releases), [server source code](https://github.com/companyzero/bisonrelay#server), and [technical docs](https://github.com/companyzero/bisonrelay/tree/master/doc).
+高级用户还可以查看[命令行 brclient 应用程序](https://github.com/companyzero/bisonrelay/releases), [服务器源代码](https://github.com/companyzero/bisonrelay#server), 和 [技术文档](https://github.com/companyzero/bisonrelay/tree/master/doc)。
 
-To understand the motivation behind Bison Relay check the posts by @jy-p:
+
+要了解 Bison Relay 背后的动机，请查看@jy-p 的帖子：
 
 - [Outreach problems Decred faced](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/) with existing outlets and social media platforms
 - Inherent [problems with today's Web](https://blog.decred.org/2022/12/09/Trapped-in-the-Web/)
