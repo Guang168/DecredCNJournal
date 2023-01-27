@@ -273,217 +273,221 @@ BR 本身已 [宣布](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0&t=47s) Bison R
 
 ## 治理
 
-In December the new [treasury](https://dcrdata.decred.org/treasury) received 8,712 DCR worth $172K at December's average rate of $19.79. 3,907 DCR was spent to pay contractors (but the transaction was not approved/mined until January 3), worth $77K at December's rate, or $86K at November's billing rate of $21.92.
+12 月，新[国库](https://dcrdata.decred.org/treasury) 收到 8,712 DCR，价值 172,000 美元，12 月的平均汇率为 19.79 美元。 3,907 DCR 用于支付承包商费用（但交易直到 1 月 3 日才获得批准/开采），按 12 月的汇率计算价值 77,000 美元，或按 11 月的 21.92 美元计费率计算价值 86,000 美元。
+[国库支出交易](https://dcrdata.decred.org/tx/49f141f51421a499d319bc617a4430f87db3a73ffa605dee8408eefb081bd11b) 向 24 个承包商付款，范围从 5 DCR 到 1,270 DCR。
+截至 1 月 7 日，[旧国库](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和 [新国库](https://dcrdata.decred.org/treasury) 的合并余额为 834,055 DCR（1560 万） 美元 18.70 美元）。
 
-The [treasury spend tx](https://dcrdata.decred.org/tx/49f141f51421a499d319bc617a4430f87db3a73ffa605dee8408eefb081bd11b) had 24 outputs making payments to contractors, ranging from 5 DCR to 1,270 DCR.
-
-As of Jan 7, combined balance of [legacy](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) and [new treasury](https://dcrdata.decred.org/treasury) is 834,055 DCR (15.6 million USD at $18.70).
-
-There were no new proposals published on Politeia in December.
+12 月 Politeia 上没有发布新提案。
 
 
-## Network
+## 网络
 
-**Hashrate**: December's [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) opened at ~67 Ph/s and closed ~68 Ph/s, bottoming at 58 Ph/s and peaking at 91 Ph/s throughout the month.
+**全网算力**: 12 月的 [哈希率](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) 以 ~67 Ph/s开启，以 ~68 Ph/s结束，最低为 58 Ph/s，峰值 91 Ph/s。
 
-![](../img/202212.5.720.png)
+![](img/202212.5.720.png)
 
-_Image: Decred hashrate._
+_图片: Decred 全网算力。_
 
-Distribution of 75 Ph/s hashrate [reported](https://miningpoolstats.stream/decred) by the pools on Jan 1: Poolin 55%, F2Pool 38%, BTC.com 5%, AntPool 2.7%.
+1 月 1 日各矿池的 75 Ph/s 算力分布[报告](https://miningpoolstats.stream/decred)：Poolin 55%，F2Pool 38%，BTC.com 5%，AntPool 2.7%。
 
-Distribution of 1,000 blocks actually [mined](https://miningpoolstats.stream/decred) by Jan 4: Poolin 55%, F2Pool 36%, likely BTC.com 5%, likely AntPool 2.6%, CoinMine 0.4%, unknown 0.9%.
+截至 1 月 4 日实际 [开采](https://miningpoolstats.stream/decred) 1,000 个区块的分布：Poolin 55%，F2Pool 36%， BTC.com 5%， AntPool 2.6%，CoinMine 0.4%，未知 0.9% .
 
-![](../img/202212.6.720.png)
+![](img/202212.6.720.png)
 
-_Image: Pool hashrate distribution._
+_图片：矿池算力分布。_
 
-![](../img/202212.7.720.png)
+![](img/202212.7.720.png)
 
-_Image: Historical pool hashrate distribution._
+_图片：历史矿池哈希率分布。_
 
-**Staking**: [Ticket price](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) varied between 234-244 DCR, with 30-day [average](https://dcrstats.com/) at 234.8 DCR (+3.3).
+**Staking**: [选票价格](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) 在 234-244 DCR 之间变化，30 天[平均](https:// dcrstats.com/) 为 234.8 DCR (+3.3)。
 
-The [locked amount](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time) was 9.46-9.62 million DCR (new all-time high), meaning that 64.0-64.8% of the circulating supply [participated](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) in Proof of Stake.
+[锁定数量](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time) 为 9.46-9.62 百万 DCR（历史新高），这意味着 64.0- 64.8% 的流通供应 [参与](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) 权益证明。
 
-**VSP**: The [17 listed VSPs](https://decred.org/vsp/) collectively managed ~7,120 (+190) live tickets, which was 17.2% of the ticket pool (+0.4%) as of Jan 1. These figures exclude vspd.stakey.com due to [stale API data](https://github.com/decred/dcrwebapi/pull/171).
+**VSP**: [17 家列出的 VSP](https://decred.org/vsp/) 共同管理了约 7,120 (+190) 张现场选票，截至 1 月 1 日，占选票池的 17.2% (+0.4%)。这些数字不包括 vspd.stakey.com 由于 [过时的 API 数据](https://github.com/decred/dcrwebapi/pull/171)。
 
-Biggest gainers in December are vspd.bass.cf (+371), big.decred.energy (+179) and vspd.99split.com (+178).
+12 月涨幅最大的是 vspd.bass.cf (+371)、big.decred.energy (+179) 和 vspd.99split.com (+178)。
 
-![](../img/202212.8.720.png)
+![](img/202212.8.720.png)
 
-_Image: Distribution of tickets managed by VSPs._
+_图片：由 VSP 管理的选票分布。_
 
-**Nodes**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) observed 79 dcrd nodes on Jan 1: v1.7.5 - 27%, v1.7.1 - 27%, v1.8.0 dev builds - 23%, v1.7.2 - 11%, v1.7.0 - 6%, v1.7.4 - 2.5%, other - 4%.
+**节点**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) 在 1 月 1 日观察到 79 个 dcrd 节点：v1.7.5 - 27%，v1.7.1 - 27%，v1.8.0 dev builds - 23%，v1。 7.2 - 11%，v1.7.0 - 6%，v1.7.4 - 2.5%，其他 - 4%。
 
-![](../img/202212.9.720.png)
+![](img/202212.9.720.png)
 
-_Image: Reachable dcrd node versions._
+_图片：可访问的 dcrd 节点版本。_
 
-![](../img/202212.10.720.png)
+![](img/202212.10.720.png)
 
-_Image: Historical dcrd version distribution, data from nodes.jholdstock.uk._
+_图片：历史dcrd版本分布，数据来自nodes.jholdstock.uk._
 
-The share of [mixed coins](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true) varied between 61.1-61.4%, or 9.02-9.10 million DCR (new all-time high). Daily [mixed amount](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) varied between 291-479K DCR.
+[混币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true) 的份额在 61.1-61.4% 之间变化，或 9.02-910 万 DCR（历史新高）。 每日 [混合数量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 291-479K DCR 之间变化。
 
-The launch of Bison Relay had a major impact on Decred LN. Comparing stats from @karamble's node observed on Dec 1 and Dec 19: nodes 67 -> 120, channels 104 -> 212, capacity 40.6 -> 91.1.
+Bison Relay 的推出对 Decred LN 产生了重大影响。 比较 12 月 1 日和 12 月 19 日观察到的 @karamble 节点的统计数据：节点 67 -> 120，通道 104 -> 212，容量 40.6 -> 91.1。
 
-Decred's [Lightning Network](https://ln-map.jholdstock.uk/) explorer is back up and has reported 130 nodes, 233 channels with a total capacity of 100.7 DCR, as of Jan 4. These stats vary depending on the LN node. For example, @karamble's node reported 144 nodes, 312 channels and 154 DCR capacity on Jan 4.
-
-
-## Ecosystem
-
-The VSP vspd.synergy-crypto.net has been [removed](https://github.com/decred/dcrwebapi/pull/172) from the API after voting its remaining live tickets. It had been serving since June 2021 and voted a total of 892 tickets. The shutdown was executed cleanly: it stopped accepting new tickets in August 2022 and over the next 4 months all live tickets have voted.
-
-Poloniex has re-enabled the DCR/BTC market which was frozen since Sep 30 when the exchange [tweeted](https://twitter.com/PoloSupport/status/1575745498933522432) that the DCR wallet is still on maintenance (since January 2022). The market was first re-enabled on Nov 28 but was quickly frozen again for another week until being fully restored on Dec 5.
-
-Binance was rejecting DCR withdrawals for about 10 days. First reports of rejected withdrawals [surfaced](https://chat.decred.org/#/room/!teQafvHMYpIbqLIieU:decred.org/$T5Mv2ATD2vgdbAlbIZ7BNGjRTNNWwPqIvzrfELK4vXc?via=decred.org&via=matrix.org&via=t2bot.io) around Dec 12. Some went through on Dec 14 but next day more withdrawals got suspended. Binance shared conflicting information about the cause of the outage. Support [Twitter](https://twitter.com/BinanceHelpDesk/status/1603293107633594369) called it "standard maintenance procedure". In one support ticket they cited DCR network being "busy", but later revealed having insufficient funds in the hot wallet. [Wallet Maintenance Updates](https://www.binance.com/en/support/announcement/c-157?navId=157) lists no posts about the issue as of writing. The issue was resolved around Dec 22. The blockchain was working as expected and no outages or issues were seen elsewhere in the network.
-
-Join our [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) chat to follow Decred ecosystem updates.
-
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 浏览器已恢复运行，截至 1 月 4 日已报告 130 个节点、233 个通道，总容量为 100.7 DCR。这些统计数据因 逻辑节点。 例如，@karamble 的节点在 1 月 4 日报告了 144 个节点、312 个通道和 154 个 DCR 容量。
 
 
-## Outreach
+## 生态系统
 
-Monde PR's achievements:
+VSP vspd.synergy-crypto.net 在对其剩余的实时选票进行投票后，已从 API [删除](https://github.com/decred/dcrwebapi/pull/172)。 它自 2021 年 6 月开始服务，共投了 892 张票。关闭执行得很干净：它在 2022 年 8 月停止接受新票，在接下来的 4 个月里，所有实时票都已投票。
 
-- Pitched 1 news update
-- Secured 1 media interview
-- Pitched 8 commentary ops
+Poloniex 已重新启用自 9 月 30 日交易所冻结的 DCR/BTC 市场 [推特](https://twitter.com/PoloSupport/status/1575745498933522432)，DCR 钱包仍在维护中（自 2022 年 1 月起）。该市场于 11 月 28 日首次重新启用，但很快又冻结了一周，直到 12 月 5 日完全恢复。
 
-Secured the following news articles:
+Binance 拒绝 DCR 提款大约 10 天。 12 月 12 日左右，关于提款被拒绝的第一份报告[浮出水面](https://chat.decred.org/#/room/!teQafvHMYpIbqLIieU:decred.org/$T5Mv2ATD2vgdbAlbIZ7BNGjRTNNWwPqIvzrfELK4vXc?via=decred.org&via=matrix.org&via=t2bot.io) . 有些在 12 月 14 日通过，但第二天更多的提款被暂停。 Binance 分享了有关中断原因的相互矛盾的信息。 支持 [Twitter](https://twitter.com/BinanceHelpDesk/status/1603293107633594369) 称其为“标准维护程序”。 在一张支持票中，他们称 DCR 网络“很忙”，但后来透露热钱包中的资金不足。 [钱包维护更新](https://www.binance.com/en/support/announcement/c-157?navId=157) 在撰写本文时未列出任何关于该问题的帖子。 该问题在 12 月 22 日左右得到解决。区块链按预期工作，网络其他地方没有出现中断或问题。
 
-- An article in [CoinJournal](https://coinjournal.net/news/expert-panel-what-mistakes-should-users-avoid-when-attempting-to-buy-cryptocurrencies/) featuring commentary from @jy-p on mistakes to avoid when buying cryptocurrencies.
-- An article in [CoinJournal](https://coinjournal.net/news/expert-panel-what-is-your-biggest-tip-for-a-user-just-getting-into-crypto/) featuring commentary from @jy-p on tips for those just getting into crypto.
-- An article in [CoinJournal](https://coinjournal.net/news/expert-panel-what-are-the-3-most-important-things-to-look-out-for-when-choosing-a-crypto-platform-to-sign-up-to/) featuring commentary from @jy-p on how to choose a crypto platform.
-- A piece in [Cryptonews](https://cryptonews.com/news/today-in-crypto-decred-launches-social-media-messaging-platform-opera-announces-a-suite-of-security-features-t-systems-mms-participates-in-chainlink-staking.htm) about the launch of Bison Relay.
-- An article in [Invezz](https://invezz.com/news/2022/12/16/decred-launches-new-social-media-platform-bison-relay/) about the launch of Bison Relay.
-- @jy-p was interviewed by the [Piece of the Py show](https://www.youtube.com/watch?v=OS_AOyMdAeU), discussing the launch of Bison Relay, Decred's use in the 2022 Brazil elections and the launch of DCRDEX v0.5.
-- An article in [BeInCrypto](https://beincrypto.com/focus-on-decentralization-and-empower-users-in-2023-says-industry/) featuring commentary from @jz on focusing on decentralization in 2023, with a DCRDEX mention.
+加入我们的 [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) 聊天以关注 Decred 生态系统更新。
+
+警告：Decred Journal 的作者不知道上述任何服务的可信度。 在将您的个人信息或资产委托给任何实体之前，请自行研究。
 
 
-## Events
+## 外展
 
-**Attended:**
+Monde PR的成就：
 
-- @arij attended a panel discussion called Women Entrepreneurship organized by JCI Casablanca (as part of the 17th edition of the Entrepreneur's Evening event). She talked about her experience with the IT industry, crypto, how Decred DAO operates and what it is like to work for it. See the [report](https://decredcommunity.github.io/events/index/20221220.1) for more details and links.
+- 发布了 1 条新闻更新
+- 获得 1 次媒体采访
+- 投放了 8 个评论操作
+
+获得以下新闻文章：
+
+- [CoinJournal](https://coinjournal.net/news/expert-panel-what-mistakes-should-users-avoid-when-attempting-to-buy-cryptocurrencies/) 中的一篇文章，其中包含@jy-p 的评论 购买加密货币时要避免的错误。
+- [CoinJournal](https://coinjournal.net/news/expert-panel-what-is-your-biggest-tip-for-a-user-just-getting-into-crypto/) 中的一篇文章，其中包含来自 @jy-p 为那些刚刚进入加密领域的人提供提示。
+- [CoinJournal] 中的一篇文章(https://coinjournal.net/news/expert-panel-what-are-the-3-most-important-things-to-look-out-for-when-choosing-a- crypto-platform-to-sign-up-to/) 收录了@jy-p 关于如何选择加密平台的评论。
+- [加密新闻](https://cryptonews.com/news/today-in-crypto-decred-launches-social-media-messaging-platform-opera-announces-a-suite-of-security-features- t-systems-mms-participates-in-chainlink-staking.htm) 关于 Bison Relay 的发布。
+- [Invezz](https://invezz.com/news/2022/12/16/decred-launches-new-social-media-platform-bison-relay/) 中关于 Bison Relay 发布的文章。
+- @jy-p 接受了 [Piece of the Py show](https://www.youtube.com/watch?v=OS_AOyMdAeU) 的采访，讨论了 Bison Relay 的启动、Decred 在 2022 年巴西大选中的使用以及 推出 DCRDEX v0.5。
+- [BeInCrypto](https://beincrypto.com/focus-on-decentralization-and-empower-users-in-2023-says-industry/) 中的一篇文章，其中包含@jz 对 2023 年关注权力下放的评论，以及 提及 DCRDEX。
 
 
-## Media
+## 活动
 
-**Selected articles:**
+**出席:**
 
-- [What is wrong with Decred?](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/) by @jy-p
-- [Embracing degeneracy, part 1 – Decred NFTs](https://www.decredmagazine.com/embracing-degeneracy-part-1-decred-nfts/) by @c12hz
-- [Trapped in the web](https://blog.decred.org/2022/12/09/Trapped-in-the-Web/) by @jy-p
-- [Bison Relay: The sovereign Internet](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/) by @jy-p
-- [The P2P World Wide Web](https://www.decredmagazine.com/the-p2p-world-wide-web-bison-relay/) by @phoenixgreen
-- [Imagining the future of Bison Relay](https://www.decredmagazine.com/imagining-the-future-of-bison-relay/) by @c12hz
-- [What does dcrd do?](https://www.decredmagazine.com/what-does-dcrd-do/) by @phoenixgreen and @zippycorners
-- [Decred vs Bitcoin: From start to the end!](https://www.decredmagazine.com/decred-vs-bitcoin-from-start-to-the-end/) by @Joao
-- [Breaking through the facade of social media delusion](https://www.decredmagazine.com/breaking-through-the-facade-of-social-media-delusion/) by @BlockchainJew
-- [Decred 2022 end of year summary](https://www.decredmagazine.com/decred-2022-end-of-year-summary/) by @phoenixgreen
-- [A learning from 2022](https://www.decredmagazine.com/ftx-a-learning-from-2022/) by @HassanMaishera
+- @arij 参加了由 JCI Casablanca 组织的名为女性创业的小组讨论（作为第 17 届企业家晚会活动的一部分）。 她谈到了她在 IT 行业、加密货币、Decred DAO 的运作方式以及为之工作的经历。 有关详细信息和链接，请参阅[报告](https://decredcommunity.github.io/events/index/20221220.1)。
+- 
 
-[Decred Magazine](https://www.decredmagazine.com/) engagement stats as of December:
+## 媒体
 
-- Total number of articles on DM: 371
-- Newsletter subscribers: 83
-- Total newsletters sent: 22
-- Active social media campaigns: 25
-- Completed social media campaigns: 27
-- Social media posts: 214
-- Likes: 1,040
-- Re-tweets: 169
-- Social media followers across all platforms and accounts: 1,090
+**精选文章:**
 
-**Videos:**
+- [Decred 有什么问题？](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/) by @jy-p
+- [拥抱退化，第 1 部分 – Decred NFT](https://www.decredmagazine.com/embracing-degeneracy-part-1-decred-nfts/) @c12hz
+- [陷入网络](https://blog.decred.org/2022/12/09/Trapped-in-the-Web/) @jy-p
+- [Bison Relay：主权互联网](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/) @jy-p
+- [P2P 万维网](https://www.decredmagazine.com/the-p2p-world-wide-web-bison-relay/) @phoenixgreen
+- [想象 Bison Relay 的未来](https://www.decredmagazine.com/imagining-the-future-of-bison-relay/) @c12hz
+- [dcrd 做什么？](https://www.decredmagazine.com/what-does-dcrd-do/) @phoenixgreen 和@zippycorners
+- [Decred 与比特币：从头到尾！](https://www.decredmagazine.com/decred-vs-bitcoin-from-start-to-the-end/) @Joao
+- [突破社交媒体错觉的伪装](https://www.decredmagazine.com/breaking-through-the-facade-of-social-media-delusion/) by @BlockchainJew
+- [Decred 2022 年底总结](https://www.decredmagazine.com/decred-2022-end-of-year-summary/) @phoenixgreen
+- [2022 年的学习](https://www.decredmagazine.com/ftx-a-learning-from-2022/) @HassanMaishera
 
+[Decred 杂志](https://www.decredmagazine.com/) 截至 12 月的参与度统计数据：
+
+- DM 文章总数：371
+- 时事通讯订户：83
+- 发送的通讯总数：22
+- 活跃的社交媒体活动：25
+- 完成的社交媒体活动：27
+- 社交媒体帖子：214
+- 喜欢：1,040
+- 转发：169
+- 所有平台和账户的社交媒体粉丝：1,090
+
+**视频:**
+
+- [2022 熊年 - Decred 和市场状况](https://www.youtube.com/watch?v=PO2byx7D8z0) 壮举。 @phoenixgreen、@Exitus 和@Tivra（播客 [音频版](https://anchor.fm/decred-magazine/episodes/2022-the-year-of-the-bear---Decred-and-the- 市场状况-e1rnn2k))
+- [Decred 和原子交换革命 - DCRDEX 基础知识](https://www.youtube.com/watch?v=JyBoe1z5h9U) @phoenixgreen - 也可作为 [音频播客](https://anchor.fm/ decred-magazine/episodes/Decred-and-the-Atomic-Swap-Revolution---DCRDEX-Fundamentals-e1s85ne) 和作为[文本帖子](https://www.decredmagazine.com/decred-and-the- 原子交换革命/)
+- [在 macOS 上设置 BisonRelay 0.1.1](https://www.youtube.com/watch?v=L4jm-VMPmBo) @phoenixgreen
+- [Bison Relay - 第一眼（版本 0.1.1）](https://www.youtube.com/watch?v=ukRkQC4IXoo) 作者：@phoenixgreen
+- [我与 Decred 创始人/首席执行官 Jake 的聊天](https://www.youtube.com/watch?v=OS_AOyMdAeU)，作者 Py Patel 在 Piece of the Py Show 中
+- [Decred 新闻 - Bison Relay P2P 聊天 + Lightning 上的社交媒体就在这里！ 重大开发更新！](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0) by @Exitus
 - [2022 the year of the bear - Decred and the State of the Market](https://www.youtube.com/watch?v=PO2byx7D8z0) feat. @phoenixgreen, @Exitus, and @Tivra (podcast [audio version](https://anchor.fm/decred-magazine/episodes/2022-the-year-of-the-bear---Decred-and-the-state-of-the-market-e1rnn2k))
-- [Decred and the atomic swap revolution - DCRDEX Fundamentals](https://www.youtube.com/watch?v=JyBoe1z5h9U) by @phoenixgreen - also available as an [audio podcast](https://anchor.fm/decred-magazine/episodes/Decred-and-the-Atomic-Swap-Revolution---DCRDEX-Fundamentals-e1s85ne) and as a [text post](https://www.decredmagazine.com/decred-and-the-atomic-swap-revolution/)
-- [Setting up BisonRelay 0.1.1 on macOS](https://www.youtube.com/watch?v=L4jm-VMPmBo) by @phoenixgreen
-- [Bison Relay - First look (version 0.1.1)](https://www.youtube.com/watch?v=ukRkQC4IXoo) By @phoenixgreen
-- [My chat with Decred founder/CEO Jake](https://www.youtube.com/watch?v=OS_AOyMdAeU) by Py Patel in Piece of the Py Show
-- [Decred News - Bison Relay P2P chat + social media on Lightning is here! Big dev updates!](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0) by @Exitus
 
-**Audio:**
+**音频:**
 
-New Twitter Spaces recordings:
+新的 Twitter Spaces 录音：
 
-- [Bison Relay: The sovereign Internet](https://twitter.com/i/spaces/1ZkKzXlVvZqJv) by @Tivra and @kozel feat. multiple community members. 1.7K people tuned in (live + recorded). Also on [Anchor](https://anchor.fm/decred-magazine/episodes/Bison-Relay-The-Sovereign-Internet-e1sebd4) and other podcast platforms.
-- [Exploring possibilities of decentralized social media](https://twitter.com/i/spaces/1ypKddnRQZvKW) - by @Tivra and @kozel feat. community members, ~550 people tuned in. ([Anchor](https://anchor.fm/decred-magazine/episodes/Bison-Relay---Exploring-Possibilities-of-Decentralized-Social-Media---Decred-Twitter-Space-e1smab7))
+- [Bison Relay：主权互联网](https://twitter.com/i/spaces/1ZkKzXlVvZqJv) @Tivra 和@kozel feat。 多个社区成员。 1700 人收听（直播 + 录制）。 也在 [Anchor](https://anchor.fm/decred-magazine/episodes/Bison-Relay-The-Sovereign-Internet-e1sebd4) 和其他播客平台上。
+- [探索去中心化社交媒体的可能性](https://twitter.com/i/spaces/1ypKddnRQZvKW) - @Tivra 和@kozel feat。 社区成员，约 550 人收听。 Twitter-空间-e1smab7))
 
-**Art and fun:**
+**艺术娱乐:**
 
-- Bison Relay launch [lightning](https://twitter.com/karamblez/status/1604033417519177728) image by @karamble
-- [2023: Decred a crypto odyssey](https://www.decredmagazine.com/2023-decred-a-crypto-odyssey/) by @OfficialCryptos
+- Bison Relay 发布 [闪电](https://twitter.com/karamblez/status/1604033417519177728) 图片来自@karamble
+- [2023：Decred 加密奥德赛](https://www.decredmagazine.com/2023-decred-a-crypto-odyssey/) @OfficialCryptos
 
-**Translations:**
+**翻译:**
 
-- Decred Journal September-November got a total of 4 new [translations](https://xaur.github.io/decred-news/) to Chinese (@Dominic) and Polish (@kozel). Thank you for spreading the word!
+- Decred Journal 9 月至 11 月共有 4 个新的 [翻译](https://xaur.github.io/decred-news/) 中文 (@Dominic) 和波兰语 (@kozel)。 谢谢你告诉大家！
+- 
+**非英语内容:**
 
-**Non-English content:**
-
-- [Decred Une Crypto Trop Meconnue 🧐 Pour Combien dE Temps ? 🔥 Par des anciens DEV du Bitcoin 💎](https://www.youtube.com/watch?v=GeSpRLr3_94) (project overview + TA in French)
+- [Decred A Too Little Known Crypto 🧐 多久了？ 🔥 前比特币开发者 💎](https://www.youtube.com/watch?v=GeSpRLr3_94)（项目概览 + 法语助教）
 
 
-## Markets
+## 市场
 
-In December DCR was trading between USDT $18.20-$24.80 and BTC 0.00110-0.00145. The average daily rate was $19.79.
+12 月，DCR 在 USDT 18.20-24.80 美元和 BTC 0.00110-0.00145 之间交易。 平均每日价格为 19.79 美元。
 
-The new DCR/USDT market on Poloniex has seen around 1,070 DCR daily average volume, much higher than 230 DCR/day on the old DCR/BTC pair. Interestingly, DCR/BTC market was frozen for the first week while DCR/USDT was active.
+Poloniex 上新的 DCR/USDT 市场的日均交易量约为 1,070 DCR，远高于旧 DCR/BTC 交易对的 230 DCR/天。 有趣的是，当 DCR/USDT 活跃时，DCR/BTC 市场在第一周被冻结。
 
-![](../img/202212.11.720.png)
+![](img/202212.11.720.png)
 
-_Image: DCRDEX monthly volume in USD._
-
-
-## Relevant External
-
-In November, plans to outlaw privacy-enhancing crypto coins in the EU were [leaked](https://www.coindesk.com/policy/2022/11/15/privacy-enhancing-crypto-coins-could-be-banned-under-leaked-eu-plans/). The plans were put forward by the Czech officials who are currently chairing talks. Crypto-asset service providers and other institutions would be banned from holding or touching privacy-enhancing cryptocurrency under the proposal.
-
-In Brazil, Congress has [passed](https://decrypt.co/116011/brazil-crypto-payments) a bill to regulate crypto payments, it will allow banks to offer services around crypto assets, and also covers things like airline points.
-
-Avraham Eisenberg, the front man who took public credit for the "highly profitable trading strategy" which drained Mango Markets of $110 million, has been [arrested](https://decrypt.co/118045/mango-markets-attacker-avraham-eisenberg-arrested-charged-with-market-manipulation-offenses) and charged with market manipulation offences.
-
-SBF was charged with a number of offences and agreed to be [extradited](https://cointelegraph.com/news/sbf-signs-extradition-papers-set-to-return-to-face-charges-in-the-us) to the US, where he was granted bail on a $250 million bond on the condition that he stay at his parents' house. The names of some wealthy associates who covered part of the bond have been kept [secret](https://decrypt.co/118298/sbf-keep-bail-bond-cosigners-secret-like-lawyers-for-ghislaine-maxwell), unusually. The trial is scheduled to start in October 2023.
-
-Popular crypto news and research providers The Block were [revealed](https://twitter.com/fintechfrank/status/1601295493102911488) to be secretly bankrolled by SBF through Alameda, it looks like three loans were made to Block CEO McCaffrey, one of which was used [buy](https://www.axios.com/2022/12/09/bankman-fried-funded-crypto-news-site-block) an apartment in the Bahamas. It appears that none of the Block's editorial staff were aware of the arrangement between SBF and McCaffrey, who has now resigned.
-
-The Grayscale Bitcoin Trust has been [puzzling](https://seekingalpha.com/article/4563283-grayscale-bitcoin-trust-rating-upgrade) and spooking some investors, as its "discount to NAV" (price of a share of the trust vs the value of the amount of Bitcoin one share represents) [increased](https://ycharts.com/companies/GBTC/discount_or_premium_to_nav) to a whopping 45%. In Summer 2022 Grayscale's application to convert the fund to an ETF was denied, so it is presently stuck in a position where investors cannot claim the BTC their shares entitle them to, although this decision is under appeal. Grayscale is owned by the Digital Currency Group, which also owns [troubled](https://www.forbes.com/sites/dereksaul/2023/01/05/crypto-broker-genesis-cuts-30-of-staff-reportedly-mulls-bankruptcy/) crypto lender Genesis, which had to suspend its operations in the wake of FTX's collapse, and in January cut 30% of its workforce. The Digital Currency Group owns many [companies](https://dcg.co/portfolio/) in the crypto space, and there has been some speculation about which of these they might sell to bail out the struggling ones. Their holdings include CoinDesk, which broke the story about FTX which triggered the present difficulties for DCG. The cryptocurrency holdings of DCG have been the subject of some controversy, as Grayscale's [refusal](https://cryptopotato.com/grayscale-says-no-to-proof-of-reserves/) to participate in providing "Proof of Reserves" was one of the factors which caused suspicion initially - although Coinbase has stepped up to [vouch](https://www.cryptopolitan.com/coinbase-clears-about-grayscale-reserves) for their assets being safely held.
-
-It has been a [tough year](https://www.forbes.com/sites/colinharper/2022/12/23/bitcoin-mining-in-2022-the-year-boom-turned-to-bust/) for Bitcoin miners, and in particular the Northern American industry which grew rapidly fuelled by cheap credit in 2021 and lured in by the gap left when China banned PoW mining. As the price of BTC declined by 63% in 2022 the industry was becoming more competitive, leading to a 70% drop in mining profitability. As the problems became clear the value of top mining machines declined 85% and the value of shares for the mining companies fell from between 80-98%. In December Core Scientific, one of the largest US crypto miners, has [filed](https://bitcoinmagazine.com/legal/bitcoin-miner-core-scientific-bankruptcy) for bankruptcy.
-
-The US Federal Reserve is gearing up to [unleash](https://www.federalreserve.gov/paymentsystems/fednow_about.htm) "FedNow" in May-July 2023, a version of the digital dollar for depository institutions which their clients will be able to access and use directly for instant processing and settlement 24/7 hours a day 365 days a year. This is distinct from any retail-facing CBDC, which is so far not being actively planned in the US but some experiments have taken place.
-
-The Bank of England actively [seeking](https://www.cityam.com/bank-of-england-ramps-up-cbdc-ambitions-after-offering-200000-wallet-contract-to-bidders/) applications from companies to build a prototype mobile wallet app, merchant website and back-end server for the core ledger - and offering a budget of £200,000 for the winning entry.
-
-ConsenSys faced a [backlash](https://www.coindesk.com/tech/2022/11/24/ethereum-software-firm-consensys-reveals-it-collects-user-data/) over an update to its privacy policy in November, with users objecting to the collection of IP address information through RPC provider Infura and linking this to addresses and account balances. A [response](https://uk.finance.yahoo.com/news/consensys-metamask-crypto-wallet-response-130000872.html) from ConsenSys in December clarified that they only collect data for "write" events (like making a transaction) and not when the user merely checks their balances, and that they have been doing this since 2018. They pledged to no longer store the IP data alongside the account access data, and to make it easier for users to change RPC provider through the interface.
-
-Sia launched a community grants program in September, and provided an [update](https://blog.sia.tech/grants-program-update-november-2022-83dd4a7e266e) in November. There is a small panel which reviews proposals and so far they have approved two proposals - Lume Web aims to "use Skynet to enable Sia to act as the internet", is getting $80K, and Sia Satellite, which will allow people to pay to use Sia storage with a credit card, $26K. In December another [update](https://blog.sia.tech/grants-program-update-december-2022-f7be5f103d13) reported that Fabstir's proposal had been approved for $40K, and plans to collaborate with Lume Web on other aspects of the "web3 platform", like social media for the creator economy with sales and tipping. The other two proposals have been rejected, but with an option to edit and re-submit.
-
-The Osmosis DAO (Osmosis is a major DeFi platform on Cosmos) looked back on [2022](https://osmosis.zone/blog/osmosis-2022-retrospective). There were 278 [proposals](https://www.mintscan.io/osmosis/proposals), of which 26 were rejected, so 90% of proposals passed. One of the highlights appears to have been "superfluid staking" (otherwise known as "reverse liquid staking)", which allows liquidity providers to bond the tokens they get such that the underlying OSMO can be staked to contribute to securing the blockchain. Initially voting rights were delegated along with stake to the staker's choice of validator, but a successful governance [proposal](https://www.mintscan.io/osmosis/proposals/252) subsequently allowed LP stakers to override the votes of their chosen validator. Osmosis voters also [approved](https://www.mintscan.io/osmosis/proposals/186) a community grants proposal with a budget of 1.5M OSMO for 6 months and the entity running the program receiving $70K/month on top of an initial $100K - the program was [renewed](https://www.mintscan.io/osmosis/proposals/362) in November.
-
-The Balancer DAO community [agreed](https://decrypt.co/117590/how-balancer-dao-achieved-peace-with-a-clever-whale-named-humpy) to a [peace treaty](https://forum.balancer.fi/t/bip-128-peace-treaty/4128) with the veBAL (Balancer's governance token) whale who came to be known as Humpy. Humpy is the largest BAL holder and liquidity provider, and used their voting power to dominate Balancer's governance and increase the yield rates for the liquidity pools they were personally using. Balancer developers and the community mobilised to mitigate Humpy's self-dealing but Humpy was still able to extract significant profit by pointing BAL rewards to pools they created with high fee levels. The peace treaty was approved almost unanimously by the veBAL community in a token vote, Humpy agreed to not increase their BAL position any further and to unwind much of it, with assistance from community members to organise OTC trades.
-
-DFINITY Foundation [announced](https://finance.yahoo.com/news/internet-computer-brings-smart-contract-130000045.html) the launch of a Bitcoin integration with the Internet Computer (IC), with IC serving as a layer 2 for Bitcoin without a centralised bridge.
-
-Donald Trump [launched](https://www.bbc.co.uk/news/business-63995563) his own NFT collection, selling 45,000 "trading card" images showing him dressed in various costumes for $99 each. The NFTs were all minted within 24 hours and it was a popular NFT collection to trade initially, the floor price on the secondary increased to over $200. The NFTs would entitle holders to access certain Trump-related activities, and these passes are in [Jan](https://decrypt.co/119055/nft-zoom-call-donald-trump-selling-under-25) being airdropped to holders, but are not proving as lucrative to trade, with tokenized tickets to access group Zoom calls with the Donald changing hands for less than $25 a piece.
-
-That's all for December. Share your updates for the next issue in our [#journal](https://chat.decred.org/#/room/#journal:decred.org) chat room.
+_图片：以美元为单位的 DCRDEX 月交易量。_
 
 
-## About
+## 相关外部信息
 
-This is issue 54 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+11 月，欧盟取缔增强隐私的加密硬币的计划被泄露。这些计划是由目前主持会谈的捷克官员提出的。根据该提案，加密资产服务提供商和其他机构将被禁止持有或接触增强隐私的加密货币。
 
-Most information from third parties is relayed directly from the source after a minimal sanity check. The authors of the Decred Journal cannot verify all claims. Please beware of scams and do your own research.
+在巴西，国会通过了一项监管加密支付的法案，它将允许银行提供围绕加密资产的服务，并且还涵盖航空积分等内容。
 
-Credits (alphabetical order):
+亚伯拉罕·艾森伯格 (Avraham Eisenberg) 因“高利润交易策略”让 Mango Markets 损失 1.1 亿美元而获得公众赞誉的代言人已被捕，并被控犯有市场操纵罪。
+
+SBF 被指控犯有多项罪行，并同意被引渡到美国，在那里他以 2.5 亿美元的保释金获准保释，条件是他要留在父母家里。一些持有部分债券的富有伙伴的名字一直保密，这很不寻常。该试验计划于 2023 年 10 月开始。
+
+流行的加密新闻和研究提供商 The Block 被揭露由 SBF 通过 Alameda 秘密提供资金，看起来向 Block 首席执行官 McCaffrey 提供了三笔贷款，其中一笔用于在巴哈马购买公寓。似乎 Block 的编辑人员都不知道 SBF 和麦卡弗里之间的安排，麦卡弗里现在已经辞职了。
+
+Grayscale Bitcoin Trust 一直令一些投资者感到困惑和恐慌，因为它的“NAV 折扣”（信托份额的价格与一股所代表的比特币数量的价值之比）增加到了惊人的 45％。在 2022 年夏季，Grayscale 将基金转换为 ETF 的申请被拒绝，因此它目前陷入了投资者无法要求获得其股票应得的 BTC 的境地，尽管这一决定正在上诉中。Grayscale 由数字货币集团所有，该集团还拥有陷入困境的加密贷款机构 Genesis，后者在 FTX 倒闭后不得不暂停运营，并在 1 月份裁员 30%。数字货币集团拥有多家公司在加密货币领域，有人猜测他们可能会出售其中哪些来拯救陷入困境的人。他们持有的资产包括 CoinDesk，它爆料了 FTX 的故事，引发了 DCG 目前的困境。DCG 持有的加密货币一直是一些争议的主题，因为 Grayscale拒绝参与提供“储备证明”是最初引起怀疑的因素之一——尽管 Coinbase 已加紧担保其资产被安全持有。
+
+对于比特币矿工来说，这是艰难的一年，尤其是北美行业，该行业在 2021 年的廉价信贷的推动下迅速增长，并被中国禁止 PoW 挖矿留下的缺口所吸引。随着 BTC 价格在 2022 年下跌 63%，该行业的竞争变得更加激烈，导致挖矿盈利能力下降 70%。随着问题越来越明显，顶级矿机的价值下降了 85%，矿业公司的股票价值从 80-98% 之间下跌。12 月，美国最大的加密货币矿工之一 Core Scientific 已申请破产。
+
+美联储正准备在 2023 年 5 月至 7 月推出“ FedNow ”，这是一种面向存款机构的数字美元版本，其客户将能够每天 24 小时 365 小时直接访问和使用它进行即时处理和结算一年中的几天。这与任何面向零售的 CBDC 不同，后者目前尚未在美国积极规划，但已经进行了一些实验。
+
+英格兰银行积极寻求公司申请，为核心账本构建原型移动钱包应用程序、商户网站和后端服务器——并为获胜项目提供 200,000 英镑的预算。
+
+ConsenSys 在 11 月更新其隐私政策后遭到强烈反对，用户反对通过 RPC 提供商 Infura 收集 IP 地址信息并将其与地址和账户余额相关联。ConsenSys 在 12 月的回应中澄清说，他们只收集“写入”事件（如进行交易）的数据，而不是在用户仅检查余额时收集数据，并且他们自 2018 年以来一直在这样做。他们承诺不再存储IP 数据与帐户访问数据一起使用，并使用户更容易通过界面更改 RPC 提供程序。
+
+Sia 在 9 月启动了一项社区资助计划，并在 11 月提供了更新。有一个小小组审查提案，到目前为止，他们已经批准了两项提案——Lume Web 旨在“使用天网让 Sia 充当互联网”，获得 8 万美元，以及 Sia Satellite，这将允许人们支付用信用卡使用 Sia 存储，26,000 美元。12 月，另一份更新报告称，Fabstir 的提议已获得 4 万美元的批准，并计划与 Lume Web 在“web3 平台”的其他方面进行合作，例如为创作者经济提供销售和打赏的社交媒体。其他两个提案已被拒绝，但可以选择编辑并重新提交。
+
+Osmosis DAO（Osmosis 是 Cosmos 上的主要 DeFi 平台）回顾2022 年。共有 278项提案，其中 26 项被否决，因此 90% 的提案获得通过。其中一个亮点似乎是“超流体质押”（也称为“反向流动性质押”），它允许流动性提供者绑定他们获得的代币，以便可以质押底层 OSMO 以有助于保护区块链。最初，投票权连同权益一起委托给权益质押者选择的验证者，但成功的治理提案随后允许 LP 权益质押者推翻他们选择的验证者的投票。渗透选民也批准了一项预算为 150 万美元的 OSMO 为期 6 个月的社区拨款提案，运行该计划的实体在最初的 10 万美元基础上每月收到 7 万美元——该计划于 11 月更新。
+
+Balancer DAO 社区同意与后来被称为 Humpy 的 veBAL（Balancer 的治理令牌）鲸鱼达成和平条约。Humpy 是最大的 BAL 持有者和流动性提供者，并利用他们的投票权来主导 Balancer 的治理并提高他们个人使用的流动性池的收益率。Balancer 开发人员和社区动员起来减轻 Humpy 的自我交易，但 Humpy 仍然能够通过将 BAL 奖励指向他们创建的高费用池来获取可观的利润。veBAL 社区在象征性投票中几乎一致通过了和平条约，Humpy 同意在社区成员的协助下组织 OTC 交易，不再进一步增加他们的 BAL 头寸并平仓大部分头寸。
+
+DFINITY 基金会宣布推出与互联网计算机 (IC) 的比特币集成，其中 IC 作为比特币的第 2 层，无需集中式桥接。
+
+唐纳德特朗普推出了他自己的 NFT 系列，售出了 45,000 张“交易卡”图像，显示他身着各种服装，每张售价 99 美元。这些 NFT 都是在 24 小时内铸造出来的，这是一个很受欢迎的 NFT 集合，最初可以交易，二级市场的底价上涨到 200 美元以上。NFT 将赋予持有人访问某些与特朗普相关活动的权利，这些通行证在1月份被空投给持有人，但事实证明交易并不有利可图，使用代币化的门票可以以不到 25 美元的价格与唐纳德易手进行集体 Zoom 通话一块。
+
+这就是 12 月的全部内容。欢迎在我们的#journal聊天室中分享您对下一期的更新。
 
 
-- writing, editing, publishing: bee, bochinchero, Exitus, jz, l1ndseymm, phoenixgreen, richardred
-- reviews and feedback: davecgh, jholdstock, JoeGruff
-- title image: saender
-- funding: Decred stakeholders
+## 关于月报
+
+这是 Decred Journal 第 54 期。[此处](https://xaur.github.io/decred-news/)提供所有问题、镜像和翻译的索引。
+
+来自第三方的大多数信息在经过最低限度的健全性检查后直接从源转发。Decred 月报的作者无法验证所有声明。请提防诈骗并进行自己的研究。
+
+感谢 (字母排列):
+
+- 写作、编辑、出版：bee、bochinchero、Exitus、jz、l1ndseymm、phoenixgreen、richardred
+- 评论和反馈：davecgh、jholdstock、JoeGruff
+- 标题图片：saender
+- 资金：Decred 利益相关者
+
+## 中文社区
+
+* [微博](https://www.weibo.com/DecredProject)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [bilibili频道](https://space.bilibili.com/425519478)
