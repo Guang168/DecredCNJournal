@@ -173,87 +173,87 @@ _图片：USDC 和 DCR 在测试网上的首次交易。_
 
 ### dcrdata
 
-_[dcrdata](https://github.com/decred/dcrdata) is an explorer for Decred blockchain and off-chain data like Politeia proposals, markets, and more._
+_[dcrdata](https://github.com/decred/dcrdata) 是 Decred 区块链和链下数据（如 Politeia 提案、市场等）浏览器。_
 
-User-facing changes:
+面向用户的变化：
 
-- [Treasury voting](https://github.com/decred/dcrdata/pull/1918) rules and progress became easier to understand and follow. Treasury spend transaction pages will show how current votes compare to minimum quorum and Yes percentage requirements, approximate calendar dates of start and end of voting, which Politeia key signed the TSpend, and more. An example recent TSpend can be seen [here](https://tip.dcrdata.org/tx/49f141f51421a499d319bc617a4430f87db3a73ffa605dee8408eefb081bd11b).
-- Fixed a rare bug where [disapproved transactions](https://docs.decred.org/governance/overview/#block-voting) that were later included in an approved block had their outputs [incorrectly shown as unspent](https://github.com/decred/dcrdata/pull/1938). Less than 20 transactions were affected in the entire chain history.
-- Other fixes and UI tweaks.
+- [国库投票](https://github.com/decred/dcrdata/pull/1918) 规则和进度变得更容易理解和遵循。 国库支出交易页面将显示当前投票与最低法定人数和同意百分比要求的比较情况、投票开始和结束的大致日历日期、哪个 Politeia 密钥签署了 TSpend，等等。 [此处](https://tip.dcrdata.org/tx/49f141f51421a499d319bc617a4430f87db3a73ffa605dee8408eefb081bd11b) 可以看到最近的 TSpend 示例。
+- 修复了一个罕见的错误，即后来包含在批准区块中的[未批准交易](https://docs.decred.org/governance/overview/#block-voting) 的输出[错误地显示为未花费](https: //github.com/decred/dcrdata/pull/1938)。 在整个链历史中，只有不到 20 笔交易受到影响。
+- 其它修复和 UI 调整。
 
-Developer and API changes:
+开发人员和 API 更改：
 
-- Removed some [dcrwallet imports](https://github.com/decred/dcrdata/pull/1887) to simplify updates to new dcrd modules.
-- Removed the requirement to run dcrd with address index enabled because it was [removed from dcrd](https://github.com/decred/dcrd/pull/2930). Usage of dcrd's `searchrawtransactions` method (which depends on the address index) was removed in favor of dcrdata's own database that has all the necessary information.
-- Added two fields to the [transaction data API](https://github.com/decred/dcrdata/pull/1946): `tree` (Decred blocks store transactions in regular and stake trees) and `type` (Decred transactions can be `regular`, `ticket`, `vote`, `revocation`, `coinbase`, `treasurybase`, `treasury add`, `treasury spend`).
+- 删除了[dcrwallet 导入](https://github.com/decred/dcrdata/pull/1887) 以简化对新 dcrd 模块的更新。
+- 删除了在启用地址索引的情况下运行 dcrd 的要求，因为它已 [从 dcrd 中删除](https://github.com/decred/dcrd/pull/2930)。 删除了 dcrd 的“searchrawtransactions”方法（取决于地址索引）的使用，以支持 dcrdata 自己的数据库，该数据库具有所有必要的信息。
+- 向 [交易数据 API](https://github.com/decred/dcrdata/pull/1946) 添加了两个字段：`tree`（Decred 块将交易存储在常规树和权益树中）和`type`（Decred 交易 可以是 `regular`、`ticket`、`vote`、`revocation`、`coinbase`、`treasurybase`、`treasury add`、`treasury spend`）。
 
-![](../img/202212.4.full.png)
+![](img/202212.4.full.png)
 
-_Image: dcrdata, now it is easier to track TSpend voting progress._
+_图片：dcrdata，现在可以更轻松地跟踪 国库支付发票 的投票进度。_
 
 
 ### Bison Relay
 
-_[Bison Relay](https://github.com/companyzero/bisonrelay) is a new peer-to-peer social media platform with strong protections against censorship, surveillance, and advertising, powered by Decred Lightning Network._
+_[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的点对点社交媒体平台，由 Decred 闪电网络 提供强大的抵抗审查、监视和广告功能。_
 
-Bison Relay has been revealed after 2 years of initial [development](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/) by Company 0. End-user details can be found in the [announcement](#bison-relay-launch) above, and here we will focus on the tech and recent changes in the source.
+Bison Relay 在 Company 0 [开发](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/)了2年后被公开。最终用户的详细信息可以 可以在上面的 [公告](#bison-relay-launch) 中找到，在这里我们将重点关注源代码中的技术和最近的变化。
 
-Bison Relay tech stack overview:
+Bison Relay 技术堆栈概述：
 
-- [Server](https://github.com/companyzero/bisonrelay#server) is written in Go and uses PostgreSQL for storage.
-- [Command-line client](https://github.com/companyzero/bisonrelay#cli-client) is written in Go and implements [text-based UI](https://en.wikipedia.org/wiki/Text-based_user_interface) similar to Irssi or WeeChat.
-- [GUI client](https://github.com/companyzero/bisonrelay/tree/master/bruig) is a cross-platform app written in Dart, Flutter, and a Go library implementing the Bison Relay protocol. [Flutter](https://flutter.dev) is a promising platform for building cross-platform GUI apps for major desktop (Linux, macOS, Windows) and mobile (Android, iOS) systems from a single codebase.
-- All client to server communications are double encrypted using a TLS tunnel as the outer layer and `NaCl secretbox` as the inner layer.
-- All client to client communications are encrypted with a [double ratchet](https://signal.org/docs/specifications/doubleratchet/) (a third layer of encryption) with keys that only the clients have.
-- More details can be found in the [docs dir](https://github.com/companyzero/bisonrelay/tree/39015e62770ae6b18e73599a6fe497ceec463047/doc) and the [protocol overview](https://github.com/companyzero/bisonrelay/blob/39015e62770ae6b18e73599a6fe497ceec463047/rpc/README.md#protocol).
+- [服务器](https://github.com/companyzero/bisonrelay#server) 是用 Go 编写的，使用 PostgreSQL 进行存储。
+- [命令行客户端](https://github.com/companyzero/bisonrelay#cli-client) 是用 Go 编写的并实现了[基于文本的 UI](https://en.wikipedia.org/wiki/Text -based_user_interface) 类似于 Irssi 或 WeeChat。
+- [GUI 客户端](https://github.com/companyzero/bisonrelay/tree/master/bruig) 是用 Dart、Flutter 和实现 Bison Relay 协议的 Go 库编写的跨平台应用程序。 [Flutter](https://flutter.dev) 是一个很有前途的平台，可以从单个代码库为主要桌面（Linux、macOS、Windows）和移动（Android、iOS）系统构建跨平台 GUI 应用程序。
+- 所有客户端到服务器的通信都使用 TLS 隧道作为外层，“NaCl secretbox”作为内层进行双重加密。
+- 所有客户端到客户端的通信都使用 [double ratchet](https://signal.org/docs/specifications/doubleratchet/)（第三层加密）加密，密钥只有客户端拥有。
+- 更多细节可以在[文档目录](https://github.com/companyzero/bisonrelay/tree/39015e62770ae6b18e73599a6fe497ceec463047/doc)和[协议概述](https://github.com/companyzero/bisonrelay/ blob/39015e62770ae6b18e73599a6fe497ceec463047/rpc/README.md#protocol）。
 
-GUI app, changes released in [v0.1.1](https://github.com/companyzero/bisonrelay/releases/tag/v0.1.1):
+GUI 应用程序，在 [v0.1.1](https://github.com/companyzero/bisonrelay/releases/tag/v0.1.1) 中发布的更改：
 
-- Fixed multiple [issues](https://github.com/companyzero/bisonrelay/pull/13) with notifications, layout and number formatting.
-- Fixed user getting [stuck](https://github.com/companyzero/bisonrelay/pull/21) after an unfinished seed setup and added a choice to [delete](https://github.com/companyzero/bisonrelay/pull/42) an unfinished wallet.
-- Fixed unreadable font color in [server fingerprints](https://github.com/companyzero/bisonrelay/pull/21).
-- Fixed hitting a [gap limit](https://github.com/companyzero/bisonrelay/pull/39) when opening LN channels.
-- Other fixes.
+- 修复了通知、布局和数字格式方面的多个[问题](https://github.com/companyzero/bisonrelay/pull/13)。
+- 修复了用户在未完成的种子设置后 [stuck](https://github.com/companyzero/bisonrelay/pull/21) 并添加了一个选择以 [delete](https://github.com/companyzero/bisonrelay/ pull/42) 一个未完成的钱包。
+- 修复了 [服务器指纹](https://github.com/companyzero/bisonrelay/pull/21) 中不可读的字体颜色。
+- 修复了打开 LN 通道时达到 [差距限制](https://github.com/companyzero/bisonrelay/pull/39) 的问题。
+- 其他修复。
 
-GUI app, changes in `master` towards next release:
+GUI 应用程序，在 `master` 中对下一个版本的更改：
 
-- Added save/restore of unsent [message draft](https://github.com/companyzero/bisonrelay/pull/43) when changing to/from another view.
-- Added [seed restore](https://github.com/companyzero/bisonrelay/pull/58) page.
-- Added a button to [copy seed](https://github.com/companyzero/bisonrelay/pull/58) to clipboard.
-- Added support for saving and restoring [Static Channel Backup](https://docs.decred.org/lightning-network/backups/) (SCB) files. Funds locked in LN channels cannot be recovered from wallet seed alone. Recovery data that cannot be generated from the seed is stored in SCB files.
-- Changed [window title](https://github.com/companyzero/bisonrelay/pull/64) to "Bison Relay".
+- 添加保存/恢复未发送的 [消息草稿](https://github.com/companyzero/bisonrelay/pull/43) 更改为/从另一个视图时。
+- 添加了[种子恢复](https://github.com/companyzero/bisonrelay/pull/58) 页面。
+- 为[复制种子](https://github.com/companyzero/bisonrelay/pull/58)添加了一个按钮到剪贴板。
+- 添加了对保存和恢复 [静态通道备份](https://docs.decred.org/lightning-network/backups/) (SCB) 文件的支持。 锁定在 LN 通道中的资金无法单独从钱包种子中恢复。 无法从种子生成的恢复数据存储在 SCB 文件中。
+- 将 [窗口标题](https://github.com/companyzero/bisonrelay/pull/64) 更改为“Bison Relay”。
 
-GUI app, improved onboarding:
+GUI 应用程序，改进了注册：
 
-- Show [directions](https://github.com/companyzero/bisonrelay/pull/58) on the empty chats page to add funds, create channels, and connect with other users using invites.
+- 在空的聊天页面上显示 [directions](https://github.com/companyzero/bisonrelay/pull/58) 以添加资金、创建频道并使用邀请与其他用户联系。
 
-GUI app, fixes:
+GUI 应用程序，修复：
 
-- Fixed missing [autofocus](https://github.com/companyzero/bisonrelay/pull/43) of the input field when switching chats.
-- Fixed [unreadable text](https://github.com/companyzero/bisonrelay/pull/64) color in multiple places.
+- 修复了切换聊天时输入字段缺少 [autofocus](https://github.com/companyzero/bisonrelay/pull/43) 的问题。
+- 修复了多个地方的[不可读文本](https://github.com/companyzero/bisonrelay/pull/64) 颜色。
 
-CLI app:
+CLI 应用程序:
 
-- Limit [displayed title](https://github.com/companyzero/bisonrelay/pull/57) to 255 characters.
-- Right-align [comment timestamps](https://github.com/companyzero/bisonrelay/pull/60).
-- Added an option to import an [SCB backup](https://github.com/companyzero/bisonrelay/pull/65) when restoring an existing wallet from seed.
-- Fixed crash when [relaying a post](https://github.com/companyzero/bisonrelay/issues/52).
+- 将 [显示的标题](https://github.com/companyzero/bisonrelay/pull/57) 限制为 255 个字符。
+- 右对齐 [评论时间戳](https://github.com/companyzero/bisonrelay/pull/60)。
+- 添加了从种子恢复现有钱包时导入 [SCB 备份](https://github.com/companyzero/bisonrelay/pull/65) 的选项。
+- 修复了[转发帖子](https://github.com/companyzero/bisonrelay/issues/52) 时的崩溃。
 
-[bisonrelay.org](https://bisonrelay.org) website is a static site build with Hugo, Bootstrap, and SCSS. Site source code is also [public](https://github.com/companyzero/bisonrelay-web).
+[bisonrelay.org](https://bisonrelay.org) 网站是使用 Hugo、Bootstrap 和 SCSS 构建的静态站点。 站点源代码也[完全开源](https://github.com/companyzero/bisonrelay-web)。
 
-Website December changes:
+网站 12 月变更：
 
-- [Release preparations](https://github.com/companyzero/bisonrelay-web/commit/05d95d8a2bc04b63659aea930036f1e1c3db87e2).
-- Animated [down arrow](https://github.com/companyzero/bisonrelay-web/commit/0c0ff8e3ac90883ec68d7664b3b1e737ad38f9ac).
-- Added copy for the [Features page](https://github.com/companyzero/bisonrelay-web/commit/207cf5aba58dfb2aedb5ad5483a126254c9c4b60).
-- Added [Tutorial](https://github.com/companyzero/bisonrelay-web/commit/aca241b3dfa6010b85fe7076fb27ccdef4c66622) [page](https://github.com/companyzero/bisonrelay-web/commit/70a6eac099d4b440b52c2884f26a8638d840ab4d).
+- [发布准备](https://github.com/companyzero/bisonrelay-web/commit/05d95d8a2bc04b63659aea930036f1e1c3db87e2)。
+- 动画 [向下箭头](https://github.com/companyzero/bisonrelay-web/commit/0c0ff8e3ac90883ec68d7664b3b1e737ad38f9ac)。
+- 添加了 [功能页面] 的副本 (https://github.com/companyzero/bisonrelay-web/commit/207cf5aba58dfb2aedb5ad5483a126254c9c4b60)。
+- 添加了[教程](https://github.com/companyzero/bisonrelay-web/commit/aca241b3dfa6010b85fe7076fb27ccdef4c66622) [页面](https://github.com/companyzero/bisonrelay-web/commit/70a6eac099d4b440b52c2884f26a8638d840ab)。
 
-Future plans for Bison Relay have been [announced](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0&t=47s) on BR itself:
+BR 本身已 [宣布](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0&t=47s) Bison Relay 的未来计划：
 
-> we're designing the next set of features for br, which include the ability to have some sort of "pages", for both content and as store front. The current iteration of this feature is that a client can provide "pages" that other key-exchanged clients can view and interact in some way. \[@jy-p on 2022-12-18\]
+> 我们正在为 br 设计下一组功能，其中包括为内容和店面提供某种“页面”的能力。 此功能的当前迭代是客户端可以提供其他密钥交换客户端可以以某种方式查看和交互的“页面”。 \[@jy-p 在 2022-12-18 上\]
 
 
-## People
+## 人员
 
 Welcome the new first-time contributors:
 
