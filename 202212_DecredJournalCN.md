@@ -1,32 +1,32 @@
-# Decred Journal – December 2022
+# Decred 月报 – 2022 年 12 月
 
 ![](img/202212.1.768.png)
 
-_Image: Bison Relay artwork by @saender_
+_图片: @saender 的 Bison Relay 艺术作品_
 
-December's highlights:
+12 月亮点:
 
-- Bison Relay was introduced and launched, this innovative privacy-enhancing and spam-resistant messaging network uses Decred Lightning Network to attach costs to messages and deter spam, and is now open for use.
-- The Lightning Network node count and capacity increased significantly following Bison Relay launch, as new users opened channels and started paying for messages.
-- DCRDEX v0.5.8 was released with new advanced options.
+- Bison Relay 发布，这个创新的增强隐私和抗垃圾邮件的信息传递网络使用 Decred 闪电网络为消息附加成本并阻止垃圾邮件，现已开放使用。
+- 随着新用户打开通道并开始为消息付费，Bison Relay 推出以后闪电网络的节点数量和容量显著增加。
+- DCRDEX v0.5.8 已发布，增加新的高级选项。
 
-Contents:
+内容：
 
-- [Bison Relay Launch](#bison-relay-launch)
-- [DCRDEX v0.5.8 Release](#dcrdex-v058-release)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+- [Bison Relay 发布](#bison-relay-launch)
+- [DCRDEX v0.5.8 发布](#dcrdex-v058-release)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
-## Bison Relay Launch
+## Bison Relay 发布
 
 Bison Relay is a new peer to peer social media platform with strong protections against censorship, surveillance and advertising. Messages are end-to-end encrypted to ensure only the intended recipients can see the contents. There are no accounts and metadata is minimized so that server operators cannot see message contents, sender, receiver, or which chats user participates in. Built-in payments allow content monetization via paid content access or tipping.
 
