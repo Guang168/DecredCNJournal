@@ -144,32 +144,31 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 
 以太坊:
 
-- Added client and server support for swaps with [testnet USDC](https://github.com/decred/dcrdex/pull/1733).
-- Added ability for DEX client and server to connect over [authenticated WebSocket](https://github.com/decred/dcrdex/pull/1963) to a Geth full node. This allows users to run Geth on a separate machine.
+- 添加了对 [测试网 USDC] 交换的客户端和服务器支持 (https://github.com/decred/dcrdex/pull/1733)。
+- 添加了 DEX 客户端和服务器通过 [经过身份验证的 WebSocket](https://github.com/decred/dcrdex/pull/1963) 连接到 Geth 全节点的能力。 这允许用户在单独的机器上运行 Geth。
 
-Fidelity bonds (client):
+忠诚债券（用户）：
 
-- Third batch of [fidelity bonds](https://github.com/decred/dcrdex/pull/1820) implementation was merged, building on the lower-level API and server code added in October and November. This batch adds internal client code to create, store, post, confirm, and refund the bonds, as well as `dexc` app command for posting bond from the command line. Bonds implementaion was split into phases to make review feasible and progress in parallel with multiple other developments. Up next is account tier maintenance, bond renewal, settings, and UI components.
-- Documented bonds in the [spec](https://github.com/decred/dcrdex/pull/1994).
-- For a recap, time-locked [fidelity bonds](https://en.wikipedia.org/wiki/Fidelity_bond) will replace the current registration fee system. Users will lock coins in bonds and gain permissions to trade, as long as their bond tier is high enough (possibly compensating for poor trading behavior like cancelling orders too much). When trading access is no longer needed the bond can be redeemed to get the coins back. The bonds system is a prerequisite for building a [server mesh](https://github.com/decred/dcrdex/issues/1765).
+- [忠诚债券](https://github.com/decred/dcrdex/pull/1820) 实施已合并，建立在 10 月和 11 月添加的较低级别 API 和服务器代码的基础上。 该批次添加了用于创建、存储、发布、确认和退还保证金的内部客户端代码，以及用于从命令行发布保证金的“dexc”应用程序命令。 债券的实施分为几个阶段，以使审查可行并与其他多项发展同步进行。 接下来是帐户等级维护、债券更新、设置和 UI 组件。- Documented bonds in the [spec](https://github.com/decred/dcrdex/pull/1994).
+- 回顾一下，限时 [忠诚债券](https://en.wikipedia.org/wiki/Fidelity_bond) 将取代当前的注册费系统。 用户会将代币锁定在债券中并获得交易许可，只要他们的债券级别足够高（可能补偿取消订单过多等不良交易行为）。 当不再需要交易权限时，可以赎回债券以取回代币。 债券系统是构建 [服务器网格](https://github.com/decred/dcrdex/issues/1765) 的先决条件。
 
-Other client changes:
+其它客户端更改：
 
-- Refactored [login sequence](https://github.com/decred/dcrdex/pull/1903) to better handle multiple login attempts and avoid repeating intialization steps. Added a warning prompting to unlock the wallets ASAP to process active trades.
-- Refactored [fee estimation](https://github.com/decred/dcrdex/pull/1967) common for Bitcoin-like assets and added external fee estimator for DOGE. External fee estimation is useful as a fallback for SPV (light) wallets and also RPC (full) wallets that have been started recently when their fee estimation has not calibrated yet.
-- Added [default values](https://github.com/decred/dcrdex/pull/1981) for wallets created over RPC. This is to assist testing on simnet.
-- Moved more strings [translation files](https://github.com/decred/dcrdex/pull/1980).
-- Database [compaction](https://github.com/decred/dcrdex/pull/1987) tuned to more aggressively free up space and report the savings more accurately.
-- Added more detailed [progress reporting](https://github.com/decred/dcrdex/pull/1997) during login.
-- Added [Arabic translation](https://github.com/decred/dcrdex/pull/1898) and the required tweaks for showing right-to-left text.
-- Fixed SPV wallet [log file deletion](https://github.com/decred/dcrdex/pull/1946) during wallet recovery.
-- Fixed [fiat value](https://github.com/decred/dcrdex/pull/1983) on the Send form not including the transaction fee.
-- Fixed handling of the [Pre-size Funds](https://github.com/decred/dcrdex/pull/1988) option. This option creates an extra "split transaction" to prepare an exact amount of funds needed for the order, which avoids locking more funds than needed, but at the cost of additional fees to pay for the split. The fix avoids the pre-sizing transaction when there is no benefit. Also, the UX is made more consistent by always showing the option but explaining why it was turned off. Finally, another fix disables pre-sizing for [immediate market orders](https://www.investopedia.com/terms/i/immediateorcancel.asp) since they must execute quickly.
-- Other fixes.
+- 重构 [登录顺序](https://github.com/decred/dcrdex/pull/1903) 以更好地处理多次登录尝试并避免重复初始化步骤。 添加警告提示尽快解锁钱包以处理活跃交易。
+- 重构了类比特币资产常见的[费用估算](https://github.com/decred/dcrdex/pull/1967)，并为 DOGE 添加了外部费用估算器。 外部费用估算可用作 SPV（轻型）钱包和最近在费用估算尚未校准时启动的 RPC（完整）钱包的后备。
+- 为通过 RPC 创建的钱包添加了 [默认值](https://github.com/decred/dcrdex/pull/1981)。 这是为了协助在 simnet 上进行测试。
+- 移动了更多字符串 [翻译文件](https://github.com/decred/dcrdex/pull/1980)。
+- 数据库 [压缩](https://github.com/decred/dcrdex/pull/1987) 调整为更积极地释放空间并更准确地报告节省情况。
+- 在登录期间添加了更详细的[进度报告](https://github.com/decred/dcrdex/pull/1997)。
+- 添加了 [阿拉伯语翻译](https://github.com/decred/dcrdex/pull/1898) 和显示从右到左文本所需的调整。
+- 修复了钱包恢复期间的 SPV 钱包 [日志文件删除](https://github.com/decred/dcrdex/pull/1946)。
+- 修复了发送表格中不包括交易费用的[法币价值](https://github.com/decred/dcrdex/pull/1983)。
+- 修复了 [Pre-size Funds](https://github.com/decred/dcrdex/pull/1988) 选项的处理。 该选项创建一个额外的“拆分交易”来准备订单所需的确切资金数额，这避免了锁定多于所需的资金，但代价是支付拆分的额外费用。 该修复避免了在没有任何好处时进行预调整交易。 此外，通过始终显示该选项但解释其关闭原因，用户体验更加一致。 最后，另一个修复禁用了[即时市场订单](https://www.investopedia.com/terms/i/immediateorcancel.asp) 的预先调整，因为它们必须快速执行。
+- 其它修复。
 
-![](../img/202212.3.full.png)
+![](img/202212.3.full.png)
 
-_Image: First trade between USDC and DCR on testnet._
+_图片：USDC 和 DCR 在测试网上的首次交易。_
 
 
 ### dcrdata
