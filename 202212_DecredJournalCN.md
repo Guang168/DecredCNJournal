@@ -108,7 +108,7 @@ _[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱
 _[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混币、闪电网络、DEX 交易等。它可在有或没有完整区块链（SPV 模式）的情况下运行。_
 
 - 将 DCRDEX 模块更新到 v0.5.7，修复了围绕 [订单取消](https://github.com/decred/decrediton/pull/3840) 的几个边缘情况。
-- 引入了对 [个人 TSpends] 的投票 (https://github.com/decred/decrediton/pull/3787)。 如果任何选票由 VSP 管理，更改后的选票投票偏好将发送给 VSP。 如果检测到新的未投票的 TSpend，将在主页上显示通知。 国库密钥和个人 TSpends 的现有投票政策将显示在选票详细信息页面上。
+- 引入了对 [个人 TSpends](https://github.com/decred/decrediton/pull/3787)的投票。 如果任何选票由 VSP 管理，更改后的选票投票偏好将发送给 VSP。 如果检测到新的未投票的 TSpend，将在主页上显示通知。 国库密钥和个人 TSpends 的现有投票政策将显示在选票详细信息页面上。
 - 扩大了自动化 UI 测试范围。
 
 ![](img/202212.2.full.png)
