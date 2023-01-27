@@ -144,7 +144,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 
 以太坊:
 
-- 添加了对 [测试网 USDC] 交换的客户端和服务器支持 (https://github.com/decred/dcrdex/pull/1733)。
+- 添加了对 [测试网 USDC](https://github.com/decred/dcrdex/pull/1733)交换的客户端和服务器支持 。
 - 添加了 DEX 客户端和服务器通过 [经过身份验证的 WebSocket](https://github.com/decred/dcrdex/pull/1963) 连接到 Geth 全节点的能力。 这允许用户在单独的机器上运行 Geth。
 
 忠诚债券（用户）：
