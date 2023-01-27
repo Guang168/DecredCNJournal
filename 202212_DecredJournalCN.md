@@ -64,12 +64,12 @@ Bison Relay 是一个新的点对点社交媒体平台，具有抵抗审查、�
 
 要了解 Bison Relay 背后的动机，请查看@jy-p 的帖子：
 
-- [Outreach problems Decred faced](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/) with existing outlets and social media platforms
-- Inherent [problems with today's Web](https://blog.decred.org/2022/12/09/Trapped-in-the-Web/)
-- Initial [Bison Relay announcement](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/) explains the high level design of the system and why it was required to facilitate free speech and free association
-- Twitter [announcement](https://twitter.com/behindtext/status/1603470873503141903)
+- [Decred 面临的外展问题](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/) 与现有网点和社交媒体平台
+- [现有网络的问题](https://blog.decred.org/2022/12/09/Trapped-in-the-Web/)
+- 最初的 [Bison Relay 公告](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/) 解释了系统的高级设计以及为什么需要它来促进 言论自由和结社自由
+- 推文 [公告](https://twitter.com/behindtext/status/1603470873503141903)
 
-> The inference is that Decred should attempt to grow its network without conventional marketing. The path forward is not through, but around. \[[What is wrong with Decred?](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/)\]
+> 推论是 Decred 应该尝试在没有传统营销的情况下发展其网络。 前进的道路不是穿越，而是绕过。 \[[Decred 有什么问题？](https://blog.decred.org/2022/12/02/What-is-wrong-with-Decred/)\]
 
 
 ## DCRDEX v0.5.8 Release
