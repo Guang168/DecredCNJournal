@@ -403,7 +403,7 @@ Monde PR的成就：
 - [在 macOS 上设置 BisonRelay 0.1.1](https://www.youtube.com/watch?v=L4jm-VMPmBo) @phoenixgreen
 - [Bison Relay - 第一眼（版本 0.1.1）](https://www.youtube.com/watch?v=ukRkQC4IXoo) 作者：@phoenixgreen
 - [我与 Decred 创始人/首席执行官 Jake 的聊天](https://www.youtube.com/watch?v=OS_AOyMdAeU)，作者 Py Patel 在 Piece of the Py Show 中
-- [Decred 新闻 - Bison Relay P2P 聊天 + Lightning 上的社交媒体就在这里！ 重大开发更新！](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0) by @Exitus
+- [Decred 新闻 - Bison Relay P2P 聊天 + Lightning 上的社交媒体就在这里！ 重大开发更新！](https://www.youtube.com/watch?v=K6Cu4Gi7Lp0)  @Exitus
 - [2022 熊年 - Decred 和市场状况](https://www.youtube.com/watch?v=PO2byx7D8z0)  @phoenixgreen, @Exitus, 和 @Tivra 
 
 **音频:**
