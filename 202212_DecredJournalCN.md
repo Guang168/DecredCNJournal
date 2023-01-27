@@ -95,54 +95,54 @@ _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Dec
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-- Added [`--cpuprofile`](https://github.com/decred/dcrwallet/pull/2195) switch to capture CPU performance data and save it to a file.
-- Added fetching of new [treasury spends in SPV mode](https://github.com/decred/dcrwallet/pull/2194). This will be used by Decrediton to enable TSpend voting in more scenarios.
-- Modified [ticket purchasing](https://github.com/decred/dcrwallet/pull/1946) logic to support Trezor staking in upcoming changes to Decrediton. This change wires some existing code together, and future changes will focus on ticket upkeep and re-paying failed VSP fees. Staking DCR stored on a Trezor wallet is a much requested feature so here is some background. The combination of signing transactions with Trezor, Decred staking system, and the newer system of delegating ticket votes to Voting Service Providers (VSP), presents a number of challenges. One is that a VSP needs a private key of the voting address to vote with the ticket, but Trezor does not allow to export private keys directly. Another is that Decrediton needs to sign voting preferences for each VSP-managed ticket, but asking Trezor to sign every message is poor UX. To get around these, a piece of private data that can be obtained from Trezor will be used to derive keys for voting and signing vote preferences.
-- Updated dependencies for supplementary command-line tools: movefunds, repaircfilters, and sweepaccount.
+- 添加了 [`--cpuprofile`](https://github.com/decred/dcrwallet/pull/2195) 开关以捕获 CPU 性能数据并将其保存到文件中。
+- 添加了获取新的 [SPV 模式下的国库支出](https://github.com/decred/dcrwallet/pull/2194)。 这将被 Decrediton 用于在更多场景中启用 TSpend 投票。
+- 修改了 [购票](https://github.com/decred/dcrwallet/pull/1946) 逻辑以支持 Trezor 在即将对 Decrediton 进行的更改中质押。 此更改将一些现有代码连接在一起，未来的更改将集中在选票维护和重新支付失败的 VSP 费用上。 质押存储在 Trezor 钱包上的 DCR 是一项非常受欢迎的功能，因此这里有一些背景知识。 与 Trezor 签署交易、Decred 质押系统以及将选票委托给投票服务提供商 (VSP) 的更新系统相结合，带来了许多挑战。 一是VSP需要投票地址的私钥才能用票进行投票，而Trezor不允许直接导出私钥。 另一个是 Decrediton 需要为每个 VSP 管理的选票签署投票偏好，但要求 Trezor 签署每条消息是糟糕的用户体验。 为了解决这些问题，可以从 Trezor 获得的一段私人数据将用于派生用于投票和签署投票偏好的密钥。
+- 更新了补充命令行工具的依赖项：movefunds、repaircfilters 和 sweepaccount。
 
 
 ### Decrediton
 
-_[Decrediton](https://github.com/decred/decrediton) is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混币、闪电网络、DEX 交易等。它可在有或没有完整区块链（SPV 模式）的情况下运行。_
 
-- Updated DCRDEX module to v0.5.7 which fixes several edge cases around [order cancellation](https://github.com/decred/decrediton/pull/3840).
-- Introduced voting for [individual TSpends](https://github.com/decred/decrediton/pull/3787). If any tickets are managed by VSPs, changed ticket vote preferences will be sent to the VSPs. If new unvoted TSpends are detected, a notification will be shown on the home page. Existing voting policies for treasury keys and individual TSpends will be shown on ticket details page.
-- Expanded automated UI test coverage.
+- 将 DCRDEX 模块更新到 v0.5.7，修复了围绕 [订单取消](https://github.com/decred/decrediton/pull/3840) 的几个边缘情况。
+- 引入了对 [个人 TSpends] 的投票 (https://github.com/decred/decrediton/pull/3787)。 如果任何选票由 VSP 管理，更改后的选票投票偏好将发送给 VSP。 如果检测到新的未投票的 TSpend，将在主页上显示通知。 国库密钥和个人 TSpends 的现有投票政策将显示在选票详细信息页面上。
+- 扩大了自动化 UI 测试范围。
 
-![](../img/202212.2.full.png)
+![](img/202212.2.full.png)
 
-_Image: TSpend voting in Decrediton._
+_图片：国库支付发票在 Decrediton 中投票。_
 
 
 ### Politeia
 
-_[Politeia](https://github.com/decred/politeia) is Decred's proposal system. It is used to request funding from the Decred treasury._
+_[Politeia](https://github.com/decred/politeia) 是 Decred 的提案系统。它用于向 Decred 国库请求资金。_
 
-- Build and test pi-ui against [Node 18 and 19](https://github.com/decred/pi-ui/pull/468).
-- Test fixes.
+- 针对 [Node 18 和 19](https://github.com/decred/pi-ui/pull/468) 构建和测试 pi-ui。
+- 测试修复。
 
 
 ### vspd
 
-_[vspd](https://github.com/decred/vspd) is server software for running a Voting Service Provider. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_[vspd](https://github.com/decred/vspd) 是用于运行投票服务提供商的服务器软件。VSP 代表其用户全天候 24/7 投票，不能托管资金。_
 
-- Removed [duplicate fee address check](https://github.com/decred/vspd/pull/361) that did not scale well (it took almost 500 ms to insert into a 100K ticket database). Duplicate fee addresses have never been observed in development, testing, or production.
+- 删除了扩展性不佳的[重复费用地址检查](https://github.com/decred/vspd/pull/361)（将近 500 毫秒插入 100K 选票数据库）。 在开发、测试或生产中从未观察到重复的费用地址。
 
 
 ### DCRDEX
 
-_[DCRDEX](https://github.com/decred/dcrdex) is a non-custodial, privacy-respecting exchange for trustless trading, powered by atomic swaps._
+_[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私的交易所，用于去信任交易，由原子交换提供支持。_
 
-[v0.5.8 release](https://github.com/decred/dcrdex/releases/tag/v0.5.8):
+[v0.5.8 发布](https://github.com/decred/dcrdex/releases/tag/v0.5.8):
 
-- Added [Core API options](https://github.com/decred/dcrdex/pull/1568) to skip time consuming operations on startup and shutdown. `NoAutoWalletLock` disables wallet locking on shutdown, which is useful for avoiding a potentially [very long](https://github.com/decred/dcrdex/pull/1568#discussion_r998877146) unlock operation. `NoAutoDBBackup` disables automatic database backups on shutdown. `UnlockCoinsOnLogin` instructs the wallet to unlock any coins (outputs) locked individually on login or wallet creation, this automates the manual recovery from multiple [issues](https://github.com/decred/dcrdex/pull/1568#discussion_r998880897) caused by dropped connections and crashes during order placement. These options can also be set using the new switches for the `dexc` command-line app, but they are really intended for people writing their own Go code to control the DEX client via the `Core` API.
-- Fixed handling of failed [fiat rates requests](https://github.com/decred/dcrdex/commit/2ae50bb7617706c62b86e4b16b684744c995c818) to external services, and adjusted their frequency to avoid hitting rate limits.
+- 添加了[核心 API 选项](https://github.com/decred/dcrdex/pull/1568) 以跳过启动和关闭时耗时的操作。 `NoAutoWalletLock` 在关闭时禁用钱包锁定，这对于避免潜在的[非常长](https://github.com/decred/dcrdex/pull/1568#discussion_r998877146) 解锁操作很有用。 `NoAutoDBBackup` 在关闭时禁用自动数据库备份。 `UnlockCoinsOnLogin` 指示钱包解锁登录或创建钱包时单独锁定的任何硬币（输出），这会自动从多个[问题](https://github.com/decred/dcrdex/pull/1568#discussion_r998880897)中手动恢复 由下订单期间连接中断和崩溃引起。 这些选项也可以使用 `dexc` 命令行应用程序的新开关进行设置，但它们实际上是供编写自己的 Go 代码以通过 `Core` API 控制 DEX 客户端的人们使用的。
+- 修复了对外部服务失败的 [法币汇率请求](https://github.com/decred/dcrdex/commit/2ae50bb7617706c62b86e4b16b684744c995c818) 的处理，并调整了它们的频率以避免达到汇率限制。
 
-Changes below are merged in `master` towards future releases.
+以下更改合并到 `master` 中以用于将来的版本。
 
-Ethereum:
+以太坊:
 
 - Added client and server support for swaps with [testnet USDC](https://github.com/decred/dcrdex/pull/1733).
 - Added ability for DEX client and server to connect over [authenticated WebSocket](https://github.com/decred/dcrdex/pull/1963) to a Geth full node. This allows users to run Geth on a separate machine.
