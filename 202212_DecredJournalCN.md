@@ -201,7 +201,7 @@ Bison Relay 在 Company 0 [开发](https://blog.decred.org/2022/12/14/Bison-Rela
 Bison Relay 技术堆栈概述：
 
 - [服务器](https://github.com/companyzero/bisonrelay#server) 是用 Go 编写的，使用 PostgreSQL 进行存储。
-- [命令行客户端](https://github.com/companyzero/bisonrelay#cli-client) 是用 Go 编写的并实现了[基于文本的 UI](https://en.wikipedia.org/wiki/Text -based_user_interface) 类似于 Irssi 或 WeeChat。
+- [命令行客户端](https://github.com/companyzero/bisonrelay#cli-client) 是用 Go 编写的并实现了[基于文本的 UI](https://en.wikipedia.org/wiki/Text-based_user_interface)类似于 Irssi 或 WeeChat。
 - [GUI 客户端](https://github.com/companyzero/bisonrelay/tree/master/bruig) 是用 Dart、Flutter 和实现 Bison Relay 协议的 Go 库编写的跨平台应用程序。 [Flutter](https://flutter.dev) 是一个很有前途的平台，可以从单个代码库为主要桌面（Linux、macOS、Windows）和移动（Android、iOS）系统构建跨平台 GUI 应用程序。
 - 所有客户端到服务器的通信都使用 TLS 隧道作为外层，“NaCl secretbox”作为内层进行双重加密。
 - 所有客户端到客户端的通信都使用 [double ratchet](https://signal.org/docs/specifications/doubleratchet/)（第三层加密）加密，密钥只有客户端拥有。
