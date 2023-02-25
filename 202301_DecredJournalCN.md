@@ -240,7 +240,7 @@ dcrtimegui 已更名为 Timestamply，并且该应用程序获得了 [完全重�
 - 每个哈希的交易确认进度。
 - 改进的拖放区。
 
-在应用程序受到[巴西政客]的一些关注后不久，时间戳重新设计就出现了(https://haddadoficial.com.br/lula-e-haddad-registram-plano-de-governo-em-blockchain-para-evitar-fake-news/) 为 PDF 文件加上他们的治理计划时间戳，以打击通过伪造文件版本传播的错误信息。
+在应用程序受到[巴西政客](https://haddadoficial.com.br/lula-e-haddad-registram-plano-de-governo-em-blockchain-para-evitar-fake-news/)的一些关注后不久，时间戳重新设计就出现了为 PDF 文件加上他们的治理计划时间戳，以打击通过伪造文件版本传播的错误信息。
 
 资助新版本的[提案](https://proposals.decred.org/record/855a506)已获批准，正在等待部署到[timestamp.decred.org](https://timestamp.decred.org/). 在此之前，用户可以在[测试网站](https://dcrtimegui-redesign.netlify.app/) 上试用即将推出的版本。 请注意，测试网站使用不同的数据库，可能找不到由当前版本的应用程序加盖时间戳的哈希值。
 
@@ -311,7 +311,7 @@ _图片：Decred 全网算力._
 
 _图片：历史矿池哈希率分布。_
 
-**Staking**: [选票价格](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) 在 140-298 DCR 之间变化，30 天[平均](https:// dcrstats.com/) 在 212.5 DCR (-22.3)。
+**Staking**: [选票价格](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) 在 140-298 DCR 之间变化，30 天[平均](https://dcrstats.com/) 在 212.5 DCR (-22.3)。
 
 ![](img/202301.10.720.png)
 
