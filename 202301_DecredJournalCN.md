@@ -89,7 +89,7 @@ _图片：Politeia GUI 改造中的用户帐户页面。_
 
 _[cspp](https://github.com/decred/cspp) 是一个使用 CoinShuffle++ 协议协调硬币组合的服务器。 它是非托管的，即不持有任何资金。_
 
-- [发送到客户端失败]时捕获IP地址和消息类型(https://github.com/decred/cspp/pull/79)。
+- [发送到客户端失败](https://github.com/decred/cspp/pull/79)时捕获IP地址和消息类型。
 - 修复了一个[协议错误](https://github.com/decred/cspp/pull/80) 如果客户端和服务器使用不同大小的整数类型，例如 32 位客户端连接，导致签名验证失败 到 64 位服务器。 此修复是对协议的重大更改（客户端需要升级才能使用此修复）。
 - 更新到 [最新](https://github.com/decred/cspp/pull/81) dcrd 模块。
 
@@ -101,7 +101,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 客户端更改：
 
 - 更新了许多 [网络依赖项](https://github.com/decred/dcrdex/pull/1996)。
-- 更新 Docker 配置：[优化基础镜像](https://github.com/decred/dcrdex/pull/2030)，将 DEX 客户端切换为[以非根用户身份运行](https://github.com/decred /dcrdex/pull/2035)，以及[排除不需要的文件](https://github.com/decred/dcrdex/pull/2077)。 除此之外，它有助于将 DEX 客户端 [集成到 Umbrel](https://proposals.decred.org/record/8d83046)。
+- 更新 Docker 配置：[优化基础镜像](https://github.com/decred/dcrdex/pull/2030)，将 DEX 客户端切换为[以非根用户身份运行](https://github.com/decred/dcrdex/pull/2035)，以及[排除不需要的文件](https://github.com/decred/dcrdex/pull/2077)。 除此之外，它有助于将 DEX 客户端 [集成到 Umbrel](https://proposals.decred.org/record/8d83046)。
 - 允许[确认并隐藏](https://github.com/decred/dcrdex/pull/2044) 提醒保持 DEX 客户端运行直到所有交易结算的警告。
 - 在所有表单中使用 [统一样式](https://github.com/decred/dcrdex/pull/2002) 改进了复选框用户体验。
 - 如果在启动时未找到，则显示[钱包](https://github.com/decred/dcrdex/pull/2071) 丢失。
@@ -151,7 +151,7 @@ _图片：改进了 DCRDEX 中代币的费用估算。_
 
 _[dcrdocs](https://github.com/decred/dcrdocs) 是 Decred [用户文档](https://docs.decred.org/) 的源代码。_
 
-- 在[项目历史](https://docs.decred.org/getting-started/project- 历史/）页面。 还添加了时间轴。
+- 在[项目历史](https://docs.decred.org/getting-started/project-history/)页面。 还添加了时间轴。
 
 
 ### decred.org
@@ -169,7 +169,7 @@ _[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的点对�
 v0.1.3 版本中的 GUI 更改：
 
 - 添加了 [Linux](https://github.com/companyzero/bisonrelay/pull/85)（AppImage 和 tar）和 [Windows](https://github.com/companyzero/bisonrelay/pull/88) 的构建脚本 ) (MSIX)。
-- 订阅和取消订阅 [异步] 发布的帖子 (https://github.com/companyzero/bisonrelay/pull/86)。 这很好地处理了目标用户离线并且需要很长时间才能回复订阅请求的情况。
+- 订阅和取消订阅 [异步](https://github.com/companyzero/bisonrelay/pull/86) 发布的帖子。 这很好地处理了目标用户离线并且需要很长时间才能回复订阅请求的情况。
 - 为各种操作系统添加了适当的 [启动器图标](https://github.com/companyzero/bisonrelay/pull/94)。
 
 v0.1.3 中的 GUI 修复：
@@ -186,7 +186,7 @@ v0.1.3 中的命令行应用更改：
 
 - 添加了 `/timestats` 命令，报告闪电网络支付和发送出站消息的[时间统计](https://github.com/companyzero/bisonrelay/pull/)。
 - 显示使用“/svrnode”和“/queryroute”命令查询的 LN 节点的[广告地址](https://github.com/companyzero/bisonrelay/pull/82)。
-- 订阅和取消订阅 [异步] 发布的帖子 (https://github.com/companyzero/bisonrelay/pull/86)。
+- 订阅和取消订阅 [异步](https://github.com/companyzero/bisonrelay/pull/86) 发布的帖子。
 
 v0.1.3 中的命令行应用修复：
 
@@ -240,9 +240,9 @@ dcrtimegui 已更名为 Timestamply，并且该应用程序获得了 [完全重�
 - 每个哈希的交易确认进度。
 - 改进的拖放区。
 
-在应用程序受到[巴西政客]的一些关注后不久，时间戳重新设计就出现了(https://haddadoficial.com.br/lula-e-haddad-registram-plano-de-governo-em-blockchain-para-evitar-fake -news/) 为 PDF 文件加上他们的治理计划时间戳，以打击通过伪造文件版本传播的错误信息。
+在应用程序受到[巴西政客]的一些关注后不久，时间戳重新设计就出现了(https://haddadoficial.com.br/lula-e-haddad-registram-plano-de-governo-em-blockchain-para-evitar-fake-news/) 为 PDF 文件加上他们的治理计划时间戳，以打击通过伪造文件版本传播的错误信息。
 
-资助新版本的[提案](https://proposals.decred.org/record/855a506)已获批准，正在等待部署到[timestamp.decred.org](https://timestamp.decred.org /). 在此之前，用户可以在[测试网站](https://dcrtimegui-redesign.netlify.app/) 上试用即将推出的版本。 请注意，测试网站使用不同的数据库，可能找不到由当前版本的应用程序加盖时间戳的哈希值。
+资助新版本的[提案](https://proposals.decred.org/record/855a506)已获批准，正在等待部署到[timestamp.decred.org](https://timestamp.decred.org/). 在此之前，用户可以在[测试网站](https://dcrtimegui-redesign.netlify.app/) 上试用即将推出的版本。 请注意，测试网站使用不同的数据库，可能找不到由当前版本的应用程序加盖时间戳的哈希值。
 
 ![](img/202301.4.1000.png)
 
@@ -335,7 +335,7 @@ _图片：锁定在 PoS 中的 DCR。_
 
 _图片：由 VSP 管理的选票分布。_
 
-**Nodes**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) 在 2 月 1 日观察到 187 个 dcrd 节点：v1.7.5 - 33%，v1.7.1 - 21%，v1.8.0 开发构建 - 13%，v1。 7.2 - 13%，v1.7.0 - 9%，v1.7.4 - 3%，其它 - 8%。
+**节点**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) 在 2 月 1 日观察到 187 个 dcrd 节点：v1.7.5 - 33%，v1.7.1 - 21%，v1.8.0 开发构建 - 13%，v1。 7.2 - 13%，v1.7.0 - 9%，v1.7.4 - 3%，其它 - 8%。
 
 ![](img/202301.13.720.png)
 
@@ -356,7 +356,7 @@ Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 浏览器已经看到 1
 
 [VSP 列表 API](https://api.decred.org/?c=vsp) 现在报告块高度和估计的网络比例。 块高度提供了关于 VSP 停滞或与区块链完全同步的更多确定性。 [此处](https://github.com/bochinchero/dcrsnapcsv) 提供了 API 数据的历史快照。
 
-由于 [问题]( https://github.com/decred/dcrwebapi/pull/171#issuecomment-1279775352）并修复其 API。 投票钱包不应该受到影响。
+由于 [问题](https://github.com/decred/dcrwebapi/pull/171#issuecomment-1279775352)并修复其 API。 投票钱包不应该受到影响。
 
 GoDCR SPV 钱包已从[钱包页面](https://decred.org/wallets/)[删除](https://github.com/decred/dcrweb/pull/1104)。 由于 [GoDCR 提案](https://proposals.decred.org/record/0ef42e5) 未能通过，下载链接不再有效并且此钱包不再受支持/更新。 [源代码](https://github.com/planetdecred/godcr) 仍然可用。
 
@@ -376,7 +376,7 @@ Monde PR成就：
 
 获得以下媒体展示位置：
 
-- @jy-p 在 CryptoSlate 的 [SlateCast 播客](https://cryptoslate.com/podcasts/combining-proof-of-work-and-proof-of-stake-for-a-decentralized-financial-system- with-decred/)，谈论 Decred 的审查和隐私方法、项目资金库和混合共识模型。
+- @jy-p 在 CryptoSlate 的 [SlateCast 播客](https://cryptoslate.com/podcasts/combining-proof-of-work-and-proof-of-stake-for-a-decentralized-financial-system-with-decred/)，谈论 Decred 的审查和隐私方法、项目资金库和混合共识模型。
 - [Decred Magazine](https://www.decredmagazine.com/defi-needs-to-be-decentralized-beyond-name/) 中的一篇文章，其中@jz 评论了 DeFi 需要如何去中心化。
 - 
 
@@ -410,25 +410,25 @@ Monde PR成就：
 - 转发：129
 - 所有平台和账户的社交媒体粉丝：1,180
 
-请注意，Decred Magazine 生成的内容比 [@decredproject](https://twitter.com/decredproject) 可以转发的内容多得多（这是一个很好的问题！），因此请直接关注它以免错过任何故事。 关注 DM 的方式有很多：[Twitter](https://twitter.com/decredmagazine)、[Instagram](https://instagram.com/decredmagazine)、[Facebook](https://www.facebook. com/Decredmagazine)，[RSS feed](https://www.decredmagazine.com/rss/)，或者直接检查 [decredmagazine.com](https://www.decredmagazine.com/) 或特定类别， [新闻](https://www.decredmagazine.com/tag/news/) 或 [Politeia 文摘](https://www.decredmagazine.com/tag/politeia-digest/)。
+请注意，Decred Magazine 生成的内容比 [@decredproject](https://twitter.com/decredproject) 可以转发的内容多得多（这是一个很好的问题！），因此请直接关注它以免错过任何故事。 关注 DM 的方式有很多：[Twitter](https://twitter.com/decredmagazine)、[Instagram](https://instagram.com/decredmagazine)、[Facebook](https://www.facebook.com/Decredmagazine)，[RSS feed](https://www.decredmagazine.com/rss/)，或者直接检查 [decredmagazine.com](https://www.decredmagazine.com/) 或特定类别， [新闻](https://www.decredmagazine.com/tag/news/) 或 [Politeia 文摘](https://www.decredmagazine.com/tag/politeia-digest/)。
 
 **视频:**
 
-- [Bison Relay 0.1 新闻提要 - 连接、创建和使用降价](https://www.youtube.com/watch?v=NuKVAp4fIBY) by @phoenixgreen
-- [内置支付系统 - Bison Relay](https://www.youtube.com/watch?v=aZvnd5BvEBs) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/ 内置支付系统野牛中继/)
-- [Bison Relay - 管理内容](https://www.youtube.com/watch?v=1gNc_DLCddc) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/bison-relay -管理内容/)
-- [SlateCast #49：将 DeFi 中的工作量证明和权益证明与 Decred 相结合](https://www.youtube.com/watch?v=VYDPCbb5VhE)，作者为 CryptoSlate feat。 @jy-p
-- [Bison Relay 更新至版本 0.1.3](https://www.youtube.com/watch?v=EWNW91_rp1w) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/ bison-relay-updates-to-version-0-1-3/)
+- [Bison Relay 0.1 新闻提要 - 连接、创建和使用](https://www.youtube.com/watch?v=NuKVAp4fIBY) by @phoenixgreen
+- [内置支付系统 - Bison Relay](https://www.youtube.com/watch?v=aZvnd5BvEBs) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/built-in-payment-system-bison-relay/)
+- [Bison Relay - 管理内容](https://www.youtube.com/watch?v=1gNc_DLCddc) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/bison-relay-manage-content/)
+- [将 DeFi 中的工作量证明和权益证明与 Decred 相结合](https://www.youtube.com/watch?v=VYDPCbb5VhE)，作者为 CryptoSlate feat。 @jy-p
+- [Bison Relay 更新至版本 0.1.3](https://www.youtube.com/watch?v=EWNW91_rp1w) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/bison-relay-updates-to-version-0-1-3/)
 
 **音频:**
 
 Tivra aka [@WasPraxis](https://twitter.com/WasPraxis) 组织了 5 个新的 Twitter 空间：
 
-- [2023 年：隐私币之年？](https://twitter.com/i/spaces/1YqKDobzqoOxV) 壮举。 Monero 社区成员（也在 [Anchor](https://anchor.fm/decred-magazine/episodes/2023-The-Year-of-the-Privacy-Coin-e1t4mst) + [YouTube] 上的编辑版本（https ://www.youtube.com/watch?v=5ttufSLhsE0))
+- [2023 年：隐私币之年？](https://twitter.com/i/spaces/1YqKDobzqoOxV) 壮举。 Monero 社区成员（也在 [Anchor](https://anchor.fm/decred-magazine/episodes/2023-The-Year-of-the-Privacy-Coin-e1t4mst) + [YouTube](https://www.youtube.com/watch?v=5ttufSLhsE0)上的编辑版本)
 - [主权时代的隐私工具](https://twitter.com/i/spaces/1jMJgLyXXEyxL) 壮举。 Decred 和 Monero 社区成员（[Anchor](https://anchor.fm/decred-magazine/episodes/Privacy-Tools-for-a-Sovereign-Age---Decred-Twitter-Space-e1tf0g9)）
-- [5 个提案 - 一般性讨论](https://twitter.com/i/spaces/1YpKkgeoVqwKj) - 与提案提交者和社区讨论最新一批提案 ([Anchor](https://anchor.fm /decred-magazine/episodes/Decred-Twitter-Space-5-Proposals-Up-General-Discussion-hosted-by-WasPraxis-e1tpati))
-- [为什么隐私对于功能齐全的货币至关重要](https://twitter.com/i/spaces/1YqJDoDNrnzGV) 壮举。 Firo 联合创始人 [Reuben Yap](https://twitter.com/reubenyap) 全功能货币---Decred--Firo-Twitter-Space-e1u52o8))
-- [DCR 提案空间](https://twitter.com/i/spaces/1jMKgLAlLXgGL) - 与提案所有者进行第二次聊天，讨论他们的目标和结果（[Anchor](https://anchor.fm/decred-magazine/ 剧集/DCR-提案-空间-e1u9f9j))
+- [5 个提案 - 一般性讨论](https://twitter.com/i/spaces/1YpKkgeoVqwKj) - 与提案提交者和社区讨论最新一批提案 
+- [为什么隐私对于功能齐全的货币至关重要](https://twitter.com/i/spaces/1YqJDoDNrnzGV) 壮举。 Firo 联合创始人 [Reuben Yap](https://twitter.com/reubenyap)
+- [DCR 提案空间](https://twitter.com/i/spaces/1jMKgLAlLXgGL) - 与提案所有者进行第二次聊天，讨论他们的目标和结果（[Anchor](https://anchor.fm/decred-magazine/episodes/DCR-Proposals-Space-e1u9f9j))
 
 **艺术与娱乐:**
 
@@ -446,7 +446,7 @@ _图片：[@maitreludo](https://twitter.com/maitreludo/status/160884770993039360
 **翻译:**
 
 - Decred 月报十一月十二月 共有 3 个新的 [翻译](https://xaur.github.io/decred-news/) 到阿拉伯语（@arij，@abdulrahman4），中文（@Dominic）和波兰语（@ 科泽尔）。 谢谢大家的传播！
-- [Bison Relay: 主权互联网](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/)被翻译成[中文](https://github.com/DominicTing/decred-ZH-translations/blob/master/Bison%20Relay:%20The%20Sovereign%20Internet.md) @Dominic ([tweet](https://twitter.com/wanbihou/status/1604010848745230336))
+- [Bison Relay: 主权互联网](https://blog.decred.org/2022/12/14/Bison-Relay-The-Sovereign-Internet/)被翻译成[中文](https://github.com/DominicTing/decred-ZH-translations/blob/master/Bison%20Relay:%20The%20Sovereign%20Internet.md) @Dominic ([推特](https://twitter.com/wanbihou/status/1604010848745230336))
 
 **讨论**:
 
