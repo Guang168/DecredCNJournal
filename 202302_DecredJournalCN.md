@@ -81,7 +81,7 @@ Docker:
 
 其它:
 
-- 由于 Go 1.19，在未导出的模块中切换到新的[原子类型](https://github.com/decred/dcrd/pull/3053)。 这使得代码不太容易出现人为错误，并且不那么冗长。 导出的模块在 [单独的 PR](https://github.com/decred/dcrd/pull/3054) 中升级，稍后将合并到 [不强制消费者](https://github.com/decred/ dcrd/pull/3054#issuecomment-1428189607) 到更新的 Go 版本太快了。
+- 由于 Go 1.19，在未导出的模块中切换到新的[原子类型](https://github.com/decred/dcrd/pull/3053)。 这使得代码不太容易出现人为错误，并且不那么冗长。 导出的模块在 [单独的 PR](https://github.com/decred/dcrd/pull/3054) 中升级，稍后将合并到 [主存储库](https://github.com/decred/dcrd/pull/3054#issuecomment-1428189607)到更新的 Go 版本太快了。
 - 更新了 [连接请求](https://github.com/decred/dcrd/pull/3055) 跟踪以防止并发错误。
 - 修复了基于 [riscv64](https://github.com/decred/dcrd/pull/3049) CPU 架构的 OpenBSD 构建。
 - 更新了 [Go 1.20](https://github.com/decred/dcrd/pull/3052) 的构建基础设施和文档，并放弃了对 Go 1.18 的支持。
@@ -94,7 +94,7 @@ _[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱
 
 - 修复了 [地址发现](https://github.com/decred/dcrwallet/pull/2204) 中的死锁，该死锁可能由时机不佳的 getnewaddress 命令触发。
 - 更新了 dcrd 中的 [`addrmgr` 模块](https://github.com/decred/dcrwallet/pull/2206)，以便在 SPV 模式下可用的质量对等点很少时提高性能。
-- 更新了 [golang.org/x 模块](https://github.com/decred/dcrwallet/pull/2209)，包括更新的 `x/sys` 以支持在 [OpenBSD](https://github.com) 上构建 /decred/dcrwallet/pull/2208) 在 riscv64 CPU 上运行。
+- 更新了 [golang.org/x 模块](https://github.com/decred/dcrwallet/pull/2209)，包括更新的 `x/sys` 以支持在 [OpenBSD](https://github.com/decred/dcrwallet/pull/2208)上构建在 riscv64 CPU 上运行。
 
 
 ### dcrctl
@@ -126,22 +126,22 @@ _[vspd](https://github.com/decred/vspd) 是用于运行投票服务提供商的�
 
 ### cspp
 
-_[cspp](https://github.com/decred/cspp) is a server for coordinating coin mixes using the CoinShuffle++ protocol. It is non-custodial, i.e. does not hold any funds._
+_[cspp](https://github.com/decred/cspp) 是一个使用 CoinShuffle++ 协议协调硬币组合的服务器。 它是非托管的，即不持有任何资金。_
 
-- Updated CI to build on Ubuntu 22 with latest [flint2](https://github.com/decred/cspp/pull/69) math [library](http://www.flintlib.org/).
-- Added a [`solverrpc` package](https://github.com/decred/cspp/pull/86) as a drop-in replacement for existing `solver`. It allows to extract the interaction with C code (the flint2 math library) into a separate background process called `csppsolver` and talk to that process from pure Go code, which is more flexible.
-- Added [build flags](https://github.com/decred/cspp/pull/87) that allow to build an entirely standalone `csppsolver` executable with flint2 library embedded in it. Distributing such executable removes the need to install flint2.
+- 更新 CI 以使用最新的 [flint2](https://github.com/decred/cspp/pull/69) 数学 [library](http://www.flintlib.org/) 在 Ubuntu 22 上构建。
+- 添加了一个 [`solverrpc` 包](https://github.com/decred/cspp/pull/86) 作为现有 `solver` 的直接替代品。 它允许将与 C 代码（flint2 数学库）的交互提取到一个名为“csppsolver”的单独后台进程中，并从更灵活的纯 Go 代码与该进程对话。
+- 添加了 [build flags](https://github.com/decred/cspp/pull/87)，允许构建一个完全独立的 `csppsolver` 可执行文件，其中嵌入了 flint2 库。 分发此类可执行文件无需安装 flint2。
 
 
 ### DCRDEX
 
 _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私的交易所，用于去信任交易，由原子交换提供支持。_
 
-[v0.5.9 版本](https://github.com/decred/dcrdex/releases/tag/v0.5.9) 是为了支持 [Umbrel 集成](https://github.com/decred/dcrdex/ pull/2153)，但它还包括自 2022 年 12 月左右以来在 `master` 中进行的许多重要修复：
+[v0.5.9 版本](https://github.com/decred/dcrdex/releases/tag/v0.5.9) 是为了支持 [Umbrel 集成](https://github.com/decred/dcrdex/pull/2153)，但它还包括自 2022 年 12 月左右以来在 `master` 中进行的许多重要修复：
 
 - 调整了哪些 [交换费用](https://github.com/decred/dcrdex/pull/2147) 被认为是 BTC 和 DCR 的“最佳”。 最好的案例费用发生在整个订单在一次匹配中被消耗时，即整个订单的 1 笔交易和 1 次输出。 这会影响下订单时显示的费用预览。
 - 自动忽略旧客户端版本生成的非常[旧通知](https://github.com/decred/dcrdex/pull/2144)。
-- [更新 Docker 配置](https://github.com/decred/dcrdex/pull/2112)：优化基础镜像，将 DEX 客户端切换为以非 root 用户身份运行，删除不需要的文件，并优化 [Docker 构建]( https://github.com/decred/dcrdex/pull/2162）用于生产。 除其他外，它有助于在 [Umbrel 应用商店](https://proposals.decred.org/record/8d83046) 中发布 DEX 客户端。
+- [更新 Docker 配置](https://github.com/decred/dcrdex/pull/2112)：优化基础镜像，将 DEX 客户端切换为以非 root 用户身份运行，删除不需要的文件，并优化 [Docker 构建](https://github.com/decred/dcrdex/pull/2162）用于生产。 除其他外，它有助于在 [Umbrel 应用商店](https://proposals.decred.org/record/8d83046) 中发布 DEX 客户端。
 - 添加了 GitHub 工作流程以构建和发布 [发布 Docker 图像](https://github.com/decred/dcrdex/pull/2127)。
 - 更新了 dcrd 的 [地址管理器](https://github.com/decred/dcrdex/pull/2096) 模块以修复在运行测试网 SPV 钱包超过一天时的高 CPU 使用率。
 - 修复了存档清理功能报告的已删除[订单和匹配项](https://github.com/decred/dcrdex/pull/2098) 的数量。
@@ -202,7 +202,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 - @chappjc [tweeted](https://twitter.com/chappjc/status/1623136803661266947) 新合约在主网上与 ETH 和 USDC 执行了许多原子互换。
 - Bug修复。
 
-以太坊对权益证明共识的升级（也称为 [The Merge](https://ethereum.org/en/upgrades/merge/)）恰好 [brick the light client](https://github.com/ ethereum/go-ethereum/issues/25623) 被 DCRDEX 使用，尽管有一些[期望](https://blog.ethereum.org/2021/03/24/finalized-no-24) 它会起作用。 这大大延迟了 DCRDEX v0.6，而必须开发解决方法。 在 [轻客户端](https://geth.ethereum.org/docs/fundamentals/les) 固定之前，DEX 用户可以选择运行自己的完整节点或使用像 [Infura](https:/ /www.infura.io/)、[Ankr](https://www.ankr.com/) 和 [其他 8 个](https://github.com/decred/dcrdex/blob/80b0531a64a806ac8901d812b1e322418118cac1/client/asset /eth/multirpc.go）。
+以太坊对权益证明共识的升级（也称为 [The Merge](https://ethereum.org/en/upgrades/merge/)）恰好 [客户端](https://github.com/ethereum/go-ethereum/issues/25623) 被 DCRDEX 使用，尽管有一些[期望](https://blog.ethereum.org/2021/03/24/finalized-no-24) 它会起作用。 这大大延迟了 DCRDEX v0.6，而必须开发解决方法。 在 [轻客户端](https://geth.ethereum.org/docs/fundamentals/les) 固定之前，DEX 用户可以选择运行自己的完整节点或使用像 [Infura](https://www.infura.io/)、[Ankr](https://www.ankr.com/) 和 [其他 8 个](https://github.com/decred/dcrdex/blob/80b0531a64a806ac8901d812b1e322418118cac1/client/asset/eth/multirpc.go）。
 
 Umbrel 应用商店集成：
 
@@ -257,7 +257,7 @@ v0.1.4 版本中的命令行应用更改：
 
 服务器和 v0.1.4 中的其他更改：
 
-- 添加了对[同时]接受多条消息的支持(https://github.com/companyzero/bisonrelay/pull/97)。 默认情况下，连接的客户端在需要支付之前可以请求最多 8 张消息发送发票。 服务器必须在 24 小时内检测到付款，否则将需要重新付款。 生产服务器可能为此使用不同的参数。
+- 添加了对[同时](https://github.com/companyzero/bisonrelay/pull/97)接受多条消息的支持。 默认情况下，连接的客户端在需要支付之前可以请求最多 8 张消息发送发票。 服务器必须在 24 小时内检测到付款，否则将需要重新付款。 生产服务器可能为此使用不同的参数。
 - [存储收到的消息](https://github.com/companyzero/bisonrelay/pull/110) 以便 `clientrpc` 用户可以检索它们。 这可以防止机器人和其他自动化工具中遗漏消息。
 
 GUI 和 CLI 应用程序的常见更改合并到下一个版本 (v0.1.5) 的 `master` 中：
@@ -277,7 +277,7 @@ GUI 和 CLI 应用程序的常见更改合并到下一个版本 (v0.1.5) 的 `ma
 
 `master` 中的 CLI 应用程序更改：
 
-- 打开通道和[请求接收容量]的简化代码(https://github.com/companyzero/bisonrelay/pull/147)。
+- 打开通道和[请求接收容量](https://github.com/companyzero/bisonrelay/pull/147)的简化代码。
 - 允许指定嵌入式 dcrlnd 实例将监听的 [自定义 IP 地址](https://github.com/companyzero/bisonrelay/pull/149)，而不是默认的“127.0.0.1”。
 - 改进了[文本换行](https://github.com/companyzero/bisonrelay/pull/132) 和多行元素的渲染。
 - 添加了[密钥交换调解](https://github.com/companyzero/bisonrelay/pull/134) 和[作者昵称](https://github.com/companyzero/bisonrelay/pull/151) 到使用的自动化 API 通过机器人和其他工具。
