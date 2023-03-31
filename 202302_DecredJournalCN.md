@@ -461,7 +461,7 @@ Decred Magazine 已开始在 TikTok 上建立受众。 非常感谢与 [@decredm
 
 **翻译:**
 
-- [点对点电子公司](https://www.decredmagazine.com/peer-to-peer-electronic-corporation/) @Tivra - [中文](https://github.com/DominicTing/decred-ZH-translations/blob/master/Peer-to-Peer%20Electronic%20Corporation.md）@Dominic
+- [点对点电子公司](https://www.decredmagazine.com/peer-to-peer-electronic-corporation/) @Tivra - 中文 @Dominic
 - Decred 月报 十二月至一月 共有 3 个新的 [翻译](https://xaur.github.io/decred-news/) 到阿拉伯语 (@arij, @abdulrahman4)、中文 (@Dominic) 和波兰语 (@科泽尔）。 感谢大家传播 Decred 的信息！
 
 **非英语内容:**
