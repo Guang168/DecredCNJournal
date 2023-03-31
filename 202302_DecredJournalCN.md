@@ -1,127 +1,127 @@
-# Decred Journal – February 2023
+# Decred 月报 – 2023 年 2 月
 
 ![](img/202302.1.768.png)
 
-_Image: Decred Birthday Cake_
+_图片：Decred 生日蛋糕_
 
-Highlights of February:
+二月亮点：
 
-- Decred passed the milestone of 7 years in operation.
-- Decred DEX saw a v0.5.9 bugfix and polish release, and there are extensive reports of heavy dev progress, v0.6 is getting close.
-- Bison Relay v0.1.4 was released, improving UX, and an Oprah tipping bot is now operating on BR.
-- The Timestamply redesign is now live.
-- The ticket price saw a sharp drop followed by epic upswing, which took it to a new all time high.
+- Decred 达成了运营 7 年的里程碑。
+- Decred DEX v0.5.9 进行了bug修复和版本优化，并且有大量关于重大开发进展的报告，v0.6 即将到来。
+- Bison Relay v0.1.4 已发布，改进了用户体验，Oprah 打赏机器人现已在 BR 上运行。
+- Timestamply 重新设计现已上线。
+- 选票价格先是大幅下跌，然后是史诗般的上涨，再创历史新高。
 
-Contents:
+内容：
 
-- [DCRDEX v0.5.9 Release](#dcrdex-v059-release)
-- [Bison Relay v0.1.4 Release](#bison-relay-v014-release)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
-
-
-## DCRDEX v0.5.9 Release
-
-v0.5.9 was released with v0.6 just around the corner to enable automatically deployed Docker images for Umbrel. However, there are many other fixes in this release that were backported from v0.6 development:
-
-- Improved client database compaction to save disk space.
-- More accurate swap fee estimates.
-- Protections against zero fee swaps.
-- Improved performance.
-- Cleaned up logging.
-- Fixed about a dozen edge cases.
-
-Full release notes and standalone DEX app downloads can be found [here](https://github.com/decred/dcrdex/releases). Hashes and signatures are included that allow for [verification](https://docs.decred.org/advanced/verifying-binaries) that downloads have not been damaged or modified by third parties.
+- [DCRDEX v0.5.9 发布](#dcrdex-v059-release)
+- [Bison Relay v0.1.4 发布](#bison-relay-v014-release)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
-## Bison Relay v0.1.4 Release
+## DCRDEX v0.5.9 发布
 
-Bison Relay received another quality of life update with v0.1.4:
+v0.5.9 随 v0.6 一起发布，为 Umbrel 启用自动部署的 Docker 镜像。但是，此版本中还有许多其它修复是从 v0.6 开发向后移植的：
 
-- Everything works faster.
-- Adjustable font size.
-- Image and link attachments.
-- Right-side panel for easier access to actions on users and group chats.
-- More robust maintenance of key exchanges.
-- Tipping bot that rewards authors of valuable content.
-- Many other UX improvements.
+- 改进客户端数据库压缩以节省磁盘空间。
+- 更准确的交易费估算。
+- 防止零费用交易。
+- 增强性能。
+- 清理日志记录。
+- 修复了大约十几个边缘错误。
 
-Short video overview of new features is available [here](https://www.youtube.com/watch?v=Yz-IPu00eDc).
-
-Get the latest release on the improved [downloads page](https://bisonrelay.org/download/). Bug reports and feedback are welcome in [GitHub issue tracker](https://github.com/companyzero/bisonrelay/issues) and the [#br Matrix chat](https://chat.decred.org/#/room/#br:decred.org).
+可以在[此处](https://github.com/decred/dcrdex/releases)找到完整的发行说明和独立的 DEX 应用程序下载。包含的散列和签名允许[验证](https://docs.decred.org/advanced/verifying-binaries)下载未被第三方损坏或修改。
 
 
-## Development
+## Bison Relay v0.1.4 发布
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+Bison Relay 在 v0.1.4 中收到了另一个更新：
+
+- 一切都运行得更快。
+- 可调字体大小。
+- 图片和链接附件。
+- 右侧面板可以更轻松地访问对用户和群聊的操作。
+- 更强大的密钥交换维护。
+- 奖励有价值内容作者的打赏机器人。
+- 许多其它用户体验改进。
+
+[此处](https://www.youtube.com/watch?v=Yz-IPu00eDc)提供新功能的简短视频概述。
+
+[在改进的下载页面](https://bisonrelay.org/download/)上获取最新版本。欢迎在[GitHub 问题跟踪器](https://github.com/companyzero/bisonrelay/issues) 和 [#br Matrix 聊天](https://chat.decred.org/#/room/#br:decred.org)中报告错误和反馈。
+
+
+## 开发进展总结
+
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-Most changes focused on making consensus deployment code more robust and easier to understand:
+大多数更改都集中在使共识部署代码更健壮且更易于理解：
 
-- Reworked [consensus deployment](https://github.com/decred/dcrd/pull/3056) validation logic and tests to make it easier to modify and bring it more in line with the more modern coding practices used in the codebase. Terms "deployment" and "agenda" refer to [consensus vote definitions](https://github.com/decred/dcrd/blob/974b1b3ccc7393c5450d75f1f58b75b80020cc3b/chaincfg/mainnetparams.go#L139) that include description, vote choices, validity period, and other details.
-- Enforce [globally unique vote IDs](https://github.com/decred/dcrd/pull/3057) for different agendas. Technically it was not incorrect to reuse vote IDs, however various software in the Decred ecosystem implicitly assumes that IDs are unique across all agendas. This unwritten rule is now formalized to prevent confusion and simplify code dealing with it.
-- Simplified code that tracks the status of [consensus rule changes](https://github.com/decred/dcrd/pull/3059).
-- Added a network parameter to [force consensus votes](https://github.com/decred/dcrd/pull/3060) to certain outcomes and activate their features accordingly. This has already been used on testing networks to quickly test features without going through an entire voting process. The way it worked though was found to be surprising behavior: "if deployment is not found in parameters for a given network, it is considered active". Other issues included complexity of testing the voting process itself, and such implicitly forced votes being invisible in commands like `getblockchaininfo`. All these issues were fixed and it is now easier to locate forced rules in the code. A safety check was also added to ensure the forced vote choices cannot be used on the main network.
+- 重新设计了 [共识部署](https://github.com/decred/dcrd/pull/3056) 验证逻辑和测试，使其更容易修改并使其更符合代码库中使用的更现代的编码实践。 术语“部署”和“议程”指的是[共识投票定义](https://github.com/decred/dcrd/blob/974b1b3ccc7393c5450d75f1f58b75b80020cc3b/chaincfg/mainnetparams.go#L139)，包括描述、投票选择、有效期、 和其他细节。
+- 为不同的议程强制执行[全球唯一的投票 ID](https://github.com/decred/dcrd/pull/3057)。 从技术上讲，重复使用投票 ID 并没有错，但是 Decred 生态系统中的各种软件隐含地假设 ID 在所有议程中都是唯一的。 这个不成文的规则现在已经正式化，以防止混淆并简化处理它的代码。
+- 跟踪 [共识规则更改](https://github.com/decred/dcrd/pull/3059) 状态的简化代码。
+- 添加了一个网络参数以[强制共识投票](https://github.com/decred/dcrd/pull/3060) 到某些结果并相应地激活它们的功能。 这已经被用于测试网络以快速测试功能，而无需经过整个投票过程。 虽然它的工作方式被发现是令人惊讶的行为：“如果在给定网络的参数中找不到部署，则认为它是活动的”。 其他问题包括测试投票过程本身的复杂性，以及这种隐式强制投票在 getblockchaininfo 等命令中是不可见的。 所有这些问题都已修复，现在可以更轻松地在代码中找到强制规则。 还添加了安全检查以确保不能在主网络上使用强制投票选择。
 
 Docker:
 
-- Added the ability to build [Docker images](https://github.com/decred/dcrd/pull/3048) for a specific Git version.
-- Print the [dcrctl version](https://github.com/decred/dcrd/pull/3062) in addition to the dcrd version since they come from separate repositories now.
+- 添加了为特定 Git 版本构建 [Docker 映像](https://github.com/decred/dcrd/pull/3048) 的功能。
+- 除了 dcrd 版本之外，还打印 [dcrctl 版本](https://github.com/decred/dcrd/pull/3062)，因为它们现在来自单独的存储库。
 
-Other:
+其它:
 
-- Switch to new [atomic types](https://github.com/decred/dcrd/pull/3053) in unexported modules thanks to Go 1.19. This makes the code less prone to human error and a bit less verbose. Exported modules are upgraded in a [separate PR](https://github.com/decred/dcrd/pull/3054) which will be merged later to [not force the consumers](https://github.com/decred/dcrd/pull/3054#issuecomment-1428189607) to newer Go versions too soon.
-- Updated [connection request](https://github.com/decred/dcrd/pull/3055) tracking to prevent concurrency bugs.
-- Fixed building on OpenBSD on [riscv64](https://github.com/decred/dcrd/pull/3049) CPU architecture.
-- Updated build infra and docs for [Go 1.20](https://github.com/decred/dcrd/pull/3052) and dropped support for Go 1.18.
-- Dependency updates.
+- 由于 Go 1.19，在未导出的模块中切换到新的[原子类型](https://github.com/decred/dcrd/pull/3053)。 这使得代码不太容易出现人为错误，并且不那么冗长。 导出的模块在 [单独的 PR](https://github.com/decred/dcrd/pull/3054) 中升级，稍后将合并到 [不强制消费者](https://github.com/decred/ dcrd/pull/3054#issuecomment-1428189607) 到更新的 Go 版本太快了。
+- 更新了 [连接请求](https://github.com/decred/dcrd/pull/3055) 跟踪以防止并发错误。
+- 修复了基于 [riscv64](https://github.com/decred/dcrd/pull/3049) CPU 架构的 OpenBSD 构建。
+- 更新了 [Go 1.20](https://github.com/decred/dcrd/pull/3052) 的构建基础设施和文档，并放弃了对 Go 1.18 的支持。
+- 依赖更新。
 
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-- Fixed a deadlock in [address discovery](https://github.com/decred/dcrwallet/pull/2204) that could be triggered by a poorly timed `getnewaddress` command.
-- Updated the [`addrmgr` module](https://github.com/decred/dcrwallet/pull/2206) from dcrd for performance improvements under SPV mode when few quality peers are available.
-- Updated [golang.org/x modules](https://github.com/decred/dcrwallet/pull/2209), including newer `x/sys` to support building on [OpenBSD](https://github.com/decred/dcrwallet/pull/2208) running on riscv64 CPU.
+- 修复了 [地址发现](https://github.com/decred/dcrwallet/pull/2204) 中的死锁，该死锁可能由时机不佳的 getnewaddress 命令触发。
+- 更新了 dcrd 中的 [`addrmgr` 模块](https://github.com/decred/dcrwallet/pull/2206)，以便在 SPV 模式下可用的质量对等点很少时提高性能。
+- 更新了 [golang.org/x 模块](https://github.com/decred/dcrwallet/pull/2209)，包括更新的 `x/sys` 以支持在 [OpenBSD](https://github.com) 上构建 /decred/dcrwallet/pull/2208) 在 riscv64 CPU 上运行。
 
 
 ### dcrctl
 
-_[dcrctl](https://github.com/decred/dcrctl) is a command-line client for dcrd and dcrwallet._
+_[dcrctl](https://github.com/decred/dcrctl) 是 dcrd 和 dcrwallet 的命令行客户端。
 
-- Updated [dependencies](https://github.com/decred/dcrctl/pull/54) to latest modules. This allows building on OpenBSD riscv64 and also significantly reduces the indirect dependencies.
+- 将 [dependencies](https://github.com/decred/dcrctl/pull/54) 更新为最新模块。 这允许在 OpenBSD riscv64 上构建并且还显着减少了间接依赖性。
 
 
 ### Decrediton
 
-_[Decrediton](https://github.com/decred/decrediton) is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混合、闪电网络、DEX 交易等功能。 它在有或没有完整的区块链（SPV 模式）的情况下运行。_
 
-In progress:
+进行中：
 
-- [Update to React v18](https://github.com/decred/decrediton/pull/3851). It may require big changes but should bring performance improvements.
+- [更新到 React v18](https://github.com/decred/decrediton/pull/3851)。 它可能需要进行大的更改，但会带来性能改进。
 
 
 ### vspd
 
-_[vspd](https://github.com/decred/vspd) is server software for running a Voting Service Provider. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_[vspd](https://github.com/decred/vspd) 是用于运行投票服务提供商的服务器软件。 VSP 代表其用户全天候 24/7 投票，不能窃取资金。_
 
-- Check if the [VSP is closed](https://github.com/decred/vspd/pull/369) much earlier, before dcrd/dcrwallet/database clients are initialized. This is more efficient and prevents possible errors.
-- Updated to [Go 1.20](https://github.com/decred/vspd/pull/368).
-- Tests are now run as [sub-tests](https://github.com/decred/vspd/pull/365) to enable better reporting of test results and metrics.
-- Added tests for [error handling](https://github.com/decred/vspd/pull/363) that ensure vspd errors are correctly formatted, and non-vspd errors contain adequate information for debugging.
-- Removed [dcrstakepool instructions](https://github.com/decred/vspd/pull/370) from documentation as it is now defunct.
+- 检查 [VSP 是否已关闭](https://github.com/decred/vspd/pull/369) 是否更早，在 dcrd/dcrwallet/database 客户端初始化之前。 这样效率更高并且可以防止可能的错误。
+- 更新至 [Go 1.20](https://github.com/decred/vspd/pull/368)。
+- 测试现在作为 [子测试](https://github.com/decred/vspd/pull/365) 运行，以便更好地报告测试结果和指标。
+- 添加了 [错误处理](https://github.com/decred/vspd/pull/363) 的测试，确保 vspd 错误的格式正确，非 vspd 错误包含足够的调试信息。
+- 从文档中删除了 [dcrstakepool 说明](https://github.com/decred/vspd/pull/370)，因为它现已失效。
 
 
 ### cspp
@@ -135,156 +135,156 @@ _[cspp](https://github.com/decred/cspp) is a server for coordinating coin mixes 
 
 ### DCRDEX
 
-_[DCRDEX](https://github.com/decred/dcrdex) is a non-custodial, privacy-respecting exchange for trustless trading, powered by atomic swaps._
+_[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私的交易所，用于去信任交易，由原子交换提供支持。_
 
-The [v0.5.9 release](https://github.com/decred/dcrdex/releases/tag/v0.5.9) was made to support the [Umbrel integration](https://github.com/decred/dcrdex/pull/2153), but it also includes many important fixes made in `master` since around December 2022:
+[v0.5.9 版本](https://github.com/decred/dcrdex/releases/tag/v0.5.9) 是为了支持 [Umbrel 集成](https://github.com/decred/dcrdex/ pull/2153)，但它还包括自 2022 年 12 月左右以来在 `master` 中进行的许多重要修复：
 
-- Adjusted which [swap fees](https://github.com/decred/dcrdex/pull/2147) are considered "best" for BTC and DCR. The best case fees occur when the entire order is consumed in a single match, i.e. 1 transaction and 1 output for the entire order. This affects fee previews shown when placing an order.
-- Automatically ignore very [old notifications](https://github.com/decred/dcrdex/pull/2144) generated by old client versions.
-- [Updated Docker config](https://github.com/decred/dcrdex/pull/2112): optimized base images, switched DEX client to run as non-root user, removed unneeded files, and optimized [Docker build](https://github.com/decred/dcrdex/pull/2162) for production. Among other things it helps to publish the DEX client in [Umbrel app store](https://proposals.decred.org/record/8d83046).
-- Added GitHub workflow to build and publish [release Docker images](https://github.com/decred/dcrdex/pull/2127).
-- Updated dcrd's [address manager](https://github.com/decred/dcrdex/pull/2096) module to fix high CPU use when running testnet SPV wallet for longer than a day.
-- Fixed the number of deleted [orders and matches](https://github.com/decred/dcrdex/pull/2098) that is reported by archive cleanup functions.
-- Fixed pointless [reconnect attempts](https://github.com/decred/dcrdex/pull/2130) when a "not standards compliant" certificate error is detected on some macOS systems.
-- Fixed client trying to run when [accounts database](https://github.com/decred/dcrdex/pull/2119) failed to load.
-- Dependency updates, including minor security fixes.
-- Backported [~14 other fixes](https://github.com/decred/dcrdex/pull/2153) from `master` made in December-January.
+- 调整了哪些 [交换费用](https://github.com/decred/dcrdex/pull/2147) 被认为是 BTC 和 DCR 的“最佳”。 最好的案例费用发生在整个订单在一次匹配中被消耗时，即整个订单的 1 笔交易和 1 次输出。 这会影响下订单时显示的费用预览。
+- 自动忽略旧客户端版本生成的非常[旧通知](https://github.com/decred/dcrdex/pull/2144)。
+- [更新 Docker 配置](https://github.com/decred/dcrdex/pull/2112)：优化基础镜像，将 DEX 客户端切换为以非 root 用户身份运行，删除不需要的文件，并优化 [Docker 构建]( https://github.com/decred/dcrdex/pull/2162）用于生产。 除其他外，它有助于在 [Umbrel 应用商店](https://proposals.decred.org/record/8d83046) 中发布 DEX 客户端。
+- 添加了 GitHub 工作流程以构建和发布 [发布 Docker 图像](https://github.com/decred/dcrdex/pull/2127)。
+- 更新了 dcrd 的 [地址管理器](https://github.com/decred/dcrdex/pull/2096) 模块以修复在运行测试网 SPV 钱包超过一天时的高 CPU 使用率。
+- 修复了存档清理功能报告的已删除[订单和匹配项](https://github.com/decred/dcrdex/pull/2098) 的数量。
+- 修复了在某些 macOS 系统上检测到“不符合标准”证书错误时毫无意义的 [重新连接尝试](https://github.com/decred/dcrdex/pull/2130)。
+- 修复了客户端在 [账户数据库](https://github.com/decred/dcrdex/pull/2119) 加载失败时尝试运行的问题。
+- 依赖更新，包括次要的安全修复。
+- 从 12 月至 1 月制作的“master”向后移植了[~14 个其他修复](https://github.com/decred/dcrdex/pull/2153)。
 
-All other changes below are in the `master` branch towards the next [v0.6 release](https://github.com/decred/dcrdex/milestone/22).
+以下所有其他更改都在下一个 [v0.6 版本](https://github.com/decred/dcrdex/milestone/22) 的 `master` 分支中。
 
-Client changes:
+客户端更改：
 
-- Handle more edge cases when [server certificate changes](https://github.com/decred/dcrdex/pull/2019).
-- Hide [order form](https://github.com/decred/dcrdex/pull/2054) if asset version is not supported.
-- Show [fees as a percentage](https://github.com/decred/dcrdex/pull/2110) of the order for token assets, if fiat rates are available for both the token and its parent asset.
-- Allow to connect to a DEX server [in view-only mode](https://github.com/decred/dcrdex/pull/1986) without registration, and browse markets and order books.
+- 在[服务器证书更改](https://github.com/decred/dcrdex/pull/2019) 时处理更多边缘情况。
+- 如果不支持资产版本，则隐藏 [order form](https://github.com/decred/dcrdex/pull/2054)。
+- 显示代币资产订单的[费用百分比](https://github.com/decred/dcrdex/pull/2110)，如果法定汇率可用于代币及其母资产。
+- 允许连接到 DEX 服务器 [仅查看模式](https://github.com/decred/dcrdex/pull/1986) 无需注册，并浏览市场和订单簿。
 
-Client, fidelity bonds progress:
+客户端，忠诚债券进展：
 
-- Implemented main [bond lifecycle](https://github.com/decred/dcrdex/pull/2036) machinery for the client, including automatic bond rotation. When current bond is about to expire, it must be replaced by another bond at correct time to continue using the DEX without interruption. A [diagram](https://github.com/decred/dcrdex/blob/7603ead02dc6e040e69b50f8796e3f23aac06e1b/client/core/bond.go#L49) was added to explain the lifecycle of bonds.
-- Implemented maintenance of [bond funds reserves](https://github.com/decred/dcrdex/pull/2103). A portion of wallet's funds will be reserved for future bonds plus a buffer for transaction fees. When reserves are enforced, transactions like wallet withdraws or trading orders will be restricted to a lower available balance. Wallet balance report will show funds locked in existing bonds and reserved for future bonds. Bonds will use coin selection strategy that is different from one that funds trading orders. Orders try to consume fewer outputs to minimize fees (can spend more DCR and return excess as change), while bonds try to put an exact DCR amount into the time lock (and cannot rely on change output). Pre-sizing of inputs for swap transactions was enabled by default for DCR because it benefits bond management and DCR fees are cheap now. It will not be possible to disable accounts that have unspent bonds. Initial implementation supports only DCR bonds but the foundations have been added to allow bonds in other assets.
-- Changed registration UI flow to [create a bond](https://github.com/decred/dcrdex/pull/2025) instead of paying a fee. User will have a choice how strong the bond should be. If account tier is below the trading level and there are pending bonds, Markets page will show bond confirmations required before the user can trade. Post Bond feature was added for manual bond posting.
-- Optimized [coin selection](https://github.com/decred/dcrdex/pull/2169) algorithm to create bonds closer to the target DCR amount.
-- Completed, in progress, and remaining tasks for the bonds subsystem can be seen on [this dashboard](https://github.com/orgs/decred/projects/2/views/1).
-- In the big picture, [fidelity bonds](https://en.wikipedia.org/wiki/Fidelity_bond) are needed to transition from users *paying fees* to the server, to users *locking funds* while they use the server. Both approaches protect the server from spam and other undesired behavior. Bonds are more complex than fees but have advantages. Users can return locked funds when they no longer want to trade, and also bonds support the transition from standalone servers to a decentralized [server mesh](https://github.com/decred/dcrdex/issues/1765) (with the fees system it would be unclear which servers should collect fees).
+- 为客户实施了主要的[债券生命周期](https://github.com/decred/dcrdex/pull/2036) 机制，包括自动债券轮换。 当当前债券即将到期时，必须在正确的时间用另一个债券替换它才能继续使用 DEX 而不会中断。 添加[图表](https://github.com/decred/dcrdex/blob/7603ead02dc6e040e69b50f8796e3f23aac06e1b/client/core/bond.go#L49)来解释债券的生命周期。
+- 实施维护[债券基金储备](https://github.com/decred/dcrdex/pull/2103)。 钱包的一部分资金将保留用于未来的债券以及交易费用的缓冲。 当储备金被强制执行时，钱包提款或交易订单等交易将被限制在较低的可用余额范围内。 钱包余额报告将显示锁定在现有债券中并为未来债券预留的资金。 债券将使用不同于为交易订单提供资金的选币策略。 订单试图消耗更少的输出以最小化费用（可以花费更多的 DCR 并返回多余的零钱），而债券试图将确切的 DCR 数量放入时间锁中（并且不能依赖零钱输出）。 默认情况下，为 DCR 启用掉期交易输入的预先调整大小，因为它有利于债券管理，而且 DCR 费用现在很便宜。 无法禁用未使用债券的帐户。 初始实施仅支持 DCR 债券，但已添加基础以允许其他资产中的债券。
+- 将注册 UI 流程更改为 [创建债券](https://github.com/decred/dcrdex/pull/2025) 而不是支付费用。 用户可以选择债券的强度。 如果账户等级低于交易水平并且有未决债券，市场页面将显示用户可以交易之前需要的债券确认。 为手动债券过帐添加了后债券功能。
+- 优化[硬币选择](https://github.com/decred/dcrdex/pull/2169) 算法以创建更接近目标 DCR 数量的债券。
+- 可以在 [此仪表板](https://github.com/orgs/decred/projects/2/views/1) 上查看债券子系统已完成、正在进行和剩余的任务。
+- 在大局中，需要 [fidelity bond](https://en.wikipedia.org/wiki/Fidelity_bond) 从用户*支付费用*到服务器，再到用户在使用服务器时*锁定资金* . 这两种方法都可以保护服务器免受垃圾邮件和其他不良行为的侵害。 债券比费用更复杂，但也有优势。 用户可以在不想交易时返还锁定的资金，债券还支持从独立服务器过渡到去中心化的[服务器网格](https://github.com/decred/dcrdex/issues/1765)（收费 系统不清楚哪些服务器应该收取费用）。
 
-Client fixes:
+客户端修复：
 
-- Fixed creating [token wallet](https://github.com/decred/dcrdex/pull/2121) when the parent wallet has not yet been created.
-- Fixed [order status](https://github.com/decred/dcrdex/pull/2140) discrepancy on different views.
-- Fixed confusing [sync progress](https://github.com/decred/dcrdex/pull/2133) reporting on Register page.
-- Fixed repeated re-fetching of [asset icons](https://github.com/decred/dcrdex/pull/2163).
-- Fixed failure to withdraw [all available DCR](https://github.com/decred/dcrdex/pull/2170) from the wallet.
-- Fixed [cursor and sort direction](https://github.com/decred/dcrdex/pull/2172) on the recent matches table.
-- Fixed [wallet balance](https://github.com/decred/dcrdex/pull/2183) not getting updated after funding an order.
-- Fixed ~4 concurrency bugs.
-- Other fixes for UI, tests, documentation, and Docker image optimizations.
+- 修复了在尚未创建父钱包时创建 [令牌钱包](https://github.com/decred/dcrdex/pull/2121) 的问题。
+- 修复了[订单状态](https://github.com/decred/dcrdex/pull/2140) 不同视图的差异。
+- 修复了注册页面上令人困惑的 [同步进度](https://github.com/decred/dcrdex/pull/2133) 报告。
+- 修复了重复重新获取 [资产图标](https://github.com/decred/dcrdex/pull/2163)。
+- 修复了无法从钱包中提取 [all available DCR](https://github.com/decred/dcrdex/pull/2170) 的问题。
+- 修复了最近匹配表上的[光标和排序方向](https://github.com/decred/dcrdex/pull/2172)。
+- 修复了 [钱包余额](https://github.com/decred/dcrdex/pull/2183) 在为订单提供资金后未更新的问题。
+- 修复了 ~4 个并发错误。
+- 针对 UI、测试、文档和 Docker 图像优化的其他修复。
 
-Ethereum, RPC data providers:
+以太坊、RPC 数据提供者：
 
-- Added ability for the DEX server to configure [multiple Ethereum data providers](https://github.com/decred/dcrdex/pull/2104) and switch to another provider if active provider stops working.
-- Added monitoring of [RPC provider health](https://github.com/decred/dcrdex/pull/2125). Previously, ETH backend would only start if all configured providers could be connected to and had an updated blockchain. Now ETH backend will start if at least one provider connection works and reports a fresh block. After connection is established providers will be continuously monitored for healthy responses and the best providers will be used first.
-- Improved management of [known and compliant RPC providers](https://github.com/decred/dcrdex/pull/2102).
-- Fixed attempts to use RPC providers that have [too old block headers](https://github.com/decred/dcrdex/pull/2074), meaning they are not synced with the network.
+- 添加了 DEX 服务器配置 [多个以太坊数据提供者](https://github.com/decred/dcrdex/pull/2104) 并在活动提供者停止工作时切换到另一个提供者的能力。
+- 添加了对 [RPC 提供程序运行状况](https://github.com/decred/dcrdex/pull/2125) 的监控。 以前，只有在所有配置的提供者都可以连接到并具有更新的区块链时，ETH 后端才会启动。 现在，如果至少有一个供应商连接正常并报告一个新区块，ETH 后端将启动。 建立连接后，将持续监控供应商的健康响应，并首先使用最好的供应商。
+- 改进了 [已知且合规的 RPC 提供程序](https://github.com/decred/dcrdex/pull/2102) 的管理。
+- 修复了尝试使用具有 [太旧的块头](https://github.com/decred/dcrdex/pull/2074) 的 RPC 提供程序的问题，这意味着它们未与网络同步。
 
-Ethereum, swap fee optimization:
+以太坊，掉期费优化：
 
-- Made [swap estimates](https://github.com/decred/dcrdex/pull/2129) aware of Ethereum block gas limit.
-- Attempt to use a lower gas limit for [batched swaps](https://github.com/decred/dcrdex/pull/2143) (multiple swaps in one transaction) before giving up and failing with insufficient funds.
-- Adjusted [fee estimates](https://github.com/decred/dcrdex/pull/2139) to lower and more realistic amounts.
+- 使 [交换估计](https://github.com/decred/dcrdex/pull/2129) 了解以太坊区块气体限制。
+- 在放弃和因资金不足而失败之前，尝试对 [batched swap](https://github.com/decred/dcrdex/pull/2143)（一次交易中的多次交换）使用较低的 gas 限制。
+- 调整 [费用估算](https://github.com/decred/dcrdex/pull/2139) 以降低和更现实的金额。
 
-Ethereum, other changes:
+以太坊，其他变化：
 
-- Clarified API [versioning](https://github.com/decred/dcrdex/pull/2094) of ETH and its child token assets. For now token assets will use the same version as the parent asset. These version numbers will be used to determine if different clients and servers are compatible.
-- Removed the [`isRedeemable` method](https://github.com/decred/dcrdex/pull/2111) from Solidity smart contracts for ETH and ERC-20 swaps, and disabled the use of `estimateRedeemGas` call. Both methods reveal a secret to the Ethereum node ahead of the redeem transaction. This was not a problem when the client was using a private node, but it becomes a vulnerability with public RPC providers, which DEX is forced to use since The Merge. Solidity compiler was updated to v0.8.18.
-- Build with [go-ethereum](https://github.com/ethereum/go-ethereum) code [included by default](https://github.com/decred/dcrdex/pull/2157). go-ethereum is popular Ethereum software that powers ETH and ERC-20 support in DCRDEX. Unlike the DEX, it is licensed under GNU Lesser General Public License (LGPL). The burden of this license may be unacceptable for closed source software willing to use DCRDEX and so a flag was added to exclude go-ethereum from the build.
-- Enabled ETH and USDC on [mainnet](https://github.com/decred/dcrdex/pull/2013) and adjusted gas limits. Reduced redeem transaction confirmations from 10 to 3 since reorgs are [considered](https://github.com/decred/dcrdex/commit/5c1ff8ab05a43b431f6d8e091692c32ea181e937) very unlikely after The Merge. Smart contract enthusiasts can find the new swap contract for for ETH [here](https://etherscan.io/address/0x8c17e4968b6903e1601be82ca989c5b5e2c7b400#code), for ERC-20 [here](https://etherscan.io/address/0x1bbd020ddd6dc01f974aa74d2d727b2a6782f32d#code).
-- @chappjc [tweeted](https://twitter.com/chappjc/status/1623136803661266947) that new contracts executed many atomic swaps with ETH and USDC on mainnet.
-- Bug fixes.
+- 阐明了 ETH 及其子代币资产的 API [版本控制](https://github.com/decred/dcrdex/pull/2094)。 目前，令牌资产将使用与父资产相同的版本。 这些版本号将用于确定不同的客户端和服务器是否兼容。
+- 从 ETH 和 ERC-20 交换的 Solidity 智能合约中删除了 [`isRedeemable` 方法](https://github.com/decred/dcrdex/pull/2111)，并禁用了 `estimateRedeemGas` 调用。 这两种方法都会在赎回交易之前向以太坊节点揭示一个秘密。 当客户端使用私有节点时，这不是问题，但它成为公共 RPC 提供程序的漏洞，自合并以来 DEX 被迫使用。 Solidity 编译器已更新至 v0.8.18。
+- 使用 [go-ethereum](https://github.com/ethereum/go-ethereum) 代码构建 [默认包含](https://github.com/decred/dcrdex/pull/2157)。 go-ethereum 是流行的以太坊软件，支持 DCRDEX 中的 ETH 和 ERC-20 支持。 与 DEX 不同，它是根据 GNU 宽松通用公共许可证 (LGPL) 获得许可的。 对于愿意使用 DCRDEX 的闭源软件来说，此许可证的负担可能是不可接受的，因此添加了一个标志以从构建中排除 go-ethereum。
+- 在 [mainnet](https://github.com/decred/dcrdex/pull/2013) 上启用了 ETH 和 USDC 并调整了气体限制。 将兑换交易确认从 10 次减少到 3 次，因为重组 [considered](https://github.com/decred/dcrdex/commit/5c1ff8ab05a43b431f6d8e091692c32ea181e937) 在合并之后非常不可能。 智能合约爱好者可以找到 ETH [此处](https://etherscan.io/address/0x8c17e4968b6903e1601be82ca989c5b5e2c7b400#code) 和 ERC-20 [此处](https://etherscan.io/address/0x1bbd020ddd6dc01f974aa72f223d727) 的新交换合约 ＃代码）。
+- @chappjc [tweeted](https://twitter.com/chappjc/status/1623136803661266947) 新合约在主网上与 ETH 和 USDC 执行了许多原子互换。
+- Bug修复。
 
-Ethereum's upgrade to proof-of-stake consensus (also called [The Merge](https://ethereum.org/en/upgrades/merge/)) happened to [brick the light client](https://github.com/ethereum/go-ethereum/issues/25623) used by DCRDEX, despite some [expectation](https://blog.ethereum.org/2021/03/24/finalized-no-24) that it will work. This has delayed DCRDEX v0.6 quite a bit while a workaround had to be developed. Until [light clients](https://geth.ethereum.org/docs/fundamentals/les) are fixed DEX users will have a choice of running an own full node or using centralized chain data providers like [Infura](https://www.infura.io/), [Ankr](https://www.ankr.com/), and [8 others](https://github.com/decred/dcrdex/blob/80b0531a64a806ac8901d812b1e322418118cac1/client/asset/eth/multirpc.go).
+以太坊对权益证明共识的升级（也称为 [The Merge](https://ethereum.org/en/upgrades/merge/)）恰好 [brick the light client](https://github.com/ ethereum/go-ethereum/issues/25623) 被 DCRDEX 使用，尽管有一些[期望](https://blog.ethereum.org/2021/03/24/finalized-no-24) 它会起作用。 这大大延迟了 DCRDEX v0.6，而必须开发解决方法。 在 [轻客户端](https://geth.ethereum.org/docs/fundamentals/les) 固定之前，DEX 用户可以选择运行自己的完整节点或使用像 [Infura](https:/ /www.infura.io/)、[Ankr](https://www.ankr.com/) 和 [其他 8 个](https://github.com/decred/dcrdex/blob/80b0531a64a806ac8901d812b1e322418118cac1/client/asset /eth/multirpc.go）。
 
-Umbrel app store integration:
+Umbrel 应用商店集成：
 
-- New repository added to Decred GitHub organization for hosting [Umbrel integration](https://github.com/decred/umbrel-app-store) code. Umbrel users can follow the instructions to add this repository and install the DCRDEX package.
-- DCRDEX package was submitted to [official Umrel app store](https://github.com/getumbrel/umbrel-apps/pull/430) for review. Unlike custom Community app stores it requires centralized approval.
+- 添加到 Decred GitHub 组织的新存储库用于托管 [Umbrel 集成](https://github.com/decred/umbrel-app-store) 代码。 Umbrel 用户可以按照说明添加此存储库并安装 DCRDEX 包。
+- DCRDEX 包已提交至 [官方 Umrel 应用商店](https://github.com/getumbrel/umbrel-apps/pull/430) 进行审核。 与自定义社区应用程序商店不同，它需要集中批准。
 
 
 ### Timestamply
 
-_[Timestamply](https://github.com/decred/dcrtimegui) is a free service for timestamping files powered by Decred blockchain. A timestamp proves that a certain file has existed at a certain moment of time. This has a range of applications in protecting data integrity._
+_[Timestamply](https://github.com/decred/dcrtimegui) 是由 Decred 区块链提供支持的免费时间戳文件服务。 时间戳证明某个文件在某个时刻已经存在。 这在保护数据完整性方面有一系列应用。_
 
-- Full site [redesign](https://github.com/decred/dcrtimegui/pull/151) announced in [January](202301.md#timestamply) has been finalized and deployed at [timestamp.decred.org](https://timestamp.decred.org/). All existing data has been [migrated](https://proposals.decred.org/record/855a506/comments/20).
-- Added a new API method that returns [last digests](https://github.com/decred/dcrtime/pull/84) timestamped by the dcrtime server. It is used by the new GUI.
-- Upgraded to [Node v16](https://github.com/decred/dcrtimegui/pull/152).
+- [1 月](202301.md#timestamply) 宣布的完整站点 [重新设计](https://github.com/decred/dcrtimegui/pull/151) 已完成并部署在 [timestamp.decred.org](https //时间戳.decred.org/）。 所有现有数据都已[迁移](https://proposals.decred.org/record/855a506/comments/20)。
+- 添加了一个新的 API 方法，该方法返回由 dcrtime 服务器标记的 [last digests](https://github.com/decred/dcrtime/pull/84)。 它由新的 GUI 使用。
+- 升级到 [Node v16](https://github.com/decred/dcrtimegui/pull/152)。
 
 
 ### Documentation
 
-_[dcrdocs](https://github.com/decred/dcrdocs) is the source code for Decred [user documentation](https://docs.decred.org/)._
+_[dcrdocs](https://github.com/decred/dcrdocs) 是 Decred [用户文档](https://docs.decred.org/) 的源代码。_
 
-- Updated to [MkDocs Material v9](https://github.com/decred/dcrdocs/pull/1214) with improved search.
-- Removed [Font Awesome](https://github.com/decred/dcrdocs/pull/1216) icons due to them not working and only appearing on a few pages.
+- 更新到 [MkDocs Material v9](https://github.com/decred/dcrdocs/pull/1214)，改进了搜索。
+- 删除了 [Font Awesome](https://github.com/decred/dcrdocs/pull/1216) 图标，因为它们不起作用并且只出现在几页上。
 
 
 ### Bison Relay
 
-_[Bison Relay](https://github.com/companyzero/bisonrelay) is a new social media platform with strong protections against censorship, surveillance, and advertising, powered by Decred Lightning Network._
+_[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的社交媒体平台，由 Decred Lightning Network 提供强大的审查、监视和广告保护。_
 
-Common changes in GUI and CLI apps in v0.1.4 release:
+v0.1.4 版本中 GUI 和 CLI 应用程序的常见更改：
 
-- Added support for paying and sending [multiple messages in parallel](https://github.com/companyzero/bisonrelay/pull/98) without waiting for server ack, which makes sending much faster.
-- Added support for [sending and rendering of embeds](https://github.com/companyzero/bisonrelay/pull/118) (like images and download links) in private and group chats.
-- Improved tracking of encryption status and maintenance of [key exchange (KX) resets](https://github.com/companyzero/bisonrelay/pull/116). Added semi-automatic tools to detect and reset possibly broken key exchanges. Candidates for reset are users from which no messages have been received for a long time, or all users if own client has been offline for a long time.
-- Improved handling of new group chat messages received just [after connecting](https://github.com/companyzero/bisonrelay/pull/130) to the server. This should show messages properly ordered by time, especially on slower connections.
-- Fixed a bug that prevented [clean shutdown](https://github.com/companyzero/bisonrelay/commit/ec5637968937439eb8752aa41200947051b2f8c0) in some cases.
-- Fixed possible reconnect loops due to client trying to [reuse the same payment](https://github.com/companyzero/bisonrelay/pull/131).
+- 添加了支付和发送[多条消息并行](https://github.com/companyzero/bisonrelay/pull/98) 的支持，无需等待服务器确认，这使得发送速度更快。
+- 在私人聊天和群聊中添加了对[发送和呈现嵌入](https://github.com/companyzero/bisonrelay/pull/118)（如图像和下载链接）的支持。
+- 改进了对加密状态的跟踪和[密钥交换 (KX) 重置](https://github.com/companyzero/bisonrelay/pull/116) 的维护。 添加了半自动工具来检测和重置可能损坏的密钥交换。 重置的候选者是长时间没有收到消息的用户，或者如果自己的客户端已经长时间离线的所有用户。
+- 改进了对刚 [连接](https://github.com/companyzero/bisonrelay/pull/130) 到服务器后收到的新群聊消息的处理。 这应该显示按时间正确排序的消息，尤其是在连接速度较慢的情况下。
+- 修复了在某些情况下阻止 [clean shutdown](https://github.com/companyzero/bisonrelay/commit/ec5637968937439eb8752aa41200947051b2f8c0) 的错误。
+- 修复了由于客户端尝试 [重新使用相同的付款](https://github.com/companyzero/bisonrelay/pull/131) 而导致的可能的重新连接循环。
 
-GUI app changes in v0.1.4 release:
+v0.1.4 版本中的 GUI 应用更改：
 
-- Added [font size setting](https://github.com/companyzero/bisonrelay/pull/117) with 4 size choices.
-- Moved menu actions on users and group chats (List Posts, Pay Tip, etc.) to the [right-side panel](https://github.com/companyzero/bisonrelay/pull/119). This is similar to Element and easier to use.
-- Order of chat lists is [saved](https://github.com/companyzero/bisonrelay/pull/111) across app restarts.
-- Use [emoji font](https://github.com/companyzero/bisonrelay/commit/41fd091af874512d7a3d941f094c1615e54ee70b) to render more characters and emojis.
+- 添加了 [字体大小设置](https://github.com/companyzero/bisonrelay/pull/117)，有 4 种大小可供选择。
+- 将用户和群聊的菜单操作（列表帖子、支付小费等）移动到[右侧面板](https://github.com/companyzero/bisonrelay/pull/119)。 这类似于 Element 并且更易于使用。
+- 聊天列表的顺序在应用程序重新启动时 [已保存](https://github.com/companyzero/bisonrelay/pull/111)。
+- 使用 [emoji 字体](https://github.com/companyzero/bisonrelay/commit/41fd091af874512d7a3d941f094c1615e54ee70b) 渲染更多字符和表情符号。
 
-Command-line app changes in v0.1.4 release:
+v0.1.4 版本中的命令行应用更改：
 
-- Removed Ctrl+C as a quit shortcut.
-- Removed [auto-scroll to bottom](https://github.com/companyzero/bisonrelay/commit/9324add82f4f7bd5317a31f14c8f78618e79e856) if the view was not at the bottom to begin with.
-- Alert current window of [completed download](https://github.com/companyzero/bisonrelay/commit/fdad19d95a140125019daa5bbb929ed6892df2f2).
-- Added [unread message marker](https://github.com/companyzero/bisonrelay/commit/e03164fcdf3c168cb772bde17310a003de8418f6) to inactive windows.
-- Other fixes and dependency updates.
+- 删除了 Ctrl+C 作为退出快捷方式。
+- 如果视图不在底部，则删除[自动滚动到底部](https://github.com/companyzero/bisonrelay/commit/9324add82f4f7bd5317a31f14c8f78618e79e856)。
+- 提醒当前窗口[已完成下载](https://github.com/companyzero/bisonrelay/commit/fdad19d95a140125019daa5bbb929ed6892df2f2)。
+- 添加了 [未读消息标记](https://github.com/companyzero/bisonrelay/commit/e03164fcdf3c168cb772bde17310a003de8418f6) 到非活动窗口。
+- 其他修复和依赖更新。
 
-Server and other changes in v0.1.4:
+服务器和 v0.1.4 中的其他更改：
 
-- Added support for accepting multiple messages [concurrently](https://github.com/companyzero/bisonrelay/pull/97). By default a connected client can request up to 8 invoices for message sending before needing to pay for them. Server must detect the payment within 24 hours, otherwise a new payment will be required. Production server may use different parameters for this.
-- [Store received messages](https://github.com/companyzero/bisonrelay/pull/110) so that `clientrpc` users may retrieve them. This prevents missed messages in bots and other automation tools.
+- 添加了对[同时]接受多条消息的支持(https://github.com/companyzero/bisonrelay/pull/97)。 默认情况下，连接的客户端在需要支付之前可以请求最多 8 张消息发送发票。 服务器必须在 24 小时内检测到付款，否则将需要重新付款。 生产服务器可能为此使用不同的参数。
+- [存储收到的消息](https://github.com/companyzero/bisonrelay/pull/110) 以便 `clientrpc` 用户可以检索它们。 这可以防止机器人和其他自动化工具中遗漏消息。
 
-Common changes in GUI and CLI apps merged in `master` towards the next release (v0.1.5):
+GUI 和 CLI 应用程序的常见更改合并到下一个版本 (v0.1.5) 的 `master` 中：
 
-- Added a [warning](https://github.com/companyzero/bisonrelay/pull/139) alerting the user of LN invoice generation failure and suggesting to increase receive capacity.
-- Added [versioning of group chats](https://github.com/companyzero/bisonrelay/pull/140) and a warning of an unsupported group chat version.
-- Added a command to [resend group chat info](https://github.com/companyzero/bisonrelay/commit/dc63dafcad9dad4e1db105418e642ea50349896f) to its members to fix issues with the user list getting out of sync.
-- Fixed [group chat message ordering](https://github.com/companyzero/bisonrelay/pull/136) after app restart.
+- 添加了 [警告](https://github.com/companyzero/bisonrelay/pull/139) 提醒用户 LN 发票生成失败并建议增加接收容量。
+- 添加了[群聊的版本控制](https://github.com/companyzero/bisonrelay/pull/140) 和不支持的群聊版本的警告。
+- 添加了向其成员[重新发送群聊信息](https://github.com/companyzero/bisonrelay/commit/dc63dafcad9dad4e1db105418e642ea50349896f) 的命令，以解决用户列表不同步的问题。
+- 修复了应用重启后的[群聊消息排序](https://github.com/companyzero/bisonrelay/pull/136)。
 
-GUI app changes in `master`:
+`master` 中的 GUI 应用程序更改：
 
-- Added a horizontal line marking the start of received [unread messages](https://github.com/companyzero/bisonrelay/pull/137). Removed display of avatar and username if subsequent messages come from the same author.
-- Added total DCR [sent and received](https://github.com/companyzero/bisonrelay/pull/146) summaries to Payment Stats page.
-- Added [QR codes](https://github.com/companyzero/bisonrelay/pull/148) for deposit addresses.
-- Hide [advanced options](https://github.com/companyzero/bisonrelay/pull/150) by default on pages that prompt to open more LN channels.
-- Fixed loss of [active chat](https://github.com/companyzero/bisonrelay/pull/145) selection when opening Chats section.
+- 添加了一条水平线，用于标记收到的 [未读消息](https://github.com/companyzero/bisonrelay/pull/137) 的开始。 如果后续消息来自同一作者，则删除头像和用户名的显示。
+- 添加总 DCR [发送和接收](https://github.com/companyzero/bisonrelay/pull/146) 摘要到支付统计页面。
+- 为存款地址添加了[二维码](https://github.com/companyzero/bisonrelay/pull/148)。
+- 在提示打开更多LN通道的页面默认隐藏[高级选项](https://github.com/companyzero/bisonrelay/pull/150)。
+- 修复了打开聊天部分时 [活动聊天](https://github.com/companyzero/bisonrelay/pull/145) 选择丢失的问题。
 
-CLI app changes in `master`:
+`master` 中的 CLI 应用程序更改：
 
-- Simplified code for opening channels and [requesting receive capacity](https://github.com/companyzero/bisonrelay/pull/147).
-- Allow to specify [custom IP addresses](https://github.com/companyzero/bisonrelay/pull/149) that the embedded dcrlnd instance will listen to instead of the default `127.0.0.1`.
-- Improved [text wrapping](https://github.com/companyzero/bisonrelay/pull/132) and rendering of multi-line elements.
-- Added [key exchange mediation](https://github.com/companyzero/bisonrelay/pull/134) and [author nickname](https://github.com/companyzero/bisonrelay/pull/151) to automation API used by bots and other tools.
+- 打开通道和[请求接收容量]的简化代码(https://github.com/companyzero/bisonrelay/pull/147)。
+- 允许指定嵌入式 dcrlnd 实例将监听的 [自定义 IP 地址](https://github.com/companyzero/bisonrelay/pull/149)，而不是默认的“127.0.0.1”。
+- 改进了[文本换行](https://github.com/companyzero/bisonrelay/pull/132) 和多行元素的渲染。
+- 添加了[密钥交换调解](https://github.com/companyzero/bisonrelay/pull/134) 和[作者昵称](https://github.com/companyzero/bisonrelay/pull/151) 到使用的自动化 API 通过机器人和其他工具。
 
-Other stuff:
+其他的东西：
 
-- Oprah is out! It is a tipping bot that follows users and rewards them for substantive posts or comments. Ask in the [#br Matrix chat](https://chat.decred.org/#/room/#br:decred.org) how to get tips from Oprah.
+- 奥普拉出局了！ 这是一个打赏机器人，它会关注用户并奖励他们发表实质性的帖子或评论。 在 [#br Matrix chat](https://chat.decred.org/#/room/#br:decred.org) 中询问如何从 Oprah 那里获得提示。
 
 
 ## People
