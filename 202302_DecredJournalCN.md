@@ -446,14 +446,14 @@ Decred Magazine 已开始在 TikTok 上建立受众。 非常感谢与 [@decredm
 
 推特空间：
 
-- [Bitcoin.jpg：“我们将其全部放在链上！”](https://twitter.com/WasPraxis/status/1620938664879554560) @Tivra 讨论比特币上的 NFT 和 Ordinals 用例 - 反映在 [Anchor] (https://anchor.fm/decred-magazine/episodes/Bitcoin-jpg-Were-putting-it-all-on-chain-e1ud6gq)
+- [Bitcoin.jpg：“我们将其全部放在链上！”](https://twitter.com/WasPraxis/status/1620938664879554560)@Tivra 讨论比特币上的 NFT 和 Ordinals 用例 - 反映在 [Anchor](https://anchor.fm/decred-magazine/episodes/Bitcoin-jpg-Were-putting-it-all-on-chain-e1ud6gq)
 - [Decred 的 7 岁生日庆典](https://twitter.com/decredproject/status/1622721223913271299) @Tivra feat。 Decred 社区，讨论 Decred 的七年，它去过的地方以及它的发展方向 - 反映在 [Anchor](https://anchor.fm/decred-magazine/episodes/Decreds-7th-Birthday-Bash-e1um58e)
-- [公平游戏或操纵系统 - 关于工作量证明和 ASIC 生产](https://www.decredmagazine.com/fair-game-or-rigged-system-on-proof-of-work-and-asic -生产/）@Tivra壮举。 David Vorick，讨论他在 ASIC 生产游戏中的经历并质疑其公平性——反映在 [Anchor](https://anchor.fm/decred-magazine/episodes/Fair-Game-or-Rigged-System---On- Proof-of-Work-and-ASIC-Production-e1v382d)，加上[YouTube]上的编辑和压缩版本(https://www.youtube.com/watch?v=n8Wz5Zx0MSs)
+- 公平游戏或操纵系统 - 关于工作量证明和 ASIC 生产 @Tivra壮举。 David Vorick，讨论他在 ASIC 生产游戏中的经历并质疑其公平性
 
 **艺术与乐趣：**
 
 - [Clay Stakey 骑粘土野牛](https://twitter.com/RichardRed0x/status/1622676008955412480) @richardred
-- @karamble 的 [Bison Relay](https://twitter.com/karamblez/status/1624099752555032602)、更多 [Bison Relay](https://twitter.com/karamblez/status/1625176367573700615) 和 [DCRDEX] 动画 (https://twitter.com/karamblez/status/1629475704088805378) ETH+USDC 开发更新
+- @karamble 的 [Bison Relay](https://twitter.com/karamblez/status/1624099752555032602)、更多 [Bison Relay](https://twitter.com/karamblez/status/1625176367573700615) 和 [DCRDEX](https://twitter.com/karamblez/status/1629475704088805378) 动画  ETH+USDC 开发更新
 - [Bison Relay 贴纸](https://www.reddit.com/r/decred/comments/10rvh06/join_the_herd_bison_relay_stickers/) - [@TofuPixel](https://twitter.com/TofuPixel) 的设计，可以 在社交媒体上使用或打印成贴纸来宣传 BR
 - [Decred 加密独角兽](https://www.decredmagazine.com/decred-a-crypto-unicorn/) @OfficialCryptos
 
@@ -461,7 +461,7 @@ Decred Magazine 已开始在 TikTok 上建立受众。 非常感谢与 [@decredm
 
 **翻译:**
 
-- [点对点电子公司](https://www.decredmagazine.com/peer-to-peer-electronic-corporation/) @Tivra - [中文](https://github.com/DominicTing /decred-ZH-translations/blob/master/Peer-to-Peer%20Electronic%20Corporation.md）@Dominic
+- [点对点电子公司](https://www.decredmagazine.com/peer-to-peer-electronic-corporation/) @Tivra - [中文](https://github.com/DominicTing/decred-ZH-translations/blob/master/Peer-to-Peer%20Electronic%20Corporation.md）@Dominic
 - Decred 月报 十二月至一月 共有 3 个新的 [翻译](https://xaur.github.io/decred-news/) 到阿拉伯语 (@arij, @abdulrahman4)、中文 (@Dominic) 和波兰语 (@科泽尔）。 感谢大家传播 Decred 的信息！
 
 **非英语内容:**
@@ -476,7 +476,7 @@ Decred Magazine 已开始在 TikTok 上建立受众。 非常感谢与 [@decredm
 **其它：**
 
 - 关于 [Decred DAO 的资助方式](https://twitter.com/toddfmaki/status/1622136960407183360) 的教育主题，作者 @toddfmaki
-- 关于 [Bison Relay] 的教育主题 (https://twitter.com/karamblez/status/1623621101027835904) @karamble
+- 关于 [Bison Relay](https://twitter.com/karamblez/status/1623621101027835904) 的教育主题 @karamble
 
 
 ## 市场
