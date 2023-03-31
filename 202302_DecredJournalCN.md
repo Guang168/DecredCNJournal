@@ -141,7 +141,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 
 - 调整了哪些 [交换费用](https://github.com/decred/dcrdex/pull/2147) 被认为是 BTC 和 DCR 的“最佳”。 最好的案例费用发生在整个订单在一次匹配中被消耗时，即整个订单的 1 笔交易和 1 次输出。 这会影响下订单时显示的费用预览。
 - 自动忽略旧客户端版本生成的非常[旧通知](https://github.com/decred/dcrdex/pull/2144)。
-- [更新 Docker 配置](https://github.com/decred/dcrdex/pull/2112)：优化基础镜像，将 DEX 客户端切换为以非 root 用户身份运行，删除不需要的文件，并优化 [Docker 构建](https://github.com/decred/dcrdex/pull/2162）用于生产。 除其他外，它有助于在 [Umbrel 应用商店](https://proposals.decred.org/record/8d83046) 中发布 DEX 客户端。
+- [更新 Docker 配置](https://github.com/decred/dcrdex/pull/2112)：优化基础镜像，将 DEX 客户端切换为以非 root 用户身份运行，删除不需要的文件，并优化 [Docker 构建](https://github.com/decred/dcrdex/pull/2162)用于生产。 除其他外，它有助于在 [Umbrel 应用商店](https://proposals.decred.org/record/8d83046) 中发布 DEX 客户端。
 - 添加了 GitHub 工作流程以构建和发布 [发布 Docker 图像](https://github.com/decred/dcrdex/pull/2127)。
 - 更新了 dcrd 的 [地址管理器](https://github.com/decred/dcrdex/pull/2096) 模块以修复在运行测试网 SPV 钱包超过一天时的高 CPU 使用率。
 - 修复了存档清理功能报告的已删除[订单和匹配项](https://github.com/decred/dcrdex/pull/2098) 的数量。
@@ -202,7 +202,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私
 - @chappjc [tweeted](https://twitter.com/chappjc/status/1623136803661266947) 新合约在主网上与 ETH 和 USDC 执行了许多原子互换。
 - Bug修复。
 
-以太坊对权益证明共识的升级（也称为 [The Merge](https://ethereum.org/en/upgrades/merge/)）恰好 [客户端](https://github.com/ethereum/go-ethereum/issues/25623) 被 DCRDEX 使用，尽管有一些[期望](https://blog.ethereum.org/2021/03/24/finalized-no-24) 它会起作用。 这大大延迟了 DCRDEX v0.6，而必须开发解决方法。 在 [轻客户端](https://geth.ethereum.org/docs/fundamentals/les) 固定之前，DEX 用户可以选择运行自己的完整节点或使用像 [Infura](https://www.infura.io/)、[Ankr](https://www.ankr.com/) 和 [其他 8 个](https://github.com/decred/dcrdex/blob/80b0531a64a806ac8901d812b1e322418118cac1/client/asset/eth/multirpc.go）。
+以太坊对权益证明共识的升级（也称为 [The Merge](https://ethereum.org/en/upgrades/merge/)）恰好 [客户端](https://github.com/ethereum/go-ethereum/issues/25623) 被 DCRDEX 使用，尽管有一些[期望](https://blog.ethereum.org/2021/03/24/finalized-no-24) 它会起作用。 这大大延迟了 DCRDEX v0.6，而必须开发解决方法。 在 [轻客户端](https://geth.ethereum.org/docs/fundamentals/les) 固定之前，DEX 用户可以选择运行自己的完整节点或使用像 [Infura](https://www.infura.io/)、[Ankr](https://www.ankr.com/) 和 [其它8个](https://github.com/decred/dcrdex/blob/80b0531a64a806ac8901d812b1e322418118cac1/client/asset/eth/multirpc.go)。
 
 Umbrel 应用商店集成：
 
