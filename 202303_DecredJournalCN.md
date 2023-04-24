@@ -429,7 +429,7 @@ Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 观察到 175 个节点
 获得以下媒体展示位置：
 
 - [Cointelegraph](https://cointelegraph.com/news/trezor-crypto-wallet-s-move-into-the-semiconductor-business-isn-t-for-everyone) 中的一篇文章，其中包含@jz 对 Trezor 加密钱包进军半导体业务。 该文章被联合到 14 家出版物，包括 [Ethereum Today](https://www.ethereum.today/trezor-crypto-wallets-move-into-the-semiconductor-business-isnt-for-everyone/) 和 [Bitcoin Insider ](https://www.bitcoininsider.org/article/207994/trezor-crypto-wallets-move-semiconductor-business-isnt-everyone)。
-- [CoinDesk](https://www.coindesk.com/markets/2023/03/16/crypto-observers-believe-us-banking-crisis-could-strengthen-crypto-ecosystem-in-the- long-term/) 中的一篇文章 以@jz 对美国银行业危机对加密货币的长期影响的评论为特色。 这篇文章被联合到 3 个出版物，包括 [Yahoo! 财经](https://finance.yahoo.com/news/crypto-observers-believe-u-banking-113017805.html)。
+- [CoinDesk](https://www.coindesk.com/markets/2023/03/16/crypto-observers-believe-us-banking-crisis-could-strengthen-crypto-ecosystem-in-the-long-term/) 中的一篇文章 以@jz 对美国银行业危机对加密货币的长期影响的评论为特色。 这篇文章被联合到 3 个出版物，包括 [Yahoo! 财经](https://finance.yahoo.com/news/crypto-observers-believe-u-banking-113017805.html)。
 
 
 ## 活动
@@ -472,7 +472,7 @@ Decred 杂志 3 月份的参与度统计数据：
 
 直播：
 
-- [市场状况 - Decred 壮举的内容和发展建议。 Cointelegraph](https://www.decredmagazine.com/state-of-the-market-content-and-development-proposals/) @phoenixgreen 和@Exitus 加入 Matthew 和 Yana - 也作为 [播客](https://podcasters.spotify.com/pod/show/decred-magazine/episodes/State-of-the-market---Content-and-Development-Proposals-e209gfm）
+- [市场状况 - Decred 壮举的内容和发展建议。 Cointelegraph](https://www.decredmagazine.com/state-of-the-market-content-and-development-proposals/) @phoenixgreen 和@Exitus 加入 Matthew 和 Yana 
 
 **音频：**
 
