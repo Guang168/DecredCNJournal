@@ -58,7 +58,7 @@ v0.1.6 Release Candidate 1 的亮点：
 - 所有帖子评论都指向原始帖子，对中继副本的评论被禁用
 - GUI 和 CLI 应用程序中的许多错误修复和 UI 改进
 
-在 [GitHub](https://github.com/companyzero/bisonrelay/releases) 上获取最新版本的二进制文件（截至在 bisonrelay.org 上编写 [下载页面](https://bisonrelay.org/download/) 仍然 显示 v0.1.4)。 欢迎在 [GitHub 问题跟踪器](https://github.com/companyzero/bisonrelay/issues) 和 [#br 聊天](https://chat.decred.org/#/room/#br:decred.org）在 Matrix 或 Bison Relay 本身上。
+在 [GitHub](https://github.com/companyzero/bisonrelay/releases) 上获取最新版本的二进制文件（截至在 bisonrelay.org 上编写 [下载页面](https://bisonrelay.org/download/) 仍然 显示 v0.1.4)。 欢迎在 [GitHub 问题跟踪器](https://github.com/companyzero/bisonrelay/issues) 和 [#br 聊天](https://chat.decred.org/#/room/#br:decred.org)在 Matrix 或 Bison Relay 本身上。
 
 
 ## 开发进展总结
