@@ -1,114 +1,114 @@
-# Decred Journal – March 2023
+# Decred 月报 – 2023 年 3 月
 
 ![](img/202303.1.768.png)
 
-_Image: Untitled by @Exitus_
+_图片: @Exitus_
 
-Highlights of March:
+三月亮点：
 
-- A proposal was made and approved to change the block subsidy payout from 10/80 PoW/PoS to 1/89, as well as change the algorithm to exclude specialised hardware.
+- 提出并批准了一项提案，将区块补贴从 10/80 PoW/PoS 更改为 1/89，并更改算法用以排除现有ASIC。
 
-- Bison Relay v0.1.5 was released and v0.1.6 RC1 is already out as well.
+- Bison Relay v0.1.5 已发布，v0.1.6 RC1 也已发布。
 
-- DCRDEX 0.6 is being beta tested and release candidates are appearing.
+- DCRDEX 0.6 正在进行 Beta 测试，发布候选版本。
 
-- Decred Journal was one of four proposals to be approved for the month, with three for specific aspects of DCRDEX development.
+- Decred月报 是本月批准的四项提案之一，其它三项是针对 DCRDEX 开发的特定方面。
 
-Contents:
+内容：
 
-- [Proposal to change PoW algorithm and reduce PoW rewards](#proposal-to-change-pow-algorithm-and-reduce-pow-rewards)
-- [Bison Relay v0.1.6 Release Candidate](#bison-relay-v016-release-candidate)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
-
-
-## Proposal to change PoW algorithm and reduce PoW rewards
-
-A major change is coming to Decred's consensus and economics. A [proposal](https://proposals.decred.org/record/a8501bc) has been submitted to further reduce the Proof of Work share of rewards from 10% to 1%, increase Proof of Stake rewards from 80% to 89%, and change the mining algorithm from BLAKE-256 to BLAKE3. This will remove all currently mining ASIC hardware from the network with the goal to fix the price discovery of DCR. As of writing the proposal has been approved. Next steps will be to implement new consensus rules in code, release a new version of core software, let the network install it and let the stakeholders vote to activate the new rules. All of it should take a few months and there will be more communication about each stage on Decred's [official channels](https://decred.org/community/).
+- [更改 PoW 算法并减少 PoW 奖励的提案](#proposal-to-change-pow-algorithm-and-reduce-pow-rewards)
+- [Bison Relay v0.1.6 候选发布版](#bison-relay-v016-release-candidate)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
-## Bison Relay v0.1.6 Release Candidate
+## 更改 PoW 算法并减少 PoW 奖励的提案
 
-Two releases came out in March focused on improving group chat experience.
-
-Highlights of v0.1.5 release:
-
-- New Payment Stats page
-- QR codes for deposit addresses
-- Improved error messages
-- Fixed group chat member list getting out of sync
-- Fixed group chat message ordering
-- Other bug fixes and UI tweaks
-
-Highlights of v0.1.6 Release Candidate 1:
-
-- New version of group chats with support for multiple admins
-- Sidebar notifications for new messages
-- Automatic group chat invites bundled in invite files
-- Highlighting of messages with user's nick name
-- More visible New Post button
-- All post comments are directed to the original post, comments on relayed copies are disabled
-- Many bug fixes and UI improvements in both GUI and CLI apps
-
-Get the latest release binaries on [GitHub](https://github.com/companyzero/bisonrelay/releases) (as of writing the [Downloads page](https://bisonrelay.org/download/) at bisonrelay.org still shows v0.1.4). Bug reports and feedback are welcome in the [GitHub issue tracker](https://github.com/companyzero/bisonrelay/issues) and the [#br chat](https://chat.decred.org/#/room/#br:decred.org) on Matrix or Bison Relay itself.
+Decred 的共识和经济学正在发生重大变化。新提案将进一步将奖励的工作量证明份额从 10% 减少到 1%，将权益证明奖励从 80% 增加到 89%，并将挖矿算法从 BLAKE-256 更改为 BLAKE3。这将从网络中删除所有当前正在挖掘的 ASIC 硬件，目的是修复 DCR 的价格发现。在撰写本文时，该提案已获得批准。下一步将是在代码中实施新的共识规则，发布新版本的核心软件，让网络安装它并让利益相关者投票激活新规则。所有这一切应该需要几个月的时间，并且在 Decred 的[官方渠道](https://decred.org/community/)上会有更多关于每个阶段的交流。
 
 
-## Development
+## Bison Relay v0.1.6 候选发布版
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+三月份发布了两个版本，重点是改善群聊体验。
+
+v0.1.5 版本亮点：
+
+- 新的付款统计页面
+- 存款地址二维码
+- 改进错误信息
+- 修复群聊成员列表不同步的问题
+- 固定群聊消息排序
+- 其他错误修复和用户界面调整
+
+v0.1.6 Release Candidate 1 的亮点：
+
+- 支持多个管理员的新版群聊
+- 新消息的侧边栏通知
+- 捆绑在邀请文件中的自动群聊邀请
+- 突出显示带有用户昵称的消息
+- 更明显的新帖子按钮
+- 所有帖子评论都指向原始帖子，对中继副本的评论被禁用
+- GUI 和 CLI 应用程序中的许多错误修复和 UI 改进
+
+在 [GitHub](https://github.com/companyzero/bisonrelay/releases) 上获取最新版本的二进制文件（截至在 bisonrelay.org 上编写 [下载页面](https://bisonrelay.org/download/) 仍然 显示 v0.1.4)。 欢迎在 [GitHub 问题跟踪器](https://github.com/companyzero/bisonrelay/issues) 和 [#br 聊天](https://chat.decred.org/#/room/#br:decred.org）在 Matrix 或 Bison Relay 本身上。
+
+
+## 开发进展总结
+
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-Hardening of consensus change voting code continued from [last month](202302.md#dcrd):
+从 [上个月](202302.md#dcrd) 开始继续强化共识更改投票代码：
 
-- Enhanced startup [validation](https://github.com/decred/dcrd/pull/3068) of deployment parameters to ensure they satisfy the assumptions that the vote tallying logic relies on. For example, it checks that each vote has exactly one Abstain and one No choice, that there are no duplicate vote choices, and that choices are properly encoded in bits. This allows to optimize and simplify code related to vote tallying.
-- Added validation to ensure consensus change vote parameters [don't use special bits](https://github.com/decred/dcrd/pull/3073) reserved for approving or disapproving the previous block.
-- Added validation to ensure that bits used by different votes in the same voting batch [do not overlap](https://github.com/decred/dcrd/pull/3077).
-- Added validation rejecting vote choices with [empty IDs](https://github.com/decred/dcrd/pull/3079). IDs are short strings summarizing what the vote choice means, they are normally `"yes"`, `"no"` or `"abstain"`.
-- Reworked code determining consensus [vote stage and vote tallying](https://github.com/decred/dcrd/pull/3069) logic to optimize it and make it easier to reason about.
-- Changed internal representation of the winning consensus vote choice for improved readability and additional protections from [misusing](https://github.com/decred/dcrd/pull/3080) this code.
-- Reworked tests for [consensus vote processing](https://github.com/decred/dcrd/pull/3075) code to make them easier to understand, test more edge cases, and do so [more reliably](https://github.com/decred/dcrd/pull/3076).
-- Note that the above changes are not breaking the consensus between versions in any way, they add more checks that allow dcrd to fail earlier if it detects that any assumptions made by the consensus code are violated.
+- 增强了部署参数的启动[验证](https://github.com/decred/dcrd/pull/3068)，以确保它们满足计票逻辑所依赖的假设。 例如，它检查每张选票是否恰好有一张弃权票和一张否决票，没有重复的投票选择，以及选择是否以位正确编码。 这允许优化和简化与计票相关的代码。
+- 添加验证以确保共识更改投票参数 [不要使用特殊位](https://github.com/decred/dcrd/pull/3073) 保留用于批准或不批准前一个块。
+- 添加验证以确保同一投票批次中不同投票使用的位 [不重叠](https://github.com/decred/dcrd/pull/3077)。
+- 添加了使用 [空 ID](https://github.com/decred/dcrd/pull/3079) 拒绝投票选择的验证。 ID 是总结投票选择含义的短字符串，它们通常是“是”、“否”或“弃权”。
+- 重新编写代码确定共识 [投票阶段和计票](https://github.com/decred/dcrd/pull/3069) 逻辑以优化它并使其更容易推理。
+- 更改了获胜共识投票选择的内部表示，以提高可读性并防止 [滥用](https://github.com/decred/dcrd/pull/3080) 此代码。
+- 重新编写了 [共识投票处理](https://github.com/decred/dcrd/pull/3075) 代码的测试，使它们更易于理解，测试更多的边缘案例，并 [更可靠](https://github.com/decred/dcrd/pull/3076)。
+- 请注意，上述更改不会以任何方式破坏版本之间的共识，它们添加了更多检查，如果 dcrd 检测到共识代码所做的任何假设被违反，则允许它提前失败。
 
-Other changes:
+其他变化：
 
-- Re-request blocks and transactions [sooner](https://github.com/decred/dcrd/pull/3067) if the peer which was queried for them disconnects. Instead of waiting for this data to be announced again later, it will be requested immediately from peers that are known to have it.
-- Fixed caching of other peers' [known inventory](https://github.com/decred/dcrd/pull/3074). It was a very minor bug with the potential to cause slightly higher traffic than is strictly necessary.
-- Refactoring and [build config](https://github.com/decred/dcrd/pull/3081) updates.
+- 如果被查询的对等节点断开连接，则重新请求块和交易[更快](https://github.com/decred/dcrd/pull/3067)。 不再等待此数据稍后再次公布，而是立即从已知拥有该数据的对等方请求该数据。
+- 修复了其他同行的[已知库存](https://github.com/decred/dcrd/pull/3074) 的缓存。 这是一个非常小的错误，可能会导致比绝对必要的流量略高的流量。
+- 重构和 [构建配置](https://github.com/decred/dcrd/pull/3081) 更新。
 
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-- Removed needless [balance calculation](https://github.com/decred/dcrwallet/pull/2203) when using the ticket auto buyer with balance to maintain unset or zero. On busier wallets this results in a significant performance improvement.
-- Migrated to [VSP client](https://github.com/decred/dcrwallet/pull/2213) provided by the [vspd](https://github.com/decred/vspd) repository. It is mostly the same code borrowed from dcrwallet, but consolidating VSP code in one place allows for removal of duplication that may fall out of sync, such as error codes, data structures, etc.
-- Fixed [data race](https://github.com/decred/dcrwallet/pull/2210) in SPV mode.
-- Fixed possibility of [missing relevant transactions](https://github.com/decred/dcrwallet/pull/2212) in case the ticket purchase request is cancelled due to a change of the ticket price.
+- 删除了使用带余额的自动购票时不必要的[余额计算](https://github.com/decred/dcrwallet/pull/2203)以保持未设置或为零。 在较繁忙的钱包上，这会显着提高性能。
+- 迁移到 [vspd](https://github.com/decred/vspd) 存储库提供的 [VSP 客户端](https://github.com/decred/dcrwallet/pull/2213)。 它主要是从 dcrwallet 借来的相同代码，但是将 VSP 代码合并到一个地方允许删除可能不同步的重复，例如错误代码、数据结构等。
+- 修复了 SPV 模式下的 [数据竞争](https://github.com/decred/dcrwallet/pull/2210)。
+- 修复了由于票价变化而取消购票请求时可能[丢失相关交易](https://github.com/decred/dcrwallet/pull/2212)的问题。
 
 
 ### Decrediton
 
-_[Decrediton](https://github.com/decred/decrediton) is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混币、闪电网络、DEX 交易等功能。 它在有或没有完整的区块链（SPV 模式）的情况下运行。_
 
-In progress:
+进行中：
 
-- Decrediton [Ledger integration](https://github.com/JoeGruffins/ledger-decred-poc) effort has been kickstarted by @JoeGruff with an initial [proof of concept](https://github.com/JoeGruffins/ledger-decred-poc) and a follow-up [proposal](https://proposals.decred.org/record/609db9e) to make it production ready. Currently users are required to use Ledger Live software to send/receive DCR from/to their Ledger device, but historically there have been too many [technical problems](https://matrix.to/#/!MYLcxlwzxwViTaFPGo:decred.org/$fxDMmKpCE-Edb1fRQyhyy_Rjlx2HuKNGtpwSmC76nIA?via=decred.org&via=matrix.org&via=planetdecred.org) with that software. Having Ledger support directly in Decrediton will give DCR holders a better choice.
+- Decrediton [Ledger 集成](https://github.com/JoeGruffins/ledger-decred-poc) 工作已由@JoeGruff 启动，并带有初始[概念证明](https://github.com/JoeGruffins/ledger-decred-poc) 和后续 [提案](https://proposals.decred.org/record/609db9e) 以使其做好生产准备。 目前用户需要使用 Ledger Live 软件从他们的 Ledger 设备发送/接收 DCR，但历史上存在太多[技术问题](https://matrix.to/#/!MYLcxlwzxwViTaFPGo:decred.org/$fxDMmKpCE-Edb1fRQyhyy_Rjlx2HuKNGtpwSmC76nIA?via=decred.org&via=matrix.org&via=planetdecred.org) 使用该软件。 在 Decrediton 中直接拥有 Ledger 支持将给 DCR 持有者一个更好的选择。
 
-Other:
+其它:
 
-- Staking DCR with Decrediton+Trezor is again [blocked](https://github.com/decred/decrediton/issues/2681#issuecomment-1366432017) by changes required in firmware. A fix has been [submitted](https://github.com/trezor/trezor-firmware/pull/2703) to the Trezor firmware repository in December but has not been reviewed or merged yet.
+- 使用 Decrediton + Trezor 质押 DCR 再次被[阻止](https://github.com/decred/decrediton/issues/2681#issuecomment-1366432017) 固件所需的更改。 修复已于 12 月[提交](https://github.com/trezor/trezor-firmware/pull/2703) 到 Trezor 固件存储库，但尚未审查或合并。
 
 
 ### vspd
