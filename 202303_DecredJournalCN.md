@@ -408,8 +408,6 @@ Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 观察到 175 个节点
 
 [Metal Pay](https://metalpay.com/) 根据用户报告。 他们的支持网站证实了这一点，该网站不再在[可用于交易的资产](https://help.metalpay.com/hc/en-us/articles/4409447985303-What-Cryptocurrencies-are-Available-for-Trading-on-Metal-Pay-)列表中显示 DCR。 支持[存取款](https://help.metalpay.com/hc/en-us/articles/4409465061911-Which-Cryptocurrencies-Support-Deposit-and-Withdrawal-on-Metal-Pay-)的资产不包括 DCR 要么，显然从来没有。 其他与DCR同批下架的币种还有BNB、BUSD、DGB、PAX、TUSD。 从更大的角度来看，Metal Pay [退市](https://www.reddit.com/r/CryptoCurrency/comments/zlmxj3/delisting_notice_for_select_tokens_on_metal_pay/) 12 月 13 种资产，包括 XMR、ZEC、DASH 和 BSV。 自 2022 年 11 月可交易资产列表从 63 种减少到仅 15 种。Metal Pay 首次上架 DCR 于 [2020 年 4 月](https://twitter.com/metalpaysme/status/1249745420206686208)。
 
-根据[用户报告](https://matrix.to/#/!teQafvHMYpIbqLIieU:decred.org/$GWyVIBD5k_vDEUPxJK3QTOFqdAot8he-q4RNcxLsmqo?via=decred.org&via=matrix.org&via=t2bot.io）。 这并不影响完整交易界面上的限价单。
-
 [Ledger](https://www.ledger.com/)代表来到Decred的Matrix聊天室分享了一个状态更新。 摘要是：Ledger Live 中的 Decred 支持对某些用户来说是中断的，修复需要很长时间，并且 Ledger 希望在 Ledger 的集成中断的情况下将受影响的用户重定向到与他们的设备兼容的第三方服务 边。 因此，Ledger 将受益于即将在 Decrediton 中进行的[直接集成](https://proposals.decred.org/record/609db9e)。
 
 币安 [宣布](https://www.reddit.com/r/decred/comments/123tn1i/binance_close_isolated_margin_for_decred_and_some/) 从逐仓保证金中下架 DCR/BTC 和 DCR/USDT 交易对。 就上下文而言，NEBL 和 XVG 也是这批退市的一部分。 常规（现货）DCR 交易不受此影响。 同时，Simple Earn 产品中的个人配额已增加每人 300 到 10,000 DCR。 截至 3 月 27 日，Simple Earn 的年利率为 1.67%，而直接质押 DCR 的年收益率约为 7%。
@@ -431,7 +429,7 @@ Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 观察到 175 个节点
 获得以下媒体展示位置：
 
 - [Cointelegraph](https://cointelegraph.com/news/trezor-crypto-wallet-s-move-into-the-semiconductor-business-isn-t-for-everyone) 中的一篇文章，其中包含@jz 对 Trezor 加密钱包进军半导体业务。 该文章被联合到 14 家出版物，包括 [Ethereum Today](https://www.ethereum.today/trezor-crypto-wallets-move-into-the-semiconductor-business-isnt-for-everyone/) 和 [Bitcoin Insider ](https://www.bitcoininsider.org/article/207994/trezor-crypto-wallets-move-semiconductor-business-isnt-everyone)。
-- [CoinDesk] 中的一篇文章(https://www.coindesk.com/markets/2023/03/16/crypto-observers-believe-us-banking-crisis-could-strengthen-crypto-ecosystem-in-the- long-term/) 以@jz 对美国银行业危机对加密货币的长期影响的评论为特色。 这篇文章被联合到 3 个出版物，包括 [Yahoo! 财经](https://finance.yahoo.com/news/crypto-observers-believe-u-banking-113017805.html) 和 [市场内幕](https://markets.businessinsider.com/news/currencies/crypto -观察者相信我们的银行业危机可能会在长期内加强加密生态系统 1032172484）。
+- [CoinDesk](https://www.coindesk.com/markets/2023/03/16/crypto-observers-believe-us-banking-crisis-could-strengthen-crypto-ecosystem-in-the- long-term/) 中的一篇文章 以@jz 对美国银行业危机对加密货币的长期影响的评论为特色。 这篇文章被联合到 3 个出版物，包括 [Yahoo! 财经](https://finance.yahoo.com/news/crypto-observers-believe-u-banking-113017805.html)。
 
 
 ## 活动
@@ -468,15 +466,15 @@ Decred 杂志 3 月份的参与度统计数据：
 **视频：**
 
 - [Decrediton 中的账户 - Money Evolved](https://www.decredmagazine.com/accounts-in-decrediton/) by @phoenixgreen
-- [Timestamply - 重新设计时间戳数字存在](https://www.decredmagazine.com/timestamply-redesign-for-timestamping-digital-existence/) @phoenixgreen - 也作为[文本帖子](https:// www.decredmagazine.com/timestamply-redesign-for-timestamping-digital-existence/) 和 [Spotify 播客](https://podcasters.spotify.com/decred-magazine/episodes/Timestamply---Redesign-for -timestamping-digital-existence-e204bff)
+- [Timestamply - 重新设计时间戳数字存在](https://www.decredmagazine.com/timestamply-redesign-for-timestamping-digital-existence/) @phoenixgreen 
 - [DCRDEX 0.6 即将推出 - 多链钱包、做市商机器人、DigiByte 支持等](https://www.decredmagazine.com/dcrdex-0-6-is-coming/) by @phoenixgreen - 也作为 文本发布和作为 [播客](https://podcasters.spotify.com/pod/show/decred-magazine/episodes/DCRDEX-0-6-is-coming-e210q07)
-- [Timestamply 教程演示 - Decred 时间戳](https://www.youtube.com/watch?v=Vw1J5nleUK8) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/timestamply -教程/）
+- [Timestamply 教程演示 - Decred 时间戳](https://www.youtube.com/watch?v=Vw1J5nleUK8) @phoenixgreen 
 
 直播：
 
-- [市场状况 - Decred 壮举的内容和发展建议。 Cointelegraph](https://www.decredmagazine.com/state-of-the-market-content-and-development-proposals/) @phoenixgreen 和@Exitus 加入 Matthew 和 Yana - 也作为 [播客](https ://podcasters.spotify.com/pod/show/decred-magazine/episodes/State-of-the-market---Content-and-Development-Proposals-e209gfm）
+- [市场状况 - Decred 壮举的内容和发展建议。 Cointelegraph](https://www.decredmagazine.com/state-of-the-market-content-and-development-proposals/) @phoenixgreen 和@Exitus 加入 Matthew 和 Yana - 也作为 [播客](https://podcasters.spotify.com/pod/show/decred-magazine/episodes/State-of-the-market---Content-and-Development-Proposals-e209gfm）
 
-**声音的：**
+**音频：**
 
 - [以加密货币为生 - 重新发现加密货币作为现金的最初用途](https://twitter.com/i/spaces/1djGXlALNNdGZ) - @Tivra 与 [@TheDesertLynx](https://twitter.com/TheDesertLynx) 交谈 自 2016 年以来一直以加密货币为生。“如果你厌倦了传统银行业务并想摆脱束缚，这就是给你的”。 反映在 [Spotify](https://podcasters.spotify.com/decred-magazine/episodes/Living-on-Crypto--Rediscovering-the-Original-Purpose-of-Crypto-as-Cash-e205aup)。
 
