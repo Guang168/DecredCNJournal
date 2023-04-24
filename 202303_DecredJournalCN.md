@@ -275,7 +275,7 @@ v0.1.6 中 GUI 和 CLI 应用程序的常见更改：
 
 v0.1.6 中的 GUI 应用更改：
 
-- 为 [新聊天消息] 添加了侧边栏通知图标 (https://github.com/companyzero/bisonrelay/pull/157)。
+- 为 [新聊天消息](https://github.com/companyzero/bisonrelay/pull/157) 添加了侧边栏通知图标。
 - 当[未读计数](https://github.com/companyzero/bisonrelay/pull/157) 超过 1,000 时显示为“1k+”。
 - 当聊天中没有以前的消息时，避免冗余 [最后阅读指示器](https://github.com/companyzero/bisonrelay/pull/157)。
 - 添加了一个突出的 [New Post](https://github.com/companyzero/bisonrelay/pull/159) 按钮，可以从不同的视图轻松访问。
@@ -312,7 +312,7 @@ CLI 应用程序在 v0.1.6 中的变化：
 
 ### 其它
 
-- Decred Bug Bounty [网站](https://bounty.decred.org/)：添加了[电子邮件模板](https://github.com/decred/dcrbounty/pull/95)，优化了[Docker 构建](https ://github.com/decred/dcrbounty/pull/96)，并[添加](https://github.com/decred/dcrbounty/pull/94) Tanvir0x1 到名人堂。
+- Decred Bug Bounty [网站](https://bounty.decred.org/)：添加了[电子邮件模板](https://github.com/decred/dcrbounty/pull/95)，优化了[Docker 构建](https://github.com/decred/dcrbounty/pull/96)，并[添加](https://github.com/decred/dcrbounty/pull/94) Tanvir0x1 到名人堂。
 - 更新多个网站以使用最新的 Hugo 站点生成器。
 
 
@@ -367,7 +367,7 @@ _图片：Decred 全网算力。_
 
 ![](img/202303.4.720.png)
 
-_Image: Historical pool hashrate distribution._
+_图片：历史矿池哈希率分布。_
 
 **Staking**: [票价](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) 在 223-254 DCR 之间变化。
 
@@ -406,7 +406,7 @@ Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 观察到 175 个节点
 
 ## 生态系统
 
-[Metal Pay](https://metalpay.com/) 根据 [用户报告](https://matrix.to/#/!teQafvHMYpIbqLIieU:decred.org/$JvKPmPcgLw-bUW-7Tn2QFlqmRFtLQN0pPC- 4Qq5u0yY?via=decred.org&via=matrix.org&via=t2bot.io）。 他们的支持网站证实了这一点，该网站不再在[可用于交易的资产]列表中显示 DCR(https://help.metalpay.com/hc/en-us/articles/4409447985303-What-Cryptocurrencies-are-Available -for-Trading-on-Metal-Pay-)。 支持[存取款](https://help.metalpay.com/hc/en-us/articles/4409465061911-Which-Cryptocurrencies-Support-Deposit-and-Withdrawal-on-Metal-Pay-)的资产不包括 DCR 要么，显然从来没有。 其他与DCR同批下架的币种还有BNB、BUSD、DGB、PAX、TUSD。 从更大的角度来看，Metal Pay [退市](https://www.reddit.com/r/CryptoCurrency/comments/zlmxj3/delisting_notice_for_select_tokens_on_metal_pay/) 12 月 13 种资产，包括 XMR、ZEC、DASH 和 BSV。 自 [2022 年 11 月](https://web.archive.org/web/20221207223930/https://help.metalpay.com/hc/en-us/articles/4409447985303-What-Cryptocurrencies-are-Available-for- Trading-on-Metal-Pay-）可交易资产列表从 63 种减少到仅 15 种。Metal Pay 首次上架 DCR 于 [2020 年 4 月](https://twitter.com/metalpaysme/status/1249745420206686208)。
+[Metal Pay](https://metalpay.com/) 根据 [用户报告](https://matrix.to/#/!teQafvHMYpIbqLIieU:decred.org/$JvKPmPcgLw-bUW-7Tn2QFlqmRFtLQN0pPC-4Qq5u0yY?via=decred.org&via=matrix.org&via=t2bot.io）。 他们的支持网站证实了这一点，该网站不再在[可用于交易的资产](https://help.metalpay.com/hc/en-us/articles/4409447985303-What-Cryptocurrencies-are-Available-for-Trading-on-Metal-Pay-)列表中显示 DCR。 支持[存取款](https://help.metalpay.com/hc/en-us/articles/4409465061911-Which-Cryptocurrencies-Support-Deposit-and-Withdrawal-on-Metal-Pay-)的资产不包括 DCR 要么，显然从来没有。 其他与DCR同批下架的币种还有BNB、BUSD、DGB、PAX、TUSD。 从更大的角度来看，Metal Pay [退市](https://www.reddit.com/r/CryptoCurrency/comments/zlmxj3/delisting_notice_for_select_tokens_on_metal_pay/) 12 月 13 种资产，包括 XMR、ZEC、DASH 和 BSV。 自 [2022 年 11 月](https://web.archive.org/web/20221207223930/https://help.metalpay.com/hc/en-us/articles/4409447985303-What-Cryptocurrencies-are-Available-for-Trading-on-Metal-Pay-）可交易资产列表从 63 种减少到仅 15 种。Metal Pay 首次上架 DCR 于 [2020 年 4 月](https://twitter.com/metalpaysme/status/1249745420206686208)。
 
 根据[用户报告](https://matrix.to/#/!teQafvHMYpIbqLIieU: decred.org/$GWyVIBD5k_vDEUPxJK3QTOFqdAot8he-q4RNcxLsmqo?via=decred.org&via=matrix.org&via=t2bot.io）。 这并不影响完整交易界面上的限价单。
 
