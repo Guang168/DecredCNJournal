@@ -1,6 +1,6 @@
 # Decred Journal – April 2023
 
-![](../img/202304.1.768.png)
+![](img/202304.1.768.png)
 
 _Image: Untitled by @Exitus_
 
