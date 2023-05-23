@@ -76,7 +76,7 @@ DCRDEX的获取途径有3种：
 
 注意：
 
-- 查看有关 [在 Decrediton 中设置 DEX](https://www.decredmagazine.com/setting-up-dcrdex-0-6-in-decrediton/) 和 [为 LTC、BCH 和 BTC](https://www.decredmagazine.com/setting-up-dcrdex-native-wallets-btc-bch-ltc/)，以及 [@DecredTV](https://www. youtube.com/@DecredTV/videos）。
+- 查看有关 [在 Decrediton 中设置 DEX](https://www.decredmagazine.com/setting-up-dcrdex-0-6-in-decrediton/) 和 [为 LTC、BCH 和 BTC](https://www.decredmagazine.com/setting-up-dcrdex-native-wallets-btc-bch-ltc/)，以及 [@DecredTV](https://www.youtube.com/@DecredTV/videos）。
 - 内置的 LTC 钱包在搜索支持紧凑块过滤器的节点时启动速度可能很慢。 用户可以转到 DEX 钱包页面，单击 Litecoin -> 设置 -> 管理节点，然后手动添加一个节点 [从此列表](https://gist.github.com/chappjc/d0f26b12258f8531bb78b37f38d080a0) 以帮助推动流程。
 - 做市商机器人可以 [enabled](https://twitter.com/blockchainbuck/status/1655933747064360967) 通过运行带有 `--experimental` 标志的 DEX 客户端并从菜单中选择“做市商”。 一定要调高“oracle weight”。 该机器人有助于增加流动性，但在被认为是实验性的情况下应谨慎使用。
 
@@ -107,7 +107,7 @@ _图片：更新了 DCRDEX v0.6.0 中的钱包视图_
 
 在 [GitHub](https://github.com/companyzero/bisonrelay/releases) 上获取最新版本的二进制文件。 Bison Relay 下载现在可以[验证](https://docs.decred.org/advanced/verifying-binaries)，这要归功于由签署 Decred 版本的相同密钥添加的签名（`Decred Release <release@decred.org >` 带有指纹`F516ADB7A069852C7C28A02D6D897EDF518A031D`）。
 
-查看[安装指南](https://www.decredmagazine.com/bison-relay-upgrades-to-version-0-1-7/) 和[小费指南](https://www.decredmagazine.com /oprah-tipping-bot-bisonrelay/) 以避免接收小费的常见问题。 在 [@DecredTV](https://www.youtube.com/@DecredTV/videos) 查找更多 Bison Relay 视频指南。
+查看[安装指南](https://www.decredmagazine.com/bison-relay-upgrades-to-version-0-1-7/) 和[小费指南](https://www.decredmagazine.com/oprah-tipping-bot-bisonrelay/) 以避免接收小费的常见问题。 在 [@DecredTV](https://www.youtube.com/@DecredTV/videos) 查找更多 Bison Relay 视频指南。
 
 ![](img/202304.5.1024.png)
 
@@ -129,7 +129,7 @@ _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Dec
 
 更改反向移植到 [v1.7.7 版本](https://github.com/decred/dcrd/releases/tag/release-v1.7.7)：
 
-- 将 [`peer`](https://github.com/decred/dcrd/commit/0d375e0738e5995b1c3beb303a654aefe76e4a64) 和 [`addrmgr`](https://github.com/decred/dcrd/commit) 的最低 Go 版本增加到 1.17 模块以启用 Go 工具链优化，例如 [模块图修剪](https://go.dev/ref/mod#graph-pruning) 和 [延迟模块加载](https://go.dev/ref/mod #延迟加载）。 [`peer`](https://github.com/decred/dcrd/tree/8f3e249555544ff8f1991d055da1e910dbd5a88b/peer) 和 [`addrmgr`](https://github.com/decred/dcrd/tree/8f3e249555544ff8f1991d055da1e910dbd 5a88b/addrmgr) 模块 为构建与 Decred 网络对话的软件提供了坚实的基础。
+- 将 [`peer`](https://github.com/decred/dcrd/commit/0d375e0738e5995b1c3beb303a654aefe76e4a64) 和 [`addrmgr`](https://github.com/decred/dcrd/commit) 的最低 Go 版本增加到 1.17 模块以启用 Go 工具链优化，例如 [模块图修剪](https://go.dev/ref/mod#graph-pruning) 和 延迟模块加载。 [`peer`](https://github.com/decred/dcrd/tree/8f3e249555544ff8f1991d055da1e910dbd5a88b/peer) 和 [`addrmgr`](https://github.com/decred/dcrd/tree/8f3e249555544ff8f1991d055da1e910dbd5a88b/addrmgr) 模块 为构建与 Decred 网络对话的软件提供了坚实的基础。
 - `peer` 模块使用的点对点 [协议](https://github.com/decred/dcrd/commit/ad501373e203aeff56e8f7f699ab442f8706694e) 的增加版本不再使用 `reject` 消息（我们对此进行了解释） 在 [11 月](202211.md#dcrd) 问题中）。
 - 修正缓存其他节点的[库存](https://github.com/decred/dcrd/pull/3074)（小流量优化）。
 - 优化了[peer address selection](https://github.com/decred/dcrd/commit/32e98be286deb3104352f81fe8c1147c1f158e29) 并缓解了测试网场景中的 CPU 使用率过高。
@@ -139,7 +139,7 @@ _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Dec
 
 更改合并到 `master` 中以用于将来的版本：
 
-- 添加了即将到来的共识投票的定义，以将 [工作量证明哈希](https://github.com/decred/dcrd/pull/3089) 更改为 [BLAKE3](https://en.wikipedia.org /wiki/BLAKE_(hash_function)#BLAKE3) 并[减少 PoW 区块奖励](https://github.com/decred/dcrd/pull/3090)。 这些更改将分别在 [Decred 更改提案](https://github.com/decred/dcps) DCP-11 和 DCP-12 中更正式地记录。 这些定义仅添加基本信息，如投票说明、选择和有效期。 实现真正改变的代码将单独添加。
+- 添加了即将到来的共识投票的定义，以将 [工作量证明哈希](https://github.com/decred/dcrd/pull/3089) 更改为 [BLAKE3](https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE3) 并[减少 PoW 区块奖励](https://github.com/decred/dcrd/pull/3090)。 这些更改将分别在 [Decred 更改提案](https://github.com/decred/dcps) DCP-11 和 DCP-12 中更正式地记录。 这些定义仅添加基本信息，如投票说明、选择和有效期。 实现真正改变的代码将单独添加。
 - 实施了 [DCP-12 共识投票](https://github.com/decred/dcrd/pull/3092)。 如果通过，区块奖励分成将变为 1% PoW、89% PoS、10% Treasury。
 - 添加了使用自定义熵源[生成私钥](https://github.com/decred/dcrd/pull/3096) 的功能。 在 dcrd 中具有这样的功能允许从其他 Decred 包中删除重复项。
 - 代码重构和清理。
@@ -161,7 +161,7 @@ _[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱
 更改合并到 `master` 中以用于将来的版本：
 
 - 清理并简化了内部 [VSP 代码](https://github.com/decred/dcrwallet/pull/2227) 的公共 API。 这是整合 [vspd](https://github.com/decred/vspd) 存储库中 VSP 代码的一部分，以便于维护和代码重用。
-- 删除了 VSP 客户端的 [票证撤销](https://github.com/decred/dcrwallet/pull/2230) 支持。 这从 VSP 代码中删除了一个重要的依赖项，并且它是不必要的，因为自 [DCP-9](https://github.com/decred/dcps/blob/master/dcp-0009/dcp-0009. 媒体维基）。
+- 删除了 VSP 客户端的 [票证撤销](https://github.com/decred/dcrwallet/pull/2230) 支持。 这从 VSP 代码中删除了一个重要的依赖项，并且它是不必要的，因为自 DCP-9。
 - 修复了配置中设置的 [最大 VSP 费用](https://github.com/decred/dcrwallet/pull/2228) 未被遵守且始终被硬编码值 0.2 DCR 覆盖的问题。 此外，VSP 配置验证已移至启动代码，以便更早地报告无效选项。
 - 代码维护和 1 个并发修复。
 
@@ -253,7 +253,7 @@ v0.6.0 版本中包含的客户端更改：
 Litcoin：
 
 - 从 [ltcd](https://github.com/ltcsuite/ltcd/pull/25) 移植 [交易大小修复](https://github.com/decred/dcrdex/pull/2299) 以处理一些异常大的问题 隔离见证交易。
-- 为 DCRDEX 编写的一些 MimbleWimble [解码器代码](https://github.com/ltcsuite/ltcd/issues/17#issuecomment-1201877368) 已 [采用](https://github.com/ltcsuite/ltcd/issues /17#issuecomment-1506234416) 在 [ltcd](https://github.com/ltcsuite/ltcd/pull/31) 中！
+- 为 DCRDEX 编写的一些 MimbleWimble [解码器代码](https://github.com/ltcsuite/ltcd/issues/17#issuecomment-1201877368) 已 [采用](https://github.com/ltcsuite/ltcd/issues/17#issuecomment-1506234416) 在 [ltcd](https://github.com/ltcsuite/ltcd/pull/31) 中！
 
 
 Zcash：
@@ -264,7 +264,7 @@ Zcash：
 
 DigiByte：
 
-- DigiByte 交换已在 [主网](https://github.com/decred/dcrdex/pull/1993#issuecomment-1487571640) 上进行了测试，DGB 支持已 [合并](https://github.com/decred/ dcrdex/pull/1993) 并且[计划](https://github.com/decred/dcrdex/pull/1993#issuecomment-1511304826) 即将发布的 v0.6.1。
+- DigiByte 交换已在 [主网](https://github.com/decred/dcrdex/pull/1993#issuecomment-1487571640) 上进行了测试，DGB 支持已 [合并](https://github.com/decred/dcrdex/pull/1993) 并且[计划](https://github.com/decred/dcrdex/pull/1993#issuecomment-1511304826) 即将发布的 v0.6.1。
 - 运行 DigiByte 全节点是目前唯一的选择，因为它基于 Bitcoin Core v0.17 并且没有 [紧凑型过滤器](https://github.com/decred/dcrdex/issues/1992#issue-1486990539) 支持 （因此 DEX 无法为 DGB 实现轻型内置钱包）。 Bitcoin Core v22 功能的重大升级 [正在进行中](https://github.com/DigiByte-Core/digibyte/pull/63)，因此这可能会在未来发生变化。
 - 对于某些背景，DGB 社区成员早在 2022 年 11 月就表达了兴趣，并且一直活跃在 [Twitter](https://twitter.com/dgb_ycagel/) 和 DEX 的 [GitHub](https://github.com/decred/dcrdex/pull/1993#issuecomment-1459097459)。 @chappjc 创建了一个[补丁](https://github.com/DigiByte-Core/digibyte/pull/102)，提高了 DigiByte 节点在测试网上的性能，以促进开发。 2023 年 3 月，Decred 利益相关者批准 DGB 集成作为最新 [DEX 开发提案](https://proposals.decred.org/record/ca6b749) 的一部分。
 - 请注意，此阶段只是 DCRDEX 中的软件支持，启动和运行 DGB 市场是一项 [单独](https://github.com/decred/dcrdex/pull/1993#issuecomment-1456932743) 任务。
@@ -284,11 +284,11 @@ DigiByte：
 进行中：
 
 - [DCR 质押](https://github.com/decred/dcrdex/issues/2264) 直接在 DEX 钱包中。 这引发了从 dcrwallet [提取更多 VSP 代码](https://github.com/decred/vspd/pull/382) 到 vspd 存储库的努力，以使其更易于重用。
-- 做市商机器人。 这是一项涉及[命令行界面](https://github.com/decred/dcrdex/issues/2304)、[测试框架](https://github.com/decred/dcrdex/issues)等任务的巨大努力，模拟各种市场条件，[交易绩效监控](https://github.com/decred/dcrdex/issues/2306)，[隔离机器人的余额](https://github.com/decred/dcrdex/pull/2332），等等。
+- 做市商机器人。 这是一项涉及[命令行界面](https://github.com/decred/dcrdex/issues/2304)、[测试框架](https://github.com/decred/dcrdex/issues)等任务的巨大努力，模拟各种市场条件，[交易绩效监控](https://github.com/decred/dcrdex/issues/2306)，[隔离机器人的余额](https://github.com/decred/dcrdex/pull/2332)，等等。
 - [套利机器人](https://github.com/decred/dcrdex/pull/2005)。 这两个机器人都是最近 [DEX 机器人提案](https://proposals.decred.org/record/8b1ceda) 的一部分。
 - 将 DEX 打包为 [桌面应用程序](https://github.com/decred/dcrdex/pull/1957)。 这会将 GUI 包装在 [WebView](https://github.com/webview/webview) 中，这样 DEX 就像一个普通的桌面应用程序一样，有自己的窗口、任务栏/托盘图标、通知等，这样用户就不会 不再需要在常规浏览器中加载应用程序。 这是[打包提案](https://proposals.decred.org/record/ae7c4fe) 的一部分。 
 - [polygon集成](https://github.com/decred/dcrdex/issues/2319)（[客户端开发提案](https://proposals.decred.org/record/ca6b749) 的一部分）。 Polygon 是以太坊的第 2 层扩展解决方案，具有更快的执行速度和更低的费用。 以前称为 Matic Network（MATIC 代币）。
-- 新版本的 ETH [交换智能合约](https://github.com/decred/dcrdex/pull/2038) 有可能显着 [降低费用](https://github.com/decred/dcrdex/ 拉/1426）。
+- 新版本的 ETH [交换智能合约](https://github.com/decred/dcrdex/pull/2038) 有可能显着 降低费用。
 - 以 [ETH](https://github.com/decred/dcrdex/pull/2223) 资助的忠诚债券。
 - 整合 [Firo](https://github.com/decred/dcrdex/pull/2270) 的初步研究已经开始。 Firo 以前称为 Zcoin。
 
@@ -510,9 +510,9 @@ _图片：前 22 个挖矿地址的综合余额与 DCR 历史价格_
 
 - 新的 DCR/USDC、BTC/USDC 和 ETH/BTC 交易对在 [dex.decred.org](https://dex.decred.org/)。 创建 ETH 和 USDC 钱包和交易需要 DEX 客户端版本 0.6.0 或更高版本。
 
-- [Bison Relay](https://bisonrelay.org/) 已被 [添加](https://github.com/decred/dcrweb/pull/1114) 到 [社区](https://decred.org/ community/) 链接在 decred.org。
+- [Bison Relay](https://bisonrelay.org/) 已被 [添加](https://github.com/decred/dcrweb/pull/1114) 到 [社区](https://decred.org/community/) 链接在 decred.org。
 
-- [Trocador.app](https://trocador.app/) 已被 [添加](https://github.com/decred/dcrweb/pull/1124) 到 [交易所](https://decred.org /exchanges/)，它是一个元交换器，可以从各种服务中找到报价，然后通过他们的 API 为用户提供服务。 它在没有 JavaScript 和 Tor 的情况下工作（他们甚至有一个 Onion URL）。 Trocador 的一个有用功能是它评估了每个后端提供商在事后强制执行 KYC/AML 的可能性。 这是即时交易的最大风险，而不是直接的诈骗。 此外，如果后端提供商出于某种原因未能发送资金或无法提供证明其合理性的法律命令证明，Trocador 可能会偿还部分兑换金额。 [2023 年 2 月](https://twitter.com/TrocadorApp/status/1625487712601112576) 中列出了 DCR。
+- [Trocador.app](https://trocador.app/) 已被 [添加](https://github.com/decred/dcrweb/pull/1124) 到 [交易所](https://decred.org/exchanges/)，它是一个元交换器，可以从各种服务中找到报价，然后通过他们的 API 为用户提供服务。 它在没有 JavaScript 和 Tor 的情况下工作（他们甚至有一个 Onion URL）。 Trocador 的一个有用功能是它评估了每个后端提供商在事后强制执行 KYC/AML 的可能性。 这是即时交易的最大风险，而不是直接的诈骗。 此外，如果后端提供商出于某种原因未能发送资金或无法提供证明其合理性的法律命令证明，Trocador 可能会偿还部分兑换金额。 [2023 年 2 月](https://twitter.com/TrocadorApp/status/1625487712601112576) 中列出了 DCR。
 
 ![](img/202304.24.800.png)
 
@@ -559,7 +559,7 @@ Monde PR的成就：
 获得以下媒体展示位置：
 
 - [Invezz](https://invezz.com/news/2023/04/17/decred-announces-dcrdex-0-6-with-support-for-ethereum-and-usdc-swaps/) 中的一篇文章关于 推出 DCRDEX 0.6。 这篇文章被联合到 5 家出版物，包括 [Bitcoin Insider](https://www.bitcoininsider.org/article/212399/decred-announces-dcrdex-06-support-ethereum-and-usdc-swaps)。
-- [CoinJournal](https://coinjournal.net/news/decred-launches-dcrdex-0-6-the-latest-version-of-its-decentralized-exchange/) 中关于 DCRDEX 0.6 发布的文章。 该文章被联合到 3 个出版物，包括 [Crypto News BTC](https://cryptonewsbtc.org/2023/04/17/decred-launches-dcrdex-0-6-the-latest-version-of-its-decentralized- 交换/）。
+- [CoinJournal](https://coinjournal.net/news/decred-launches-dcrdex-0-6-the-latest-version-of-its-decentralized-exchange/) 中关于 DCRDEX 0.6 发布的文章。 该文章被联合到 3 个出版物，包括 Crypto News BTC。
 - @jy-p 出现在 [Entangled Things Podcast](https://www.entangledthings.com/all-episodes/episode/7bef6428/quantum-and-cryptocurrency-with-jake-yocom-piatt) 中谈论威胁 量子计算到加密货币。
 - @jy-p 出现在 [MineYourBiz Show](https://www.youtube.com/watch?v=aTaEul34RsA) 上，谈论 Decred 项目的当前状态及其新的隐私功能。
 
@@ -568,7 +568,7 @@ Monde PR的成就：
 
 **即将到来:**
 
-- @arij 和 @khalidesi 将作为访客和 Decred 代表前往 [GITEX AFRICA](https://www.gitexafrica.com/home)。 这是 5 月 31 日至 6 月 2 日在摩洛哥马拉喀什举行的大型科技活动。如果有人计划参加或有建议，请加入 Matrix [#events](https://chat.decred.org/#/room/# 事件：decred.org）聊天。
+- @arij 和 @khalidesi 将作为访客和 Decred 代表前往 [GITEX AFRICA](https://www.gitexafrica.com/home)。 这是 5 月 31 日至 6 月 2 日在摩洛哥马拉喀什举行的大型科技活动。如果有人计划参加或有建议，请加入 Matrix 聊天。
 
 
 ## 媒体
@@ -579,8 +579,8 @@ Monde PR的成就：
 - [Decred 挖矿发展](https://www.decredmagazine.com/decred-mining-evolves/) @OfficialCryptos
 - [Decred vs Dash：所有人的治理！](https://www.decredmagazine.com/decred-vs-dash/)  @Joao
 - [Decred 价格暴涨的 5 大原因](https://www.decredmagazine.com/top-5-reasons-decreds-price-will-explode/)  @Jay
-- [选择的悖论：在图灵完备和非图灵完备区块链之间做出决定](https://www.decredmagazine.com/the-paradox-of-choice-deciding-between-turing-complete-and-non-turing -complete-blockchains/) @BlockchainJew
-- [DAO 治理的投票机制和激励机制](https://mirror.xyz/0x34ddd9223D9DDb6B56F640824Af6FCC31e1deBF4/T6AUZv8Rn5rlGS9xxQNVzh7QPoo8h2CCWIwU_OYpJmk) Arhat - DAO 治理研究，作者已[更正](https://twitter.com/0xArhat/status /1650753877430468608) Decred部分回应反馈
+- [选择的悖论：在图灵完备和非图灵完备区块链之间做出决定](https://www.decredmagazine.com/the-paradox-of-choice-deciding-between-turing-complete-and-non-turing-complete-blockchains/) @BlockchainJew
+- [DAO 治理的投票机制和激励机制](https://mirror.xyz/0x34ddd9223D9DDb6B56F640824Af6FCC31e1deBF4/T6AUZv8Rn5rlGS9xxQNVzh7QPoo8h2CCWIwU_OYpJmk) Arhat - DAO 治理研究，作者已[更正](https://twitter.com/0xArhat/status/1650753877430468608) Decred部分回应反馈
 - [跨界对话！ 今天来自 DigiByte 社区的 Jose Trejo](https://www.decredmagazine.com/inter-community-talk-today-with-jose-trejo-from-the-digibyte-community/) @Joao - 第一次谈论 Decred Magazine 作者将采访其他加密社区成员的系列
 
 > 无论结果如何，明年左右都会是一段有趣的旅程。 如果你来这里是为了密码朋克的理想（创新、权力下放、非监管解决方案和发展），那么你很难不对未来充满热情。 \[[@OfficialCryptos](https://www.decredmagazine.com/decred-mining-evolves/)\]
@@ -599,27 +599,27 @@ Decred Magazine 4 月份的参与度统计数据：
 
 **视频:**
 
-- [Decred 回顾 - 挖矿变更、新补贴拆分、Cointelegraph 提案、大量开发更新！](https://www.youtube.com/watch?v=xW4JzxjYKww) @Exitus - 也作为 [播客](https ://podcasters.spotify.com/pod/pod/show/decred-magazine/episodes/Decred-Recap---Mining-Change--New-Subsidy-Split--Cointelegraph-Proposal--tons-of-Dev- 更新-e21jks5)
-- [Decrediton 质押 - 以简单的方式购买门票](https://www.youtube.com/watch?v=oaRTDuNVF4Y) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/ decrediton-staking-buying-tickets-the-easy-way/)
-- [Oprah 打赏机器人 - BisonRelay](https://www.youtube.com/watch?v=6uSFttopNnk) @phoenixgreen - 也作为 [文本帖子](https://www.decredmagazine.com/oprah-tipping -bot-bisonrelay/)
-- [在 Decrediton 中设置 DCRDEX 0.6](https://www.youtube.com/watch?v=6LCxuCSstGo) @phoenixgreen - 也作为[文本帖子](https://www.decredmagazine.com/setting- up-dcrdex-0-6-in-decrediton/)
-- [设置 DCRDEX 本机钱包（BTC、BCH 和 LTC）](https://www.youtube.com/watch?v=7eioER2lWmI) @phoenixgreen - 也作为 [文本帖子](https://www. decredmagazine.com/setting-up-dcrdex-native-wallets-btc-bch-ltc/)
+- [Decred 回顾 - 挖矿变更、新补贴拆分、Cointelegraph 提案、大量开发更新！](https://www.youtube.com/watch?v=xW4JzxjYKww) @Exitus
+- [Decrediton 质押 - 以简单的方式购买门票](https://www.youtube.com/watch?v=oaRTDuNVF4Y) @phoenixgreen
+- [Oprah 打赏机器人 - BisonRelay](https://www.youtube.com/watch?v=6uSFttopNnk) @phoenixgreen 
+- [在 Decrediton 中设置 DCRDEX 0.6](https://www.youtube.com/watch?v=6LCxuCSstGo) @phoenixgreen 
+- [设置 DCRDEX 本机钱包（BTC、BCH 和 LTC）](https://www.youtube.com/watch?v=7eioER2lWmI) @phoenixgreen 
 
 > 使用 Bison Relay，您不再是产品。 您的内容和意见一直具有货币价值，但这里的主要区别在于价值属于创作者，而不是平台。 \[[@phoenixgreen](https://www.youtube.com/watch?v=6uSFttopNnk)\]
 
 现场直播：
 
-- [Decred - 砖化 ASIC 和 P2P 社交媒体讨论专长。 Dave Collins 和 Jake Yocom-Piatt](https://www.youtube.com/watch?v=ZZmq7NVqYBA)@phoenixgreen 和@Exitus 加入@jy-p 和@davecgh - 也作为[播客](https: //podcasters.spotify.com/pod/show/decred-magazine/episodes/Decred---Bricking-ASICs-and-P2P-Social-Media-discussion-feat--Dave-Collins--Jake-Yocom-Piatt- e21qf1e)
+- [Decred - 砖化 ASIC 和 P2P 社交媒体讨论专长。 Dave Collins 和 Jake Yocom-Piatt](https://www.youtube.com/watch?v=ZZmq7NVqYBA)@phoenixgreen 和@Exitus 加入@jy-p 和@davecgh 
 - [#Decred 到底是什么以及它如何保护#PRIVACY？](https://www.youtube.com/watch?v=aTaEul34RsA) MineYourBiz 壮举。 @jy-p
 
-**声音的：**
+**音频：**
 
-- [Jake Yocom-Piatt 的量子和加密货币](https://www.entangledthings.com/all-episodes/episode/7bef6428/quantum-and-cryptocurrency-with-jake-yocom-piatt) 作者：Patrick Hynds 和 Ciprian Jichici - Entangled Things 播客中的一集，讨论加密标准和量子计算对区块链的威胁。 在 [Apple 播客](https://podcasts.apple.com/us/podcast/quantum-and-cryptocurrency-with-jake-yocom-piatt/id1552714727?i=1000607276017)、[Buzzsprout](https://entangledthings.buzzsprout.com/1617373/12580449-quantum-and-cryptocurrency-with-jake-yocom-piatt）和其他平台。
+- [Jake Yocom-Piatt 的量子和加密货币](https://www.entangledthings.com/all-episodes/episode/7bef6428/quantum-and-cryptocurrency-with-jake-yocom-piatt) 作者：Patrick Hynds 和 Ciprian Jichici - Entangled Things 播客中的一集，讨论加密标准和量子计算对区块链的威胁。 
 
 **翻译：**
 
-- [为什么 Decred 不兼容 EVM？](https://www.decredmagazine.com/why-is-decred-not-evm-compatible/) - [中文](https://github.com/DominicTing/decred-ZH-translations/blob/master/Why%20is%20Decred%20not%20EVM%20compatible%3F.md）@Dominic
-- [选择的悖论：在图灵完备和非图灵完备区块链之间做出决定](https://www.decredmagazine.com/the-paradox-of-choice-deciding-between-turing-complete-and-non-turing-complete-blockchains/) - [中文](https://github.com/DominicTing/decred-ZH-translations/blob/master/The%20Paradox%20of%20Choice:%20Deciding%20Between%20Turing%20Complete%20and %20Non-Turing%20Complete%20Blockchains.md) @Dominic
+- [为什么 Decred 不兼容 EVM？](https://www.decredmagazine.com/why-is-decred-not-evm-compatible/) - 中文@Dominic
+- [选择的悖论：在图灵完备和非图灵完备区块链之间做出决定](https://www.decredmagazine.com/the-paradox-of-choice-deciding-between-turing-complete-and-non-turing-complete-blockchains/) - 中文 @Dominic
 - Decred Journal 2 月至 3 月共有 3 种新的 [翻译](https://xaur.github.io/decred-news/) 阿拉伯语（@arij、@abdulrahman4）、中文（@Dominic）和波兰语（@ 科泽尔）。 谢谢你们！
 
 **非英语内容：**
@@ -629,7 +629,7 @@ Decred Magazine 4 月份的参与度统计数据：
 **讨论：**
 
 - Bison Relay [帖子](https://twitter.com/exitusdcr/status/1642750459890008065) 关于如何使用 Twitter 上的垃圾关注者帐户来降低目标帐户的可见性
-- 关于 [硬币中心化] 的讨论(https://www.reddit.com/r/decred/comments/12d8ake/one_entity_owns_2m_dcr_bad_or_good/)
+- 关于 [硬币中心化](https://www.reddit.com/r/decred/comments/12d8ake/one_entity_owns_2m_dcr_bad_or_good/) 的讨论
 - Decred [pitch](https://twitter.com/0x69b9/status/1649089557927804928) 由 0x69b9
 
 **其他：**
