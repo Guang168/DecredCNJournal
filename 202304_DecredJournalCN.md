@@ -76,7 +76,7 @@ DCRDEX的获取途径有3种：
 
 注意：
 
-- 查看有关 [在 Decrediton 中设置 DEX](https://www.decredmagazine.com/setting-up-dcrdex-0-6-in-decrediton/) 和 [为 LTC、BCH 和 BTC](https://www.decredmagazine.com/setting-up-dcrdex-native-wallets-btc-bch-ltc/)，以及 [@DecredTV](https://www.youtube.com/@DecredTV/videos）。
+- 查看有关 [在 Decrediton 中设置 DEX](https://www.decredmagazine.com/setting-up-dcrdex-0-6-in-decrediton/) 和 [为 LTC、BCH 和 BTC](https://www.decredmagazine.com/setting-up-dcrdex-native-wallets-btc-bch-ltc/)，以及 [@DecredTV](https://www.youtube.com/@DecredTV/videos)。
 - 内置的 LTC 钱包在搜索支持紧凑块过滤器的节点时启动速度可能很慢。 用户可以转到 DEX 钱包页面，单击 Litecoin -> 设置 -> 管理节点，然后手动添加一个节点 [从此列表](https://gist.github.com/chappjc/d0f26b12258f8531bb78b37f38d080a0) 以帮助推动流程。
 - 做市商机器人可以 [enabled](https://twitter.com/blockchainbuck/status/1655933747064360967) 通过运行带有 `--experimental` 标志的 DEX 客户端并从菜单中选择“做市商”。 一定要调高“oracle weight”。 该机器人有助于增加流动性，但在被认为是实验性的情况下应谨慎使用。
 
