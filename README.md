@@ -9,7 +9,7 @@
 # 中文社区
 
 * [社区网址](https://blog.dcrclub.org/)
-* [推特](https://twitter.com/DecredCN))
+* [推特](https://twitter.com/DecredCN)
 * [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
 * [中文电报群](https://t.me/decred_cn)
 * [bilibili频道](https://space.bilibili.com/425519478)
