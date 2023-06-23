@@ -187,345 +187,351 @@ _[dcrdata](https://github.com/decred/dcrdata) 是 Decred 区块链和链下数�
 
 _[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的社交媒体平台，具有针对审查、监视和广告的强大保护，由 Decred 闪电网络提供支持。_
 
-All work reported below is merged to `master` towards the next release (likely v0.1.8).
+下面报告的所有工作都将合并到下一个版本（可能是 v0.1.8）的“master”中。
 
-GUI and CLI apps:
+GUI 和 CLI 应用程序：
 
-- Implemented initial version of the [Pages](https://github.com/companyzero/bisonrelay/pull/224) feature. Pages allow to browse static content from a remote user. Only [Markdown](https://www.markdownguide.org/) pages are supported. Pages can link to other users' pages using `br://` links. Limitations of the first iteration are listed in the [pull request](https://github.com/companyzero/bisonrelay/pull/224). Pages is a big feature that will need rounds of improvements in response to user feedback.
-- Improved [tip retry](https://github.com/companyzero/bisonrelay/pull/236) strategy. Instead of making multiple parallel attempts at paying tips for one user, only a single one is tried at a time. This should help avoid problems with tip payments failing due to LN nodes with low capacity. Also tip attempts failed for having no LN route will be retried (this error may be temporary). CLI app can list running tip user attempts with the new `/runningtips` command.
-- Added ability to connect the embedded dcrlnd through the configured proxy server (such as Tor) to both the [CLI app](https://github.com/companyzero/bisonrelay/pull/235) and the [GUI app](https://github.com/companyzero/bisonrelay/pull/239). New `circuitlimit` config parameter allows to limit the number of [open connections](https://github.com/companyzero/bisonrelay/pull/234) when using proxy.
-- Added [handshake feature](https://github.com/companyzero/bisonrelay/pull/246) that allows users to test that their encryption ratchets are still working.
-- Implemented [persistent chat history](https://github.com/companyzero/bisonrelay/pull/230) that remembers last 500 messages and shows them after restarting the app. All chats are stored in log files but accessing history from the app itself is better UX and has been a frequent feature request. The plan is to eventually add on-demand loading of history as the user scrolls back in time.
-- Fixed possible [broken ratchets](https://github.com/companyzero/bisonrelay/pull/248) when two users simultaneously attempt to exchange keys with each other. This could happen when two users are added to two different group chats where the other user already exists, which initiates two key exchanges at the same time.
+- 实现了 [主页](https://github.com/companyzero/bisonrelay/pull/224) 功能的初始版本。主页允许远程用户浏览静态内容。 仅支持 [Markdown](https://www.markdownguide.org/) 页面。 页面可以使用“br://”链接链接到其他用户的页面。 [拉取请求](https://github.com/companyzero/bisonrelay/pull/224) 中列出了第一次迭代的限制。 主页是一项重要功能，需要根据用户反馈进行多轮改进。
+- 改进了[提示重试](https://github.com/companyzero/bisonrelay/pull/236)策略。 一次只尝试一次，而不是多次并行尝试为一名用户支付小费。 这应该有助于避免由于 LN 节点容量低而导致小费支付失败的问题。 此外，由于没有 LN 路径而失败的提示尝试也会重试（此错误可能是暂时的）。 CLI 应用程序可以使用新的“/runningtips”命令列出运行提示用户尝试。
+- 添加了通过配置的代理服务器（例如 Tor）将嵌入式 dcrlnd 连接到 [CLI 应用程序](https://github.com/companyzero/bisonrelay/pull/235) 和 [GUI 应用程序](https://github.com/companyzero/bisonrelay/pull/239)。 新的“CircuitLimit”配置参数允许在使用代理时限制[打开连接](https://github.com/companyzero/bisonrelay/pull/234)的数量。
+- 添加了[握手功能](https://github.com/companyzero/bisonrelay/pull/246)，允许用户测试他们的加密棘轮是否仍在工作。
+- 实现了[持久聊天历史记录](https://github.com/companyzero/bisonrelay/pull/230)，它可以记住最后 500 条消息并在重新启动应用程序后显示它们。 所有聊天都存储在日志文件中，但从应用程序本身访问历史记录是更好的用户体验，并且一直是频繁的功能请求。 该计划最终是在用户向后滚动时添加历史记录的按需加载。
+- 修复了当两个用户同时尝试彼此交换密钥时可能出现的[损坏的棘轮](https://github.com/companyzero/bisonrelay/pull/248)。 当两个用户被添加到两个不同的群聊（其中另一个用户已存在）时，可能会发生这种情况，从而同时启动两个密钥交换。
 
-GUI app:
+图形用户界面应用程序：
 
-- Added [context menu](https://github.com/companyzero/bisonrelay/issues/216) to individual chats and group chats.
-- Added a floating button to [jump to recent messages](https://github.com/companyzero/bisonrelay/pull/231).
-- Restricted size of [embedded images](https://github.com/companyzero/bisonrelay/pull/244) shown in chats and posts. Bigger image is shown if clicked. This fixes issues with scrolling and different image sizes.
-- Fixed some issues with [text selection](https://github.com/companyzero/bisonrelay/pull/226), added height limit to code blocks and made code blocks scrollable. Two Flutter widgets have been forked and patched to work around the issues, but double click (select word) and triple click (select paragraph) still don't work.
-- Fixed [scrollbar issues](https://github.com/companyzero/bisonrelay/pull/249) on LN management views.
-- Smaller fixes for scrolling and overflow behavior.
+- 在个人聊天和群聊中添加了[上下文菜单](https://github.com/companyzero/bisonrelay/issues/216)。
+- 添加了一个浮动按钮[跳转到最近的消息](https://github.com/companyzero/bisonrelay/pull/231)。
+- 聊天和帖子中显示的[嵌入图像](https://github.com/companyzero/bisonrelay/pull/244) 的大小受到限制。 如果单击，将显示更大的图像。 这解决了滚动和不同图像尺寸的问题。
+- 修复了[文本选择](https://github.com/companyzero/bisonrelay/pull/226)的一些问题，为代码块添加了高度限制并使代码块可滚动。 两个 Flutter 小部件已被分叉和修补以解决这些问题，但双击（选择单词）和三次单击（选择段落）仍然不起作用。
+- 修复了 LN 管理视图上的[滚动条问题](https://github.com/companyzero/bisonrelay/pull/249)。
+- 对滚动和溢出行为的较小修复。
 
-CLI app:
+CLI 应用程序：
 
-- Enabled brclient to delegate Pages and Store requests to [another program](https://github.com/companyzero/bisonrelay/pull/224) via the [clientrpc API](https://github.com/companyzero/bisonrelay/tree/master/clientrpc), and forward its responses back to requesting BR users. This flexibility will enable useful features in the future.
-- Enabled brclient to delegate requests to a HTTP or HTTPS [website](https://github.com/companyzero/bisonrelay/pull/224). This allows BR users to access HTTP/HTTPS resources through another BR user who acts as a proxy.
-- Sort posts by [most recent activity](https://github.com/companyzero/bisonrelay/pull/243). Also unread posts will be highlighted with a different color.
-- Allow to use the `/closechannel` command with a [short prefix](https://github.com/companyzero/bisonrelay/pull/252) of the channel ID (full ID is 64 characters long).
+- 使 brclient 通过 [clientrpc API](https://github.com/companyzero/bisonrelay/) 将页面和存储请求委托给 [另一个程序](https://github.com/companyzero/bisonrelay/pull/224) tree/master/clientrpc)，并将其响应转发回请求的 BR 用户。 这种灵活性将在未来实现有用的功能。
+- 启用 brclient 将请求委托给 HTTP 或 HTTPS [网站](https://github.com/companyzero/bisonrelay/pull/224)。 这允许 BR 用户通过充当代理的另一个 BR 用户访问 HTTP/HTTPS 资源。
+- 按[最近活动]对帖子进行排序(https://github.com/companyzero/bisonrelay/pull/243)。 未读的帖子也会以不同的颜色突出显示。
+- 允许使用带有通道 ID 的 [短前缀](https://github.com/companyzero/bisonrelay/pull/252) 的 `/closechannel` 命令（完整 ID 为 64 个字符长）。
 
-Stores progress:
+店铺进度：
 
-- Implemented merchant-side foundations for [simple Stores](https://github.com/companyzero/bisonrelay/pull/224). Unlike Pages, Stores are dynamic resources that can present product items for sale. Store has a front page and individual product pages that are generated from local files. Store is reloaded automatically when its files change. BR client running the store can serve product pages, maintain shopping carts, handle order placements, and create invoices. Prices will be shown in USD but paid in DCR. Exchange rate is fetched from [dcrdata](https://explorer.dcrdata.org). DCR amount to be paid is locked for 60 minutes while the order is valid. CLI app only supports on-chain payments.
-- Implemented [simple forms](https://github.com/companyzero/bisonrelay/pull/241). Forms can be viewed, filled and submitted by store customers to add items to the shopping cart or to place an order.
-- Added [shipping details](https://github.com/companyzero/bisonrelay/pull/250) to orders. Some products may require to fill shipping info.
+- 为[简单商店](https://github.com/companyzero/bisonrelay/pull/224)实施了商家端基础。 与页面不同，商店是动态资源，可以展示待售的产品。 商店有一个首页和从本地文件生成的各个产品页面。 当其文件更改时，存储会自动重新加载。 运行商店的 BR 客户端可以提供产品页面、维护购物车、处理订单放置以及创建发票。 价格将以美元显示，但以 DCR 支付。 汇率取自[dcrdata](https://explorer.dcrdata.org)。 订单有效期间，支付的 DCR 金额将被锁定 60 分钟。 CLI应用程序仅支持链上支付。
+- 实施[简单形式](https://github.com/companyzero/bisonrelay/pull/241)。 商店顾客可以查看、填写和提交表格，以将商品添加到购物车或下订单。
+- 在订单中添加了[运输详细信息](https://github.com/companyzero/bisonrelay/pull/250)。 有些产品可能需要填写运输信息。
 
-Other:
+其他：
 
-- Added end-to-end [performance tests](https://github.com/companyzero/bisonrelay/pull/245).
-- @JC made an onboarding event in #trading with a [giveaway](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$FjC6ZsHaR4GBvlR9-o4E4anuqWwoq1F167CU0QPJmS4) of 20 prepaid invites with 0.05 DCR each.
+- 添加了端到端[性能测试](https://github.com/companyzero/bisonrelay/pull/245)。
+- @JC 在 #trading 中举办了一场入职活动，并赠送 20 个预付费邀请，每个邀请 0.05 DCR。
 
 
-## People
+## 人员
 
-Community stats as of Jun 2 (compared to May 3):
+截至 6 月 2 日的社区统计数据（与 5 月 3 日相比）：
 
-- [Twitter](https://twitter.com/decredproject) followers: 53,108 (+31)
-- [Reddit](https://www.reddit.com/r/decred/) subscribers: 12,723 (+22)
-- [Matrix](https://chat.decred.org/) #general users: 774 (+11)
-- [Discord](https://discord.gg/GJ2GXfz) users: 1,590 (+17), verified to post: 634 (-287) - Discord was unbridged and got stronger verfication rules
-- [Telegram](https://t.me/Decred) users: 2,470 (-38)
-- [YouTube](https://www.youtube.com/decredchannel) subscribers: 4,640 (+10), views: 229.6K (+1.5K)
+- [Twitter](https://twitter.com/decredproject) 关注：53,108 (+31)
+- [Reddit](https://www.reddit.com/r/decred/) 订阅：12,723 (+22)
+- [Matrix](https://chat.decred.org/) #普通用户：774 (+11)
+- [Discord](https://discord.gg/GJ2GXfz) 用户：1,590 (+17)，验证发帖人数：634 (-287) - Discord 未桥接，并获得了更强的验证规则
+- [Telegram](https://t.me/Decred) 用户：2,470 (-38)
+- [YouTube](https://www.youtube.com/decredchannel) 订阅者：4,640 (+10)，观看次数：229.6K (+1.5K)
 
 
-## Governance
+## 治理
 
-In May the new [treasury](https://dcrdata.decred.org/treasury) received 8,088 DCR worth $139K at May's average rate of $17.13. 3,591 DCR was spent to pay contractors, worth $62K at same rate.
+5 月份，新[国库](https://dcrdata.decred.org/treasury) 收到了 8,088 个 DCR，价值 13.9 万美元，5 月份的平均汇率为 17.13 美元。 3,591 DCR 用于支付承包商费用，价值 62,000 美元。
 
-A [treasury spend tx](https://explorer.dcrdata.org/tx/5efdb2de7cbea2682d389aa274a1ef79c5996201226054b28e08e286b1809519) was approved with 6,722 Yes votes and 52% turnout, and mined on May 20. It had 23 outputs making payments to contractors, ranging from 4 DCR to 1,464 DCR. Most of this DCR was likely paid for March work, at its billing exchange rate of $20.69 the TSpend is worth around $74K.
+[国库支出 tx](https://explorer.dcrdata.org/tx/5efdb2de7cbea2682d389aa274a1ef79c5996201226054b28e08e286b1809519) 以 6,722 票赞成和 52% 的投票率获得批准，并于 5 月 20 日开采。它有 23 个产出向承包商付款，范围从 4 DCR 至 1,464 DCR。 大部分 DCR 可能是为 3 月份的工作支付的，按照 20.69 美元的计费汇率，TSpend 的价值约为 7.4 万美元。
 
-As of June 17, combined balance of [legacy](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) and [new treasury](https://dcrdata.decred.org/treasury) is 858,136 DCR (12.1 million USD at $14.08).
+截至 6 月 17 日，[旧国库](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和[新国库](https://dcrdata.decred.org/treasury) 的总余额为 858,136 DCR（1,210 万） 美元价格为 14.08 美元）。
 
-Proposals approved in May:
+五月份批准的提案：
 
-- [Decred Vanguard](https://proposals.decred.org/record/0a1b782) proposal was approved for a budget of $46,784 to fund growth of a community driven outreach program, with 94% Yes votes and turnout of 39%.
+- [Decred Vanguard](https://proposals.decred.org/record/0a1b782) 提案获得批准，预算为 46,784 美元，用于资助社区驱动的外展计划的发展，获得了 94% 的赞成票，投票率为 39%。
 
-- [BTC-ECHO](https://proposals.decred.org/record/49e373b) proposal was approved for a budget of $9,500 for a three month trial with German crypto site [BTC-ECHO.de](https://www.btc-echo.de/) during which they produce two sponsored articles, with 69% Yes votes and turnout of 32%. Prior to the vote it was edited to include additional promotion on their social media and a 2-week ad on their podcast. Second edit clarified that they do not require upfront payment and agree to wait for the payment for up to 60 days after the campaign has ended, in line with how most existing proposals and contractors operate. After the proposal was approved they posted an [update](https://proposals.decred.org/record/49e373b/comments/24) about next steps and the timeline.
+- [BTC-ECHO](https://proposals.decred.org/record/49e373b) 提案获得批准，预算为 9,500 美元，在德国加密网站 [BTC-ECHO.de](https:// www.btc-echo.de/）期间，他们发表两篇赞助文章，获得了 69% 的赞成票，投票率为 32%。 在投票之前，对其进行了编辑，包括在社交媒体上进行额外的促销活动，并在播客上播放为期两周的广告。 第二次编辑澄清，他们不需要预付款，并同意在活动结束后最多等待 60 天付款，这与大多数现有提案和承包商的运作方式一致。 提案获得批准后，他们发布了有关后续步骤和时间表的[更新](https://proposals.decred.org/record/49e373b/comments/24)。
 
-Proposals submitted in May:
+5月份提交的提案：
 
-- [DCRDEX Mesh Beginnings and Bonds Evolution](https://proposals.decred.org/record/4d2324b) requested $164K to develop experimental version of DCRDEX based on a server mesh architecture.
+- [DCRDEX 网格开始和债券演变](https://proposals.decred.org/record/4d2324b) 请求 16.4 万美元来开发基于服务器网格架构的 DCRDEX 实验版本。
 
-See Politeia Digest [issue 60](https://blockcommons.red/politeia-digest/issue060/) for more details on the month's proposals.
+有关本月提案的更多详细信息，请参阅 Politeia Digest [第 60 期](https://blockcommons.red/politeia-digest/issue060/)。
 
 
-## Network
+## 网络
 
-**Hashrate**: May's [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) opened at ~74 Ph/s and closed ~66 Ph/s, bottoming at 61 Ph/s and peaking at 88 Ph/s throughout the month.
+**全网算力**: 5 月的 [算力](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) 以74 Ph/s开启，结束为 66 Ph/s，最低为 61 Ph/s，峰值 88 Ph/s。
 
-![](../img/202305.04.720.png)
+![](img/202305.04.720.png)
 
-_Image: Decred hashrate_
+_图片：Decred 算力_
 
-Distribution of 67 Ph/s hashrate [reported](https://miningpoolstats.stream/decred) by the pools on Jun 1: Poolin 40%, F2Pool 40%, AntPool 16%, BTC.com 5%.
+6 月 1 日矿池 67 Ph/s 算力分布[报告](https://miningpoolstats.stream/decred)：币印 40%、F2Pool 40%、AntPool 16%、BTC.com 5%。
 
-Distribution of 1,000 blocks actually [mined](https://miningpoolstats.stream/decred) by Jun 1: F2Pool 40%, Poolin 35%, AntPool 17%, BTC.com 8%.
+截至 6 月 1 日，实际[开采](https://miningpoolstats.stream/decred) 的 1,000 个区块的分布：F2Pool 40%、Poolin 35%、AntPool 17%、BTC.com 8%。
 
-![](../img/202305.05.720.png)
+![](img/202305.05.720.png)
 
-_Image: Historical pool hashrate distribution_
+_图片：历史矿池算力分布_
 
-**Staking**: [Ticket price](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) varied between 173-334 DCR.
+**质押**：[选票价格](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped)在173-334 DCR之间变化。
 
-![](../img/202305.06.720.png)
+![](img/202305.06.720.png)
 
-_Image: Ticket price made another swing_
+_图片：票价再次波动_
 
-The [locked amount](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time) was 9.38-9.90 million DCR, meaning that 61.7-65.1% of the circulating supply [participated](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) in Proof of Stake.
+[锁定金额](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time)为938-990万个DCR，意味着循环供应量的61.7-65.1%[参与](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) 权益证明。
 
-**VSP**: The [14 listed VSPs](https://decred.org/vsp/) collectively managed ~6,650 (-310) live tickets, which was 16.8% of the ticket pool (0.3%) as of Jun 1.
+**VSP**：[14 个列出的 VSP](https://decred.org/vsp/) 总共管理了约 6,650 (-310) 份现场门票，截至 6 月占门票池的 16.8% (0.3%) 1.
 
-![](../img/202305.07.720.png)
+![](img/202305.07.720.png)
 
-_Image: Distribution of tickets managed by VSPs_
+_图片：VSP 管理的选票分布_
 
-**Nodes**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) observed 147 dcrd nodes on Jun 1 of the following versions: v1.7.7 - 25%, v1.7.1 - 21%, v1.7.5 - 18%, v1.7.2 - 10%, v1.8.0 dev builds - 9%, v1.7.0 - 7%, v1.7.4 - 3%, other - 8%.
+**节点**：[Decred Mapper](https://nodes.jholdstock.uk/user_agents) 在 6 月 1 日观察到以下版本的 147 个 dcrd 节点：v1.7.7 - 25%、v1.7.1 - 21%、v1 .7.5 - 18%，v1.7.2 - 10%，v1.8.0 开发版本 - 9%，v1.7.0 - 7%，v1.7.4 - 3%，其他 - 8%。
 
-![](../img/202305.08.720.png)
+![](img/202305.08.720.png)
 
-_Image: Historical dcrd version distribution, data from nodes.jholdstock.uk. Data before Jan 2023 was incomplete._
+_Image：历史dcrd版本分布，数据来自nodes.jholdstock.uk。 2023 年 1 月之前的数据不完整。_
 
-The share of [mixed coins](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true) varied between 61.8-61.9%. Daily [mixed volume](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) varied between 143-497K DCR.
+[混币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true)的份额在61.8-61.9%之间变化。 每日[混合量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 143-497K DCR 之间变化。
 
-![](../img/202305.09.720.png)
+![](img/202305.09.720.png)
 
-_Image: Monthly StakeShuffle volume in USD_
+_图片：每月 StakeShuffle 交易量（美元）_
 
-Decred's [Lightning Network](https://ln-map.jholdstock.uk/) explorer has seen 211 nodes (+15), 423 channels (+24) with a total capacity of 176 DCR (+13), as of Jun 1. These stats are different for each node. For example, @karamble's node reported 210 nodes (+17), 446 channels (+17) and 182 DCR (+9) capacity on same day Jun 1.
+截至 6 月，Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 浏览器已看到 211 个节点 (+15)、423 个通道 (+24)，总容量为 176 DCR (+13) 1. 每个节点的这些统计数据都不同。 例如，@karamble 的节点在 6 月 1 日同一天报告了 210 个节点 (+17)、446 个通道 (+17) 和 182 DCR (+9) 容量。
 
-![](../img/202305.10.720.png)
+![](img/202305.10.720.png)
 
-_Image: Decred's Lightning Network capacity_
+_图片：Decred 的闪电网络容量_
 
-And a few new charts from @bochinchero:
+还有一些来自 @bochinchero 的新图表：
 
-![](../img/202305.11.720.png)
+![](img/202305.11.720.png)
 
-_Image: Average block time remains stable at 5 minutes_
+_图片：平均出块时间稳定在5分钟_
 
-![](../img/202305.12.720.png)
+![](img/202305.12.720.png)
 
-_Image: Decred chain is adding ~180 MB per month_
+_图片：Decred 链每月增加约 180 MB_
 
-![](../img/202305.13.720.png)
+![](img/202305.13.720.png)
 
-_Image: The full Decred blockchain can fit in modern smartphone's storage_
+_图片：完整的 Decred 区块链可以适应现代智能手机的存储_
 
-![](../img/202305.14.720.png)
+![](img/202305.14.720.png)
 
-_Image: Monthly DCR issuance in USD - rewards shifted from miners to stakers and will shift more soon_
+_图片：每月以美元计价的 DCR 发行 - 奖励从矿工转移到质押者，并且很快会转移更多_
 
-![](../img/202305.15.720.png)
+![](img/202305.15.720.png)
 
-_Image: Total monthly fees - Decred is still cheap to use_
+_图片：每月总费用 - Decred 使用起来仍然很便宜_
 
-There are more charts now than it is feasible to show in the Journal. The above and other charts can be found [here](https://github.com/bochinchero/dcrsnapshots) - reuse on social media is highly encouraged!
+现在的图表数量超出了《华尔街日报》所能展示的范围。 上述和其他图表可以在[此处](https://github.com/bochinchero/dcrsnapshots)找到 - 强烈鼓励在社交媒体上重复使用！
 
 
-## Ecosystem
+## 生态系统
 
-New services:
+新服务：
 
-- ZEC/BTC and ZEC/USDC pairs have been [launched](https://twitter.com/exitusdcr/status/1654626949837500416) at [dex.decred.org](https://dex.decred.org/).
+- ZEC/BTC 和 ZEC/USDC 交易对已在 [dex.decred.org](https://dex.decred.org/) 上[启动](https://twitter.com/exitusdcr/status/1654626949837500416)。
 
-- DGB/BTC market [went live](https://twitter.com/DecredSociety/status/1657750204852871173). DEX client version 0.6.1 or higher is required, it can be obtained as a [standalone app](https://github.com/decred/dcrdex/releases) or with [Decrediton](https://github.com/decred/decred-binaries/releases) v1.8.0. Only full node-based DGB wallet is supported initially, but built-in light wallet may become possible when DigiByte v8.22 is released.
+- DGB/BTC 市场[上线](https://twitter.com/DecredSociety/status/1657750204852871173)。 需要 DEX 客户端 v0.6.1 或更高版本，它可以作为[独立应用程序](https://github.com/decred/dcrdex/releases) 或通过 [Decrediton](https://github.com/decred/decred-binaries/releases)v1.8.0。 最初仅支持基于全节点的 DGB 钱包，但当 DigiByte v8.22 发布时，内置轻钱包将可用。
 
-- Decred's Matrix chat logs can now be viewed [archive.matrix.org](https://archive.matrix.org/) - a new chat archive browser replacing [view.matrix.org](https://view.matrix.org/). The service works without JavaScript and does not require a Matrix account.
+- Decred 的 Matrix 聊天日志现在可以查看 [archive.matrix.org](https://archive.matrix.org/) - 新的聊天存档浏览器取代了 [view.matrix.org](https://view.matrix .org/）。 该服务无需 JavaScript 即可运行，并且不需要 Matrix 帐户。
 
-Services lost:
+服务丢失：
 
-- Binance is [leaving Canada](https://www.forbes.com/sites/digital-assets/2023/05/16/binance-exits-canada-over-concerns-of-strict-regulation/) in [response](https://twitter.com/binance/status/1657099651210969088) to recent crypto regulations that prohibit registered exchanges from accepting stablecoin deposits or selling them to the customers without approval from CSA. Other restrictions include a ban on margin trading and investor limits. According to [#trading chat](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$Ox6W2V_jS33D6X5kOvuX6OU-TPW-8xStJL0QdLzpD8E) customers were asked via email to close any open positions by September 30, 2023.
+- 币安将[离开加拿大](https://www.forbes.com/sites/digital-assets/2023/05/16/binance-exits-canada-over-concerns-of-strict-regulation/) [回复] ](https://twitter.com/binance/status/1657099651210969088) 最近的加密法规禁止注册交易所接受稳定币存款或未经 CSA 批准将其出售给客户。 其他限制包括禁止保证金交易和投资者限制。 根据 [#trading chat](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$Ox6W2V_jS33D6X5kOvuX6OU-TPW-8xStJL0QdLzpD8E)，客户被要求在 2023 年 9 月 30 日之前关闭所有未平仓头寸。
 
-- Binance plans to [delist 12 privacy coins](https://cointelegraph.com/news/binance-to-delist-privacy-tokens-in-france-italy-spain-and-poland) in France, Italy, Poland and Spain. Starting from June 26, residents of these countries will no longer be able to trade DCR. Binance has recently acquired appropriate [licenses](https://beincrypto.com/binance-privacy-coins-prohibition/) in the affected jurisdictions. The move came soon after the Markets in Crypto Assets (MiCA) has [passed](https://cryptoslate.com/binance-delists-privacy-coins-for-european-users-amid-layoff-rumors/) in the EU on May 16.
+- 币安计划在法国、意大利、波兰和波兰[下架 12 种隐私币](https://cointelegraph.com/news/binance-to-delist-privacy-tokens-in-france-italy-spain-and-poland) 。 从6月26日开始，这些国家的居民将无法再进行DCR交易。 币安最近在受影响的司法管辖区获得了适当的[许可证](https://beincrypto.com/binance-privacy-coins-prohibition/)。 此举是在欧盟加密资产市场（MiCA）[通过](https://cryptoslate.com/binance-delists-privacy-coins-for-european-users-amid-layoff-rumors/)之后不久进行的。
 
-- Hotbit [announced](https://twitter.com/Hotbit_news/status/1660496999458963458) it is shutting down operations and asks to withdraw all assets by June 30. DCR trading was available on the main hotbit.io since [October 2019](https://twitter.com/Hotbit_news/status/1186979514741428224) and on its Korean branch since [November 2020](https://twitter.com/Hotbit_Korea/status/1331412789416534017). According to some community members DCR was delisted some time ago and no DCR users should be affected. Reasons to sunset the exchange included: losses from the criminal [investigation](https://help.hotbit.io/hc/en-us/articles/8074249353495), outflow of funds from CEXes, unsustainable business model of trying to list too many coins of which many get hacked, and difficulties to comply with regulation. Quoting the goodbye [announcement](https://help.hotbit.io/hc/en-us/articles/14750194236823-It-s-time-to-take-a-bow): "either embrace the regulation or become more decentralized". We're on it!
+- Hotbit [已宣布](https://twitter.com/Hotbit_news/status/1660496999458963458) 将关闭运营并要求在 6 月 30 日之前撤回所有资产。自 [2019 年 10 月](https://twitter.com/Hotbit_news/status/1186979514741428224)以来，DCR 交易已在主 hotbit.io 上提供以及自 [2020 年 11 月](https://twitter.com/Hotbit_Korea/status/1331412789416534017) 以来的韩国分支机构。 据一些社区成员透露，DCR 已下架一段时间，不会影响任何 DCR 用户。 关闭交易所的原因包括：犯罪[调查](https://help.hotbit.io/hc/en-us/articles/8074249353495)造成的损失、CEX资金外流、试图上市的商业模式不可持续 许多代币，其中许多被黑客攻击，并且难以遵守监管。 引用告别[公告](https://help.hotbit.io/hc/en-us/articles/14750194236823-It-s-time-to-take-a-bow)：“要么接受监管，要么变得更加 去中心化”。 我们正在努力！
 
-Other news:
+其他新闻：
 
-- Apparently Huobi did not delist DCR as it planned to in September 2022. The announcement page has been removed but an [archived copy](https://web.archive.org/web/20221002130913/https://www.huobi.com/support/en-us/detail/104917015223952) is available. USDT trading pairs for DCR and 6 other privacy coins from that list are still live and report good-looking volumes on CoinGecko and CoinMarketCap as of May 12. Observers from the #trading chat said that DCR has never stopped flowing back and forth between Huobi and Binance.
+- 显然火币并没有按照计划于 2022 年 9 月下架 DCR。公告页面已被删除，但有[存档副本](https://web.archive.org/web/20221002130913/https://www.huobi.com/support/en-us/detail/104917015223952)可用。 截至 5 月 12 日，DCR 和该列表中其他 6 种隐私币的 USDT 交易对仍然存在，并且在 CoinGecko 和 CoinMarketCap 上报告了不错的交易量。
 
-- Bittrex has filed for [bankruptcy](https://fortune.com/2023/05/08/bittrex-bankruptcy-us-filing-crypto-platform/) in the U.S. and Malta, 3 weeks after it was charged by the SEC for operating an unregistered securities exchange. Both arms have been processing [withdrawals](https://www.coindesk.com/policy/2023/05/10/bittrexs-us-maltese-arms-processed-425m-in-withdrawals-since-april-1-attorney-says/) since April.
+- Bittrex 已在美国和马耳他申请[破产](https://fortune.com/2023/05/08/bittrex-bankruptcy-us-filing-crypto-platform/)，距该公司被指控 3 周后 SEC 经营未注册的证券交易所。处理提款从四月开始。
 
-- Ledger [announced](https://twitter.com/Ledger/status/1658458714771169282) an upcoming [Ledger Recover](https://www.ledger.com/recover) service. Recover allows to register your ID (CA, EU, UK, US) and backup the wallet seed at trusted third parties. The seed is split into 3 fragments, the fragments are encrypted with a symmetric key and sent to 3 different backup providers. It can be later rebuilt on another Ledger device by verifying ID and getting 2 out of 3 fragments from the providers. Only Ledger Nano X is supported currently. DCR users may want to evaluate the [risks](https://support.ledger.com/hc/en-us/articles/9579368109597-Ledger-Recover-FAQs) of using Ledger in light of this new feature, which has been added in [firmware version 2.2.1](https://twitter.com/alistairmilne/status/1658381708763209729) and *should* be inactive until explicitly enabled. See more detailed coverage in [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org/$LSE8W9g9a4hqu9HN4IIyqWSf6H-LwSjd-xgK8Xie7GQ).
+- Ledger [宣布](https://twitter.com/Ledger/status/1658458714771169282) 即将推出的 [Ledger Recover](https://www.ledger.com/recover) 服务。 恢复允许注册您的 ID（加拿大、欧盟、英国、美国）并在受信任的第三方备份钱包种子。 种子被分成 3 个片段，这些片段使用对称密钥加密并发送到 3 个不同的备份提供商。 稍后可以通过验证 ID 并从提供商处获取 3 个片段中的 2 个来在另一个 Ledger 设备上重建它。 目前仅支持 Ledger Nano X。 DCR 用户可能希望根据这一新功能评估使用 Ledger 的[风险](https://support.ledger.com/hc/en-us/articles/9579368109597-Ledger-Recover-FAQs)，该新功能已被添加到[固件版本2.2.1](https://twitter.com/alistairmilne/status/1658381708763209729)并且*应该*在明确启用之前处于非活动状态。 请参阅 [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org/$LSE8W9g9a4hqu9HN4IIyqWSf6H-LwSjd-xgK8Xie7GQ) 中更详细的报道。
+  
+社区发现但尚未测试的新服务：
 
-New services discovered but not tested by the community yet:
+- [DCR 付款选项](https://fxdreema.com/purchase) 已在 [fxDreema](https://fxdreema.com/) 上被[发现](https://twitter.com/h3la1/status/1653233413200158721) ) - 与 MetaTrader 4 和 MetaTrader 5 兼容的交易机器人图形构建器。
 
-- [DCR payment option](https://fxdreema.com/purchase) has been [spotted](https://twitter.com/h3la1/status/1653233413200158721) at [fxDreema](https://fxdreema.com/) - a graphical builder of trading bots compatible with MetaTrader 4 and MetaTrader 5.
+- [CryptoWallet.com](https://cryptowallet.com/) 拥有一款移动应用程序，允许用户买卖加密货币，支持 VISA/MasterCard/SEPA 转账，并计划推出自己的卡产品。 该公司在爱沙尼亚获得许可。 非常感谢研究和测试帮助。
 
-- [CryptoWallet.com](https://cryptowallet.com/) features a mobile app that allows users to buy and sell crypto, supports VISA/MasterCard/SEPA transfers, and plans to launch own card product. The company is licensed in Estonia. Research and testing help is much appreciated.
+加入我们的 [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) 聊天，获取有关 Decred 服务的更多新闻。
 
-Join our [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) chat to get more news about Decred services.
+警告：Decred Journal 的作者不知道上述任何服务的可信度。 在将您的个人信息或资产委托给任何实体之前，请先进行自己的研究。
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
 
+## 外展
 
-## Outreach
+Decred Vanguard 已获得[批准](https://proposals.decred.org/record/0a1b782) 并开始其外展业务。 Vanguard 拥有自己的 Discord 服务器，成员可以在其中进行协调、制定最佳方法并评估结果。 成员利用 Midjourney AI 生成先进的艺术作品，以帮助传达 Decred 的信息。 一些成员购买了 Twitter Blue，而且似乎运行得很好。 此时的主要挑战是招募积极且富有成效的会员，这就是为什么最初的每月津贴定为 100 美元的低水平。 另一个挑战是熊市中的营销。 五月份没有为大型/著名活动分配任何奖项。
 
-Decred Vanguard has been [approved](https://proposals.decred.org/record/0a1b782) and started its outreach operations. Vanguard has its own Discord server where members coordinate, develop best approaches and evaluate results. Members make use of Midjourney AI to generate advanced art to help get Decred's message across. Several members acquired Twitter Blue and it seems to be working quite well. Key challenge at this point is recruiting members who are active and productive, this is why the initial monthly stipend is set low at $100. Another challenge is marketing in the bear market. In May no prizes for big/notable engagements have been allocated.
+任何有兴趣加入 Decred Vanguard 的人都应联系 [@Tivra](https://twitter.com/WasPraxis) 或 [@Exitus](https://twitter.com/exitusdcr)。 如果您是 Decred 的新手，没关系 - 您只需要愿意学习并尽可能提供帮助即可。
 
-Anyone interested in joining Decred Vanguard should contact [@Tivra](https://twitter.com/WasPraxis) or [@Exitus](https://twitter.com/exitusdcr). If you are new to Decred it's OKAY - you just need to be willing to learn and help out where you can.
+> Vanguard 确实感觉像是我们多年来所需要的东西。 \[@Exitus\]
 
-> Vanguard really feels like something we needed for years. \[@Exitus\]
+![](img/202305.16.920.png)
 
-![](../img/202305.16.920.png)
+_图片：先锋队作战室_
 
-_Image: Vanguard's War Room_
+Monde PR 的成就：
 
-Monde PR's achievements:
+- 提供 1 次评论机会
+- 推介 7 个媒体机会
+- 获得 1 次媒体采访
 
-- Pitched 1 commentary opportunity
-- Pitched 7 media opportunities
-- Secured 1 media interview
+确保以下媒体展示位置：
 
-Secured the following media placements:
+- @jy-p 接受[权威杂志](https://medium.com/authority-magazine/the-future-is-now-jake-yocom-piatt-on-how-their-technological-innovation-will-shake-u-3966dc1adc22)采访讨论了 Decred 的许多方面，包括：Decred 的起源故事、Bison Relay 作为主权互联网的产品、即将推出的对页面和电子商务商店的支持、Politeia 以及 Decred 在巴西选举中的使用。
 
-- @jy-p was interviewed by [Authority Magazine](https://medium.com/authority-magazine/the-future-is-now-jake-yocom-piatt-on-how-their-technological-innovation-will-shake-u-3966dc1adc22) discussing many aspects of Decred including: Decred's origin story, Bison Relay's offering as a sovereign internet, upcoming support for pages and e-commerce stores, Politeia, and Decred's use in Brazil's election.
 
+## 活动
 
-## Events
+**出席：**
 
-**Attended:**
+- @arij 和 @khalidesi 参加了在摩洛哥卡萨布兰卡举行的 [EMEC EXPO](https://emecexpo.ma)，这是一场专注于数字技术的 9000 人大型活动。 团队设立了一个展台，向来自各个领域的参观者解释 Decred 的功能，与几家摩洛哥公司进行互动，并会见了一些已经熟悉该项目的人。 请参阅[此处](https://decredcommunity.github.io/events/index/20230511.1)的完整报告。
 
-- @arij and @khalidesi attended [EMEC EXPO](https://emecexpo.ma) in Casablanca, Morocco, a big 9K people event dedicated to digital technologies. The team had a stand where they explained Decred features to visitors from various fields, interacted with several Moroccan companies, and met some people who were already familiar with the project. See the full report [here](https://decredcommunity.github.io/events/index/20230511.1).
 
+## 媒体
 
-## Media
+**精选文章：**
 
-**Selected articles:**
+- [Decred DEX 推出 DCRDEX 0.6，为跨链交换提供新级别的隐私和安全性](https://decred.org/news/2023-04-18_decred_releases_dcrdex_0.6/)
+- [未来就在眼前：decred.org 的 Jake Yocom-Piatt 谈论他们的技术创新将如何撼动科技领域](https://medium.com/authority-magazine/the-future-is-now-jake-yocom-piatt-on-how-their-technological-innovation-will-shake-u-3966dc1adc22) 由权威杂志发布。 @jy-p
+- [Decred vs Horizen：加密还不够！](https://www.decredmagazine.com/decred-vs-horizen-crypto-is-not-enough/) @Joao
+- [我不需要你的喜欢](https://www.decredmagazine.com/i-dont-want-your-likes/) @phoenixgreen
 
-- [Decred DEX launches DCRDEX 0.6, offering new levels of privacy and security for cross-chain swaps](https://decred.org/news/2023-04-18_decred_releases_dcrdex_0.6/) - April's press release is now live at decred.org
-- [The future is now: Jake Yocom-Piatt of decred.org on how their technological innovation will shake up the tech scene](https://medium.com/authority-magazine/the-future-is-now-jake-yocom-piatt-on-how-their-technological-innovation-will-shake-u-3966dc1adc22) by Authority Magazine feat. @jy-p
-- [Decred vs Horizen: Crypto is not enough!](https://www.decredmagazine.com/decred-vs-horizen-crypto-is-not-enough/) by @Joao
-- [I don't want your likes](https://www.decredmagazine.com/i-dont-want-your-likes/) by @phoenixgreen
+Decred 杂志 2023 年 5 月参与度统计数据：
 
-Decred Magazine engagement stats for May 2023:
+- DM 上的文章总数：460
+- 时事通讯订阅者：100
+- 发送的新 DM 帖子和时事通讯：16
+- 活跃的社交媒体活动：57
+- 已完成的社交媒体活动：41
+- 社交媒体帖子：172
+- 点赞数：1,180
+- 转发：302
+- 所有平台和帐户的社交媒体关注者（包括 [@DecredSociety](https://twitter.com/DecredSociety)）：1,350
 
-- Total number of articles on DM: 460
-- Newsletter subscribers: 100
-- New DM posts and newsletters sent: 16
-- Active social media campaigns: 57
-- Completed social media campaigns: 41
-- Social media posts: 172
-- Likes: 1,180
-- Re-tweets: 302
-- Social media followers across all platforms and accounts (including [@DecredSociety](https://twitter.com/DecredSociety)): 1,350
+**视频：**
 
-**Videos:**
+- [完成莱特币原子交换 - DCRDEX 0.6](https://www.youtube.com/watch?v=ajHovJHxtFw) @phoenixgreen
+- [Decred Recap - v1.7.7 改进，atomic-swap DEX v0.6 - DAO 不断发展！](https://www.youtube.com/watch?v=OgupSweE94s)  @Exitus 
+- [Bison Relay 升级到版本 0.1.7](https://www.youtube.com/watch?v=wg0k8p3arxI)  @phoenixgreen 
+- [Decrediton 提案投票](https://www.youtube.com/watch?v=q18OVd9z-n0)  @phoenixgreen 
+- [Bison Relay 预付费邀请](https://www.youtube.com/watch?v=n4_fkpyppws)  @phoenixgreen 
+- [Decred 正在为其 DEX 开发网状网络](https://www.tiktok.com/@decred_crypto/video/7239431067764002074) TikTok  @DajanaDcr 和 @Exitus
 
-- [Completing a Litecoin atomic-swap - DCRDEX 0.6](https://www.youtube.com/watch?v=ajHovJHxtFw) by @phoenixgreen
-- [Decred Recap - v1.7.7 improvements, atomic-swap DEX v0.6 - The DAO evolves!](https://www.youtube.com/watch?v=OgupSweE94s) by @Exitus - also as a [podcast](https://podcasters.spotify.com/pod/show/decred-magazine/episodes/Decred-Recap---v1-7-7-Improvements--Atomic-Swap-DEX-v0-6---The-DAO-Evolves-e23hp9k)
-- [Bison Relay upgrades to version 0.1.7](https://www.youtube.com/watch?v=wg0k8p3arxI) by @phoenixgreen - also as a [text post](https://www.decredmagazine.com/bison-relay-upgrades-to-version-0-1-7/)
-- [Decrediton proposal voting](https://www.youtube.com/watch?v=q18OVd9z-n0) by @phoenixgreen - also as a [text post](https://www.decredmagazine.com/decrediton-proposal-voting/)
-- [Bison Relay pre-paid invites](https://www.youtube.com/watch?v=n4_fkpyppws) by @phoenixgreen - also as a [text post](https://www.decredmagazine.com/bison-relay-pre-paid-invitations/)
-- [Decred is developing a mesh network for its DEX](https://www.tiktok.com/@decred_crypto/video/7239431067764002074) TikTok by @DajanaDcr and @Exitus
+直播：
 
-Livestream:
+- [市场状况 - Decred Vanguard - 一项新的外展工作](https://www.youtube.com/watch?v=UDTQFOcva5Q) 由 @phoenixgreen 和 @Exitus 主持，@Tivra 和 @h3la1
 
-- [State of the Market - Decred Vanguard - A new outreach effort](https://www.youtube.com/watch?v=UDTQFOcva5Q) by @phoenixgreen and @Exitus joined by @Tivra and @h3la1 - also as a [podcast](https://podcasters.spotify.com/pod/show/decred-magazine/episodes/State-of-the-market---Decred-Vanguard---A-New-Outreach-Effort-e23midd)
+**音频：**
 
-**Audio:**
+- Twitter Space [Decred x Zcash 社区讨论](https://twitter.com/i/spaces/1vOxwMZYqYWGB) 与 @Tivra 和 [ZecHub](https://twitter.com/ZecHub) - 也在 [YouTube](https://www.youtube.com/watch?v=2RStHBiWNDk)
+- [Twitter 空间](https://twitter.com/i/spaces/1jMJgLwmPLMxL) @Tivra 和 [W0wn3r0](https://twitter.com/W0wn3r0)
 
-- Twitter Space [Decred x Zcash community discussion](https://twitter.com/i/spaces/1vOxwMZYqYWGB) with @Tivra and [ZecHub](https://twitter.com/ZecHub) - also on [YouTube](https://www.youtube.com/watch?v=2RStHBiWNDk)
-- [Twitter Space](https://twitter.com/i/spaces/1jMJgLwmPLMxL) with @Tivra and [W0wn3r0](https://twitter.com/W0wn3r0)
+**艺术与乐趣：**
 
-**Art and fun:**
+- 野牛序号 [题词](https://twitter.com/c12hz/status/1656636523448606720)  @c12hz
+- [登上伟大](https://www.decredmagazine.com/ascend-to-greatness/)  @OfficialCryptos
+- [Decred Katana](https://www.decredmagazine.com/decred-katana/) @OfficialCryptos
+- [Decred 杂志](https://twitter.com/aithzakaria1/status/1653718235588468737) @aithzakaria1
 
-- Bison Ordinals [inscription](https://twitter.com/c12hz/status/1656636523448606720) by @c12hz
-- [Ascend to Greatness](https://www.decredmagazine.com/ascend-to-greatness/) by @OfficialCryptos
-- [Decred Katana](https://www.decredmagazine.com/decred-katana/) by @OfficialCryptos
-- [Decred Magazine](https://twitter.com/aithzakaria1/status/1653718235588468737) illustration by @aithzakaria1
+![](img/202305.17.640.png)
 
-![](../img/202305.17.640.png)
+_图片：@OfficialCryptos._
 
-_Image: Decred shedding the ballast. By @OfficialCryptos._
+**翻译：**
 
-**Translations:**
+- [互联网隐私及其重要性](https://www.decredmagazine.com/internet-privacy-and-why-it-is-important/) - [中文](https://github.com/ DominicTing/decred-ZH-translations/blob/master/Internet%20Privacy%20and%20Why%20it%20is%20Important.md) @Dominic
+- Decred 月报 2023.4 已由 @Dominic [翻译](https://xaur.github.io/decred-news/) 为中文 - 谢谢！
 
-- [Internet privacy and why it is important](https://www.decredmagazine.com/internet-privacy-and-why-it-is-important/) - [in Chinese](https://github.com/DominicTing/decred-ZH-translations/blob/master/Internet%20Privacy%20and%20Why%20it%20is%20Important.md) by @Dominic
-- Decred Journal April 2023 was [translated](https://xaur.github.io/decred-news/) to Chinese by @Dominic - thank you!
 
+## 市场
 
-## Markets
+5 月份 DCR 的交易价格在 USDT 15.19-20.59 和 BTC 0.00056-0.00075 之间。 平均每日交易价格为 17.13 美元。
 
-In May DCR was trading between USDT 15.19-20.59 and BTC 0.00056-0.00075. The average daily rate was $17.13.
+社区的 DCR 价格分析发布在 #trading 聊天中：
 
-Community's DCR price analysis posted in the #trading chat:
+![](img/202305.18.1500.png)
 
-![](../img/202305.18.1500.png)
+_图片：DCR/USD 的奇怪价格灯芯似乎发生在与 BTC/USD 价格走势相关性较低的情况下。 @saender._ 的分析
 
-_Image: Odd price wicks on DCR/USD seem to happen during low correlation with BTC/USD price action. Analysis by @saender._
+![](img/202305.19.800.png)
 
-![](../img/202305.19.800.png)
+_图片：市场估值（美元）基于 @bochinchero_ 的 Decred 特定质押已实现价值指标
 
-_Image: Market Valuations (USD) based on Decred-specific Staked Realised Value metric from @bochinchero_
+![](img/202305.20.1600.orig.jpg)
 
-![](../img/202305.20.1600.orig.jpg)
+_图片：DCR/USD 累积区域分析，作者：@saender_
 
-_Image: DCR/USD accumulation zones analysis by @saender_
+![](img/202305.21.720.png)
 
-![](../img/202305.21.720.png)
+_图片：DCRDEX 每月交易量（美元）_
 
-_Image: DCRDEX monthly volume in USD_
 
+## 相关外部信息
 
-## Relevant External
+以太坊的信标链一直在经历一些最终性问题，在两次事件中，验证者大多停止提出证明大约一个小时，没有人知道为什么。以太坊网络上的交易已经能够继续，因此用户可能没有注意到任何问题，但在幕后，完成一切的信标链无法正常工作，因此这些交易比通常情况更容易被逆转。以太坊核心开发人员为受该问题影响的两个客户端（Prysmatic Labs 的基于 Go 的Prysm和 ConsenSys 的基于 Java 的Teku ）发布了补丁，这是由运行这些客户端的节点上异常高的负载引起的。
 
-Ethereum's Beacon chain has been [experiencing](https://www.theblock.co/post/230680/ethereum-beacon-chain-finality-issue) some issues with finality, two episodes where validators mostly stopped proposing attestations for about an hour and nobody is sure why. Transactions on the Ethereum network have been able to continue and so users may have noticed no issues, but behind the scenes the beacon chain which finalizes everything was not working so these transactions were more susceptible to reversion than would have ordinarily been the case. Ethereum core developers [released](https://cointelegraph.com/news/ethereum-s-beacon-chain-is-updated-after-finality-issues) patches for the two clients affected by the issue (Go-based [Prysm](https://github.com/prysmaticlabs/prysm) from Prysmatic Labs and Java-based [Teku](https://github.com/ConsenSys/teku) from ConsenSys), which had been caused by exceptionally high load on the nodes running these clients.
+达世币网络和链于 5 月 22 日停滞了 16 个小时，原因是在 v19 中将 BLS 阈值加密升级到行业标准时出现故障。核心团队制作了一个快速补丁（v19.1）来停止 v19 的部署，这使得网络在停机 16 小时后恢复。v19.2 中将包含对该问题的修复以及部署更改的另一次尝试。
 
-The Dash network and chain stalled on May 22 for 16 hours, due to a [glitch](https://www.dash.org/blog/dash-network-update/) caused by the upgrading the BLS threshold cryptography to an industry standard in v19. The core team produced a quick patch (v19.1) to halt deployment of v19 and this allowed the network to resume after 16 hours of downtime. A fix for the issue and another attempt to deploy the changes will be included in v19.2.
+Halborn记录了在审计狗狗币代码库时发现的几个问题，但这些问题也适用于同一比特币谱系的许多分叉，包括莱特币和 Zcash。他们将这些漏洞称为“Rab13s 漏洞”，最容易利用的漏洞将允许攻击者使节​​点脱机，而其他漏洞则允许远程执行代码，但仅限于有效的凭据，从而使利用该问题变得更加困难。
 
-Halborn has [documented](https://www.halborn.com/blog/post/halborn-discovers-zero-day-impacting-dogecoin-and-280-networks) several issues discovered while auditing the Dogecoin codebase, but which also apply to a number of forks of the same Bitcoin lineage, including Litecoin and Zcash. They refer to these as "The Rab13s Vulnerabilities", and the most exploitable ones would allow attackers to take nodes offline, with others allowing remote code execution but only with valid credentials, making exploiting the issue more difficult.
+3 月份推出的比特币铭文 (NFT) 新 BRC-20 代币标准已达到10 亿美元的综合（名义）市场估值。这一里程碑是在第一个 BRC-20 代币 ORDI 在一些主要交易所上市后实现的。
 
-The new BRC-20 token standard for Bitcoin inscriptions (NFTs) which was launched in March has [reached](https://decrypt.co/139357/bitcoin-brc-20-tokens-near-billion-market-cap-exchanges-list-ordi) a combined (notional) market valuation of $1 billion. This milestone was reached after ORDI, the first BRC-20 token, was listed on some major exchanges.
+比特币创下了每日交易新纪录。使用 BRC-20 标准铸造可替代代币的趋势正在蔓延到莱特币和狗狗币链，同样提高了它们的交易活动水平。
 
-Bitcoin has set a new [record](https://www.msn.com/en-us/money/other/bitcoin-sets-new-daily-transaction-record-amid-ordinals-trend-as-crypto-miners-face-potential-energy-tax/ar-AA1aXUjh) in daily transactions. The trend of minting fungible tokens with the BRC-20 standard is [spreading](https://decrypt.co/140683/meme-tokens-nfts-took-over-bitcoin-now-happening-dogecoin-litecoin) to Litecoin and Dogecoin chains, similarly raising their transaction activity levels.
+对于 BRC-20 数据链上存储效率低下的问题，有人提出批评，认为不花时间将数据编码为二进制会导致交易费用增加 4 倍。做出这一选择显然是因为希望链上数据可供人类阅读，但有人建议使用更多的区块空间可能是设计者有意为之。
 
-There has been some [criticism](https://twitter.com/jratcliff/status/1655669410206457865) of the inefficiency of storage of the BRC-20 data on-chain, suggestions that not spending the time to encode data as binary is costing 4x as much in transaction fees. The choice was [apparently](https://twitter.com/hash_bender/status/1655671019498258432) made due to a desire to have the on chain data be human-readable, but there are [suggestions](https://twitter.com/peterktodd/status/1655694148983312387) that using a lot more block space may have been deliberate on the part of the designers.
+Taproot Assets v0.2发布，添加了一组工具，开发人员可以在测试网上使用这些工具来发行、转移和发现 Taproot Assets 协议（以前的 Taro）上的资产。Taproot 资产协议的目标是通过处理大多数链外交易来提供一种更具可扩展性的方式来处理比特币链上的资产，而不是序数铭文，后者以低效的方式使用区块空间，并导致所有用户的费用大幅增加。网络。0.2 版本增加了对“虚拟部分签名比特币交易”（vPSBT）的支持，这将使开发人员能够更轻松地处理 Taproot 资产。闪电网络对资产和稳定币的支持是未来版本的主要目标之一，面向新兴市场的使用。
 
-Taproot Assets v0.2 was [released](https://lightning.engineering/posts/2023-05-16-taproot-assets-v0.2/), adding a set of tools that developers can use on testnet to issue, transfer and discover assets on the Taproot Assets Protocol (formerly Taro). Taproot Assets Protocol is aiming to provide a more scalable way to handle assets on the bitcoin chain by handling most transactions off-chain, as opposed to Ordinal inscriptions which use block space in an inefficient manner and cause a material increase in fees for all users of the network. Version 0.2 adds support for "virtual Partially Signed Bitcoin Transactions" (vPSBTs), which will allow developers to more easily handle Taproot Assets. Lightning network support for assets and stablecoins is one of the big targets for a future release, geared towards use in emerging markets.
+Richard Heart 的 Pulsechain（以太坊分叉）推出，这是 HEX 生态系统中备受期待的一部分，以及“PulseX”去中心化交易所（Uniswap 分叉）。这些发布早在 HEX 社区转向成为以太坊软件分叉之前就备受期待。然而，降低 HEX 用户费用的目标似乎并未实现，因为在 Pulsechain 之间桥接资产所需的交易序列很长。此外，严重的流动性问题使得用户很难获得可用来支付汽油费的 PLS，导致许多用户根本没有合适的代币来使用网络，而这些代币只能以高额加价获得。所有相关代币的价格都在急剧下跌。
 
-Richard Heart's Pulsechain (an Ethereum fork), which is a long anticipated part of the HEX ecosystem, [launched](https://protos.com/richard-hearts-pulse-launch-flops-users-stranded-hex-crashes/), along with "PulseX" decentralized exchange (a Uniswap fork). These launches have been much anticipated by the HEX community, since years before they pivoted to become forks of Ethereum software. However the aim of lowering fees for HEX users does not seem to have been met, because of the lengthy sequence of transactions required to bridge assets to and from Pulsechain. Furthermore, significant liquidity issues made it difficult for users to obtain PLS that they could use to pay gas fees, resulting in many users being stuck without the right kind of tokens to use the network at all and these only being available at extortionate mark-ups. The prices for all the related tokens have been in a steep decline.
+DeFi 借贷协议 AAVE批准并在以太坊、Polygon 和 Avalanche 网络上部署了对其智能合约的更改，该更改旨在调整利率计算，但由于函数格式错误，破坏了 Polygon 链上的协议。价值约 1.2 亿美元的用户资金无法使用，而修复错误的提案正在通过治理流程，大约需要一周时间才能解决问题。
 
-DeFi lending protocol AAVE [approved](https://app.aave.com/governance/proposal/224/) and deployed a change to its smart contracts on Ethereum, Polygon and Avalanche networks, the change was intended to adjust interest rate calculations but, due to a function formatting error, broke the protocol on the Polygon chain. User funds worth around $120M were [unavailable](https://www.coindesk.com/tech/2023/05/23/aave-v2-users-temporarily-unable-to-access-120m-on-polygon-after-governance-bug/) while a proposal to fix the error worked its way through the governance process, taking around a week to resolve the issue.
+用于开发 OFAC 批准的 ETH 混合服务 Tornado Cash 的 DAO 被一名黑客接管，该黑客授予自己 120 万个 TORN 代币，并用这些代币批准 DAO 财政基金的支出。允许黑客攻击的代码最近在一项看似合法的提案中获得通过，该提案得到了通常的 Tornado DAO 治理流程的批准。这次黑客攻击并没有影响 Tornado Cash 混合器本身，而是影响了与 DAO 相关的智能合约。几天后，攻击者提出重置他们所做的更改并返还他们授予自己的未使用代币的建议，通过 Tornado Cash 混入约 900,000 美元的 ETH 后将控制权返回给 DAO。
 
-The DAO for development of OFAC-sanctioned ETH mixing service Tornado Cash was [taken over](https://www.coindesk.com/tech/2023/05/21/attacker-takes-over-tornado-cash-dao-with-vote-fraud-token-slumps-40/) by a hacker who granted themselves 1.2 million TORN tokens and used these to approve spends from the DAO's Treasury fund. The code to allow the hack was recently passed within a legitimate-looking proposal which was approved by the usual Tornado DAO governance process. The hack did not affect the Tornado Cash mixer itself, but rather the smart contracts associated with the DAO. After a few days the attacker made a proposal to reset the changes they had made and [return](https://crypto.news/hacker-drops-control-over-tornado-cash-as-they-use-it-to-wash-stolen-funds/) the unspent tokens they had granted themselves, returning control to the DAO after pocketing around $900,000 of ETH mixed through Tornado Cash.
+币安一直在编制已上市交易的“无进展项目”清单，并开始将它们添加到“创新区”，如果它们没有开始展示一些进展，就将被除名。CZ已经意识到这可能需要重新命名“创新区”。
 
-Binance has been compiling lists of "no-progress projects" which it has listed for trade, and has started [adding](https://twitter.com/cz_binance/status/1656231470959063041) them to the "Innovation Zone", on a pathway to delisting if they don't start demonstrating some progress. CZ has already [realized](https://twitter.com/cz_binance/status/1656231889718353921) that this may necessitate a re-naming of the "Innovation Zone".
+Bittrex 在特拉华州申请破产，但计划偿还所有客户资产押金，全球 Bittrex 实体似乎未受影响。
 
-Bittrex filed for [bankruptcy](https://www.coindesk.com/policy/2023/05/08/us-crypto-exchange-bittrex-files-for-bankruptcy-in-delaware/) in Delaware but with a plan to reimburse all customer asset deposits, with the global Bittrex entity seemingly unaffected.
+Silvergate Capital 已从纽约证券交易所退市并进入清算程序。它是曾经最大的加密银行合作伙伴 Silvergate Bank 的母公司。Silvergate 银行在 FTX 崩溃后出现大量客户提款，导致该银行在 2022 年最后一个季度亏损 10 亿美元，因此于 3 月份被关闭。
 
-Silvergate Capital has been [delisted](https://protos.com/crypto-banking-giant-silvergate-is-no-more-following-nyse-delisting/) from NYSE and gone into liquidation. It is the parent company of Silvergate Bank, once the largest crypto banking partner. Silvergate bank was [wound down](https://www.theguardian.com/technology/2023/mar/09/crypto-bank-silvergate-liquidation-sector-turmoil-wind-down-ftx-exchange) in March after a rush of customer withdrawals following the collapse of FTX meant they made a loss of $1 billion in the last quarter of 2022.
+Ledger 硬件钱包一直在从新的种子备份功能Ledger Recover的消息传递PR失败中恢复。这位前首席执行官在谈到对新固件导出种子的担忧时表示，用户已经相信 Ledger 不会部署这种后门种子导出固件，因此他认为这没什么大不了的，这更是火上浇油。 。
 
-Ledger hardware wallet has been recovering from a PR [fail](https://cointelegraph.com/news/ledger-co-founder-clarifies-there-is-no-backdoor-in-recover-firmware-update) of the messaging around a new seed backup feature, [Ledger Recover](https://www.ledger.com/recover). The ex-CEO added fuel to the fire when he addressed concerns about seeds being exported by the new firmware by stating that users were already trusting Ledger to not deploy this kind of backdoor seed-exporting firmware, so he couldn't see the big deal.
+欧盟理事会财政部长已签署加密资产市场监管 (MiCA)，这意味着其条款将于 2024 年 6 月或 7 月生效。MiCA 将要求加密公司寻求在欧盟运营的许可证，并且设定了稳定币储备持有量等要求。除了 MiCA 之外，还同意了一些新措施，要求与税务机关共享有关欧盟公民持有的加密货币的信息。
 
-The finance ministers of the EU's Council have [signed](https://www.coindesk.com/policy/2023/05/16/eus-crypto-legal-framework-inches-towards-law-with-finance-ministers-sign-off/) off on the Markets in Crypto Assets regulation (MiCA), meaning that its provisions will come into force in June or July 2024. MiCA will require crypto firms to seek licenses to operate in the EU, and sets requirements like reserve holdings for stablecoins. Alongside MiCA some new measures were agreed to mandate sharing of information about crypto holdings of EU citizens with tax authorities.
+2022 年发生的利用被篡改的 Trezor 设备发起的供应链攻击已被记录。用户从在线市场购买了该设备，他们的加密货币在开始使用大约一个月后就消失了。经检查，安装了一些狡猾的固件，该固件会在 20 个预设种子之间循环，而不是生成随机种子，并且只会使用任何密码集的第一个字符 - 因此该设备只能生成 1,280 个不同的私钥，这是一个可管理的供攻击者观看的号码。
 
-A supply chain [attack](https://www.kaspersky.com/blog/fake-trezor-hardware-crypto-wallet/48155/) from 2022 with a tampered Trezor device has been documented. The user bought the device from an online marketplace and their crypto disappeared about a month after they started using it. Upon inspection some dodgy firmware had been installed which would cycle between 20 pre-set seeds rather than generating a random seed, and would only use the first character of any password set - so that the device could only generate 1,280 different private keys, a manageable number for the attackers to watch.
+Coinbase 经理 Ishan Wahi 被指控进行内幕交易，从新上市产品中获利，在认罪后被判处2 年监禁。Wahi 将这些信息提供给了他的兄弟和另一名男子，后者利用这些信息进行了超过 100 万美元的交易。Wahi 的兄弟于 9 月承认共谋实施电信诈骗罪，并被判处 10 个月监禁。
 
-Ishan Wahi, the Coinbase manager accused of insider trading to profit from new listings was [sentenced](https://www.coindesk.com/policy/2023/05/09/ex-coinbase-product-manager-sentenced-to-2-years-in-prison-for-insider-trading/) to 2 years in prison after pleading guilty. Wahi provided the information to his brother and another man, who made over $1 million trading on the information. Wahi's brother pleaded guilty in September to conspiracy to commit wire fraud, and was sentenced to 10 months in prison.
+这就是五月的全部内容。在我们的[#journal](https://chat.decred.org/#/room/#journal:decred.org)聊天室中建议下一期的新闻。
 
-That's all for May. Suggest news for the next issue in our [#journal](https://chat.decred.org/#/room/#journal:decred.org) chat room.
 
+## 关于月报
 
-## About
+这是 Decred 月报的第 59 期。 [此处](https://xaur.github.io/decred-news/) 提供所有问题、镜像和翻译的索引。
 
-This is issue 59 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+来自第三方的大多数信息都是在经过最低限度的健全性检查后直接从源头转发的。 Decred 月报的作者无法验证所有声明。请提防诈骗并自行研究。
 
-Most information from third parties is relayed directly from the source after a minimal sanity check. The authors of the Decred Journal cannot verify all claims. Please beware of scams and do your own research.
+感谢（字母顺序）：
 
-Credits (alphabetical order):
+- 写作、编辑、出版：bee、bochinchero、Exitus、jz、karamble、l1ndseymm、phoenixgreen、richardred、zippycorners
+- 评论和反馈：davecgh
+- 标题图片：Exitus
+- 资金来源：Decred 利益相关者
 
-- writing, editing, publishing: bee, bochinchero, Exitus, jz, karamble, l1ndseymm, phoenixgreen, richardred, zippycorners
-- reviews and feedback: davecgh
-- title image: Exitus
-- funding: Decred stakeholders
+## 中文社区
+
+* [推特](https://twitter.com/DecredCN)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [bilibili频道](https://space.bilibili.com/425519478)
