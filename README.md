@@ -14,7 +14,6 @@
 * [中文电报群](https://t.me/decred_cn)
 * [bilibili频道](https://space.bilibili.com/425519478)
 * [喜马拉雅](https://www.ximalaya.com/keji/48593357/)
-* QQ群号-258412796
 
 欢迎同时关注[英文月报](https://github.com/xaur/decred-news)了解更多最新消息
 
