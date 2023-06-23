@@ -14,7 +14,7 @@ _图片: 赛博风暴 @Exitus_
 
 内容：
 
-- [DCRDEX v0.6.1 发布](#DCRDEX v0.6.1 发布)
+- DCRDEX v0.6.1 发布
 - [开发进展总结](#开发)
 - [人员](#人)
 - [治理](#治理)
@@ -51,7 +51,7 @@ _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Dec
 已合并到未来版本的“master”中：
 
 - 通过[删除错误状态](https://github.com/decred/dcrd/pull/3110)清理了[几个函数](https://github.com/decred/dcrd/pull/3114)。
-- [去年八月](202208.md#dcrd)，为了对抗测试网的 ASIC 攻击并确保 CPU 始终能够挖掘新的测试网区块，[测试网已更新](https://github.com/ decred/dcrd/pull/2978)，以便测试网挖掘难度被最大值限制。 本月，挖掘模板生成器和 CPU 挖掘器已更新为[删除旧的测试网逻辑](https://github.com/decred/dcrd/commit/c6e53c9ef0926f172a637a6552b744cbd6445537)，该逻辑不再适用，因为所有新的测试网块都强制执行难度限制 。
+- [去年八月](202208.md#dcrd)，为了对抗测试网的 ASIC 攻击并确保 CPU 始终能够挖掘新的测试网区块，[测试网已更新](https://github.com/decred/dcrd/pull/2978)，以便测试网挖掘难度被最大值限制。 本月，挖掘模板生成器和 CPU 挖掘器已更新为[删除旧的测试网逻辑](https://github.com/decred/dcrd/commit/c6e53c9ef0926f172a637a6552b744cbd6445537)，该逻辑不再适用，因为所有新的测试网块都强制执行难度限制 。
 - [删除了已弃用的内部方法](https://github.com/decred/dcrd/pull/3113)，其中列出了等待区块链更新的订阅客户端。 由于此方法是内部方法，因此不需要在 dcrd 外部共享。
 - [通过 dcrdata 发现了一个错误](https://github.com/decred/dcrdata/issues/1963)，其中从 dcrd RPC 服务器返回的总代币供应量计算不包括新的 `TreasuryBases` - 的一部分 每个区块的奖励流入新的去中心化金库。 总代币供应量计算[现已更新](https://github.com/decred/dcrd/pull/3112)，其中还包括对数据库的更新。 需要注意的是，这个错误只是 RPC 币供应量计算中的一个小错误，不会以任何方式影响共识。
 
@@ -72,7 +72,7 @@ _[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱
 
 - 使用多个 [dcrd 模块](https://github.com/decred/dcrwallet/pull/2234) 和一些第三方 [依赖项](https://github.com/decred/dcrwallet/pull/2236) 的最新版本。
 - 如果钱包获得批准并激活，则允许钱包[遵循 DCP-12 硬分叉](https://github.com/decred/dcrwallet/pull/2232)。
-- 删除了几个[已弃用的内部方法](https://github.com/decred/dcrwallet/pull/2235)，即那些因共识变更而过时的方法[DCP-9](https://github.com/decred/ dcps/blob/master/dcp-0009/dcp-0009.mediawiki）（自动票证撤销）和 [DCP-10](https://github.com/decred/dcps/blob/master/dcp-0010/dcp- 0010.mediawiki）（将 PoW/PoS 补贴比例更改为 10/80）。
+- 删除了几个[已弃用的内部方法](https://github.com/decred/dcrwallet/pull/2235)，即那些因共识变更而过时的方法[DCP-9](https://github.com/decred/dcps/blob/master/dcp-0009/dcp-0009.mediawiki)（自动票证撤销）和 [DCP-10](https://github.com/decred/dcps/blob/master/dcp-0010/dcp-0010.mediawiki)（将 PoW/PoS 补贴比例更改为 10/80）。
 
 
 ### Decrediton
@@ -139,7 +139,7 @@ v0.6.1 版本中包含的更改：
 - 通过最小化加载用户信息的昂贵调用来优化[请求处理](https://github.com/decred/dcrdex/pull/2350)。
 - 恢复了对标准输出的 HTTP 请求的[彩色日志记录](https://github.com/decred/dcrdex/pull/2350)。
 - 在 SPV 模式下利用外部[费率来源](https://github.com/decred/dcrdex/issues/2354)。 在此更改之前，从 SPV 钱包发送时可能需要支付不合理的高额费用。
-- 删除了取消订单时输入密码的要求(https://github.com/decred/dcrdex/pull/2374)。
+- 删除了取消订单时输入密码的要求。
 
 比特币：
 
@@ -209,9 +209,9 @@ GUI 和 CLI 应用程序：
 
 CLI 应用程序：
 
-- 使 brclient 通过 [clientrpc API](https://github.com/companyzero/bisonrelay/) 将页面和存储请求委托给 [另一个程序](https://github.com/companyzero/bisonrelay/pull/224) tree/master/clientrpc)，并将其响应转发回请求的 BR 用户。 这种灵活性将在未来实现有用的功能。
+- 使 brclient 通过 [clientrpc API](https://github.com/companyzero/bisonrelay/) 将页面和存储请求委托给 [另一个程序](https://github.com/companyzero/bisonrelay/pull/224)，并将其响应转发回请求的 BR 用户。 这种灵活性将在未来实现有用的功能。
 - 启用 brclient 将请求委托给 HTTP 或 HTTPS [网站](https://github.com/companyzero/bisonrelay/pull/224)。 这允许 BR 用户通过充当代理的另一个 BR 用户访问 HTTP/HTTPS 资源。
-- 按[最近活动]对帖子进行排序(https://github.com/companyzero/bisonrelay/pull/243)。 未读的帖子也会以不同的颜色突出显示。
+- 按[最近活动](https://github.com/companyzero/bisonrelay/pull/243)对帖子进行排序。未读的帖子也会以不同的颜色突出显示。
 - 允许使用带有通道 ID 的 [短前缀](https://github.com/companyzero/bisonrelay/pull/252) 的 `/closechannel` 命令（完整 ID 为 64 个字符长）。
 
 店铺进度：
@@ -250,7 +250,7 @@ CLI 应用程序：
 
 - [Decred Vanguard](https://proposals.decred.org/record/0a1b782) 提案获得批准，预算为 46,784 美元，用于资助社区驱动的外展计划的发展，获得了 94% 的赞成票，投票率为 39%。
 
-- [BTC-ECHO](https://proposals.decred.org/record/49e373b) 提案获得批准，预算为 9,500 美元，在德国加密网站 [BTC-ECHO.de](https:// www.btc-echo.de/）期间，他们发表两篇赞助文章，获得了 69% 的赞成票，投票率为 32%。 在投票之前，对其进行了编辑，包括在社交媒体上进行额外的促销活动，并在播客上播放为期两周的广告。 第二次编辑澄清，他们不需要预付款，并同意在活动结束后最多等待 60 天付款，这与大多数现有提案和承包商的运作方式一致。 提案获得批准后，他们发布了有关后续步骤和时间表的[更新](https://proposals.decred.org/record/49e373b/comments/24)。
+- [BTC-ECHO](https://proposals.decred.org/record/49e373b) 提案获得批准，预算为 9,500 美元，在德国加密网站 [BTC-ECHO.de](https://www.btc-echo.de/)期间，他们发表两篇赞助文章，获得了 69% 的赞成票，投票率为 32%。 在投票之前，对其进行了编辑，包括在社交媒体上进行额外的促销活动，并在播客上播放为期两周的广告。 第二次编辑澄清，他们不需要预付款，并同意在活动结束后最多等待 60 天付款，这与大多数现有提案和承包商的运作方式一致。 提案获得批准后，他们发布了有关后续步骤和时间表的[更新](https://proposals.decred.org/record/49e373b/comments/24)。
 
 5月份提交的提案：
 
@@ -340,11 +340,11 @@ _图片：每月总费用 - Decred 使用起来仍然很便宜_
 
 - DGB/BTC 市场[上线](https://twitter.com/DecredSociety/status/1657750204852871173)。 需要 DEX 客户端 v0.6.1 或更高版本，它可以作为[独立应用程序](https://github.com/decred/dcrdex/releases) 或通过 [Decrediton](https://github.com/decred/decred-binaries/releases)v1.8.0。 最初仅支持基于全节点的 DGB 钱包，但当 DigiByte v8.22 发布时，内置轻钱包将可用。
 
-- Decred 的 Matrix 聊天日志现在可以查看 [archive.matrix.org](https://archive.matrix.org/) - 新的聊天存档浏览器取代了 [view.matrix.org](https://view.matrix .org/）。 该服务无需 JavaScript 即可运行，并且不需要 Matrix 帐户。
+- Decred 的 Matrix 聊天日志现在可以查看 [archive.matrix.org](https://archive.matrix.org/) - 新的聊天存档浏览器取代了 [view.matrix.org](https://view.matrix.org/)。 该服务无需 JavaScript 即可运行，并且不需要 Matrix 帐户。
 
 服务丢失：
 
-- 币安将[离开加拿大](https://www.forbes.com/sites/digital-assets/2023/05/16/binance-exits-canada-over-concerns-of-strict-regulation/) [回复] ](https://twitter.com/binance/status/1657099651210969088) 最近的加密法规禁止注册交易所接受稳定币存款或未经 CSA 批准将其出售给客户。 其他限制包括禁止保证金交易和投资者限制。 根据 [#trading chat](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$Ox6W2V_jS33D6X5kOvuX6OU-TPW-8xStJL0QdLzpD8E)，客户被要求在 2023 年 9 月 30 日之前关闭所有未平仓头寸。
+- 币安将[离开加拿大](https://www.forbes.com/sites/digital-assets/2023/05/16/binance-exits-canada-over-concerns-of-strict-regulation/) [回复](https://twitter.com/binance/status/1657099651210969088) 最近的加密法规禁止注册交易所接受稳定币存款或未经 CSA 批准将其出售给客户。 其他限制包括禁止保证金交易和投资者限制。 根据 [#trading chat](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$Ox6W2V_jS33D6X5kOvuX6OU-TPW-8xStJL0QdLzpD8E)，客户被要求在 2023 年 9 月 30 日之前关闭所有未平仓头寸。
 
 - 币安计划在法国、意大利、波兰和波兰[下架 12 种隐私币](https://cointelegraph.com/news/binance-to-delist-privacy-tokens-in-france-italy-spain-and-poland) 。 从6月26日开始，这些国家的居民将无法再进行DCR交易。 币安最近在受影响的司法管辖区获得了适当的[许可证](https://beincrypto.com/binance-privacy-coins-prohibition/)。 此举是在欧盟加密资产市场（MiCA）[通过](https://cryptoslate.com/binance-delists-privacy-coins-for-european-users-amid-layoff-rumors/)之后不久进行的。
 
@@ -360,7 +360,7 @@ _图片：每月总费用 - Decred 使用起来仍然很便宜_
   
 社区发现但尚未测试的新服务：
 
-- [DCR 付款选项](https://fxdreema.com/purchase) 已在 [fxDreema](https://fxdreema.com/) 上被[发现](https://twitter.com/h3la1/status/1653233413200158721) ) - 与 MetaTrader 4 和 MetaTrader 5 兼容的交易机器人图形构建器。
+- [DCR 付款选项](https://fxdreema.com/purchase) 已在 [fxDreema](https://fxdreema.com/) 上被[发现](https://twitter.com/h3la1/status/1653233413200158721) - 与 MetaTrader 4 和 MetaTrader 5 兼容的交易机器人图形构建器。
 
 - [CryptoWallet.com](https://cryptowallet.com/) 拥有一款移动应用程序，允许用户买卖加密货币，支持 VISA/MasterCard/SEPA 转账，并计划推出自己的卡产品。 该公司在爱沙尼亚获得许可。 非常感谢研究和测试帮助。
 
@@ -451,7 +451,7 @@ _图片：@OfficialCryptos._
 
 **翻译：**
 
-- [互联网隐私及其重要性](https://www.decredmagazine.com/internet-privacy-and-why-it-is-important/) - [中文](https://github.com/ DominicTing/decred-ZH-translations/blob/master/Internet%20Privacy%20and%20Why%20it%20is%20Important.md) @Dominic
+- [互联网隐私及其重要性](https://www.decredmagazine.com/internet-privacy-and-why-it-is-important/) - [中文](https://github.com/DominicTing/decred-ZH-translations/blob/master/Internet%20Privacy%20and%20Why%20it%20is%20Important.md) @Dominic
 - Decred 月报 2023.4 已由 @Dominic [翻译](https://xaur.github.io/decred-news/) 为中文 - 谢谢！
 
 
