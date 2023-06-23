@@ -2,7 +2,7 @@
 
 ![](img/202208.1.github.png)
 
-_图片： @saender _
+_图片： @saender_
 
 八月亮点：
 
