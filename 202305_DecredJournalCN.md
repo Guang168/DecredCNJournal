@@ -1,191 +1,191 @@
-# Decred Journal – May 2023
+# Decred 月报 – 2023 年 5 月
 
 ![](img/202305.01.768.png)
 
-_Image: Cyberstorm by @Exitus_
+_图片: 赛博风暴 @Exitus_
 
-Highlights of May:
+五月亮点：
 
-- DCRDEX v0.6.1 has been released, with DigiByte support and important fixes for LTC and ZEC.
+- DCRDEX v0.6.1 已发布，提供 DigiByte 支持和针对 LTC 和 ZEC 的重要修复。
 
-- The Decred Vanguard proposal was approved and the community-driven social media outreach program has already started.
+- Decred Vanguard 提案获得批准，社区驱动的社交媒体推广计划已经启动。
 
-- Bison Relay has been making progress, with a first version of pages being merged as well as the merchant tools for Stores.
+- Bison Relay 一直在取得进展，新版本的页面以及商店的商家工具都将被合并。
 
-Contents:
+内容：
 
-- [DCRDEX v0.6.1 Release](#dcrdex-v061-release)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
-
-
-## DCRDEX v0.6.1 Release
-
-This DEX release features:
-
-- Initial DigiByte (DGB) support (requires a full node wallet running alongside)
-- Important fixes for Litecoin (LTC) and Zcash (ZEC)
-- Rate of an order in Your Orders table is easier to see now
-- Chart candle size is now remembered and the default size changed to 1 hour
-
-Get the latest DEX client as a [standalone app](https://github.com/decred/dcrdex/releases), or as part of [Decrediton](https://github.com/decred/decred-binaries/releases), or install it from Decred's custom [Umbrel App Store](https://github.com/decred/umbrel-app-store). As always, we recommend to [verify the files](https://docs.decred.org/advanced/verifying-binaries) before running.
+- [DCRDEX v0.6.1 发布](#DCRDEX v0.6.1 发布)
+- [开发进展总结](#开发)
+- [人员](#人)
+- [治理](#治理)
+- [网络](#网络)
+- [生态系统](#生态系统)
+- [外展](#外展)
+- [活动](#活动)
+- [媒体](#媒体)
+- [市场](#市场)
+- [相关外部信息](#相关外部信息)
 
 
-## Development
+## DCRDEX v0.6.1 发布
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+此版本具有以下特点：
+
+- 初始 DigiByte (DGB) 支持（需要同时运行的全节点钱包）
+- 针对莱特币 (LTC) 和 Zcash (ZEC) 的重要修复
+- 订单列表中的订单费率现在更容易查看
+- 现在会记住图表蜡烛尺寸，默认尺寸更改为 1 小时
+
+获取最新的 DEX 客户端作为 [独立应用程序](https://github.com/decred/dcrdex/releases)，或作为 [Decrediton](https://github.com/decred/decred-binaries/releases) 的一部分，或从 Decred 的自定义 [Umbrel App Store](https://github.com/decred/umbrel-app-store) 安装它。 与往常一样，我们建议在运行之前[验证文件](https://docs.decred.org/advanced/verifying-binaries)。
+
+
+## 开发进展总结
+
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-Changes merged in `master` towards future releases:
+已合并到未来版本的“master”中：
 
-- Cleaned up [several functions](https://github.com/decred/dcrd/pull/3114) by [removing error states](https://github.com/decred/dcrd/pull/3110) which no longer occur.
-- [Last August](202208.md#dcrd), in order to combat ASIC attacks on the testnet and ensure CPUs will always be able to mine new testnet blocks, the [testnet was updated](https://github.com/decred/dcrd/pull/2978) so that the testnet mining difficulty is throttled by a maximum value. This month, the mining template generator and CPU miner were updated to [remove the old testnet logic](https://github.com/decred/dcrd/commit/c6e53c9ef0926f172a637a6552b744cbd6445537) that no longer applies, since all new testnet blocks enforce difficulty throttling.
-- [Removed a deprecated internal method](https://github.com/decred/dcrd/pull/3113) which listed subscribed clients waiting for blockchain updates. Since this method was internal, it never needed to be shared outside of dcrd.
-- [A bug was discovered via dcrdata](https://github.com/decred/dcrdata/issues/1963) where the total coin supply calculation returned from the dcrd RPC server did not include the new `TreasuryBases` - the part of each block's reward that flows into the new decentralized treasury. The total coin supply calculation [has now been updated](https://github.com/decred/dcrd/pull/3112), which also included an update to the database. It should be noted that this bug was only a minor error with the RPC coin supply calculation, and did not affect consensus in any way.
+- 通过[删除错误状态](https://github.com/decred/dcrd/pull/3110)清理了[几个函数](https://github.com/decred/dcrd/pull/3114)。
+- [去年八月](202208.md#dcrd)，为了对抗测试网的 ASIC 攻击并确保 CPU 始终能够挖掘新的测试网区块，[测试网已更新](https://github.com/ decred/dcrd/pull/2978)，以便测试网挖掘难度被最大值限制。 本月，挖掘模板生成器和 CPU 挖掘器已更新为[删除旧的测试网逻辑](https://github.com/decred/dcrd/commit/c6e53c9ef0926f172a637a6552b744cbd6445537)，该逻辑不再适用，因为所有新的测试网块都强制执行难度限制 。
+- [删除了已弃用的内部方法](https://github.com/decred/dcrd/pull/3113)，其中列出了等待区块链更新的订阅客户端。 由于此方法是内部方法，因此不需要在 dcrd 外部共享。
+- [通过 dcrdata 发现了一个错误](https://github.com/decred/dcrdata/issues/1963)，其中从 dcrd RPC 服务器返回的总代币供应量计算不包括新的 `TreasuryBases` - 的一部分 每个区块的奖励流入新的去中心化金库。 总代币供应量计算[现已更新](https://github.com/decred/dcrd/pull/3112)，其中还包括对数据库的更新。 需要注意的是，这个错误只是 RPC 币供应量计算中的一个小错误，不会以任何方式影响共识。
 
-In progress:
+进行中：
 
-- Implementing [DCP-11](https://github.com/decred/dcrd/pull/3115) PoW hash consensus vote.
+- 实施 [DCP-11](https://github.com/decred/dcrd/pull/3115) PoW 哈希共识投票。
 
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-Backported changes ready for the next v1.7.x release:
+向后移植的为下一个 v1.7.x 版本做好准备：
 
-- Respect [proxy config](https://github.com/decred/dcrwallet/commit/7fbdd7fba71525149bf7a98dc7f8033f34a1e108) for SPV and P2P seeder connections. This is to prevent leaking internal network details.
+- 尊重 SPV 和 P2P 播种器连接的 [代理配置](https://github.com/decred/dcrwallet/commit/7fbdd7fba71525149bf7a98dc7f8033f34a1e108)。 这是为了防止泄露内部网络详细信息。
 
-Changes merged in `master` towards future releases:
+更改已合并到未来版本的“master”中：
 
-- Use the latest versions of several [dcrd modules](https://github.com/decred/dcrwallet/pull/2234) and a few third party [dependencies](https://github.com/decred/dcrwallet/pull/2236).
-- Allow the wallet to [follow the DCP-12 hard fork](https://github.com/decred/dcrwallet/pull/2232) if it is approved and activated.
-- Removed several [deprecated internal methods](https://github.com/decred/dcrwallet/pull/2235), namely those made obsolete by the consensus changes [DCP-9](https://github.com/decred/dcps/blob/master/dcp-0009/dcp-0009.mediawiki) (Automatic Ticket Revocations) and [DCP-10](https://github.com/decred/dcps/blob/master/dcp-0010/dcp-0010.mediawiki) (Change PoW/PoS Subsidy Split to 10/80).
+- 使用多个 [dcrd 模块](https://github.com/decred/dcrwallet/pull/2234) 和一些第三方 [依赖项](https://github.com/decred/dcrwallet/pull/2236) 的最新版本。
+- 如果钱包获得批准并激活，则允许钱包[遵循 DCP-12 硬分叉](https://github.com/decred/dcrwallet/pull/2232)。
+- 删除了几个[已弃用的内部方法](https://github.com/decred/dcrwallet/pull/2235)，即那些因共识变更而过时的方法[DCP-9](https://github.com/decred/ dcps/blob/master/dcp-0009/dcp-0009.mediawiki）（自动票证撤销）和 [DCP-10](https://github.com/decred/dcps/blob/master/dcp-0010/dcp- 0010.mediawiki）（将 PoW/PoS 补贴比例更改为 10/80）。
 
 
 ### Decrediton
 
-_[Decrediton](https://github.com/decred/decrediton) is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混币、闪电网络、DEX 交易等功能。 它在有或没有完整的区块链（SPV 模式）的情况下运行。_
 
-In progress:
+进行中：
 
-- [Ledger support](https://github.com/decred/decrediton/issues/3865): adding [low-level functions](https://github.com/decred/decrediton/pull/3869) and [UI views](https://github.com/decred/decrediton/pull/3874).
-- Since staking is not currently possible with any hardware wallets, staking views will be [removed](https://github.com/decred/decrediton/pull/3870) to avoid confusion.
-- Added [Ledger icon](https://github.com/decred/pi-ui/pull/479) to the pi-ui shared library.
+- [Ledger支持](https://github.com/decred/decrediton/issues/3865)：添加[初级功能](https://github.com/decred/decrediton/pull/3869)和[UI 视图](https://github.com/decred/decrediton/pull/3874)。
+- 由于目前无法使用任何硬件钱包进行质押，因此质押界面将被[删除](https://github.com/decred/decrediton/pull/3870)以避免混淆。
+- 在 pi-ui 共享库中添加了 [Ledger 图标](https://github.com/decred/pi-ui/pull/479)。
 
-Other:
+其他：
 
-- Decrediton has been [added](https://github.com/microsoft/winget-pkgs/pull/106493) to the [winget](https://en.wikipedia.org/wiki/Windows_Package_Manager) package repository. Windows user can now [install](https://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$25tEa195uFjzuxC0J9ecm7X8NRGUAhcrUqNvuUKfHqM?via=decred.org&via=matrix.org&via=planetdecred.org) it with `winget install Decred.Decrediton`.
+- Decrediton 已[添加](https://github.com/microsoft/winget-pkgs/pull/106493)到[winget](https://en.wikipedia.org/wiki/Windows_Package_Manager)包存储库。 Windows 用户现在可以使用“winget install Decred.Decrediton”[安装](https://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$25tEa195uFjzuxC0J9ecm7X8NRGUAhcrUqNvuUKfHqM?via=decred.org&via=matrix.org&via=planetdecred.org) `。
 
 
 ### vspd
 
-_[vspd](https://github.com/decred/vspd) is server software used by Voting Service Providers. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_[vspd](https://github.com/decred/vspd) 是投票服务提供商使用的服务器软件。 VSP 代表其用户全天候 24/7 投票，不能窃取资金。_
 
-- Copied and adjusted [automatic VSP fee payment](https://github.com/decred/vspd/pull/382) from dcrwallet to vspd repository. This code was private in dcrwallet but in vspd it can be consumed by other software, which will be utilized by [DCR staking](https://github.com/decred/dcrdex/pull/2290) integration in DCRDEX.
+- 将[自动VSP费用支付](https://github.com/decred/vspd/pull/382)从dcrwallet复制并调整到vspd存储库。 该代码在 dcrwallet 中是私有的，但在 vspd 中可以被其他软件使用，这些软件将被 DCRDEX 中的 [DCR 质押](https://github.com/decred/dcrdex/pull/2290) 集成所利用。
 
 
 ### Lightning Network
 
-_[dcrlnd](https://github.com/decred/dcrlnd) is Decred's Lightning Network node software. LN enables instant and low-cost transactions._
+_[dcrlnd](https://github.com/decred/dcrlnd)是Decred的闪电网络节点软件。 LN 使即时和低成本交易成为可能。_
 
-- Added support for [custom connection](https://github.com/decred/dcrlnd/pull/182) for dcrwallet. It allows LN code to configure dcrwallet to connect to SPV peers using a proxy server.
+- 添加了对 dcrwallet 的[自定义连接](https://github.com/decred/dcrlnd/pull/182)的支持。 它允许 LN 代码将 dcrwallet 配置为使用代理服务器连接到 SPV 对等点。
 
 
 ### cspp
 
-_[cspp](https://github.com/decred/cspp) is a server for coordinating coin mixes using the CoinShuffle++ protocol. It is non-custodial, i.e. never holds any funds. CSPP is part of StakeShuffle, Decreds privacy system._
+_[cspp](https://github.com/decred/cspp) 是一个使用 CoinShuffle++ 协议协调硬币组合的服务器。 它是非托管的，即从不持有任何资金。 CSPP 是 Decreds 隐私系统 StakeShuffle 的一部分。_
 
-- Prevent [duplicate inputs](https://github.com/decred/cspp/pull/92) earlier in the mixing process. Before this fix double spends would trigger an error when sending the mix transaction, it could fail a mixing session and avoid blame assignment.
-- Improved [logging](https://github.com/decred/cspp/pull/93) of mixing sessions to always capture session ID, run number, and denomination value of mixed outputs.
-- Prevent CoinJoin transactions from [exceeding mempool size limits](https://github.com/decred/cspp/pull/94). This may exclude some peers from a mix, if that happens the server will attempt to pair them in the next mixing epoch. A check has been added to retry the session if the number of peers [drops below the minimum](https://github.com/decred/cspp/pull/95) setting.
+- 在混合过程的早期防止[重复输入](https://github.com/decred/cspp/pull/92)。 在此修复双花发送混合交易时会触发错误之前，它可能会导致混合失败。
+- 改进了混合的[日志记录](https://github.com/decred/cspp/pull/93)，以始终捕获混合输出的会话 ID、运行编号和面额值。
+- 防止 CoinJoin 交易[超出内存池大小限制](https://github.com/decred/cspp/pull/94)。 这可能会从混合中排除一些对等体，如果发生这种情况，服务器将尝试在下一个混合时期将它们配对。 添加了一项检查，以便在对等点数量[低于最小值](https://github.com/decred/cspp/pull/95) 设置时重试会话。
 
 
 ### DCRDEX
 
-_[DCRDEX](https://github.com/decred/dcrdex) is a non-custodial, privacy-respecting exchange for trustless trading, powered by atomic swaps._
+_[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私的交易所，用于无信任交易，由原子交换提供支持。_
 
-Changes included in v0.6.1 release:
+v0.6.1 版本中包含的更改：
 
-- Set high enough [Zcash transaction fee rate](https://github.com/decred/dcrdex/pull/2336). DEX calculates fees based on transaction size, but Zcash is an exception as it currently uses a standard fee of 1,000 zats or 0.00001 ZEC per transaction, regardless of size. This will change when [ZIP 317](https://zips.z.cash/zip-0317) activates, resulting in higher fees. To ensure DEX transactions are always relayed and mined, this change bumps fees to be around 0.0002-0.0003 ZEC. A hard-coded fee rate of 84 zats/byte is used as a workaround for Zcash not having an easy way to estimate fees.
-- Added [DigiByte](https://github.com/decred/dcrdex/pull/2323) trading support with full node wallets.
-- Added [block explorer](https://github.com/decred/dcrdex/pull/2340) links to ZEC transactions.
-- Added compile time option for the [interval](https://github.com/decred/dcrdex/pull/2339) at which DEX server polls for new blocks of Bitcoin-like assets. It allows to use slower polling for remote nodes where the default 1-second interval would be too fast.
-- Fixed failure to reconfigure a disconnected Bitcoin-like wallet in certain circumstances.
-- Fixed Bitcoin-like wallets always requiring a restart and not having a chance for live reconfiguration.
-- Fixed full restart not being triggered in some scenarios of changing RPC connection config.
-- Fixed incorrect [transaction ID](https://github.com/decred/dcrdex/pull/2342) shown when sending ZEC.
-- Fixed several issues with [bonds](https://github.com/decred/dcrdex/pull/2343) for ZEC and non-SegWit assets.
-- Backported ~22 [fixes and improvements](https://github.com/decred/dcrdex/pull/2323) made in `master` before May.
+- 设置足够高的[Zcash交易费率](https://github.com/decred/dcrdex/pull/2336)。 DEX 根据交易规模计算费用，但 Zcash 是一个例外，因为它目前使用每笔交易 1,000 zats 或 0.00001 ZEC 的标准费用，无论规模大小。 当 [ZIP 317](https://zips.z.cash/zip-0317) 激活时，这种情况将会改变，从而导致更高的费用。 为了确保 DEX 交易始终被转发和挖掘，这一变化将费用提高到 0.0002-0.0003 ZEC 左右。 84 zats/字节的硬编码费率被用作 Zcash 没有简单方法来估算费用的解决方法。
+- 添加了 [DigiByte](https://github.com/decred/dcrdex/pull/2323) 全节点钱包交易支持。
+- 添加了ZEC交易的[区块浏览器](https://github.com/decred/dcrdex/pull/2340)链接。
+- 添加了 [间隔](https://github.com/decred/dcrdex/pull/2339) 的编译时间选项，DEX 服务器轮询新的类比特币资产块。 它允许对远程节点使用较慢的轮询，其中默认的 1 秒间隔太快。
+- 修复了在某些情况下无法重新配置断开连接的类似比特币的钱包的问题。
+- 修复了类似比特币的钱包总是需要重新启动并且没有机会进行实时重新配置的问题。
+- 修复了在某些更改 RPC 连接配置的情况下未触发完全重启的问题。
+- 修复了发送 ZEC 时显示的不正确的 [交易 ID](https://github.com/decred/dcrdex/pull/2342)。
+- 修复了 ZEC 和非 SegWit 资产的 [bonds](https://github.com/decred/dcrdex/pull/2343) 的几个问题。
+- 向后移植了 5 月份之前在“master”中制作的 ~22 个[修复和改进](https://github.com/decred/dcrdex/pull/2323)。
 
-All other changes below are merged in `master` towards future releases.
+以下所有其他更改都将合并到未来版本的“master”中。
 
-Client:
+用户：
 
-- Added expected [refund time](https://github.com/decred/dcrdex/pull/2042) to the Matches card. Previously it could show a confusing `<Pending>` for hours.
-- Automated more wallet [enable/disable steps](https://github.com/decred/dcrdex/pull/2324). Disabling chain's primary asset wallet will also disable all token wallets for that chain. Enabling a token wallet will also enable chain's primary asset wallet.
-- Optimized [request handling](https://github.com/decred/dcrdex/pull/2350) by minimizing expensive calls to load user information.
-- Restored [colored logging](https://github.com/decred/dcrdex/pull/2350) of HTTP requests to stdout.
-- Utilize external [fee rate sources](https://github.com/decred/dcrdex/issues/2354) in SPV mode. Before this change it was possible to pay unreasonably high fees when sending from an SPV wallet.
-- Removed requirement to enter a [password when canceling an order](https://github.com/decred/dcrdex/pull/2374).
+- 在匹配界面中添加了预期的[退款时间](https://github.com/decred/dcrdex/pull/2042)。 以前它可能会在几个小时内显示令人困惑的“<Pending>”。
+- 自动化更多钱包[启用/禁用步骤](https://github.com/decred/dcrdex/pull/2324)。 禁用链的主要资产钱包也会禁用该链的所有代币钱包。 启用代币钱包也将启用链的主要资产钱包。
+- 通过最小化加载用户信息的昂贵调用来优化[请求处理](https://github.com/decred/dcrdex/pull/2350)。
+- 恢复了对标准输出的 HTTP 请求的[彩色日志记录](https://github.com/decred/dcrdex/pull/2350)。
+- 在 SPV 模式下利用外部[费率来源](https://github.com/decred/dcrdex/issues/2354)。 在此更改之前，从 SPV 钱包发送时可能需要支付不合理的高额费用。
+- 删除了取消订单时输入密码的要求(https://github.com/decred/dcrdex/pull/2374)。
 
-Bitcoin:
+比特币：
 
-- Fixed [issues](https://github.com/decred/dcrdex/pull/2326): simnet wallet could attempt to connect to mainnet, Bitcoin-like wallets always require a restart, reconfiguring a disconnected wallet could fail in certain circumstances.
+- 修复了[问题](https://github.com/decred/dcrdex/pull/2326)：simnet钱包可能会尝试连接到主网，类似比特币的钱包总是需要重新启动，重新配置断开连接的钱包在某些情况下可能会失败 。
 
-Ethereum:
+以太坊：
 
-- Made [token approvals](https://github.com/decred/dcrdex/pull/2349) a separate manual step instead of an automatic part of the first swap. In order to trade tokens (such as USDC) the swap contract must be approved to handle tokens on behalf of the user. Making it a manual action allows users to be aware of what is happening and not be surprised by the high fee of their first swap. An approval can be later revoked in wallet settings.
+- 将[代币批准](https://github.com/decred/dcrdex/pull/2349)作为一个单独的手动步骤，而不是第一次交换的自动部分。 为了交易代币（例如 USDC），互换合约必须获得批准才能代表用户处理代币。 使其成为手动操作可以让用户了解正在发生的事情，并且不会对首次交换的高额费用感到惊讶。 稍后可以在钱包设置中撤销批准。
 
-Firo:
+Firo：
 
-- Added [full node wallet](https://github.com/decred/dcrdex/pull/2270) support for [Firo](https://firo.org/) (formerly known as Zcoin).
-- Up next is support for Firo [light wallets](https://github.com/decred/dcrdex/issues/2346) based on Electrum.
+- 添加了对[Firo](https://firo.org/)（以前称为Zcoin）的[全节点钱包](https://github.com/decred/dcrdex/pull/2270)支持。
+- 接下来是对基于 Electrum 的 Firo [轻钱包](https://github.com/decred/dcrdex/issues/2346) 的支持。
 
-App packaging:
+应用程序包装：
 
-- Introduced a new executable `dexc-desktop` that wraps the DEX web app in a WebView component to look like a [desktop app](https://github.com/decred/dcrdex/pull/1957). The app will keep running in the background if there are active orders (but can be force-closed using the `--kill` switch on the command line).
-- Added script to build [Debian packages](https://github.com/decred/dcrdex/commit/ca5b1d8914b8d84bdfa4cbe28a6c97f5a20c18c4).
+- 引入了一个新的可执行文件“dexc-desktop”，它将 DEX Web 应用程序包装在 WebView 组件中，看起来像一个[桌面应用程序](https://github.com/decred/dcrdex/pull/1957)。 如果有活动订单，应用程序将继续在后台运行（但可以使用命令行上的“--kill”开关强制关闭）。
+- 添加了构建 [Debian 软件包](https://github.com/decred/dcrdex/commit/ca5b1d8914b8d84bdfa4cbe28a6c97f5a20c18c4) 的脚本。
 
-Developer and internal changes:
+开发者和内部变化：
 
-- Updated [npm dependencies](https://github.com/decred/dcrdex/pull/2321).
-- Moved the [market making](https://github.com/decred/dcrdex/pull/2320) bot logic out of the `Core` package into its [own package](https://github.com/decred/dcrdex/tree/ca5b1d8914b8d84bdfa4cbe28a6c97f5a20c18c4/client/mm). This is needed to improve architecture and add more bot strategies in the future.
-- Enabled the [makezero](https://github.com/decred/dcrdex/pull/2344) linter to detect more bugs in memory allocation.
-- Updated build and test workflow to add [Node.js](https://github.com/decred/dcrdex/pull/2341) v20 and remove v16. Node.js v16 will reach end-of-life in September 2023.
-- Changed chain tip and peer tracking goroutines to [shutdown](https://github.com/decred/dcrdex/pull/2369) more cleanly.
+- 更新了 [npm 依赖项](https://github.com/decred/dcrdex/pull/2321)。
+- 将[做市](https://github.com/decred/dcrdex/pull/2320)机器人逻辑从“Core”包移至其[自己的包](https://github.com/decred/dcrdex/tree/ca5b1d8914b8d84bdfa4cbe28a6c97f5a20c18c4/)。 这是改进架构并在未来添加更多机器人策略所必需的。
+- 启用 [makezero](https://github.com/decred/dcrdex/pull/2344) linter 来检测内存分配中的更多错误。
+- 更新了构建和测试工作流程以添加 [Node.js](https://github.com/decred/dcrdex/pull/2341) v20 并删除 v16。 Node.js v16 将于 2023 年 9 月终止生命周期。
+- 更干净地将链提示和对等跟踪 goroutine 更改为 [shutdown](https://github.com/decred/dcrdex/pull/2369)。
 
-![](../img/202305.02.920.png)
+![](img/202305.02.920.png)
 
-_Image: DEX'es swap contract requires a one-time approval to swap your tokens._
+_图片：DEX 的交换合约需要一次性批准才能交换您的代币。_
 
-![](../img/202305.03.630.jpg)
+![](img/202305.03.630.jpg)
 
-_Image: Solar setup running Umbrel with DEX market maker + arbitrage. By [@busyLightz](https://twitter.com/busyLightz/status/1654876069101436928)._
+_图片：设置运行 Umbrel 与 DEX 做市商 + 套利。 作者：[@busyLightz](https://twitter.com/busyLightz/status/1654876069101436928)._
 
 
 ### dcrdata
 
-_[dcrdata](https://github.com/decred/dcrdata) is an explorer for Decred blockchain and off-chain data like Politeia proposals, markets, and more._
+_[dcrdata](https://github.com/decred/dcrdata) 是 Decred 区块链和链下数据（如 Politeia 提案、市场等）的浏览器。_
 
-- Fixed numbers being slightly off on the [address balance charts](https://github.com/decred/dcrdata/pull/1962) due to not filtering out sidechain and invalid outputs.
+- 由于未过滤掉侧链和无效输出，修复了[地址余额图表](https://github.com/decred/dcrdata/pull/1962)上的数字略有偏差。
 
 
 ### Bison Relay
 
-_[Bison Relay](https://github.com/companyzero/bisonrelay) is a new social media platform with strong protections against censorship, surveillance, and advertising, powered by Decred Lightning Network._
+_[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的社交媒体平台，具有针对审查、监视和广告的强大保护，由 Decred 闪电网络提供支持。_
 
 All work reported below is merged to `master` towards the next release (likely v0.1.8).
 
