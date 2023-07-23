@@ -101,7 +101,7 @@ _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Dec
 - 制作*区块哈希*和*工作量证明哈希*[独立](https://github.com/decred/dcrd/commit/dbb6b782e0580395b3cb05333233994a70196ae7)，以便可以修改每个哈希而不改变另一个。一个重要的实际结果是，DCP-11 中的“区块哈希”共识将保持不变，这意味着所有处理区块哈希的软件都不需要修改。 规模较小、重点突出的升级意味着对用户端的下游影响最小。
 - 为[BLAKE3哈希函数](https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE3)添加了[支持](https://github.com/decred/dcrd/commit/66a59e0d9248632575d57cf26f5f338ed60ed9f5)以及计算旧PowHashV1(BLAKE256)和[新PowH的分割方法ashV2 (BLAKE3)](https://github.com/decred/dcrd/commit/b2878aa5c18a1a5669f769d594ec3fc4954aa779)。 值得注意的是，不可能完全删除 PowHashV1 和其他旧的共识代码。 即使区块链共识发生变化，也必须仍然可以验证旧链。 因此，保留遗留共识代码，以便能够在新的共识更改之前验证整个 Decred 区块链。 BLAKE3 选择的第三方依赖是 [lukechampine.com/blake3](https://pkg.go.dev/lukechampine.com/blake3) - 一个平衡性能和代码可读性的实现，希望最终能够登陆 Go 标准库。 除了纯 Go 版本之外，该软件包还提供 AVX-512 和 AVX2 例程以提高性能。 另一个添加的依赖项是 [cpuid](https://github.com/klauspost/cpuid) - 一个用于检测可用 CPU 功能的 Go 包。
 - [更新](https://github.com/decred/dcrd/commit/6c323c18b0eb7e4035c8ceb4ac3a36230c8c9c42) `getwork` 命令和 `notifywork` websocket 通知。 挖掘代码使用这些来获取新数据进行哈希处理。
-- 在验证链的[共识代码](https://github.com/decred/dcrd/commit/d9b1921177d4626a22c380853d6c7030a2d5c854)中实现了ASERT难度计算，并在[区块生成](https://github.com/decred/dcrd/commit/2db55eb6e7d16aca5676cd7d)中单独实现473555d23b30e23f挖矿代码。 通常会避免代码重复，但在这种情况下，[故意]创建了两个副本(https://github.com/decred/dcrd/pull/3115#discussion_r1210399671)。 主要原因是使用一个副本来捕获另一个副本中的错误，这一原则称为[“不相似冗余”](https://en.wikipedia.org/wiki/Redundancy_(engineering)#Dissimilar_redundancy)。 另一个原因是未来在共识和挖矿代码上实现不同的优化。 对于那些喜欢研究代码的人，请务必阅读此处的 [ASERT 代码](https://github.com/decred/dcrd/blob/d9b1921177d4626a22c380853d6c7030a2d5c854/blockchain/standalone/pow.go#L222)。
+- 在验证链的[共识代码](https://github.com/decred/dcrd/commit/d9b1921177d4626a22c380853d6c7030a2d5c854)中实现了ASERT难度计算，并在[区块生成](https://github.com/decred/dcrd/commit/2db55eb6e7d16aca5676cd7d)中单独实现473555d23b30e23f挖矿代码。 通常会避免代码重复，但在这种情况下，[故意](https://github.com/decred/dcrd/pull/3115#discussion_r1210399671)创建了两个副本。 主要原因是使用一个副本来捕获另一个副本中的错误，这一原则称为[“不相似冗余”](https://en.wikipedia.org/wiki/Redundancy_(engineering)#Dissimilar_redundancy)。 另一个原因是未来在共识和挖矿代码上实现不同的优化。 对于那些喜欢研究代码的人，请务必阅读此处的 [ASERT 代码](https://github.com/decred/dcrd/blob/d9b1921177d4626a22c380853d6c7030a2d5c854/blockchain/standalone/pow.go#L222)。
 - 实施了 DCP-11 [共识投票](https://github.com/decred/dcrd/commit/85e3701a67fa5a9a7eb418ce71fa991ede447dbb)。 它将在投票软件中显示为“blake3pow”。
   
 除了 BLAKE3 PoW 哈希算法变化会使当前的 Decred ASIC 矿机变得无用之外，新的 ASERT 算法还将调整每个新块的难度，而不是每 144 个块（当前的调整频率）。 作为参考，比特币的挖矿难度每 2,016 个区块更新一次，或者大约每两周更新一次。 ASERT 代表绝对计划指数加权上升目标。
@@ -127,8 +127,8 @@ _图片：模拟 ASERT 难度算法对稳定、快速增长和快速下降的算
 `MinKnownChainWork` 已[替换](https://github.com/decred/dcrd/pull/2000) 遗留检查点，作为确定区块链是否最新的更好方法。 与“AssumeValid”不同，它不能被禁用，也没有理由禁用，因为该值不能通过链重组而失效。 虽然某个区块可能会也可能不会成为主区块链的一部分，但最小已知的链工作永远不会下降。
 Finally, below are v1.8.0 changes relevant for developers:
 
-- 作为常规发布周期的一部分发布了新的模块版本。 在 dcrd 之上构建的开发人员现在可以使用以下更新的 Go 模块：[addrmgr](https://github.com/decred/dcrd/pull/3121)、[blockchain](https://github.com/decred/dcrd/pull/3133)、[blockchain/standalone](https://github.com/decred/dcrd/pull/3120)、[blockchain/stake](https://github.com/decred/dcrd/pull) /3131), [chaincfg](https://github.com/decred/dcrd/pull/3125), [connmgr](https://github.com/decred/dcrd/pull/3124), [数据库](https://github.com/decred/dcrd/pull/3130), [dcrutil](https://github.com/decred/dcrd/pull/3129), [gcs](https://github .com/decred/dcrd/pull/3132), [hdkeychain](https://github.com/decred/dcrd/pull/3127), [peer](https://github.com/decred/dcrd/pull/3128), [rpcclient](https://github.com/decred/dcrd/pull/3134), [txscript](https://github.com/decred/dcrd/pull/312) 6)、[wire](https://github.com/decred/dcrd/pull/3119)和[主模块](https://github.com/decred/dcrd/pull/3138)。
-- 更新了集成测试框架（dcrtest）和[重新启用国库测试]（https://github.com/decred/dcrd/pull/3118）。 它被[暂时禁用](https://github.com/decred/dcrd/issues/3093)以解决循环依赖问题。
+- 作为常规发布周期的一部分发布了新的模块版本。 在 dcrd 之上构建的开发人员现在可以使用以下更新的 Go 模块：[addrmgr](https://github.com/decred/dcrd/pull/3121)、[blockchain](https://github.com/decred/dcrd/pull/3133)、[blockchain/standalone](https://github.com/decred/dcrd/pull/3120)、[blockchain/stake](https://github.com/decred/dcrd/pull) /3131), [chaincfg](https://github.com/decred/dcrd/pull/3125), [connmgr](https://github.com/decred/dcrd/pull/3124), [数据库](https://github.com/decred/dcrd/pull/3130), [dcrutil](https://github.com/decred/dcrd/pull/3129), [gcs](https://github.com/decred/dcrd/pull/3132), [hdkeychain](https://github.com/decred/dcrd/pull/3127), [peer](https://github.com/decred/dcrd/pull/3128), [rpcclient](https://github.com/decred/dcrd/pull/3134), [txscript](https://github.com/decred/dcrd/pull/312) 、[wire](https://github.com/decred/dcrd/pull/3119)和[主模块](https://github.com/decred/dcrd/pull/3138)。
+- 更新了集成测试框架（dcrtest）和[重新启用国库测试](ttps://github.com/decred/dcrd/pull/3118)。 它被[暂时禁用](https://github.com/decred/dcrd/issues/3093)以解决循环依赖问题。
 - 更新了 [Go CI 配置和 linter](https://github.com/decred/dcrd/commit/ab6d284362de7a30f623289bb1523ecc395c18ca)。
 
 ![](img/202306.03.1008.orig.png)
@@ -279,7 +279,7 @@ v0.6.2 版本中包含的更改：
 - 优化了浏览器中[静态 GUI 资源](https://github.com/decred/dcrdex/pull/2398) 的加载。 CSS、JavaScript、图像和字体文件现在加载速度更快。
 - 修复了注册流程可以继续进行的错误 [无需等待足够的债券资金](https://github.com/decred/dcrdex/pull/2392) 存入。
 - 修复了“设置”页面对债券使用不正确的[资金金额](https://github.com/decred/dcrdex/pull/2402)的错误。
-- 添加了 Badger 数据库[截断错误](https://github.com/decred/dcrdex/pull/2389) 的解决方法，该问题可能在 Windows 上崩溃后发生。 Badger 数据库的目标是[在崩溃时不会丢失任何数据](https://dgraph.io/blog/post/badger/)，实现这一目标的一种方法是将所有数据积极保存到[内存映射文件](https://en.wikipedia.org/wiki/Memory-mapped_file)，并在崩溃后从中恢复。 Windows 处理内存映射文件的方式与其他操作系统不同（https://github.com/dgraph-io/badger/issues/476#issuecomment-388122680），而 Badger 必须预先过度分配大量文件。 崩溃后，Badger 需要[截断](https://github.com/dgraph-io/badger/issues/744)（删除）多余的分配，然后才能恢复正常操作。 在基于 Unix 的操作系统上，需要截断文件可能表明数据丢失，但在 Windows 上，这就是它的工作原理，并且在这种情况下[数据丢失的风险几乎为零](https://github.com/dgraph-io/badger/issues/476#issuecomment-388655357)。
+- 添加了 Badger 数据库[截断错误](https://github.com/decred/dcrdex/pull/2389) 的解决方法，该问题可能在 Windows 上崩溃后发生。 Badger 数据库的目标是[在崩溃时不会丢失任何数据](https://dgraph.io/blog/post/badger/)，实现这一目标的一种方法是将所有数据积极保存到[内存映射文件](https://en.wikipedia.org/wiki/Memory-mapped_file)，并在崩溃后从中恢复。 Windows 处理内存映射文件的方式与其他操作系统不同，而 Badger 必须预先过度分配大量文件。 崩溃后，Badger 需要[截断](https://github.com/dgraph-io/badger/issues/744)（删除）多余的分配，然后才能恢复正常操作。 在基于 Unix 的操作系统上，需要截断文件可能表明数据丢失，但在 Windows 上，这就是它的工作原理，并且在这种情况下[数据丢失的风险几乎为零](https://github.com/dgraph-io/badger/issues/476#issuecomment-388655357)。
 
 下面报告的所有更改都是针对下一个版本的。
 
@@ -294,7 +294,7 @@ v0.6.2 版本中包含的更改：
 
 Bitcoin:
 
-- [回收未使用](https://github.com/decred/dcrdex/pull/2368) 兑换和退款地址。 DEX生成新的比特币地址用于赎回（交易正常完成）和退款（交易被取消并退款）。 许多地址最终都没有被使用。 在分层确定性（HD）钱包中，这可能会在使用的地址之间产生大于[间隙限制]（https://blog.lopp.net/mind-the-bitcoin-address-gap/）的*间隙*，这可能会导致发现资金和从种子恢复钱包时出现问题。 为了避免超出缺口限制，生成的未用于赎回或退款的地址将被保存并用于将来的交易。
+- [回收未使用](https://github.com/decred/dcrdex/pull/2368) 兑换和退款地址。 DEX生成新的比特币地址用于赎回（交易正常完成）和退款（交易被取消并退款）。 许多地址最终都没有被使用。 在分层确定性（HD）钱包中，这可能会在使用的地址之间产生大于[间隙限制](https://blog.lopp.net/mind-the-bitcoin-address-gap/)的*间隙*，这可能会导致发现资金和从种子恢复钱包时出现问题。 为了避免超出缺口限制，生成的未用于赎回或退款的地址将被保存并用于将来的交易。
 - 修复了同步时内置 BTC 钱包的[崩溃](https://github.com/decred/dcrdex/pull/2396)。 测试 DEX 钱包[发现](https://github.com/decred/dcrdex/issues/1690) 在上游 btcwallet 代码中出现[崩溃](https://github.com/btcsuite/btcwallet/issues/827)。 DEX 开发人员为调查和[修复](https://github.com/btcsuite/btcwallet/pull/870)做出了贡献。
 - 实现了[一次性下多个订单](https://github.com/decred/dcrdex/pull/2362)的功能。 这将由做市机器人使用，并可能解锁交易优化。
 
@@ -314,7 +314,7 @@ Polygon (MATIC):
 
 开发者和内部变化：
 
-- 使用[新的工作证明]更新了 simnet 区块链（https://github.com/decred/dcrdex/pull/2358）。
+- 使用[新的工作证明](https://github.com/decred/dcrdex/pull/2358)更新了 simnet 区块链。
 - 添加了自动[更新缓存破坏者](https://github.com/decred/dcrdex/pull/2363)的脚本。
 - 启用 GitHub Actions 生成的 Go 构建输出的[缓存](https://github.com/decred/dcrdex/pull/2390)。 这可以避免不必要的重新编译并加速针对每个拉取请求运行的构建和测试。 因此，可以花费更少的时间来查看正在开发的更改是否破坏了任何测试。
 
@@ -377,7 +377,7 @@ GUI 和 CLI 应用程序：
 - 完善了[聊天列表用户体验](https://github.com/companyzero/bisonrelay/pull/292)。
 - 优化了入站和出站通道页面上的[垂直空间](https://github.com/companyzero/bisonrelay/pull/293)。
 - 更新了 [Flutter](https://github.com/companyzero/bisonrelay/pull/258) 依赖项。
-- 修复了[未完成密钥交换]的联系人历史记录的加载(https://github.com/companyzero/bisonrelay/pull/257)。
+- 修复了[未完成密钥交换](https://github.com/companyzero/bisonrelay/pull/257)的联系人历史记录的加载。
 - 修复了一个错误，该错误可能会阻止错误在入门页面上正确显示[显示](https://github.com/companyzero/bisonrelay/pull/271)。
 - 修复了聊天页面不知道[隐藏聊天](https://github.com/companyzero/bisonrelay/pull/276)并错误地显示“需要资金”或“需要邀请”页面的错误。
 - 修复了 [建议 KX](https://github.com/companyzero/bisonrelay/pull/277) 操作无法正常工作的问题。 这还会将隐藏用户添加到下拉列表中。
@@ -394,7 +394,7 @@ CLI 应用程序：
 
 商店实施：
 
-- 添加了一个页面来查看有关一个[订单]的信息(https://github.com/companyzero/bisonrelay/pull/255)。
+- 添加了一个页面来查看有关一个[订单](https://github.com/companyzero/bisonrelay/pull/255)的信息。
 - 允许商店[admin](https://github.com/companyzero/bisonrelay/pull/260)和[customer](https://github.com/companyzero/bisonrelay/pull/283)向订单添加评论，并在管理和客户订单页面上显示它们。
 
 移动应用程序构建的准备工作：
@@ -416,7 +416,7 @@ CLI 应用程序：
 
 - Testnet coin faucet 更新至 [Go 1.20](https://github.com/decred/testnetfaucet/pull/70) 和 [Decred 模块](https://github.com/decred/testnetfaucet/pull/71)，随 v1.8.0 发布。 Faucet被开发者用来获取测试网DCR。
 - gominer 已[更新](https://github.com/decred/gominer/pull/193)，以获取最新的 Decred 模块、linter 和 GitHub Actions 构建配置。
-- [投票仪表板](https://voting.decred.org/)：更新了 [Go 1.20](https://github.com/decred/dcrvotingweb/pull/289) 和较新的 [Decred](https://github.com/decred/dcrvotingweb/pull/291) 和第三方依赖项，在 v1.8.0 中添加了共识投票议程的显示，修复了[投票版本](https://github.com/decred/ dcrvotingweb/pull/292) 用于“testnet3”。
+- [投票仪表板](https://voting.decred.org/)：更新了 [Go 1.20](https://github.com/decred/dcrvotingweb/pull/289) 和较新的 [Decred](https://github.com/decred/dcrvotingweb/pull/291) 和第三方依赖项，在 v1.8.0 中添加了共识投票议程的显示，修复了[投票版本](https://github.com/decred/dcrvotingweb/pull/292) 用于“testnet3”。
 - dcrinstall，一个命令行应用程序的自动安装程序/更新程序，已[更新](https://github.com/decred/decred-release/pull/234)至v1.8.0。 最新版本可以在[发布页面](https://github.com/decred/decred-release/releases)下载。
 - dcrseeder 是一种用于引导 Decred 节点发现的服务，已针对 Go 1.20 和 v1.8.0 版本的 Decred 模块进行了[更新](https://github.com/decred/dcrseeder/pull/58)。
 
@@ -496,7 +496,7 @@ _图片：锁定在权益证明中的代币百分比是持有者信念的良好�
 
 _图片：VSP 管理的票证分发_
 
-**Nodes**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) 整个月观察到 144 到 172 个 dcrd 节点。 7 月 1 日看到的 170 个节点的版本：v1.8.0 - 77%、v1.7.x - 14%、v1.8.0 开发版本 - 3.5%、其他 - 6%。
+**节点**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) 整个月观察到 144 到 172 个 dcrd 节点。 7 月 1 日看到的 170 个节点的版本：v1.8.0 - 77%、v1.7.x - 14%、v1.8.0 开发版本 - 3.5%、其他 - 6%。
 
 网络已快速部署 v1.8.0 并开始挖掘新区块，如下两个图表所示。
 
@@ -508,7 +508,7 @@ _Image：节点运营商已快速升级至 v1.8.0。 2023 年 1 月之前的红�
 
 _图片：区块版本10迅速接管解锁共识投票_
 
-[混合币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true)的份额在61.8-62.1%之间变化。 每日[混合量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 298-699K DCR 之间变化。
+[混币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true)的份额在61.8-62.1%之间变化。 每日[混合量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 298-699K DCR 之间变化。
 
 ![](img/202306.15.720.png)
 
@@ -545,17 +545,17 @@ _图片：Decred 的闪电网络容量不断攀升_
 
 - Ledger Live 用户可能想要设置密码，因为在设置密码之前，Ledger Live 可能会[泄露](https://twitter.com/RandyMcMillan/status/1671637422281728000)未加密的[扩展公钥](https://support.ledger.com/hc/en-us/articles/360011069619-Extended-public-key-xPub-)到文件系统。 这个单一的密钥允许找到钱包使用的所有地址和交易。
 
-交流：
+交易所：
 
 - 6 月 14 日，币安发现 DCR 存款出现短暂中断，并发出“正在进行维护”的通知。 这可能是由于对 Decred 的分叉过程和 [v1.8.0 版本](https://github.com/decred/decred-binaries/releases/tag/v) 的[误解](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$RG0di1DqCrR14qRXk5FM-UodObPb3ndayJrHeAywQ64) 1.8.0）于6月13日发布。问题在不到12小时内得到解决。
 
-- 币安已[恢复其从 6 月 26 日起在法国、意大利、波兰和西班牙下架 DCR 的决定](https://cointelegraph.com/news/binance-to-delist-privacy-tokens-in-france-italy-spain-and-poland)。客户收到了[更新的列表](https://twitter.com/beczka2006/status/1671224544693026817）不允许“全面监控交易”的币种，原计划下架的12种币中只有5种。 DCR 不在更新的列表中，可能是因为其隐私系统被选择加入。
+- 币安已[恢复其从 6 月 26 日起在法国、意大利、波兰和西班牙下架 DCR 的决定](https://cointelegraph.com/news/binance-to-delist-privacy-tokens-in-france-italy-spain-and-poland)。客户收到了[更新的列表](https://twitter.com/beczka2006/status/1671224544693026817)不允许“全面监控交易”的币种，原计划下架的12种币中只有5种。 DCR 不在更新的列表中，可能是因为其隐私系统被选择加入。
 
-- Binance 和 CZ 因违反证券法而被[美国 SEC 起诉](https://www.coindesk.com/policy/2023/06/05/sec-sues-crypto-exchange-binance-ceo-changpeng-zhao/)。 这些指控与 [CFTC 三月份] 对币安提出的指控类似 (202303.md#relevant-external)。 该消息引发了 Binance 和 Binance.US 的大规模[提款](https://www.reuters.com/technology/crypto-exchange-binance-hit-by-outflows-780-mln-last-24-hours-nansen-2023-06-06/)。 DCR 仍然不在 SEC 在不同时间点提到的“50 多种资产的更新列表”(https://cointelegraph.com/news/sec-labels-61-cryptocurrencies-securities-after-binance-suit) 中。 如果报告的交易量可信的话，币安仍然是 DCR 的最大市场。
+- Binance 和 CZ 因违反证券法而被[美国 SEC 起诉](https://www.coindesk.com/policy/2023/06/05/sec-sues-crypto-exchange-binance-ceo-changpeng-zhao/)。 这些指控与 [CFTC 三月份](202303.md#relevant-external) 对币安提出的指控类似 。 该消息引发了 Binance 和 Binance.US 的大规模[提款](https://www.reuters.com/technology/crypto-exchange-binance-hit-by-outflows-780-mln-last-24-hours-nansen-2023-06-06/)。 DCR 仍然不在 SEC 在不同时间点提到的“50 多种资产的更新列表”中。 如果报告的交易量可信的话，币安仍然是 DCR 的最大市场。
 
-- 其他币安新闻包括[在塞浦路斯取消注册](https://www.coindesk.com/policy/2023/06/14/binances-cyprus-unit-under-examination-for-deregistration-as-crypto-service-provider/)、[离开荷兰](https://www.coindesk.com/business/2023/06/16/binance-to-quit-netherlands-after-failing-to-ac quire-license/)、[比利时监管机构](https://www.coindesk.com/policy/2023/06/23/binance-ordered-to-immediately-halt-offering-crypto-services-in-belgium-by-markets-regulator/)发出的停止服务的命令，以及[SEPA银行提供商]即将发生的变化(https://www.coindesk.com/business/2023/06/28/bin欧洲银行合作伙伴将在 9 月份停止支持加密货币交易所/）。 后者可能要求用户在 2023 年 9 月 25 日之后接受新条款并更新其银行详细信息。
+- 其他币安新闻包括[在塞浦路斯取消注册](https://www.coindesk.com/policy/2023/06/14/binances-cyprus-unit-under-examination-for-deregistration-as-crypto-service-provider/)、[离开荷兰](https://www.coindesk.com/business/2023/06/16/binance-to-quit-netherlands-after-failing-to-acquire-license/)、[比利时监管机构](https://www.coindesk.com/policy/2023/06/23/binance-ordered-to-immediately-halt-offering-crypto-services-in-belgium-by-markets-regulator/)发出的停止服务的命令，以及SEPA银行提供商即将发生的变化。 后者可能要求用户在 2023 年 9 月 25 日之后接受新条款并更新其银行详细信息。
 
-- KuCoin将从2023年7月15日开始为所有用户添加[强制性KYC](https://www.kucoin.com/news/enhancement-of-kucoin-customer-identification-and-verification-program)。他们的第一个[验证级别](https://www.kucoin.com/support/360015102254)称为“基本个人信息”可能就足够了，但需要测试 - 报告值得赞赏！ 根据《福布斯》(https://www.forbes.com/advisor/investing/cryptocurrency/kucoin-review/) 和我们看到的一些用户报告，这一变化可能会产生不幸的影响，即终止对之前未经验证的美国用户的支持。 KuCoin 总部位于塞舌尔，自 [2018 年 9 月](https://web.archive.org/web/20200513103616/https://news.kucoin.com/en/decred-dcr-gets-listed-on-kucoin/) 以来拥有 DCR 交易对。 截至 7 月 7 日，DCR/BTC 市场的 24 小时交易量为 2 万美元。
+- KuCoin将从2023年7月15日开始为所有用户添加[强制性KYC](https://www.kucoin.com/news/enhancement-of-kucoin-customer-identification-and-verification-program)。他们的第一个[验证级别](https://www.kucoin.com/support/360015102254)称为“基本个人信息”可能就足够了，但需要测试 - 报告值得赞赏！ 根据《福布斯》和我们看到的一些用户报告，这一变化可能会产生不幸的影响，即终止对之前未经验证的美国用户的支持。 KuCoin 总部位于塞舌尔，自 [2018 年 9 月](https://web.archive.org/web/20200513103616/https://news.kucoin.com/en/decred-dcr-gets-listed-on-kucoin/) 以来拥有 DCR 交易对。 截至 7 月 7 日，DCR/BTC 市场的 24 小时交易量为 2 万美元。
   
 通讯系统：
 
@@ -643,10 +643,10 @@ Decred 杂志 2023 年 6 月参与度统计数据：
 
 **视频:**
 
-- [Decrediton 中的隐私混合](https://www.youtube.com/watch?v=fQpdGi57x-M) by @phoenixgreen 
-- [DCRDEX 的高级交易选项](https://www.youtube.com/watch?v=yqqzKFmBA8E) by @phoenixgreen
-- [Decrediton 共识升级投票](https://www.youtube.com/watch?v=5klbCo6HzD4) by @phoenixgreen
-- [Bison Relay 钱包功能](https://www.youtube.com/watch?v=VZe-3T7k-24) by @phoenixgreen 
+- [Decrediton 中的隐私混合](https://www.youtube.com/watch?v=fQpdGi57x-M) @phoenixgreen 
+- [DCRDEX 的高级交易选项](https://www.youtube.com/watch?v=yqqzKFmBA8E) @phoenixgreen
+- [Decrediton 共识升级投票](https://www.youtube.com/watch?v=5klbCo6HzD4) @phoenixgreen
+- [Bison Relay 钱包功能](https://www.youtube.com/watch?v=VZe-3T7k-24) @phoenixgreen 
 
 现场直播：
 
@@ -654,7 +654,7 @@ Decred 杂志 2023 年 6 月参与度统计数据：
 
 **音频：**
 
-- [加密货币被围攻？](https://twitter.com/i/spaces/1OyJAVgRnEOxb) - Twitter Space 与 @Tivra 和 [BawdyAnarchist_](https://twitter.com/BawdyAnarchist_) 讨论加密货币情况 - 也在 [Spotify](https://podcasters.spotify.com/pod/show/cypherpunktimes/episodes/Crypto-Under-Siege-e26 0ibe）
+- [加密货币被围攻？](https://twitter.com/i/spaces/1OyJAVgRnEOxb) - Twitter Space 与 @Tivra 和 [BawdyAnarchist_](https://twitter.com/BawdyAnarchist_) 讨论加密货币情况 - 也在 [Spotify](https://podcasters.spotify.com/pod/show/cypherpunktimes/episodes/Crypto-Under-Siege-e260ibe)
 
 **艺术与乐趣：**
 
@@ -670,7 +670,7 @@ Decred 杂志 2023 年 6 月参与度统计数据：
 
 **讨论：**
 
-- 挑战其他项目与 Decred 的[初始同步时间]竞争(https://twitter.com/decredproject/status/1673431473234366464)
+- 挑战其他项目与 Decred 的[初始同步时间](https://twitter.com/decredproject/status/1673431473234366464)竞争
 - 接下来要在 DCRDEX 中集成哪些代币 - [Twitter](https://twitter.com/decredproject/status/1668408872107687936) 和 [Reddit](https://www.reddit.com/r/decred/comments/148de6k/which_coin_should_be_next_on_our_dcrdex/) 上的调查
 - [DCRDEX公告](https://www.reddit.com/r/litecoin/comments/13xonle/litecoin_atomicswaps_trade_litecoin_p2p_with_no/)在r/litecoin上获得了90+赞成票
 - Zclassic (ZCL) [戏弄](https://twitter.com/ZclassicCoin/status/1668873387907637249) 关于可能的 DEX 集成的 Twitter
@@ -678,13 +678,13 @@ Decred 杂志 2023 年 6 月参与度统计数据：
 
 **选定的非 Decred 文章** 发布在 Cypherpunk Times 上：
 
-- [BRC-20； 是留下还是消失？](https://www.cypherpunktimes.com/brc-20-here-to-stay-or-fade/) by @BlockchainJew - 还涵盖了新的 Taproot 资产协议
-- [顶级银行欢迎区块链与 SWIFT 的互操作性](https://www.cypherpunktimes.com/top-banks-to-welcome-blockchain-interoperability-with-swift/) by @BlockchainJew
-- [新研究称巴西人希望投资加密货币](https://www.cypherpunktimes.com/brazilians-want-to-invest-in-crypto-says-new-research/) by @Joao
+- [BRC-20； 是留下还是消失？](https://www.cypherpunktimes.com/brc-20-here-to-stay-or-fade/)  @BlockchainJew - 还涵盖了新的 Taproot 资产协议
+- [顶级银行欢迎区块链与 SWIFT 的互操作性](https://www.cypherpunktimes.com/top-banks-to-welcome-blockchain-interoperability-with-swift/) @BlockchainJew
+- [新研究称巴西人希望投资加密货币](https://www.cypherpunktimes.com/brazilians-want-to-invest-in-crypto-says-new-research/)  @Joao
 
 ![](img/202306.19.1000.orig.jpg)
 
-_图片：@OfficialCryptos 领导的 DAO 包_
+_图片：@OfficialCryptos_
 
 
 ## 市场
@@ -707,9 +707,9 @@ _图片：@bochinchero 的 Decred 特定 SASRV/RV 比率指标提供了市场趋
 
 @bochinchero 提供了一张新图表：
 
-> 我之前一直在修改的另一个有趣的，估计没有门票/投票（例如 RV-SRV）的实现价值是多少，它看起来很像 BTC RV 所做的......并且似乎很好地表明了局部底部
+> 我之前一直在修改的另一个有趣的，估计没有选票/投票（例如 RV-SRV）的实现价值是多少，它看起来很像 BTC RV 所做的......并且似乎很好地表明了局部底部
 >
-> 显然，鉴于市场受到操纵，其中很多内容都可以被视为半信半疑，试图解读被操纵的茶叶
+> 显然，鉴于市场受到操纵，其中很多内容都可以被视为半信半疑
 
 ![](img/202306.23.768.jpg)
 
