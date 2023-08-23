@@ -1,339 +1,339 @@
-# Decred Journal – July 2023
+# Decred 月报 – 2023 年 7 月
 
 ![The Perfect Storm by @Exitus](img/202307.01.768.png)
 
-_Image: The Perfect Storm by @Exitus_
+_图片：@Exitus_
 
-Highlights of July:
+七月亮点：
 
-- Votes on the two consensus changes (PoW hash function and PoW/PoS subsidy split) concluded with near unanimous support, the changes will activate in late August (so upgrade to v1.8).
+- 两项共识变更提案（PoW 哈希函数和 PoW/PoS 补贴分割）获得社区的高票支持通过，新共识将于 8 月底激活（请尽快升级到 v1.8）。
 
-- Cypherpunk Times launched its rebranded site (formerly Decred Magazine), and onboarded its first project besides Decred to contribute content, Firo.
+- Cypherpunk Times 推出了更名后的网站（以前称为 Decred 杂志），并启动了除 Decred 之外的第一个提供内容的项目 Firo。
 
-- Discord is now bridged to the Matrix rooms again with a new improved bridge that allows Matrix users to block individual Discord users, the approval procedure for new members on Discord has also been improved.
+- Discord 现在再次桥接到 Matrix 房间，新的改进桥允许 Matrix 用户阻止个别 Discord 用户，Discord 上新成员的批准程序也得到了改进。
 
-Contents:
+内容:
 
-- [Upgrade for the Coming Fork!](#upgrade-for-the-coming-fork)
-- [Development](#development)
-- [People](#people)
-- [Governance](#governance)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+- [为即将到来的分叉进行升级！](#upgrade-for-the-coming-fork)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理](#governance)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
-## Upgrade for the Coming Fork!
+## 为即将到来的分叉进行升级！
 
-Voting has concluded for two consensus changes [Change PoW to BLAKE3 and ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) and [Change PoW/PoS Subsidy Split To 1/89](https://github.com/decred/dcps/blob/master/dcp-0012/dcp-0012.mediawiki) which were originally [proposed on Politeia](https://proposals.decred.org/record/a8501bc) in March 2023.
+两项共识变更的投票已结束 [将 PoW 更改为 BLAKE3 和 ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) 和 [更改 PoW/PoS 区块奖励 至 1/89](https://github.com/decred/dcps/blob/master/dcp-0012/dcp-0012.mediawiki)，最初是 2023 年 3 月 [在 Politeia 上提出的](https://proposals.decred.org /record/a8501bc）。
 
-Both changes have been **approved** with 99%+ Yes votes and 60%+ voter turnout. Changes are now [locked in](https://docs.decred.org/governance/consensus-rule-voting/overview/) and will activate in block 794,368 around August 29. Remaining time can be tracked at the [Voting Dashboard](https://voting.decred.org/) or at [dcrdata Agendas](https://dcrdata.decred.org/agendas).
+这两项变更均已获得**批准**，赞成票超过 99%，投票率超过 60%。 提案状态更改为[锁定](https://docs.decred.org/governance/consensus-rule-voting/overview/)，并将在 8 月 29 日左右在区块 794,368 中激活。可以在 [投票仪表板](https://voting.decred.org/) 或访问 [dcrdata Agendas](https://dcrdata.decred.org/agendas)跟踪剩余时间。
 
-All users are recommended to upgrade to latest [core software](https://github.com/decred/decred-binaries), [standalone DEX app](https://github.com/decred/dcrdex/releases), or any [other wallets](https://decred.org/wallets/) being used. As always, we recommend to [verify the files](https://docs.decred.org/advanced/verifying-binaries) before running.
-
+建议所有用户升级到最新的[核心软件](https://github.com/decred/decred-binaries)、[独立DEX应用程序](https://github.com/decred/dcrdex/releases)，或 正在使用的任何[其他钱包](https://decred.org/wallets/)。 与往常一样，我们建议在运行之前[验证文件](https://docs.decred.org/advanced/verifying-binaries)。
 
 <a id="development" />
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-The following work has been merged in `master` towards future releases:
+以下工作已合并到未来版本的“master”中：
 
-- Updated `GetBlock` and `GetBlockHeader` commands to show [the new proof of work hash](https://github.com/decred/dcrd/pull/3154). For blocks after [DCP-11: Change PoW to BLAKE3 and ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) activates, the *proof of work hash* will be the new BLAKE3 hash. For blocks prior to DCP-11, the *block hash* and the *proof of work hash* will be identical. This update enables consumers like [dcrdata](#dcrdata) to easily access the new hashes.
-- Updated the [Docker image](https://github.com/decred/dcrd/pull/3158) to build the dcrd binary with newer Go and Alpine Linux. Node admins can consider Docker a good security option as opposed to using a virtual machine which has a much bigger attack surface.
-- Updated the RPC server to [dynamically reload new RPC certificates](https://github.com/decred/dcrd/pull/3153) without shutting down and restarting. This is a quality-of-life improvement for node admins, since it enables them to hot-swap the server certificate/key pair, as well as any potential client certificates. For example, a certificate update is required when the RPC server is exposed publicly and its IP address or domain name changes. Another example is when client certificates need to be modified to revoke clients, add new ones, or allow existing clients to change their private keys. This update is robust, minimizes disk access, does not require platform-specific dependencies, and is resilient against user-errors to avoid breaking a working config.
-- Explicitly configured RPC clients connecting to dcrd via HTTP to [use TLS v1.2 or higher](https://github.com/decred/dcrd/pull/3169). This was already the implicit minimum, but now it is more clear.
+- 更新了“GetBlock”和“GetBlockHeader”命令以显示[新的工作哈希证明](https://github.com/decred/dcrd/pull/3154)。 对于 [DCP-11：将 PoW 更改为 BLAKE3 和 ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) 激活后的区块，*工作量证明哈希 * 将是新的 BLAKE3 哈希值。 对于 DCP-11 之前的区块，*区块哈希*和*工作哈希证明*将是相同的。 此更新使 [dcrdata](#dcrdata) 等用户能够轻松访问新的哈希值。
+- 更新了 [Docker 镜像](https://github.com/decred/dcrd/pull/3158)，以使用较新的 Go 和 Alpine Linux 构建 dcrd 二进制文件。 节点管理员可以认为 Docker 是一个很好的安全选项，而不是使用具有更大攻击面的虚拟机。
+- 更新了 RPC 服务器以[动态重新加载新的 RPC 证书](https://github.com/decred/dcrd/pull/3153)，无需关闭并重新启动。 这对于节点管理员来说是工作质量的改进，因为它使他们能够热交换服务器证书/密钥对以及任何潜在的客户端证书。 例如，当RPC服务器公开且其IP地址或域名发生变化时，需要更新证书。 另一个例子是当需要修改客户端证书以撤销客户端、添加新客户端或允许现有客户端更改其私钥时。 此更新非常强大，最大限度地减少了磁盘访问，不需要特定于平台的依赖项，并且能够抵御用户错误，以避免破坏工作配置。
+- 显式配置的 RPC 客户端通过 HTTP 连接到 dcrd [使用 TLS v1.2 或更高版本](https://github.com/decred/dcrd/pull/3169)。 这已经是隐含的最小值，但现在更加清晰。
 
-Developer and internal changes merged in `master`:
+开发人员和内部更改合并在“master”中：
 
-- Updated the comments detailing the [ASERT calculation coefficients](https://github.com/decred/dcrd/pull/3156) in the mining code so that they match the consensus code comments.
-- Added a [new linter](https://github.com/decred/dcrd/pull/3157), addressed some [linter complaints](https://github.com/decred/dcrd/pull/3155), and moved [linting logic](https://github.com/decred/dcrd/pull/3161) to its own script outside of the testing script.
-- Updated [Github Actions](https://github.com/decred/dcrd/pull/3159), and ensured that the continuous integration actions happen in the [correct order](https://github.com/decred/dcrd/pull/3166).
-- Updated [golangci linter](https://github.com/decred/dcrd/pull/3163), and changed its [method of installing](https://github.com/decred/dcrd/pull/3162) from `curl` to `go install`, which has the benefit of reducing potential security risks from supply-chain attacks. Also, cached the binary for faster future runs.
-- Current versions of Go have a confusing way of handling loops. Both "for loops" and "range loops" treat internal loop variables ambiguously, which has led to code which is difficult to read and tricky to debug. Devs have had to treat loops with an abundance of caution, yet still potentially deal with annoying errors. A full explanation of the problem can be [read here](https://go.googlesource.com/proposal/+/master/design/60078-loopvar.md), especially the section which talks about [the rationale](https://go.googlesource.com/proposal/+/master/design/60078-loopvar.md#rationale-and-compatibility). Future versions of Go (likely 1.22) will introduce a breaking change to how loops are handled. While the new loop semantics will be less confusing and error-prone, projects will have to set a very high minimum supported Go version to avoid bugs when compiled with older Go. To ensure the dcrd code will work correctly with Go 1.22, as well as remain backwards-compatible and compile correctly with older versions of Go, [all necessary loops were updated](https://github.com/decred/dcrd/pull/3165). This will avoid any potential issues before they even have a chance to arise.
+- 更新了挖矿代码中详细说明[ASERT计算系数](https://github.com/decred/dcrd/pull/3156)的注释，以便它们与共识代码注释相匹配。
+-添加了[新的linter](https://github.com/decred/dcrd/pull/3157)，解决了一些[linter投诉](https://github.com/decred/dcrd/pull/3155)，以及 将 [linting 逻辑](https://github.com/decred/dcrd/pull/3161) 移动到测试脚本之外的自己的脚本中。
+- 更新了[Github Actions](https://github.com/decred/dcrd/pull/3159)，并确保持续集成操作按照正确的顺序。
+- 更新了 [golangci linter](https://github.com/decred/dcrd/pull/3163)，并更改了其[安装方法](https://github.com/decred/dcrd/pull/3162) “curl”改为“go install”，这样做的好处是可以减少供应链攻击带来的潜在安全风险。 此外，还缓存了二进制文件，以便将来更快地运行。
+- 当前版本的 Go 处理循环的方式令人困惑。 “for 循环”和“range 循环”都模糊地处理内部循环变量，这导致代码难以阅读且难以调试。 开发人员必须非常谨慎地对待循环，但仍然可能会处理恼人的错误。 该问题的完整解释可以[阅读此处](https://go.googlesource.com/proposal/+/master/design/60078-loopvar.md)，特别是谈论[基本原理](https://go.googlesource.com/proposal/+/master/design/60078-loopvar.md#rationale-and-compatibility).。 Go 的未来版本（可能是 1.22）将对循环的处理方式进行重大更改。 虽然新的循环语义不会那么混乱和容易出错，但项目必须设置非常高的最低支持的 Go 版本，以避免使用旧版 Go 编译时出现错误。 为了确保 dcrd 代码能够在 Go 1.22 中正常工作，并保持向后兼容并与旧版本的 Go 正确编译，[更新了所有必要的循环](https://github.com/decred/dcrd/pull/3165) 这将在任何潜在问题有机会出现之前避免它们。
 
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-The following work has been merged in `master` towards future releases.
+以下工作已合并到未来版本的“master”中。
 
-The primary improvements users may notice are related to purchasing tickets through a VSP:
+用户可能会注意到的主要改进与通过 VSP 购买选票有关：
 
-- Fixed broken [retrying logic](https://github.com/decred/dcrwallet/pull/2252) for errored VSP ticket purchases. This issue affected many users. Any ticket purchases which worked first time were unaffected, but any purchases which ran into an error were not being retried, which would lead to tickets not being added to the VSP and votes being missed. Thankfully, re-registering the ticket with a different VSP was a workaround, but obviously it was poor UX.
-- Fixed a bug where the [fee payment status check](https://github.com/decred/dcrwallet/pull/2269) could be unreasonably delayed. The VSP client delays actions by some random duration in order to help protect privacy. With this incorrect delay calculation the wallet would report fee payments as being unconfirmed for up to 2 hours until the next check happens, when actually the fee has been sent and confirmed. Now the user wallet will update sooner.
-- Require VSP clients to [wait for the VSP to confirm fee payments](https://github.com/decred/dcrwallet/pull/2271) before considering a VSP ticket fully purchased. This eliminates multiple problematic edge cases caused by users broadcasting their own fee transactions, such as paying too low of a fee or sending payment to the wrong address. It is a preventative fix for extremely unlikely cases which have not been seen in the wild.
-- Fixed a bug where some VSP tickets could be [skipped and not updated](https://github.com/decred/dcrwallet/pull/2266) during various stages of the VSP ticket management lifecycle. No users have reported any issues caused by this bug. The improved error handling code uses the new `Errors.Join` feature that was made available by updating to Go 1.20, which is discussed below.
+- 修复了错误的 VSP 选票购买的损坏的[重试逻辑](https://github.com/decred/dcrwallet/pull/2252)。 这个问题影响了很多用户。 任何第一次有效的购票行为都不会受到影响，但任何遇到错误的购买行为都不会被重试，这将导致选票无法添加到 VSP 中并错过投票。 值得庆幸的是，使用不同的 VSP 重新注册选票是一种解决方法，但显然这是糟糕的用户体验。
+- 修复了[费用支付状态检查](https://github.com/decred/dcrwallet/pull/2269)可能被无理延迟的错误。 VSP 客户端将操作延迟一段随机时间，以帮助保护隐私。 由于这种不正确的延迟计算，钱包将在长达 2 小时内将费用支付报告为未确认，直到下一次检查发生，而此时费用实际上已发送并确认。 现在用户钱包更新得更快。
+- 要求 VSP 客户[等待 VSP 确认费用支付](https://github.com/decred/dcrwallet/pull/2271)，然后再考虑完全购买 VSP 选票。 这消除了因用户广播自己的费用交易而导致的多种有问题的边缘情况，例如支付过低的费用或将付款发送到错误的地址。
+- 修复了在 VSP 选票管理生命周期的各个阶段中某些 VSP 选票可能被[跳过且不更新](https://github.com/decred/dcrwallet/pull/2266) 的错误。 没有用户报告此错误引起的任何问题。 改进的错误处理代码使用了新的“Errors.Join”功能，该功能通过更新到 Go 1.20 提供，如下所述。
 
-Developer and internal changes merged in `master`:
+开发人员和内部更改合并在“master”中：
 
-Go 1.20 unlocked [better error handling](https://tip.golang.org/doc/go1.20#errors), which inspired a few changes:
+Go 1.20 解锁了[更好的错误处理](https://tip.golang.org/doc/go1.20#errors)，这激发了一些变化：
 
-- Removed an [unused variable](https://github.com/decred/dcrwallet/pull/2262) and a confusing [custom error function](https://github.com/decred/dcrwallet/pull/2263) from dcrwallet's internal errors definition.
-- [Dropped support for Go 1.19](https://github.com/decred/dcrwallet/pull/2267), and bumped support to Go 1.20 and 1.21.0-rc3. This is because Go 1.19 doesn't have `Errors.Join`.
-- Added the new [`Errors.Join`](https://github.com/decred/dcrwallet/pull/2268) function from Go 1.20's standard library. This new function is a simple way to wrap several error messages together. In Go 1.19 and previous, it was somewhat possible with the `Errors.Is`/`As` functions, but wrapped errors could be hidden, which made error tracing quite difficult. `Errors.Join` is a [much better solution](https://blog.devgenius.io/wrapping-multiple-errors-in-go-1-20-78163ef5fc2c).
+- 删除了一个[未使用的变量](https://github.com/decred/dcrwallet/pull/2262)和一个令人困惑的[自定义错误函数](https://github.com/decred/dcrwallet/pull/2263) dcrwallet 的内部错误定义。
+- [放弃对 Go 1.19 的支持](https://github.com/decred/dcrwallet/pull/2267)，并增加对 Go 1.20 和 1.21.0-rc3 的支持。 这是因为 Go 1.19 没有 `Errors.Join`。
+- 添加了 Go 1.20 标准库中的新 [`Errors.Join`](https://github.com/decred/dcrwallet/pull/2268) 函数。 这个新函数是一种将多个错误消息包装在一起的简单方法。 在 Go 1.19 及之前的版本中，使用 `Errors.Is`/`As` 函数在某种程度上是可能的，但包装的错误可能会被隐藏，这使得错误跟踪变得相当困难。 `Errors.Join` 是一个[更好的解决方案](https://blog.devgenius.io/wrapping-multiple-errors-in-go-1-20-78163ef5fc2c)。
 
-Additionally:
+此外:
 
-- Updated the [LRU cache](https://github.com/decred/dcrwallet/pull/2264) to use Go Generics and accept multiple variable types. LRU a standard caching schema which removes the Least Recently Updated values once the cache is full. The main advantage of a generic LRU cache is to reduce code duplication and unlock easier code reuse. This has the added benefit of more explicit code by specifying the types for each new LRU cache instance, as well as better code verification by the compiler. Generics were [added in Go 1.18](https://go.dev/blog/go1.18) (March 2022), and are relatively controversial, but only because they have tradeoffs that devs must consider. Ideally, the Go compiler would treat generic functions the same as it would treat functions with specific variable types, and each would be equally as optimized. In practice, this isn't always the case. The benefits of generics sometimes come at the cost of more complexity and [slightly slower performance](https://planetscale.com/blog/generics-can-make-your-go-code-slower). In this case, dcrwallet currently makes minimal use of generics, so the performance impact is minimal.
-- Improved and polished [wallet tests](https://github.com/decred/dcrwallet/pull/2260), including removing redundant code.
+- 更新了 [LRU 缓存](https://github.com/decred/dcrwallet/pull/2264) 以使用 Go 泛型并接受多种变量类型。 LRU 是一种标准缓存模式，一旦缓存已满，就会删除最近最少更新的值。 通用 LRU 缓存的主要优点是减少代码重复并更轻松地重用代码。 通过指定每个新 LRU 缓存实例的类型，这具有更明确的代码的额外好处，以及编译器更好的代码验证。 泛型是[在 Go 1.18 中添加的](https://go.dev/blog/go1.18)（2022 年 3 月），并且相对有争议，但这只是因为它们具有开发人员必须考虑的权衡。 理想情况下，Go 编译器将像对待具有特定变量类型的函数一样对待泛型函数，并且每个函数都将得到同样的优化。 实际上，情况并非总是如此。 泛型的好处有时是以更高的复杂性和[性能稍慢]为代价的。(https://planetscale.com/blog/generics-can-make-your-go-code-slower)。 在这种情况下，dcrwallet 目前很少使用泛型，因此对性能的影响很小。
+- 改进和完善[钱包测试](https://github.com/decred/dcrwallet/pull/2260)，包括删除冗余代码。
 
-
+  
 ### dcrctl
 
-_[dcrctl](https://github.com/decred/dcrctl) is a command-line client for dcrd and dcrwallet._
+_[dcrctl](https://github.com/decred/dcrctl) 是 dcrd 和 dcrwallet 的命令行客户端。_
 
-The following work has been merged in `master` towards future releases:
+以下工作已合并到未来版本的“master”中：
 
-- [Removed stale dependencies](https://github.com/decred/dcrctl/pull/64) from the main module, and updated the [dcrd and dcrwallet modules](https://github.com/decred/dcrctl/pull/67) to their latest versions. Notably, this makes dcrd's new verbose results of `getblock` and `getblockheader` available.
-- Updated the README to recommend that developers use local [Go Workspaces](https://github.com/decred/dcrctl/pull/66) when working with development versions of dcrd and dcrwallet.
+- 从主模块中[删除了过时的依赖项](https://github.com/decred/dcrctl/pull/64)，并更新了[dcrd和dcrwallet模块](https://github.com/decred/dcrctl/ pull/67) 到最新版本。 值得注意的是，这使得 dcrd 的新的“getblock”和“getblockheader”详细结果可用。
+- 更新了自述文件，建议开发人员在使用 dcrd 和 dcrwallet 的开发版本时使用本地 [Go Workspaces](https://github.com/decred/dcrctl/pull/66)。
 
 
 ### Decrediton
 
-_[Decrediton](https://github.com/decred/decrediton) is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混币、闪电网络、DEX 交易等功能。 它在有或没有完整的区块链（SPV 模式）的情况下运行。_
 
-In progress:
+进行中：
 
-- Updating to [React v18](https://github.com/decred/decrediton/pull/3851)
-- Ledger [backend functions](https://github.com/decred/decrediton/pull/3869) and [user interface](https://github.com/decred/decrediton/pull/3874)
-- Updating [French](https://github.com/decred/decrediton/pull/3895) and [Chinese](https://github.com/decred/decrediton/pull/3893) translations
-
-In July, @norwnd proposed a [2FA storage for Decrediton](https://www.reddit.com/r/decred/comments/15cyod5/decrediton_2fa_hoddle_safely/) based on simple 2-of-2 multisig. The idea is to provide a more secure solution for storing DCR by using a second device to sign transactions, initially an Android smartphone. This should protect from threats like a weak wallet encryption password or a stolen laptop. As a bonus it could make multisig features more accessible to regular users who don't have skills to program a multisig solution themselves. It is currently in early discussion and feedback phase but some effort has been made to test multisig features in dcrwallet and test how much data can be passed in QR codes.
+- 更新到 [React v18](https://github.com/decred/decrediton/pull/3851)
+- Ledger [后端功能](https://github.com/decred/decrediton/pull/3869) 和 [用户界面](https://github.com/decred/decrediton/pull/3874)
+- 更新[法语](https://github.com/decred/decrediton/pull/3895)和[中文](https://github.com/decred/decrediton/pull/3893)翻译
+  
+7 月，@norwnd 提出了基于简单 2-of-2 多重签名的 [Decrediton 2FA 存储](https://www.reddit.com/r/decred/comments/15cyod5/decrediton_2fa_hoddle_safely/)。 这个想法是通过使用第二台设备（最初是 Android 智能手机）来签署交易，提供更安全的存储 DCR 的解决方案。 这应该可以防止钱包加密密码薄弱或笔记本电脑被盗等威胁。 作为一个额外的好处，它可以使不具备自行编写多重签名解决方案技能的普通用户更容易使用多重签名功能。 目前正处于早期讨论和反馈阶段，但已经做出了一些努力来测试 dcrwallet 中的多重签名功能，并测试 QR 码可以传递多少数据。
 
 
 ### vspd
 
-_[vspd](https://github.com/decred/vspd) is server software used by Voting Service Providers. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_[vspd](https://github.com/decred/vspd) 是投票服务提供商使用的服务器软件。 VSP 代表其用户全天候 24/7 投票，不能窃取资金。_
 
-Changes that were included in the [v1.2.1 release](https://github.com/decred/vspd/releases/tag/release-v1.2.1):
+[v1.2.1 版本](https://github.com/decred/vspd/releases/tag/release-v1.2.1) 中包含的更改：
 
-- Fixed [transaction broadcasting](https://github.com/decred/vspd/pull/398) logic to not generate an error when the transaction already exists (which is not a problem). This missing error condition was noticed when investigating the [broken retry](https://github.com/decred/dcrwallet/pull/2252) issue in dcrwallet's VSP client. It's a preventative fix, there have been no reported issues caused by this bug.
+- 修复了[交易广播](https://github.com/decred/vspd/pull/398)逻辑，以便在交易已经存在时不会生成错误（这不是问题）。 在调查 dcrwallet 的 VSP 客户端中的[重试中断](https://github.com/decred/dcrwallet/pull/2252) 问题时，注意到了这种缺失的错误情况。 这是一个预防性修复，目前还没有报告由此错误引起的问题。
 
 
 ### Lightning Network
 
-_[dcrlnd](https://github.com/decred/dcrlnd) is Decred's Lightning Network node software. LN enables instant and low-cost transactions._
+_[dcrlnd](https://github.com/decred/dcrlnd)是Decred的闪电网络节点软件。 LN 使即时和低成本交易成为可能。_
 
-- Improved [tracking of closed channels](https://github.com/decred/dcrlnd/pull/187). It's been observed on Decred LN mainnet that some channels that have been closed on-chain are still being announced on the network. While the root cause has not been determined, this change reduces the amount of invalid channel announcements and their negative effects, specially for nodes running in SPV mode (such as Bison Relay clients). This is implemented by saving channel IDs that are known to be closed and using that information to skip invalid updates or avoid expensive operations.
+- 改进了[关闭通道的追踪](https://github.com/decred/dcrlnd/pull/187)。 在 Decred LN 主网上观察到，一些已在链上关闭的通道仍在网络上公布。 虽然根本原因尚未确定，但此更改减少了无效通道公告的数量及其负面影响，特别是对于在 SPV 模式下运行的节点（例如 Bison Relay 客户端）。 这是通过保存已知已关闭的通道 ID 并使用该信息来跳过无效更新或避免昂贵的操作来实现的。
 
 
 ### DCRDEX
 
-_[DCRDEX](https://github.com/decred/dcrdex) is a non-custodial, privacy-respecting exchange for trustless trading, powered by atomic swaps._
+_[DCRDEX](https://github.com/decred/dcrdex) 是一种非托管的、尊重隐私的交易所，用于无信任交易，由原子交换提供支持。_
 
-[Backported fixes](https://github.com/decred/dcrdex/pull/2432) to be included in the next v0.6 patch release:
+[向后移植修复](https://github.com/decred/dcrdex/pull/2432) 将包含在下一个 v0.6 补丁版本中：
 
-- Server: [Increase order limits](https://github.com/decred/dcrdex/pull/2411) as users lock more funds in bonds and ensure accounts with positive tier always have a positive order limit, big enough for at least a single lot. This should fix inability to submit orders for some users.
-- Client: Ensure the server is aware that the client has [completed](https://github.com/decred/dcrdex/pull/2405) the trade. In certain cases the client would fail to inform the server of a completed match, which could negatively affect account's reputation. With this fix the client will keep retrying the message until the server receives and acknowledges that the client has redeemed (received) the funds.
-- Client: Updated [btcwallet and neutrino](https://github.com/decred/dcrdex/pull/2438) dependencies to fix crashes in the built-in BTC wallet. Developers normally avoid upgrading dependencies in released versions to not introduce new bugs. This case is an exception however, considering the trouble caused by the bug, and that the next major release of DCRDEX is still quite far away.
+- 服务器：[增加订单限制](https://github.com/decred/dcrdex/pull/2411)， 这应该可以解决某些用户无法提交订单的问题。
+- 客户端：确保服务器知道客户端已[完成](https://github.com/decred/dcrdex/pull/2405)交易。 在某些情况下，客户端无法通知服务器已完成的匹配，这可能会对帐户的声誉产生负面影响。 通过此修复，客户端将不断重试消息，直到服务器收到并确认客户端已兑换（收到）资金。
+- 客户端：更新了 [btcwallet 和 neutrino](https://github.com/decred/dcrdex/pull/2438) 依赖项以修复内置 BTC 钱包中的崩溃问题。 开发人员通常会避免升级已发布版本中的依赖项，以免引入新的错误。 不过，考虑到该 bug 造成的麻烦，而且距离 DCRDEX 的下一个主要版本发布还很遥远，这种情况是一个例外。
+  
+以下是在“master”中合并到未来版本中的更改。
 
-Below are changes merged in `master` towards future releases.
+用户：
 
-Client:
+- 改进了[应用程序设置流程](https://github.com/decred/dcrdex/pull/2385)。 设置应用程序密码后，用户将看到快速配置页面，允许启用 DEX 服务器并选择要激活的钱包。 之后，一个新页面将提醒用户备份他们的应用程序种子。 设置更改为钱包后显示的登陆页面。
+- [切换](https://github.com/decred/dcrdex/pull/2372) 从 WebView 到 macOS 上的 [MacDriver](https://github.com/progrium/macdriver) 库。 这可以实现本机 macOS 行为，例如：保持应用程序在没有窗口的情况下运行、创建新窗口以及拥有停靠图标菜单。
+- 如果钱包未同步并且没有可同步的对等节点，则禁止[进行交易](https://github.com/decred/dcrdex/issues/2436)。 这可以避免交易永远不会被挖掘并让用户感到困惑。
+- 修复了误导性的“交易所需的操作”[启动消息](https://github.com/decred/dcrdex/pull/2428)，要求用户添加更多债券。 当债券交易尚未发送并且用户只需等待而不采取任何操作时，可能会发生这种情况。
+- 修复了绿色三角形[自己订单的标记](https://github.com/decred/dcrdex/pull/2448)并不总是显示在深度图上的错误。
 
-- Improved [app setup flow](https://github.com/decred/dcrdex/pull/2385). After setting app password the user will be shown Quick Configuration page that allows to enable DEX servers and select which wallets to activate. After that, a new page will remind the user to back up their app seed. Landing page shown after the setup has been changed to Wallets.
-- [Switched](https://github.com/decred/dcrdex/pull/2372) from WebView to [MacDriver](https://github.com/progrium/macdriver) library on macOS. This enables native macOS behavior like: keeping the app running without windows, creating new windows, and having a dock icon menu.
-- Disallow [making transactions](https://github.com/decred/dcrdex/issues/2436) if the wallet is not synced and has no peers to sync from. This avoids transactions that never get mined and confuse users.
-- Fixed misleading "Action required to trade" [startup message](https://github.com/decred/dcrdex/pull/2428) asking the user to add more bonds. It could happen when bond transactions have not been sent yet and the user just needs to wait without taking any action.
-- Fixed a bug where green triangle [markers for own orders](https://github.com/decred/dcrdex/pull/2448) were not always shown on the depth chart.
+客户，内部变更：
 
-Client, internal changes:
+- 实现了 [Decred](https://github.com/decred/dcrdex/pull/2433)、[Ethereum](https://github.com/decred/dcrdex/pull/2421) 一次性下多个订单的功能。 这将由做市机器人使用，并可能解锁交易优化。
+- 重构和测试代码改进。
+- 更新了 [npm 依赖项](https://github.com/decred/dcrdex/pull/2439) 以修复安全警告（DEX 在运行时未使用受影响的包）。
 
-- Implemented function to place multiple orders in one go for [Decred](https://github.com/decred/dcrdex/pull/2433), [Ethereum](https://github.com/decred/dcrdex/pull/2421), and Ethereum token wallets. This will be used by the market making bots and may unlock trading optimizations.
-- Refactoring and test code improvements.
-- Updated [npm dependencies](https://github.com/decred/dcrdex/pull/2439) to fix security warnings (affected packages were not used by the DEX at runtime).
+Bitcoin, 内部变化：
 
-Bitcoin, internal changes:
+- 修复了[硬币选择](https://github.com/decred/dcrdex/pull/2435)逻辑中的错误。 这并不重要，因为它只影响“MultiTrade”功能，该功能尚未投入生产使用。
 
-- Fixed bug in [coin selection](https://github.com/decred/dcrdex/pull/2435) logic. It was not critical as it only affected the `MultiTrade` function, which is in not in production use yet.
+以太坊：
 
-Ethereum:
+- 在代币审批表中添加了[法定货币](https://github.com/decred/dcrdex/pull/2427)。 需要一次性批准才能允许互换合约代表用户处理代币（例如 USDC）。 授予和撤销此权限都需要少量 ETH 交易。
 
-- Added [fiat values](https://github.com/decred/dcrdex/pull/2427) to the token approval form. A one-time approval is required to allow the swap contract to handle tokens (such as USDC) on behalf of the user. Both granting and revoking this permission requires a small ETH transaction.
+正在进行的工作亮点：
 
-Highlights of work-in-progress:
+- Decred：[DCR 质押]的基础(https://github.com/decred/dcrdex/pull/2290)。
+- Polygon：[基础设施](https://github.com/decred/dcrdex/pull/2431) 工作包括 USDC 交易合约。
+- Dash：[全节点钱包](https://github.com/decred/dcrdex/pull/2424)支持。
+- Firo：[Electrum 轻钱包支持](https://github.com/decred/dcrdex/pull/2426)。
+- 做市机器人的[余额管理](https://github.com/decred/dcrdex/pull/2332)。
 
-- Decred: foundations for [DCR staking](https://github.com/decred/dcrdex/pull/2290).
-- Polygon: [infrastructure](https://github.com/decred/dcrdex/pull/2431) work including USDC swap contract.
-- Dash: [full node wallet](https://github.com/decred/dcrdex/pull/2424) support.
-- Firo: [Electrum light wallet support](https://github.com/decred/dcrdex/pull/2426).
-- [Balance management](https://github.com/decred/dcrdex/pull/2332) for market making bots.
+![重新设计了 DCRDEX 中的应用程序设置流程](img/202307.02.1634.png)
 
-![Reworked app setup flow in DCRDEX](../img/202307.02.1634.png)
+_图片：DCRDEX 中重新设计的应用程序设置流程_
 
-_Image: Reworked app setup flow in DCRDEX_
+![macOS 中的 Dock 菜单将列出所有 DEX 窗口](img/202307.03.366.png)
 
-![Dock menu in macOS will list all DEX windows](../img/202307.03.366.png)
-
-_Image: Dock menu in macOS will list all DEX windows_
+_图片：macOS 中的 Dock 菜单将列出所有 DEX 窗口_
 
 
 ### dcrdata
 
-_[dcrdata](https://github.com/decred/dcrdata) is an explorer for Decred blockchain and off-chain data like Politeia proposals, markets, and more._
+_[dcrdata](https://github.com/decred/dcrdata) 是 Decred 区块链和链下数据（如 Politeia 提案、市场等）的浏览器。_
 
-- Added the new BLAKE3 proof of work hash to the [block details page](https://github.com/decred/dcrdata/pull/1970). If dcrdata is running with a fairly new version of dcrd, it will [make use](https://github.com/decred/dcrdata/pull/1971) of its [newly updated](https://github.com/decred/dcrd/pull/3154) `GetBlockHeader` command to obtain the PoW hash faster.
+- 将新的 BLAKE3 工作哈希证明添加到[区块详细信息页面](https://github.com/decred/dcrdata/pull/1970)。 如果 dcrdata 使用相当新版本的 dcrd 运行，它将[利用](https://github.com/decred/dcrdata/pull/1971)其[新更新的](https://github.com/ decred/dcrd/pull/3154) `GetBlockHeader` 命令可以更快地获取 PoW 哈希值。
 
 
 ### Timestamply
 
-_[Timestamply](https://github.com/decred/dcrtimegui) is a free service for timestamping files powered by Decred blockchain. A timestamp proves that a certain file has existed at a certain moment of time. This has a range of applications in protecting data integrity._
+_[Timestamply](https://github.com/decred/dcrtimegui) 是一项由 Decred 区块链支持的时间戳文件免费服务。 时间戳证明某个文件在某个时刻已经存在。 这在保护数据完整性方面有一系列应用。_
 
-- Updated GitHub actions to [build with Go 1.20](https://github.com/decred/dcrtime/pull/91), as well as add linters and fix their complaints.
-- The [JavaScript library](https://github.com/decred/dcrtimejs) for Decred timestamping, dcrtimejs, has been imported from its [original location](https://github.com/tiagoalvesdulce/dcrtimejs) to become a part of the [decred](https://github.com/decred/dcrtimejs) GitHub account. dcrtimejs v1.0.0 release has been funded by the treasury as a key element of the [Timestamply redesign](https://proposals.decred.org/record/855a506) proposal.
+- 将 GitHub 操作更新为 [使用 Go 1.20 构建](https://github.com/decred/dcrtime/pull/91)，并添加 linter 并修复他们的投诉。
+- Decred 时间戳的 [JavaScript 库](https://github.com/decred/dcrtimejs) dcrtimejs 已从其[原始位置](https://github.com/tiagoalvesdulce/dcrtimejs)导入，成为 [decred](https://github.com/decred/dcrtimejs) GitHub 帐户的一部分。 dcrtimejs v1.0.0 版本已由财政部资助，作为 [时间戳重新设计](https://proposals.decred.org/record/855a506) 提案的关键要素。
 
 
 ### Bison Relay
 
-_[Bison Relay](https://github.com/companyzero/bisonrelay) is a new social media platform with strong protections against censorship, surveillance, and advertising, powered by Decred Lightning Network._
+_[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的社交媒体平台，具有针对审查、监视和广告的强大保护，由 Decred 闪电网络提供支持。_
 
-GUI and CLI apps:
+GUI 和 CLI 应用程序：
 
-- Added `syncfreelist` config option to tune the bbolt database used by the internal Lightning Network node. Setting it to `false` improves running performance at the cost of startup performance.
+- 添加了“syncfreelist”配置选项来调整内部闪电网络节点使用的 bbolt 数据库。 将其设置为“false”可以提高运行性能，但会牺牲启动性能。
 
-GUI app:
+GUI 应用程序：
 
-- Improved post comments UX, now comment threads can be [collapsed or expanded](https://github.com/companyzero/bisonrelay/pull/298).
-- Fixed a bug where News Feed did not render [embedded images](https://github.com/companyzero/bisonrelay/pull/296) and showed "--embed" code instead.
+- 改进了帖子评论用户体验，现在评论线程可以[折叠或展开](https://github.com/companyzero/bisonrelay/pull/298)。
+- 修复了新闻源未呈现[嵌入图像](https://github.com/companyzero/bisonrelay/pull/296)并显示“--embed”代码的错误。
+  
+CLI 应用程序：
 
-CLI app:
+- 添加了基本的 [`/backup` 命令](https://github.com/companyzero/bisonrelay/pull/297)。
+- 添加了[内容过滤](https://github.com/companyzero/bisonrelay/pull/265)系统，该系统可以阻止消息在客户端级别显示给最终用户。 要创建过滤规则，用户需要指定它将在什么上下文中工作（直接聊天、群聊、帖子、帖子评论或所有）以及它应该匹配的内容（可以是简单的字符串或正则表达式）。 尝试“/helpfiltersadd”和“/helpfiltersaddrule”来了解它是如何工作的。 目前，它仅在 CLI 应用程序中公开，但将来可以将低级部分连接到 GUI 应用程序。
+  
 
-- Added basic [`/backup` command](https://github.com/companyzero/bisonrelay/pull/297).
-- Added [content filtering](https://github.com/companyzero/bisonrelay/pull/265) system which can block messages from being displayed to the end user at the client level. To create a filtering rule the user needs to specify in what context it will work (direct chats, group chats, posts, post comments, or all) and what content it should match (can be simple strings or regular expressions). Try `/help filters add` and `/help filters addrule` to learn how it works. Currently, it is only exposed in the CLI app but the low level parts can be wired to GUI app in the future.
+### 其它
 
-
-### Other
-
-- All legacy VSPs (called "stakepools" back then) have been [removed](https://github.com/decred/dcrwebapi/pull/158) from dcrwebapi, the service that powers Decrediton and the [VSP list](https://decred.org/vsp/) at decred.org. Legacy VSPs have been deprecated with the [release of vspd](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/) in 2020 and all known public servers have shut down by around 2022.
+- 所有旧版 VSP（当时称为“权益池”）均已从 dcrwebapi（为 Decrediton 提供支持的服务）和VSP 列表中[删除](https://github.com/decred/dcrwebapi/pull/158)，位于 decred.org。 2020 年 [vspd 版本](https://blog.decred.org/2020/06/02/A-More-Private-Way-to-Stake/) 已弃用旧版 VSP，并且所有已知公共服务器均已弃用。
 
 
 <a id="people" />
 
-## People
+## 人员
 
-Community stats as of Aug 1 (compared to Jul 2):
+截至 8 月 1 日的社区统计数据（与 7 月 2 日相比）：
 
-- [Twitter](https://twitter.com/decredproject) followers: 53,328 (-230)
-- [Reddit](https://www.reddit.com/r/decred/) subscribers: 12,747 (+9)
-- [Matrix](https://chat.decred.org/) #general users: 797 (+10)
-- [Discord](https://discord.gg/GJ2GXfz) users: 1,589 (+3), verified to post: 643 (+8)
-- [Telegram](https://t.me/Decred) users: 2,355 (-7)
-- [YouTube](https://www.youtube.com/decredchannel) subscribers: 4,640 (+0), views: 232.5K (+1.4K)
+- [Twitter](https://twitter.com/decredproject) 关注者：53,328 (-230)
+- [Reddit](https://www.reddit.com/r/decred/) 订阅者：12,747 (+9)
+- [Matrix](https://chat.decred.org/) #普通用户：797 (+10)
+- [Discord](https://discord.gg/GJ2GXfz) 用户：1,589 (+3)，已验证发帖人数：643 (+8)
+- [Telegram](https://t.me/Decred) 用户：2,355 (-7)
+- [YouTube](https://www.youtube.com/decredchannel) 订阅者：4,640 (+0)，观看次数：232.5K (+1.4K)
 
 
 <a id="governance" />
 
-## Governance
+## 治理
 
-In July the new [treasury](https://dcrdata.decred.org/treasury) received 7,859 DCR worth $121K at July's average rate of $15.40. 4,943 DCR was spent to pay contractors, worth $76K at same rate.
+7 月份，新[国库](https://dcrdata.decred.org/treasury) 收到了 7,859 个 DCR，价值 12.1 万美元，7 月份的平均汇率为 15.40 美元。 4,943 DCR 用于支付承包商费用，按相同价格计算价值 7.6 万美元。
 
-A [treasury spend tx](https://dcrdata.decred.org/tx/bf3fcf63697c2191260690aa8471088e863e4f25434564196f8110464b669a51) was approved with 5,274 Yes votes and 37% turnout, and mined on July 25. This one got 9 No votes, becoming the second TSpend out of 15 mined so far to have non-zero No votes. It had 32 outputs making payments to contractors, ranging from 1.5 DCR to 1,692 DCR. Most of this DCR was likely paid for May work, at its billing exchange rate of $17.13 the TSpend is worth around $85K.
+[国库支出交易](https://dcrdata.decred.org/tx/bf3fcf63697c2191260690aa8471088e863e4f25434564196f8110464b669a51)以 5,274 票赞成和 37% 的投票率获得批准，并于 7 月 25 日开采，它向 32 个承包商付款，范围从 1.5 DCR 到 1,692 DCR。 大部分 DCR 可能是为 5 月份的工作支付的，按照 17.13 美元的计费汇率，TSpend 的价值约为 85,000 美元。
 
-As of Aug 6, combined balance of [legacy](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) and [new treasury](https://dcrdata.decred.org/treasury) is 865,895 DCR (12.6 million USD at $14.56).
+截至 8 月 6 日，[旧国库](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和 [新国库](https://dcrdata.decred.org/treasury) 的总余额为 865,895 DCR（1,260 万） 美元价格为 14.56 美元。
 
-![Lower DCR/USD contributes to higher treasury outflows](../img/202307.04.720.png)
+![DCR/USD走低导致国债流出增加](img/202307.04.720.png)
 
-_Image: Lower DCR/USD contributes to higher treasury outflows_
+_图片：DCR/USD走低导致国债流出增加_
 
-![Treasury balance USD equivalent](../img/202307.05.720.png)
+![国库余额等值美元](img/202307.05.720.png)
 
-_Image: Treasury balance USD equivalent_
+_图片：国库余额等值美元_
 
-There were 4 proposals that finished voting in July:
+7 月份完成投票的提案有 4 项：
 
-- A [proposal](https://proposals.decred.org/record/552c87e) to fund development of the Decred.club website with Chinese language content and grow a community around it for $2,400 was rejected with 28% Yes votes and 26% turnout.
-- A [proposal](https://proposals.decred.org/record/4d3a8fc) to rebrand Decred Magazine to Cypherpunk Times and continue producing it for another year with an increased budget of $44,000 - was approved with 95% Yes votes and 47% turnout.
-- A [proposal](https://proposals.decred.org/record/9e265ad) to produce 90-second videos of people in ski masks talking about Decred in 12 languages at a cost of $23,650 was approved, with 75% Yes votes and 42% turnout.
-- A [proposal](https://proposals.decred.org/record/20ba5cd) to produce a promotional website for DCRDEX at a cost of $2,000 was rejected, with 30% Yes votes and 34% turnout.
+- 一项以 2,400 美元资助开发包含中文内容的 Decred.club 网站并围绕其发展社区的[提案](https://proposals.decred.org/record/552c87e) 被拒绝，投票数为 28% 和 26% ％ 。
+- 一项将 Decred Magazine 更名为 Cypherpunk Times 并在预算增加 44,000 美元的情况下继续制作一年的[提案](https://proposals.decred.org/record/4d3a8fc) - 以 95% 的赞成票和 47% 的赞成票获得批准 ％ 结果发现。
+- 一项 [提案](https://proposals.decred.org/record/9e265ad) 制作了 90 秒的视频，让戴滑雪面具的人们用 12 种语言谈论 Decred，成本为 23,650 美元，获得批准，75% 的赞成票 和 42% 的投票率。
+- 一项耗资 2,000 美元为 DCRDEX 制作推广网站的[提案](https://proposals.decred.org/record/20ba5cd) 被拒绝，30% 的赞成票和 34% 的投票率。
 
 
 <a id="network" />
 
-## Network
+## 网络
 
-**Hashrate**: July's [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) opened at ~52 PH/s and closed ~55 PH/s, bottoming at 49 PH/s and peaking at 69 PH/s throughout the month.
+**全网算力**: 7 月的 [全网算力](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) 以 52 PH/s开启，以 55 PH/s结束，最低为 49 PH/s，峰值为 69 PH/s。
 
-![Decred hashrate](../img/202307.06.720.png)
+![Decred 算力](img/202307.06.720.png)
 
-_Image: Decred hashrate_
+_图片：Decred 算力_
 
-Distribution of 55 PH/s hashrate [reported](https://miningpoolstats.stream/decred) by the pools on Aug 1: F2Pool 58%, Poolin 32%, BTC.com 8%, AntPool 3%.
+8 月 1 日矿池 55 PH/s 算力分布[报告](https://miningpoolstats.stream/decred)：F2Pool 58%、Poolin 32%、BTC.com 8%、AntPool 3%。
 
-Distribution of 1,000 blocks actually [mined](https://miningpoolstats.stream/decred) by Aug 1: F2Pool 52%, Poolin 38%, BTC.com 7%, AntPool 3%.
+截至 8 月 1 日，实际[开采](https://miningpoolstats.stream/decred)的 1,000 个区块的分布：F2Pool 52%、Poolin 38%、BTC.com 7%、AntPool 3%。
 
-![Historical pool hashrate distribution](../img/202307.07.720.png)
+![历史矿池算力分布](img/202307.07.720.png)
 
-_Image: Historical pool hashrate distribution_
+_图：历史矿池算力分布_
 
-**Staking**: [Ticket price](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) varied between 196-277 DCR.
+**Staking**: [选票价格](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) 区间为 196-277 DCR.
 
-![Ticket price stabilizing](../img/202307.08.720.png)
+![票价稳定](img/202307.08.720.png)
 
-_Image: Ticket price stabilizing_
+_图片：票价稳定_
 
-The [locked amount](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time) was 9.73-9.87 million DCR, meaning that 63.3-64.2% of the circulating supply [participated](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) in proof of stake.
+[锁定金额](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time)为9.73-987万个DCR，意味着循环供应量的63.3-64.2%[ 参与](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) 的权益证明。
 
-![Total locked DCR retesting its ATH](../img/202307.09.720.png)
+![全部锁定的 DCR 重新测试其 ATH](img/202307.09.720.png)
 
-_Image: Total locked DCR retesting its ATH_
+_图片：完全锁定的 DCR 重新测试其 ATH_
 
-![Monthly missed tickets went down after a small uptick in June](../img/202307.10.720.png)
+![月度错过票数继6月小幅上升后下降](img/202307.10.720.png)
 
-_Image: Monthly missed tickets went down after a small uptick in June_
+_图片：每月错过的门票在六月份小幅上升后有所下降_
 
-**VSP**: The [14 listed VSPs](https://decred.org/vsp/) collectively managed ~6,150 (-480) live tickets, which was 15.1% of the ticket pool (-1.4%) as of Aug 1.
+**VSP**: 截至 8 月 1 日，[14 个列出的 VSP](https://decred.org/vsp/) 总共管理了约 6,150 (-480) 张现场门票，占门票池的 15.1% (-1.4%)。
 
-The biggest gainers of July are [bass.cf](https://vspd.bass.cf/) (+96 tickets or +15%) and [decredcommunity.org](https://vsp.decredcommunity.org/) (+37 tickets or +8%).
+7 月份涨幅最大的是 [bass.cf](https://vspd.bass.cf/)（+96 张门票或+15%）和 [decredcommunity.org](https://vsp.decredcommunity.org/) （+37 票或+8%）。
 
-![Distribution of tickets managed by VSPs](../img/202307.11.720.png)
+![VSP 管理的选票](.img/202307.11.720.png)
 
-_Image: Distribution of tickets managed by VSPs_
+_图片：VSP 管理的选票_
 
-**Nodes**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) observed between 162 and 170 dcrd nodes throughout the month. Versions of 164 nodes seen on Aug 1: v1.8.0 - 84%, v1.7.x - 11%, v1.9.0 dev builds - 1.2%, v1.8.0 dev builds - 0.6%, other - 4%.
+**节点**: [Decred Mapper](https://nodes.jholdstock.uk/user_agents) 整个月观察到 162 到 170 个 dcrd 节点。 8 月 1 日看到的 164 个节点的版本：v1.8.0 - 84%、v1.7.x - 11%、v1.9.0 开发版本 - 1.2%、v1.8.0 开发版本 - 0.6%、其他 - 4%。
 
-![Most of the network is running v1.8.0](../img/202307.12.720.png)
+![大部分网络运行的是v1.8.0](img/202307.12.720.png)
 
-_Image: Most of the network is running v1.8.0_
+_图片：大部分网络运行的是v1.8.0_
 
-![Node operators have been quick to upgrade to v1.8.0. The red area before Jan 2023 indicates incomplete data we had at that time.](../img/202307.13.720.png)
+![节点运营商已快速升级至 v1.8.0。 2023年1月之前的红色区域表示我们当时的数据不完整。](img/202307.13.720.png)
 
-_Image: Node operators have been quick to upgrade to v1.8.0. The red area before Jan 2023 indicates incomplete data we had at that time._
+_Image：节点运营商已快速升级至 v1.8.0。 2023 年 1 月之前的红色区域表示我们当时拥有的数据不完整。_
 
-The share of [mixed coins](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true) varied between 62.0-62.3%. Daily [mixed volume](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) varied between 351K-486K DCR.
+[混合币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true)的份额在62.0-62.3%之间变化。 每日[混合量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 351K-486K DCR 之间变化。
 
-![DCR StakeShuffle volume](../img/202307.14.720.png)
+![DCR StakeShuffle 交易量](img/202307.14.720.png)
 
-_Image: DCR StakeShuffle volume_
+_图片：DCR StakeShuffle _
 
-![Transaction volume has taken a summer vacation. The metric is defined by Coin Metrics](../img/202307.15.720.png)
+![交易量已放暑假。 该指标由 Coin Metrics 定义](img/202307.15.720.png)
 
-_Image: Transaction volume has taken a summer vacation. The [metric](https://coinmetrics.io/introducing-adjusted-estimates/) is defined by Coin Metrics._
+_图片：交易量已经放暑假了。 [指标](https://coinmetrics.io/introducing-adjusted-estimates/) 由 Coin Metrics 定义。_
 
-Decred's [Lightning Network](https://ln-map.jholdstock.uk/) explorer has seen 219 nodes (+7), 445 channels (+18) with a total capacity of 188 DCR (-3), as of Aug 1. These stats are different for each node. For example, @karamble's node reported 220 nodes, 464 channels and 191 DCR capacity on same day Aug 1.
+截至 8 月，Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 浏览器已看到 219 个节点 (+7)、445 个通道 (+18)，总容量为 188 DCR (-3) 1. 每个节点的这些统计数据都不同。 例如，@karamble 的节点在 8 月 1 日同一天报告了 220 个节点、464 个通道和 191 个 DCR 容量。
 
-![Decred's Lightning Network node count growing slowly](../img/202307.16.720.png)
+![Decred 闪电网络节点数缓慢增长](img/202307.16.720.png)
 
-_Image: Decred's Lightning Network node count growing slowly_
+_图片：Decred 的闪电网络节点数量缓慢增长_
 
-![Decred's Lightning Network capacity stabilized around 200 DCR](../img/202307.17.720.png)
+![Decred 闪电网络容量稳定在 200 DCR 左右](img/202307.17.720.png)
 
-_Image: Decred's Lightning Network capacity stabilized around 200 DCR_
+_图片：Decred 闪电网络容量稳定在 200 DCR 左右_
 
 
 <a id="ecosystem" />
 
-## Ecosystem
+## 生态系统
 
 Voting Service Providers:
 
