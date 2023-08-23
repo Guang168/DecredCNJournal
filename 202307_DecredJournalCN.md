@@ -29,7 +29,7 @@ _图片：@Exitus_
 
 ## 为即将到来的分叉进行升级！
 
-两项共识变更的投票已结束 [将 PoW 更改为 BLAKE3 和 ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) 和 [更改 PoW/PoS 区块奖励 至 1/89](https://github.com/decred/dcps/blob/master/dcp-0012/dcp-0012.mediawiki)，最初是 2023 年 3 月 [在 Politeia 上提出的](https://proposals.decred.org /record/a8501bc）。
+两项共识变更的投票已结束 [将 PoW 更改为 BLAKE3 和 ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) 和 [更改 PoW/PoS 区块奖励 至 1/89](https://github.com/decred/dcps/blob/master/dcp-0012/dcp-0012.mediawiki)，最初是 2023 年 3 月 [在 Politeia 上提出的](https://proposals.decred.org/record/a8501bc)。
 
 这两项变更均已获得**批准**，赞成票超过 99%，投票率超过 60%。 提案状态更改为[锁定](https://docs.decred.org/governance/consensus-rule-voting/overview/)，并将在 8 月 29 日左右在区块 794,368 中激活。可以在 [投票仪表板](https://voting.decred.org/) 或访问 [dcrdata Agendas](https://dcrdata.decred.org/agendas)跟踪剩余时间。
 
@@ -85,7 +85,7 @@ Go 1.20 解锁了[更好的错误处理](https://tip.golang.org/doc/go1.20#error
 
 此外:
 
-- 更新了 [LRU 缓存](https://github.com/decred/dcrwallet/pull/2264) 以使用 Go 泛型并接受多种变量类型。 LRU 是一种标准缓存模式，一旦缓存已满，就会删除最近最少更新的值。 通用 LRU 缓存的主要优点是减少代码重复并更轻松地重用代码。 通过指定每个新 LRU 缓存实例的类型，这具有更明确的代码的额外好处，以及编译器更好的代码验证。 泛型是[在 Go 1.18 中添加的](https://go.dev/blog/go1.18)（2022 年 3 月），并且相对有争议，但这只是因为它们具有开发人员必须考虑的权衡。 理想情况下，Go 编译器将像对待具有特定变量类型的函数一样对待泛型函数，并且每个函数都将得到同样的优化。 实际上，情况并非总是如此。 泛型的好处有时是以更高的复杂性和[性能稍慢]为代价的。(https://planetscale.com/blog/generics-can-make-your-go-code-slower)。 在这种情况下，dcrwallet 目前很少使用泛型，因此对性能的影响很小。
+- 更新了 [LRU 缓存](https://github.com/decred/dcrwallet/pull/2264) 以使用 Go 泛型并接受多种变量类型。 LRU 是一种标准缓存模式，一旦缓存已满，就会删除最近最少更新的值。 通用 LRU 缓存的主要优点是减少代码重复并更轻松地重用代码。 通过指定每个新 LRU 缓存实例的类型，这具有更明确的代码的额外好处，以及编译器更好的代码验证。 泛型是[在 Go 1.18 中添加的](https://go.dev/blog/go1.18)（2022 年 3 月），并且相对有争议，但这只是因为它们具有开发人员必须考虑的权衡。 理想情况下，Go 编译器将像对待具有特定变量类型的函数一样对待泛型函数，并且每个函数都将得到同样的优化。 实际上，情况并非总是如此。 泛型的好处有时是以更高的复杂性和[性能稍慢](https://planetscale.com/blog/generics-can-make-your-go-code-slower)为代价的。 在这种情况下，dcrwallet 目前很少使用泛型，因此对性能的影响很小。
 - 改进和完善[钱包测试](https://github.com/decred/dcrwallet/pull/2260)，包括删除冗余代码。
 
   
@@ -95,7 +95,7 @@ _[dcrctl](https://github.com/decred/dcrctl) 是 dcrd 和 dcrwallet 的命令行�
 
 以下工作已合并到未来版本的“master”中：
 
-- 从主模块中[删除了过时的依赖项](https://github.com/decred/dcrctl/pull/64)，并更新了[dcrd和dcrwallet模块](https://github.com/decred/dcrctl/ pull/67) 到最新版本。 值得注意的是，这使得 dcrd 的新的“getblock”和“getblockheader”详细结果可用。
+- 从主模块中[删除了过时的依赖项](https://github.com/decred/dcrctl/pull/64)，并更新了[dcrd和dcrwallet模块](https://github.com/decred/dcrctl/pull/67) 到最新版本。 值得注意的是，这使得 dcrd 的新的“getblock”和“getblockheader”详细结果可用。
 - 更新了自述文件，建议开发人员在使用 dcrd 和 dcrwallet 的开发版本时使用本地 [Go Workspaces](https://github.com/decred/dcrctl/pull/66)。
 
 
@@ -164,7 +164,7 @@ Bitcoin, 内部变化：
 
 正在进行的工作亮点：
 
-- Decred：[DCR 质押]的基础(https://github.com/decred/dcrdex/pull/2290)。
+- Decred：[DCR](https://github.com/decred/dcrdex/pull/2290)的基础质押。
 - Polygon：[基础设施](https://github.com/decred/dcrdex/pull/2431) 工作包括 USDC 交易合约。
 - Dash：[全节点钱包](https://github.com/decred/dcrdex/pull/2424)支持。
 - Firo：[Electrum 轻钱包支持](https://github.com/decred/dcrdex/pull/2426)。
@@ -183,7 +183,7 @@ _图片：macOS 中的 Dock 菜单将列出所有 DEX 窗口_
 
 _[dcrdata](https://github.com/decred/dcrdata) 是 Decred 区块链和链下数据（如 Politeia 提案、市场等）的浏览器。_
 
-- 将新的 BLAKE3 工作哈希证明添加到[区块详细信息页面](https://github.com/decred/dcrdata/pull/1970)。 如果 dcrdata 使用相当新版本的 dcrd 运行，它将[利用](https://github.com/decred/dcrdata/pull/1971)其[新更新的](https://github.com/ decred/dcrd/pull/3154) `GetBlockHeader` 命令可以更快地获取 PoW 哈希值。
+- 将新的 BLAKE3 工作哈希证明添加到[区块详细信息页面](https://github.com/decred/dcrdata/pull/1970)。 如果 dcrdata 使用相当新版本的 dcrd 运行，它将[利用](https://github.com/decred/dcrdata/pull/1971)其[新更新的](https://github.com/decred/dcrd/pull/3154) `GetBlockHeader` 命令可以更快地获取 PoW 哈希值。
 
 
 ### Timestamply
@@ -296,7 +296,7 @@ _图片：每月错过的门票在六月份小幅上升后有所下降_
 
 7 月份涨幅最大的是 [bass.cf](https://vspd.bass.cf/)（+96 张门票或+15%）和 [decredcommunity.org](https://vsp.decredcommunity.org/) （+37 票或+8%）。
 
-![VSP 管理的选票](.img/202307.11.720.png)
+![VSP 管理的选票](img/202307.11.720.png)
 
 _图片：VSP 管理的选票_
 
@@ -351,7 +351,7 @@ _图片：Decred 闪电网络容量稳定在 200 DCR 左右_
 
 通讯系统：
 
-- 6 月 30 日至 7 月 5 日期间，公众对 Twitter 的访问基本上[不可用](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/)。 浏览 Twitter 需要登录，并且即使是付费帐户也受到速率限制。 根据埃隆·马斯克的说法，这是一项对抗人工智能机器人的[临时紧急措施](https://www.reuters.com/technology/twitter-now-needs-users-sign-view-tweets-2023-06-30/) 这些攻击从 Twitter 中获取了大量数据，以至于实际上成为了拒绝服务攻击。 公共 API 限制也[打破了 Nitter](https://github.com/zedeus/nitter/issues/919)，这是浏览 [@decredproject](https://nitter.net/decredproject) 和其他帐户的轻量级替代方案。 登录要求已于 7 月 5 日[删除](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/)。尽管存在所有问题和[启示]( https://twitter.com/elonmusk/status/1670117122650050561）Twitter 仍然是 Decred 的主要外展平台，截至 8 月 1 日拥有 5.33 万关注者。
+- 6 月 30 日至 7 月 5 日期间，公众对 Twitter 的访问基本上[不可用](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/)。 浏览 Twitter 需要登录，并且即使是付费帐户也受到速率限制。 根据埃隆·马斯克的说法，这是一项对抗人工智能机器人的[临时紧急措施](https://www.reuters.com/technology/twitter-now-needs-users-sign-view-tweets-2023-06-30/) 这些攻击从 Twitter 中获取了大量数据，以至于实际上成为了拒绝服务攻击。 公共 API 限制也[打破了 Nitter](https://github.com/zedeus/nitter/issues/919)，这是浏览 [@decredproject](https://nitter.net/decredproject) 和其他帐户的轻量级替代方案。 登录要求已于 7 月 5 日[删除](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/)。尽管存在所有问题和[启示](https://twitter.com/elonmusk/status/1670117122650050561)Twitter 仍然是 Decred 的主要外展平台，截至 8 月 1 日拥有 5.33 万关注者。
 
 - Matrix 和 Discord 之间的双向桥梁又回来了！ 这是通过新的[用户验证](202306.md#ecosystem)流程实现的，该流程可以更好地防止垃圾邮件。 新桥允许阻止 Matrix 端的单个 Discord 用户，而不影响其他 Discord 用户，这是旧桥不可能实现的。 此外，消息编辑应该双向传播。 新桥由 [t2bot.io](https://t2bot.io/discord/) 托管，这是一项为 [Matrix](https://matrix.org/) 社区提供机器人和桥的免费服务。 它由一个人运营，并由[捐赠](https://t2bot.io/donations/)支持。 截至撰写本文时，以下 Matrix 房间已桥接到 Discord：#101、#dex、#marketing、#media、#memes、#proposals、#showerthoughts、#support，当然还有#trading。
 
@@ -372,7 +372,7 @@ _图片：Decred 闪电网络容量稳定在 200 DCR 左右_
 
 新的多币种出版物 [Cypherpunk Times](https://cypherpunktimes.com/) 的首次迭代已上线！ 它是 Decred 杂志的延续和品牌重塑，由 Decred 利益相关者于 [2023 年 7 月](https://proposals.decred.org/record/4d3a8fc) 批准和资助。 [Twitter](https://twitter.com/cypherpunktimes)、[Facebook](https://www.facebook.com/cypherpunktimes) 和 Spotify 播客上的新社交媒体账号为“@cypherpunktimes” 。 
 
-Firo 是第一个向 Cypherpunk Times 贡献内容的项目。 7 月，Firo [加入](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/$hoWcufElq2WAw5RcQ2GM1pE2ASKDme8q9-RZTQfvv04) 3 内容并发布了他们的第一篇 [文章](https://www.cypherpunktimes.com/ 揭晓-spark-public-testnet-launch-date-confirmed/)。
+Firo 是第一个向 Cypherpunk Times 贡献内容的项目。 7 月，Firo [加入](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/$hoWcufElq2WAw5RcQ2GM1pE2ASKDme8q9-RZTQfvv04) 3 内容并发布了他们的第一篇文章。
 
 TikTok 帐户“@decredmagazine”已重命名为 [@dearcryptopunk](https://www.tiktok.com/@dearcryptopunk)。 展望未来，其范围将从支持 Cypherpunk Times 扩展到一般 Decred 外展，并将在 [Decred Vanguard](https://proposals.decred.org/record/0a1b782) 提案的保护下进行。 Twitter 帐户 [@decredmagazine](https://twitter.com/decredmagazine) 目前将继续运行以支持仅限 Decred 的内容。
 
@@ -419,9 +419,9 @@ Monde PR 的成就：
 - [Bison Relay 闪电网络管理：如何重新平衡您的频道](https://www.youtube.com/watch?v=LD54opBdkh8)  @phoenixgreen 
 - [在去中心化交易所中使用做市商机器人：初看](https://www.youtube.com/watch?v=cyp_vnQRCXE) @phoenixgreen 
 
-现场直播：
+直播：
 
-- [依靠加密货币和交换自由为生](https://www.youtube.com/watch?v=riW1HbhfoIw) by @phoenixgreen 和 @Exitus feat。 Dash 的 [Joel Valenzuela](https://twitter.com/TheDesertLynx)、Firo 的 Reuben Yap 和 @Tivra
+- [依靠加密货币和交换自由为生](https://www.youtube.com/watch?v=riW1HbhfoIw)  @phoenixgreen 和 @Exitus feat。 Dash 的 [Joel Valenzuela](https://twitter.com/TheDesertLynx)、Firo 的 Reuben Yap 和 @Tivra
   
 **音频:**
 
@@ -443,7 +443,7 @@ _图片：DCR 顶级列表，作者：@Void_
 **翻译:**
 
 - [如何通过 Umbrel 在 Raspberry Pi 上使用 DCRDEX](https://www.cypherpunktimes.com/how-to-dcrdex-on-raspberry-pi-with-umbrel/) - [中文](https://github.com/Decred-CN/articles/blob/master/How-To_DCRDEX_on_Raspberry_Pi_with_Umbrel.md) @Dominic
-- [在去中心化交易所中使用做市商机器人：初次体验](https://www.cypherpunktimes.com/using-market-maker-bots-on-decentralized-exchange-first-look/) - [中文](https://github.com/Decred-CN/articles/blob/master/Using%20Market%20Maker%20Bots%20on%20Decentralized%20Exchange:%20First%20Look.md)
+- [在去中心化交易所中使用做市商机器人：初次体验](https://www.cypherpunktimes.com/using-market-maker-bots-on-decentralized-exchange-first-look/) - [中文](https://github.com/Decred-CN/articles/blob/master/Using%20Market%20Maker%20Bots%20on%20Decentralized%20Exchange:%20First%20Look.md) @Dominic
 - 请注意，自 2019 年起，所有翻译成中文的内容均在微信上发布。
 - Decred 月报 5 月至 6 月总共获得了 3 个阿拉伯语 (@arij, @abdulrahman4) 和中文 (@Dominic) 的新[翻译](https://xaur.github.io/decred-news/)。 感谢您的工作！
   
