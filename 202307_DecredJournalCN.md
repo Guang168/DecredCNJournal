@@ -335,204 +335,213 @@ _图片：Decred 闪电网络容量稳定在 200 DCR 左右_
 
 ## 生态系统
 
-Voting Service Providers:
+投票服务提供商：
 
-- New VSP at [vote.dcr-swiss.ch](https://vote.dcr-swiss.ch/) has voted its first mainnet tickets and [applied](https://github.com/decred/dcrwebapi/pull/178) to get listed in Decrediton wallet and the [VSP page](https://decred.org/vsp/). DCR Swiss has a low fee of 0.25%. Out of 14 existing VSPs this is the third lowest fee after dcrhive.com (0.1%) and vspd.bass.cf (0.2%).
+- [vote.dcr-swiss.ch](https://vote.dcr-swiss.ch/) 的新 VSP 已对其第一张主网门票进行投票并[已申请](https://github.com/decred/dcrwebapi/pull/178)以在 Decrediton 钱包和 [VSP 页面](https://decred.org/vsp/) 中列出。 DCR Swiss 的费用低至 0.25%。 在 14 个现有 VSP 中，这是第三低的费用，仅次于 dcrhive.com (0.1%) 和 vspd.bass.cf (0.2%)。
 
-Wallets:
+钱包：
 
-- Android and iOS Decred wallets will stop syncing in late August when new [consensus upgrades](https://voting.decred.org/) activate. The apps have been removed from Google Play and Apple Store to prevent users from installing apps that are no longer maintained. If you have used Android or iOS Decred wallets feel free to comment in a [Reddit survey](https://www.reddit.com/r/decred/comments/15eokjz/survey_have_you_used_decred_mobile_apps/).
+- 当新的[共识升级](https://voting.decred.org/)激活时，Android和iOS Decred钱包将在8月下旬停止同步。 这些应用程序已从 Google Play 和 Apple Store 中删除，以防止用户安装不再维护的应用程序。 如果您使用过 Android 或 iOS Decred 钱包，请随时在 [Reddit 调查](https://www.reddit.com/r/decred/comments/15eokjz/survey_have_you_used_decred_mobile_apps/) 中发表评论。
 
-Exchanges:
+交流：
 
-- EXMO [announced](https://info.exmo.me/ru/uvedomleniya/exmo-me-exclude-from-listing-five-crypto/) on July 6 that they will delist DCR and 3 other tokens by July 20 due to low liquidity. EXMO was the only exchange to list DCR via a non-expensive [proposal](https://proposals.decred.org/proposals/950e8149e594b01c010c1199233ab11e82c9da39174ba375d286dc72bb0a54d7) that got approved in May 2019 and fulfilled in [June 2019](https://exmo.com/en/news_view?id=2776).
+- 7 月 6 日，EXMO [宣布](https://info.exmo.me/ru/uvedomleniya/exmo-me-exclude-from-listing-Five-crypto/)，他们将于 7 月 20 日下架 DCR 和其他 3 个代币 由于流动性低。 EXMO 是唯一一家通过廉价 [提案](https://proposals.decred.org/proposals/950e8149e594b01c010c1199233ab11e82c9da39174ba375d286dc72bb0a54d7) 上线 DCR 的交易所，该提案于 2019 年 5 月获得批准并于 [2019 年 6 月](https://exmo.com/en/news_view?id=2776)。
 
-- #trading members [discovered](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$aTBeqNdAk4d03IEEybIk8WtVo-Wfe0JYFwVX0fZsIh4) on July 9 that DCR was trading around $20 at Indian [Bitbns](https://bitbns.com/trade/#/dcr) while it was around $16 on other exchanges. As of July 31 DCR was still trading at a premium and with significant 24-hour volume of $68K making DCR/INR a top 10 pair at Bitbns (if we trust reported volumes of course). DCR [price chart](https://bitbns.com/trade/#/dcr) suggests it was listed in May 2022.
+- #trading 成员于 7 月 9 日[发现](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$aTBeqNdAk4d03IEEybIk8WtVo-Wfe0JYFwVX0fZsIh4)，DCR 在印度 [Bitbns](https://bitbns) 的交易价格约为 20 美元 .com/trade/#/dcr），而其他交易所的价格约为 16 美元。 截至 7 月 31 日，DCR 仍处于溢价交易状态，24 小时交易量高达 6.8 万美元，这使得 DCR/INR 成为 Bitbns 的前 10 货币对（当然，如果我们相信报告的交易量）。 DCR [价格图表](https://bitbns.com/trade/#/dcr)表明它于2022年5月上市。
 
-Communication systems:
+通讯系统：
 
-- Public access to Twitter has been mostly [unavailable](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/) between June 30 and July 5. Browsing Twitter required login and was subject to rate limits even for paid accounts. According to Elon Musk it was a [temporary emergency measure](https://www.reuters.com/technology/twitter-now-needs-users-sign-view-tweets-2023-06-30/) to combat AI bots which were pulling so much data from Twitter that it effectively became a denial of service attack. Public API restrictions also [broke Nitter](https://github.com/zedeus/nitter/issues/919), a lightweight alternative for browsing [@decredproject](https://nitter.net/decredproject) and other accounts. Login requirement was [removed](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/) on July 5. Despite all problems and [revelations](https://twitter.com/elonmusk/status/1670117122650050561) Twitter remains Decred's main outreach platform with 53.3K followers as of Aug 1.
+- 6 月 30 日至 7 月 5 日期间，公众对 Twitter 的访问基本上[不可用](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/)。 浏览 Twitter 需要登录，并且即使是付费帐户也受到速率限制。 根据埃隆·马斯克的说法，这是一项对抗人工智能机器人的[临时紧急措施](https://www.reuters.com/technology/twitter-now-needs-users-sign-view-tweets-2023-06-30/) 这些攻击从 Twitter 中获取了大量数据，以至于实际上成为了拒绝服务攻击。 公共 API 限制也[打破了 Nitter](https://github.com/zedeus/nitter/issues/919)，这是浏览 [@decredproject](https://nitter.net/decredproject) 和其他帐户的轻量级替代方案。 登录要求已于 7 月 5 日[删除](https://techcrunch.com/2023/07/05/twitter-silently-removes-login-requirement-for-viewing-tweets/)。尽管存在所有问题和[启示]( https://twitter.com/elonmusk/status/1670117122650050561）Twitter 仍然是 Decred 的主要外展平台，截至 8 月 1 日拥有 5.33 万关注者。
 
-- The two-way bridge between Matrix and Discord is back! It was made possible by the new [user verification](202306.md#ecosystem) flow that is much better at preventing spam. The new bridge allows blocking individual Discord users on the Matrix side without affecting other Discord users, this was not possible with the old bridge. Also, message editing should propagate in both directions. New bridge is hosted by [t2bot.io](https://t2bot.io/discord/), a free service providing bots and bridges for [Matrix](https://matrix.org/) communities. It is operated by a single person and is supported by [donations](https://t2bot.io/donations/). As of writing the following Matrix rooms are bridged to Discord: #101, #dex, #marketing, #media, #memes, #proposals, #showerthoughts, #support, and of course #trading.
+- Matrix 和 Discord 之间的双向桥梁又回来了！ 这是通过新的[用户验证](202306.md#ecosystem)流程实现的，该流程可以更好地防止垃圾邮件。 新桥允许阻止 Matrix 端的单个 Discord 用户，而不影响其他 Discord 用户，这是旧桥不可能实现的。 此外，消息编辑应该双向传播。 新桥由 [t2bot.io](https://t2bot.io/discord/) 托管，这是一项为 [Matrix](https://matrix.org/) 社区提供机器人和桥的免费服务。 它由一个人运营，并由[捐赠](https://t2bot.io/donations/)支持。 截至撰写本文时，以下 Matrix 房间已桥接到 Discord：#101、#dex、#marketing、#media、#memes、#proposals、#showerthoughts、#support，当然还有#trading。
 
-Other news:
+其他新闻：
 
-- In May both [@StakeShuffle_](https://twitter.com/StakeShuffle_/status/1660015673102180353) and [@dcrtimestampbot](https://twitter.com/dcrtimestampbot/status/1660015663514107904) announced that the bots are "down until further notice due to recent twitter-api changes". The bots have been developed by @cli\_query and sponsored by a total of 3 low-budget [proposals](https://proposals.decred.org/user/3b9b30d5-1065-4e48-b1b6-3f558d0cb378?tab=submitted%20proposals). It appears that developer time is [limited](https://proposals.decred.org/record/1a290d8) to maintain these projects, but the Python source code of [StakeShuffle_](https://github.com/JC60522/StakeShuffle_BOT) and [dcrtimestampbot](https://github.com/JC60522/dcr_timestampbot) is available on GitHub for contributors to pick up and improve.
+- 5 月，[@StakeShuffle_](https://twitter.com/StakeShuffle_/status/1660015673102180353) 和 [@dcrtimestampbot](https://twitter.com/dcrtimestampbot/status/1660015663514107904) 都宣布机器人“已关闭” 直至因最近 twitter-api 更改而另行通知”。 这些机器人由 @cli\_query 开发，并由总共 3 个低预算提案。 看来开发人员维护这些项目的时间是[有限](https://proposals.decred.org/record/1a290d8)，但是StakeShuffle_和 [dcrtimestampbot](https://github.com/JC60522/dcr_timestampbot) 已在 GitHub 上提供，供贡献者学习和改进。
 
-- [Cypherpunk Times](https://cypherpunktimes.com/) is live. See the [Outreach](#outreach) section below for more details.
+- [Cypherpunk Times](https://cypherpunktimes.com/) 已上线。 有关更多详细信息，请参阅下面的 [Outreach](#outreach) 部分。
 
-Join our [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) chat to get more news about Decred services.
+加入我们的 [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) 聊天，获取有关 Decred 服务的更多新闻。
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+警告：Decred 月报的作者不知道上述任何服务的可信度。 在将您的个人信息或资产委托给任何实体之前，请先进行自己的研究。
 
 
 <a id="outreach" />
 
-## Outreach
+## 外展
 
-First iteration of the new multi-coin publication [Cypherpunk Times](https://cypherpunktimes.com/) is live! It is a continuation and a rebrand of Decred Magazine, approved and funded by Decred stakeholders in [July 2023](https://proposals.decred.org/record/4d3a8fc). The new social media handle is `@cypherpunktimes` on [Twitter](https://twitter.com/cypherpunktimes), [Facebook](https://www.facebook.com/cypherpunktimes), and [Spotify podcasts](https://podcasters.spotify.com/pod/cypherpunktimes). Any support is greatly appreciated.
+新的多币种出版物 [Cypherpunk Times](https://cypherpunktimes.com/) 的首次迭代已上线！ 它是 Decred 杂志的延续和品牌重塑，由 Decred 利益相关者于 [2023 年 7 月](https://proposals.decred.org/record/4d3a8fc) 批准和资助。 [Twitter](https://twitter.com/cypherpunktimes)、[Facebook](https://www.facebook.com/cypherpunktimes) 和 Spotify 播客上的新社交媒体账号为“@cypherpunktimes” 。 
 
-Firo is the first project to contribute content to Cypherpunk Times. In July Firo has [onboarded](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/$hoWcufElq2WAw5RcQ2GM1pE2ASKDme8q9-RZTQfvv04) 3 content and published their first [article](https://www.cypherpunktimes.com/unveiling-spark-public-testnet-launch-date-confirmed/).
+Firo 是第一个向 Cypherpunk Times 贡献内容的项目。 7 月，Firo [加入](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/$hoWcufElq2WAw5RcQ2GM1pE2ASKDme8q9-RZTQfvv04) 3 内容并发布了他们的第一篇 [文章](https://www.cypherpunktimes.com/ 揭晓-spark-public-testnet-launch-date-confirmed/)。
 
-TikTok account `@decredmagazine` was renamed to [@dearcryptopunk](https://www.tiktok.com/@dearcryptopunk). Moving forward its scope will be extended from supporting Cypherpunk Times to general Decred outreach, and it will move under the umbrella of [Decred Vanguard](https://proposals.decred.org/record/0a1b782) proposal. Twitter account [@decredmagazine](https://twitter.com/decredmagazine) will keep running for now to support Decred-only content.
+TikTok 帐户“@decredmagazine”已重命名为 [@dearcryptopunk](https://www.tiktok.com/@dearcryptopunk)。 展望未来，其范围将从支持 Cypherpunk Times 扩展到一般 Decred 外展，并将在 [Decred Vanguard](https://proposals.decred.org/record/0a1b782) 提案的保护下进行。 Twitter 帐户 [@decredmagazine](https://twitter.com/decredmagazine) 目前将继续运行以支持仅限 Decred 的内容。
 
-Cypherpunk Times engagement stats for July:
+《Cypherpunk Times》七月参与度统计数据：
 
-- Total number of articles on Cypherpunk Times: 497
-- Newsletter subscribers: 104
-- New CT posts and newsletters sent: 18
-- Active social media campaigns: 68
-- Completed social media campaigns: 2
-- Social media posts: 128
-- Likes: 496
-- Re-tweets: 120
-- Social media followers across all platforms and accounts (including [@DecredSociety](https://twitter.com/DecredSociety) and the old [@decredmagazine](https://twitter.com/decredmagazine)): 1,440
+- Cypherpunk Times 上的文章总数：497
+- 时事通讯订阅者：104
+- 发送的新 CT 帖子和时事通讯：18
+- 活跃的社交媒体活动：68
+- 已完成的社交媒体活动：2
+- 社交媒体帖子：128
+- 喜欢：496
+- 转发：120
+- 所有平台和帐户的社交媒体关注者（包括 [@DecredSociety](https://twitter.com/DecredSociety) 和旧 [@decredmagazine](https://twitter.com/decredmagazine)）：1,440
 
-Totti from [BTC-ECHO](https://www.btc-echo.de/) has collected two rounds of feedback posted across [Politeia](https://proposals.decred.org/record/49e373b) and the [#writers](https://chat.decred.org/#/room/#writers:decred.org) chat and incorporated it in the first German article. BTC-ECHO [suggested](https://proposals.decred.org/record/49e373b/comments/30) to wait through the lower seasonal activity and publish the first article in mid-August. The delay was used to [add mentions](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/$-Y8Sj1vafMV3bFwDTRyMavH9ab6ki2zntLvdmz6LBEw) of hardfork resistance and on-chain governance which are key to Decred consensus.
+[BTC-ECHO](https://www.btc-echo.de/) 的 Totti 收集了在 [Politeia](https://proposals.decred.org/record/49e373b) 和 [ #writers](https://chat.decred.org/#/room/#writers:decred.org) 聊天并将其合并到第一篇德语文章中。 BTC-ECHO [建议](https://proposals.decred.org/record/49e373b/comments/30) 等待较低的季节性活动，并在 8 月中旬发布第一篇文章。 这次延迟被用来[添加提及](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/$-Y8Sj1vafMV3bFwDTRyMavH9ab6ki2zntLvdmz6LBEw)硬分叉阻力和链上治理，这是 Decred 共识的关键。
 
-Monde PR's achievements:
+Monde PR 的成就：
 
-- Pitched two commentary opportunities
-- Pitched three story ideas to target crypto publications
-- Secured one media interview
+- 提供两次评论机会
+- 针对加密货币出版物提出了三个故事创意
+- 获得一次媒体采访
 
-Secured the following media placements:
+确保以下媒体展示位置：
 
-- @Tivra took part in a [Twitter Space](https://twitter.com/i/spaces/1djGXlqNBeeGZ) hosted by [The Rollup](https://twitter.com/therollupco) podcast talking about DCRDEX.
+- @Tivra 参加了由 [The Rollup](https://twitter.com/therollupco) 主持的关于 DCRDEX 的 [Twitter Space](https://twitter.com/i/spaces/1djGXlqNBeeGZ) 播客。
 
 
 <a id="media" />
 
-## Media
+## 媒体
 
-**Selected articles:**
+**精选文章：**
 
-- [How-to DCRDEX on Raspberry Pi with Umbrel](https://www.cypherpunktimes.com/how-to-dcrdex-on-raspberry-pi-with-umbrel/) by @karamble
-- [Is it time to overcome traditional social media?](https://www.cypherpunktimes.com/is-it-time-to-overcome-traditional-social-media/) by @Joao
-- [The ripple effect on cryptocurrency regulation](https://www.cypherpunktimes.com/the-ripple-effect-on-cryptocurrency-regulation/) by @Tivra
-- [Decred vs Ethereum: Staking on the future](https://www.cypherpunktimes.com/decred-vs-ethereum-staking/) by @Joao
+- [如何使用 Umbrel 在 Raspberry Pi 上使用 DCRDEX](https://www.cypherpunktimes.com/how-to-dcrdex-on-raspberry-pi-with-umbrel/)  @karamble
+- [是时候克服传统社交媒体了吗？](https://www.cypherpunktimes.com/is-it-time-to-overcome-traditional-social-media/)  @Joao
+- [加密货币监管的连锁反应](https://www.cypherpunktimes.com/the-ripple-effect-on-cryptocurrency-regulation/)  @Tivra
+- [Decred 与以太坊：赌注未来](https://www.cypherpunktimes.com/decred-vs-ethereum-stake/)  @Joao
 
-**Videos:**
+**视频：**
 
-- [Decred DEX standalone: Atomic-swaps in a web browser](https://www.youtube.com/watch?v=9U3fNFQFkkE) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/decred-dex-standalone-atomic-swaps-in-a-web-browser/)
-- [Decred Decentralized Exchange: Creating a fidelity bond](https://www.youtube.com/watch?v=5Z2jISaNkxc) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/decred-decentralized-exchange-creating-a-fidelity-bond/)
-- [Bison Relay Lightning Network management: How to rebalance your channels](https://www.youtube.com/watch?v=LD54opBdkh8) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/bison-relay-lightning-network-management-how-to-rebalance-your-channels/)
-- [Using market maker bots on decentralised exchange: first look](https://www.youtube.com/watch?v=cyp_vnQRCXE) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/using-market-maker-bots-on-decentralised-exchange-first-look/)
+- [Decred DEX 独立版：网络浏览器中的原子交换](https://www.youtube.com/watch?v=9U3fNFQFkkE)  @phoenixgreen
+- [Decred 去中心化交易所：创建忠诚纽带](https://www.youtube.com/watch?v=5Z2jISaNkxc)  @phoenixgreen 
+- [Bison Relay 闪电网络管理：如何重新平衡您的频道](https://www.youtube.com/watch?v=LD54opBdkh8)  @phoenixgreen 
+- [在去中心化交易所中使用做市商机器人：初看](https://www.youtube.com/watch?v=cyp_vnQRCXE) @phoenixgreen 
 
-Livestream:
+现场直播：
 
-- [Living on crypto & the freedom of exchange](https://www.youtube.com/watch?v=riW1HbhfoIw) by @phoenixgreen and @Exitus feat. [Joel Valenzuela](https://twitter.com/TheDesertLynx) of Dash, Reuben Yap of Firo, and @Tivra
+- [依靠加密货币和交换自由为生](https://www.youtube.com/watch?v=riW1HbhfoIw) by @phoenixgreen 和 @Exitus feat。 Dash 的 [Joel Valenzuela](https://twitter.com/TheDesertLynx)、Firo 的 Reuben Yap 和 @Tivra
+  
+**音频:**
 
-**Audio:**
+- [加密货币进化：通过愿景超越波动性](https://twitter.com/i/spaces/1yNxaNYLwwqKj) - Twitter Space  @Tivra feat. @Exitus 和 Joel Valenzuela 讨论关闭 DashDirect 和 Cake Pay、小费、P2P 服务等 
 
-- [Crypto Evolution: Rising above volatility with vision](https://twitter.com/i/spaces/1yNxaNYLwwqKj) - Twitter Space by @Tivra feat. @Exitus and Joel Valenzuela discussing the shutdown of DashDirect and Cake Pay, tipping, P2P services, and more - also as a [podcast](https://podcasters.spotify.com/pod/show/cypherpunktimes/episodes/Crypto-Evolution-Rising-Above-Volatility-with-Vision-e26qm28)
+**艺术与乐趣：**
 
-**Art and fun:**
+- 七月是美国的[国家野牛月](https://nationaltoday.com/national-bison-month/)
+- [DEX 岛](https://www.cypherpunktimes.com/dex-island/) @OfficialCryptos
+- [供应冲击信息图](https://www.reddit.com/r/decred/comments/14vruz2/supply_shock_infographic_wip/) @Tivra
+- Decred [艺术竞赛](https://twitter.com/exitusdcr/status/1680287503528370179) @Exitus - 四位[获奖者](https://twitter.com/exitusdcr/status/1681067908699389952) 获得了他们的 DCR
+- @Tivra 的 Decred [电梯推介竞赛](https://twitter.com/WasPraxis/status/1680928961415589889) 有 [两名获奖者](https://twitter.com/waspraxis/status/1684173637623119872)
+- [DCR 顶级列表](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$Im4VJ9nJDedNOOCaKlxSu9a9N7HCA9fJEUd-W3ubVMY)  @Void
 
-- July is the [National Bison Month](https://nationaltoday.com/national-bison-month/) in the U.S.
-- [DEX island](https://www.cypherpunktimes.com/dex-island/) by @OfficialCryptos
-- [Supply shock infographic](https://www.reddit.com/r/decred/comments/14vruz2/supply_shock_infographic_wip/) by @Tivra
-- Decred [art contest](https://twitter.com/exitusdcr/status/1680287503528370179) by @Exitus - four [winners](https://twitter.com/exitusdcr/status/1681067908699389952) got their DCR
-- Decred [elevator pitch contest](https://twitter.com/WasPraxis/status/1680928961415589889) by @Tivra had [two winners](https://twitter.com/waspraxis/status/1684173637623119872)
-- [DCR top tier list](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$Im4VJ9nJDedNOOCaKlxSu9a9N7HCA9fJEUd-W3ubVMY) by @Void
+![DCR top tier list by @Void](img/202307.18.451.jpg)
 
-![DCR top tier list by @Void](../img/202307.18.451.jpg)
+_图片：DCR 顶级列表，作者：@Void_
 
-_Image: DCR top tier list by @Void_
+**翻译:**
 
-**Translations:**
+- [如何通过 Umbrel 在 Raspberry Pi 上使用 DCRDEX](https://www.cypherpunktimes.com/how-to-dcrdex-on-raspberry-pi-with-umbrel/) - [中文](https://github.com/Decred-CN/articles/blob/master/How-To_DCRDEX_on_Raspberry_Pi_with_Umbrel.md) @Dominic
+- [在去中心化交易所中使用做市商机器人：初次体验](https://www.cypherpunktimes.com/using-market-maker-bots-on-decentralized-exchange-first-look/) - [中文](https://github.com/Decred-CN/articles/blob/master/Using%20Market%20Maker%20Bots%20on%20Decentralized%20Exchange:%20First%20Look.md)
+- 请注意，自 2019 年起，所有翻译成中文的内容均在微信上发布。
+- Decred 月报 5 月至 6 月总共获得了 3 个阿拉伯语 (@arij, @abdulrahman4) 和中文 (@Dominic) 的新[翻译](https://xaur.github.io/decred-news/)。 感谢您的工作！
+  
+**讨论：**
 
-- [How-to DCRDEX on Raspberry Pi with Umbrel](https://www.cypherpunktimes.com/how-to-dcrdex-on-raspberry-pi-with-umbrel/) - in [Chinese](https://github.com/Decred-CN/articles/blob/master/How-To_DCRDEX_on_Raspberry_Pi_with_Umbrel.md) by @Dominic
-- [Using market maker bots on decentralised exchange: first Look](https://www.cypherpunktimes.com/using-market-maker-bots-on-decentralised-exchange-first-look/) - in [Chinese](https://github.com/Decred-CN/articles/blob/master/Using%20Market%20Maker%20Bots%20on%20Decentralised%20Exchange:%20First%20Look.md)
-- Note that all content translated to Chinese is published on WeChat since 2019.
-- Decred Journal May-June got a total of 3 new [translations](https://xaur.github.io/decred-news/) to Arabic (@arij, @abdulrahman4) and Chinese (@Dominic). Thank you for your work!
-
-**Discussions:**
-
-- [ChatGPT4 attempting to decrypt @saender's TA](https://www.reddit.com/r/decred/comments/14wlx9u/some_technical_analysis_based_on_saender_post/)
-- [We need a new Internet](https://news.ycombinator.com/item?id=36676452) on Hacker News
-- A reply to James Prestwich's question ["so did Decred ever change the world?"](https://twitter.com/_prestwich/status/1679630835019030531)
+- [ChatGPT4 解密](https://www.reddit.com/r/decred/comments/14wlx9u/some_technical_analysis_based_on_saender_post/)
+- 黑客新闻上的[我们需要一个新的互联网](https://news.ycombinator.com/item?id=36676452)
+- 对 James Prestwich 问题的回复 [“Decred 曾经改变过世界吗？”](https://twitter.com/_prestwich/status/1679630835019030531)
 
 
 <a id="markets" />
 
-## Markets
+## 市场
 
-In July DCR was trading between USDT 13.70-19.75 and BTC 0.00047-0.00064. The average daily rate was $15.40.
+7 月份 DCR 的交易价格在 USDT 13.70-19.75 和 BTC 0.00047-0.00064 之间。 平均每日交易价格为 15.40 美元。
 
-\#trading members [observed](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$qOBXWvgSgINClwaPNzI9IXoqu9BLuqZdmJic2qTwMLw) a $1 million sell wall on Binance DCR/USDT. Also, trading volumes across all markets were [unusually low](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$o6Rmw5-8oiHBwRIGWWnE3qMpJTXmm__ad7HoxyJVioo) on some days, possibly due to summer time.
+交易爱好者[观察到](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$qOBXWvgSgINClwaPNzI9IXoqu9BLuqZdmJic2qTwMLw)币安 DCR/USDT 上的 100 万美元销售墙。 此外，在某些日子里，所有市场的交易量[异常低](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$o6Rmw5-8oiHBwRIGWWnE3qMpJTXmm__ad7HoxyJVioo)，可能是由于夏季。
 
-![DCR performance compared to other privacy coins by @saender](../img/202307.19.920.jpg)
+![DCR 性能与其他隐私币的比较，@saender](img/202307.19.920.jpg)
 
-_Image: DCR performance compared to other privacy coins by @saender_
+_图片：DCR 性能与其他隐私币的比较，作者：@saender_
 
-![Decred Pricing Metrics by @bochinchero](../img/202307.20.921.jpg)
+![@bochinchero 的 Decred 定价指标](img/202307.20.921.jpg)
 
-_Image: Decred Pricing Metrics by @bochinchero_
+_图片：Decred 定价指标，作者：@bochinchero_
 
-The [chart](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$H540G0LtMAsa1Vc1ANY0A2Jf6CuN0uTyr6XKQO68nq8) above is based on same [Staked Realized Value](https://bochinchero.medium.com/decred-on-chain-staked-realised-value-444ab5a146d8) model we showed [last month](202306.md#markets) but with price instead of market cap.
+上面的[图表](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$H540G0LtMAsa1Vc1ANY0A2Jf6CuN0uTyr6XKQO68nq8)基于相同的[质押实现价值](https://bochinchero.medium.com/decred-on-chain-staked-realized-value-444ab5a146d8)模型我们[上个月]（202306.md#markets）展示，但使用的是价格而不是市值。
 
-![DCR/BTC in June-July](../img/202307.21.1024.orig.jpg)
+![6月-7月DCR/BTC](img/202307.21.1024.orig.jpg)
 
-_Image: DCR/BTC in June-July_
+_图片：6-7 月 DCR/BTC_
 
-![DCRDEX monthly volume in USD does not like summer time](../img/202307.22.720.png)
+![DCRDEX 美元月交易量不喜欢夏季](img/202307.22.720.png)
 
-_Image: DCRDEX monthly volume in USD does not like summer time_
+_图片：DCRDEX 美元月交易量不喜欢夏季_
 
 
 <a id="relevant-external" />
 
-## Relevant External
+## 相关外部信息
 
-DeFi lending platform Curve, a pillar of DeFi on Ethereum, has been [hacked](https://twitter.com/CurveFinance/status/1685693202722848768). The hack involved using a malfunctioning reentrancy lock in certain versions of Vyper which made certain pools but not others vulnerable to being drained. Similar protocols Metronome and Alchemix were also affected, and together the 3 projects [lost](https://www.coindesk.com/markets/2023/08/04/looter-behind-61m-curve-hack-starts-returning-assets-raising-hope-for-recovery/) $61.7 million worth of assets. The attacker was only able to drain some of the affected pools because when the action started many white hat hackers stepped in to rescue their funds. By Aug 7 a reported 73% of the assets had been [recovered](https://www.coindesk.com/tech/2023/08/07/curve-recoups-73-of-hacked-funds-bolstering-crv-sentiment/), some from the white hats but also significant amounts from the attacker. Curve offered a 10% bounty for voluntary return of funds until August 6, but with over $18 million still in the hacker's possession at the deadline the chance to end the matter there was lost and the bounty opened up to public investigators who could help to secure recovery.
+以太坊上 DeFi 的支柱 DeFi 借贷平台 Curve 遭到黑客攻击。 这次黑客攻击涉及在某些版本的 Vyper 中使用故障重入锁，这使得某些池（但其他池）容易被耗尽。 类似的协议 Metronome 和 Alchemix 也受到影响，这 3 个项目总共损失了价值 6170 万美元的资产。 攻击者只能耗尽部分受影响的资金池，因为当行动开始时，许多白帽黑客介入以拯救他们的资金。 据报道，截至 8 月 7 日，73% 的资产已被追回，其中一些来自白帽子，但也有大量来自攻击者。 Curve 为 8 月 6 日之前的自愿返还资金提供了 10% 的赏金，但截至截止日期，黑客仍掌握着超过 1800 万美元，因此失去了结束此事的机会，赏金向公共调查人员开放，他们可以帮助确保安全。 恢复。
 
-Gitcoin has [launched](https://www.theblock.co/post/241425/gitcoins-layer-2-public-goods-network-goes-live-on-mainnet) an Ethereum Layer 2 called Public Goods Network (PGN), it uses the Optimism stack and a proportion of the sequencer fees will be collected in a pot to fund public goods.
+Gitcoin 推出了名为公共物品网络 (PGN) 的以太坊第 2 层，它使用 Optimism 堆栈，并且将收集一部分定序器费用以资助公共物品。
 
-Arkham Intelligence has launched a crypto identity data marketplace or "[doxx to earn program](https://protos.com/arkham-intelligence-draws-ire-for-dox-to-earn-program/)", where users can place bounties on the identity of certain crypto wallet addresses and eager researchers attempt to discover who owns the wallet for a pay day. Arkham also showed casual disregard for its own users by generating referral links using an easily reversed algorithm [revealing](https://www.coindesk.com/business/2023/07/10/crypto-startup-arkham-has-apparently-been-doxxing-privacy-obsessed-users-for-months/) the email addresses of the promoters.
+Arkham Intelligence 推出了一个加密身份数据市场或“doxx to Earn 计划”，用户可以在其中对某些加密钱包地址的身份进行悬赏，而热心的研究人员则试图在发薪日发现谁拥有该钱包。 Arkham 还通过使用一种易于逆转的算法生成推荐链接来显示推广者的电子邮件地址，从而表现出对其用户的随意漠视。
 
-Sam Altman's Worldcoin [launched](https://www.bbc.com/news/technology-66128111) its eyeball-scanning orbs in 1,500 locations around the world, allowing people to scan their iris to set up a wallet and receive 25 free WLD (worth ~$50). The prospect of an AI company founder sending orbs out into the world to scan peoples' eyes for small handouts has been decried as dystopian by many in the crypto space, Worldcoin is not a popular project. However, Vitalik Buterin has recently published a blog [post](https://vitalik.eth.limo/general/2023/07/24/biometric.html) about biometric proof of personhood where he seems to find quite a lot of merit in Worldcoin's approach, suggesting it protects privacy better than most of the alternative approaches to proof of personhood, although still having some negative aspects. A day after Worldcoin's launch, the UK data watchdog was [reported](https://protos.com/worldcoin-eyed-by-uk-data-watchdog-day-after-launch-avoided-us/) to be looking into whether it complies with data protection regulations. In Kenya, where Worldcoin had been in communication with the Office of Data Protection Commissioner since April, it was thought to be operating legally but its scanning operations were [suspended](https://www.coindesk.com/policy/2023/08/03/kenya-appears-to-have-flip-flopped-on-worldcoins-data-practices/) and it's not clear if this was self-imposed by Worldcoin to improve on "crowd control" issues with long lines at the sign-up stations, or if the authorities [changed](https://techcrunch.com/2023/08/02/kenya-suspends-worldcoin-scans-over-security-privacy-and-financial-concerns/) their mind about its legality.
+Sam Altman 的 Worldcoin 在全球 1,500 个地点推出了眼球扫描球，允许人们扫描虹膜来设置钱包并获得 25 个免费 WLD（价值约 50 美元）。 人工智能公司创始人向世界各地发送球体来扫描人们的眼睛以获取小额施舍的前景被加密领域的许多人谴责为反乌托邦，世界币并不是一个受欢迎的项目。 然而，Vitalik Buterin 最近发表了一篇关于身份生物识别证明的博客文章，他似乎发现 Worldcoin 的方法有很多优点，表明它比大多数身份证明的替代方法更好地保护隐私，尽管仍然存在一些负面影响 方面。 据报道，世界币推出一天后，英国数据监管机构正在调查其是否遵守数据保护法规。 在肯尼亚，世界币自 4 月份以来一直与数据保护专员办公室进行沟通，人们认为它是合法运营的，但其扫描操作被暂停，目前尚不清楚这是否是世界币自行实施的，以改善“人群控制” “在登记站排长队的问题，或者当局是否改变了对其合法性的看法。
 
-FedNow, the US government's instant payments system, [launched](https://techcrunch.com/2023/07/21/fednow-is-finally-live-in-the-us/) with 35 financial institutions set up to use the service which allows for 24/7 instant settlement. This is seen as bridging a gap where the US is quite behind other jurisdictions that already have such instant bank transfer facilities. It is anticipated that it will take some time for uptake of FedNow by institutions to make the service broadly available to end users.
+美国政府的即时支付系统 FedNow 推出，已有 35 家金融机构使用该服务，可实现 24/7 即时结算。 这被视为弥补了美国远远落后于其他已经拥有此类即时银行转账设施的司法管辖区的差距。 预计机构需要一段时间才能采用 FedNow 以便最终用户广泛使用该服务。
 
-The Token Engineering Commons (TEC) has [completed](https://medium.com/token-engineering-commons/expertise-and-quadratic-funding-bd4f0c5c3e23) the first round of its new grants program, using Quadratic Funding (like Gitcoin grants) to distribute a funding pool of $25,000 and drawing donations of $6,162 to augment this and determine where the grants would go. TEC have added to the usual Quadratic Funding model (in which a greater number of individual donations to a project means a larger slice of the matching pool) by adding a mechanism for the expression of "Subject Matter Expertise". Contributors who had TEC tokens and/or NFT knowledge attestation certificates in their wallet were considered to be "experts" and a stronger weight was applied to their donations when determining the matching amount - this was done to tackle a perceived issue where projects that are good at mobilising community support do the best in Quadratic Funding rounds.
+Token Engineering Commons (TEC) 已完成第一轮新赠款计划，使用二次方资金（如 Gitcoin 赠款）分配 25,000 美元的资金池，并筹集 6,162 美元的捐款来扩大这一规模并确定赠款的去向。 TEC 通过添加“主题专业知识”的表达机制，在通常的二次融资模式（其中对项目的个人捐款越多意味着匹配池的份额越大）的基础上进行了添加。 钱包里有 TEC 代币和/或 NFT 知识证明证书的贡献者被认为是“专家”，在确定匹配金额时，他们的捐赠会受到更大的权重 - 这样做是为了解决一个明显的问题，即好的项目 在动员社区支持方面，在二次方融资轮次中做得最好。
 
-Legislation [concerning](https://www.coindesk.com/policy/2023/07/28/us-stablecoin-bill-takes-big-step-despite-fight-from-democrats-white-house/) stablecoins has made it out of committee in the US Congress for the first time, meaning that should soon be voted on and if approved passed to the Senate. The bill had bipartisan support for some of its life but Democrats withdrew that support late in the process over a failure to negotiate a resolution to some points of conflict, lessening the bill's chances of making it all the way into law. One key point of dispute seems to be the role of a federal regulator to oversee stablecoins licensed at the state level, with Democrats pushing for this kind of oversight and Republicans rejecting it.
+有关稳定币的立法首次被排除在美国国会委员会之外，这意味着该立法将很快进行投票，如果获得批准，则将传递给参议院。 该法案在其实施过程中曾获得两党的支持，但由于未能通过谈判解决某些冲突问题，民主党在后期撤回了支持，从而降低了该法案最终成为法律的机会。 争论的一个关键点似乎是联邦监管机构在监督州一级许可的稳定币方面的作用，民主党人推动这种监督，而共和党人则拒绝。
 
-The much-hyped round of Bitcoin ETF applications from major financial institutions [incorporates](https://www.coindesk.com/business/2023/07/11/blackrocks-bitcoin-etf-application-takes-surveillance-to-the-next-level/) a new feature, Surveillance Sharing Agreements (SSAs) with Coinbase as a provider of market intelligence where the ETF providers and regulators can pull data directly including the capacity to request personally identifiable information from Coinbase where this is deemed necessary to investigating or preventing market manipulation. In previous ETF filings the market provider would push information to regulators about suspicious activity, the SSAs turn this around to give more oversight. SSA with Coinbase was first introduced by BlackRock but has been copied by the other applicants in this round of ETF applications.
+主要金融机构大肆宣传的这一轮比特币 ETF 应用纳入了一项新功能，即与 Coinbase 作为市场情报提供商的监控共享协议 (SSA)，ETF 提供商和监管机构可以直接提取数据，包括请求个人身份信息的能力
 
-A European Commission document about its Metaverse strategy was [leaked](https://www.coindesk.com/policy/2023/07/06/eus-leaked-metaverse-strategy-proposes-regulatory-sandbox-new-global-governance/) ahead of its publication. The document describes the potential of virtual worlds to being "unprecedented opportunities in many societal areas", and the need to remove barriers to new organizational forms such as DAOs to realise their benefits.
+来自 Coinbase 的信息，如果这些信息被认为对于调查或防止市场操纵是必要的。 在之前的 ETF 备案中，市场提供商会向监管机构推送有关可疑活动的信息，而 SSA 则扭转这一局面，给予更多监管。 SSA 与 Coinbase 最初由 BlackRock 推出，但在本轮 ETF 申请中已被其他申请人效仿。
 
-Coinbase CEO Brian Armstrong has [revealed](https://protos.com/sec-coinbase-demand-would-have-meant-end-of-crypto-in-the-us/) that shortly before suing them the SEC demanded that they drop all assets except Bitcoin, which made it an easy choice for the company to take the matter to court because that would have meant the effective end of their business in the US.
+欧盟委员会关于其元宇宙战略的文件在发布之前就被泄露。 该文件描述了虚拟世界成为“许多社会领域前所未有的机遇”的潜力，以及消除 DAO 等新组织形式实现其好处的障碍的必要性。
 
-Binance's Australian headquarters has been [raided](https://protos.com/binance-australia-raided-by-regulator-just-weeks-after-europe-hq-raid/) by the Australian Securities and Investments Commission (ASIC), in an investigation into unlawful derivatives dealings that involved mislabelling retail and institutional customers. Binance also [withdrew](https://protos.com/binance-withdraws-germany-crypto-license-request-as-europe-bites-back/) its application for a license in Germany, after being told that it was not going to be granted in its current form. After Binance US lost its banking partner BTC has been trading at a [discount](https://protos.com/scoop-major-crypto-arbitrage-fund-says-binance-us-discounts-arent-worth-risk/), something similar happened in Australia in May.
+Coinbase 首席执行官布莱恩·阿姆斯特朗 (Brian Armstrong) 透露，在起诉他们之前不久，美国证券交易委员会 (SEC) 要求他们放弃除比特币之外的所有资产，这使得该公司很容易选择将此事告上法庭，因为这将意味着他们在 我们。
 
-Binance has completed [integrating](https://cointelegraph.com/news/binance-integration-bitcoin-btc-lightning-network) Bitcoin's Lightning Network.
+澳大利亚证券和投资委员会（ASIC）突击搜查了币安的澳大利亚总部，调查涉及错误标记零售和机构客户的非法衍生品交易。 币安在被告知不会以目前的形式获得许可后，也撤回了在德国的许可申请。 在币安美国失去银行合作伙伴后，BTC 一直在打折交易，5 月份澳大利亚也发生了类似的情况。
 
-The LBRY company has [shut down](https://decrypt.co/148288/lbry-token-plummets-file-sharing-crypto-project-shuts-down) after losing its case against the SEC, having its LBC token sales defined as unregistered securities offerings and being restricted from doing any more of this without first "registering with the SEC". The LBRY protocol lives on, it was never the target of the litigation, and the LBC token's status remains ambiguous as to whether it is now a security, since the SEC have bankrupted the incorporated "common enterprise" that token-holders were deemed to seek profit from.
+币安已完成比特币闪电网络的整合。
 
-Richard Heart, mastermind and primary beneficiary of the Hex and PulseChain projects, has been [sued](https://www.coindesk.com/policy/2023/07/31/us-sec-sues-richard-heart-hex-pulsechain-on-unregistered-securities-fraud-allegations/) by the SEC for securities fraud violations. Although the Heart/Hex ecosystem is widely regarded as a scam, it has been [suggested](https://twitter.com/collins_belton/status/1686064809467396096) by [several](https://twitter.com/lex_node/status/1686030110443315200) crypto legal personalities that the case doesn't seem very strong. The HEX terms referred to sacrificing money into a black box mechanism and Heart himself was very [clear](https://www.youtube.com/shorts/tlFC_NhoRsQ) that he was spending a lot of the proceeds on designer clothes, portraying this as part of a marketing strategy which was going to help pump the price of the related tokens.
+LBRY 公司在对 SEC 的官司败诉后关闭，其 LBC 代币销售被定义为未注册的证券发行，并且在未先“向 SEC 注册”的情况下被限制进行任何此类活动。 LBRY 协议仍然存在，它从来都不是诉讼的目标，而且 LBC 代币现在是否是一种证券的地位仍然模糊，因为 SEC 已经破产了代币持有者被认为寻求寻求的合并的“共同企业” 从中获利。
 
-Alex Mashinsky, former CEO of Celsius, has been [arrested](https://protos.com/mashinsky-charged-by-doj-cftc-sec-and-ftc-year-on-from-celsius-bankruptcy/) and charged with a number of crimes including wire fraud and market manipulation. The Chief Revenue Officer was also charged. The filing indicates that Celsius was actively manipulating the price of CEL tokens while lying about key aspects of its performance, pumping and dumping the tokens to cash our large sums, $42 million allegedly in Mashinsky's case.
+Hex 和 PulseChain 项目的策划者和主要受益人 Richard Heart 因违反证券欺诈行为而被 SEC 起诉。 尽管 Heart/Hex 生态系统被广泛认为是一个骗局，但一些加密货币法律人士表示，这个案子似乎并不十分有力。 HEX 术语指的是在黑匣子机制中牺牲金钱，Heart 本人非常清楚，他将大量收益花在名牌服装上，并将其描述为营销策略的一部分，这将有助于推高相关产品的价格。 代币。
 
-A [report](https://www.elliptic.co/hubfs/Elliptic_Report_Crypto%20and%20the%20Global%20Fentanyl%20Trade.pdf) by Elliptic researchers has identified Russian (Garantex) and Australian crypto exchanges as key intermediaries in facilitating the trade in Fentanyl precursors. They [identified](https://protos.com/centralized-crypto-exchanges-used-to-buy-32m-in-fentanyl-precursors-elliptic/) and communicated with over 100 sellers who were ready to ship Fentanyl or its precursor chemicals, and followed the crypto payment addresses to find out about their other transactions. In this way they uncovered addresses receiving $19M in Bitcoin and $13M in USDT, mostly from certain centralized exchanges.
+摄氏集团前首席执行官亚历克斯·马辛斯基 (Alex Mashinsky) 已被捕，并被指控犯有电汇欺诈和市场操纵等多项罪行。 首席收入官也受到指控。 该文件表明，Celsius 积极操纵 CEL 代币的价格，同时对其业绩的关键方面撒谎，通过拉高和抛售代币来兑现我们的巨额资金，据称在 Mashinsky 的案件中为 4200 万美元。
 
-Bittrex has [reminded](https://protos.com/bittrex-reminds-us-customers-to-withdraw-crypto-or-risk-unforeseen-issues/) its US customers to withdraw crypto assets from the bankrupt platform, they have until August 31st but Bittrex suggests doing it sooner rather than later for fear of "unforeseen issues".
+Elliptic 研究人员的一份报告指出，俄罗斯 (Garantex) 和澳大利亚加密货币交易所是促进芬太尼前体贸易的关键中介机构。 他们识别并与 100 多个准备运送芬太尼或其前体化学品的卖家进行沟通，并跟踪加密货币支付地址以了解他们的其他交易。 通过这种方式，他们发现了接收 1900 万美元比特币和 1300 万美元 USDT 的地址，这些地址主要来自某些中心化交易所。
 
-Blockchain technology broke new ground again in the realm of gambling, with the world's first live hamster racing [platform](https://hamsters.gg/) [launching](https://www.coindesk.com/markets/2023/07/21/move-over-shiba-inu-crypto-community-flirts-with-hamster-race-betting/), where users can deposit ETH, BNB or BUSD and gamble it away betting on which hamster crosses the line first. Based on observation of several races (which are streamed on Twitch) the hamsters don't so much race as wander around (or not), showing very little interest in the finish line or motivation to get there first.
+Bittrex 已提醒其美国客户在 8 月 31 日之前从破产平台提取加密资产，但 Bittrex 建议尽早这样做，因为担心出现“不可预见的问题”。
 
-That's all for July. Suggest news for the next issue in our [#journal](https://chat.decred.org/#/room/#journal:decred.org) chat room.
+区块链技术在赌博领域再次开辟了新天地，世界上第一个现场仓鼠赛马平台上线，用户可以存入 ETH、BNB 或 BUSD，然后投注哪只仓鼠先过线。 根据对几场比赛（在 Twitch 上直播）的观察，仓鼠与其说是比赛，不如说是四处闲逛（或不闲逛），对终点线表现出很少的兴趣，也没有第一个到达终点的动力。
+
+这就是七月的全部内容。 在我们的#journal 聊天室中建议下一期的新闻。
 
 
-## About
+## 关于月报
 
-This is issue 61 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是 Decred 月报的第 61 期。 [此处](https://xaur.github.io/decred-news/) 提供所有问题、镜像和翻译的索引。
 
-Most information from third parties is relayed directly from the source after a minimal sanity check. The authors of the Decred Journal cannot verify all claims. Please beware of scams and do your own research.
+来自第三方的大多数信息都是在经过最低限度的健全性检查后直接从源头转发的。 Decred 月报的作者无法验证所有声明。请提防诈骗并自行研究。
 
-Credits (alphabetical order):
+感谢（字母顺序）：
 
-- writing, editing, publishing: bee, bochinchero, Exitus, jz, karamble, kozel, l1ndseymm, phoenixgreen, richardred, zippycorners
-- reviews and feedback: davecgh, jholdstock
-- title image: Exitus
-- funding: Decred stakeholders
+- 写作、编辑、出版：bee、bochinchero、Exitus、jz、karamble、kozel、l1ndseymm、phoenixgreen、richardred、zippycorners
+- 评论和反馈：davecgh、jholdstock
+- 标题图片：Exitus
+- 资金来源：Decred 利益相关者
+
+
+## 中文社区
+
+* [推特](https://twitter.com/DecredCN)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [bilibili频道](https://space.bilibili.com/425519478)  
