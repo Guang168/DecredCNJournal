@@ -51,7 +51,7 @@ Cryptopower 是一款新的 DCR、BTC 和 LTC 自托管钱包。 自 GoDCR 于 [
 
 - 适用于 DCR、BTC 和 LTC 的多币种钱包 - 全部在轻量 (SPV) 模式下工作，无需下载完整的区块链
 - Decred 质押、混合和治理 - 对共识变更、国库支出和 Politeia 提案进行投票
-- 通过集中交换器进行硬币转换，例如 [Flyp.me](https://flyp.me/)、[Godex.io](https://godex.io/)、[ChangeNOW.io](https://changenow) .io/) 及其他
+- 通过集中交换器进行硬币转换，例如 [Flyp.me](https://flyp.me/)、[Godex.io](https://godex.io/)、[ChangeNOW.io](https://changenow.io/) 及其他
 - 自定义硬币选择以实现额外控制
 - 自定义间隙限制
 - 可在 Windows、macOS、Linux、FreeBSD 上运行
