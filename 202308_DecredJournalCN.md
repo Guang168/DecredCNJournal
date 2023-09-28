@@ -146,7 +146,7 @@ _[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Dec
 - [从一些区块链函数中删除了未使用的参数](https://github.com/decred/dcrd/pull/3177)。 这些功能是内部功能，因此此更改对客户或用户没有影响。
 - 添加了一个[errors linter](https://github.com/decred/dcrd/pull/3179)，以便它们可以[用有用的上下文包装](https://github.com/decred/dcrd/pull/3178)。 这使得函数调用者可以将它们解包以识别错误源。 此更新允许errors与“errors.Is”和“errors.As”很好地配合。
 
-指定对 BLAKE3 和 ASERT 的更改的 [DCP-11 文档](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) 已被审核并[已发布](https ://github.com/decred/dcps/pull/29)。 以下是我们发现的一些有趣的事情：
+指定对 BLAKE3 和 ASERT 的更改的 [DCP-11 文档](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) 已被审核并[已发布](https://github.com/decred/dcps/pull/29)。 以下是我们发现的一些有趣的事情：
 
 - 该文档解释了新的工作量哈希算法、新的 ASERT 难度调整算法以及激活后的难度重置，所有这些都非常详细地包含公式、图表和实施指南。
 - *区块头*保持完全相同； 它是一个紧凑的 180 字节结构，保存有关块的重要元数据，并允许非常快速地同步和导航链。
@@ -186,7 +186,7 @@ _[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱
 
 - 在重新扫描期间添加了[记录交易更改钱包通知](https://github.com/decred/dcrwallet/pull/2275)。 在初始重新扫描期间（重新播种期间或重新启动 dcrwallet 后）此功能会关闭。 任何其他重新扫描通常都是为了解决问题，当 dcrwallet 在旧区块内发现新的钱包交易或以前未开采但现在已开采的钱包交易时，dcrwallet 将记录。 重新扫描对于用户来说并不有趣，而且重新扫描实际上只是同步不同步钱包的创可贴。 拥有丢失交易的哈希值将有助于调试为什么钱包在同步它们时出现问题，并且有望导致一些错误修复，从而减少用户重新扫描的需要。
 - 在发布购买之前，为非混合选票购买添加了[取消检查](https://github.com/decred/dcrwallet/pull/2276)。 混合购票已经检查是否取消，因此这可能会解决边缘情况的错误。
-- 修复了一批 VSP 选票的处理（如果其中一个失败）(https://github.com/decred/dcrwallet/pull/2259)。 向 VSP 客户端添加多个选票时，如果其中一个选票失败，则不会尝试其余选票。 这不太可能在现实世界中引起任何问题。 此更改还添加了一些缺失的日志记录，以使用户意识到某些 VSP 选票失败并可能需要调查。
+- 修复了一批 VSP 选票的处理[如果其中一个失败](https://github.com/decred/dcrwallet/pull/2259)。 向 VSP 客户端添加多个选票时，如果其中一个选票失败，则不会尝试其余选票。 这不太可能在现实世界中引起任何问题。 此更改还添加了一些缺失的日志记录，以使用户意识到某些 VSP 选票失败并可能需要调查。
 
 开发者和内部变化：
 
@@ -581,7 +581,7 @@ Monde PR 八月份的成绩：
 - [ZyCrypto](https://zycrypto.com/3ac-Founders-slammed-with-2-6-million-fine-by-dubais-regulator-over-new-exchange/) 中的一篇文章，其中包含 @jz 的评论 3AC的衰落。 该文章被联合发表于三个出版物，包括 [Bitcoin Crypto](https://bitcoin-crypto.nl/zycrypto-com-3ac-founders-slammed-with-2-6-million-fine-by-dubais-regulator-over-new-exchange/)。
 - [Cryptonews.com](https://cryptonews.com/news/decred-launches-bison-relay-v018-revolutionizing-e-commerce-with-decentralized-shopify.htm) 中有关 Bison Relay v0 的文章。 1.8 版本，包括有关新功能、Simplestore 基础设施的详细信息以及 @jy-p 的引用。 该文章被联合发表于三个出版物，包括 [Globe Echo World News](https://globeecho.com/business/crypto/decred-launches-bison-relay-v0-1-8-revolutionizing-e-commerce-with-decentralized-shopify/)。
 - [CoinDesk 的“Protocol Village”](https://www.coindesk.com/tech/2023/08/28/protocol-latest-tech-news-crypto-blockchain/) 新闻综述中有关 Bison Relay 版本的一段 ，包含返回 Decred 网站和 GitHub 的链接。
-- [The Currency Analytics](https://thecurrencyanalytics.com/crypto-exchanges/revolutionizing-online-shopping-bison-relay-unveils-latest-upgrade-paving-the-way-for-decentralized-e-commerce-67167.php)）有关 Bison Relay 版本的信息，包括有关新功能以及升级如何“为去中心化电子商务铺平道路”的详细信息。
+- [The Currency Analytics](https://thecurrencyanalytics.com/crypto-exchanges/revolutionizing-online-shopping-bison-relay-unveils-latest-upgrade-paving-the-way-for-decentralized-e-commerce-67167.php)有关 Bison Relay 版本的信息，包括有关新功能以及升级如何“为去中心化电子商务铺平道路”的详细信息。
   
 在关于最近营销提案的讨论中，@l1ndseymm 评论了营销和公关之间的差异：
 
@@ -625,7 +625,7 @@ Monde PR 八月份的成绩：
 - @Dominic 穿着 [时尚的 Decred 服装](https://twitter.com/wanbihou/status/1695772020687229092) 参加了铁人三项比赛。
 - 来自 BTC-ECHO 的 Totti 发布了[第四](https://proposals.decred.org/record/49e373b/comments/31) 和 [第五](https://proposals.decred.org/record/49e373b/comments/32) 篇文章。 所有反馈均已纳入，第一篇 [Decred 文章](https://www.btc-echo.de/news/decred-eine-der-aeltesten-kryptos-ueberzeugt-mit-prinzipien-spoken-166076/) 已发布 发布于 [8 月 17 日](https://twitter.com/btcecho/status/1692192057136119841)。 一周后，按照第五次更新的计划，它被“重新发布”。
 
-![当我参加铁人三项比赛时，我成为#decred的广告牌](.img/202308.22.611.jpg)
+![当我参加铁人三项比赛时，我成为#decred的广告牌](img/202308.22.611.jpg)
 
 _图片：“当我参加铁人三项比赛时，我成为 #decred 的广告牌”\[[@wanbihou](https://twitter.com/wanbihou/status/1695772020687229092)\]_
 
