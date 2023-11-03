@@ -1,4 +1,4 @@
-# Decred Journal – September 2023
+# Decred 月报 – 2023 年 9 月
 
 ![Circuit by @Exitus](img/202309.01.768.png)
 
