@@ -197,7 +197,7 @@ _[vspd](https://github.com/decred/vspd) 是投票服务提供商使用的服务�
 VSP 管理员的更改：
 
 - 添加了一个新的管理页面，其中列出了所有已在 VSP 中注册但[错过了投票](https://github.com/decred/vspd/pull/451) 的票证。
-- 优化了[投票和撤销票证的发现](https://github.com/decred/vspd/pull/416)，运行速度提高了一倍。 这是通过使用 dcrd 的 `gcs` 包中不同的[匹配函数](https://github.com/decred/dcrd/blob/dc41075594cfdef63e8a64340b4fc5651a56a604/gcs/gcs.go#L304)来实现的，该包是[更好优化](https ://github.com/decred/vspd/pull/413#issuecomment-1694228745）用于这项工作。
+- 优化了[投票和撤销票证的发现](https://github.com/decred/vspd/pull/416)，运行速度提高了一倍。 这是通过使用 dcrd 的 `gcs` 包中不同的[匹配函数](https://github.com/decred/dcrd/blob/dc41075594cfdef63e8a64340b4fc5651a56a604/gcs/gcs.go#L304)来实现的，该包是[更好优化](https://github.com/decred/vspd/pull/413#issuecomment-1694228745)用于这项工作。
 - 改进了处理[关闭请求](https://github.com/decred/vspd/pull/426)的响应能力，并删除了一些重复的样板代码。
 - 改进了在各种操作系统上处理[关闭信号](https://github.com/decred/vspd/pull/438)的兼容性。
 - 更改了 Web API，以便在 Web API 缓存未准备就绪时返回[显式错误](https://github.com/decred/vspd/pull/440)。 这将使管理员立即意识到可能的问题。 以前，如果缓存未准备好，则渲染网页时不会显示任何数据，也不会显示任何错误。
@@ -209,7 +209,7 @@ VSP 管理员的更改：
 
 - 恢复了在 simnet 上运行 [vspd](https://github.com/decred/vspd/pull/419) 的能力，DCRDEX 需要它来测试新的质押功能。
 - 通过[更好地使用 dcrd](https://github.com/decred/vspd/pull/422) 进行小型性能优化。
-- 未导出一些代码并将其[移动](https://github.com/decred/vspd/pull/428)到[内部](https://github.com/decred/vspd/pull/430)[包] （https://github.com/decred/vspd/pull/436）因为它不适合第三方使用。 小型公共 API 接口使开发和维护更加容易。
+- 未导出一些代码并将其[移动](https://github.com/decred/vspd/pull/428)到[内部](https://github.com/decred/vspd/pull/430)[包](https://github.com/decred/vspd/pull/436)因为它不适合第三方使用。 小型公共 API 接口使开发和维护更加容易。
 - 重新设计了组件的[创建、启动](https://github.com/decred/vspd/pull/434)和[停止](https://github.com/decred/vspd/pull/436) 解耦并简化代码。
 - 修复了[数据库备份](https://github.com/decred/vspd/pull/439) 仅运行一次而不是定期运行（未发布的错误）。
 - 约 20 次提交，进行了较小的改进和代码清理。
@@ -246,7 +246,7 @@ GPU 编程并不是 Decred 开发人员每天都会做的事情，但这个 Open
 
 - 改进了[关闭处理](https://github.com/decred/gominer/pull/207)。
 - 19 [housekeeping](https://github.com/decred/gominer/pull/210) 并清理提交，包括添加更多的 linter 以防止不良代码进入。
-- 修复了[几个](https://github.com/decred/gominer/pull/204)[问题](https://github.com/decred/gominer/pull/205)与[Stratum]( https://braiins.com/stratum-v1）协议。
+- 修复了[几个](https://github.com/decred/gominer/pull/204)[问题](https://github.com/decred/gominer/pull/205)与[Stratum](https://braiins.com/stratum-v1)协议。
 
 
 ### dcrpool
@@ -300,7 +300,7 @@ _[dcrpool](https://github.com/decred/dcrpool) 是用于运行 Decred 矿池的�
 
 _[dcrlnd](https://github.com/decred/dcrlnd)是Decred的闪电网络节点软件。 LN 使即时和低成本交易成为可能。_
 
-- 删除了目标 [100 个对等连接](https://github.com/decred/dcrlnd/pull/190) 的自定义配置（[继承](https://github.com/lightningnetwork/lnd/blob/d233f61383f2f950aa06f5b09da5b0e78e784fae/server .go#L1413）来自 lnd）。
+- 删除了目标 [100 个对等连接](https://github.com/decred/dcrlnd/pull/190) 的自定义配置（[继承](https://github.com/lightningnetwork/lnd/blob/d233f61383f2f950aa06f5b09da5b0e78e784fae/server.go#L1413lnd)。
 - 修复了如果未设置“--routing”选项的[启动失败](https://github.com/decred/dcrlnd/pull/191)。
 - 针对 [Go 1.21](https://github.com/decred/dcrlnd/pull/192) 进行构建和测试。
 - [v0.4.0 版本](https://github.com/decred/dcrlnd/releases/tag/v0.4.0) 已被标记以标记核心软件 v1.8.0 版本中包含的修订版。
@@ -411,7 +411,7 @@ _[Cryptopower](https://github.com/crypto-power/cryptopower) 是一款适用于 D
 - 修复了交易概述中列出的[质押交易](https://github.com/crypto-power/cryptopower/pull/92)，而不是质押活动。
 - 修复了概览页面上[资产余额卡](https://github.com/crypto-power/cryptopower/pull/95)的宽度。
 - 修复了成功创建或恢复钱包后不显示的[主页](https://github.com/crypto-power/cryptopower/pull/105)。
-- 修复了美元总余额和通知铃声在[黑暗模式]下不可见的问题(https://github.com/crypto-power/cryptopower/pull/132)。
+- 修复了美元总余额和通知铃声在[黑暗模式](https://github.com/crypto-power/cryptopower/pull/132)下不可见的问题。
 - 修复了将应用程序加载到[概述页面](https://github.com/crypto-power/cryptopower/pull/133)时发生的崩溃。
 - 修复了点击[质押交易](https://github.com/crypto-power/cryptopower/pull/136)时的崩溃问题。
   
@@ -432,8 +432,6 @@ Android:
 内部和开发人员变更：
 
 - 修复了“instantswap”库中一些[即时交换](https://github.com/crypto-power/instantswap/pull/6)的问题。
-
-欢迎通过 [GitHub Issues](https://github.com/crypto-power/cryptopower/issues) 或 [#cryptopower](https://matrix.to/#/!oxOZZtibVUXxXtdPJS:decred) 报告错误和反馈。 org）矩阵[聊天]（https://docs.decred.org/getting-started/joining-matrix-channels/）！
 
 ![Proposal voting in Cryptopower](img/202309.07.768.jpg)
 
@@ -571,7 +569,7 @@ Decred 挖矿于 8 月 29 日重新启动，当时 ASIC 挖出了最后一个区
 
 > 我不得不说，我喜欢这将每个人聚集在一起的方式。 我怀念这种协作精神。[[@jazzah](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$dXjs1Gqsw5jE2v1p9Ly5mwo_JaQXU_KDsrg_FyeI4i0)]
 
-截至 8 月 31 日，大约 25 人报告了总共 550 MH/s，但这（以及任何未报告的哈希率）仍然不够。 9 月初，@grumlin 和 @davecgh 转向[云算力](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$-Ql5Vva-X-A2ds34OYP0HZZs8O8fsikHIeTH6zlN9yU)并在大约 3 小时内[区块 794,369 ](https://dcrdata.decred.org/block/655d0c998b6f838a63a69991ebfb8dc776ed0234117c7b6cca407fe15c2cb02c)[找到](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$s5YhsGnMnTGaWn NLHGWD6CSKXYfoTxNklSFeKuS7zb4)。 它的大小为 324 KB，包含这些天累积的 240 笔交易。 由于这么长时间没有挖出任何区块，ASERT算法只需要一个区块即可将挖矿难度从~97,000降低到~1,800，从此CPU可以毫无问题地找到新区块，并且在短短几个小时内恢复了目标出块时间 。
+截至 8 月 31 日，大约 25 人报告了总共 550 MH/s，但这（以及任何未报告的哈希率）仍然不够。 9 月初，@grumlin 和 @davecgh 转向[云算力](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$-Ql5Vva-X-A2ds34OYP0HZZs8O8fsikHIeTH6zlN9yU)并在大约 3 小时内[区块 794,369 ](https://dcrdata.decred.org/block/655d0c998b6f838a63a69991ebfb8dc776ed0234117c7b6cca407fe15c2cb02c)[找到](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$s5YhsGnMnTGaWnNLHGWD6CSKXYfoTxNklSFeKuS7zb4)。 它的大小为 324 KB，包含这些天累积的 240 笔交易。 由于这么长时间没有挖出任何区块，ASERT算法只需要一个区块即可将挖矿难度从~97,000降低到~1,800，从此CPU可以毫无问题地找到新区块，并且在短短几个小时内恢复了目标出块时间 。
 
 9 月 1 日至 5 日是 CPU 挖矿可行的短暂时期，难度稳定在 500 左右，相应的网络算力保持在 6-10 GH/s 之间，相当于约 300 个 CPU 或仅 1 个中档 GPU。 与 [ASIC 时代](https://proposals.decred.org/record/a8501bc/comments/66) 相比，挖矿地址分配变得更加去中心化。
 
@@ -585,7 +583,7 @@ _图片：截至 9 月 6 日按挖矿地址划分的区块分布_
 
 然而，CPU挖矿的日子并没有持续多久。 开发人员预计 GPU 矿工很快就会出现，因为即使是单个 GPU 的挖矿速度也能达到大约 500 个 CPU 的速度，而且 GPU“农场”非常普遍。 GPU 挖矿的第一个迹象在 9 月 2 日左右被发现，但这并不是确定的，因为他们似乎故意将其保持在合理的否认范围内。 5日得到更可靠的确认后，开发者们火速为[gominer](https://github.com/decred/gominer)添加GPU挖矿支持。
 
-9 月 6 日，区块生产率的显着增加是网络上发生 GPU 挖矿的明显指标。 到 15:00，算力从一天前的约 9 GH/s 增加到约 32 GH/s。 大约一天内，单个地址收集了约 150 个区块的奖励（通常每天开采约 288 个区块）。 第一个 GPU 挖掘 [补丁](https://github.com/decred/gominer/pull/194) 于 14:30 左右合并到 gominer 中，到 15:30 第一个社区成员启动并运行了他们的 GPU。 在 GPU 挖掘可供所有人使用后，算力直线上升，到 18:30 达到约 52 GH/s，到 [~700 GH/s](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/ $P9sXHlT3txgllOwHtrWLNVWpXSC10i0Dx9p6mImfMgw) 20:00 之前。 新区块的开采速度高达每小时 100 个（正常速率为 12 个区块/小时）。
+9 月 6 日，区块生产率的显着增加是网络上发生 GPU 挖矿的明显指标。 到 15:00，算力从一天前的约 9 GH/s 增加到约 32 GH/s。 大约一天内，单个地址收集了约 150 个区块的奖励（通常每天开采约 288 个区块）。 第一个 GPU 挖掘 [补丁](https://github.com/decred/gominer/pull/194) 于 14:30 左右合并到 gominer 中，到 15:30 第一个社区成员启动并运行了他们的 GPU。 在 GPU 挖掘可供所有人使用后，算力直线上升，到 18:30 达到约 52 GH/s，到 [~700 GH/s](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$P9sXHlT3txgllOwHtrWLNVWpXSC10i0Dx9p6mImfMgw) 20:00 之前。 新区块的开采速度高达每小时 100 个（正常速率为 12 个区块/小时）。
 
 到 9 月 7 日下旬，算力达到分叉日的预期水平，大约 1,500 GH/s 或 150 个 GPU（假设像 RTX 3070 这样的 10 GH/s GPU）。 这是对新难度算法的一次很好的测试，该算法是针对这种情况而设计的。 效果很好，ASERT 设法在 9 月 10 日将区块时间恢复到正常，尽管同期哈希率增加到约 3,000 GH/s。 使用旧算法，在最好的情况下需要两周时间。
 
@@ -683,7 +681,7 @@ _图片：由于一段时期的快速区块，每月 DCR 排放量略高于平�
 
 投票服务提供商：
 
-- 热烈欢迎 [vote.dcr-swiss.ch](https://vote.dcr-swiss.ch/)，一个新的 VSP [列出](https://github.com/decred/dcrwebapi/pull/ 178）在 VSP API 和 [VSP 页面](https://decred.org/vsp/) 上。 DCR Swiss 的费用低至 0.25%。 在 15 个现有 VSP 中，这是第四低的费用，仅次于 dcrhive.com (0.15%)、dcr.farm (0.15%) 和 vspd.bass.cf (0.2%)。 截至撰写本文时，VSP 报告有 391 票投票，0 票撤销，以及 334 票。
+- 热烈欢迎 [vote.dcr-swiss.ch](https://vote.dcr-swiss.ch/)，一个新的 VSP [列出](https://github.com/decred/dcrwebapi/pull/178)在 VSP API 和 [VSP 页面](https://decred.org/vsp/) 上。 DCR Swiss 的费用低至 0.25%。 在 15 个现有 VSP 中，这是第四低的费用，仅次于 dcrhive.com (0.15%)、dcr.farm (0.15%) 和 vspd.bass.cf (0.2%)。 截至撰写本文时，VSP 报告有 391 票投票，0 票撤销，以及 334 票。
 
 交易所:
 
@@ -715,7 +713,7 @@ _图片：由于一段时期的快速区块，每月 DCR 排放量略高于平�
 
 Decred Vanguard 是一项基于社区的营销活动，旨在扩大 Decred 的外展范围和社交媒体影响力。
 
-更新：我们成功举办了[meme竞赛](https://twitter.com/exitusdcr/status/1708184512805405096)并发放了[200美元的DCR奖品](https://twitter.com/exitusdcr/status/1708981341033816333) 。 每月 100 美元 DCR 的 Decred Vanguard 奖励的其他获得者是 [@tothemoon](https://twitter.com/P________L)，因为他对 Decred Discord 服务器的贡献，以及 [@PubPete](https://twitter.com/ longtermdaily）因为他的高活跃度。
+更新：我们成功举办了[meme竞赛](https://twitter.com/exitusdcr/status/1708184512805405096)并发放了[200美元的DCR奖品](https://twitter.com/exitusdcr/status/1708981341033816333) 。 每月 100 美元 DCR 的 Decred Vanguard 奖励的其他获得者是 [@tothemoon](https://twitter.com/P________L)，因为他对 Decred Discord 服务器的贡献，以及 [@PubPete](https://twitter.com/longtermdaily)因为他的高活跃度。
 
 您是模因创造者、艺术家、战略家，还是只是对 Decred 项目充满热情的人？ 我们正在[扩展](https://twitter.com/exitusdcr/status/1704349424003010700)我们的社区驱动的营销计划，我们需要您！
 
@@ -774,7 +772,7 @@ Decred:
 - [加密货币和环境问题：可持续区块链解决方案之路](https://www.cypherpunktimes.com/cryptocurrency-and-environmental-concerns-the-road-to-sustainable-blockchain-solutions/) @tallamericano
 - [巴西政府希望对加密货币征收新税](https://www.cypherpunktimes.com/brazilian-government-wants-new-tax-over-crypto/) @Joao
 - [发展中国家采用加密货币：有前景的趋势和影响](https://www.cypherpunktimes.com/cryptocurrency-adoption-in-developing-countries-promising-trends-and-implications/) @tallamericano
-- [新研究表明大投资者对加密货币持积极看法](https://www.cypherpunktimes.com/new-study-shows-that-big-investors-have-a-positive-perspective-on-cryptocurrencies/ ）@Joao
+- [新研究表明大投资者对加密货币持积极看法](https://www.cypherpunktimes.com/new-study-shows-that-big-investors-have-a-positive-perspective-on-cryptocurrencies/)@Joao
 - [隐私很重要！功能比较](https://www.cypherpunktimes.com/privacy-matters-a-features-comparison/) @Joao
 - 另请参阅以下视频的文字版本
 
@@ -805,14 +803,14 @@ Decred:
 
 **翻译:**
 
-- [DCP-11 将 PoW 更改为 BLAKE3 和 ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) - [中文](https://github .com/DominicTing/articles/blob/master/dcp-0011/dcp-0011.mediawiki）@Dominic
+- [DCP-11 将 PoW 更改为 BLAKE3 和 ASERT](https://github.com/decred/dcps/blob/master/dcp-0011/dcp-0011.mediawiki) - [中文](https://github.com/DominicTing/articles/blob/master/dcp-0011/dcp-0011.mediawiki)@Dominic
 - Decred 月报 6 月至 8 月获得了中文（@Dominic）和波兰语（@kozel）[翻译](https://xaur.github.io/decred-news/)。 谢谢你们，朋友们！
 
 **非英语内容:**
 
 - [Makertronic](https://www.youtube.com/channel/UCsm-K1pBCJiH_g2K3_TbUyg) 创建了在 [Linux 和 Windows](https://www.youtube.com/watch?v=Xsx6uaFA8x4) 上进行 Decred GPU 挖掘的法语教程 和 [HiveOS](https://www.youtube.com/watch?v=sxuBNhYe9G0)（提供英文字幕）。 这些视频的 Decred 内容观看次数相当不错。
 
-- 摩洛哥国家电视新闻频道 Al Aoula 报道 Decred 与国家创新与先进技术研究所 (NIIAT) 之间的[合作伙伴协议](#events) 活动的视频剪辑已在 Abdellatif Belmkadem 的 [YouTube](https:/ /www.youtube.com/watch?v=GO5Ky0JXhyU）和@arij 的 [Twitter](https://twitter.com/in_insaf/status/1705858291929137232)。
+- 摩洛哥国家电视新闻频道 Al Aoula 报道 Decred 与国家创新与先进技术研究所 (NIIAT) 之间的[合作伙伴协议](#events) 活动的视频剪辑已在 Abdellatif Belmkadem 的 [YouTube](https://www.youtube.com/watch?v=GO5Ky0JXhyU)和@arij 的 [Twitter](https://twitter.com/in_insaf/status/1705858291929137232)。
 
 **讨论:**
 
