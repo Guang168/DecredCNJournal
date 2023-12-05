@@ -445,131 +445,131 @@ _图：闪电网络锁定的200 DCR重要心理关卡已被打破_
 
 - [decred.pooltronic.tech](https://decred.pooltronic.tech/) 由@makertronic [宣布](https://twitter.com/makertronicYT/status/1716098122617692530)，他还制作了法语视频教程 [Linux 和 Windows](https://www.youtube.com/watch?v=Xsx6uaFA8x4)、[HiveOS](https://www.youtube.com/watch?v=sxuBNhYe9G0) 和 [BzMiner] 上的 GPU 挖掘 在 Windows 上](https://www.youtube.com/watch?v=T1S7mB2EHw4)。 截至撰写本文时，付款方式为 PPLNS，池费为 1.0%。
   
-**Voting Service Providers**:
+**投票服务提供商**：
 
-- [vsp.coinmine.pl](https://vsp.coinmine.pl/) was [renamed](https://github.com/decred/dcrwebapi/pull/179) to [decred.stake.fun](https://decred.stake.fun/) in the [VSP page](https://decred.org/vsp/) and other places that use [VSP API](https://github.com/decred/dcrwebapi/blob/master/docs/api.md) such as Decrediton or Cryptopower. The old domain still works for compatibility. [Stake.Fun](https://stake.fun/) is a crypto staking portal for Decred and Radix coming as a replacement for [CoinMine.pl](https://coinmine.pl/), which was a multi-coin mining pool launched back in 2013. The service is operated by @feeleep (see an [interview](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl-mining-pool-operator-5c5592443cb4) from 2018). As of writing the VSP boasts ~29,200 voted tickets, second only to [stakey.net](https://stakey.net/) with ~30,000 voted.
+- [vsp.coinmine.pl](https://vsp.coinmine.pl/) 被[重命名](https://github.com/decred/dcrwebapi/pull/179) 为 [decred.stake.fun]( https://decred.stake.fun/）在[VSP页面](https://decred.org/vsp/)和其他使用[VSP API](https://github.com/decred/dcrwebapi)的地方 /blob/master/docs/api.md），例如 Decrediton 或 Cryptopower。 旧域名仍然适用于兼容性。 [Stake.Fun](https://stake.fun/) 是 Decred 和 Radix 的加密质押门户，作为 [CoinMine.pl](https://coinmine.pl/) 的替代品，后者是一个多 硬币矿池于 2013 年推出。该服务由 @feeleep 运营（请参阅[采访](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl- 挖矿池运营商-5c5592443cb4) 从 2018 年开始)。 截至撰写本文时，VSP 拥有约 29,200 张投票票，仅次于 [stakey.net](https://stakey.net/)，拥有约 30,000 张投票票。
 
-- [123.dcr.rocks](https://123.dcr.rocks/) announced that it is [closing](https://github.com/decred/dcrwebapi/pull/182). New tickets are no longer accepted and the servers will shut down in a few months once all live tickets have been voted. As of writing, there are 280 live tickets or 0.7% of the ticket pool. The VSP worked for 2.5 years since its launch in [May 2021](202105.md#ecosystem) and voted ~23,260 tickets, with 175 or 0.75% tickets revoked. We can't see the exact missed count since it has not upgraded to vspd v1.3.0, but it should be very small and most of "revoked" are likely expired tickets because ~0.5% of all tickets expire [by design](https://docs.decred.org/proof-of-stake/overview/). Thanks to [Frank Braun](https://frankbraun.org/) for running the service!
+- [123.dcr.rocks](https://123.dcr.rocks/) 宣布它已[关闭](https://github.com/decred/dcrwebapi/pull/182)。 不再接受新票，一旦所有现场票都被投票，服务器将在几个月内关闭。 截至撰写本文时，现场门票数量为 280 张，占门票池的 0.7%。 VSP 自 [2021 年 5 月](202105.md#ecosystem) 推出以来，已经运行了 2.5 年，共投票了约 23,260 张票，其中 175 票或 0.75% 的票被撤销。 我们无法看到确切的错过计数，因为它尚未升级到 vspd v1.3.0，但它应该非常小，并且大多数“撤销”可能是过期票证，因为约 0.5% 的票证[按设计]（https ://docs.decred.org/proof-of-stake/overview/）。 感谢 [Frank Braun](https://frankbraun.org/) 运行该服务！
 
-- As of November 1st, 9 VSPs have upgraded to vspd [v1.3.1](https://github.com/decred/vspd/releases/tag/release-v1.3.1), 4 VSPs run v1.3.0, and 2 VSPs are on v1.2.0 (of which 1 is closing).
+- 截至 11 月 1 日，9 个 VSP 已升级到 vspd [v1.3.1](https://github.com/decred/vspd/releases/tag/release-v1.3.1)，4 个 VSP 运行 v1.3.0，2 个 VSP 运行 v1.3.0 VSP 版本为 v1.2.0（其中 1 个即将关闭）。
+  
+**钱包**:
 
-**Wallets**:
+- Cryptopower被[添加](https://github.com/decred/dcrweb/pull/1144)到[decred.org钱包](https://decred.org/wallets/)，该页面现在列出了4个第一方 和 6 个第三方钱包选项。 如需支持和一般讨论，请加入 [#cryptopower](https://matrix.to/#/!oxOZZtibVUXxXtdPJS:decred.org) Matrix 聊天。
+  
+**其他新闻**：
 
-- Cryptopower was [added](https://github.com/decred/dcrweb/pull/1144) to [decred.org Wallets](https://decred.org/wallets/), the page now lists 4 first party and 6 third party wallet options. For support and general discussion please join the [#cryptopower](https://matrix.to/#/!oxOZZtibVUXxXtdPJS:decred.org) Matrix chat.
+- [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) 聊天（首先发布上述更新）仅限于在讨论和研究进行时发布新闻 搬到新的 [#ecochat](https://chat.decred.org/#/room/#ecochat:decred.org) 房间。 订阅者现在可以更快地阅读新闻，而不必跳过休闲聊天，并启用更响亮的通知，以免错过任何帖子。 既然房间也可以在 Discord 上使用，那么这应该可以更好地扩展。
 
-**Other news**:
-
-- The [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) chat (where the above updates are posted first) has been restricted to posting news only while discussion and research has moved to the new [#ecochat](https://chat.decred.org/#/room/#ecochat:decred.org) room. Subscribers can now read the news faster without having to skip casual chat, and enable louder notifications to not miss any posts. This should scale better too now that the room is also available on Discord.
-
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+警告：Decred Journal 的作者不知道上述任何服务的可信度。 在将您的个人信息或资产委托给任何实体之前，请先进行自己的研究。
 
 
 <a id="outreach"></a>
 
-## Outreach
+## 外展
 
 
 <a id="decred-vanguard"></a>
 
 ### Decred Vanguard
 
-Decred Vanguard is a community-based marketing effort with the goal of increasing Decred's outreach and social media presence.
+Decred Vanguard 是一项基于社区的营销活动，旨在扩大 Decred 的外展范围和社交媒体影响力。
 
-Are you a meme creator, artist, strategist, or just someone passionate about the Decred Project? We're expanding our community-driven marketing program, and we want YOU!
+您是模因创造者、艺术家、战略家，还是只是对 Decred 项目充满热情的人？ 我们正在扩大我们的社区驱动的营销计划，我们需要您！
 
-What's in it for you?
+这对你有什么好处？
 
-- Earn $100 in DCR every month just for participating.
-- We'll cover the cost of your X Premium.
-- No strict rules on participation. Contribute in your own unique way, whenever you can.
-- Win potential prizes for contributions.
+- 仅参与即可每月赚取 100 美元 DCR。
+- 我们将承担您的 X Premium 费用。
+- 没有严格的参与规则。 只要有可能，就以自己独特的方式做出贡献。
+- 赢得潜在的贡献奖。
 
-We are always testing out new giveaways and running meme contests with prizes!
+我们一直在测试新的赠品并举办有奖模因竞赛！
 
-Interested? Contact @Exitus on Twitter/Matrix/Discord.
+感兴趣的？ 在 Twitter/Matrix/Discord 上联系@Exitus。
 
 
 <a id="cypherpunk-times"></a>
 
 ### Cypherpunk Times
 
-Cypherpunk Times has onboarded ZecHub from the Zcash community, and their first article [Social media data collection, does it matter?](https://www.cypherpunktimes.com/tag/zechub/) is now available.
+Cypherpunk Times 已经从 Zcash 社区加入了 ZecHub，他们的第一篇文章 [社交媒体数据收集，这重要吗？](https://www.cypherpunktimes.com/tag/zechub/) 现已发布。
 
-Engagement stats for October 2023:
+2023 年 10 月的参与度统计数据：
 
-- Total number of articles on CT: 565
-- Newsletter subscribers: 110
-- New CT posts and newsletters sent: 26
-- Active social media campaigns: 89
-- Completed social media campaigns: 31
-- Social media posts: 220
-- Social media followers across all platforms and accounts: 1,675
-- [@decredsociety](https://twitter.com/decredsociety) Twitter: followers - 985, tweet impressions - 8.4K, likes - 157, retweets - 37
-- [@decredmagazine](https://twitter.com/decredmagazine) Twitter: followers - 498, tweet impressions - 16.5K, likes - 413, retweets - 112
-- [@cypherpunktimes](https://twitter.com/cypherpunktimes) Twitter: followers - 192, tweet impressions - 24.0K, likes - 271, retweets - 84
-- Posts by project for October: ZCash - 1, Firo - 9, Decred - 8, other crypto projects - 3
+- CT上的文章总数：565
+- 时事通讯订阅者：110
+- 发送的新 CT 帖子和时事通讯：26
+- 活跃的社交媒体活动：89
+- 已完成的社交媒体活动：31
+- 社交媒体帖子：220
+- 所有平台和帐户的社交媒体关注者：1,675
+- [@decredsociety](https://twitter.com/decredsociety) Twitter：关注者 - 985，推文展示次数 - 8.4K，点赞 - 157，转发 - 37
+- [@decredmagazine](https://twitter.com/decredmagazine) Twitter：关注者 - 498，推文展示次数 - 16.5K，点赞 - 413，转发 - 112
+- [@cypherpunktimes](https://twitter.com/cypherpunktimes) Twitter：关注者 - 192，推文展示次数 - 24.0K，点赞 - 271，转发 - 84
+- 10 月份按项目发布的帖子：ZCash - 1、Firo - 9、Decred - 8、其他加密项目 - 3
 
 
-### Other
+### 其它
 
-- Decred's [logo](https://coinmarketcap.com/currencies/decred/) on CoinMarketCap has been [updated](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$x6LYvmchy5mT06FVTI2RJxnz-nQQZ0gxtK20GpUBlEA) to be more visible, especially when the icon is shown in small size.
-- DCR was [removed](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$1QpVA7AJ1nygVaB5QspR2lcKNorh_4LM1isW6n-lxiM) from CoinMarketCap's list of [Privacy Tokens](https://coinmarketcap.com/view/privacy/). A request has been made to add it back.
-- Decred was added to CoinGecko's [Layer 1](https://www.coingecko.com/en/categories/layer-1) list via an email request.
-- A request has been made to add Decred to Privacy Guide's [Cryptocurrency](https://www.privacyguides.org/en/tools/#cryptocurrency) category.
-- DCR was [pitched](https://twitter.com/exitusdcr/status/1717347009785397391) to AgoraDesk exchange.
-- @Tivra made a [Twitter poll](https://twitter.com/WasPraxis/status/1718001388355981568) asking if Decred should be renamed/rebranded. Results from 229 votes: 25% "Yes, find a better name", 42% "No, too late for that", 32% "Indifferent".
+- CoinMarketCap 上的 Decred [徽标](https://coinmarketcap.com/currencies/decred/) 已[更新](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$x6LYvmchy5mT06FVTI2RJxnz-nQQZ0gxtK20GpUBlEA) 为 更加明显，尤其是当图标以小尺寸显示时。
+- DCR 已从 CoinMarketCap 的[隐私代币](https://coinmarketcap.com/view/privacy/)列表中[删除](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$1QpVA7AJ1nygVaB5QspR2lcKNorh_4LM1isW6n-lxiM) ）。 已请求将其添加回来。
+- Decred 通过电子邮件请求添加到 CoinGecko 的 [Layer 1](https://www.coingecko.com/en/categories/layer-1) 列表中。
+- 已请求将 Decred 添加到隐私指南的 [加密货币](https://www.privacyguides.org/en/tools/#cryptocurrency) 类别。
+- DCR 被[推介](https://twitter.com/exitusdcr/status/1717347009785397391) 到 AgoraDesk 交易所。
+- @Tivra 进行了 [Twitter 民意调查](https://twitter.com/WasPraxis/status/1718001388355981568)，询问 Decred 是否应该重命名/重新命名。 229 票的结果：25%“是，找一个更好的名字”，42%“不，太晚了”，32%“无所谓”。
 
-These efforts demonstrate that everyone can contribute something to facilitate an integration, update various websites to present accurate information about the project, create educational content, run surveys, or just tell the world about Decred. Every little bit helps!
+这些努力表明，每个人都可以贡献一些东西来促进集成、更新各种网站以提供有关项目的准确信息、创建教育内容、进行调查，或者只是向世界介绍 Decred。 每一点点都有帮助！
 
 
 <a id="media"></a>
 
-## Media
+## 媒体
 
-**Selected articles**
+**精选文章**
 
-General crypto & some Decred:
+通用加密货币和一些 Decred：
 
-- [The psychology of crypto investing: Understanding market sentiment](https://www.cypherpunktimes.com/the-psychology-of-crypto-investing-understanding-market-sentiment/) by @tallamericano
-- Crypto wallets: Keeping your digital coins safe and secure [Part 1](https://www.cypherpunktimes.com/crypto-wallets-keeping-your-digital-coins-safe-and-secure/), [Part 2](https://www.cypherpunktimes.com/crypto-wallets-keeping-your-digital-coins-safe-and-secure-2-3/), and [Part 3](https://www.cypherpunktimes.com/crypto-wallets-keeping-your-digital-coins-safe-and-secure-3-3/) by @tallamericano
-- [Brazilian congress launches a blockchain parliamentary front](https://www.cypherpunktimes.com/bazilian-congress-launches-a-blockchain-parliamentary-front/) by @Joao
-- [SocialFi and security](https://www.cypherpunktimes.com/socialfi-and-security/) by @BlockchainJew
-- [What is going on with Ethereum?](https://www.cypherpunktimes.com/what-is-going-on-with-ethereum/) by @Joao
-- [Social media data collection, does it matter?](https://www.cypherpunktimes.com/social-media-data-collection-does-it-matter/) by @ZecHub - addresses the "I have nothing to hide" mindset
-- [U.S. government holds a lot of Bitcoin! Is this a problem?](https://www.cypherpunktimes.com/u-s-government-holds-a-lot-of-bitcoin-is-this-a-problem/) by @Joao
-- [Decred vs Siacoin](https://www.cypherpunktimes.com/decred-vs-siacoin/) by @Joao
+- [加密货币投资心理学：理解市场情绪](https://www.cypherpunktimes.com/the-psychology-of-crypto-investing-understanding-market-sentiment/)  @tallamericano
+- 加密钱包：确保您的数字货币安全 [第 1 部分](https://www.cypherpunktimes.com/crypto-wallets-keeping-your-digital-coins-safe-and-secure/)，[第 2 部分](https://www.cypherpunktimes.com/crypto-wallets-keeping-your-digital-coins-safe-and-secure-2-3/)，以及[第 3 部分](https://www.cypherpunktimes.com/crypto-wallets-keeping-your-digital-coins-safe-and-secure-3-3/)  @tallamericano
+- [巴西国会推出区块链议会阵线](https://www.cypherpunktimes.com/bazilian-congress-launches-a-blockchain-parliamentary-front/)  @Joao
+- [SocialFi 和安全](https://www.cypherpunktimes.com/socialfi-and-security/)  @BlockchainJew
+- [以太坊发生了什么？](https://www.cypherpunktimes.com/what-is-going-on-with-ethereum/)  @Joao
+- [社交媒体数据收集，这重要吗？](https://www.cypherpunktimes.com/social-media-data-collection-does-it-matter/)  @ZecHub 
+- [我们。 政府持有大量比特币！ 这是一个问题吗？](https://www.cypherpunktimes.com/u-s-government-holds-a-lot-of-bitcoin-is-this-a-problem/)  @Joao
+- [Decred 与 Siacoin](https://www.cypherpunktimes.com/decred-vs-siacoin/) @Joao
 
-**Videos**
+**视频**
 
-- [Bison Relay upgrades to version 0.19](https://www.youtube.com/watch?v=Wz0Gn7Kdjeo) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/bison-relay-upgrades-to-version-0-19/)
-- [Decred News - Blockchain evolved, BLAKE3 & ASERT, dev updates & DEX road map!](https://www.youtube.com/watch?v=DGgB6YsbDXk) by @Exitus
+- [Bison Relay 升级到版本 0.19](https://www.youtube.com/watch?v=Wz0Gn7Kdjeo)  @phoenixgreen 
+- [Decred 新闻 - 区块链进化、BLAKE3 和 ASERT、开发更新和 DEX 路线图！](https://www.youtube.com/watch?v=DGgB6YsbDXk)  @Exitus
 
-Q&A Sessions by @phoenixgreen:
+@phoenixgreen 的问答环节：
 
-- [The best cryptocurrencies to hold when exchanging for Decred](https://www.youtube.com/watch?v=fYCNaY3MKps) - also on [Spotify](https://podcasters.spotify.com/pod/show/cypherpunktimes/episodes/The-best-cryptocurrencies-to-hold-when-exchanging-for-Decred---QA-Sessions-e2aeevt) and as a [text post](https://www.cypherpunktimes.com/the-best-cryptocurrencies-to-hold-when-exchanging-for-decred/)
-- [What utility does Decred have?](https://www.youtube.com/watch?v=vUkHWs2bX4s) - also on [Spotify](https://podcasters.spotify.com/pod/show/cypherpunktimes/episodes/What-utility-does-Decred-have----QA-Sessions-e2apn15) and as a [text post](https://www.cypherpunktimes.com/what-utility-does-decred-have/)
-- [What's the best way to hold Decred](https://www.youtube.com/watch?v=RjsNn6ZQGGI) - also on [Spotify](https://podcasters.spotify.com/pod/show/cypherpunktimes/episodes/Whats-the-best-way-to-hold-Decred---QA-Sessions-e2b60of) and as a [text post](https://www.cypherpunktimes.com/whats-the-best-way-to-hold-decred-q-a-sessions/)
+- [兑换 Decred 时最好持有的加密货币](https://www.youtube.com/watch?v=fYCNaY3MKps)
+- [Decred 有什么实用程序？](https://www.youtube.com/watch?v=vUkHWs2bX4s)
+- [持有 Decred 的最佳方式是什么](https://www.youtube.com/watch?v=RjsNn6ZQGGI)
+  
+直播:
 
-Live streams:
+- [Decred 即将回归移动设备 - 市场状况](https://www.youtube.com/watch?v=aAklt_V6EY8)，作者：@phoenixgreen 和 @Exitus feat
+  
+短视频:
 
-- [Decred is coming back to mobile - State of the Market](https://www.youtube.com/watch?v=aAklt_V6EY8) by @phoenixgreen and @Exitus feat. @dreacot ([Spotify](https://podcasters.spotify.com/pod/show/cypherpunktimes/episodes/Decred-is-coming-back-to-mobile-e2a5eko))
+- [Decred - 从 ASIC 切换到 GPU 挖矿！](https://www.youtube.com/watch?v=q2Efh2Q2AZ4)，作者：@DajanaDcr 和 @Exitus 
+- [Decred 正在进化货币。 安全、治理、隐私和永无止境的路线图](https://www.youtube.com/watch?v=h4xDz0PiyhE) 作者：@DajanaDcr 和 @Exitus
+  
+**音频**
 
-Shorts:
+- [“Decred：引领区块链、隐私和去中心化治理的未来。” 与 Jake Yocom-Piatt 首席技术官兼 Decred 项目负责人的深入对话](https://podcasters.spotify.com/pod/show/blockchain-dxb/episodes/Decred-Navigating-the-Future-of-Blockchain--Privacy--and-Decentralized-Governance--An-insightful-conversation-with-Jake-Yocom-Piatt-CTO--Project-lead-for-Decred-e2ad684) 由区块链 DXB 壮举。 @jy-p -
+  
+**翻译**
 
-- [Decred - Switch from ASIC to GPU mining!](https://www.youtube.com/watch?v=q2Efh2Q2AZ4) by @DajanaDcr and @Exitus - also on [TikTok](https://www.tiktok.com/@decred_crypto/video/7285169725930294561)
-- [Decred is evolving money. Security, governance, privacy, and a never-ending roadmap](https://www.youtube.com/watch?v=h4xDz0PiyhE) by @DajanaDcr and @Exitus - also on [TikTok](https://www.tiktok.com/@decred_crypto/video/7296103794012638497)
-
-**Audio**
-
-- ["Decred: Navigating the future of blockchain, privacy, and decentralized governance." An insightful conversation with Jake Yocom-Piatt CTO & Project lead for Decred](https://podcasters.spotify.com/pod/show/blockchain-dxb/episodes/Decred-Navigating-the-Future-of-Blockchain--Privacy--and-Decentralized-Governance--An-insightful-conversation-with-Jake-Yocom-Piatt-CTO--Project-lead-for-Decred-e2ad684) by Blockchain DXB feat. @jy-p - secured by @l1ndseymm, also on [Apple Podcasts](https://podcasts.apple.com/us/podcast/decred-navigating-the-future-of-blockchain/id1515214520?i=1000630845282)
-
-**Translations**
-
-- [SocialFi and security](https://www.cypherpunktimes.com/socialfi-and-security/) - in [Chinese](https://github.com/DominicTing/articles/blob/master/SocialFi%20and%20Security.md) by @Dominic
-- [The psychology of crypto investing: understanding market sentiment](https://www.cypherpunktimes.com/the-psychology-of-crypto-investing-understanding-market-sentiment/) - in [Chinese](https://github.com/DominicTing/articles/blob/master/RESEARCH%20%26%20ANALYTICS%20The%20Psychology%20of%20Crypto%20Investing:%20Understanding%20Market%20Sentiment.md) @Dominic
-- Decred Journal July-August got a total of 3 new [translations](https://xaur.github.io/decred-news/) to Arabic (@arij) and Polish (@kozel). Thank you for your work!
-
-**Non-English content**
+- [SocialFi 与安全](https://www.cypherpunktimes.com/socialfi-and-security/) - 中文@Dominic
+- [加密货币投资心理学：了解市场情绪](https://www.cypherpunktimes.com/the-psychology-of-crypto-investing-understanding-market-sentiment/) - 中文 @Dominic
+- Decred 月报 7 月至 8 月总共获得了 3 个阿拉伯语 (@arij) 和波兰语 (@kozel) 的新[翻译](https://xaur.github.io/decred-news/)。 感谢你们的工作！
+  
+**非英语内容**
 
 - [Decred solo mining with BzMiner on Windows tutorial](https://www.youtube.com/watch?v=T1S7mB2EHw4) by @makertronic (French)
 - [Decred BLAKE3 GPU mining](https://www.cryptoprofi.info/?p=14427) article (Russian)
@@ -578,92 +578,100 @@ Shorts:
 
 - [Decred developer "Ask Me Anything" (AMA) feat. dev lead Dave Collins](https://www.reddit.com/r/decred/comments/1700xyi/decred_developer_ask_me_anything_ama_feat_dev/)
 
-**Art and fun**
+**艺术与乐趣**
 
-- [Bison, Lightning work and to the moon](https://twitter.com/real_sussey/status/1708600475560673512) - acrylic painting by @real\_sussey (meme contest winner)
-- [Bison Relay v0.1.9 release](https://twitter.com/karamblez/status/1709678998966476853) animation by @karamble
-- [Decred hodlers waiting for the inevitable supply shock](https://www.youtube.com/watch?v=v8CpyZcHh-8) by @Exitus
-- [Blast from the past](https://www.cypherpunktimes.com/blast-from-the-past/) by @OfficialCryptos
-- @Exitus' [meme contest](https://twitter.com/exitusdcr/status/1708184512805405096) collected so many entries that the amount of [winners](https://twitter.com/exitusdcr/status/1708981341033816333) was increased from 3 to 6 and the prize pool was doubled to $200. The most bizarre entries are no longer available for good.
+- [野牛、闪电工作和登月](https://twitter.com/real_sussey/status/1708600475560673512) - @real\_sussey （模因大赛获奖者）
+- [Bison Relay v0.1.9 发布](https://twitter.com/karamblez/status/1709678998966476853) 动画由 @karamble 制作
+- [Decred hodlers 等待不可避免的供应冲击](https://www.youtube.com/watch?v=v8CpyZcHh-8)  @Exitus
+- [来自过去的爆炸](https://www.cypherpunktimes.com/blast-from-the-past/)  @OfficialCryptos
+- @Exitus 的 [meme 竞赛](https://twitter.com/exitusdcr/status/1708184512805405096) 收集了如此多的参赛作品，以至于 [获奖者](https://twitter.com/exitusdcr/status/1708981341033816333) 的数量为 奖金从 3 名增加到 6 名，奖金翻倍至 200 美元。 最奇怪的条目将不再可用。
 
-![My parents vs me in 20s by @Andrewke](../img/202310.21.636.jpg)
+![My parents vs me in 20s by @Andrewke](img/202310.21.636.jpg)
 
-_Image: My parents vs me in 20s by @Andrewke_
+_图片：我的父母与 20 多岁时的我，@Andrewke_
 
-![Decred Onyl portfolio by @void](../img/202310.22.486.jpg)
+![Decred Onyl portfolio by @void](img/202310.22.486.jpg)
 
-_Image: Decred Onyl portfolio by @void_
+_图片：Decred Onyl 投资组合，作者：@void_
 
-![Bison, Lightning work and to the moon by @real_sussey](../img/202310.23.576.jpg)
+![Bison, Lightning work and to the moon by @real_sussey](img/202310.23.576.jpg)
 
-_Image: Bison, Lightning work and to the moon by @real\_sussey_
+_图片：野牛、闪电工作和登月，作者：@real\_sussey_
 
 
 <a id="markets"></a>
 
-## Markets
+## 市场
 
-In October DCR was trading between USDT 11.38-14.08 and BTC 0.00036-0.00051. The average daily rate was $12.73.
+10 月份 DCR 的交易价格在 USDT 11.38-14.08 和 BTC 0.00036-0.00051 之间。 平均每日交易价格为 12.73 美元。
 
-![Price performance of DCR, DASH, and ZEC vs USD by @saender](../img/202310.24.1201.jpg)
+![Price performance of DCR, DASH, and ZEC vs USD by @saender](img/202310.24.1201.jpg)
 
-_Image: Price performance of DCR, DASH, and ZEC vs USD by @saender_
+_图片：DCR、DASH 和 ZEC 相对于美元的价格表现，作者：@saender_
 
-![Market valuations (USD) based on @bochinchero's Staked Realized Value model](../img/202310.25.720.webp)
+![Market valuations (USD) based on @bochinchero's Staked Realized Value model](img/202310.25.720.webp)
 
-_Image: Market valuations (USD) based on @bochinchero's [Staked Realized Value](https://bochinchero.medium.com/decred-on-chain-staked-realised-value-444ab5a146d8) model_
+_图片：基于@bochinchero 的[质押已实现价值](https://bochinchero.medium.com/decred-on-chain-staked-realized-value-444ab5a146d8) 模型的市场估值（美元）_
 
-![Recent DCR/BTC, data from Coin Metrics](../img/202310.26.720.webp)
+![Recent DCR/BTC, data from Coin Metrics](img/202310.26.720.webp)
 
-_Image: Recent DCR/BTC, data from Coin Metrics_
+_图片：近期 DCR/BTC，数据来自 Coin Metrics_
 
-![Recent DCR/USD, data from Coin Metrics](../img/202310.27.720.webp)
+![Recent DCR/USD, data from Coin Metrics](img/202310.27.720.webp)
 
-_Image: Recent DCR/USD, data from Coin Metrics_
+_图片：近期 DCR/USD，数据来自 Coin Metrics_
 
-![DCRDEX monthly volume in USD](../img/202310.28.720.webp)
+![DCRDEX monthly volume in USD](img/202310.28.720.webp)
 
-_Image: DCRDEX monthly volume in USD_
+_图片：DCRDEX 每月交易量（美元）_
 
 
 <a id="relevant-external"></a>
 
-## Relevant External
+## 相关外部信息
 
-The Monero Community Crowdfunding System (CCS) wallet was [drained](https://github.com/monero-project/meta/issues/916) of the entire balance of 2,675 XMR (~ $450,000 USD) by an unknown attacker. The XMR in the wallet had been donated by community members to fund approved projects being completed by other community members, and was administered by developers luigi and fluffypony. As of writing, it is not known how the attacker was able to access the funds. Funds were stolen on Sep 1, but the fact was not discovered until late September.
+门罗币社区众筹系统 (CCS) 钱包的 2,675 XMR（约 450,000 美元）的全部余额被未知攻击者耗尽。钱包中的 XMR 由社区成员捐赠，用于资助其他社区成员完成的批准项目，并由开发商 luigi 和 fluffypony 管理。截至撰写本文时，尚不清楚攻击者如何获取这些资金。9月1日资金被盗，但直到9月底才发现事实。
 
-A long term Bitcoin Core developer has [announced](https://cointelegraph.com/news/bitcoin-core-developer-antoine-riard-steps-back-lightning-network-dilemma) he is stepping away from Lightning Network work after a recent class of "replacement cycling" attacks has been discovered to allow theft of funds from payment channels, with no apparent fix that does not require changes to Bitcoin at the level of the consensus rules. For Antoine Riard this was the final straw, when it became clear that Lightning Network is not on a trajectory to become usable in the way it was originally intended.
+一位长期比特币核心开发人员宣布，在最近发现一类“替代循环”攻击允许从支付渠道窃取资金后，他将不再从事闪电网络工作，而且没有明显的解决方案不需要对比特币进行更改。共识规则的级别。对于 Antoine Riard 来说，这是最后一根稻草，因为很明显闪电网络并没有按照最初的预期方式变得可用。
 
-THORswap, a decentralized exchange on the THORchain platform, put its front end into [maintenance](https://twitter.com/THORSwap/status/1710162462639575065) mode as a response to funds from the $475M FTX hack being exchanged from ETH to BTC on the platform. Around $120M was exchanged before THORswap went into maintenance mode, but the hacker still managed to [bridge](https://www.theblock.co/post/256127/elliptic-finds-apparent-russian-connection-in-laundering-of-ftx-stolen-funds) funds to THORchain using other venues. Around one week later THORswap [resumed](https://www.theblock.co/post/256301/thorswap-resumes-with-updated-terms-to-exclude-users-from-sanctioned-countries) front end services with a change to the terms of use forbidding users from countries sanctioned by the US, UK or European Union - and an unnamed chain surveillance partner to assist with identifying addresses associated with these jurisdictions.
+THORchain 平台上的去中心化交易所 THORswap 将其前端置于维护模式，以应对 4.75 亿美元 FTX 黑客攻击导致的资金在平台上从 ETH 兑换成 BTC 的情况。在 THORswap 进入维护模式之前，大约交换了 1.2 亿美元，但黑客仍然设法利用其他场所将资金转移到 THORchain。大约一周后，THORswap恢复了前端服务，并更改了使用条款，禁止来自美国、英国或欧盟制裁国家的用户，并有一个未具名的链监控合作伙伴协助识别与这些司法管辖区相关的地址。
 
-Thor Technologies (unrelated to THOR chain or swap) and founder David Chin lost their case with the SEC in a [default](https://www.coindesk.com/policy/2023/10/20/sec-scores-default-win-against-thor-token-company-and-founder-david-chin/) judgment. The charges were brought in December 2022 for raising $2.6 million in an unregistered securities offering for the THOR token, which was supposed to have had something to do with the gig economy. Thor Technologies already shut down in April 2019 blaming "regulatory issues".
+Thor Technologies（与 THOR 链或互换无关）和创始人 David Chin 在 SEC 的缺席判决中败诉。这些指控于 2022 年 12 月提出，指控其通过未经注册的 THOR 代币证券发行筹集了 260 万美元，这被认为与零工经济有关。Thor Technologies 已于 2019 年 4 月因“监管问题”而关闭。
 
-The New York Attorney General has [brought](https://unchainedcrypto.com/ny-attorney-general-sues-crypto-firms-gemini-genesis-and-dcg-for-over-1-billion-fraud/) a case against Gemini, Genesis and Digital Currency Group (DCG), accusing them of defrauding investors of more than $1 billion. The case centers on the "Gemini Earn" program which allowed customers to lend assets to the companies for a fixed rate of return, and it was promoted as a low-risk investment even though internal investigations from the time found that the financial position of the firms was precarious. The collapse of the program and losses suffered by investors are one of the points of friction in the ongoing dispute between the Winklevoss twins who operate Gemini, and Barry Silbert, the CEO of DCG.
+纽约总检察长对 Gemini、Genesis 和数字货币集团 (DCG)提起诉讼，指控他们诈骗投资者超过 10 亿美元。该案以“Gemini Earn”计划为中心，该计划允许客户以固定回报率将资产借给公司，并被宣传为低风险投资，尽管当时的内部调查发现该公司的财务状况公司岌岌可危。该项目的失败和投资者遭受的损失是运营 Gemini 的文克莱沃斯双胞胎与 DCG 首席执行官巴里·西尔伯特之间持续争论的摩擦点之一。
 
-Reddit [announced](https://techcrunch.com/2023/10/17/reddit-is-phasing-out-community-points-blockchain-rewards) the end of its experiment with Community Points (MOON and BRICK tokens for the /r/cryptocurrency and /r/fortnite subreddits), and the prices for the tokens promptly plunged. The reason given for the decision is difficulty and resource costs associated with scaling the system to the rest of the platform's communities. The 3-year experiment started with tokens tradeable on Ethereum, then to reduce costs it was moved to Arbitrum Nova, an Ethereum Layer 2 - but Reddit has decided to abandon the decentralized ledger aspect of any future Community Points alternative.
+Reddit宣布结束社区积分实验（/r/cryptocurrency 和 /r/fortnite subreddits 的 MOON 和 BRICK 代币），代币的价格迅速暴跌。做出该决定的原因是，将系统扩展到平台社区的其他部分时存在困难和资源成本。这项为期 3 年的实验从可在以太坊上交易的代币开始，然后为了降低成本，它被转移到以太坊第 2 层 Arbitrum Nova，但 Reddit 决定放弃任何未来社区积分替代方案的去中心化账本方面。
 
-It was [noted](https://twitter.com/Pledditor/status/1714610041699930439) that 3 of the moderators of /r/cryptocurrency who had early warning of the news used this opportunity to dump their MOONs, causing a 22% drop in price just before the news came out and the price declined 90%. These moderators were [removed](https://www.coindesk.com/markets/2023/10/23/reddit-crypto-community-removes-moderators-accused-of-moon-insider-trading/) by the rest of the mod team, who stated an intent to keep the MOONs token going in some form on the subreddit.
+值得注意的是，3位提前预警该消息的/r/加密货币版主趁此机会抛售MOON，导致消息传出前币价暴跌22%，跌幅达90%。这些版主被模组团队的其他成员移除，他们表示打算让 MOONs 代币以某种形式在 Reddit 子版块上继续运行。
 
-Huobi exchange was hacked for 5,000 ETH (~$8M) but the hacker took Justin Sun's offer of a 5% bounty and a job as a security consultant for [returning](https://twitter.com/justinsuntron/status/1710687727686160676) the funds.
+火币交易所遭到黑客攻击，损失了 5,000 ETH（约合 800 万美元），但黑客接受了孙宇晨提供的 5% 赏金和安全顾问工作，以返还资金。
 
-The Wall Street Journal published a series of [articles](https://www.wsj.com/world/middle-east/militants-behind-israel-attack-raised-millions-in-crypto-b9134b7a) about Hamas and Palestinian Islamic Jihad which stated that the organizations were successfully raising millions of dollars worth of cryptocurrency, which was apparently based on a mis-reading of the on chain data. [Chainalysis](https://www.coindesk.com/consensus-magazine/2023/10/19/hamas-crypto-funding-likely-overstated-chainalysis/) and Elliptic have indicated that their reading of the data is very different, with many of the entities caught up in the higher amounts being intermediaries with no direct links to terror funding. Nic Carter has been leading the criticism of the articles, including with a [bounty](https://twitter.com/nic__carter/status/1717622001014067417) program for open source analyses funded with $10,500 initially then increased with further contributions by other funders and supplemented with other bounty [programs](https://twitter.com/ArkhamIntel/status/1719363225827922004). The WSJ have since [rolled back](https://twitter.com/nic__carter/status/1717997939140722758) some of the claims in the original article, but it is not clear if that has diminished the enthusiasm of the 104 Congressional representatives who [signed](https://www.forbes.com/sites/digital-assets/2023/11/08/how-misinformation-on-hamas-and-crypto-fooled-nearly-20-of-congress/) a letter calling for enquiries into crypto fundraising by Hamas on the strength of the original article.
+《华尔街日报》发表了一系列有关哈马斯和巴勒斯坦伊斯兰圣战组织的文章，称这些组织成功筹集了价值数百万美元的加密货币，这显然是基于对链上数据的误读。Chainaanalysis和 Elliptic 表示，他们对数据的解读非常不同，许多涉案金额较高的实体都是与恐怖融资没有直接联系的中介机构。Nic Carter 一直在带头批评这些文章，其中包括一项用于开源分析的赏金计划，最初资助 10,500 美元，然后随着其他资助者的进一步捐款而增加，并辅以其他赏金计划。此后，《华尔街日报》撤回了原文章中的一些说法，但尚不清楚这是否削弱了 104 名国会代表的热情，他们签署了一封信，呼吁根据原文章对哈马斯的加密货币筹款活动进行调查。
 
-Su Zhu, of Three Arrows Capital infamy, was [arrested](https://techcrunch.com/2023/09/29/three-arrows-capital-co-founder-zhu-arrested-in-singapore-airport-sentenced-four-months-in-prison) while trying to leave Singapore and sentenced to 4 months in prison as a consequence of failing to cooperate with the 3AC bankruptcy process.
+三箭资本臭名昭著的苏珠在试图离开新加坡时被捕，并因不配合 3AC 破产程序而被判处 4 个月监禁。
 
-NiceHash is ending its service for UK residents, according to [emails](https://www.reddit.com/r/NiceHash/comments/16tl5jg/nicehash_is_leaving_the_uk/) it sent to existing users in late September. Services to block UK users include the hashpower marketplace, mining pools and exchange - the organization cited "recent regulation changes" as the motivating factor but did not give more specific information.
+根据9 月底向现有用户发送的电子邮件，NiceHash 将终止为英国居民提供的服务。阻止英国用户的服务包括算力市场、矿池和交易所——该组织将“最近的监管变化”作为推动因素，但没有提供更具体的信息。
 
-That's all for October. Suggest news for the next issue in our [#journal](https://chat.decred.org/#/room/#journal:decred.org) chat room.
+这就是九月的全部内容。 在我们的 [#journal](https://chat.decred.org/#/room/#journal:decred.org) 聊天室中建议下一期的新闻。
 
 
-## About
+## 关于月报
 
-This is issue 64 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是 Decred 月报的第 64 期。 [此处](https://xaur.github.io/decred-news/) 提供所有问题、镜像和翻译的索引。
 
-Most information from third parties is relayed directly from the source after a minimal sanity check. The authors of the Decred Journal cannot verify all claims. Please beware of scams and do your own research.
+来自第三方的大多数信息都是在经过最低限度的健全性检查后直接从源头转发的。 Decred 月报的作者无法验证所有声明。请提防诈骗并自行研究。
 
-Credits (alphabetical order):
+感谢（字母顺序）：
 
-- writing, editing, publishing: bee, bochinchero, Exitus, jz, karamble, kozel, phoenixgreen, richardred
-- reviews and feedback: davecgh
-- title image: Exitus
-- funding: Decred stakeholders
+- 写作、编辑、出版：bee、bochinchero、Exitus、jz、karamble、kozel、phoenixgreen、richardred
+- 评论和反馈：davecgh
+- 标题图片：Exitus
+- 资金来源：Decred 利益相关者
+
+
+## 中文社区
+
+* [推特](https://twitter.com/DecredCN)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [bilibili频道](https://space.bilibili.com/425519478)  
+
