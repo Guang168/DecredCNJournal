@@ -235,7 +235,7 @@ _[Cryptopower](https://github.com/crypto-power/cryptopower) 是一款适用于 D
 - 在顶级“钱包”选项卡上实施了[钱包选择器](https://github.com/crypto-power/cryptopower/pull/166)的新布局。
 - 添加了可重复使用的[隐藏余额](https://github.com/crypto-power/cryptopower/pull/203)小部件。
 - 允许从“创建订单”页面[创建新钱包](https://github.com/crypto-power/cryptopower/pull/196)。
-- 在[交易选项卡](https://github.com/crypto-power/cryptopower/pull/218)上实施了新的入门布局（[选择](https://github.com/crypto-power/cryptopower/issues /80) CEX 和 DEX 之间的交易)。
+- 在[交易选项卡](https://github.com/crypto-power/cryptopower/pull/218)上实施了新的入门布局（选择CEX 和 DEX 之间的交易)。
 - 将[钱包主页](https://github.com/crypto-power/cryptopower/pull/201)上的左侧边栏替换为顶部的选项卡。
 
 修复：
@@ -300,7 +300,7 @@ Android:
 
 ### 其它
 
-[VSP 列表 API](https://github.com/decred/dcrwebapi/blob/master/docs/api.md) 现在公开[错过和过期](https://github.com/decred/dcrwebapi/pull/ 180) 票证单独计数，这样可以更准确地评估 VSP 的可靠性。 错过的次数越少越好，而过期的票证是正常的，并不表示 VSP 存在问题。
+[VSP 列表 API](https://github.com/decred/dcrwebapi/blob/master/docs/api.md) 现在公开[错过和过期](https://github.com/decred/dcrwebapi/pull/180) 选票单独计数，这样可以更准确地评估 VSP 的可靠性。 错过的次数越少越好，而过期的票证是正常的，并不表示 VSP 存在问题。
 
 @Exitus 组织了一个 Decred 开发者“Ask Me Anyting”（AMA）[Reddit 主题](https://www.reddit.com/r/decred/comments/1700xyi/decred_developer_ask_me_anything_ama_feat_dev/)，收集了 77 条评论，其中一些要点：
 
@@ -372,7 +372,7 @@ _图片：国库每月余额（美元）； 请注意，这在很大程度上取
 
 _图片：Decred 算力现在由 GPU 主导并以 terahash 为单位_
 
-截至 11 月 1 日，[开采](https://miningpoolstats.stream/decred) 的 1,000 个区块的分布：[miningandco.com](https://decred.miningandco.com/) 20%，[pooltronic.tech](https: //decred.pooltronic.tech/) 9%、[blake3dcr.com](https://blake3dcr.com/) 3% 和 68% 的区块未被 miningpoolstats.stream 识别。
+截至 11 月 1 日，[开采](https://miningpoolstats.stream/decred) 的 1,000 个区块的分布：[miningandco.com](https://decred.miningandco.com/) 20%，[pooltronic.tech](https://decred.pooltronic.tech/)9%、[blake3dcr.com](https://blake3dcr.com/) 3% 和 68% 的区块未被 miningpoolstats.stream 识别。
 
 **质押**：[选票价格](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped)在157-**701** DCR之间变化并创历史新高。
 
@@ -443,11 +443,11 @@ _图：闪电网络锁定的200 DCR重要心理关卡已被打破_
 
 - [decred.miningandco.com](https://decred.miningandco.com/) 由@sebit27 启动。 截至撰写本文时，付款方式为 PPS，池费为 1.0%。
 
-- [decred.pooltronic.tech](https://decred.pooltronic.tech/) 由@makertronic [宣布](https://twitter.com/makertronicYT/status/1716098122617692530)，他还制作了法语视频教程 [Linux 和 Windows](https://www.youtube.com/watch?v=Xsx6uaFA8x4)、[HiveOS](https://www.youtube.com/watch?v=sxuBNhYe9G0) 和 [BzMiner] 上的 GPU 挖掘 在 Windows 上](https://www.youtube.com/watch?v=T1S7mB2EHw4)。 截至撰写本文时，付款方式为 PPLNS，池费为 1.0%。
+- [decred.pooltronic.tech](https://decred.pooltronic.tech/) 由@makertronic [宣布](https://twitter.com/makertronicYT/status/1716098122617692530)，他还制作了法语视频教程 [Linux 和 Windows](https://www.youtube.com/watch?v=Xsx6uaFA8x4)、[HiveOS](https://www.youtube.com/watch?v=sxuBNhYe9G0) 和 [BzMiner] 上的 GPU 挖掘 [在 Windows 上](https://www.youtube.com/watch?v=T1S7mB2EHw4)。 截至撰写本文时，付款方式为 PPLNS，池费为 1.0%。
   
 **投票服务提供商**：
 
-- [vsp.coinmine.pl](https://vsp.coinmine.pl/) 被[重命名](https://github.com/decred/dcrwebapi/pull/179) 为 [decred.stake.fun]( https://decred.stake.fun/）在[VSP页面](https://decred.org/vsp/)和其他使用[VSP API](https://github.com/decred/dcrwebapi)的地方 /blob/master/docs/api.md），例如 Decrediton 或 Cryptopower。 旧域名仍然适用于兼容性。 [Stake.Fun](https://stake.fun/) 是 Decred 和 Radix 的加密质押门户，作为 [CoinMine.pl](https://coinmine.pl/) 的替代品，后者是一个多 硬币矿池于 2013 年推出。该服务由 @feeleep 运营（请参阅[采访](https://medium.com/decred/decred-intriguing-and-extraordinary-an-interview-with-coinmine-pl- 挖矿池运营商-5c5592443cb4) 从 2018 年开始)。 截至撰写本文时，VSP 拥有约 29,200 张投票票，仅次于 [stakey.net](https://stakey.net/)，拥有约 30,000 张投票票。
+- [vsp.coinmine.pl](https://vsp.coinmine.pl/) 被[重命名](https://github.com/decred/dcrwebapi/pull/179) 为 [decred.stake.fun](https://decred.stake.fun/)在[VSP页面](https://decred.org/vsp/)和其他使用VSP API，例如 Decrediton 或 Cryptopower。 旧域名仍然适用于兼容性。 [Stake.Fun](https://stake.fun/) 是 Decred 和 Radix 的加密质押门户，作为 [CoinMine.pl](https://coinmine.pl/) 的替代品，后者是一个多 硬币矿池于 2013 年推出。该服务由 @feeleep 运营。 截至撰写本文时，VSP 拥有约 29,200 张投票票，仅次于 [stakey.net](https://stakey.net/)，拥有约 30,000 张投票票。
 
 - [123.dcr.rocks](https://123.dcr.rocks/) 宣布它已[关闭](https://github.com/decred/dcrwebapi/pull/182)。 不再接受新票，一旦所有现场票都被投票，服务器将在几个月内关闭。 截至撰写本文时，现场门票数量为 280 张，占门票池的 0.7%。 VSP 自 [2021 年 5 月](202105.md#ecosystem) 推出以来，已经运行了 2.5 年，共投票了约 23,260 张票，其中 175 票或 0.75% 的票被撤销。 我们无法看到确切的错过计数，因为它尚未升级到 vspd v1.3.0，但它应该非常小，并且大多数“撤销”可能是过期票证，因为约 0.5% 的票证[按设计]（https ://docs.decred.org/proof-of-stake/overview/）。 感谢 [Frank Braun](https://frankbraun.org/) 运行该服务！
 
@@ -571,12 +571,12 @@ Cypherpunk Times 已经从 Zcash 社区加入了 ZecHub，他们的第一篇文�
   
 **非英语内容**
 
-- [Decred solo mining with BzMiner on Windows tutorial](https://www.youtube.com/watch?v=T1S7mB2EHw4) by @makertronic (French)
-- [Decred BLAKE3 GPU mining](https://www.cryptoprofi.info/?p=14427) article (Russian)
+- [Decred 在 Windows 上使用 BzMiner 单独挖矿教程](https://www.youtube.com/watch?v=T1S7mB2EHw4) 作者：@makertronic（法语）
+- [Decred BLAKE3 GPU 挖矿](https://www.cryptoprofi.info/?p=14427) 文章（俄语）
 
-**Discussions**
+**讨论**
 
-- [Decred developer "Ask Me Anything" (AMA) feat. dev lead Dave Collins](https://www.reddit.com/r/decred/comments/1700xyi/decred_developer_ask_me_anything_ama_feat_dev/)
+- [Decred 开发者“Ask Me Anything”(AMA) 壮举。 开发负责人戴夫·柯林斯](https://www.reddit.com/r/decred/comments/1700xyi/decred_developer_ask_me_anything_ama_feat_dev/)
 
 **艺术与乐趣**
 
