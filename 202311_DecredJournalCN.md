@@ -126,7 +126,7 @@ _[dcrpool](https://github.com/decred/dcrpool) 是用于运行 Decred 矿池的�
 
 _[dcrlnd](https://github.com/decred/dcrlnd) 是 Decred 的闪电网络节点软件。 闪电网络可实现即时低成本交易。_
 
-- dcrlnd 代码库已[同步](https://github.com/decred/dcrlnd/pull/193)，并在 v0.12.1 之间对上游 [lnd](https://github.com/lightningnetwork/lnd) 进行了更改 和 [v0.13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta)（2021 年 11 月发布）。 170 个上游拉取请求中约有 140 个已被移植，带来 451 个新提交，其中包括大约十几个特定于 Decred 的提交，以适应上游更改并简化未来的移植工作。 可以在[此处](https://github.com/decred/dcrlnd/blob/master/docs/upstream-prs.csv)找到移植和跳过的拉取请求的完整列表。 所有值得注意的更改都记录在 lnd 发行说明中：[v0.13.0](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.0-beta)、[v0.13.1](https://github .com/lightningnetwork/lnd/releases/tag/v0.13.1-beta)、[v0.13.3](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.3-beta) 和 [v0 .13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta)。 dcrlnd 已经在一些主网集线器上对生产中应用的这些更改进行了测试。
+- dcrlnd 代码库已[同步](https://github.com/decred/dcrlnd/pull/193)，并在 v0.12.1 之间对上游 [lnd](https://github.com/lightningnetwork/lnd) 进行了更改 和 [v0.13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta)（2021 年 11 月发布）。 170 个上游拉取请求中约有 140 个已被移植，带来 451 个新提交，其中包括大约十几个特定于 Decred 的提交，以适应上游更改并简化未来的移植工作。 可以在[此处](https://github.com/decred/dcrlnd/blob/master/docs/upstream-prs.csv)找到移植和跳过的拉取请求的完整列表。 所有值得注意的更改都记录在 lnd 发行说明中：[v0.13.0](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.0-beta)、[v0.13.1](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.1-beta)、[v0.13.3](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.3-beta)和 [v0 .13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta)。 dcrlnd 已经在一些主网集线器上对生产中应用的这些更改进行了测试。
 - 更新了几个 [Go 库](https://github.com/decred/dcrlnd/pull/194)。
 
 请注意，虽然 Anchor Outputs 在 lnd v0.13 中成为比特币的默认通道类型，但它们在 Decred 上被[禁用](https://matrix.to/#/!FRpxSOMVXBCUXtQsDk:decred.org/$xOjxggI8ida5REJTWq-90TIG_Wfj-FsjiNl3FH__hJA) LN 主网针对诸如 2023 年 10 月披露的 [替换循环](https://cointelegraph.com/news/bitcoin-core-developer-antoine-riard-steps-back-lightning-network-dilemma) 漏洞等攻击提供了额外的安全性 。
@@ -317,7 +317,7 @@ Cake Wallet 正在进行中的工作：
 [libwallet](https://github.com/itswisdomagain/libwallet) 的合并工作：
 
 - 为 DCR、BTC 和 LTC 钱包实现了[基本功能](https://github.com/itswisdomagain/libwallet/pull/1)，包括：创建钱包、创建手表钱包、打开钱包、启动/停止钱包同步 ，设置钱包生日。 它借鉴了 DCRDEX 和 Cryptopower 的一些代码和想法，并构建在用 Go 编写的现有加密货币项目之上，包括：[Decred](https://github.com/decred)、[btcsuite](https://github.com/decred)。 com/btcsuite)、[ltcsuite](https://github.com/ltcsuite)、[Neutrino](https://github.com/lightninglabs/neutrino) 用于 BTC 和 [Neutrino fork](https://github.com/btcsuite)、[Neutrino](https://github.com/lightninglabs/neutrino)。 com/ltcsuite/neutrino）用于 LTC（加上来自 DCRDEX 开发人员的[补丁](https://github.com/dcrlabs/neutrino-ltc)）。
-- 用于保存[钱包配置和交易数据]的存储实现(https://github.com/itswisdomagain/libwallet/pull/3)。
+- 用于保存[钱包配置和交易数据](https://github.com/itswisdomagain/libwallet/pull/3)的存储实现。
 
 libwallet 正在进行中：
 
@@ -371,7 +371,7 @@ _图片：DCR 中的国债流入和流出_
 
 _图片：财政部每月余额（美元）； 请注意，这在很大程度上取决于汇率_
 
- 11 月没有 Politeia 提案[已提交](https://proposals.decred.org/?tab=under%20review)、[已批准](https://proposals.decred.org/?tab=approved) 或[已拒绝] (https://proposals.decred.org/?tab=rejected)。
+ 11 月没有 Politeia 提案[已提交](https://proposals.decred.org/?tab=under%20review)、[已批准](https://proposals.decred.org/?tab=approved) 或[已拒绝](https://proposals.decred.org/?tab=rejected)。
 
 据报道，11 月 23 日，一名用户无法注册并提交提案。 显然 Politeia [没有检测到](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$jmqFcgH8De7TuG2Z9FofSxeBfcYPWn5KMjcG-V6d0bk) 注册费付款。 截至12月1日，该问题尚未解决。
 
@@ -405,7 +405,7 @@ _图片：票价很快就稳定了_
 
 [锁定金额](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time)为927-985万个DCR，这意味着循环供应量的59.4-63.1%[参与](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time)权益证明。
 
-![DCR 锁定的门票保持在其 ATH 附近](../img/202311.14.720.png)
+![DCR 锁定的门票保持在其 ATH 附近](img/202311.14.720.png)
 
 _图片：锁定选票的 DCR 保持在其 ATH 附近_
 
@@ -473,7 +473,7 @@ _图片：LN 节点数量保持不变，但容量略有增加_
 
 - vspd [v1.3.2 版本](https://github.com/decred/vspd/releases/tag/release-v1.3.2) 发布了修复程序，应解决选票状态错误和 VSP 费用支付失败的问题。 截至 12 月 1 日，14 个 VSP 中有 9 个已部署这些修复程序。
 
-- [VSP 列表页面](https://decred.org/vsp/) 已[更新](https://github.com/decred/dcrweb/pull/1148) 以显示所有时间的错过选票统计信息。 截至 12 月 1 日快照，14 个 6 个月至 3 岁之间的活跃 VSP 总共报告了 1,108 个撤销票据，其中 1,101 个[正常]过期(https://docs.decred.org/proof-of-stake/ 概述/），只有 7 人错过了投票。 较低的错过计数表明，与错过率较高的旧 [dcrstakepool](https://github.com/decred/dcrstakepool) 相比，vspd 部署更加可靠。 注意：[bass.cf](https://vspd.bass.cf/) 已被排除在这些数字之外，因为它尚未升级以报告错过的门票。
+- [VSP 列表页面](https://decred.org/vsp/) 已[更新](https://github.com/decred/dcrweb/pull/1148) 以显示所有时间的错过选票统计信息。 截至 12 月 1 日快照，14 个 6 个月至 3 岁之间的活跃 VSP 总共报告了 1,108 个撤销票据，其中 1,101 个正常过期，只有 7 人错过了投票。 较低的错过计数表明，与错过率较高的旧 [dcrstakepool](https://github.com/decred/dcrstakepool) 相比，vspd 部署更加可靠。 注意：[bass.cf](https://vspd.bass.cf/) 已被排除在这些数字之外，因为它尚未升级以报告错过的门票。
 
 
 ### 矿池
@@ -591,7 +591,7 @@ Decred:
 通用加密货币：
 
 - [《Cypherpunk Times》月度综述（2023 年 10 月版）](https://www.cypherpunktimes.com/cypherpunktimes-monthly-roundup-october-2023-edition/) @tallamericano
-- 熊市忧郁：在加密货币低迷中生存和繁荣 [第 1 部分](https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns/) 和 [第 2 部分] （https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns-2-2/）@tallamericano
+- 熊市忧郁：在加密货币低迷中生存和繁荣 [第 1 部分](https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns/) 和 [第 2 部分](https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns-2-2/) @tallamericano
 - [回顾 10 月份主要加密诈骗和黑客攻击](https://www.cypherpunktimes.com/reviewing-major-crypto-scams-and-hacks-in-october/) @BlockchainJew
 - [一年后：FTX 的 Sam Bankman 受到谴责](https://www.cypherpunktimes.com/one-year-after-sam-bankman-from-ftx-is-condemned/)  @Joao
 - [CEX 视图](https://www.cypherpunktimes.com/cex-in-view/) by @BlockchainJew
