@@ -652,7 +652,7 @@ Reddit宣布结束社区积分实验（/r/cryptocurrency 和 /r/fortnite subredd
 
 根据9 月底向现有用户发送的电子邮件，NiceHash 将终止为英国居民提供的服务。阻止英国用户的服务包括算力市场、矿池和交易所——该组织将“最近的监管变化”作为推动因素，但没有提供更具体的信息。
 
-这就是九月的全部内容。 在我们的 [#journal](https://chat.decred.org/#/room/#journal:decred.org) 聊天室中建议下一期的新闻。
+这就是十月的全部内容。 在我们的 [#journal](https://chat.decred.org/#/room/#journal:decred.org) 聊天室中建议下一期的新闻。
 
 
 ## 关于月报
