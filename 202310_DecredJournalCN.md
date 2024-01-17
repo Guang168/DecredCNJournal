@@ -51,7 +51,7 @@ _图片：@Exitus_
 
 <a id="development"></a>
 
-## 开发紧张总结
+## 开发进展总结
 
 除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
