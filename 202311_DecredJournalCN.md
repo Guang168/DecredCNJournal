@@ -1,4 +1,4 @@
-Decred 月报 – 2023 年 11 月
+# Decred 月报 – 2023 年 11 月
 
 ![November cover by @Exitus](img/202311.01.768.jpg)
 
