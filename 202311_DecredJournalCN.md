@@ -2,750 +2,738 @@
 
 ![November cover by @Exitus](img/202311.01.768.jpg)
 
-_Image: November cover by @Exitus_
+_图片：@Exitus_
 
-_Time was a big challenge for me in December and we are releasing this very late. Sorry for the wait! \[@bee\]_
+_12 月的时间对我来说是一个很大的挑战，我们很晚才发布这个。 抱歉，久等了！ \[@蜜蜂\]_
 
-Highlights of November:
+11 月亮点：
 
-- Proof of concept mesh network design has been proposed for DCRDEX.
+- 已为 DCRDEX 提出概念证明网状网络设计。
 
-- Private testing of Android and iOS builds of Cryptopower has begun.
+- Cryptopower 的 Android 和 iOS 版本的内部测试已经开始。
 
-- Decred's Lightning Network received a massive update to the upstream lnd v0.13 codebase.
+- Decred 的闪电网络收到了上游 lnd v0.13 代码库的大规模更新。
 
-- Poloniex and HTX got hacked and disabled DCR withdrawals for weeks. Bittrex announced that it is closing and urged users to withdraw.
+- Poloniex 和 HTX 遭到黑客攻击，导致 DCR 提款被禁止数周。 Bittrex宣布关闭并敦促用户退出。
+  
+内容:
 
-Contents:
-
-- [Development](#development)
-- [People](#people)
-- [Governance and Finances](#governance-and-finances)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Events](#events)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理和财务](#governance-and-finances)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [活动](#events)
+- [媒体](#media)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
 <a id="development"></a>
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-Developer and internal changes:
+开发者和内部变化：
 
-- [Fixed a bug](https://github.com/decred/dcrd/pull/3209) that was introduced in [October](202310.md#dcrd) with the new ability to handle [concurrent messages](https://github.com/decred/dcrd/pull/3203) from peers. dcrd would hang if a peer disconnected after having sent multiple messages. This bugfix allows dcrd to respond gracefully when peers disconnect.
-- Updated the [Docker image](https://github.com/decred/dcrd/pull/3210) to build with Go 1.21.4.
-- Peers should not be sending each other `nil` messages. In an effort to preemptively find and debug cases where this might happen, dcrd will now [panic if a `nil` message is queued](https://github.com/decred/dcrd/pull/3213) ("panic" means dcrd will terminate and alert the user of a problem). This change includes a handy error trace to help inform devs about which bit of code caused the panic.
+- [修复了一个错误](https://github.com/decred/dcrd/pull/3209)，该错误是在[10 月](202310.md#dcrd) 中提出的。 如果对等方、节点在发送多条消息后断开连接，dcrd 将挂起。 此错误修复允许 dcrd 在对等节点断开连接时优雅地响应。
+- 更新了 [Docker 镜像](https://github.com/decred/dcrd/pull/3210) 以使用 Go 1.21.4 进行构建。
+- 对等节点不应互相发送“nil”消息。 为了抢先查找和调试可能发生这种情况的情况，dcrd 现在将[如果“nil”消息排队则发生恐慌](https://github.com/decred/dcrd/pull/3213)（“恐慌”意味着 dcrd 将终止并向用户发出问题警告）。 此更改包括一个方便的错误跟踪，以帮助通知开发人员哪位代码导致了恐慌。
 
-In progress:
+进行中：
 
-- A new wire message has been proposed which will speed up SPV client syncing by allowing dcrd to [send compact block filters in batches](https://github.com/decred/dcrd/issues/3206) as opposed to one for each block. An initial [implementation](https://github.com/decred/dcrd/pull/3211) has been submitted for code review.
+- 提出了一种新的有线消息，该消息将通过允许 dcrd [批量发送紧凑块过滤器](https://github.com/decred/dcrd/issues/3206) 而不是每个发送一个来加速 SPV 客户端同步堵塞。初始[实现](https://github.com/decred/dcrd/pull/3211) 已提交进行代码审查。
 
-Decred was [started](https://blog.companyzero.com/2015/12/decred-rethink-digital-currency/) as a fork of the [btcsuite project](https://blog.companyzero.com/2015/03/btcsuite-code-migration-and-btcd-0-10-0-release/). When asked how dcrd code has diverged over the years, @davecgh replied:
+Decred 是作为 [btcsuite 项目](https://blog.companyzero.com/2015) 的一个分支 [启动](https://blog.companyzero.com/2015/03/btcsuite-code-migration-and-btcd-0-10-0-release/)。 当被问到这些年来 dcrd 代码有何不同时，@davecgh 回答道：
 
-> dcrd is *significantly* improved over btcd. It's pretty night and day really. I don't just mean in the ways that DCR improves over BTC either.  I mean in pretty much every aspect.  e.g. APBFs, much improved network code, the entire way the chain code allows for headers first semantics, how overall syncing is handled, support for block invalidation and reconsideration, the way peers with old chains are handled, way faster crypto, 50x (at least) improvement to sync time, essentially a full rewrite of the underlying script semantics (e.g. stdscript, stdaddr, proper versioning support, etc), and a bunch more. [@davecgh in [chat](https://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$TTnbRmx8LDGfU-0-0phuCKMut55fcdt0sJpMqhU-Hhk)]
+> dcrd 比 btcd 有了“显着”改进。我指的不仅仅是 DCR 相对 BTC 的改进。我的意思是几乎全部。 例如 APBF，大大改进的网络代码，链代码允许标头优先语义的整个方式，如何处理整体同步，支持块失效和重新考虑，处理旧链的对等点的方式，更快的加密方式，50 倍（至少） 同步时间的改进，本质上是对底层脚本语义的完全重写（例如 stdscript、stdaddr、正确的版本控制支持等），等等。 [[聊天](hhttps://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$TTnbRmx8LDGfU-0-0phuCKMut55fcdt0sJpMqhU-Hhk)@davecg]
 
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-Many of the user-facing changes this month are focused on optimizing [SPV mode](https://docs.decred.org/wallets/spv/), which is where the wallet can operate without having to download the full blockchain. This is a great choice for wallets with limited hardware performance, esp. mobile devices. Decred's SPV mode uses [advanced crypto tech](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki#simplified-payment-verification-spv) to enable light clients with a high level of security and decentralization.
+本月许多面向用户的变化都集中在优化 [SPV 模式](https://docs.decred.org/wallets/spv/)，这是钱包无需下载完整区块链即可运行的模式。 对于硬件性能有限的钱包来说，这是一个不错的选择，尤其是移动设备。 Decred 的 SPV 模式使用 [高级加密技术](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki#simplified-payment-verification-spv) 来启用轻客户端，兼得安全性和去中心化。
 
-Optimizations of the [initial SPV sync](https://github.com/decred/dcrwallet/issues/2289) - part of SPV wallet's startup routine when it catches up with the chain:
+[初始 SPV 同步](https://github.com/decred/dcrwallet/issues/2289) 的优化 - SPV 钱包与链同步时启动例程的一部分：
 
-- [Validate block difficulties](https://github.com/decred/dcrwallet/pull/2297) earlier. This means that if any blocks violate the consensus for PoW or PoS difficulty, the wallet can ignore those blocks earlier and do less work. This will help speed up sync times. Additionally, if the wallet does receive blocks which violate the difficulty consensus, it will now [report them in the log](https://github.com/decred/dcrwallet/pull/2294).
-- Perform the ["fetch any missing compact filters"](https://github.com/decred/dcrwallet/pull/2298) stage just once. This used to happen upon connecting to every single new peer, but now it only needs to happen once per sync, which reduces duplicate work. "Compact filters" or just "cfilters" are an efficient way to track transactions in blocks without downloading the full block.
-- [Fetch new block headers and compact filters once](https://github.com/decred/dcrwallet/pull/2300) at startup instead of fetching the same headers from each peer. This avoids wasted duplicate effort for every peer, and significantly reduces the amount of resources (CPU, RAM, bandwidth, goroutines) used during the initial sync.
-- Perform [account/address discovery and rescan blocks](https://github.com/decred/dcrwallet/pull/2301) once at startup instead of after every new connected peer. This makes the code easier to reason about.
-- [Only request cfilters for the best sidechain](https://github.com/decred/dcrwallet/pull/2302). This avoids having to perform work for sidechains that are not (and will never become) the main chain.
-- [Allow dcrwallet to fetch cfilters in smaller batches](https://github.com/decred/dcrwallet/pull/2307). No functional change will occur yet, but this makes the code ready to switch to batched cfilter requests as soon as they are supported in dcrd. The dcrd work is [already in progress](https://github.com/decred/dcrd/pull/3211).
-- [Fetch cfilters in parallel from multiple peers at once](https://github.com/decred/dcrwallet/pull/2308). This spreads the load across multiple peers, making the initial sync process (on average) slightly faster due to lower remote peer resource usage.
+- 提前进行[验证区块难度](https://github.com/decred/dcrwallet/pull/2297)。 这意味着，如果任何区块违反了 PoW 或 PoS 难度的共识，钱包可以更早地忽略这些区块并减少工作量。 这将有助于加快同步时间。 此外，如果钱包确实收到违反难度共识的区块，它现在将[在日志中报告它们](https://github.com/decred/dcrwallet/pull/2294)。
+- 仅执行一次[“获取任何缺失的紧凑型过滤器”](https://github.com/decred/dcrwallet/pull/2298)阶段。 过去，这种情况在连接到每个新对等点时都会发生，但现在每次同步只需发生一次，从而减少了重复工作。 “紧凑过滤器”或只是“cfilters”是跟踪块中交易而无需下载整个块的有效方法。
+- [在启动时获取新的块头和压缩过滤器一次](https://github.com/decred/dcrwallet/pull/2300)，而不是从每个对等点获取相同的头。 这避免了每个对等方浪费重复的工作，并显着减少初始同步期间使用的资源量（CPU、RAM、带宽、goroutine）。
+- 在启动时执行一次[帐户/地址发现和重新扫描块](https://github.com/decred/dcrwallet/pull/2301)，而不是在每个新连接的对等点之后执行。 这使得代码更容易推理。
+- [仅请求最佳侧链的 cfilter](https://github.com/decred/dcrwallet/pull/2302)。 这避免了必须为不是（也永远不会成为）主链的侧链执行工作。
+- [允许 dcrwallet 小批量获取 cfilters](https://github.com/decred/dcrwallet/pull/2307)。 目前还不会发生功能更改，但这使得代码一旦 dcrd 支持批量 cfilter 请求就可以切换到它们。 dcrd 工作[已在进行中](https://github.com/decred/dcrd/pull/3211)。
+- [同时从多个对等点并行获取 cfilters](https://github.com/decred/dcrwallet/pull/2308)。 这会将负载分散到多个对等点上，由于远程对等点资源使用率较低，因此初始同步过程（平均）稍快一些。
 
-Other SPV mode optimizations:
+其他 SPV 模式优化：
 
-- Eliminate having to [calculate block hashes](https://github.com/decred/dcrwallet/pull/2295) multiple times. This results in a faster sync time and reduced memory use. During SPV operation, the time spent calculating block hashes is reduced by ~72%.
-- When connected in SPV, [disconnect from straggling peers](https://github.com/decred/dcrwallet/pull/2299). During initial sync, it might be useful to connect to a peer for earlier block ranges, but that peer may later get overtaken by the wallet due to the wallet discovering more up-to-date blocks from other peers. If a particular peer doesn't send any headers after the wallet has received several newer headers, it probably means that the straggler peer has poor connectivity to the network and should be disconnected in favor of attempting to find a better peer.
+- 无需多次[计算区块哈希值](https://github.com/decred/dcrwallet/pull/2295)。 这会带来更快的同步时间并减少内存使用。 在 SPV 操作期间，计算块哈希所花费的时间减少了约 72%。
+- 在 SPV 中连接时，[与落后的对等点断开连接](https://github.com/decred/dcrwallet/pull/2299)。 在初始同步期间，连接到较早区块范围的对等点可能很有用，但由于钱包从其他对等点发现了更多最新区块，该对等点稍后可能会被钱包超越。 如果钱包收到多个新标头后特定对等点没有发送任何标头，则可能意味着落后对等点与网络的连接较差，应断开连接以尝试找到更好的对等点。
 
-Developer and internal changes:
+开发者和内部变化：
 
-- If the user tries to spend a multisignature UTXO that contains one or more [invalid signatures](https://github.com/decred/dcrwallet/pull/2274), indicate that the transaction is not ready to send, and return signing errors. This is a step towards improving the UX for advanced users and developers working with [multisignatures](https://en.bitcoin.it/wiki/Multi-signature), which are currently possible but are not widely used nor [well-developed](https://gist.github.com/norwnd/890ad642985f4e9e9f7b1dd243b21f9e) in Decred.
-- Added [unit tests](https://github.com/decred/dcrwallet/pull/2293) for the semantic versioning of the `chain` package.
-- Other code refactoring.
+- 如果用户尝试花费包含一个或多个[无效签名](https://github.com/decred/dcrwallet/pull/2274)的多重签名UTXO，则表明交易尚未准备好发送，并返回签名错误。 这是为使用多重签名的高级用户和开发人员改进用户体验的一步，目前这是可能的，但尚未广泛使用。
+- 为“chain”包的语义版本控制添加了[单元测试](https://github.com/decred/dcrwallet/pull/2293)。
+- 其他代码重构。
 
 
 ### Decrediton
 
-_[Decrediton](https://github.com/decred/decrediton) is a full-featured desktop wallet app with integrated voting, StakeShuffle mixing, Lightning Network, DEX trading, and more. It runs with or without a full blockchain (SPV mode)._
+_[Decrediton](https://github.com/decred/decrediton) 是一款功能齐全的桌面钱包应用程序，集成了投票、StakeShuffle 混币、闪电网络、DEX 交易等功能。 它在有或没有完整的区块链（SPV 模式）的情况下运行。_
 
-Merged in `master` for the next release:
+合并到下一个版本的“master”中：
 
-- Upgraded to [Electron v26](https://github.com/decred/decrediton/pull/3928) to enable the new Ledger integration. This was made possible by hunting down a tiny breaking change in Electron v21.3.0 that broke DCRDEX window, and adding a [workaround](https://github.com/decred/dcrdex/pull/2596) for it.
-- A [newer version](https://www.electronjs.org/blog/electron-23-0) of Electron means Windows 7/8/8.1 will not be supported in the next Decrediton release. Cryptocurrency security enthusiasts don't store their private keys on those insecure operating systems anyway, right?
-- Bumped a few Go and web dependencies.
-- Fixed [wrong password error](https://github.com/decred/decrediton/pull/3916) not being shown when attempting to purchase tickets using a wrong password.
-- Fixed the inability to remove peer host from the [SPV Connect](https://github.com/decred/decrediton/pull/3915) field in Settings.
+- 升级到 [Electron v26](https://github.com/decred/decrediton/pull/3928) 以启用新的 Ledger 集成。 这是通过寻找 Electron v21.3.0 中破坏 DCRDEX 窗口的微小突破性更改并为其添加[解决方法](https://github.com/decred/dcrdex/pull/2596) 来实现的。
+- Electron 的[较新版本](https://www.Electronjs.org/blog/Electron-23-0) 意味着下一个 Decrediton 版本将不支持 Windows 7/8/8.1。 无论如何，加密货币安全爱好者不会将私钥存储在那些不安全的操作系统上，对吗？
+- 增加了一些 Go 和 Web 依赖项。
+- 修复了尝试使用错误密码购买选票时不显示的[密码错误](https://github.com/decred/decrediton/pull/3916)。
+- 修复了无法从“设置”中的 [SPV 链接](https://github.com/decred/decrediton/pull/3915) 字段删除对等主机的问题。
 
 
 ### vspd
 
-_[vspd](https://github.com/decred/vspd) is server software used by Voting Service Providers. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_[vspd](https://github.com/decred/vspd) 是投票服务提供商使用的服务器软件。 VSP 24/7 代表其用户投票，并且不能窃取资金。_
 
-Changes included in November's [v1.3.2 release](https://github.com/decred/vspd/releases/tag/release-v1.3.2):
+11 月的 [v1.3.2 版本](https://github.com/decred/vspd/releases/tag/release-v1.3.2) 中包含的更改：
 
-- Added logic to retry broadcasting the ticket's [parent transaction](https://github.com/decred/vspd/pull/455) if it failed due to referencing unknown outputs. There is a good chance that missing ancestor transactions will propagate through the network and show up in the local mempool after a few seconds.
-- Reverted to the [previous VSP fee calculation](https://github.com/decred/vspd/pull/454) algorithm that does not consider the activation of DCP-12. This resolves an issue where Decrediton sometimes fails to pay VSP fees because it calculated the fee differently from the server.
+- 添加了逻辑，以便在由于引用未知输出而失败时重试广播票证的[父交易](https://github.com/decred/vspd/pull/455)。 丢失的祖交易很可能会通过网络传播并在几秒钟后出现在本地内存池中。
+- 恢复为[之前的VSP费用计算](https://github.com/decred/vspd/pull/454)不考虑DCP-12激活的算法。 这解决了 Decrediton 有时无法支付 VSP 费用的问题，因为它计算费用的方式与服务器不同。
 
 
 ### dcrpool
 
-_[dcrpool](https://github.com/decred/dcrpool) is server software for running a Decred mining pool._
+_[dcrpool](https://github.com/decred/dcrpool) 是用于运行 Decred 矿池的服务器软件。_
 
-User-facing changes:
+面向用户的变化：
 
-- Fixed several bugs in [payment fee calculation](https://github.com/decred/dcrpool/pull/427) that caused paying extremely large fees in some cases. The associated tests have been reworked and extended to test more cases.
+- 修复了[支付费用计算](https://github.com/decred/dcrpool/pull/427)中的几个错误，这些错误导致在某些情况下支付极高的费用。 相关测试已被重新设计和扩展以测试更多案例。
 
-Internal refactoring (changes that don't add features or fix bugs, but that untangle the code, make bugs easier to find and fix, and make the code easier to change in the future):
+内部重构（不添加功能或修复错误的更改，但会理清代码，使错误更容易查找和修复，并使代码在将来更容易更改）：
 
-- Removed duplicate and error prone [channel closures](https://github.com/decred/dcrpool/pull/422) from notification handlers.
-- Simplified code calculating [rewards payments](https://github.com/decred/dcrpool/pull/423).
-- Updated tests to use more [realistic](https://github.com/decred/dcrpool/pull/426) DCR amounts.
+- 从通知处理程序中删除了重复且容易出错的[通道关闭](https://github.com/decred/dcrpool/pull/422)。
+- 简化的代码计算[奖励支付](https://github.com/decred/dcrpool/pull/423)。
+- 更新了测试以使用更多[现实](https://github.com/decred/dcrpool/pull/426) DCR 金额。
 
 
 ### Lightning Network
 
-_[dcrlnd](https://github.com/decred/dcrlnd) is Decred's Lightning Network node software. LN enables instant low-cost transactions._
+_[dcrlnd](https://github.com/decred/dcrlnd) 是 Decred 的闪电网络节点软件。 闪电网络可实现即时低成本交易。_
 
-- dcrlnd codebase has been [synced](https://github.com/decred/dcrlnd/pull/193) with changes made in upstream [lnd](https://github.com/lightningnetwork/lnd) between v0.12.1 and [v0.13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta) (released Nov 2021). Around 140 out of 170 upstream pull requests have been ported, bringing 451 new commits, including about a dozen of Decred-specific commits to adapt upstream changes and simplify future porting efforts. Full list of ported and skipped pull requests can be found [here](https://github.com/decred/dcrlnd/blob/master/docs/upstream-prs.csv). All notable changes are documented in lnd release notes: [v0.13.0](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.0-beta), [v0.13.1](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.1-beta), [v0.13.3](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.3-beta), and [v0.13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta). dcrlnd has been tested with these changes applied in production on a few mainnet hubs.
-- Updated several [Go libraries](https://github.com/decred/dcrlnd/pull/194).
+- dcrlnd 代码库已[同步](https://github.com/decred/dcrlnd/pull/193)，并在 v0.12.1 之间对上游 [lnd](https://github.com/lightningnetwork/lnd) 进行了更改 和 [v0.13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta)（2021 年 11 月发布）。 170 个上游拉取请求中约有 140 个已被移植，带来 451 个新提交，其中包括大约十几个特定于 Decred 的提交，以适应上游更改并简化未来的移植工作。 可以在[此处](https://github.com/decred/dcrlnd/blob/master/docs/upstream-prs.csv)找到移植和跳过的拉取请求的完整列表。 所有值得注意的更改都记录在 lnd 发行说明中：[v0.13.0](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.0-beta)、[v0.13.1](https://github .com/lightningnetwork/lnd/releases/tag/v0.13.1-beta)、[v0.13.3](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.3-beta) 和 [v0 .13.4](https://github.com/lightningnetwork/lnd/releases/tag/v0.13.4-beta)。 dcrlnd 已经在一些主网集线器上对生产中应用的这些更改进行了测试。
+- 更新了几个 [Go 库](https://github.com/decred/dcrlnd/pull/194)。
 
-Note that while Anchor Outputs became the default channel type for Bitcoin in lnd v0.13, they are [disabled](https://matrix.to/#/!FRpxSOMVXBCUXtQsDk:decred.org/$xOjxggI8ida5REJTWq-90TIG_Wfj-FsjiNl3FH__hJA) on Decred LN mainnet for extra safety against attacks such as the [replacement cycling](https://cointelegraph.com/news/bitcoin-core-developer-antoine-riard-steps-back-lightning-network-dilemma) vulnerability disclosed in October 2023.
+请注意，虽然 Anchor Outputs 在 lnd v0.13 中成为比特币的默认通道类型，但它们在 Decred 上被[禁用](https://matrix.to/#/!FRpxSOMVXBCUXtQsDk:decred.org/$xOjxggI8ida5REJTWq-90TIG_Wfj-FsjiNl3FH__hJA) LN 主网针对诸如 2023 年 10 月披露的 [替换循环](https://cointelegraph.com/news/bitcoin-core-developer-antoine-riard-steps-back-lightning-network-dilemma) 漏洞等攻击提供了额外的安全性 。
 
 
 ### DCRDEX
 
-_[DCRDEX](https://github.com/decred/dcrdex) is a non-custodial, privacy-respecting exchange for trustless trading, powered by atomic swaps._
+_[DCRDEX](https://github.com/decred/dcrdex) 是一个非托管、尊重隐私的交易所，用于去信任交易，由原子交换提供支持。_
 
-General client changes:
+用户端变更：
 
-- Disable the [Place order](https://github.com/decred/dcrdex/pull/2534) button on various conditions, such as insufficient balance.
-- Moved the [Sign Out](https://github.com/decred/dcrdex/pull/2590) button to the end of the hamburger menu.
-- Tuned [colors](https://github.com/decred/dcrdex/pull/2601): added some variation in element background colors in both light and dark modes, added slight background transparency behind active modals, and tuned down background color in light mode to use a softer white color.
-- Removed the [font weight change effect](https://github.com/decred/dcrdex/pull/2610) on mouse hover because it didn't look consistent on various browsers and font settings.
-- Changed the login flow to [not force users to register on the server](https://github.com/decred/dcrdex/pull/2614). After the local login, the user will be redirected to the Wallets page instead.
-- Fixed the [staking panel](https://github.com/decred/dcrdex/pull/2586) not updating after wallet creation.
-- Fixed the prompt to create [missing wallets](https://github.com/decred/dcrdex/pull/2577) on the Markets view.
+- 在各种情况下禁用[下订单](https://github.com/decred/dcrdex/pull/2534)按钮，例如余额不足。
+- 将[注销](https://github.com/decred/dcrdex/pull/2590)按钮移至菜单的末尾。
+- 调整[颜色](https://github.com/decred/dcrdex/pull/2601)：在浅色和深色模式下添加了元素背景颜色的一些变化，在活动模态后面添加了轻微的背景透明度，并调低了背景颜色 在浅色模式下使用更柔和的白色。
+- 删除了鼠标悬停时的[字体粗细变化效果](https://github.com/decred/dcrdex/pull/2610)，因为它在各种浏览器和字体设置上看起来不一致。
+- 将登录流程更改为[不强制用户在服务器上注册](https://github.com/decred/dcrdex/pull/2614)。 本地登录后，用户将被重定向到钱包页面。
+- 修复了[质押面板](https://github.com/decred/dcrdex/pull/2586)在钱包创建后不更新的问题。
+- 修复了市场视图中创建[缺失钱包](https://github.com/decred/dcrdex/pull/2577)的提示。
 
-Desktop app:
+桌面应用程序：
 
-- Fixed the opening of [external](https://github.com/decred/dcrdex/pull/2541) [links](https://github.com/decred/dcrdex/pull/2597); they will trigger the operating system's default URL handler (which may launch a default browser or show a dialog).
-- Fixed [dark mode](https://github.com/decred/dcrdex/pull/2604) preference not saving on Linux. The fix is to save it in WebView's local storage instead of a cookie, because cookies are not persistent between app launches in the Linux version of the WebView component.
+- 修复了[外部](https://github.com/decred/dcrdex/pull/2541)[链接](https://github.com/decred/dcrdex/pull/2597)的打开问题； 它们将触发操作系统的默认 URL 处理程序（可能会启动默认浏览器或显示对话框）。
+- 修复了 [暗模式](https://github.com/decred/dcrdex/pull/2604) 首选项在 Linux 上不保存的问题。 解决方法是将其保存在 WebView 的本地存储中，而不是保存在 cookie 中，因为在 Linux 版本的 WebView 组件中，cookie 在应用程序启动之间并不持久。
 
-Account trading tier, bonds, and reputation:
+账户交易等级、债券和声誉：
 
-- Exposed more [bond and reputation data](https://github.com/decred/dcrdex/pull/2575) in the registration and settings views. When the user enters a tier number, a new preview form will show the amount that will actually be locked for bonds, trading limits, and their USD equivalents. The trading form on the Markets view will show how many lots can be used for the current trading tier. Multiple help strings have been added to explain bonds, trading tiers, and penalties for bad behavior.
+- 在注册和设置视图中公开更多[债券和声誉数据](https://github.com/decred/dcrdex/pull/2575)。 当用户输入等级编号时，新的预览表单将显示实际锁定的债券金额、交易限额及其美元等价物。 市场视图上的交易表格将显示当前交易等级可以使用多少手数。 添加了多个帮助字符串来解释债券、交易等级以及对不良行为的处罚。
 
-Market maker bots:
+做市商机器人：
 
-- Updated the [Market Maker Settings](https://github.com/decred/dcrdex/pull/2587) UI to have a more responsive layout and explain bot strategies (there are 5 strategies currently).
-- Added a bot strategy combining [market maker and simple arbitrage](https://github.com/decred/dcrdex/pull/2530). Based on a CEX order book, it places orders on the DEX order book, and when there is a match on the DEX, the opposite order on the CEX is immediately executed for a profit.
+- 更新了[做市商设置](https://github.com/decred/dcrdex/pull/2587) UI，以具有更具响应性的布局并解释机器人策略（当前有 5 种策略）。
+- 添加了结合[做市商和简单套利](https://github.com/decred/dcrdex/pull/2530)的机器人策略。 它基于CEX订单簿，在DEX订单簿上下单，当DEX上有匹配时，立即执行CEX上相反的订单以获取利润。
 
-Decred:
+Decred：
 
-- Added general infrastructure for [mixing funds](https://github.com/decred/dcrdex/pull/2478) and implemented the low-level bits for DCR (no GUI yet).
+- 添加了[混合资金](https://github.com/decred/dcrdex/pull/2478)的通用基础设施，并实现了 DCR 的低级位（尚无 GUI）。
 
-Bitcoin:
+比特币：
 
-- Store [transaction history](https://github.com/decred/dcrdex/pull/2550) for Bitcoin SPV wallets. Although the underlying SPV wallet implementation ([Neutrino](https://github.com/lightninglabs/neutrino)) stores transaction data already, using that storage leads to unreliable and confusing code. Storing transactions in a separate database fixes this and also unlocks more accuracy, such as differentiating regular sends and swap transactions.
+- 存储比特币 SPV 钱包的[交易历史](https://github.com/decred/dcrdex/pull/2550)。 尽管底层 SPV 钱包实现（[Neutrino](https://github.com/lightninglabs/neutrino)）已经存储了交易数据，但使用该存储会导致代码不可靠且令人困惑。 将交易存储在单独的数据库中可以解决这个问题，并且还可以提高准确性，例如区分常规发送和交换交易。
 
-Zcash:
+Zcash：
 
-- Extracted Zcash code into its own [wallet implementation](https://github.com/decred/dcrdex/pull/2553). This is needed to untangle it from Bitcoin code, because the Zcash wallet is very different from Bitcoin's. The change allows Zcash wallets to be shielded by default and resolves some internal issues.
+- 将 Zcash 代码提取到自己的[钱包实现](https://github.com/decred/dcrdex/pull/2553)中。 这是将其与比特币代码区分开来所必需的，因为 Zcash 钱包与比特币的钱包非常不同。 这一变化允许 Zcash 钱包默认受到屏蔽，并解决了一些内部问题。
 
-Ethereum:
+以太坊：
 
-- Show [token contract address](https://github.com/decred/dcrdex/pull/2592) on the UI so the users could be sure which Ethereum or Polygon token they are using. For example, the ERC-20 contract address for USDC is [0xa0b8699...eb48](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48).
+- 在用户界面上显示[代币合约地址](https://github.com/decred/dcrdex/pull/2592)，以便用户可以确定他们正在使用哪种以太坊或Polygon代币。 例如，USDC的ERC-20合约地址是[0xa0b8699...eb48](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)。
 
-Internal and developer changes:
+内部和开发人员变更：
 
-- Updated the client's [web dependencies](https://github.com/decred/dcrdex/pull/2584), which fixes one critical vulnerability in the Babel compiler.
+- 更新了客户端的 [web 依赖项](https://github.com/decred/dcrdex/pull/2584)，修复了 Babel 编译器中的一个严重漏洞。
 
-In progress:
+进行中：
 
-- A proof of concept toy mesh network implementation called [Tatanka](https://github.com/decred/dcrdex/pull/2602) has been submitted for discussion. This is work towards the [DCRDEX mesh proposal](https://proposals.decred.org/record/4d2324b) approved in June 2023. Readers are advised to watch a [short video](https://www.youtube.com/watch?v=uZRTLpXXlds) to understand what Tatanka really is (try [Invidious](https://redirect.invidious.io/watch?v=uZRTLpXXlds) if the video is restricted in your location).
-- An implementation of [private atomic swaps](https://github.com/decred/atomicswap/pull/130) with Schnorr adaptor signatures has been submitted for review to the atomicswap repository. The atomic swap method currently used by DCRDEX leaves the same unique value on both chains, allowing anyone to link buyer's and seller's transactions. Adaptor signatures allow users to fix this privacy vulnerability at the cost of some additional off-chain communication required between the parties. However, there is some [criticism](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$-PRFKJglyc2CZefIwH7dA0boM_hyJ0yqYl15TEPYBIo) of this approach due to its dependency on Taproot (which introduces non-trivial issues) and [elliptic-curve cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) (so this code would break should Decred upgrade to [post-quantum cryptography](https://en.wikipedia.org/wiki/Post-quantum_cryptography)). Note that `atomicswap` is a command-line tool separate from the DCRDEX project, but the code pioneered in it could be applied to DCRDEX as well.
+- 名为 [Tatanka](https://github.com/decred/dcrdex/pull/2602) 的概念证明网状网络实现已提交供讨论。 这是针对 2023 年 6 月批准的 [DCRDEX 网格提案](https://proposals.decred.org/record/4d2324b) 所做的工作。建议读者观看[短视频](https://www.youtube.com/watch?v=uZRTLpXXlds) 了解 Tatanka 到底是什么（如果视频在您所在的位置受到限制，请尝试 [Invidious](https://redirect.invidious.io/watch?v=uZRTLpXXlds)）。
+- 具有 Schnorr 适配器签名的 [私有原子交换](https://github.com/decred/atomicswap/pull/130) 的实现已提交至 atomicswap 存储库以供审核。 DCRDEX 目前使用的原子交换方法在两条链上留下相同的唯一价值，允许任何人链接买家和卖家的交易。 适配器签名允许用户修复此隐私漏洞，但代价是各方之间需要进行一些额外的链下通信。 然而，由于这种方法依赖于 Taproot（这会引入不小的问题）和 [elliptic -curve cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)（因此，如果 Decred 升级到[后量子加密](https://en.wikipedia.org/wiki/Post-quantum_cryptography)此代码将被破坏）。 请注意，“atomicswap”是一个独立于 DCRDEX 项目的命令行工具，但其中首创的代码也可以应用于 DCRDEX。
 
-![Market Maker Settings UI in DCRDEX](../img/202311.02.1200.jpg)
+![Market Maker Settings UI in DCRDEX](img/202311.02.1200.jpg)
 
-_Image: Market Maker Settings UI in DCRDEX_
+_图片：DCRDEX 中的做市商设置 UI_
 
-![DCRDEX will better expose the bond math and trading limits](../img/202311.03.420.jpg)
+![DCRDEX will better expose the bond math and trading limits](img/202311.03.420.jpg)
 
-_Image: DCRDEX will better expose the bond math and trading limits_
+_图片：DCRDEX 将更好地揭示债券数学和交易限制_
 
-![Improved bond information in DCRDEX Settings](../img/202311.04.491.png)
+![Improved bond information in DCRDEX Settings](img/202311.04.491.png)
 
-_Image: Improved bond information in DCRDEX Settings_
+_图片：DCRDEX 设置中改进的债券信息_
 
 
 ### Cryptopower
 
-_[Cryptopower](https://github.com/crypto-power/cryptopower) is a multi-coin desktop GUI wallet for DCR, BTC, and LTC. It runs in a privacy-preserving light SPV mode without needing full blockchains, supports Decred staking, mixing, voting, and other unique features._
+_[Cryptopower](https://github.com/crypto-power/cryptopower) 是一款适用于 DCR、BTC 和 LTC 的多币种桌面 GUI 钱包。 它以保护隐私的轻 SPV 模式运行，无需完整的区块链，支持 Decred 质押、混合、投票和其他独特功能。_
 
-Design implementation of the top-level Home subpages:
+顶层Home子页面的设计实现：
 
-- Implemented new [Transactions tab](https://github.com/crypto-power/cryptopower/pull/198) showing all transactions across all wallets with optional filters by wallet and by transaction type.
-- Jump to [transaction details](https://github.com/crypto-power/cryptopower/pull/258) when a transaction is clicked on Overview.
-- Jump to [proposal details](https://github.com/crypto-power/cryptopower/pull/272) when a proposal is clicked on Overview.
-- Hide [Send button](https://github.com/crypto-power/cryptopower/pull/302) for watch-only wallets.
+- 实施了新的[交易选项卡](https://github.com/crypto-power/cryptopower/pull/198)，显示所有钱包中的所有交易，并按钱包和交易类型提供可选过滤器。
+- 在概览中单击交易时，跳转至[交易详细信息](https://github.com/crypto-power/cryptopower/pull/258)。
+- 当在概述中单击提案时，跳转到[提案详细信息](https://github.com/crypto-power/cryptopower/pull/272)。
+- 隐藏仅观察的钱包的[发送按钮](https://github.com/crypto-power/cryptopower/pull/302)。
 
-Design implementation of Wallets subpages:
+钱包子页面的设计实现：
 
-- Added new cards to [wallet Info](https://github.com/crypto-power/cryptopower/pull/247) page to show mixer status, recent transactions, and recent staking activity.
-- Implemented new layout on [wallet Settings](https://github.com/crypto-power/cryptopower/pull/228) page.
-- Updated layout of wallet [Staking](https://github.com/crypto-power/cryptopower/pull/244) page sections: general Staking Info, Statistics, and Tickets.
+- 在[钱包信息](https://github.com/crypto-power/cryptopower/pull/247)页面添加了新卡，以显示混音器状态、最近的交易和最近的质押活动。
+- 在[钱包设置](https://github.com/crypto-power/cryptopower/pull/228)页面上实现了新的布局。
+- 更新了钱包 [Stake](https://github.com/crypto-power/cryptopower/pull/244) 页面部分的布局：一般 Stake 信息、统计数据和票据。
 
-Mobile adaptation:
+移动端适配：
 
-- Adapted [wallet selection](https://github.com/crypto-power/cryptopower/pull/226) page to mobile layout.
+- 将[钱包选择](https://github.com/crypto-power/cryptopower/pull/226)页面调整为移动布局。
 
-Coin conversion:
+硬币换算：
 
-- Added low-level support for [Trocador.app](https://github.com/crypto-power/instantswap/pull/7) in the [instantswap](https://github.com/crypto-power/instantswap) library.
+- 在 [instantswap](https://github.com/crypto-power/instantswap) 中添加了对 [Trocador.app](https://github.com/crypto-power/instantswap/pull/7) 的初步支持。
 
-Fixes:
+修复：
 
-- Fixed rendering of [coin card backgrounds](https://github.com/crypto-power/cryptopower/pull/236) on the Overview tab.
-- Fixed onboarding pages coming up during [app shutdown](https://github.com/crypto-power/cryptopower/pull/259).
-- Fixed crash when switching between [Wallets and Overview](https://github.com/crypto-power/cryptopower/pull/263) tabs.
-- Minor fixes.
+- 修复了“概述”选项卡上的[硬币背景](https://github.com/crypto-power/cryptopower/pull/236) 的渲染。
+- 修复了[应用程序关闭](https://github.com/crypto-power/cryptopower/pull/259)期间出现的入门页面。
+- 修复了在[钱包和概述](https://github.com/crypto-power/cryptopower/pull/263)选项卡之间切换时发生的崩溃。
+- 小修复。
 
-Internal and developer changes:
+内部和开发人员变更：
 
-- Refactoring to simplify [internal APIs](https://github.com/crypto-power/cryptopower/pull/232), optimize [memory use](https://github.com/crypto-power/cryptopower/pull/223), and remove unnecessary code.
-- Removed a lot of unneeded [listener helper code](https://github.com/crypto-power/cryptopower/pull/240).
-- Removed duplicated [app width calculation](https://github.com/crypto-power/cryptopower/pull/274).
-- Fixed [linter errors](https://github.com/crypto-power/cryptopower/pull/241) and updated CI configuration.
+- 重构以简化[内部API](https://github.com/crypto-power/cryptopower/pull/232)，优化[内存使用](https://github.com/crypto-power/cryptopower/pull/223)，并删除不必要的代码。
+- 删除了很多不需要的[监听器帮助程序代码](https://github.com/crypto-power/cryptopower/pull/240)。
+- 删除了重复的[应用程序宽度计算](https://github.com/crypto-power/cryptopower/pull/274)。
+- 修复了 [linter 错误](https://github.com/crypto-power/cryptopower/pull/241) 并更新了 CI 配置。
 
-Private testing of mobile app builds has been set up in Google Play Store and Apple Store (TestFlight). If you'd like to participate please ask in [#cryptopower](https://chat.decred.org/#/room/#cryptopower:decred.org) Matrix chat (see [how to join Matrix](https://docs.decred.org/getting-started/joining-matrix-channels/)).
+移动应用程序构建的私人测试已在 Google Play 商店和 Apple Store (TestFlight) 中设置。 如果您想参与，请在 [#cryptopower](https://chat.decred.org/#/room/#cryptopower:decred.org) Matrix 聊天中提问（请参阅[如何加入 Matrix](https://docs.decred.org/getting-started/joining-matrix-channels/))。
 
-Follow [@cryptopowerWlt](https://twitter.com/cryptopowerWlt) on Twitter to support the project and get more updates.
+在 Twitter 上关注 [@cryptopowerWlt](https://twitter.com/cryptopowerWlt) 以支持该项目并获取更多更新。
 
-![Overview tab in Cryptopower](../img/202311.05.798.jpg)
+![Cryptopower 中的概述选项卡](img/202311.05.798.jpg)
 
-_Image: Overview tab in Cryptopower_
+_图片：Cryptopower 中的概述选项卡_
 
-![Updated Settings in Cryptopower](../img/202311.06.561.jpg)
+![Cryptopower 中的更新设置](img/202311.06.561.jpg)
 
-_Image: Updated Settings in Cryptopower_
+_图片：Cryptopower 中的更新设置_
 
-![Updated wallet overview in Cryptopower](../img/202311.07.705.jpg)
+![更新了 Cryptopower 中的钱包概述](img/202311.07.705.jpg)
 
-_Image: Updated wallet overview in Cryptopower_
+_图片：Cryptopower 中更新的钱包概述_
 
-![Mobile layout in Cryptopower (work in progress)](../img/202311.08.359.png)
+![Cryptopower 中的移动布局（正在进行中）](img/202311.08.359.png)
 
-_Image: Mobile layout in Cryptopower (work in progress)_
+_图片：Cryptopower 中的移动布局（正在进行中）_
 
 
 ### Documentation
 
-_[dcrdocs](https://github.com/decred/dcrdocs) is the source code for Decred [user documentation](https://docs.decred.org/)._
+_[dcrdocs](https://github.com/decred/dcrdocs) 是 Decred [用户文档](https://docs.decred.org/) 的源代码。_
 
-- Updated [block reward split and total issuance](https://github.com/decred/dcrdocs/pull/1234) numbers on a few pages.
-- Fixed date of [DCP-12 deployment](https://github.com/decred/dcrdocs/pull/1233).
+- 更新了几页上的[区块奖励分配和总发行](https://github.com/decred/dcrdocs/pull/1234)数字。
+- [DCP-12 部署](https://github.com/decred/dcrdocs/pull/1233) 的固定日期。
 
 
 ### Bison Relay
 
-_[Bison Relay](https://github.com/companyzero/bisonrelay) is a new social media platform with strong protections against censorship, surveillance, and advertising, powered by Decred Lightning Network._
+_[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的社交媒体平台，具有针对审查、监视和广告的强大保护，由 Decred 闪电网络提供支持。_
 
-Work listed below has been merged to `master` towards the next release.
+下面列出的工作已合并到下一个版本的“master”中。
 
-Changes in both GUI and text apps:
+GUI 和文本应用程序中的更改：
 
-- Filter [unwanted content](https://github.com/companyzero/bisonrelay/pull/377) when reading saved chat history. Previously content filtering handled newly received messages only.
-- Replaced Bittrex with MEXC as a source of [exchange rates](https://github.com/companyzero/bisonrelay/pull/383).
+- 读取保存的聊天记录时过滤[不需要的内容](https://github.com/companyzero/bisonrelay/pull/377)。 以前的内容过滤仅处理新收到的消息。
+- 将 Bittrex 替换为 MEXC 作为[汇率](https://github.com/companyzero/bisonrelay/pull/383)的来源。
 
-User-facing changes in the GUI app:
+GUI 应用程序中面向用户的更改：
 
-- Allow users to [select text](https://github.com/companyzero/bisonrelay/pull/379) in news feed and posts.
-- Fixed newly created group chat [not appearing](https://github.com/companyzero/bisonrelay/pull/376) in Chat Rooms.
+- 允许用户在新闻源和帖子中[选择文本](https://github.com/companyzero/bisonrelay/pull/379)。
+- 修复了聊天室中新创建的群聊[未出现](https://github.com/companyzero/bisonrelay/pull/376)。
 
-GUI app adaptation to mobile devices:
+GUI应用程序适应移动设备：
 
-- Various [mobile fixes and UX refinements](https://github.com/companyzero/bisonrelay/pull/375), including: replace Menu button with Back button in some pages, font size tweaks, onboarding tweaks, overflow fixes, and Android build fixes.
-- Increased [spacing](https://github.com/companyzero/bisonrelay/pull/378) in chats based on user feedback.
+- 各种[移动修复和用户体验改进](https://github.com/companyzero/bisonrelay/pull/375)，包括：在某些页面中用“后退”按钮替换“菜单”按钮、字体大小调整、引导调整、溢出修复，以及 Android 构建修复。
+- 根据用户反馈增加了聊天中的[间距](https://github.com/companyzero/bisonrelay/pull/378)。
 
-Internal changes in the GUI app:
+GUI 应用程序中的内部更改：
 
-- Consolidated [font size](https://github.com/companyzero/bisonrelay/pull/346) declarations and usages for consistency and greater control of fonts based on which OS or platform the app is running.
+- 合并[字体大小](https://github.com/companyzero/bisonrelay/pull/346)声明和用法，以根据应用程序运行的操作系统或平台实现一致性和更好地控制字体。
 
-In progress:
+进行中：
 
-- Users reported various [LN channel issues](https://matrix.to/#/!GHnoHXSgkVAsUknRUg:decred.org/$nOaRAKaygrxyyvZkPzJ4jGr5S0MsC7FGYS0iPFRG7pc) when interacting with the Oprah bot. The root cause of some of them was found in dcrlnd and is being worked on.
+- 用户在与 Oprah 机器人交互时报告了各种 [LN 通道问题](https://matrix.to/#/!GHnoHXSgkVasUknRUg:decred.org/$nOaRAKaygrxyyvZkPzJ4jGr5S0MsC7FGYS0iPFRG7pc)。 其中一些问题的根本原因已在 dcrlnd 中找到并正在处理中。
 
-Other news:
+其他：
 
-- Decred Journal archives are now published on Bison Relay. Contact @karamble for usage instructions.
-
-
-### Cake Wallet Integration
-
-Completed work merged in the intermediate [integration tree](https://github.com/JoeGruffins/cake_wallet/tree/cw-decred):
-
-- Added a [stub for libwallet](https://github.com/JoeGruffins/cake_wallet/pull/4) to move forward with higher-level code while the real libwallet is being written. Also, removed a lot of unnecessary code left from earlier experiments.
-- Continued investigation of the best ways to call Decred's code written in Go from Cake's high-level code written in Dart/Flutter.
-- Three developers configured build environments and got working builds of Cake Wallet showing dummy Decred views on iOS, Android, and macOS. Just getting a working build is a notable milestone considering how complex and confusing the build process is.
-
-In progress work for Cake Wallet:
-
-- First change adding [initial Decred screens](https://github.com/cake-tech/cake_wallet/pull/1165) has been submitted to the upstream repository's integration branch called `decred_main`. Working Decred code will be tested and polished in that branch before being added to Cake Wallet's `main` branch.
-- Integrating [libwallet](https://github.com/JoeGruffins/cake_wallet/pull/8) built as a C library, including any necessary glue code in Kotlin and Swift, and build code for various OSes and CPU architectures.
-- Scripts and how-to guide for building Cake Wallet [on macOS](https://github.com/cake-tech/cake_wallet/pull/1163). This documents the missing knowledge of the complex build process that was quite hard to discover.
-
-Merged work for [libwallet](https://github.com/itswisdomagain/libwallet):
-
-- Implemented [basic functions](https://github.com/itswisdomagain/libwallet/pull/1) for DCR, BTC and LTC wallets, including: create wallet, create watch-only wallet, open wallet, start/stop wallet sync, set wallet birthday. This borrows some code and ideas from DCRDEX and Cryptopower, and builds on top of existing cryptocurrency projects written in Go, including: [Decred](https://github.com/decred), [btcsuite](https://github.com/btcsuite), [ltcsuite](https://github.com/ltcsuite), [Neutrino](https://github.com/lightninglabs/neutrino) for BTC and [Neutrino fork](https://github.com/ltcsuite/neutrino) for LTC (plus [patches](https://github.com/dcrlabs/neutrino-ltc) from DCRDEX developers).
-- Storage implementation for saving [wallet config and transaction data](https://github.com/itswisdomagain/libwallet/pull/3).
-
-In progress work for libwallet:
-
-- A wrapper layer for building libwallet as a [C library](https://github.com/itswisdomagain/libwallet/pull/2) that could be called from Cake Wallet's high-level app code.
-- A package for managing [wallet sync](https://github.com/itswisdomagain/libwallet/pull/4) and reporting sync progress for DCR, BTC and LTC wallets.
-
-libwallet is a multi-coin library implementing light (SPV) wallets for Decred, Bitcoin and Litecoin. It was originally created to integrate Decred in Cake Wallet, but it has potential to become a platform for building Decred and multi-coin software. The second app to use libwallet will likely be the Cryptopower wallet. This will be similar to how the now-discontinued [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet) was shared by GoDCR and Android/iOS Decred apps, but will support more assets than just Decred. C interop layer will be added soon which will allow libwallet to be used by any programming language that can [call C code](https://en.wikipedia.org/wiki/Foreign_function_interface), facilitating Decred integrations in a wide array of existing and new crypto software (this was one of the goals of the [TinyDecred v2](202206.md#tinywallet) effort).
-
-Wallet apps built on libwallet will have much better privacy compared to many existing apps on the market, where it is common to use central servers that can track users' funds. Unfortunately, Cake's Bitcoin wallet is one such case because it relies on their [Electrum server](https://github.com/cake-tech/cake_wallet/blob/3760285a64405935fafe7aeeb051fd25d850585b/assets/bitcoin_electrum_server_list.yml) which is [not good for privacy](https://electrum.readthedocs.io/en/latest/faq.html). Under the hood libwallet uses [dcrwallet](https://github.com/decred/dcrwallet) for Decred and [Neutrino](https://github.com/lightninglabs/neutrino) for Bitcoin, which connect directly to full nodes and fetch data privately without revealing owned funds and transactions.
+- Decred 月报档案现已发布在 Bison Relay 上。 请联系@karamble 获取使用说明。
 
 
-### Other
+### Cake Wallet 集成
 
-- Arabic translation of [timestamply.org](https://timestamply.org/)'s interface has been [submitted](https://github.com/decred/dcrtimegui/pull/157) for code review.
+已完成的工作合并到中间[集成树](https://github.com/JoeGruffins/cake_wallet/tree/cw-decred)：
 
+- 添加了 [libwallet 存根](https://github.com/JoeGruffins/cake_wallet/pull/4)，以便在编写真正的 libwallet 时继续使用更高级别的代码。 此外，还删除了早期实验中留下的许多不必要的代码。
+- 继续研究从用 Dart/Flutter 编写的 Cake 高级代码调用用 Go 编写的 Decred 代码的最佳方式。
+- 三位开发人员配置了构建环境并获得了 Cake Wallet 的工作构建，在 iOS、Android 和 macOS 上显示了虚拟 Decred 视图。 考虑到构建过程的复杂性和混乱性，仅仅获得一个有效的构建就是一个值得注意的里程碑。
+
+Cake Wallet 正在进行中的工作：
+
+- 添加[初始 Decred 屏幕](https://github.com/cake-tech/cake_wallet/pull/1165) 的第一个更改已提交到名为“decred_main”的上游存储库的集成分支。 在添加到 Cake Wallet 的“main”分支之前，工作的 Decred 代码将在该分支中进行测试和完善。
+- 集成作为 C 库构建的 [libwallet](https://github.com/JoeGruffins/cake_wallet/pull/8)，包括 Kotlin 和 Swift 中任何必要的粘合代码，以及为各种操作系统和 CPU 架构构建代码。
+- 用于构建 Cake 钱包的脚本和操作指南 [在 macOS 上](https://github.com/cake-tech/cake_wallet/pull/1163)。 这记录了很难发现的复杂构建过程中缺失的知识。
+  
+[libwallet](https://github.com/itswisdomagain/libwallet) 的合并工作：
+
+- 为 DCR、BTC 和 LTC 钱包实现了[基本功能](https://github.com/itswisdomagain/libwallet/pull/1)，包括：创建钱包、创建手表钱包、打开钱包、启动/停止钱包同步 ，设置钱包生日。 它借鉴了 DCRDEX 和 Cryptopower 的一些代码和想法，并构建在用 Go 编写的现有加密货币项目之上，包括：[Decred](https://github.com/decred)、[btcsuite](https://github.com/decred)。 com/btcsuite)、[ltcsuite](https://github.com/ltcsuite)、[Neutrino](https://github.com/lightninglabs/neutrino) 用于 BTC 和 [Neutrino fork](https://github.com/btcsuite)、[Neutrino](https://github.com/lightninglabs/neutrino)。 com/ltcsuite/neutrino）用于 LTC（加上来自 DCRDEX 开发人员的[补丁](https://github.com/dcrlabs/neutrino-ltc)）。
+- 用于保存[钱包配置和交易数据]的存储实现(https://github.com/itswisdomagain/libwallet/pull/3)。
+
+libwallet 正在进行中：
+
+- 用于将 libwallet 构建为 [C 库](https://github.com/itswisdomagain/libwallet/pull/2) 的包装层，可以从 Cake Wallet 的高级应用程序代码中调用。
+- 用于管理 [钱包同步](https://github.com/itswisdomagain/libwallet/pull/4) 并报告 DCR、BTC 和 LTC 钱包同步进度的软件包。
+
+libwallet 是一个多币种库，为 Decred、比特币和莱特币实现轻量 (SPV) 钱包。 它最初是为了将 Decred 集成到 Cake Wallet 中而创建的，但它有潜力成为构建 Decred 和多币软件的平台。 第二个使用 libwallet 的应用程序可能是 Cryptopower 钱包。 这将类似于 GoDCR 和 Android/iOS Decred 应用程序共享现已停产的 [dcrlibwallet](https://github.com/planetdecred/dcrlibwallet)，但将支持更多资产，而不仅仅是 Decred。 C 互操作层将很快添加，这将允许任何可以[调用 C 代码](https://en.wikipedia.org/wiki/Foreign_function_interface)的编程语言使用 libwallet，从而促进 Decred 与各种现有的集成和新的加密软件（这是 [TinyDecred v2](202206.md#tinywallet) 工作的目标之一）。
+
+与市场上许多现有的应用程序相比，基于 libwallet 构建的钱包应用程序将具有更好的隐私性，市场上通常使用可以跟踪用户资金的中央服务器。 不幸的是，Cake 的比特币钱包就是这样一种情况，因为它依赖于他们的 [Electrum 服务器](https://github.com/cake-tech/cake_wallet/blob/3760285a64405935fafe7aeeb051fd25d850585b/assets/bitcoin_electrum_server_list.yml)，这 [不利于隐私](https://electrum.readthedocs.io/en/latest/faq.html)。 在底层，libwallet 对 Decred 使用 [dcrwallet](https://github.com/decred/dcrwallet)，对比特币使用 [Neutrino](https://github.com/lightninglabs/neutrino)，它们直接连接到完整节点， 私下获取数据而不泄露自有资金和交易。
+
+
+### 其它
+
+- [timestamply.org](https://timestamply.org/) 界面的阿拉伯语翻译已[提交](https://github.com/decred/dcrtimegui/pull/157) 进行代码审查。
 
 <a id="people"></a>
 
-## People
+## 人员
 
-Welcome the new first-time contributors:
+欢迎新的首次贡献者：
 
-- @Philip-21 (developer, [dcrwallet](https://github.com/decred/dcrwallet/pull/2293))
+- @Philip-21 (开发者, [dcrwallet](https://github.com/decred/dcrwallet/pull/2293))
 
 Community stats as of Dec 3 (compared to Nov 2):
 
-- [Twitter](https://twitter.com/decredproject) followers: 53,939 (+464)
-- [Reddit](https://www.reddit.com/r/decred/) subscribers: 12,773 (+11)
-- [Matrix](https://chat.decred.org/) #general members: 833 (+7)
-- [Discord](https://discord.gg/GJ2GXfz) members: 1,862 (+24), verified to post: 769 (+7)
-- [Telegram](https://t.me/Decred) members: 2,319 (+22)
-- [YouTube](https://www.youtube.com/decredchannel) subscribers: 4,660 (+20), views: 244.7K (+2.3K)
+- [Twitter](https://twitter.com/decredproject) 粉丝: 53,939 (+464)
+- [Reddit](https://www.reddit.com/r/decred/) 订阅: 12,773 (+11)
+- [Matrix](https://chat.decred.org/) #general 用户: 833 (+7)
+- [Discord](https://discord.gg/GJ2GXfz) 用户: 1,862 (+24), 已验证发布: 769 (+7)
+- [Telegram](https://t.me/Decred) 用户: 2,319 (+22)
+- [YouTube](https://www.youtube.com/decredchannel) 订阅: 4,660 (+20), 观看量: 244.7K (+2.3K)
 
 
 <a id="governance-and-finances"></a>
 
-## Governance and Finances
+## 治理和财务
 
-In November the new [treasury](https://dcrdata.decred.org/treasury) received 7,060 DCR worth $101K at November's average rate of $14.35. 8,471 DCR was spent to pay contractors, worth $122K at same rate.
+11 月，新[国库](https://dcrdata.decred.org/treasury) 收到了 7,060 DCR，价值 101,000 美元，11 月的平均汇率为 14.35 美元。 8,471 DCR 用于支付承包商费用，按相同价格计算价值 122,000 美元。
 
-A [treasury spend tx](https://dcrdata.decred.org/tx/ca24ed5e5d4819ca68b270a78345be07d5a18890b83ada366e970807425e8bfc) was approved with 7,346 Yes votes and 57% turnout, and mined on Nov 21. It had 50 outputs making payments to contractors, ranging from 3 DCR to 1,411 DCR. Most of this DCR was likely paid for September and some October work. Using an estimated billing exchange rate for the mix of two months of $12.98, the billed amount in this TSpend is around $110K.
+[国库支出tx](https://dcrdata.decred.org/tx/ca24ed5e5d4819ca68b270a78345be07d5a18890b83ada366e970807425e8bfc)以7,346票赞成和57%的投票率获得批准，并于11月21日开采。它有50个产出支付给承包商，范围从 3 DCR 至 1,411 DCR。 大部分 DCR 可能是 9 月份和 10 月份部分工作的报酬。 使用两个月的估计账单汇率 12.98 美元，此 TSpend 中的账单金额约为 11 万美元。
 
-One of the considerations around the timing and structuring of treasury payments to contractors for these months is to stay within the limit of 150% of monthly inflows as dictated by [DCP-7](https://github.com/decred/dcps/blob/master/dcp-0007/dcp-0007.mediawiki). The lower DCR/USD exchange rate and decline in block reward subsidy over time means that hitting the limit is a realistic concern for the first time, especially if there is a backlog of older invoices accumulating. In this case invoices that were already submitted for October were sent for payment at the same time as those for September rather than waiting another month, which would have been more usual.
+关于这几个月向承包商支付的国库付款的时间和结构的考虑因素之一是保持在 [DCP-7](https://github.com/decred/dcps/blob/master/dcp-0007/dcp-0007.mediawiki)。 随着时间的推移，DCR/美元汇率的下降和区块奖励补贴的下降意味着达到上限首次成为现实的担忧，特别是在旧发票积压的情况下。 在这种情况下，已经提交的 10 月份发票将与 9 月份的发票同时发送以进行付款，而不是再等一个月，这本来是更常见的情况。
 
-As of Dec 1, combined balance of [legacy](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) and [new treasury](https://dcrdata.decred.org/treasury) is 871,828 DCR ($12.5 million USD at $14.39).
+截至 12 月 1 日，[旧国库](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和[新国库](https://dcrdata.decred.org/treasury) 的合并余额为 871,828 DCR（1,250 万美元） 以14.39 美元计价。
 
-![Treasury inflows and outflows in DCR](../img/202311.09.720.png)
+![DCR 中的国库流入和流出](img/202311.09.720.png)
 
-_Image: Treasury inflows and outflows in DCR_
+_图片：DCR 中的国债流入和流出_
 
-![Treasury monthly balance in USD; note that it heavily depends on the exchange rate](../img/202311.10.700.png)
+![国库每月余额（美元）； 请注意，这在很大程度上取决于汇率](img/202311.10.700.png)
 
-_Image: Treasury monthly balance in USD; note that it heavily depends on the exchange rate_
+_图片：财政部每月余额（美元）； 请注意，这在很大程度上取决于汇率_
 
-There were no Politeia proposals [submitted](https://proposals.decred.org/?tab=under%20review), [approved](https://proposals.decred.org/?tab=approved) or [rejected](https://proposals.decred.org/?tab=rejected) in November.
+ 11 月没有 Politeia 提案[已提交](https://proposals.decred.org/?tab=under%20review)、[已批准](https://proposals.decred.org/?tab=approved) 或[已拒绝] (https://proposals.decred.org/?tab=rejected)。
 
-It has been [reported](https://matrix.to/#/!xUNvyzkFgiMjhvPbIi:decred.org/$LluGF4EWaQrEEb8lKRKyBRxeQxSqpjWPK8GOSVUA4zU) on November 23rd that one user was unable to register and submit a proposal. Apparently Politeia [did not detect](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$jmqFcgH8De7TuG2Z9FofSxeBfcYPWn5KMjcG-V6d0bk) the registration fee payment. As of December 1st this has not been resolved.
-
+据报道，11 月 23 日，一名用户无法注册并提交提案。 显然 Politeia [没有检测到](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$jmqFcgH8De7TuG2Z9FofSxeBfcYPWn5KMjcG-V6d0bk) 注册费付款。 截至12月1日，该问题尚未解决。
 
 <a id="network"></a>
 
-## Network
+## 网络
 
-This section tracks key health metrics of the fundamental infrastructure.
+本节跟踪基础设施的关键健康指标。
 
+### 挖矿
 
-### Mining
+11 月的 [全网算力](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) 以 13.7 TH/s开启，以 5.5 TH/s结束，最低 5.0 TH/s，峰值 15.9 TH/s。
 
-November's [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) opened at ~13.7 TH/s and closed ~5.5 TH/s, bottoming at 5.0 TH/s and peaking at 15.9 TH/s throughout the month.
+![Decred 算力在 GPU 矿工最初涌入后正在寻求新的平衡](img/202311.11.720.png)
 
-![Decred hashrate is seeking a new equilibrium after the initial influx of GPU miners](../img/202311.11.720.png)
+_图片：在 GPU 矿工最初涌入后，Decred 算力正在寻求新的平衡_
 
-_Image: Decred hashrate is seeking a new equilibrium after the initial influx of GPU miners_
+截至 12 月 3 日，实际[开采](https://miningpoolstats.stream/decred)的 1,000 个区块的分布：[miningandco.com](https://decred.miningandco.com/) 41%，[losmuchachos.digital](https ://losmuchachos.digital/) 8%，[pooltronic.tech](https://decred.pooltronic.tech/) 3.6%，47% 的区块未被 [miningpoolstats.stream](https://miningpoolstats.stream/decred)收录。
 
-Distribution of 1,000 blocks actually [mined](https://miningpoolstats.stream/decred) by Dec 3: [miningandco.com](https://decred.miningandco.com/) 41%, [losmuchachos.digital](https://losmuchachos.digital/) 8%, [pooltronic.tech](https://decred.pooltronic.tech/) 3.6%, and 47% of blocks were not identified by [miningpoolstats.stream](https://miningpoolstats.stream/decred).
+![唯一挖矿地址的减少表明它再次变得更加中心化](img/202311.12.720.png)
 
-![The reduction of unique mining addresses suggests it is getting more centralized again](../img/202311.12.720.png)
-
-_Image: The reduction of unique mining addresses suggests it is getting more centralized again_
-
+_图片：唯一挖矿地址的减少表明它再次变得更加中心化_
 
 ### Staking
 
-[Ticket price](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) varied between 224-324 DCR.
+[票价](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) 在 224-324 DCR 之间变化。
 
-![Ticket price has stabilized pretty quickly](../img/202311.13.720.png)
+![票价很快稳定下来](img/202311.13.720.png)
 
-_Image: Ticket price has stabilized pretty quickly_
+_图片：票价很快就稳定了_
 
-The [locked amount](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time) was 9.27-9.85 million DCR, meaning that 59.4-63.1% of the circulating supply [participated](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) in proof of stake.
+[锁定金额](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time)为927-985万个DCR，这意味着循环供应量的59.4-63.1%[参与](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time)权益证明。
 
-![DCR locked in tickets is staying near its ATH](../img/202311.14.720.png)
+![DCR 锁定的门票保持在其 ATH 附近](../img/202311.14.720.png)
 
-_Image: DCR locked in tickets is staying near its ATH_
+_图片：锁定选票的 DCR 保持在其 ATH 附近_
 
-![Among the other things, percentage of staked DCR indirectly shows how much of new emission is re-staked](../img/202311.15.720.png)
+![除此之外，质押 DCR 的百分比间接显示有多少新排放量被重新质押](img/202311.15.720.png)
 
-_Image: Among the other things, percentage of staked DCR indirectly shows how much of new emission is re-staked_
-
+_图片：除此之外，质押 DCR 的百分比间接显示有多少新发行量被重新质押_
 
 ### VSP Staking
 
-The [14 listed VSPs](https://decred.org/vsp/) collectively managed ~5,850 (-1,350) live tickets, which was 14.3% of the ticket pool (-2.5%) as of Dec 1. Note: these figures exclude around 400 tickets managed by [123.dcr.rocks](https://123.dcr.rocks/) which was delisted due to closing.
+[14 个列出的 VSP](https://decred.org/vsp/) 总共管理了约 5,850 (-1,350) 现场票，截至 12 月 1 日，占选票池的 14.3% (-2.5%)。 注意：这些 数字不包括 [123.dcr.rocks](https://123.dcr.rocks/) 管理的约 400 张选票，该选票因关闭而被除名。
 
-The only gainer of November was [99split.com](https://vspd.99split.com) (+136 tickets or +32%), the other 13 saw outflows of tickets.
+11 月份唯一上涨的是 [99split.com](https://vspd.99split.com)（+136 张门票或+32%），其他 13 个选票流出。
 
-![Distribution of tickets managed by VSPs](../img/202311.16.720.png)
+![VSP 管理的票证分发](img/202311.16.720.png)
 
-_Image: Distribution of tickets managed by VSPs_
+_图片：VSP 管理的选票分布_
 
-![Missed votes are back to low numbers](../img/202311.17.720.png)
+![失票数又回到低位](img/202311.17.720.png)
 
-_Image: Missed votes are back to low numbers_
+_图片：错过的选票又回到低位_
 
 
-### Nodes
+### 节点
 
-[Decred Mapper](https://nodes.jholdstock.uk/user_agents) observed between 150 and 158 dcrd nodes throughout the month. Versions of 147 nodes seen on Dec 1: v1.8.0 - 67%%, v1.8.1 - 23%, v1.9.0 dev builds - 3%, v1.7.x - 2%, v1.8.0 - 0.7%, other - 3%.
+[Decred Mapper](https://nodes.jholdstock.uk/user_agents) 整个月观察到 150 到 158 个 dcrd 节点。 12 月 1 日出现的 147 个节点的版本：v1.8.0 - 67%%、v1.8.1 - 23%、v1.9.0 开发版本 - 3%、v1.7.x - 2%、v1.8.0 - 0.7%、其他 - 3%。
 
-![Nodes are upgrading to v1.8.1. The red area before Jan 2023 indicates incomplete data we had at that time.](../img/202311.18.720.png)
+![节点正在升级到 v1.8.1。 2023年1月之前的红色区域表示我们当时的数据不完整。](img/202311.18.720.png)
 
-_Image: Nodes are upgrading to v1.8.1. The red area before Jan 2023 indicates incomplete data we had at that time._
-
+_Image：节点正在升级到 v1.8.1。 2023 年 1 月之前的红色区域表示我们当时拥有的数据不完整。_
 
 ### StakeShuffle
 
-The share of [mixed coins](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true) varied between 62.1-62.3%. Daily [mix volume](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) varied between 0-1,032K DCR.
+[混合币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true)的份额在62.1-62.3%之间变化。 每日 [混合量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 0-1,032K DCR 之间变化。
 
-![Second big dip and recovery of daily DCR mixing](../img/202311.19.720.png)
+![第二次大跌和每日 DCR 混合的恢复](img/202311.19.720.png)
 
-_Image: Second big dip and recovery of daily DCR mixing_
+_图片：每日 DCR 混合的第二次大跌和恢复_
 
-![More than 62% of circulating supply prefers privacy](../img/202311.20.720.png)
+![超过62%的流通供应更倾向于隐私](img/202311.20.720.png)
 
-_Image: More than 62% of circulating supply prefers privacy_
+_图片：超过 62% 的流通供应更倾向于隐私_
 
 
 ### Lightning Network
 
-Decred [LN Explorer](https://ln-map.jholdstock.uk/) saw 220 nodes (+0), 420 channels (-28) with a total capacity of 206 DCR (+3), as of Dec 3 (compared to Nov 1).
+截至 12 月 3 日，Decred [LN Explorer](https://ln-map.jholdstock.uk/) 有 220 个节点 (+0)、420 个通道 (-28)，总容量为 206 DCR (+3) ( 与 11 月 1 日相比）。
 
-![Some LN channels got closed](../img/202311.21.720.png)
+![闪电网络部分频道被关闭](img/202311.21.720.png)
 
-_Image: Some LN channels got closed_
+_图片：闪电网络的一些频道被关闭_
 
-![LN node count stayed the same while the capacity increased a bit](../img/202311.22.720.png)
+![LN 节点数量保持不变，但容量略有增加](img/202311.22.720.png)
 
-_Image: LN node count stayed the same while the capacity increased a bit_
+_图片：LN 节点数量保持不变，但容量略有增加_
 
-Thanks to @bochinchero for providing and improving these charts. About 40 other charts not used in this Decred Journal issue are available in the [dcrsnapshots](https://github.com/bochinchero/dcrsnapshots) repository; everyone is welcome to share them on social media.
+感谢@bochinchero 提供和改进这些图表。 [dcrsnapshots](https://github.com/bochinchero/dcrsnapshots) 存储库中提供了本 Decred 月报问题中未使用的大约 40 个其他图表； 欢迎大家在社交媒体上分享。
 
 
 <a id="ecosystem"></a>
 
-## Ecosystem
+## 生态系统
 
 
-### Voting Service Providers
+### 投票服务提供商
 
-- vspd [v1.3.2 release](https://github.com/decred/vspd/releases/tag/release-v1.3.2) came out with fixes that should resolve issues with ticket status errors and VSP fee payment failures. 9 out of 14 VSPs have deployed these fixes as of December 1st.
+- vspd [v1.3.2 版本](https://github.com/decred/vspd/releases/tag/release-v1.3.2) 发布了修复程序，应解决选票状态错误和 VSP 费用支付失败的问题。 截至 12 月 1 日，14 个 VSP 中有 9 个已部署这些修复程序。
 
-- The [VSP list page](https://decred.org/vsp/) has been [updated](https://github.com/decred/dcrweb/pull/1148) to show all-time Missed ticket stats. As of the December 1st snapshot, the 14 active VSPs between 6 months and 3 years old reported a total of 1,108 revoked tickets, of which 1,101 expired [normally](https://docs.decred.org/proof-of-stake/overview/) and only 7 missed their votes. The low missed count shows that vspd deployments are much more reliable compared to the old [dcrstakepool](https://github.com/decred/dcrstakepool) which had higher miss rates. Note: [bass.cf](https://vspd.bass.cf/) has been excluded from these numbers because it has not yet upgraded to report missed tickets.
-
-
-### Mining Pools
-
-- [decred.miningandco.com](https://decred.miningandco.com/) has been made [open for all](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$H4QA2fDpl1OO6jLnJa6PTAHiEPPSYQYSlomhYzWLrb8). We announced it in [October](202310.md#ecosystem) but missed that it was a private pool initially. Supported miners include the official [gominer](https://github.com/decred/gominer) for Windows and [custom binaries](https://github.com/Gddrig/gominer/releases) of gominer for Linux and HiveOS. [GitHub repo](https://github.com/Gddrig/gominer) hosting those binaries does not include the source code yet, so use with care.
+- [VSP 列表页面](https://decred.org/vsp/) 已[更新](https://github.com/decred/dcrweb/pull/1148) 以显示所有时间的错过选票统计信息。 截至 12 月 1 日快照，14 个 6 个月至 3 岁之间的活跃 VSP 总共报告了 1,108 个撤销票据，其中 1,101 个[正常]过期(https://docs.decred.org/proof-of-stake/ 概述/），只有 7 人错过了投票。 较低的错过计数表明，与错过率较高的旧 [dcrstakepool](https://github.com/decred/dcrstakepool) 相比，vspd 部署更加可靠。 注意：[bass.cf](https://vspd.bass.cf/) 已被排除在这些数字之外，因为它尚未升级以报告错过的门票。
 
 
-### Staking Services
+### 矿池
 
-- [BisonPool](https://twitter.com/BisonPool) [reported](https://twitter.com/BisonPool/status/1724110111503728738) that with the activation of DCP-10 earnings rose from ~2.8%/year to ~7.8%/year, and now with DCP-12 up to ~8.6%/year. Current returns are shown on their [home page](https://bisonpool.org/), note that it is not fixed and depends on ticket prices. BisonPool was [launched](https://www.reddit.com/r/decred/comments/vyydm1/bisonpool_is_now_live/) in July 2022 by two IT security enthusiasts who were anonymously participating in Decred since 2018. The service allows staking and earning rewards with less than a full ticket. Bear in mind that it is a custodial service that takes full control of users' funds.
+- [decred.miningandco.com](https://decred.miningandco.com/)已[向所有人开放](https://matrix.to/#/!TSpuyuYWgkTrgPTcXh:decred.org/$H4QA2fDpl1OO6jLnJa6PTAHiEPPSYQYSlomhYzWLrb8)。 我们在[10 月](202310.md#ecosystem) 宣布了它，但错过了它最初是一个私人池。 支持的矿工包括适用于Windows的官方[gominer](https://github.com/decred/gominer)和适用于Linux和HiveOS的gominer的[自定义二进制文件](https://github.com/Gddrig/gominer/releases)。 托管这些二进制文件的 [GitHub 存储库](https://github.com/Gddrig/gominer) 尚不包含源代码，因此请谨慎使用。
 
+### Staking 服务
 
-### Exchanges
+- [BisonPool](https://twitter.com/BisonPool) [报告](https://twitter.com/BisonPool/status/1724110111503728738) 随着 DCP-10 的激活，收益从每年约 2.8% 上升至 ~7.8%/年，现在 DCP-12 高达 ~8.6%/年。 当前回报显示在他们的[主页](https://bisonpool.org/)上，请注意，它不是固定的，取决于票价。 BisonPool 于 2022 年 7 月由两名 IT 安全爱好者推出，他们自 2018 年起匿名参与 Decred。该服务允许质押和赚取收益低于全票的奖励。 请记住，这是一项完全控制用户资金的托管服务。
 
-- [Poloniex](https://poloniex.com/) was hacked on November 10th for an estimated loss of $118 million in Ethereum assets, Tron assets, and BTC. As DCR was not mentioned by [Poloniex](https://twitter.com/Poloniex/status/1722956238160536049), [Justin Sun](https://twitter.com/justinsuntron/status/1722942733680296246), or the [Lookonchain tweet](https://twitter.com/lookonchain/status/1722969227915661531) about the stolen assets, it is unknown if any DCR was stolen during the hack. In any case, DCR users were affected by the suspension of all withdrawals. On-chain researchers of the #trading club [noticed](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$c4Da_17xYGDPGRlK3JLf91bA2UbhoQvthyfVBCD6vvI) a transaction sending around ~60K DCR from a [Poloniex address](https://dcrdata.decred.org/address/DsTSdjhiCY1z8AeQGWYJ5ryJKRA3eSBGRTj) to [Binance](https://dcrdata.decred.org/address/DsSJDWwDZtxjFvh7xvTzkENAtNZEeZsQgG8) around 12 hours after the hack became public and ~7 hours after Poloniex was [said](https://twitter.com/justinsuntron/status/1723009018086527126) to be "restored". The speculation has been that it could be either Poloniex saving the remaining funds or the hacker liquidating them on Binance.
+### 交易所
 
-- Poloniex was slow at recovering from the hack. Trading was [resumed](https://support.poloniex.com/hc/en-us/articles/18996694952983) on the next day, but no withdrawals have been enabled by Nov 30 and their [support Twitter](https://twitter.com/PoloSupport) has been silent. At the same time there was no shortage of promotion, hype, or even coin listing [tweets](https://twitter.com/Poloniex). As a consequence of withdrawals and cross-exchange arbitrage not functioning, DCR price went down significantly compared to the other markets.
+- [Poloniex](https://poloniex.com/) 于 11 月 10 日遭到黑客攻击，以太坊资产、Tron 资产和 BTC 预计损失 1.18 亿美元。 由于 [Poloniex](https://twitter.com/Poloniex/status/1722956238160536049)、[Justin Sun](https://twitter.com/justinsuntron/status/1722942733680296246) 或 [Lookonchain tweet](https://twitter.com/lookonchain/status/1722969227915661531) 均未提及 DCR 关于被盗资产，尚不清楚在黑客攻击期间是否有任何 DCR 被盗。 无论如何，DCR 用户都受到了所有提现暂停的影响。 #trading 俱乐部的链上研究人员 [注意到](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$c4Da_17xYGDPGRlK3JLf91bA2UbhoQvthyfVBCD6vvI) 一笔交易从 [Poloniex 地址](https://dcrdata.decred.org/address/DsTSdjhiCY1z8AeQGWYJ5ryJKRA3eSBGRTj) 到 [Binance](https://dcrdata.decred.org/address/DsSJDWwDZtxjFvh7xvTzkENAtNZEeZsQgG8) 。 人们猜测，可能是 Poloniex 保存了剩余资金，也可能是黑客在币安上清算了这些资金。
 
-- [HTX](https://www.htx.com/) exchange (formerly Huobi) and its HECO Chain Bridge lost around $117 million worth of assets to a hot wallet compromise according to the official [support article](https://www.htx.com/support/en-us/detail/104954980569005) and [PeckShield](https://twitter.com/PeckShieldAlert/status/1727290028064436539). [Justin Sun](https://twitter.com/justinsuntron/status/1727304656622326180) and [HTX](https://www.htx.com/support/en-us/detail/104954980569005) promised to fully compensate users for the losses. DCR was not mentioned as a stolen asset and was likely never integrated in the HECO Chain Bridge. However, DCR users were hit by the suspension of all withdrawals.
+- Poloniex 从黑客攻击中恢复的速度很慢。 交易于次日[恢复](https://support.poloniex.com/hc/en-us/articles/18996694952983)，但截至 11 月 30 日尚未启用提款，其[支持 Twitter](https:///twitter.com/PoloSupport)一直保持沉默。 与此同时，也不乏促销、炒作，甚至上币[tweets](https://twitter.com/Poloniex)。 由于提款和跨交易所套利不起作用，DCR 价格与其他市场相比大幅下跌。
 
-- HTX has been recovering faster compared to Poloniex. By Nov 30 withdrawals for BTC, ETH, TRX and about a hundred other assets have been restored (including USDT and USDC), but based on official updates and DCR/USDT slippage on HTX, DCR was not so lucky.
+- 根据官方[支持文章](https://www.htx.com/support/en-us/detail/104954980569005)和[PeckShield](https://twitter.com/PeckShieldAlert/status/1727290028064436539)。 [Justin Sun](https://twitter.com/justinsuntron/status/1727304656622326180) 和 [HTX](https://www.htx.com/support/en-us/detail/104954980569005) 承诺全额补偿用户 的损失。 DCR 并未被提及为被盗资产，并且很可能从未集成到 HECO 链桥中。 然而，DCR 用户因所有提款暂停而受到打击。
 
-- [Bittrex Global](https://bittrexglobal.com/) announced that they are [winding down operations](https://twitter.com/BittrexGlobal/status/1726652430673121310). All trading activity will end by December 4th, and from there customers will only be able to withdraw. Any remaining USD will be [auto-converted to USDT](https://twitter.com/BittrexGlobal/status/1729897531448987831). It's been a bad year for Bittrex: [$29 million](https://www.reuters.com/business/finance/crypto-exchange-bittrex-fined-53-mln-by-us-treasury-dept-2022-10-11/) in fines in October 2022, having to wind down [U.S. operations](202303.md#ecosystem) in March 2023 due to unwelcoming regulatory and economic environment, [charges by U.S. SEC](202304.md#relevant-external) in April for securities violations, and a [bankruptcy](202305.md#ecosystem) filing in May.
+- 与 Poloniex 相比，HTX 的恢复速度更快。 截至 11 月 30 日，BTC、ETH、TRX 等近百种资产（包括 USDT 和 USDC）的提现均已恢复，但根据官方更新和 HTX 上的 DCR/USDT 滑点来看，DCR 就没那么幸运了。
 
-- DCR withdrawals from Bittrex have been suspended for 9 days (judging by [this address](https://dcrdata.decred.org/address/DsbvnccsFTAP7FQV7g3SgGfyoXNcPL2Y1fm)), as a result the price of DCR went down and some smart traders picked it up for as low as $5. Withdrawals resumed on November 29th however, and one user [reported](https://matrix.to/#/!aNnAOHkWUdNcEXRGjJ:decred.org/$hj_TXo2KHkW8DLyE8UDYagtqXXjrva1RL0SSWCGAOtY) it worked for DCR with no issues.
+- [Bittrex Global](https://bittrexglobal.com/) 宣布他们正在[结束运营](https://twitter.com/BittrexGlobal/status/1726652430673121310)。 所有交易活动将于 12 月 4 日结束，届时客户将只能提款。 任何剩余的美元将[自动转换为 USDT](https://twitter.com/BittrexGlobal/status/1729897531448987831)。 对于 Bittrex 来说，这是糟糕的一年：[2900 万美元](https://www.reuters.com/business/finance/crypto-exchange-bittrex-fined-53-mln-by-us-treasury-dept-2022-10-11/) 于 2022 年 10 月罚款，不得不逐步结束 [美国 由于不受欢迎的监管和经济环境，于 2023 年 3 月停止运营](202303.md#ecosystem)，[美国 SEC 指控](202304.md#relevant-external) 于 4 月因违反证券规定，以及[破产](202305.md)于五月提交。
 
-- [KuCoin](https://www.kucoin.com/) announced that [DCR/USDT trading pair](https://www.kucoin.com/announcement/kucoin-will-add-and-close-certain-spot-trading-pairs) will launch on November 24th while DCR/ETH pair will be closed. The same change was made for 8 other coins.
+- Bittrex的DCR提现已暂停9天（根据[此地址](https://dcrdata.decred.org/address/DsbvnccsFTAP7FQV7g3SgGfyoXNcPL2Y1fm)），导致DCR价格下跌。
 
-- [Bitvavo.com](https://bitvavo.com/en) may be staking customers' DCR according to on-chain findings of [#trading](https://matrix.to/#/!lDZCzVQjFoJsXMPkvr:decred.org/$PkJ9-s1hjxrdFMPBB1fXLqk0_-gK1q3q237PmVsg5Zk) researchers. Bitvavo's support has [confirmed](https://twitter.com/CryptoDYOR/status/1723760185884164196) that the exchange can collect rewards generated from holding the assets on behalf of its users, according to their User Agreement. DCR is currently missing from the ["reward-eligible" assets](https://support.bitvavo.com/hc/en-us/articles/4405243949841-Staking-and-Lending-at-Bitvavo), so there is no way for the users to opt-in to receive DCR staking rewards. Staking DCR without sharing the rewards with customers received mixed feedback from the community, ranging from it being highly unethical, to it being more secure (against theft or misuse by the exchange itself), or even being a "selling point" to get DCR listed on more exchanges.
+- [KuCoin](https://www.kucoin.com/) 宣布 DCR/USDT 交易对将于11月24日推出，同时DCR/ETH交易对将关闭。其他8种硬币也进行了同样的更改。
 
-- [Changelly](https://github.com/decred/dcrweb/pull/1153) has been removed from [decred.org Exchanges](https://decred.org/exchanges/) page because DCR doesn't work since [September](202309.md#ecosystem).
+- [Changelly](https://github.com/decred/dcrweb/pull/1153) 已从 [decred.org Exchanges](https://decred.org/exchanges/) 页面中删除。
 
-- [MEXC.com](https://www.mexc.com/exchange/DCR_USDT) and [XT.com](https://www.xt.com/) have been tested: DCR trading works over VPN and without KYC. DCR withdrawals are working at MEXC, help is needed to test withdrawals at XT.
+- [MEXC.com](https://www.mexc.com/exchange/DCR_USDT) 和 [XT.com](https://www.xt.com/) 已经过测试：DCR 交易可通过 VPN 进行，无需了解您的客户。 DCR 提款正在 MEXC 上运行，需要帮助来测试 XT 的提款。
 
-- [Trocador](https://trocador.app/) [launched](https://twitter.com/TrocadorApp/status/1722987823664410844) new [prepaid virtual cards](https://trocador.app/en/prepaidcards/) that can be purchased with crypto and used as normal credit cards. A test run for DCR has uncovered some issues: a backend error (devs fixed it), automatic email with card details didn't work (support request resolved it), it worked with Google Pay but not with contactless NFC payments, and there was roughly an 8% markup to use the service. Despite those issues, it works and allows sending DCR and getting a prepaid VISA card that can be used to buy real world things.
+- [Trocador](https://trocador.app/) [已推出](https://twitter.com/TrocadorApp/status/1722987823664410844) 新的[预付费虚拟卡](https://trocador.app/en/prepaidcards/) 可以用加密货币购买并用作普通信用卡。 DCR 的测试运行发现了一些问题：后端错误（开发人员修复了它）、带有卡详细信息的自动电子邮件不起作用（支持请求解决了它）、它适用于 Google Pay，但不适用于非接触式 NFC 支付，并且有 使用该服务大约需要 8% 的加价。 尽管存在这些问题，它仍然有效，并允许发送 DCR 并获得可用于购买现实世界物品的预付费 VISA 卡。
 
+### 其他新闻
 
-### Other News
+- Decred Vanguard 开始积极测试和寻求 Decred 的新集成，请查看他们的报告[如下](#decred-vanguard)。
 
-- Decred Vanguard became active in testing and pursuing new integrations for Decred, check their report [below](#decred-vanguard).
+- 任何人都可以帮助提高 Decred 在加密生态系统中的影响力。 即使是像向交易所/钱包/服务/影响者发送电子邮件或推文这样的小事情也可以产生影响。
 
-- Anyone can help to improve Decred's presence in the crypto ecosystem. Even little things like emailing or tweeting to an exchange/wallet/service/influencer can make a difference.
+加入我们的 [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) 聊天室的 100 多名成员，获取有关 Decred 服务的详细新闻。 [#ecochat](https://chat.decred.org/#/room/#ecochat:decred.org) 工作组也欢迎可以帮助测试提款的志愿者。
 
-Join more than 100 members of our [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) chat to get detailed news about Decred services. Volunteers who can help with testing withdrawals are welcome in the [#ecochat](https://chat.decred.org/#/room/#ecochat:decred.org) work group as well.
-
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+警告：Decred 月报的作者不知道上述任何服务的可信度。 在将您的个人信息或资产委托给任何实体之前，请先进行自己的研究。
 
 
 <a id="outreach"></a>
 
-## Outreach
+## 外展
 
 
 ### Decred Vanguard
 
-Updates:
+更新：
 
-- Ran a [Meme Contest](https://twitter.com/exitusdcr/status/1719412415375241610) with $100 in DCR as rewards.
-- Attempted contacts with cryptocurrency exchanges [Kraken](https://www.kraken.com/), [CEX.IO](https://cex.io/), and [M2](https://www.m2.com/en_AE/) for listing guidance.
-- Filed a listing [application](https://twitter.com/exitusdcr/status/1723075248709370337) for [TradeOgre.com](https://tradeogre.com/).
-- Tested out altcoin exchanges [MEXC.com](https://www.mexc.com/exchange/DCR_USDT) and [XT.com](https://www.xt.com/) to ensure deposits and withdrawals work.
-- Tested out Trocador [prepaid cards](https://trocador.app/en/prepaidcards/) bought with $DCR.
-- Spoke to Trocador about possible partnerships. This led to Cryptopower [integrating](https://github.com/crypto-power/cryptopower/pull/257) Trocador's swap service into their wallet, qualifying them as a partner and thus listed on Trocador's main [website](https://trocador.app/en/).
-- Spoke to [BTCPay Server](https://docs.btcpayserver.org/) devs and [confirmed](https://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$zRag-ReHSe8Ot8onMz-MPW7lMsS4DJssxWzlLAcFD3Y) that they are open to merging an altcoin integration if it's done correctly.
-- Reached out to thought leader [Justin Bons](https://twitter.com/Justin_Bons) to have a conversation.
-- Spoke on [Cake Wallet](https://twitter.com/cakewallet/status/1724849595195253163) Twitter space about working in the Decred DAO.
-- Ran a poll on what [marketing effort](https://twitter.com/exitusdcr/status/1729192850544587079) the community would like most. Influencer collaboration was most popular at 46%. 106 votes were cast.
-- Completed a [$100 Decred giveaway](https://twitter.com/exitusdcr/status/1729571096230252835) with easy effort entry. Giveaways with low barriers always get more likes, views, and retweets.
+- 举办 [Meme 竞赛](https://twitter.com/exitusdcr/status/1719412415375241610)，奖励 100 美元的 DCR。
+- 尝试与加密货币交易所联系 [Kraken](https://www.kraken.com/)、[CEX.IO](https://cex.io/) 和 [M2](https://www.m2.com/en_AE/) 获取上市指导。
+- 为 [TradeOgre.com](https://tradeogre.com/) 提交了列表[申请](https://twitter.com/exitusdcr/status/1723075248709370337)。
+- 测试了山寨币交易所 [MEXC.com](https://www.mexc.com/exchange/DCR_USDT) 和 [XT.com](https://www.xt.com/) 以确保存款和取款工作正常。
+- 测试了使用 $DCR 购买的 Trocador [预付卡](https://trocador.app/en/prepaidcards/)。
+- 与 Trocador 讨论了可能的合作伙伴关系。 这导致 Cryptopower [集成](https://github.com/crypto-power/cryptopower/pull/257) Trocador 的交换服务进入他们的钱包，使他们有资格成为合作伙伴，从而在 Trocador 的主[网站](https://trocador.app/en/)。
+- 与 [BTCPay 服务器](https://docs.btcpayserver.org/) 开发人员交谈并[确认](https://matrix.to/#/!zefvTnlxYHPKvJMThI:decred.org/$zRag-ReHSe8Ot8onMz-MPW7lMsS4DJssxWzlLAcFD3Y) 如果做得正确的话，他们愿意合并山寨币集成。
+- 联系思想领袖 [Justin Bons](https://twitter.com/Justin_Bons) 进行对话。
+- 在 [Cake Wallet](https://twitter.com/cakewallet/status/1724849595195253163) Twitter 空间上谈论 Decred DAO 的工作。
+- 对社区最喜欢的[营销努力](https://twitter.com/exitusdcr/status/1729192850544587079)进行了一项民意调查。 有影响力的合作最受欢迎，占 46%。 共投出 106 票。
+- 轻松进入即可完成 [100 美元 Decred 赠品](https://twitter.com/exitusdcr/status/1729571096230252835)。 低门槛的赠品总是会获得更多的点赞、浏览和转发。
 
-Decred Vanguard is a community-based marketing effort with the goal of increasing Decred's outreach and social media presence.
+Decred Vanguard 是一项基于社区的营销活动，旨在扩大 Decred 的外展范围和社交媒体影响力。
 
-Are you a meme creator, artist, strategist, or just someone passionate about the Decred Project? We're expanding our community-driven marketing program, and we want YOU!
+您是模因创造者、艺术家、战略家，还是只是对 Decred 项目充满热情的人？ 我们正在扩大我们的社区驱动的营销计划，我们需要您！
 
-What's in it for you?
+这对你有什么好处？
 
-- Earn $100 in DCR every month just for participating.
-- We'll cover the cost of your X Premium.
-- No strict rules on participation. Contribute in your own unique way, whenever you can.
-- Win potential prizes for contributions.
+- 仅参与即可每月赚取 100 美元 DCR。
+- 我们将承担您的 X Premium 费用。
+- 没有严格的参与规则。 只要有可能，就以自己独特的方式做出贡献。
+- 赢得潜在的贡献奖。
 
-We are always testing out new giveaways and running meme contests with prizes!
+我们一直在测试新的赠品并举办有奖模因竞赛！
 
-Interested? Contact @Exitus on Twitter/Matrix/Discord.
-
+感兴趣的？ 在 Twitter/Matrix/Discord 上联系@Exitus。
 
 ### Cypherpunk Times
 
-Engagement stats for November:
+11 月参与度统计：
 
-- Total number of articles on CT: 588
-- Newsletter subscribers: 112
-- New CT posts and newsletters sent: 23
-- Social media followers across all platforms and accounts: 1,181
-- [@decredsociety](https://twitter.com/decredsociety) Twitter: followers - 985, posts - 16, tweet impressions - 17.1K, likes - 350, retweets - 51, comments - 51
-- [@cypherpunktimes](https://twitter.com/cypherpunktimes) Twitter: followers - 196, posts - 154, tweet impressions - 19.3K, likes - 439, retweets - 107, comments - 88
-- Posts by project for November: Firo - 5, Decred - 7, Other crypto projects / news - 11
+- CT上的文章总数：588
+- 时事通讯订阅者：112
+- 发送的新 CT 帖子和时事通讯：23
+- 所有平台和帐户的社交媒体关注者：1,181
+- [@decredsociety](https://twitter.com/decredsociety) Twitter：关注者 - 985，帖子 - 16，推文展示次数 - 17.1K，点赞 - 350，转发 - 51，评论 - 51
+- [@cypherpunktimes](https://twitter.com/cypherpunktimes) Twitter：关注者 - 196，帖子 - 154，推文展示次数 - 19.3K，点赞 - 439，转发 - 107，评论 - 88
+- 11 月份按项目发布的帖子：Firo - 5、Decred - 7、其他加密项目/新闻 - 11
 
 
 <a id="events"></a>
 
-## Events
+## 活动
 
-**Attended:**
+**出席：**
 
-- @arij was invited to a large conference organized by LBANK Labs focusing on [Investment Dynamics and the Emergence of the Blockchain Ecosystem in Morocco](https://decredcommunity.github.io/events/index/20231121.1), where she engaged in networking sessions as a Decred representative and established valuable connections.
+- @arij 受邀参加 LBANK Labs 组织的一次大型会议，重点关注[摩洛哥的投资动态和区块链生态系统的出现](https://decredcommunity.github.io/events/index/20231121.1)，她在会上参与了 作为 Decred 代表参加网络会议并建立了宝贵的联系。
 
 
 <a id="media"></a>
 
-## Media
+## 媒体
 
 
-### Articles
+### 文章
 
 Decred:
 
-- [Decred back on track! what can we hope for?](https://www.cypherpunktimes.com/decred-back-on-tracks-what-can-we-hope-for/) by @Joao
-- [Decred vs Polygon: Decentralization and innovation!](https://www.cypherpunktimes.com/decred-vs-polygon-decentralized-and/) by @Joao
-- See companion text posts in the Videos section below
+- [Decred重回正轨！ 我们能期待什么？](https://www.cypherpunktimes.com/decred-back-on-tracks-what-can-we-hope-for/)  @Joao
+- [Decred 与 Polygon：去中心化与创新！](https://www.cypherpunktimes.com/decred-vs-polygon-decentralized-and/)  @Joao
+- 请参阅下面视频部分中的配套文字帖子
 
-General crypto:
+通用加密货币：
 
-- [Cypherpunk Times Monthly Roundup (October 2023 edition)](https://www.cypherpunktimes.com/cypherpunktimes-monthly-roundup-october-2023-edition/) by @tallamericano
-- Bear Market Blues: Surviving and Thriving in Cryptocurrency Downturns [Part 1](https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns/) and [Part 2](https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns-2-2/) by @tallamericano
-- [Reviewing major crypto scams and hacks in October](https://www.cypherpunktimes.com/reviewing-major-crypto-scams-and-hacks-in-october/) by @BlockchainJew
-- [One year after: Sam Bankman from FTX is condemned](https://www.cypherpunktimes.com/one-year-after-sam-bankman-from-ftx-is-condemned/) by @Joao
-- [CEX in view](https://www.cypherpunktimes.com/cex-in-view/) by @BlockchainJew
-- Navigating the exchange listings jungle: A comprehensive guide on how to get your cryptocurrency listed [Part 1](https://www.cypherpunktimes.com/navigating-the-exchange-listings-jungle-a-comprehensive-guide-on-how-to-get-your-cryptocurrency-listed-1-2/) by @tallamericano
-- [Crypto in view: Unraveling the week's digital drama](https://www.cypherpunktimes.com/crypto-in-view-unraveling-the-weeks-digital-drama/) by @BlockchainJew
+- [《Cypherpunk Times》月度综述（2023 年 10 月版）](https://www.cypherpunktimes.com/cypherpunktimes-monthly-roundup-october-2023-edition/) @tallamericano
+- 熊市忧郁：在加密货币低迷中生存和繁荣 [第 1 部分](https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns/) 和 [第 2 部分] （https://www.cypherpunktimes.com/bear-market-blues-surviving-and-thriving-in-cryptocurrency-downturns-2-2/）@tallamericano
+- [回顾 10 月份主要加密诈骗和黑客攻击](https://www.cypherpunktimes.com/reviewing-major-crypto-scams-and-hacks-in-october/) @BlockchainJew
+- [一年后：FTX 的 Sam Bankman 受到谴责](https://www.cypherpunktimes.com/one-year-after-sam-bankman-from-ftx-is-condemned/)  @Joao
+- [CEX 视图](https://www.cypherpunktimes.com/cex-in-view/) by @BlockchainJew
+- 浏览交易所列表丛林：有关如何列出您的加密货币的综合指南 [第 1 部分](https://www.cypherpunktimes.com/navigating-the-exchange-listings-jungle-a-comprehensive-guide-on-how-to-get-your-cryptocurrency-listed-1-2/) @tallamericano
+- [加密货币视野：揭开本周的数字戏剧](https://www.cypherpunktimes.com/crypto-in-view-unraveling-the-weeks-digital-drama/) by @BlockchainJew
 
+### 视频
 
-### Videos
+- [Decred 新闻 - 版本 1.8.1，Reddit 上的开发 AMA，新票价 ATH，大量更新！](https://www.youtube.com/watch?v=pRQSH3tO5xk) @Exitus
+- [扩展区块链：为什么 Decred 选择使用闪电网络扩展 - 前进](https://www.youtube.com/watch?v=xWgjrKW1e1o) @phoenixgreen 
+- [新的工作范式 - 为 Decred DAO 工作 - 前进](https://www.youtube.com/watch?v=1z0Q-jcRcHI)  @phoenixgreen 
+- [如何安全地存储和备份你的 Decred - 问答环节](https://www.youtube.com/watch?v=fYCNaY3MKps)  @phoenixgreen
+- [Decred 区块是如何构建的？ - 问答环节](https://www.youtube.com/watch?v=8DNSrEicKx0)  @phoenixgreen 
 
-- [Decred News - Version 1.8.1, dev AMA on Reddit, new ticket price ATH, lots of updates!](https://www.youtube.com/watch?v=pRQSH3tO5xk) by @Exitus
-- [Scaling the blockchain: Why Decred chose to scale using the Lightning Network - Moving Forward](https://www.youtube.com/watch?v=xWgjrKW1e1o) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/scaling-the-blockchain-why-decred-chose-to-scale-using-the-lightning-network/)
-- [A new work paradigm - Working for the Decred DAO - Moving Forward](https://www.youtube.com/watch?v=1z0Q-jcRcHI) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/a-new-work-paradigm-working-for-the-decred-dao/)
-- [How to safely store and backup your Decred - Q&A sessions](https://www.youtube.com/watch?v=fYCNaY3MKps) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/how-to-safely-store-and-backing-up-your-decred-qanda-session/)
-- [How are Decred blocks constructed? - Q&A sessions](https://www.youtube.com/watch?v=8DNSrEicKx0) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/how-are-decred-blocks-constructed-q-a-sessions/)
+直播：
 
-Live streams:
+- [Decred 开发者评论 - 市场状况](https://www.youtube.com/watch?v=mdtTVqEFewE)，@phoenixgreen 和 @Exitus，讨论 [Decred 开发者 AMA](https://www.reddit.com/r/decred/comments/1700xyi/decred_developer_ask_me_anything_ama_feat_dev/)以及社区提出的问题
 
-- [Decred developer review - State of the Market](https://www.youtube.com/watch?v=mdtTVqEFewE) by @phoenixgreen and @Exitus, discussing the [Decred Developer AMA](https://www.reddit.com/r/decred/comments/1700xyi/decred_developer_ask_me_anything_ama_feat_dev/) and the questions asked by the community
+短视频：
 
-Shorts:
+- [Decred - 将隐私与可审计供应相结合的加密货币](https://www.youtube.com/watch?v=A7hHQuN9VX0)，@DajanaDcr 和 @Exitus
 
-- [Decred - cryptocurrency that combines privacy with an auditable supply](https://www.youtube.com/watch?v=A7hHQuN9VX0) by @DajanaDcr and @Exitus - also on [TikTok](https://www.tiktok.com/@decred_crypto/video/7307471531305602336)
+### 音频
 
-
-### Audio
-
-- @Exitus gave an overview of the Decred DAO/Treasury and how contractors contribute early on in the space in Cake Wallet's [Twitter Space](https://twitter.com/cakewallet/status/1724849595195253163) dedicated to working in crypto.
-- Check the [Cypherpunk Times](https://podcasters.spotify.com/pod/show/cypherpunktimes) podcast on Spotify for the audio versions of Decred videos.
+- @Exitus 概述了 Decred DAO/Treasury 以及承包商如何在 Cake Wallet 的 [Twitter Space](https://twitter.com/cakewallet/status/1724849595195253163) 致力于加密货币领域的早期贡献。
+- 检查 Spotify 上的 [Cypherpunk Times](https://podcasters.spotify.com/pod/show/cypherpunktimes) 播客，了解 Decred 视频的音频版本。
 
 
-### Non-English content
+### 非英语内容
+- 关于 [Timestamply](https://www.youtube.com/watch?v=xvsoded_XsU) 的视频，作者：[@arij](https://twitter.com/in_insaf/status/1728829464237514971)
+- Decred 月报 9 月总共获得了 3 个新的阿拉伯语 (@arij)、中文 (@Dominic) 和波兰语 (@kozel) [翻译](https://xaur.github.io/decred-news/)。 谢谢朋友们！
 
-- A video about [Timestamply](https://www.youtube.com/watch?v=xvsoded_XsU) by [@arij](https://twitter.com/in_insaf/status/1728829464237514971)
-- Decred Journal September got a total of 3 new [translations](https://xaur.github.io/decred-news/) to Arabic (@arij), Chinese (@Dominic) and Polish (@kozel). Thank you friends!
+### 随机的
 
+- @kozel 在 [Decred Treasury](https://twitter.com/decredproject/status/1722177861803483579) 和 [TSpend 投票](https://twitter.com/decredproject/status/1723269730113323485) 上发布的教育推文
+- 每月 [Random + Trader](https://www.reddit.com/r/decred/comments/17lahax/monthly_random_trader_talk/) 团体讨论看涨论文和想法
+- 来自 @h3la1 的智力挑战：[提出一个好的 Decred 稳定币想法](https://twitter.com/h3la1/status/1729116883889348704) 并赢得 1 个 DCR
+- 首次 [DCRDEX 体验](https://twitter.com/longtermdaily/status/1720895569529364900) @pubpete
 
-### Random
+> 我从未计划使用#DCRDEX，因为我不需要，但随着时间的推移，我意识到它增加了价值。 直到我用来购买 #Decred 的唯一交易所 (@BittrexExchange) 停止在美国运营......这才真正击中了我！ 这不是想要，而是需要！ [[@longtermdaily](https://twitter.com/longtermdaily/status/1720895569529364900)]
 
-- Educational tweets on [Decred Treasury](https://twitter.com/decredproject/status/1722177861803483579) and [TSpend voting](https://twitter.com/decredproject/status/1723269730113323485) by @kozel
-- Monthly [Random + Trader](https://www.reddit.com/r/decred/comments/17lahax/monthly_random_trader_talk/) group therapy about bullish thesis and ideas what to do
-- Intellectual challenge from @h3la1: [propose a good Decred stablecoin idea](https://twitter.com/h3la1/status/1729116883889348704) and win 1 DCR
-- First [DCRDEX experiences](https://twitter.com/longtermdaily/status/1720895569529364900) by @pubpete
+### 艺术和娱乐
 
-> I never planned to use the #DCRDEX, because I didn't need to, but over time I realized it added value. It wasn't until the only exchange (@BittrexExchange) I use to buy #Decred stopped operating in the US.... thats when it really hit me!  It wasn't a want, it was a need! [[@longtermdaily](https://twitter.com/longtermdaily/status/1720895569529364900)]
+- [创造的支柱](https://www.cypherpunktimes.com/pillars-of-creation/)  @OfficialCryptos
+- @Exitus 的 [meme 竞赛](https://twitter.com/exitusdcr/status/1719412415375241610) 的一些获奖者：[@Atonito](https://twitter.com/exitusdcr/status/1720511478694822066)、[@CahyadieDika ](https://twitter.com/exitusdcr/status/1720504961635660253)，[@MANCASTVZX](https://twitter.com/exitusdcr/status/1720411076527903070)，[@wumudidi](https://twitter.com/wumudidi/status/1719539682999255443)
 
+![受困的比特币用户正在寻找治疗方法，@yourkingroyal](img/202311.23.768.jpg)
 
-### Art and Fun
+_图片：被困的比特币用户正在寻找治疗方法，作者：[@yourkingroyal](https://twitter.com/yourkingroyal/status/1720035878318248374)_
 
-- [Pillars of creation](https://www.cypherpunktimes.com/pillars-of-creation/) by @OfficialCryptos
-- Some winners of @Exitus' [meme contest](https://twitter.com/exitusdcr/status/1719412415375241610): [@Atonito](https://twitter.com/exitusdcr/status/1720511478694822066), [@CahyadieDika](https://twitter.com/exitusdcr/status/1720504961635660253), [@MANCASTVZX](https://twitter.com/exitusdcr/status/1720411076527903070), [@wumudidi](https://twitter.com/wumudidi/status/1719539682999255443)
+![@wumudidi 杯子上的旧 Decred Moon Fuel 艺术](img/202311.24.577.jpg)
 
-![Trapped Bitcoin users looking at the cure, by @yourkingroyal](../img/202311.23.768.jpg)
-
-_Images: Trapped Bitcoin users looking at the cure, by [@yourkingroyal](https://twitter.com/yourkingroyal/status/1720035878318248374)_
-
-![An old Decred Moon Fuel art on @wumudidi's cup](../img/202311.24.577.jpg)
-
-_Image: An old Decred Moon Fuel art on [@wumudidi](https://twitter.com/wumudidi/status/1719539682999255443)'s cup_
-
+_图片：[@wumudidi](https://twitter.com/wumudidi/status/1719539682999255443) 杯子上的旧 Decred Moon Fuel 艺术_
 
 <a id="markets"></a>
 
-## Markets
+## 市场
 
-In November DCR was trading between USDT 12.33-16.50 and BTC 0.00036-0.00046 on Binance. Using the weighed daily close data from Coin Metrics the price ranges were USD 13.11-15.50 and BTC 0.00037-0.00043. The average daily rate as calculated for contractor payments was $14.35.
+11 月，DCR 在币安上的交易价格为 USDT 12.33-16.50 、 BTC 0.00036-0.00046。 使用 Coin Metrics 的加权每日收盘数据，价格范围为 13.11-15.50 美元，BTC 0.00037-0.00043。 计算得出的承包商付款的平均每日价格为 14.35 美元。
 
-Brian Beamish of [The Rational Investor](https://www.therationalinvestor.com/) made a [technical analysis of DCR](https://www.youtube.com/watch?v=l1wZCgi8Zv8&t=1h15m10s) (jump to 1:15:10).
+[The Rational Investor](https://www.therationalinvestor.com/) 的 Brian Beamish 做了[DCR 技术分析](https://www.youtube.com/watch?v=l1wZCgi8Zv8&t=1h15m10s)（跳转至 1:15:10）。
 
-![Recent DCR/BTC, data from Coin Metrics](../img/202311.25.720.png)
+![近期 DCR/BTC，数据来自 Coin Metrics](img/202311.25.720.png)
 
-_Image: Recent DCR/BTC, data from Coin Metrics_
+_图片：近期 DCR/BTC，数据来自 Coin Metrics_
 
-![All-time DCR/BTC, data from Coin Metrics](../img/202311.26.720.png)
+![历史 DCR/BTC，数据来自 Coin Metrics](img/202311.26.720.png)
 
-_Image: All-time DCR/BTC, data from Coin Metrics_
+_图片：历史 DCR/BTC，数据来自 Coin Metrics_
 
-![Recent DCR/USD, data from Coin Metrics](../img/202311.27.720.png)
+![近期 DCR/USD，数据来自 Coin Metrics](img/202311.27.720.png)
 
-_Image: Recent DCR/USD, data from Coin Metrics_
+_图片：近期 DCR/USD，数据来自 Coin Metrics_
 
-![DCRDEX monthly volume in USD](../img/202311.28.720.png)
+![DCRDEX 每月交易量（美元）](img/202311.28.720.png)
 
-_Image: DCRDEX monthly volume in USD_
+_图片：DCRDEX 每月交易量（美元）_
 
-!["A better long-term chart than a lot of people realize" by @cburniske](../img/202311.29.1280.jpg)
+![@cburniske 的“比很多人意识到的更好的长期图表”](img/202311.29.1280.jpg)
 
-_Image: "A better long-term chart than a lot of people realize" by [@cburniske](https://twitter.com/cburniske/status/1729243261460734172)_
-
+_图片：“比很多人意识到的更好的长期图表”作者：[@cburniske](https://twitter.com/cburniske/status/1729243261460734172)_
 
 <a id="relevant-external"></a>
 
-## Relevant External
+## 相关外部信息
 
-Bitcoin mining pool f2pool has [admitted](https://news.bitcoin.com/bitcoin-mining-pool-f2pool-acknowledges-ofac-transaction-censorship-backpedals-after-community-backlash/) to censoring transactions from OFAC-sanctioned addresses. This behaviour was discovered by Bitcoin developer 0xB10C by analyzing transactions which should have been included by f2pool but weren't. Initially f2pool denied the behavior, but they subsequently admitted it and said they would pause it until community consensus could be established - but they have deleted the various posts about it since.
+比特币矿池 f2pool承认审查来自 OFAC 批准地址的交易。这种行为是由比特币开发者 0xB10C 通过分析本应包含在 f2pool 中但没有包含在内的交易而发现的。最初，f2pool 否认了这一行为，但他们随后承认了这一点，并表示将暂停该行为，直到建立社区共识，但此后他们删除了有关此行为的各种帖子。
 
-Monero chain sleuths Moonstone Research have [analyzed](https://moonstoneresearch.com/2023/11/03/Postmortem-of-Monero-CCS-Hack.html) the transactions made by the attacker who drained the Community Crowdfunding System (CCS) wallet and discovered some transactions they are fairly sure represent the attacker sending funds to an exchange or counterparty. This caused some [controversy](https://twitter.com/sethforprivacy/status/1720792327579414915) in the community because Monero is known for its privacy, but this is a "worst case scenario" for privacy where the wallet's private keys and metadata have been shared with the investigators, and the attacker appears to have made an unusual transaction (using the Monerujo's "PocketChange" feature) and some other missteps (sweeping the wallet) which have made the job of the investigators easier.
+门罗币链侦探 Moonstone Research分析了攻击者进行的交易，该攻击者耗尽了社区众筹系统（CCS）钱包的资金，并发现了一些交易，他们相当确定这些交易代表攻击者向交易所或交易对手发送资金。这在社区中引起了一些争议，因为门罗币以其隐私而闻名，但这是隐私的“最坏情况”，钱包的私钥和元数据已与调查人员共享，而攻击者似乎进行了一笔不寻常的交易（使用 Monerujo 的“PocketChange”功能）和其他一些失误（扫钱包）使调查人员的工作变得更加容易。
 
-There are various proposals for a new Monero CCS system design which avoids the pitfall of having a large sum of XMR under the control of some core member(s) who can be targeted. One of these is a "[cypherpunk proposal](https://monero.observer/cypherpunk-transmission-017-rethinking-monero-ccs-cypherpunk-proposal/)" which would remove the custodian role by having people donate directly to the wallets of the project owners once they are greenlit for funding - so removing the centralized oversight and release of funds.
+对于新的 Monero CCS 系统设计有多种建议，该系统可以避免在某些可成为目标的核心成员的控制下拥有大量 XMR 的陷阱。其中之一是“密码朋克提案”，一旦项目获得融资许可，人们可以直接向项目所有者的钱包捐款，从而消除托管人的角色，从而消除资金的集中监督和释放。
 
-Fluffypony has [proposed](https://github.com/monero-project/meta/issues/921) disbanding the "Monero Core Team" in favour of 6 workgroups whose membership is determined by community consensus, with a cutover date of Jan 1 2024. The proposal is partly driven by recent issues with the CCS funds, but the Core team is also seen as having too much control in general, and some of the roles, like those dealing with service providers, require "individuals in those particular roles to not be abrasive, and to be warm and understanding and friendly with the individuals they deal with at those service providers". The workgroups he proposes relate to the General Donation Fund, the Community Crowdfunding System, Intellectual Property holding, Servers and CDN hosting, Git maintenance, and Community Channels moderation. The proposal calls for a straw poll consensus mechanism to be decided to select members of the workgroups, but stipulates that only participants with several years of contributions should be considered for membership of a workgroup.
+Fluffypony提议解散“门罗币核心团队”，转而成立 6 个工作组，其成员由社区共识决定，切换日期为 2024 年 1 月 1 日。该提议部分是由 CCS 基金最近的问题推动的，但核心团队是总的来说，也被认为拥有过多的控制权，并且某些角色，例如与服务提供商打交道的角色，要求“担任这些特定角色的个人不要粗鲁，并对他们所打交道的个人表现出热情、理解和友好”那些服务提供商”。他建议的工作组涉及普通捐赠基金、社区众筹系统、知识产权持有、服务器和 CDN 托管、Git 维护以及社区频道审核。该提案呼吁决定采用草拟投票共识机制来选择工作组成员，但规定只有具有多年贡献的参与者才应考虑成为工作组成员。
 
-Jae Kwon, the Cosmos founder, has [called](https://www.coindesk.com/markets/2023/11/27/cosmos-founder-calls-for-chain-split-atom-down-3/) for a chain splitting hard fork after a proposal to decrease ATOM issuance was approved by the community against his wishes. The proposal to drop the issuance rate from 14% annually to 10% was passed with 41.1% yes votes and 31.9% no votes from the voting power that participated - the rationale for the change was that Cosmos Hub was paying too much for security. Kwon's chain split proposal would form a new chain that has its own token but would also allow the original ATOM token to be used in some way. This may also resolve some tension in the community around a vetoed plan for "Cosmos 2.0" which had significant levels of support but was deemed too risky by the leadership.
+Cosmos 创始人 Jae Kwon 呼吁进行链分叉硬分叉，因为社区违背了他的意愿，批准了减少 ATOM 发行量的提案。将发行率从每年 14% 降至 10% 的提议以 41.1% 的参与投票权和 31.9% 的反对票获得通过——这一改变的理由是 Cosmos Hub 为安全付出了太多代价。Kwon 的链分割提案将形成一条拥有自己代币的新链，但也允许以某种方式使用原始 ATOM 代币。这也可能会化解社区中围绕“Cosmos 2.0”计划被否决的一些紧张局势，该计划获得了大量支持，但领导层认为风险太大。
 
-The Aragon Association has [announced](https://protos.com/aragon-helped-lido-curve-form-daos-now-its-dissolving/) that it intends to disband, returning 95% of the assets held by the organization to ANT token holders and retaining 5% to settle obligations. ANT holders will be able to redeem ANT for ETH at a rate of 0.0025376 ETH per ANT until Nov 2 2024, at which point any unclaimed funds will revert to the newly formed "Aragon Shield", where they will be put towards some loosely defined continuation of product development. Although Aragon's software tools were used by successful DAOs such as Lido and Curve, the team decided that it was not possible to derive any value for ANT holders from this kind of usage, and they have acknowledged that ventures like "Aragon Court" were not viable.
+Aragon 协会宣布打算解散，将该组织持有的 95% 资产返还给 ANT 代币持有者，并保留 5% 用于偿付债务。在 2024 年 11 月 2 日之前，ANT 持有者将能够以每 ANT 0.0025376 ETH 的价格将 ANT 兑换为 ETH，届时任何无人认领的资金将恢复到新成立的“阿拉贡盾”，在那里它们将被用于一些松散定义的延续产品开发。尽管 Aragon 的软件工具被 Lido 和 Curve 等成功的 DAO 使用，但团队认为不可能从这种使用中为 ANT 持有者带来任何价值，并且他们承认像“Aragon Court”这样的企业是不可行的。
 
-Some of the ANT token holders are not happy with the Aragon Association plan, specifically the retention of $11 million plus all unclaimed funds after a year for Aragon Shield, and they have [backed](https://twitter.com/dcfgod/status/1726861803257471313/) a proposal to go after Aragon Association for more money via a "highly conditional grant" to Patagon Management LLC, a trading company specializing in this kind of legal action to recover funds.
+一些 ANT 代币持有者对 Aragon 协会的计划并不满意，特别是为 Aragon Shield 保留 1100 万美元加上一年后所有无人认领的资金，他们支持通过“高度重视”向 Aragon 协会索取更多资金的提议。有条件拨款”给 Patagon Management LLC，一家专门从事此类追回资金法律行动的贸易公司。
 
-A fake "Ledger Live" app made it into the Microsoft app store and as a result whoever released it was sent 38 transactions worth $588K as it [stole](https://cointelegraph.com/news/fake-ledger-live-app-sneaks-into-microsoft-app-store-as-victims-lose-half-a-million) the BTC of people who thought they were using the proper Ledger Live software to access their hardware wallet.
+一款假冒的“Ledger Live”应用程序进入了微软应用程序商店，结果无论是谁发布了它，都会收到 38 笔价值 58.8 万美元的交易，因为它窃取了那些认为自己正在使用正确的 Ledger Live 软件访问其硬件钱包的人的 BTC 。
 
-KyberSwap was subjected to a [hack](https://twitter.com/kybernetwork/status/1727475235342217682) and urged users to withdraw their funds if able, but the attacker was able to get hold of around $55 million of users' funds by [performing](https://therecord.media/kyberswap-crypto-platform-54-million-hack) a sophisticated sequence of actions that allowed them to exploit a vulnerability to manipulate prices. The KyberSwap team offered a 10% bounty for return of the funds and the attacker replied in an on chain message that negations would begin in a few hours when they were rested. Front running bots were able to join in the exploit and get $5.7M of user funds before the attacker, the operators of the bots are [returning](https://twitter.com/KyberNetwork/status/1728800315955437743) funds for a 10% bounty.
+KyberSwap 遭到黑客攻击，并敦促用户在可能的情况下提取资金，但攻击者通过执行一系列复杂的操作，允许他们利用漏洞操纵价格，从而获得了约 5500 万美元的用户资金。KyberSwap 团队提供 10% 的赏金来返还资金，攻击者在链上消息中回复称，在他们休息的几个小时内就会开始否定。前端运行的机器人能够加入该漏洞并在攻击者之前获得 570 万美元的用户资金，机器人的运营商将以10% 的赏金返还资金。
 
-There have been four major hacks in two months [targeting](https://cointelegraph.com/news/justin-sun-platforms-hacked-4-times) exchanges and a bridge operated by Justin Sun. HTX exchange (formerly Huobi) suffered two hacks for $8M and $30M, while Poloniex was hit for $100M, reportedly due to a private key compromise. HTX's HECO Chain bridge, used to move funds between the exchange and various chains, was the other casualty, with $87M making its way to suspicious addresses.
+两个月内发生了四起针对交易所和孙宇晨运营的桥梁的重大黑客攻击。HTX 交易所（原火币网）遭受两次黑客攻击，损失达 800 万美元和 3000 万美元，而 Poloniex 则因私钥泄露而损失 1 亿美元。HTX 的 HECO Chain 桥用于在交易所和各个链之间转移资金，是另一个受害者，有 8700 万美元流入可疑地址。
 
-LBRY Inc. is [winding down](https://twitter.com/LBRYcom/status/1715108834950123929) after the SEC sued it into bankruptcy, all of its assets will be sold off to pay creditors. Odysee will continue using the LBRY network to provide its video sharing service, by some [measures](https://odysee.com/@lbry:3f/theendoflbryinc:d) one of the most highly used Web3 platforms with 5.3 million unique monthly users.
+LBRY Inc. 在美国证券交易委员会 (SEC) 起诉其破产后即将倒闭，其所有资产将被出售以偿还债权人。Odysee 将继续使用 LBRY 网络提供视频共享服务，从某些方面来看，该网络是使用率最高的 Web3 平台之一，每月拥有 530 万独立用户。
 
-The SEC [sued](https://www.reuters.com/business/finance/us-sec-sues-kraken-operating-crypto-trading-platform-without-registering-2023-11-20/) Kraken with operating a securities exchange illegally because they failed to register, similar to the cases brought against Coinbase and Binance in June.
+SEC起诉Kraken 非法经营证券交易所，因为它们未能注册，类似于 6 月份针对 Coinbase 和 Binance 提起的案件。
 
-SafeMoon's CEO and CTO have been [arrested](https://www.coindesk.com/policy/2023/11/01/sec-charges-safemoon-team-with-fraud-offering-unregistered-crypto-securities/) by the US Department of Justice in a fraud investigation, with a complaint that they misled investors by spending $200M on luxury goods while telling them it was locked in a liquidity pool. The SEC piled on with charges of securities violations related to the SFM token being unregistered and the price being manipulated, the token tanked in the aftermath of the charges being published.
+SafeMoon 的首席执行官和首席技术官在一项欺诈调查中被美国司法部逮捕，指控称他们误导投资者，花费 2 亿美元购买奢侈品，同时告诉他们这些产品被锁定在流动性池中。美国证券交易委员会对 SFM 代币未注册和价格被操纵等证券违规指控层出不穷，指控公布后，该代币暴跌。
 
-The SBF trial [concluded](https://decrypt.co/204154/sam-bankman-fried-verdict-ftx-fraud) with guilty verdicts on seven charges and sentencing to come in 2024 and SBF facing a maximum 115 years in prison. The question of whether to pursue the political donations element was to be made at a later date - spoiler alert, they [decided](https://www.bloomberg.com/news/articles/2023-12-30/us-drops-plan-for-second-bankman-fried-trial-on-other-charges) not to expose the extent of that crime and all of the politicians who were involved to media scrutiny, in December.
+SBF 审判最终对七项指控作出有罪判决，并将于 2024 年宣判，SBF 面临最高 115 年监禁。是否追究政治捐款因素的问题将在晚些时候提出——剧透警告，他们决定不揭露该犯罪的程度以及所有参与媒体审查的政客，12 月。
 
-The FTX Bankruptcy advisors have been [providing](https://decrypt.co/204336/ftx-handing-over-customer-crypto-trading-data-fbi) FBI offices with access to customer trading data.
+FTX 破产顾问一直在向 FBI 办公室提供客户交易数据的访问权限。
 
-Chinese courts have [affirmed](https://cointelegraph.com/magazine/chinas-surprise-nft-move-hong-kongs-15m-bitcoin-fund-asia-express/) legal protection of NFTs as property, with a commentary that clarifies some previous contradictions. NFTs are seen as having both use value and exchange value, their scarcity means they conform to the characteristics of online virtual property. Recognizing property rights for NFTs means that people can be prosecuted for stealing them.
+中国法院确认NFT 作为财产受到法律保护，并发表评论澄清了之前的一些矛盾。NFT被视为兼具使用价值和交换价值，其稀缺性意味着其符合网络虚拟财产的特征。承认 NFT 的产权意味着人们可以因盗窃它们而受到起诉。
 
-The US Federal Reserve is [coming](https://twitter.com/BitcoinMagazine/status/1720433939431477400) after Bitcoin Magazine for making fun of their FedNow service in a way which they allege infringes on their copyright and trademarks. Bitcoin Magazine has [published](https://bitcoinmagazine.com/legal/federal-reserve-threatens-to-sue-bitcoin-magazine) an open reply declining to comply by removing the offending t-shirt, which contains the Fed's trademark, from their store.
+美联储正在追查《比特币杂志》，因为他们嘲笑其 FedNow 服务，称其侵犯了其版权和商标。《比特币》杂志发表了一份公开答复，拒绝遵守规定，将这件带有美联储商标的违规 T 恤从他们的商店中下架。
 
-Bittrex Global has finally [wound down](https://cointelegraph.com/news/bittrex-global-winds-down-operations) its operations and ceased trading. Since they announced the closing date there were intermittent issues with withdrawing DCR and the DCR pairs started behaving unusually with low liquidity and some concern about whether people would be able to withdraw any DCR they bought there.
+Bittrex Global 终于结束了运营并停止了交易。自从他们宣布截止日期以来，提取 DCR 时出现了间歇性问题，并且 DCR 货币对开始表现异常，流动性较低，并且有些人担心人们是否能够提取他们在那里购买的任何 DCR。
 
-Attendees at the Bored Ape Yacht Club's annual ApeFest were [subjected](https://arstechnica.com/health/2023/11/bored-ape-creator-says-uv-lights-at-apefest-burned-attendees-eyes-and-skin/) to UV light exposure, with over 20 people who were located too near a UV light reporting severe pain and burning sensations in their eyes, likely caused by photokeratitis or sunburn of the cornea.
+Bored Ape Yacht Club 年度 ApeFest 的参加者受到了紫外线照射，超过 20 名距离紫外线太近的人报告眼睛出现严重疼痛和烧灼感，这可能是由光角膜炎或角膜晒伤引起的。
 
-That's all for November. Suggest news for the next issue in our [#journal](https://chat.decred.org/#/room/#journal:decred.org) chat room.
+这就是十一月的全部内容。 在我们的 [#journal](https://chat.decred.org/#/room/#journal:decred.org) 聊天室中建议下一期的月报。
 
 
-## About
+## 关于月报
 
-This is issue 65 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是 Decred 月报的第 65 期。 [此处](https://xaur.github.io/decred-news/) 提供所有问题、镜像和翻译的索引。
 
-Most information from third parties is relayed directly from the source after a minimal sanity check. The authors of the Decred Journal cannot verify all claims. Please beware of scams and do your own research.
+来自第三方的大多数信息都是在经过最低限度的健全性检查后直接从源头转发的。 Decred 月报的作者无法验证所有声明。请提防诈骗并自行研究。
 
-Credits (alphabetical order):
+感谢（字母顺序）：
 
-- writing, editing, publishing: bee, bochinchero, Exitus, jz, karamble, kozel, phoenixgreen, richardred, zippycorners
-- title image: Exitus
-- funding: Decred stakeholders
+- 写作、编辑、出版：bee、bochinchero、Exitus、jz、karamble、kozel、phoenixgreen、richardred、zippycorners
+- 标题图片：Exitus
+- 资金来源：Decred 利益相关者
+
+
+## 中文社区
+
+* [推特](https://twitter.com/DecredCN)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [bilibili频道](https://space.bilibili.com/425519478)  
