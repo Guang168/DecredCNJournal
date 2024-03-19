@@ -313,285 +313,288 @@ PD 的发布工作流程已重新设计，以提高覆盖范围和参与度：�
 
 <a id="network"></a>
 
-## Network
+## 网络
 
-This section tracks key health metrics of the Decred infrastructure.
-
+本节跟踪 Decred 基础设施的关键健康指标。
 
 ### Mining
 
-December's [hashrate](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) opened at ~5.5 TH/s and closed ~10.2 TH/s, bottoming at 3.8 TH/s and peaking at 11.6 TH/s throughout the month.
+12 月的 [全网算力](https://dcrdata.decred.org/charts?chart=hashrate&scale=linear&bin=day&axis=time) 以 5.5 TH/s开启，结束约为 10.2 TH/s，最低 3.8 TH/s，达到峰值为 11.6 TH/s。
 
-![Decred hashrate is seeking a new equilibrium after the initial influx of GPU miners](../img/202312.08.720.png)
+![Decred 算力在 GPU 矿工最初涌入后正在寻求新的平衡](img/202312.08.720.png)
 
-_Image: Decred hashrate is seeking a new equilibrium after the initial influx of GPU miners_
+_图片：在 GPU 矿工最初涌入后，Decred 算力正在寻求新的平衡_
 
-Distribution of 1,000 blocks actually [mined](https://miningpoolstats.stream/decred) by Jan 7: [miningandco.com](https://decred.miningandco.com/) 26%, [pooltronic.tech](https://decred.pooltronic.tech/) 21%, [gopool.cash](https://dcr.gopool.cash/) 2.7%, [losmuchachos.digital](https://losmuchachos.digital/) 1.3%, and 49% of blocks were not identified by [miningpoolstats.stream](https://miningpoolstats.stream/decred).
+截至 1 月 7 日，实际[开采](https://miningpoolstats.stream/decred) 的 1,000 个区块的分布：[miningandco.com](https://decred.miningandco.com/) 26%，[pooltronic.tech](https ://decred.pooltronic.tech/) 21%, [gopool.cash](https://dcr.gopool.cash/) 2.7%, [losmuchachos.digital](https://losmuchachos.digital/) 1.3% ，并且 49% 的区块未被 [miningpoolstats.stream](https://miningpoolstats.stream/decred) 识别。
 
-![The decline of unique mining addresses suggests it is getting more centralized again](../img/202312.09.720.png)
+![唯一挖矿地址的下降表明它再次变得更加中心化](img/202312.09.720.png)
 
-_Image: The decline of unique mining addresses suggests it is getting more centralized again_
+_图片：唯一挖矿地址的减少表明它再次变得更加中心化_
 
 
 ### Staking
 
-[Ticket price](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) varied between 234-243 DCR.
+[选票价格](https://dcrdata.decred.org/charts?chart=ticket-price&axis=time&visibility=true-true&mode=stepped) 在 234-243 DCR 之间变化。
 
-![Ticket price has been very stable in December](../img/202312.10.720.png)
+![12月票价一直很稳定](img/202312.10.720.png)
 
-_Image: Ticket price has been very stable in December_
+_图：12月票价一直很稳定_
 
-The [locked amount](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time) was 9.74-9.82 million DCR, meaning that 62.0-62.6% of the circulating supply [participated](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) in proof of stake.
+[锁定金额](https://dcrdata.decred.org/charts?chart=ticket-pool-value&scale=linear&bin=day&axis=time)为974-982万个DCR，这意味着循环供应量的62.0-62.6%[参与](https://dcrdata.decred.org/charts?chart=stake-participation&scale=linear&bin=day&axis=time) 的权益证明。
 
-![DCR locked in tickets is staying near its ATH](../img/202312.11.720.png)
+![DCR 锁定的门票保持在其 ATH 附近](img/202312.11.720.png)
 
-_Image: DCR locked in tickets is staying near its ATH_
+_图片：锁定门票的 DCR 保持在其 ATH 附近_
 
 
 ### VSP Staking
 
-The [14 listed VSPs](https://decred.org/vsp/) collectively managed ~5,750 (-100) live tickets, which was 14.0% of the ticket pool (-0.3%) as of Jan 1.
+截至 1 月 1 日，[14 个列出的 VSP](https://decred.org/vsp/) 总共管理了约 5,750 张 (-100) 现场选票，占选票池的 14.0% (-0.3%)。
 
-The biggest gainers of December were [vote.dcr-swiss.ch](https://vote.dcr-swiss.ch) (+290 tickets or +105%) and [vsp.stakeminer.com](https://vsp.stakeminer.com/) (+67 tickets or +11%).
+12 月份涨幅最大的是 [vote.dcr-swiss.ch](https://vote.dcr-swiss.ch)（+290 票或+105%）和 [vsp.stakeminer.com](https://vsp.stakeminer.com/)（+67 票或+11%）。
 
-![Distribution of tickets managed by VSPs](../img/202312.12.720.png)
+![VSP 管理的票证分发](img/202312.12.720.png)
 
-_Image: Distribution of tickets managed by VSPs_
+_图片：VSP 管理的选票分布_
 
-![Solo tickets continue to dominate, only 14% of tickets use VSPs](../img/202312.13.720.png)
+![单人门票继续占据主导地位，只有 14% 的门票使用 VSP](img/202312.13.720.png)
 
-_Image: [Solo voters](https://docs.decred.org/advanced/solo-proof-of-stake-voting/) continue to dominate, only 14% of tickets use VSPs_
+_图片：[solo投票者](https://docs.decred.org/advanced/solo-proof-of-stake-voting/) 继续占据主导地位，只有 14% 的选票使用 VSP_
 
-![VSPs are better at not missing tickets than solo voters](../img/202312.14.720.png)
+![VSP 比单独选民更擅长不缺票](img/202312.14.720.png)
 
-_Image: VSPs are better at not missing tickets than solo voters_
+_图片：VSP 比solo选民更擅长不错过选票_
 
 
-### Nodes
+### 节点
 
-[Decred Mapper](https://nodes.jholdstock.uk/user_agents) observed between 141 and 151 dcrd nodes throughout the month. Versions of 145 nodes seen on Jan 1: v1.8.0 - 65%, v1.8.1 - 27%, v1.9.0 dev builds - 3%, v1.7.x - 2%, other - 3.4%.
+[Decred Mapper](https://nodes.jholdstock.uk/user_agents) 整个月观察到 141 到 151 个 dcrd 节点。 1 月 1 日出现的 145 个节点的版本：v1.8.0 - 65%、v1.8.1 - 27%、v1.9.0 开发版本 - 3%、v1.7.x - 2%、其他 - 3.4%。
 
-![Nodes are slowly upgrading to v1.8.1. The red area before Jan 2023 indicates incomplete data we had at that time.](../img/202312.15.720.png)
+![节点正在慢慢升级到v1.8.1。 2023年1月之前的红色区域表示我们当时的数据不完整。](img/202312.15.720.png)
 
-_Image: Nodes are slowly upgrading to v1.8.1. The red area before Jan 2023 indicates incomplete data we had at that time._
+_图片：节点正在慢慢升级到v1.8.1。 2023 年 1 月之前的红色区域表示我们当时拥有的数据不完整。_
 
 
 ### StakeShuffle
 
-The share of [mixed coins](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true) varied between 62.2-62.3%. Daily [mix volume](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) varied between 346-541K DCR.
+[混币](https://dcrdata.decred.org/charts?chart=coin-supply&zoom=jz3q237o-la8vk000&scale=linear&bin=day&axis=time&visibility=true-true-true)的份额在62.2-62.3%之间变化。 每日 [混合量](https://dcrdata.decred.org/charts?chart=privacy-participation&bin=day&axis=time) 在 346-541K DCR 之间变化。
 
-![62% of circulating supply opts in to protect privacy and fungibility](../img/202312.16.720.png)
+![62% 的流通供应选择保护隐私和可替代性](img/202312.16.720.png)
 
-_Image: 62% of circulating supply opts in to protect privacy and fungibility_
+_图片：62% 的流通供应选择保护隐私和可互换性_
 
 
-### Lightning Network
+### 闪电网络
 
-Decred's [Lightning Network](https://ln-map.jholdstock.uk/) explorer saw 220 nodes (+0), 415 channels (-5) with a total capacity of 202 DCR (-4), as of Jan 8. Mind that these stats are different for each LN node.
+截至 1 月 8 日，Decred 的 [闪电网络](https://ln-map.jholdstock.uk/) 浏览器有 220 个节点 (+0)、415 个通道 (-5)，总容量为 202 DCR (-4) . 请注意，每个 LN 节点的这些统计数据都是不同的。
 
-![The Decred Lightning Network capacity remains around 200 DCR](../img/202312.17.720.png)
+![Decred 闪电网络容量保持在 200 DCR 左右](img/202312.17.720.png)
 
-_Image: The Decred Lightning Network capacity remains around 200 DCR_
+_图片：Decred 闪电网络容量保持在 200 DCR 左右_
 
 
 <a id="ecosystem"></a>
 
-## Ecosystem
+## 生态系统
 
 
-### Mining Pools
+### 矿池
 
-- [losmuchachos.digital](https://losmuchachos.digital/) has been launched, it is a Germany based DCR mining pool supporting the PPLNS payment model with a pool fee of 3%.
+- [losmuchachos.digital](https://losmuchachos.digital/)已上线，是一家德国DCR矿池，支持PPLNS支付模式，矿池费用为3%。
 
-- [dcr.gopool.cash](https://dcr.gopool.cash/) has been spotted. [MiningPoolStats](https://miningpoolstats.stream/decred) reports that the Brazil based pool uses the PPLNS model with a fee of 1%. DCR is one of the [15 coins](https://miningpoolstats.stream/gopool.cash_pools) supported by the pool.
+- [dcr.gopool.cash](https://dcr.gopool.cash/) 已被发现。 [MiningPoolStats](https://miningpoolstats.stream/decred) 报告称，巴西矿池使用 PPLNS 模型，费用为 1%。 DCR 是矿池支持的 [15 种币](https://miningpoolstats.stream/gopool.cash_pools) 之一。
 
-- There are (at least) 5 public mining pools now, all running [dcrpool](https://github.com/decred/dcrpool) software.
-
-
-### Exchanges
-
-- All trading activity on Bittrex Global has been [terminated](https://twitter.com/BittrexGlobal/status/1731736725393699094) according to the shutdown plan published on [November 20th](https://twitter.com/BittrexGlobal/status/1726652430673121310). If our interpretation of chain activity is correct, the amount held at Bittrex when the trading stopped (December 4th) was [~17.5K DCR](https://dcrdata.decred.org/tx/d44e9f656bc3f376ff5814b9088b6c6de2718569d532b0dae1d7aec0e0e8f51b), and it looks like withdrawals have been working smoothly.
-
-- [MEXC](https://www.mexc.com/) has been [added](https://github.com/decred/dcrweb/pull/1158) to [decred.org Exchanges](https://decred.org/exchanges/) list after DCR withdrawals were [confirmed](https://github.com/decred/dcrweb/issues/1157) to work. The exchange works over VPNs and allows some trading without KYC. MEXC added spot DCR/USDT market back in [June 2019](https://twitter.com/MEXC_Official/status/1143851087167758337) and 5x leveraged DCR/USDT pair in [December 2020](https://twitter.com/MEXC_Official/status/1334707659900035075), but there was little community feedback to confirm it is working.
-
-- MEXC attracted some controversy after several users reported [seizure of funds](https://cointelegraph.com/news/traders-report-frozen-assets-account-blocks-mexc), account freezing, and withdrawals getting blocked. MEXC denied all claims in their [response](https://twitter.com/MEXC_Official/status/1738767532004434018). Two common patterns in the reports were very profitable leveraged trading and large withdrawals, both getting flagged as "abnormal" activity by MEXC. We cannot verify if the reports are true, but it's a good reminder to always do your own research and be very careful when dealing with custodial services.
-
-- DCR withdrawals on Poloniex and HTX continued to be suspended for a total of about 1.5 months and have not been fixed in December, based on the information published on their [support](https://support.poloniex.com/hc/en-us/) [sites](https://www.htx.com/support/en-us/) and one user report in the #trading channel. All withdrawals, including DCR, were suspended in November in response to the [two hacks](202311.md#ecosystem) on these exchanges.
-
-- Indian financial authorities announced the decision to [block URLs of 9 offshore exchanges](https://www.coindesk.com/policy/2023/12/29/indias-local-crypto-and-web3-advocacy-body-asked-for-action-against-offshore-entities-source/) for not complying with local AML regulations. If the block will be implemented, accessing DCR markets on Binance, KuCoin, and other exchanges from India will become more difficult.
+- 现在有（至少）5 个公共矿池，全部运行 [dcrpool](https://github.com/decred/dcrpool) 软件。
 
 
-### Wallets
+### 交易所
 
-- Users of hardware wallet [Ledger](https://www.ledger.com/) fell victim to a [supply chain attack](https://www.ledger.com/blog/security-incident-report) on December 14th. A compromised [npmjs.com](https://www.npmjs.com/) account of a former Ledger employee was used by an attacker to upload a malicious version of the Ledger Connect Kit library used by many DApps, which tricked EVM DApp users into signing transactions that drain their wallets. The vulnerability was patched quickly, but it took around ~5 hours for the fix to propagate. The exploit was limited to third party DApps which use the library, it did not affect the integrity of Ledger hardware or Ledger Live. Ledger [tweeted](https://twitter.com/Ledger/status/1737457365526470665) that around $600K worth of assets has been affected and promised to make victims whole if they [claim](https://support.ledger.com/hc/en-us/articles/15580506579101) refunds (this process requires ID verification). To the best of our knowledge, no DCR wallets were affected by the exploit.
+- 根据[11月20日](https://twitter.com/BittrexGlobal/status)发布的关闭计划，Bittrex Global上的所有交易活动已终止。 如果我们对链活动的解释是正确的，那么交易停止时（12 月 4 日）Bittrex 持有的金额为 [~17.5K DCR](https://dcrdata.decred.org/tx/d44e9f656bc3f376ff5814b9088b6c6de2718569d532b0dae1d7aec0e0e8f51b)，看起来像是提款功能顺利。
 
-- [Guarda](https://guarda.com/) has been [removed](https://github.com/decred/dcrweb/pull/1161) from the list of known-to-work [wallets at decred.org](https://decred.org/wallets/) after several users [complained](https://www.reddit.com/r/decred/comments/18s54fm/help_importing_a_private_key/) that DCR was not working for 3 months. Timing suggests Guarda's DCR wallet stopped working around September 2023 because they failed to upgrade to Decred [v1.8.0](https://github.com/decred/decred-binaries/releases/tag/v1.8.0) (released June 13th, 2023) and missed the hardfork (completed [September 1st](https://dcrdata.decred.org/block/794369), 2023). A person from Guarda [confirmed](https://www.reddit.com/r/decred/comments/18s54fm/help_importing_a_private_key/kf9n3pj/) that DCR is still considered a supported asset, but they're working on "some issues post-Decred's network upgrade". Until that is fixed, Guarda users can [export the private key](https://www.reddit.com/r/decred/comments/18s54fm/help_importing_a_private_key/kfbw3f6/) and import it in another wallet like dcrwallet or Exodus.
+- [MEXC](https://www.mexc.com/) 已[添加](https://github.com/decred/dcrweb/pull/1158) 到 [decred.org 交易所](https://decred.org/exchanges/)DCR 提款后的列表已[确认](https://github.com/decred/dcrweb/issues/1157) 正常工作。 该交易所通过 VPN 运行，并且允许进行一些无需 KYC 的交易。 MEXC 于 [2019 年 6 月](https://twitter.com/MEXC_Official/status/1143851087167758337) 增加了现货 DCR/USDT 市场，并于 [2020 年 12 月](https://twitter.com/MEXC_Official) 增加了 5 倍杠杆 DCR/USDT 货币对，但几乎没有社区反馈来确认它是否有效。
+
+- 在一些用户报告[资金扣押](https://cointelegraph.com/news/traders-report-frozen-assets-account-blocks-mexc)、账户冻结和提款被阻止后，MEXC 引起了一些争议。 MEXC 在其[回复](https://twitter.com/MEXC_Official/status/1738767532004434018) 中否认了所有说法。 报告中的两种常见模式是利润丰厚的杠杆交易和大额提款，两者都被 MEXC 标记为“异常”活动。 我们无法验证这些报告是否属实，但这是一个很好的提醒，请务必进行自己的研究，并在处理托管服务时要非常小心。
+
+- 根据其[support](https://support.poloniex.com/hc/en)上发布的信息，Poloniex和HTX的DCR提现继续暂停，总计约1.5个月，并且在12月尚未修复 [站点](https://www.htx.com/support/en-us/) 以及 #trading 频道中的一份用户报告。 为了应对这些交易所的[两次黑客攻击](202311.md#ecosystem)，包括 DCR 在内的所有提款均于 11 月暂停。
+
+- 印度金融当局宣布决定[屏蔽 9 个离岸交易所的 URL](https://www.coindesk.com/policy/2023/12/29/indias-local-crypto-and-web3-advocacy-body-asked-for-action-against-offshore-entities-source/)不遵守当地反洗钱法规。 如果该区块实施，从印度进入 Binance、KuCoin 和其他交易所的 DCR 市场将变得更加困难。
+
+
+### 钱包
+
+- 12 月，硬件钱包 [Ledger](https://www.ledger.com/) 用户成为 [供应链攻击](https://www.ledger.com/blog/security-incident-report) 的受害者。 攻击者利用前 Ledger 员工的受损 [npmjs.com](https://www.npmjs.com/) 帐户上传许多 DApp 使用的 Ledger Connect Kit 库的恶意版本，从而欺骗了 EVM DApp 用户签署交易会耗尽他们的钱包。 该漏洞很快得到了修补，但修复传播大约需要 5 个小时。 该漏洞仅限于使用该库的第三方 DApp，它不会影响 Ledger 硬件或 Ledger Live 的完整性。 Ledger [tweet](https://twitter.com/Ledger/status/1737457365526470665) 表示，价值约 60 万美元的资产受到影响，并承诺受害者[索赔](https://support.ledger.com/hc/en-us/articles/15580506579101)退款（此过程需要身份验证）。 据我们所知，没有任何 DCR 钱包受到该漏洞的影响。
 
 
 <a id="ecosystem-other"></a>
 
-### Other news
+### 其它新闻
 
-- Crypto lending service [CoinRabbit.io](https://coinrabbit.io/) has [added](https://twitter.com/CoinRabbitLoans/status/1739750163579625829) DCR as a collateral asset.
+- 加密借贷服务 [CoinRabbit.io](https://coinrabbit.io/) 已[添加](https://twitter.com/CoinRabbitLoans/status/1739750163579625829) DCR 作为抵押资产。
 
-Join our [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) chat to get more news about Decred services.
+加入我们的 [#ecosystem](https://chat.decred.org/#/room/#ecosystem:decred.org) 聊天，获取有关 Decred 服务的更多新闻。
 
-Warning: the authors of the Decred Journal have no idea about the trustworthiness of any of the services above. Please do your own research before trusting your personal information or assets to any entity.
+警告：Decred 月报的作者不知道上述任何服务的可信度。 在将您的个人信息或资产委托给任何实体之前，请先进行自己的研究。
 
 
 <a id="outreach"></a>
 
-## Outreach
+## 外展
 
 
 ### Decred Vanguard
 
-Vanguard ran two different DCR giveaways in an attempt to spread outreach: A [Meme Contest](https://twitter.com/exitusdcr/status/1730263344668352982) and a [New Year's giveaway](https://twitter.com/exitusdcr/status/1740456118462345249).
+Vanguard 举办了两项不同的 DCR 赠品活动，试图扩大影响范围：[Meme 竞赛](https://twitter.com/exitusdcr/status/1730263344668352982) 和 [新年赠品](https://twitter.com/exitusdcr/status/1740456118462345249)。
 
-Other notable activities:
+其他值得注意的活动：
 
-- Reached out via Twitter/e-mail to [Alchemy Pay](https://alchemypay.org/) for Decred integration, it is a service that performs crypto purchases with fiat payment cards.
-- Applied and reached out to [Biconomy](https://biconomy.com/), a Canada based exchange with a US license.
-- Applied to [Crypto.com](https://crypto.com/) for a listing.
+- 通过 Twitter/电子邮件联系 [Alchemy Pay](https://alchemypay.org/) 进行 Decred 集成，这是一项使用法定支付卡执行加密货币购买的服务。
+- 申请并联系了 [Biconomy](https://biconomy.com/)，这是一家拥有美国许可证的加拿大交易所。
+- 向 [Crypto.com](https://crypto.com/) 申请列出。
 
-The [2023 proposal](https://proposals.decred.org/record/0a1b782) concluded on December 31st. A [new proposal for 2024](https://proposals.decred.org/record/d658f9a) was developed that includes contributor tiers, funds for ads on X, increased discretionary funds for things like giveaways and other experimentation, while keeping things from the first proposal like DAO funded tools.
+[2023 年提案](https://proposals.decred.org/record/0a1b782) 于 12 月 31 日结束。 制定了 [2024 年新提案](https://proposals.decred.org/record/d658f9a)，其中包括贡献者等级、X 上的广告资金、增加用于赠品和其他实验等的可自由支配资金，同时防止事情发生 第一个提案是 DAO 资助的工具。
 
 
 ### Cypherpunk Times
 
-The content creation process at [Cypherpunk Times](https://www.cypherpunktimes.com/) is undergoing changes to become more open to the community. The public [#writers](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/) chat is now being actively used to plan and review upcoming articles, or discuss the overall direction and operation of the site. The process of selecting and creating content is being standardized and documented to guide existing and future authors.
+[Cypherpunk Times](https://www.cypherpunktimes.com/) 的内容创建流程正在发生变化，以便对社区更加开放。 公共 [#writers](https://matrix.to/#/!NkCFEoJGXyDMwLfgMb:decred.org/) 聊天现在被积极用于计划和审查即将发表的文章，或讨论网站的总体方向和运营。 选择和创建内容的过程正在标准化并记录下来，以指导现有和未来的作者。
 
-Engagement stats for December:
+12 月参与度统计：
 
-- Total number of articles on CT: 606
-- Newsletter subscribers: 114
-- New CT posts and newsletters sent: 18
-- Social media followers across all platforms and accounts: 1,206
-- [@decredsociety](https://twitter.com/decredsociety) Twitter: followers - 1,007, posts - 48, tweet impressions - 47.9K, likes - 992, retweets - 136
-- [@cypherpunktimes](https://twitter.com/cypherpunktimes) Twitter: followers - 199, posts - 47, tweet impressions - 13.5K, likes - 230, retweets - 53
-- Posts by project for December: Zcash - 1, Decred - 9, Other crypto news - 4
+- CT上的文章总数：606
+- 时事通讯订阅者：114
+- 发送的新 CT 帖子和时事通讯：18
+- 所有平台和帐户的社交媒体关注者：1,206
+- [@decredsociety](https://twitter.com/decredsociety) Twitter：关注者 - 1,007，帖子 - 48，推文展示次数 - 47.9K，点赞 - 992，转发 - 136
+- [@cypherpunktimes](https://twitter.com/cypherpunktimes) Twitter：关注者 - 199，帖子 - 47，推文展示次数 - 13.5K，点赞 - 230，转发 - 53
+- 12 月份按项目发布的帖子：Zcash - 1、Decred - 9、其他加密新闻 - 4
 
 
 <a id="media"></a>
 
-## Media
+## 媒体
 
 
-### Articles
+### 文章
 
 Decred:
 
-- [Cypherpunk talk with Michael from the Zcash community!](https://www.cypherpunktimes.com/cypherpunk-talk-with-ernesto-from-the-dash-community-2/) by @Joao
-- [Decred vs Polkadot: Overcoming challenges](https://www.cypherpunktimes.com/decred-vs-polkadot-2/) by @Joao
+- [Cypherpunk 与 Zcash 社区的 Michael 交谈！](https://www.cypherpunktimes.com/cypherpunk-talk-with-ernesto-from-the-dash-community-2/) @Joao
+- [Decred vs Polkadot：克服挑战](https://www.cypherpunktimes.com/decred-vs-polkadot-2/) @Joao
 
-General crypto articles on Cypherpunk Times:
+Cypherpunk Times 上的一般加密货币文章：
 
-- [Cypherpunk Times Monthly Roundup (November 2023 edition)](https://www.cypherpunktimes.com/cypherpunk-times-monthly-roundup-october-2023-edition/) by @tallamericano
-- [Navigating the exchange listings jungle: A comprehensive guide on how to get your cryptocurrency listed (2/2)](https://www.cypherpunktimes.com/navigating-the-exchange-listings-jungle-a-comprehensive-guide-on-how-to-get-your-cryptocurrency-listed-2-2/) by @tallamericano
-- [Crypto in view: Bitcoin community split and a recap of the week's crypto events](https://www.cypherpunktimes.com/crypto-in-view-bitcoin-community-split-and-a-recap-of-the-weeks-crypto-events/) by @BlockchainJew
-- [Bull market? Maybe, but you have to prepare!](https://www.cypherpunktimes.com/bull-market-maybe-but-you-have-to-prepare/) by @Joao
-- [Cryptocurrency unveiled: Analysing core principles, distortions, and impact (1/2)](https://www.cypherpunktimes.com/cryptocurrency-unveiled-analyzing-core-principles-distortions-and-impact-1-2/) by @tallamericano
-- [Cryptocurrency unveiled: Analysing core principles, distortions, and impact (2/2)](https://www.cypherpunktimes.com/cryptocurrency-unveiled-analysing-core-principles-distortions-and-impact-2-2/) by @tallamericano
-- [More than 300 memecoins emerge after Elon Musk curses advertisers](https://www.cypherpunktimes.com/more-than-300-memecoins-emerge-after-elon-musk-curses-advertisers/) by @Joao
-- [How is the crypto community preparing for a spot Bitcoin ETF?](https://www.cypherpunktimes.com/how-is-the-crypto-community-preparing-for-a-spot-bitcoin-etf/) by @BlockchainJew
+- [《Cypherpunk Times》月度综述（2023 年 11 月版）](https://www.cypherpunktimes.com/cypherpunk-times-monthly-roundup-october-2023-edition/) @tallamericano
+- [浏览交易所列表丛林：如何列出您的加密货币的综合指南 (2/2)](https://www.cypherpunktimes.com/navigating-the-exchange-listings-jungle-a-compressive-guide -on-how-to-get-your-cryptocurrency-listed-2-2/) @tallamericano
+- [加密货币视野：比特币社区分裂和本周加密事件回顾](https://www.cypherpunktimes.com/crypto-in-view-bitcoin-community-split-and-a-recap-of-the -weeks-crypto-events/) @BlockchainJew
+- [牛市？ 也许吧，但你必须做好准备！](https://www.cypherpunktimes.com/bull-market-maybe-but-you-have-to-prepare/) @Joao
+- [加密货币揭秘：分析核心原理、扭曲和影响（1/2）](https://www.cypherpunktimes.com/cryptocurrency-unveiled-analyzing-core-principles-Distortions-and-impact-1-2/) @tallamericano
+- [加密货币揭秘：分析核心原理、扭曲和影响 (2/2)](https://www.cypherpunktimes.com/cryptocurrency-unveiled-analysing-core-principles-Distortions-and-impact-2-2/) @tallamericano
+- [Elon Musk 诅咒广告商后出现了超过 300 个 memecoin](https://www.cypherpunktimes.com/more-than-300-memecoins-emerge-after-elon-musk-curses-advertisers/) @Joao
+- [加密货币社区如何准备现货比特币 ETF？](https://www.cypherpunktimes.com/how-is-the-crypto-community-preparing-for-a-spot-bitcoin-etf/) @BlockchainJew
 
+### 视频
 
-### Videos
+- [Decred - 金钱进化：开发和社区更新](https://www.youtube.com/watch?v=O-rOgtYkh6A)  @Exitus
+- [建立去中心化的劳动力队伍 - 前进](https://www.youtube.com/watch?v=MKWYViZPn-g)  @phoenixgreen 
+- [非托管质押 - 前进](https://www.youtube.com/watch?v=1iXN0A_ugdY) 
+- [DECRED (DCR) - GPU 挖矿 - BLAKE3 - 分步指南](https://www.youtube.com/watch?v=VnMMRrYBN0o)  HashOnTube
 
-- [Decred - Money Evolved: Development and community updates](https://www.youtube.com/watch?v=O-rOgtYkh6A) by @Exitus
-- [Building a decentralized workforce - Moving Forward](https://www.youtube.com/watch?v=MKWYViZPn-g) by @phoenixgreen - also as a [text post](https://www.cypherpunktimes.com/building-a-decentralised-workforce/)
-- [Non-custodial staking - Moving Forward](https://www.youtube.com/watch?v=1iXN0A_ugdY) - also as a [text post](https://www.cypherpunktimes.com/non-custodial-staking-moving-forward/)
-- [DECRED (DCR) - GPU mining - BLAKE3 - A step-by-step guide](https://www.youtube.com/watch?v=VnMMRrYBN0o) by HashOnTube
+直播：
 
-Live streams:
-
-- [2023 the year of encroachment - State of the Market](https://www.youtube.com/watch?v=yiU1gkoyct4) by @phoenixgreen and @Exitus feat. @h3la1
-
-
-### Audio
-
-- [2024 - The year crypto goes fully mainstream?](https://twitter.com/i/spaces/1ypJdkebzbjGW) - Twitter Space hosted by @Tivra talking about ETFs, AI, working in crypto, delisting and DEXes, and more.
+- [2023 年侵占之年 - 市场状况](https://www.youtube.com/watch?v=yiU1gkoyct4) @phoenixgreen @Exitus @h3la1
 
 
-### Non-English content
+### 音频
 
-- [Peer-to-peer transactions on Decredition](https://www.youtube.com/watch?v=RZz-yPziXwQ) - a 10-minute guide by @arij (Arabic)
-- Decred Journal October got a total of 3 new [translations](https://xaur.github.io/decred-news/) to Arabic (@arij), Chinese (@Dominic) and Polish (@kozel). Thank you guys for translating DJ for so long!
-
-
-### Random
-
-- [DCR highlights pitch](https://twitter.com/exitusdcr/status/1732126308467949844) by @Exitus
-- [DCRDEX pitch/update](https://twitter.com/blockchainbuck/status/1731832017627517229) by @buck54321
-
-> Custodial wallets will require KYC/AML in the U.S. Full node wallets are not feasible for normal users for $BTC or $ETH. Others are questionable too. Decred DEX has struck a balance, using SPV technology to reduce 100s of GBs to < 4GB for BTC, with good privacy and sync times.
-> 
-> For $ETH, there's a no-privacy culture based on infrastructure providers (infura etc.). We've improved upon this slightly by enabling multiple infrastructure providers simultaneously. Full information about wallet activity would require collaboration between providers.
-> 
-> Our $DCR, $LTC, and $BCH wallets are also SPV, so good privacy and sync times there too. #Polygon has a multi-provider wallet like $ETH. All other wallets are full node, which is fine, since they are not Bitcoin, though $ZEC full node is still challenging.
-> 
-> Financial self-sovereignty MUST be an option for everybody. Decred DEX is battling to keep it possible. We've still got work to do, but is any other project sticking to blockchain principles like Decred DEX?
-> 
-> Did I mention that our wallet has new privacy options? We've added #Decred mixing, fully integrated with trading so that swap redemptions are re-mixed, adding to the (already huge) anonymity set. #Zcash is going shielded-by-default too, unified addresses and all. [@blockchainbuck on [Twitter](https://twitter.com/blockchainbuck/status/1731832017627517229)]
+- [2024 年 - 加密货币完全成为主流的一年？](https://twitter.com/i/spaces/1ypJdkebzbjGW) - 由 @Tivra 主持的 Twitter Space 谈论 ETF、人工智能、加密货币工作、退市和 DEX 等 。
 
 
-### Art and Fun
+### 非英语内容
 
-- Someone has made an [Ordinals inscription](https://ordinals.com/inscription/3ea12f3785e8026bd5a4bb30cbc7d7c3ebecebac4658b116225bb3424eb86d41i0) of the Decred Technical Brief on the Bitcoin chain
-- An unhinged [Twitter thread](https://twitter.com/LukeDashjr/status/1736490182688297135) with LukeDashjr about Bitcoin's high fees and Decred's (lack of) a governance solution
-- [Decred the fluid blockchain](https://www.cypherpunktimes.com/decred-the-fluid-blockchain/) by @OfficialCryptos
+- [Decredition 上的点对点交易](https://www.youtube.com/watch?v=RZz-yPziXwQ)   @arij 的 10 分钟指南（阿拉伯语）
+- Decred 月报 10 月份总共获得了 3 个新的阿拉伯语 (@arij)、中文 (@Dominic) 和波兰语 (@kozel) [翻译](https://xaur.github.io/decred-news/)。 谢谢你们这么久以来翻译月报！
+
+
+### 其它
+
+- [DCR 亮点推介](https://twitter.com/exitusdcr/status/1732126308467949844)  @Exitus
+- [DCRDEX 推介/更新](https://twitter.com/blockchainbuck/status/1731832017627517229) @buck54321
+
+> 在美国，托管钱包将需要 KYC/AML。对于普通用户来说，全节点钱包对于 BTC 或 ETH 来说是不可行的。 Decred DEX 解决了这一问题，使用 SPV 技术将 BTC 的 100 GB 减少到 < 4GB，同时具有良好的隐私性和同步时间。
+>
+> 对于 $ETH，存在基于基础设施提供商（infura 等）的无隐私文化。 我们通过同时启用多个基础设施提供商对此做了一些改进。 有关钱包活动的完整信息需要提供商之间的协作。
+>
+> 我们的 $DCR、$LTC 和 $BCH 钱包也是 SPV，因此也具有良好的隐私性和同步时间。 #Polygon 有一个多提供商钱包，例如 $ETH。 所有其他钱包都是全节点，这很好，因为它们不是比特币，尽管 $ZEC 全节点仍然具有挑战性。
+>
+> 财务自主权必须成为每个人的选择。 Decred DEX 正在努力使其成为可能。 我们还有工作要做，但还有其他项目像 Decred DEX 一样遵循区块链原则吗？
+>
+> 我有没有提到我们的钱包有新的隐私选项？ 我们添加了 #Decred 混合，与交易完全集成，以便重新混合掉期赎回，增加（已经很大的）匿名集。 #Zcash 也将默认受到屏蔽，统一地址等等。 [@blockchainbuck [Twitter](https://twitter.com/blockchainbuck/status/1731832017627517229)]
+
+
+### 艺术娱乐
+
+- 有人在比特币链上制作了 Decred 技术简介的 [Ordinals 铭文](https://ordinals.com/inscription/3ea12f3785e8026bd5a4bb30cbc7d7c3ebecebac4658b116225bb3424eb86d41i0)
+- LukeDashjr 的一个精神错乱的 [Twitter 帖子](https://twitter.com/LukeDashjr/status/1736490182688297135) 关于比特币的高额费用和 Decred（缺乏）治理解决方案
+- [Decred 流体区块链](https://www.cypherpunktimes.com/decred-the-fluid-blockchain/)  @OfficialCryptos
 
 
 <a id="markets"></a>
 
-## Markets
+## 市场
 
-In December DCR was trading between USDT 14.12-26.50 and BTC 0.0032-0.00063 on Binance. Using the weighed daily close data from Coin Metrics the price ranges were USD 14.40-22.66 and BTC 0.00033-0.00052. The average daily rate as calculated for contractor payments was $15.89.
+12 月，DCR 在币安上的交易价格为 USDT 14.12-26.50 、 BTC 0.0032-0.00063。 使用 Coin Metrics 的加权每日收盘数据，价格范围为 14.40-22.66 美元，BTC 0.00033-0.00052。 计算得出的承包商付款平均每日费率为 15.89 美元。
 
-![Recent DCR/BTC, data from Coin Metrics](../img/202312.18.720.png)
+![近期 DCR/BTC，数据来自 Coin Metrics](img/202312.18.720.png)
 
-_Image: Recent DCR/BTC, data from Coin Metrics_
+_图片：近期 DCR/BTC，数据来自 Coin Metrics_
 
-![Recent DCR/USD, data from Coin Metrics](../img/202312.19.720.png)
+![近期 DCR/USD，数据来自 Coin Metrics](img/202312.19.720.png)
 
-_Image: Recent DCR/USD, data from Coin Metrics_
+_图片：近期 DCR/USD，数据来自 Coin Metrics_
 
-![DCRDEX monthly volume in USD](../img/202312.20.720.png)
+![DCRDEX 每月交易量（美元）](img/202312.20.720.png)
 
-_Image: DCRDEX monthly volume in USD_
+_图片：DCRDEX 每月交易量（美元）_
 
-![Market valuations (USD) based on @bochinchero's Staked Realized Value model](../img/202312.21.720.png)
+![市场估值（美元）基于@bochinchero 的质押已实现价值模型](img/202312.21.720.png)
 
-_Image: Market valuations (USD) based on @bochinchero's [Staked Realized Value](https://bochinchero.medium.com/decred-on-chain-staked-realised-value-444ab5a146d8) model_
+_图片：基于@bochinchero 的[质押已实现价值](https://bochinchero.medium.com/decred-on-chain-staked-realized-value-444ab5a146d8) 模型的市场估值（美元）_
 
-![3rd attempt to leave the perfect accumulation zone, by @saender](../img/202312.22.1080.jpg)
+![第三次尝试离开完美积累区，@saender](img/202312.22.1080.jpg)
 
-_Image: 3rd attempt to leave the perfect accumulation zone, by @saender_
+_图片：第三次尝试离开完美积累区，作者：@saender_
 
 
 <a id="relevant-external"></a>
 
-## Relevant External
+## 相关外部信息
 
-Ledger's Connect Kit library, used heavily by DeFi applications like SushiSwap, Balancer and Zapper to allow users to interact with their wallets, was hacked when a staff member's credentials were compromised and malicious code was introduced to the GitHub repository. This allowed the hacker to [steal](https://www.coindesk.com/business/2023/12/14/ledger-exploit-drained-484k-upended-defi-former-staffer-linked-to-malicious-code/) $484K from users who accessed their wallets during the critical 2-hour period before the red flag was raised and many of the DeFi protocols using the library paused operations amid a general [panic](https://twitter.com/udiWertheimer/status/1735308883160100996) about the safety of any Ethereum transaction made on the day of the attack.
+Ledger 的 Connect Kit 库被 SushiSwap、Balancer 和 Zapper 等 DeFi 应用程序大量使用，以允许用户与钱包进行交互，但当工作人员的凭据被泄露并且恶意代码被引入 GitHub 存储库时，该库遭到了黑客攻击。这使得黑客能够在危险信号出现之前的关键 2 小时内从访问其钱包的用户那里窃取48.4 万美元，并且由于对任何以太坊交易的安全性普遍感到恐慌，许多使用该库的 DeFi 协议暂停了操作袭击当天。
 
-As of Jan 1 2024 new regulations come into [effect](https://www.paulhastings.com/insights/client-alerts/digital-asset-reporting-is-here) which treat digital assets as cash in the sense that receiving more than $10,000 "in one transaction (or a series of related transactions)" will mandate reporting the transaction event and the identity of the sender to the IRS on a Form 8300. This was a provision of the Infrastructure Investment and Jobs Act ("Infrastructure Act") that was passed in 2021, and it is widely seen as presenting a [problematic](https://cointelegraph.com/news/irs-rules-10k-crypto-transactions-2024) increase in the level of admin work involved in receiving cryptocurrency as a business.
+自 2024 年 1 月 1 日起，新法规将数字资产视为现金，即“在一次交易（或一系列相关交易）”中接收超过 10,000 美元的交易将强制要求向以下人员报告交易事件和发送者的身份：美国国税局 (IRS) 的 8300 表格。这是 2021 年通过的《基础设施投资和就业法案》（“基础设施法案”）的一项条款，人们普遍认为，该法案在接收加密货币时涉及的管理工作水平增加带来了问题作为一项业务。
 
-Tether has started [freezing](https://www.theblock.co/post/266872/tether-freezes-all-ofac-sanctioned-wallets-in-proactive-security-measure) the assets held by wallet addresses sanctioned by OFAC, and has also blacklisted the contract address for Tornado Cash. Tether has also been happily "[onboarding](https://www.theblock.co/post/267973/tether-weve-onboarded-fbi-secret-service-to-our-platform)" the US Secret Service and FBI to their platform, while bragging about the 435 million USDT it has so far frozen at law enforcement's behest.
+Tether 已开始冻结OFAC 制裁的钱包地址持有的资产，并将 Tornado Cash 的合约地址列入黑名单。Tether 也很高兴地让美国特勤局和 FBI 加入他们的平台，同时吹嘘迄今为止已根据执法部门的要求冻结了 4.35 亿美元 USDT。
 
-Binance has been [running](https://www.ft.com/content/47fe6542-d000-4051-86d9-feb0055697da) half-day courses in France that introduce people to blockchain concepts and software like Metamask, and get them to sign up to Binance to receive their "NFT diploma", and in some of the poorer regions which they have targeted attendees are being forced to sign up for this "education" as part of a state-sponsored retraining effort. This is one of the outcomes of French PM Macron's relatively welcoming attitude towards the company which saw Binance pledge to invest 100 million euros in the country's burgeoning crypto scene in 2021, as detailed in [this article](https://www.ft.com/content/47fe6542-d000-4051-86d9-feb0055697da).
+币安一直在法国举办半天课程，向人们介绍区块链概念和 Metamask 等软件，并让他们注册币安以获得“NFT 文凭”，在一些他们瞄准的贫困地区，被迫报名参加这种“教育”，作为国家资助的再培训工作的一部分。这是法国总理马克龙对该公司相对欢迎态度的结果之一，币安承诺在 2021 年向该国蓬勃发展的加密货币领域投资 1 亿欧元，如本文所述。
 
-That's all for December. Thank you for reading!
+这就是 12 月的全部内容。感谢您的阅读！
 
 
-## About
+## 关于月报
 
-This is issue 66 of Decred Journal. Index of all issues, mirrors, and translations is available [here](https://xaur.github.io/decred-news/).
+这是 Decred 月报的第 66 期。 [此处](https://xaur.github.io/decred-news/) 提供所有问题、镜像和翻译的索引。
 
-Most information from third parties is relayed directly from the source after a minimal sanity check. The authors of the Decred Journal cannot verify all claims. Please beware of scams and do your own research.
+来自第三方的大多数信息都是在经过最低限度的健全性检查后直接从源头转发的。 Decred 月报的作者无法验证所有声明。请提防诈骗并自行研究。
 
-Credits (alphabetical order):
+感谢（字母顺序）：
 
-- writing, editing, publishing: bee, bochinchero, Exitus, jz, kozel, phoenixgreen, richardred, zippycorners
-- title image: Exitus
-- funding: Decred stakeholders
+- 写作、编辑、出版：bee、bochinchero、Exitus、jz、kozel、phoenixgreen、richardred、zippycorners
+- 标题图片：Exitus
+- 资金来源：Decred 利益相关者
+
+
+## 中文社区
+
+* [推特](https://twitter.com/DecredCN)
+* [微信公众号](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NTExNzc3MA==&scene=124#wechat_redirect)
+* [bilibili频道](https://space.bilibili.com/425519478)  
