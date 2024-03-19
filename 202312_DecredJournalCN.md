@@ -127,7 +127,7 @@ _[DCRDEX](https://github.com/decred/dcrdex) 是一个非托管、尊重隐私的
 
 - 切换到 [Polygon 上的原生 USDC](https://github.com/decred/dcrdex/pull/2629)。
 - 用于创建独立的 [Windows 桌面应用程序](https://github.com/decred/dcrdex/pull/2635) 及其安装程序的构建环境。
-- @buck54321 在 Twitter 上询问 [哪些货币和功能](https://twitter.com/blockchainbuck/status/1732515860156199038) 社区希望看到未来开发，以及 [哪些 USDC 对](https://twitter .com/blockchainbuck/status/1734048766850683051）是最受欢迎的。
+- @buck54321 在 Twitter 上询问 [哪些货币和功能](https://twitter.com/blockchainbuck/status/1732515860156199038) 社区希望看到未来开发，以及 [哪些 USDC 对](https://twitter.com/blockchainbuck/status/1734048766850683051)是最受欢迎的。
 
 
 ### Cryptopower
@@ -171,7 +171,7 @@ _[Cryptopower](https://github.com/crypto-power/cryptopower) 是一款适用于 D
 - 钱包[账户](https://github.com/crypto-power/cryptopower/pull/336)页面。
 - 钱包[信息](https://github.com/crypto-power/cryptopower/pull/332)（概述）页面。
 - [应用程序入门](https://github.com/crypto-power/cryptopower/pull/342) 页面。
-- 钱包[创建/恢复](https://github.com/crypto-power/cryptopower/pull/352)页面，钱包[备份](https://github.com/crypto-power/cryptopower/pull/350) ）页。
+- 钱包[创建/恢复](https://github.com/crypto-power/cryptopower/pull/352)页面，钱包[备份](https://github.com/crypto-power/cryptopower/pull/350) 页。
 - [发送](https://github.com/crypto-power/cryptopower/pull/347) 和 [接收](https://github.com/crypto-power/cryptopower/pull/346) 页面和快速访问 情态动词。
 
 修复：
@@ -325,7 +325,7 @@ PD 的发布工作流程已重新设计，以提高覆盖范围和参与度：�
 
 _图片：在 GPU 矿工最初涌入后，Decred 算力正在寻求新的平衡_
 
-截至 1 月 7 日，实际[开采](https://miningpoolstats.stream/decred) 的 1,000 个区块的分布：[miningandco.com](https://decred.miningandco.com/) 26%，[pooltronic.tech](https ://decred.pooltronic.tech/) 21%, [gopool.cash](https://dcr.gopool.cash/) 2.7%, [losmuchachos.digital](https://losmuchachos.digital/) 1.3% ，并且 49% 的区块未被 [miningpoolstats.stream](https://miningpoolstats.stream/decred) 识别。
+截至 1 月 7 日，实际[开采](https://miningpoolstats.stream/decred) 的 1,000 个区块的分布：[miningandco.com](https://decred.miningandco.com/) 26%，[pooltronic.tech](https://decred.pooltronic.tech/) 21%, [gopool.cash](https://dcr.gopool.cash/) 2.7%, [losmuchachos.digital](https://losmuchachos.digital/) 1.3% ，并且 49% 的区块未被 [miningpoolstats.stream](https://miningpoolstats.stream/decred) 识别。
 
 ![唯一挖矿地址的下降表明它再次变得更加中心化](img/202312.09.720.png)
 
@@ -484,8 +484,8 @@ Decred:
 Cypherpunk Times 上的一般加密货币文章：
 
 - [《Cypherpunk Times》月度综述（2023 年 11 月版）](https://www.cypherpunktimes.com/cypherpunk-times-monthly-roundup-october-2023-edition/) @tallamericano
-- [浏览交易所列表丛林：如何列出您的加密货币的综合指南 (2/2)](https://www.cypherpunktimes.com/navigating-the-exchange-listings-jungle-a-compressive-guide -on-how-to-get-your-cryptocurrency-listed-2-2/) @tallamericano
-- [加密货币视野：比特币社区分裂和本周加密事件回顾](https://www.cypherpunktimes.com/crypto-in-view-bitcoin-community-split-and-a-recap-of-the -weeks-crypto-events/) @BlockchainJew
+- [浏览交易所列表丛林：如何列出您的加密货币的综合指南 (2/2)](https://www.cypherpunktimes.com/navigating-the-exchange-listings-jungle-a-compressive-guide-on-how-to-get-your-cryptocurrency-listed-2-2/) @tallamericano
+- [加密货币视野：比特币社区分裂和本周加密事件回顾](https://www.cypherpunktimes.com/crypto-in-view-bitcoin-community-split-and-a-recap-of-the-weeks-crypto-events/) @BlockchainJew
 - [牛市？ 也许吧，但你必须做好准备！](https://www.cypherpunktimes.com/bull-market-maybe-but-you-have-to-prepare/) @Joao
 - [加密货币揭秘：分析核心原理、扭曲和影响（1/2）](https://www.cypherpunktimes.com/cryptocurrency-unveiled-analyzing-core-principles-Distortions-and-impact-1-2/) @tallamericano
 - [加密货币揭秘：分析核心原理、扭曲和影响 (2/2)](https://www.cypherpunktimes.com/cryptocurrency-unveiled-analysing-core-principles-Distortions-and-impact-2-2/) @tallamericano
