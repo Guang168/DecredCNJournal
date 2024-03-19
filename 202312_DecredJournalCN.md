@@ -1,208 +1,207 @@
-# Decred Journal – December 2023
+# Decred 月报 – 2023 年 12 月
 
-![](../img/202312.01.768.jpg)
+![](img/202312.01.768.jpg)
 
-_Image: December cover by @Exitus_
+_图片：@Exitus_
 
-*Dear readers, sorry for taking so long to complete this December issue. In recent months, finding time to work on the Journal has been a big challenge. We are discussing an overhaul of DJ to optimize our efforts. I hope this issue still has unique and useful information for you. Happy reading! -- @bee*
+*亲爱的读者，很抱歉花了这么长时间才完成十二月的月报。近几个月来，抽时间为《华尔街日报》工作是一个巨大的挑战。我们正在讨论对 月报 进行彻底改革以优化我们的工作。我希望本期仍然能为您提供独特且有用的信息。阅读愉快！-- @bee*
 
-Highlights of December:
+12 月亮点：
 
-- Two proposals have been approved, for continuing the Bug Bounty program and Video Content creation in 2024.
+- 两项提案已获得批准，即在 2024 年继续执行 Bug 赏金计划和视频内容创建。
 
-- Two new mining pools have launched, but data suggests mining is becoming more centralized again.
+- 两个新的矿池已经启动，但数据表明挖矿再次变得更加集中。
 
-- Wallet apps and Bison Relay are getting polished for their next releases, Cake integration is ongoing.
+- 钱包应用程序和 Bison Relay 正在为下一个版本进行完善，Cake 集成正在进行中。
 
-Contents:
 
-- [Development](#development)
-- [People](#people)
-- [Governance and Finances](#governance-and-finances)
-- [Network](#network)
-- [Ecosystem](#ecosystem)
-- [Outreach](#outreach)
-- [Media](#media)
-- [Markets](#markets)
-- [Relevant External](#relevant-external)
+内容:
+
+- [开发进展总结](#development)
+- [人员](#people)
+- [治理和财务](#governance-and-finances)
+- [网络](#network)
+- [生态系统](#ecosystem)
+- [外展](#outreach)
+- [媒体](#media)
+- [市场](#markets)
+- [相关外部信息](#relevant-external)
 
 
 <a id="development"></a>
 
-## Development
+## 开发进展总结
 
-The work reported below has the "merged to master" status unless noted otherwise. It means that the work is completed, reviewed, and integrated into the source code that advanced users can [build and run](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c), but is not yet available in release binaries for regular users.
+除非另有说明，否则下面报告的工作为“合并至核心存储库”状态。这意味着该工作已完成、审查并集成到高级用户可以[构建和运行](https://medium.com/@artikozel/the-decred-node-back-to-the-source-part-one-27d4576e7e1c)的源代码中，但普通用户尚不可用。
 
 
 ### dcrd
 
-_[dcrd](https://github.com/decred/dcrd) is a full node implementation that powers Decred's peer-to-peer network around the world._
+_[dcrd](https://github.com/decred/dcrd) 是一个完整的节点实现，为 Decred 在全球的点对点网络提供支持。_
 
-Developer and internal changes:
+开发者和内部变化：
 
-- Updated the [Docker image](https://github.com/decred/dcrd/pull/3214) to build with Go 1.21.5.
-- Marked `cfilter` version 1 messages as [deprecated](https://github.com/decred/dcrd/pull/3205) in the `wire` package. This is just general cleanup, since V1 `cfilter` messages are already invalid. V2 `cfilter` messages have been [the standard](https://github.com/decred/dcrd/pull/1906) since [DCP-5](https://github.com/decred/dcps/blob/master/dcp-0005/dcp-0005.mediawiki) activated in Jan 2020.
+- 更新了 [Docker 镜像](https://github.com/decred/dcrd/pull/3214) 使用 Go 1.21.5 进行构建。
+- 在 `wire` 包中将 `cfilter` 版本 1 消息标记为 [已弃用](https://github.com/decred/dcrd/pull/3205)。 这只是一般清理，因为 V1 `cfilter` 已经无效。 自 [DCP-5](https://github.com/decred/dcps/blob/master) 以来，V2 `cfilter` 已成为[标准](https://github.com/decred/dcrd/pull/1906)于 2020 年 1 月激活。
 
-In progress:
+进行中：
 
-- Introduce [P2P mixing messages](https://github.com/decred/dcrd/pull/3066) to the `wire` protocol
+- 将 [P2P 混合信息](https://github.com/decred/dcrd/pull/3066) 引入 `wire` 协议
 
 
 ### dcrwallet
 
-_[dcrwallet](https://github.com/decred/dcrwallet) is a wallet server used by command-line and graphical wallet apps._
+_[dcrwallet](https://github.com/decred/dcrwallet) 是命令行和图形界面钱包应用程序使用的钱包服务器。_
 
-User-facing changes:
+面向用户的变化：
 
-- Only [request block notifications](https://github.com/decred/dcrwallet/pull/2310) after the wallet is fully synced. This solves a race issue where the wallet might try to look at blocks before the underlying dcrd instance was fully synced. This could happen when dcrwallet is started very quickly after dcrd (for example, from within Decrediton). The result would be missed transaction notifications and the wallet's balance to be wrong, requiring a rescan to be fixed.
-- When the wallet is syncing in SPV mode, [process header batches in parallel](https://github.com/decred/dcrwallet/pull/2311). This resulted in a 32% faster sync on average when tested in the real world.
-- When the wallet is in SPV mode and the initial sync has already finished, [request headers from each newly connected peer](https://github.com/decred/dcrwallet/pull/2316). This speeds up re-syncing after initial sync when the local client has been offline for some time (for example, due to an intermittent network connection) by ensuring any and all new headers are requested immediately, instead of waiting until a new block is announced to begin the catchup process.
-- Fixed a bug where a restored wallet would [miss discovering transactions](https://github.com/decred/dcrwallet/pull/2319) if those transactions were in the tip block after restoring from seed. This was quite a rare bug, because having more blocks in the chain post-restoration (common case) would prevent the issue from being hit. The bug would've likely only impacted automated dev tests, although rescans would also have fixed the issue for any users who might've experienced the bug.
+- 仅在钱包完全同步后[请求阻止通知](https://github.com/decred/dcrwallet/pull/2310)。 这解决了钱包可能会在底层 dcrd 实例完全同步之前尝试查看区块的竞争问题。 当 dcrwallet 在 dcrd 之后很快启动时（例如，从 Decrediton 内部），可能会发生这种情况。 结果将是错过交易通知并且钱包余额错误，需要重新扫描才能修复。
+- 当钱包在 SPV 模式下同步时，[并行处理标头批次](https://github.com/decred/dcrwallet/pull/2311)。 在现实世界中进行测试时，这使得同步速度平均提高了 32%。
+- 当钱包处于 SPV 模式并且初始同步已经完成时，[从每个新连接的对等点请求标头](https://github.com/decred/dcrwallet/pull/2316)。 当本地客户端离线一段时间（例如，由于网络连接间歇性）时，通过确保立即请求所有新标头，而不是等到宣布新块，可以加快初始同步后的重新同步速度 开始追赶过程。
+- 修复了一个错误，即如果从种子恢复后这些交易位于提示块中，则恢复的钱包将[错过发现交易](https://github.com/decred/dcrwallet/pull/2319)。 这是一个相当罕见的错误，因为恢复后链中有更多块（常见情况）可以防止该问题出现。 该错误可能只会影响自动化开发测试，尽管重新扫描也可以为可能遇到该错误的任何用户解决该问题。
 
-Internal and developer changes:
+内部和开发人员变更：
 
-- Modify the pruning procedure to [prune partial sidechains](https://github.com/decred/dcrwallet/pull/2309) instead of pruning entire trees. This does not have a functional change yet, but in the future will allow SPV clients to process chains asynchronously.
-- Use Go 1.19 [atomic types](https://github.com/decred/dcrwallet/pull/2312) wherever possible. These types prevent misuse by only allowing access through the provided methods and guarantee proper use even if the variables are reorganized in the struct layout.
-- If a peer gives the wallet a new block, ensure that block has a [known ancestor either in the main chain or a side chain](https://github.com/decred/dcrwallet/pull/2315). If no known ancestor exists, this means the wallet missed some blocks and should resync headers. Previously, the wallet only looked for ancestors in the main chain, instead of all side chains too. This caused `getHeaders` to run unnecessarily often, especially for devs simulating large reorgs with side chains.
-- Fix the gRPC logger, which wasn't [correctly removing prefixes](https://github.com/decred/dcrwallet/pull/2313) when logging message arguments. This error [was caught](https://github.com/decred/dcrwallet/issues/2169) by a friendly passerby who is writing a custom golang linter.
+- 将修剪程序修改为[修剪部分侧链](https://github.com/decred/dcrwallet/pull/2309)，而不是修剪整个树。 这还没有功能变化，但将来将允许 SPV 客户端异步处理链。
+- 尽可能使用 Go 1.19 [原子类型](https://github.com/decred/dcrwallet/pull/2312)。 这些类型仅允许通过提供的方法进行访问，从而防止误用，并保证正确使用，即使变量在结构布局中重新组织也是如此。
+- 如果对等方向钱包提供了一个新块，确保该块在主链或侧链中具有[已知的祖块](https://github.com/decred/dcrwallet/pull/2315)。 如果不存在已知的祖块，这意味着钱包错过了一些块并且应该重新同步块头。 以前，钱包只寻找主链中的祖块，而不是所有侧链。 这导致“getHeaders”不必要地频繁运行，特别是对于使用侧链模拟大型重组的开发人员而言。
+- 修复 gRPC 记录器，该记录器在记录消息参数时无法[正确删除前缀](https://github.com/decred/dcrwallet/pull/2313)。 
 
-In progress:
+进行中：
 
-- Add [integration tests](https://github.com/decred/dcrwallet/pull/2318) to assert the correct behavior of restoring a wallet under various scenarios that were known to cause missed transactions. These tests make use of the upcoming [automation and testing framework](https://github.com/decred/dcrtest/pull/20) for operating a dcrwallet binary through its JSON-RPC and gRPC interfaces.
-- Add [batched fetching of compact filters](https://github.com/decred/dcrwallet/pull/2314) to further [speed up syncing in SPV mode](https://github.com/decred/dcrwallet/issues/2289). This change depends on a related [change in dcrd](https://github.com/decred/dcrd/pull/3211) enabling the full nodes to serve the batched data to light SPV clients.
+- 添加[集成测试](https://github.com/decred/dcrwallet/pull/2318)，在已知会导致丢失交易的各种场景下恢复钱包的正确行为。 这些测试利用即将推出的[自动化和测试框架](https://github.com/decred/dcrtest/pull/20)，通过其 JSON-RPC 和 gRPC 接口操作 dcrwallet 二进制文件。
+- 添加[批量获取紧凑型过滤器](https://github.com/decred/dcrwallet/pull/2314)以进一步[加速SPV模式下的同步](https://github.com/decred/dcrwallet/issues/2289)。 此更改取决于相关的[dcrd 中的更改](https://github.com/decred/dcrd/pull/3211)，使完整节点能够向轻 SPV 客户端提供批量数据。
 
 
 ### vspd
 
-_[vspd](https://github.com/decred/vspd) is server software used by Voting Service Providers. A VSP votes on behalf of its users 24/7 and cannot steal funds._
+_[vspd](https://github.com/decred/vspd) 是投票服务提供商使用的服务器软件。 VSP 24/7 代表其用户投票，并且不能窃取资金。_
 
-- [Added documentation](https://github.com/decred/vspd/pull/458) for how a new VSP admin can get their VSP listed in Decrediton and on [decred.org/vsp](https://decred.org/vsp). This documentation is not aimed at the general user, and therefore has also been removed from [docs.decred.org](https://docs.decred.org).
-
+- [添加文档](https://github.com/decred/vspd/pull/458)，了解新的 VSP 管理员如何在 Decrediton 和 [decred.org/vsp](https://decred.org/vsp)上列出其 VSP。 该文档并不针对普通用户，因此也已从 [docs.decred.org](https://docs.decred.org) 中删除。
 
 ### dcrpool
 
-_[dcrpool](https://github.com/decred/dcrpool) is server software for running a Decred mining pool._
+_[dcrpool](https://github.com/decred/dcrpool) 是用于运行 Decred 矿池的服务器软件。_
 
-- Display the connected miners' [IP and port](https://github.com/decred/dcrpool/pull/428) on the pool account page. This makes it a little bit easier to distinguish clients from each other.
-- Allow dcrpool to [gracefully handle errors](https://github.com/decred/dcrpool/pull/431) if dcrd's `GetTxOut` method can't find an output for a given transaction.
+- 在矿池账户页面显示已连接矿工的[IP和端口](https://github.com/decred/dcrpool/pull/428)。 这使得区分客户变得更容易。
+- 如果 dcrd 的 `GetTxOut` 方法找不到给定交易的输出，则允许 dcrpool [优雅地处理错误](https://github.com/decred/dcrpool/pull/431)。
 
 
 ### Lightning Network
 
-_[dcrlnd](https://github.com/decred/dcrlnd) is Decred's Lightning Network node software. LN enables instant low-cost transactions._
+_[dcrlnd](https://github.com/decred/dcrlnd) 是 Decred 的闪电网络节点软件。 闪电网络可实现即时低成本交易。_
 
-- Added automatic closing of channels that [have not been reestablished for some time](https://github.com/decred/dcrlnd/pull/196). Normally peers keep their channels healthy by "reestablishing" them. If channel peer is seen online for some time but it is not sending a message to reestablish the channel, such channel is a good candidate for being force closed, because it is likely the remote peer has lost the ability to use the channel (for example, due to restoring the node after data loss without the use of an [SCB backup file](https://docs.decred.org/lightning-network/backups/)). By default, if channel's remote counterparty is seen online for 72 hours without reestablishing the channel, it will be auto closed. This should be a reasonable compromise between not closing channels too fast on hubs (that are online 24/7) and ephemeral nodes (that may be online only for an hour or two a day). Integration test has been added to assert the correct behavior.
+- 添加了自动关闭[一段时间内未重新建立](https://github.com/decred/dcrlnd/pull/196)的通道。 通常，通过“重建”通道来保持健康。 如果通道对等点在线一段时间但没有发送消息来重新建立通道，则此类通道很可能被强制关闭，因为远程对等点可能已失去使用该通道的能力（例如 ，由于在数据丢失后恢复节点而未使用 [SCB 备份文件](https://docs.decred.org/lightning-network/backups/))。 默认情况下，如果通道的远程交易对手连续72小时在线而没有重新建立通道，通道将自动关闭。 这应该是在集线器（24/7 在线）和临时节点（每天可能仅在线一两个小时）上过快关闭通道之间的合理折衷。 添加了集成测试来判断正确的行为。
 
 
 ### cspp
 
-_[cspp](https://github.com/decred/cspp) is a server for coordinating coin mixes using the CoinShuffle++ protocol. It is non-custodial, i.e. never holds any funds. CSPP is part of StakeShuffle, Decred's privacy system._
+_[cspp](https://github.com/decred/cspp) 是一个使用 CoinShuffle++ 协议的协调混币服务器。 它是非托管的，即从不持有任何资金。 CSPP 是 Decred 隐私系统 StakeShuffle 的一部分。_
 
-- Updated [C headers](https://github.com/decred/cspp/pull/98) to support the [third major version](https://flintlib.org/doc/history.html#flint-3-0-0) of the fast math library `flint` (released October 2023). Newer versions of `flint` may provide performance and other improvements to the CSPP server.
+- 更新了 [C 头文件](https://github.com/decred/cspp/pull/98) 以支持 [第三个主要版本](https://flintlib.org/doc/history.html#flint-3-0-0)的快速数学库“flint”（2023 年 10 月发布）。较新版本的“flint”可能会为 CSPP 服务器提供更高性能和其他改进。
 
 
 ### DCRDEX
 
-_[DCRDEX](https://github.com/decred/dcrdex) is a non-custodial, privacy-respecting exchange for trustless trading, powered by atomic swaps._
+_[DCRDEX](https://github.com/decred/dcrdex) 是一个非托管、尊重隐私的交易所，用于去信任交易，由原子交换提供支持。_
 
-Changes backported to the next v0.6.x release:
+更改向后移植到下一个 v0.6.x 版本：
 
-- Fixed a bug where a trade could [get stuck](https://github.com/decred/dcrdex/pull/2622) after a server disconnect. The full list of affected markets is unknown, but it is known that the bug affected LTC/DCR market and did not affect the DCR/BTC market.
+- 修复了服务器断开连接后交易可能[卡住](https://github.com/decred/dcrdex/pull/2622)的错误。受影响市场的完整列表尚不清楚，但已知该漏洞影响了 LTC/DCR 市场，但没有影响 DCR/BTC 市场。
 
-Market maker bots:
+做市商机器人：
 
-- Implemented low-level [CEX management functions](https://github.com/decred/dcrdex/pull/2568): deposit, withdraw, and balance tracking. Automatic rebalancing has been added to the simple arbitrage strategy where the bot initiates deposits and withdrawals to/from the CEX to maintain the configured balances. Binance is the first CEX supported by this functionality.
-- Modified Binance code to track 1,000 [order book entries](https://github.com/decred/dcrdex/pull/2627) instead of 20.
+- 实现了初级[CEX管理功能](https://github.com/decred/dcrdex/pull/2568)：存款、取款和余额跟踪。 自动重新平衡已添加到简单的套利策略中，机器人可以向 CEX 发起存款和取款，以维持配置的余额。 币安是第一个支持此功能的 CEX。
+- 修改了 Binance 代码以跟踪 1,000 个[订单簿条目](https://github.com/decred/dcrdex/pull/2627)，而不是 20 个。
+  
+一般客户变更：
 
-General client changes:
+- 在 DEX 设置视图中添加了[过期未退款债券](https://github.com/decred/dcrdex/pull/2626) 的显示。 当债券到期时，可以退还以收回资金。
+- 较小的用户界面修复。
 
-- Added display of [expired unrefunded bonds](https://github.com/decred/dcrdex/pull/2626) on DEX Settings view. When a bond expires it can be refunded to get the funds back.
-- Fixed a rare [race condition](https://github.com/decred/dcrdex/pull/2630) when handling [preimage requests](https://github.com/decred/dcrdex/blob/2f6cae0917fca97ec0fa979f367cff69655def33/spec/orders.mediawiki#order-commitment).
-- Minor UI fixes.
+其他：
 
-Other:
+- 更新了 [dex.decred.org 页脚](https://github.com/decred/dexweb/pull/39) 以显示更多支持的资产。
 
-- Updated [dex.decred.org footer](https://github.com/decred/dexweb/pull/39) to show more supported assets.
+正在进行中的亮点：
 
-In progress highlights:
-
-- Switching to [native USDC on Polygon](https://github.com/decred/dcrdex/pull/2629).
-- Build environment for creating a standalone [Windows desktop app](https://github.com/decred/dcrdex/pull/2635) and an installer for it.
-- @buck54321 asked on Twitter [which coins and features](https://twitter.com/blockchainbuck/status/1732515860156199038) the community would want to see developed in the future, and [which USDC pairs](https://twitter.com/blockchainbuck/status/1734048766850683051) are the most wanted.
+- 切换到 [Polygon 上的原生 USDC](https://github.com/decred/dcrdex/pull/2629)。
+- 用于创建独立的 [Windows 桌面应用程序](https://github.com/decred/dcrdex/pull/2635) 及其安装程序的构建环境。
+- @buck54321 在 Twitter 上询问 [哪些货币和功能](https://twitter.com/blockchainbuck/status/1732515860156199038) 社区希望看到未来开发，以及 [哪些 USDC 对](https://twitter .com/blockchainbuck/status/1734048766850683051）是最受欢迎的。
 
 
 ### Cryptopower
 
-_[Cryptopower](https://github.com/crypto-power/cryptopower) is a multi-coin desktop GUI wallet for DCR, BTC, and LTC. It runs in a privacy-preserving light SPV mode without needing full blockchains, supports Decred staking, mixing, voting, and other unique features._
+_[Cryptopower](https://github.com/crypto-power/cryptopower) 是一款适用于 DCR、BTC 和 LTC 的多币种桌面 GUI 钱包。 它以保护隐私的轻 SPV 模式运行，无需完整的区块链，支持 Decred 质押、混合、投票和其他独特功能。_
 
-Newly implemented UI elements:
+新实现的 UI 元素：
 
-- A page for [managing wallet accounts](https://github.com/crypto-power/cryptopower/pull/260).
-- [Onboarding pages](https://github.com/crypto-power/cryptopower/pull/219) that help the user with initial configuration after launching the app for the first time.
-- Animated [swiping of asset cards](https://github.com/crypto-power/cryptopower/pull/256) on the Overview page.
-- Updated UI design of [governance pages](https://github.com/crypto-power/cryptopower/pull/221) (proposals, consensus, treasury).
-- Added ["All Wallets" filter](https://github.com/crypto-power/cryptopower/pull/313) on the Transactions page.
-- Added advanced options to the [Send page](https://github.com/crypto-power/cryptopower/pull/310), including the ability to send to multiple recipients in one transaction.
+- [管理钱包账户](https://github.com/crypto-power/cryptopower/pull/260)页面。
+- [帮助页面](https://github.com/crypto-power/cryptopower/pull/219) 帮助用户在首次启动应用程序后进行初始配置。
+- 概述页面上的动画[滑动更新](https://github.com/crypto-power/cryptopower/pull/256)。
+- 更新了[治理页面](https://github.com/crypto-power/cryptopower/pull/221)的UI设计（提案、共识、财务）。
+- 在交易页面添加了[“所有钱包”过滤器](https://github.com/crypto-power/cryptopower/pull/313)。
+- 在[发送页面](https://github.com/crypto-power/cryptopower/pull/310)添加了高级选项，包括在一笔交易中发送给多个地址的能力。
 
-Trading:
+交易：
 
-- Implemented coin conversion (exchange) via [Trocador](https://github.com/crypto-power/cryptopower/pull/257).
-- Added [intro pages](https://github.com/crypto-power/cryptopower/pull/224) shown when first visiting DCRDEX and CEX features.
-- Open [trade details](https://github.com/crypto-power/cryptopower/pull/300) when clicking on a recent trade on Overview.
-- Added [Trade History](https://github.com/crypto-power/cryptopower/pull/333) page.
+- 通过 [Trocador](https://github.com/crypto-power/cryptopower/pull/257) 实现硬币转换（交换）。
+- 添加了首次访问 DCRDEX 和 CEX 功能时显示的[介绍页面](https://github.com/crypto-power/cryptopower/pull/224)。
+- 单击概览上的最近交易时打开[交易详细信息](https://github.com/crypto-power/cryptopower/pull/300)。
+- 添加了[交易历史](https://github.com/crypto-power/cryptopower/pull/333)页面。
 
-DEX trading:
+去中心化交易：
 
-- Implemented [UI layout](https://github.com/crypto-power/cryptopower/pull/208) for DCRDEX main page, base DEX [logic](https://github.com/crypto-power/cryptopower/pull/238), and the ability to [post bonds](https://github.com/crypto-power/cryptopower/pull/269) from the DCR wallet.
+- 为 DCRDEX 主页实现了 [UI 布局](https://github.com/crypto-power/cryptopower/pull/208)，基础 DEX [逻辑](https://github.com/crypto-power/cryptopower/pull/238)，以及从 DCR 钱包[购买信用债券](https://github.com/crypto-power/cryptopower/pull/269)的能力。
 
-Privacy:
+隐私：
 
-- Updated [privacy pages](https://github.com/crypto-power/cryptopower/pull/248). By default, mixing will be off, mixing-related accounts won't be created, and sending from the `default` account will be allowed.
+- 更新了[隐私页面](https://github.com/crypto-power/cryptopower/pull/248)。 默认情况下，混币将关闭，不会创建与混币相关的帐户，并且允许从“默认”帐户发送。
 
-Mobile UI implementation, the following pages have been updated/fixed for mobile screens:
+移动 UI 实现，以下页面已针对移动屏幕进行更新/修复：
 
-- Common [header](https://github.com/crypto-power/cryptopower/pull/311) with wallet name and balance shown on all the wallet's sub-pages.
-- Updated the [mixer card](https://github.com/crypto-power/cryptopower/pull/316) and [recent transactions](https://github.com/crypto-power/cryptopower/pull/339) on the Overview page.
-- [Governance](https://github.com/crypto-power/cryptopower/pull/317) layouts.
-- [StakeShuffle](https://github.com/crypto-power/cryptopower/pull/330) pages.
-- [CEX trading](https://github.com/crypto-power/cryptopower/pull/323) (instant exchange) layouts.
-- [General Settings and wallet Settings](https://github.com/crypto-power/cryptopower/pull/324) pages.
-- [Transactions](https://github.com/crypto-power/cryptopower/pull/327) pages (app-wide, wallet-wide, transaction details).
-- [Staking](https://github.com/crypto-power/cryptopower/pull/335) page.
-- Wallet [Accounts](https://github.com/crypto-power/cryptopower/pull/336) page.
-- Wallet [Info](https://github.com/crypto-power/cryptopower/pull/332) (overview) page.
-- [App onboarding](https://github.com/crypto-power/cryptopower/pull/342) pages.
-- Wallet [create/restore](https://github.com/crypto-power/cryptopower/pull/352) pages, wallet [backup](https://github.com/crypto-power/cryptopower/pull/350) pages.
-- [Send](https://github.com/crypto-power/cryptopower/pull/347) and [Receive](https://github.com/crypto-power/cryptopower/pull/346) pages and quick access modals.
+- 通用[标题](https://github.com/crypto-power/cryptopower/pull/311)，钱包名称和余额显示在所有钱包的子页面上。
+- 更新了[混币选项卡](https://github.com/crypto-power/cryptopower/pull/316)和[最近交易](https://github.com/crypto-power/cryptopower/pull/339) 在概览页面上。
+- [治理](https://github.com/crypto-power/cryptopower/pull/317) 布局。
+- [StakeShuffle](https://github.com/crypto-power/cryptopower/pull/330) 页面。
+- [CEX 交易](https://github.com/crypto-power/cryptopower/pull/323)（即时交易）布局。
+- [常规设置和钱包设置](https://github.com/crypto-power/cryptopower/pull/324)页面。
+- [交易](https://github.com/crypto-power/cryptopower/pull/327) 页面（应用程序范围、钱包范围、交易详细信息）。
+- [质押](https://github.com/crypto-power/cryptopower/pull/335)页面。
+- 钱包[账户](https://github.com/crypto-power/cryptopower/pull/336)页面。
+- 钱包[信息](https://github.com/crypto-power/cryptopower/pull/332)（概述）页面。
+- [应用程序入门](https://github.com/crypto-power/cryptopower/pull/342) 页面。
+- 钱包[创建/恢复](https://github.com/crypto-power/cryptopower/pull/352)页面，钱包[备份](https://github.com/crypto-power/cryptopower/pull/350) ）页。
+- [发送](https://github.com/crypto-power/cryptopower/pull/347) 和 [接收](https://github.com/crypto-power/cryptopower/pull/346) 页面和快速访问 情态动词。
 
-Fixes:
+修复：
 
-- Fixed an error when visting [Treasury page](https://github.com/crypto-power/cryptopower/pull/235) without creating a DCR wallet.
-- Fixed [mobile UI elements](https://github.com/crypto-power/cryptopower/pull/298) showing in desktop mode.
-- Fixed crash when visiting [Staking pages](https://github.com/crypto-power/cryptopower/pull/328) after restoring a Decred wallet.
-- Fixed request [rate limit](https://github.com/crypto-power/cryptopower/pull/323) errors when querying instant exchange orders.
-- Other minor UI fixes.
+- 修复了在未创建 DCR 钱包的情况下访问 [国库页面](https://github.com/crypto-power/cryptopower/pull/235) 时出现的错误。
+- 修复了桌面模式下显示的[移动 UI 元素](https://github.com/crypto-power/cryptopower/pull/298)。
+- 修复了恢复 Decred 钱包后访问 [质押页面](https://github.com/crypto-power/cryptopower/pull/328) 时的崩溃问题。
+- 修复了查询即时兑换订单时的请求[速率限制](https://github.com/crypto-power/cryptopower/pull/323)错误。
+- 其它小的用户界面修复。
 
-Internal and developer changes:
+内部和开发人员变更：
 
-- Refactoring to remove an [unnecessary interface](https://github.com/crypto-power/cryptopower/pull/235).
-- Documented instructions for [building for Android and iOS](https://github.com/crypto-power/cryptopower/pull/299).
+- 重构以删除[不必要的接口](https://github.com/crypto-power/cryptopower/pull/235)。
+- [为 Android 和 iOS 构建](https://github.com/crypto-power/cryptopower/pull/299) 的记录说明。
 
-In other news:
+其它：
 
-- Test builds of Android and iOS apps have been submitted to Google Play Store and Apple TestFlight.
+- Android 和 iOS 应用程序的测试版本已提交至 Google Play Store 和 Apple TestFlight。
 
-![Cryptopower will support trading via the privacy-friendly Trocador.app](../img/202312.02.799.jpg)
+![Cryptopower 将支持通过隐私友好的 Trocador.app 进行交易](img/202312.02.799.jpg)
 
-_Image: Cryptopower will support trading via the privacy-friendly [Trocador.app](https://trocador.app/)_
+_图片：Cryptopower 将支持通过隐私友好的 [Trocador.app](https://trocador.app/) 进行交易_
 
-![Cryptopower is adding a lightweight UI for trading on DCRDEX](../img/202312.03.800.orig.png)
+![Cryptopower 正在为 DCRDEX 上的交易添加轻量级 UI](img/202312.03.800.orig.png)
 
-_Image: Cryptopower is adding a lightweight UI for trading on DCRDEX_
+_图片：Cryptopower 正在为 DCRDEX 上的交易添加轻量级 UI_
 
-![Cryptopower getting ready for mobile screens](../img/202312.04.1161.jpg)
+![Cryptopower 为移动屏幕做好准备](img/202312.04.1161.jpg)
 
-_Image: Cryptopower getting ready for mobile screens_
+_图片：Cryptopower 为移动屏幕做好准备_
 
 
 ### Cake Wallet Integration
