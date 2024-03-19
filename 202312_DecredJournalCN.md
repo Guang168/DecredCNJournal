@@ -206,109 +206,109 @@ _图片：Cryptopower 为移动屏幕做好准备_
 
 ### Cake Wallet Integration
 
-In progress:
+进行中：
 
-- Integrating [libwallet](https://github.com/JoeGruffins/cake_wallet/pull/8) into the build process of Cake Wallet.
-- Code branch with most other coins removed has been [created](https://github.com/JoeGruffins/cake_wallet/tree/onlydecred) to speed up the development process.
-- Discussing how to call Go code from Cake's Dart code. The plan so far is to connect the layers using simple [JSON strings](https://github.com/itswisdomagain/libwallet/pull/6).
-- Discussing which APIs should be provided by libwallet for Cake and Cryptopower.
-- First change adding [initial Decred screens](https://github.com/cake-tech/cake_wallet/pull/1165) has been merged in the upstream integration branch. This branch is an intermediate location to test and polish Decred code before adding it to Cake Wallet's `main` branch.
+- 将 [libwallet](https://github.com/JoeGruffins/cake_wallet/pull/8) 集成到 Cake Wallet 的构建过程中。
+- 已[创建](https://github.com/JoeGruffins/cake_wallet/tree/onlydecred)删除了大多数其他代币的代码分支，以加快开发过程。
+- 讨论如何从 Cake 的 Dart 代码调用 Go 代码。 到目前为止的计划是使用简单的 [JSON 字符串](https://github.com/itswisdomagain/libwallet/pull/6) 连接各层。
+- 讨论 libwallet 应该为 Cake 和 Cryptopower 提供哪些 API。
+- 添加[初始 Decred 屏幕](https://github.com/cake-tech/cake_wallet/pull/1165) 的第一个更改已合并到上游集成分支中。 该分支是在将 Decred 代码添加到 Cake Wallet 的“main”分支之前测试和完善 Decred 代码的中间位置。
 
 
 ### decred.org
 
-_[dcrweb](https://github.com/decred/dcrweb) is the source code for the [decred.org](https://decred.org/) website._
+_[dcrweb](https://github.com/decred/dcrweb) 是 [decred.org](https://decred.org/) 网站的源代码。_
 
-- Improved links and text on the [Wallets page](https://github.com/decred/dcrweb/pull/1152) to help users choose from the four wallet options.
-- Updated [Portuguese translation](https://github.com/decred/dcrweb/pull/1160).
+- 改进了[钱包页面](https://github.com/decred/dcrweb/pull/1152)上的链接和文本，以帮助用户从四个钱包选项中进行选择。
+- 更新了[葡萄牙语翻译](https://github.com/decred/dcrweb/pull/1160)。
 
-![Four wallet choices reflect a lot of development going on but users need guidance to find what's best for them](../img/202312.05.1020.png)
+![四种钱包选择反映了正在进行的大量开发，但用户需要指导才能找到最适合他们的钱包](img/202312.05.1020.png)
 
-_Image: Four wallet choices reflect a lot of development going on but users need guidance to find what's best for them_
+_图片：四种钱包选择反映了正在进行的大量开发，但用户需要指导才能找到最适合他们的_
 
 
 ### Bison Relay
 
-_[Bison Relay](https://github.com/companyzero/bisonrelay) is a new social media platform with strong protections against censorship, surveillance, and advertising, powered by the Decred Lightning Network._
+_[Bison Relay](https://github.com/companyzero/bisonrelay) 是一个新的社交媒体平台，具有无审查、监视和广告的功能，由 Decred 闪电网络提供支持。_
 
-Work listed below has been merged to `master` towards the next release.
+下面列出的工作已合并到下一个版本的“master”中。
 
-Changes in both GUI and text apps:
+GUI 和文本应用程序中的更改：
 
-- Added a command to [change group chat owner](https://github.com/companyzero/bisonrelay/pull/391).
+- 添加了[更改群聊所有者](https://github.com/companyzero/bisonrelay/pull/391)的命令。
 
-Changes in the GUI app:
+GUI 应用程序中的更改：
 
-- Added a button to [reset all key exchanges](https://github.com/companyzero/bisonrelay/pull/388) (KX).
-- Added a button to [subscribe to posts](https://github.com/companyzero/bisonrelay/pull/382) straight from the News Feed (saves a few clicks).
-- Added [transitive KX reset](https://github.com/companyzero/bisonrelay/pull/390) command to user menu.
-- Fixed missing [Unsubscribe from posts](https://github.com/companyzero/bisonrelay/pull/382) menu item.
+- 添加了一个按钮[重置所有密钥交换](https://github.com/companyzero/bisonrelay/pull/388) (KX)。
+- 添加了一个直接从新闻源中[订阅帖子](https://github.com/companyzero/bisonrelay/pull/382)的按钮（节省了几次点击）。
+- 在用户菜单中添加了[传递 KX 重置](https://github.com/companyzero/bisonrelay/pull/390) 命令。
+- 修复了缺失的[取消订阅帖子](https://github.com/companyzero/bisonrelay/pull/382)菜单项。
 
-Text-based app (brclient):
+基于文本的应用程序（brclient）：
 
-- Grouped various [invite handling](https://github.com/companyzero/bisonrelay/pull/386) subcommands under the `/invite` meta-command.
-- Fixed client-side message [filtering](https://github.com/companyzero/bisonrelay/pull/393) hiding client's own messages.
+- 在“/invite”元命令下对各种[邀请处理](https://github.com/companyzero/bisonrelay/pull/386)子命令进行分组。
+- 修复了隐藏客户端自己的消息的客户端消息[过滤](https://github.com/companyzero/bisonrelay/pull/393)。
 
-Internal and developer changes:
+内部和开发人员变更：
 
-- Updated to latest [dcrlnd](https://github.com/companyzero/bisonrelay/pull/392) and improved tracking of dcrlnd readiness during startup.
+- 更新到最新的 [dcrlnd](https://github.com/companyzero/bisonrelay/pull/392) 并改进了启动过程中 dcrlnd 准备情况的跟踪。
 
 
 <a id="dev-other"></a>
 
-### Other
+### 其它
 
-- Updated the [Bug Bounty website](https://bounty.decred.org/) to show only the top 5 participants and link to a separate page with the full list.
-- Fixed [DCRDEX version](https://github.com/decred/umbrel-app-store/pull/10) and pinned hash in Decred's custom [Umbrel App Store](https://github.com/decred/umbrel-app-store).
+- 更新了 [Bug Bounty 网站](https://bounty.decred.org/)，仅显示前 5 位参与者，并链接到包含完整列表的单独页面。
+- 修复了 [DCRDEX 版本](https://github.com/decred/umbrel-app-store/pull/10) 并在 Decred 的自定义 [Umbrel 应用商店](https://github.com/decred/umbrel) 中固定哈希 -应用商店）。
 
 
 <a id="people"></a>
 
-## People
+## 人员
 
-Community stats as of Jan 14\* (compared to Dec 3):
+截至 1 月 14 日 * 的社区统计数据（与 12 月 3 日相比）：
 
-- [Twitter](https://twitter.com/decredproject) followers: 54,595 (+656)
-- [Reddit](https://www.reddit.com/r/decred/) subscribers: 12,768 (-5)
-- [Matrix](https://chat.decred.org/) #general members: 842 (+9)
-- [Discord](https://discord.gg/GJ2GXfz) members: 1,924 (+62), verified to post: 772 (+3)
-- [Telegram](https://t.me/Decred) members: 2,327 (+8)
-- [YouTube](https://www.youtube.com/decredchannel) subscribers: 4,670 (+10), views: 247.1K (+2.4K) \*\*
+- [Twitter](https://twitter.com/decredproject) 关注：54,595 (+656)
+- [Reddit](https://www.reddit.com/r/decred/) 订阅：12,768 (-5)
+- [Matrix](https://chat.decred.org/) #普通用户：842 (+9)
+- [Discord](https://discord.gg/GJ2GXfz) 会员：1,924 (+62)，已验证发帖人数：772 (+3)
+- [Telegram](https://t.me/Decred) 成员：2,327 (+8)
+- [YouTube](https://www.youtube.com/decredchannel) 订阅：4,670 (+10)，观看次数：247.1K (+2.4K) \*\*
 
-\* Due to the late snapshot taken on Jan 14 (Jan 9 for YouTube) the deltas represent ~1.5 months instead of the usual 1-month period.
+\* 由于快照拍摄于 1 月 14 日（YouTube 为 1 月 9 日），增量代表约 1.5 个月，而不是通常的 1 个月。
 
-\*\* Decred's [YouTube channel](https://www.youtube.com/channel/UCJ2bYDaPYHpSmJPh_M5dNSg) has more than 300 videos now!
+\*\* Decred 的 [YouTube 频道](https://www.youtube.com/channel/UCJ2bYDaPYHpSmJPh_M5dNSg) 现在有超过 300 个视频！
 
 
 <a id="governance-and-finances"></a>
 
-## Governance and Finances
+## 治理和财务
 
-In December the new [treasury](https://dcrdata.decred.org/treasury) received 7,467 DCR worth $119K at December's average rate of $15.89. 8,427 DCR was spent to pay contractors, worth $134K at same rate.
+12 月，新[国库](https://dcrdata.decred.org/treasury) 收到了 7,467 个 DCR，价值 11.9 万美元，按 12 月的平均汇率 15.89 美元计算。 8,427 DCR 用于支付承包商费用，按相同价格计算价值 134,000 美元。
 
-A [treasury spend tx](https://dcrdata.decred.org/tx/bbe950023801d9a9a082b15374cb5b30385172431dec0961207b2adb7197e82d) was approved with 99.5% Yes votes and 58% turnout, and mined on Dec 19. It had 29 outputs making payments to contractors, ranging from 7.5 DCR to 2,182 DCR. Most of this DCR was likely paid for October and November work. Estimating the average billing exchange rate for the two months at $13.54, the billed amount in this TSpend represents around $114K USD equivalent.
+[国库交易](https://dcrdata.decred.org/tx/bbe950023801d9a9a082b15374cb5b30385172431dec0961207b2adb7197e82d)以 99.5% 的赞成票和 58% 的投票率获得批准，并于 12 月 19 日开采。它有 29 个产出进行支付承包商，范围从 7.5 DCR 至 2,182 DCR。 大部分 DCR 可能是 10 月和 11 月工作的报酬。 估计两个月的平均账单汇率为 13.54 美元，此 TSpend 中的账单金额约为 11.4 万美元。
 
-As of Jan 1, combined balance of [legacy](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) and [new treasury](https://dcrdata.decred.org/treasury) is 870.9K DCR (15.7 million USD at $17.98).
+截至 1 月 1 日，[旧版](https://dcrdata.decred.org/address/Dcur2mcGjmENx4DhNqDctW5wJCVyT3Qeqkx) 和[新金库](https://dcrdata.decred.org/treasury) 的总余额为 870.9K DCR (15.7 百万美元，价格为 17.98 美元）。
 
-![Treasury inflows and outflows in DCR](../img/202312.06.720.png)
+![DCR 中的国库流入和流出](img/202312.06.720.png)
 
-_Image: Treasury inflows and outflows in DCR_
+_图片：DCR 中的国债流入和流出_
 
-![Treasury monthly balance in USD; note that it heavily depends on the exchange rate](../img/202312.07.720.png)
+![国库每月余额（美元）； 请注意，这在很大程度上取决于汇率](img/202312.07.720.png)
 
-_Image: Treasury monthly balance in USD; note that it heavily depends on the exchange rate_
+_图片：财政部每月余额（美元）； 请注意，这在很大程度上取决于汇率_
 
-Two proposals were submitted and approved in December:
+12 月提交并批准了两项提案：
 
-- [Bug Bounty Program 2024](https://proposals.decred.org/record/a1fd5dd) by @jholdstock requested a budget of $105,000, split between $100,000 for bounty payments and $5,000 for administrative costs. In practice, only a small fraction of the requested budget has been used in previous iterations. The proposal reported that the expenses for the last 18 months were $415 paid for bounties and $1,750 for the operations. Overall the program has spent around $11K since its launch in 2019. The proposal has been approved with 98% Yes and a very high 74% turnout.
+- [Bug Bounty Program 2024](https://proposals.decred.org/record/a1fd5dd) @jholdstock 请求预算为 105,000 美元，其中 100,000 美元用于奖励金，5,000 美元用于管理费用。 实际上，之前的迭代只使用了所请求预算的一小部分。该提案报告称，过去 18 个月的支出为 415 美元的赏金费用和 1,750 美元的运营费用。 自 2019 年启动以来，该计划总共花费了约 11,000 美元。该提案已获得 98% 的赞成率和 74% 的极高投票率批准。
 
-- [Decred Video Content 2024](https://proposals.decred.org/record/49cf2e1) by @phoenixgreen requested a budget of $71,000 for the creation and dissemination of video content for 2024. This proposal has been approved with 85% Yes and 64% turnout.
+- [Decred Video Content 2024](https://proposals.decred.org/record/49cf2e1) @phoenixgreen 请求为 2024 年视频内容的创建和传播提供 71,000 美元的预算。该提案已获得 85% 的批准 和 64% 的投票率。
 
-One proposal author reported a problem with purchasing [proposal credits](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$elsLkiZbjOz5Pyx42S6e3HPk_4gnkoVpK8J_-qNhqJM) but it was resolved within a few days. A November issue with the registration fee not getting detected [persisted](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$5SiSLy_z6wCTEhGzKif9rgGjKo-kOPMNBROt3i_dRqs) in December, and it is unknown if it affects just one unlucky new account or possibly others.
+一位提案作者报告了购买 [提案积分](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$elsLkiZbjOz5Pyx42S6e3HPk_4gnkoVpK8J_-qNhqJM) 时出现的问题，但该问题在几天内得到了解决。 11 月未检测到注册费的问题[持续](https://matrix.to/#/!qYpAAClAYrHaUIGkLs:decred.org/$5SiSLy_z6wCTEhGzKif9rgGjKo-kOPMNBROt3i_dRqs) 在 12 月仍然存在，目前尚不清楚它是否只影响一个不幸的新人帐户或其他可能的帐户。
 
-See [Politeia Digest issue 65](https://www.cypherpunktimes.com/politeia-digest-september-27-december-12-2023/) for more details on the month's proposals.
+有关本月提案的更多详细信息，请参阅 [Politeia Digest 第 65 期](https://www.cypherpunktimes.com/politeia-digest-september-27-december-12-2023/)。
 
-PD's publishing workflow has been reworked to improve reach and engagement: the main release channel is now [Cypherpunk Times](https://www.cypherpunktimes.com/politeia-digest-september-27-december-12-2023/) (main link is posted on Twitter and other places), Medium release is now posted in [Decred's main publication](https://medium.com/decred/politeia-digest-65-september-27-december-12-2023-984c12c31091) (instead of the lesser known [Politeia Digest](https://medium.com/politeia-digest) publication), and companion [Twitter threads](https://twitter.com/decredproject/status/1737514771954471033) are now being produced so that the highlights can be consumed without leaving Twitter.
+PD 的发布工作流程已重新设计，以提高覆盖范围和参与度：主要发布渠道现在是 [Cypherpunk Times](https://www.cypherpunktimes.com/politeia-digest-september-27-december-12-2023/) (主链接发布在 Twitter 和其他地方），Medium 版本现已发布在 [Decred 的主要出版物](https://medium.com/decred/politeia-digest-65-september-27-december-12-2023-984c12c31091) （而不是鲜为人知的 [Politeia Digest](https://medium.com/politeia-digest) 出版物）和配套的 [Twitter 帖子](https://twitter.com/decredproject/status/1737514771954471033) 现在正在 制作的目的是让您无需离开 Twitter 即可观看精彩片段。
 
 
 <a id="network"></a>
